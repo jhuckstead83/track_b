@@ -36,6 +36,7 @@ def build_anatomy_windows(n_lock: float, max_window_size: int = 50000) -> dict[s
     w_transit = np.array([], dtype=int)
     w_post = np.array([], dtype=int)
 
+    # Omit window entirely if it begins beyond the compute cap
     if transit_start <= max_window_size:
         transit_end = min(transit_end, max_window_size)
         if transit_end >= transit_start:
@@ -66,8 +67,12 @@ def evaluate_pair_anatomy(
     for w_name, n_vals in windows.items():
         if len(n_vals) == 0:
             results[w_name] = {
-                "n_start": None, "n_end": None, "count": 0,
-                "mean_err": float("nan"), "lock_scaled_pct": 0.0, "lock_soft_pct": 0.0,
+                "n_start": None,
+                "n_end": None,
+                "count": 0,
+                "mean_err": float("nan"),
+                "lock_scaled_pct": 0.0,
+                "lock_soft_pct": 0.0,
             }
             continue
 

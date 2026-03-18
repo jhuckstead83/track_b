@@ -1,0 +1,172 @@
+import os
+import argparse
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+from matplotlib.lines import Line2D
+
+# ============================================================
+# Track B Atlas: generate_standard_model_figure.py
+# Dual-panel publication figure:
+# baseline taxonomy vs. ablated taxonomy
+# ============================================================
+
+ARCHETYPE_COLORS = {
+    "CATHEDRAL SQUARE": "#2CA02C",
+    "BEHEMOTH": "#D62728",
+    "GHOST": "#9467BD",
+    "STANDARD TRANSIENT": "#1F77B4",
+}
+
+GHOSTS_TO_LABEL = [
+    "catalan / ln_phi",
+    "ln_phi / phi",
+    "silver_inv / sqrt5",
+    "log2 / pi_over_4",
+]
+
+def load_and_merge_data(census_path: str, ablation_path: str) -> pd.DataFrame:
+    if not os.path.exists(census_path) or not os.path.exists(ablation_path):
+        raise FileNotFoundError("Could not find input CSV files. Run the quarry and ablation scripts first.")
+
+    census_df = pd.read_csv(census_path)
+    ablation_df = pd.read_csv(ablation_path)
+
+    merged_df = census_df.merge(
+        ablation_df[["pair", "best_mu_under_cap", "ablated_archetype"]],
+        on="pair",
+        how="left",
+    )
+    merged_df["ablated_archetype"] = merged_df["ablated_archetype"].fillna(merged_df["archetype"])
+    return merged_df
+
+def plot_guide_curve(ax, q_range: tuple[float, float], constant: float = 4.0) -> None:
+    """Visual reference curve only; not a fitted boundary."""
+    q_vals = np.linspace(q_range[0], q_range[1], 100)
+    log_n_vals = np.log10(constant) + 2 * np.log10(q_vals)
+    ax.plot(q_vals, log_n_vals, color="gray", linestyle="--", linewidth=1.0, alpha=0.5, zorder=1)
+
+def annotate_migration_pairs(ax, df: pd.DataFrame, label_offset_map: dict, font_size: int = 9) -> None:
+    for pair_name in GHOSTS_TO_LABEL:
+        pair_row = df[df["pair"] == pair_name]
+        if pair_row.empty:
+            continue
+
+        pair_data = pair_row.iloc[0]
+        q = pair_data["best_q"]
+        log_n = np.log10(pair_data["n_lock"])
+
+        display_label = pair_name.replace(" / ", " vs ")
+        x_off, y_off = label_offset_map.get(pair_name, (0.5, 0.0))
+
+        ax.text(
+            q + x_off,
+            log_n + y_off,
+            display_label,
+            fontsize=font_size,
+            color="black",
+            va="center",
+            ha="left",
+            zorder=10,
+            weight="medium",
+        )
+
+def generate_figure(df: pd.DataFrame, output_path: str, dpi: int = 300) -> None:
+    plt.rcParams["font.family"] = "serif"
+    plt.rcParams["mathtext.fontset"] = "dejavuserif"
+
+    fig, axs = plt.subplots(1, 2, figsize=(14, 7), sharey=True)
+    q_range = (10, 35)
+
+    df_plot = df.copy()
+    df_plot["best_q"] = df_plot["best_q"].astype(int)
+    df_plot["log10_n_lock"] = np.log10(df_plot["n_lock"])
+
+    migrated = df_plot["archetype"] != df_plot["ablated_archetype"]
+
+    label_offsets = {
+        "catalan / ln_phi": (0.7, -0.01),
+        "ln_phi / phi": (0.7, 0.01),
+        "silver_inv / sqrt5": (0.7, 0.00),
+        "log2 / pi_over_4": (-5.8, 0.00),
+    }
+
+    titles = [
+        r"$\mathbf{A}$: Baseline (Standard Lenses)",
+        r"$\mathbf{B}$: Ablated (Optimized Lenses)",
+    ]
+    archetype_cols = ["archetype", "ablated_archetype"]
+
+    for i, ax in enumerate(axs):
+        plot_guide_curve(ax, q_range, constant=4.0)
+
+        colors = df_plot[archetype_cols[i]].map(ARCHETYPE_COLORS).fillna(ARCHETYPE_COLORS["STANDARD TRANSIENT"])
+        ax.scatter(
+            df_plot["best_q"],
+            df_plot["log10_n_lock"],
+            c=colors,
+            s=65,
+            edgecolor="black",
+            lw=0.5,
+            zorder=3,
+        )
+
+        ax.scatter(
+            df_plot.loc[migrated, "best_q"],
+            df_plot.loc[migrated, "log10_n_lock"],
+            facecolors="none",
+            edgecolors="black",
+            s=140,
+            linewidths=1.2,
+            zorder=4,
+        )
+
+        annotate_migration_pairs(ax, df_plot, label_offsets)
+
+        ax.set_title(titles[i], fontsize=14, pad=15)
+        ax.set_xlabel("Spatial Resolution (Denominator $q$)", fontsize=12)
+        ax.set_xlim(q_range)
+        ax.set_ylim(4.3, 5.6)
+        ax.grid(True, alpha=0.25)
+
+    axs[0].set_ylabel(r"Temporal Stability ($\log_{10} N_{\mathrm{lock}}$)", fontsize=12)
+
+    legend_handles = [
+        mpatches.Patch(color=ARCHETYPE_COLORS["CATHEDRAL SQUARE"], label="Cathedral Square"),
+        mpatches.Patch(color=ARCHETYPE_COLORS["BEHEMOTH"], label="Behemoth"),
+        mpatches.Patch(color=ARCHETYPE_COLORS["GHOST"], label="Ghost"),
+        mpatches.Patch(color=ARCHETYPE_COLORS["STANDARD TRANSIENT"], label="Standard Transient"),
+        Line2D([0], [0], color="gray", linestyle="--", linewidth=1.0,
+               label=r"Dirichlet guide: $N_{\mathrm{lock}} \propto q^2$"),
+        Line2D([0], [0], marker="o", color="black", markerfacecolor="none",
+               markersize=10, linewidth=0, markeredgewidth=1.2, label="Migrated species"),
+    ]
+
+    fig.legend(
+        handles=legend_handles,
+        loc="lower center",
+        ncol=3,
+        fontsize=10,
+        frameon=True,
+        bbox_to_anchor=(0.5, -0.05),
+    )
+
+    plt.tight_layout(rect=[0, 0.08, 1, 1])
+    plt.savefig(output_path, dpi=dpi, bbox_inches="tight")
+    plt.savefig(output_path.replace(".png", ".pdf"), bbox_inches="tight")
+    print(f"Figure generated successfully: {output_path}")
+    plt.close()
+
+def main():
+    parser = argparse.ArgumentParser(description="Generate the dual-panel Standard Model publication figure.")
+    parser.add_argument("--census", type=str, default="quarry_output/filtered_unique_taxonomy.csv")
+    parser.add_argument("--ablation", type=str, default="quarry_output/ablation_study/ablation_results.csv")
+    parser.add_argument("--output", type=str, default="quarry_output/standard_model_phase_space.png")
+    args = parser.parse_args()
+
+    merged_df = load_and_merge_data(args.census, args.ablation)
+    generate_figure(merged_df, args.output, dpi=300)
+
+if __name__ == "__main__":
+    main()
