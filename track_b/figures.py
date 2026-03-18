@@ -1,8 +1,7 @@
 import os
+import math
 import numpy as np
 import matplotlib.pyplot as plt
-
-from dynamics import orbit_points, carrier_phase_error, build_anatomy_windows
 
 # ============================================================
 # Track B Atlas: figures.py
@@ -18,7 +17,7 @@ def pair_slug(alpha_name: str, beta_name: str) -> str:
     return f"{alpha_name}_vs_{beta_name}"
 
 def _add_polar_panel(ax, rho: float, p: int, q: int, n_vals: np.ndarray, title: str):
-    x_vals = orbit_points(rho, n_vals)
+    x_vals = (n_vals * rho) % 1.0
     angles = 2.0 * np.pi * x_vals
     radius = np.ones_like(angles)
 
@@ -27,14 +26,8 @@ def _add_polar_panel(ax, rho: float, p: int, q: int, n_vals: np.ndarray, title: 
         ax.plot([theta, theta], [0, 1.08], linestyle="--", linewidth=0.9, alpha=0.45)
 
     sc = ax.scatter(
-        angles,
-        radius,
-        c=n_vals,
-        s=14,
-        alpha=0.85,
-        edgecolors="none",
-        cmap="plasma",
-        zorder=3,
+        angles, radius, c=n_vals, s=14, alpha=0.85,
+        edgecolors="none", cmap="plasma", zorder=3,
     )
 
     ax.set_ylim(0, 1.1)
@@ -51,18 +44,12 @@ def _add_polar_panel(ax, rho: float, p: int, q: int, n_vals: np.ndarray, title: 
     return sc
 
 def plot_case_card(
-    alpha_name: str,
-    beta_name: str,
-    rho: float,
-    p: int,
-    q: int,
-    delta: float,
-    n_lock: float,
-    tau_scaled: float,
-    output_path: str | None = None,
-    dpi: int = DEFAULT_DPI,
+    alpha_name: str, beta_name: str, rho: float, p: int, q: int,
+    delta: float, n_lock: float, tau_scaled: float,
+    output_path: str | None = None, dpi: int = DEFAULT_DPI,
 ):
-    """Create a one-page case report with sawtooth, polar anatomies, and summary text."""
+    from dynamics import build_anatomy_windows, carrier_phase_error
+    
     windows = build_anatomy_windows(n_lock)
     n_crystal = windows["Crystal"]
     n_post = windows["PostCrk"]
@@ -73,10 +60,15 @@ def plot_case_card(
     # Sawtooth
     ax_saw = fig.add_subplot(gs[:, 0])
     t_max = 1.6
-    n_samples = 2200
-    t_vals = np.linspace(0.0, t_max, n_samples)
-    n_vals = np.maximum(1, np.round(t_vals * n_lock).astype(int))
-    eps = carrier_phase_error(rho, p, q, n_vals)
+    if np.isinf(n_lock):
+        # Surrogate window for infinite/permanent locks (The Flatline)
+        t_vals = np.linspace(0.0, t_max, 100)
+        eps = np.zeros_like(t_vals)
+    else:
+        n_samples = 2200
+        t_vals = np.linspace(0.0, t_max, n_samples)
+        n_vals = np.maximum(1, np.round(t_vals * n_lock).astype(int))
+        eps = carrier_phase_error(rho, p, q, n_vals)
 
     ax_saw.plot(t_vals, eps, linewidth=2.0)
     ax_saw.axhline(0.5, linestyle="--", linewidth=1, alpha=0.5)
@@ -132,7 +124,6 @@ def plot_case_card(
     return fig
 
 def batch_case_cards(atlas_df, output_dir: str, top_n: int = 10, sort_by: str = "n_lock", descending: bool = True):
-    """Batch-generate one-page case cards from an atlas dataframe."""
     ensure_dir(output_dir)
     ranked = atlas_df.sort_values(sort_by, ascending=not descending).head(top_n)
 
@@ -140,14 +131,9 @@ def batch_case_cards(atlas_df, output_dir: str, top_n: int = 10, sort_by: str = 
         slug = pair_slug(row["alpha_name"], row["beta_name"])
         out_path = os.path.join(output_dir, f"{slug}_case_card.png")
         fig = plot_case_card(
-            alpha_name=row["alpha_name"],
-            beta_name=row["beta_name"],
-            rho=float(row["rho"]),
-            p=int(row["best_p"]),
-            q=int(row["best_q"]),
-            delta=float(row["delta"]),
-            n_lock=float(row["n_lock"]),
-            tau_scaled=float(row["tau_scaled"]),
-            output_path=out_path,
+            alpha_name=row["alpha_name"], beta_name=row["beta_name"],
+            rho=float(row["rho"]), p=int(row["best_p"]), q=int(row["best_q"]),
+            delta=float(row["delta"]), n_lock=float(row["n_lock"]),
+            tau_scaled=float(row["tau_scaled"]), output_path=out_path,
         )
         plt.close(fig)
