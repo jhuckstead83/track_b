@@ -427,7 +427,7 @@ ${p.run ? `<div class="tw-run" data-for="${p.id}"><div class="tw-guess" role="gr
 <tr><td>Four legal pasts all reached from deals (turns 32, 35, 41, 50, 53)</td><td>CERT</td><td><code>dstart4-certificates-v0-4.json</code></td></tr>
 <tr><td>Every observed cycle length is a multiple of 52</td><td>EVID</td><td>2,000 seeded deals; 12 sampled odd deck sizes from 7 to 51</td></tr>
 <tr><td>A two-queue loop has length 2·lcm(α/2, (n+1)/2, (n−1−α)/2), a multiple of n + 1</td><td>PROVED (alternation: Spivey 2010)</td><td>SEDAPS update v0.4.1 §2; complete censuses n ≤ 11</td></tr>
-<tr><td>No loop keeps three queues live</td><td>false at n = 12 (CERT); none for n ≤ 11</td><td>complete censuses; SEDAPS update v0.4.1 §2</td></tr>
+<tr><td>No loop keeps three queues live</td><td>false at n = 12 (CERT); none for n ≤ 11 or n = 13</td><td>complete censuses; SEDAPS update v0.4.1 §2</td></tr>
 <tr><td>No such loop is reachable from an equal deal</td><td>COMPUTED through n = 12; OPEN at 51</td><td>the mod-3 clock keeps equal-deal sizes congruent; exhaustive search at n = 12</td></tr>
 <tr><td>Key and order twin share a poker category; only the key opens the lock</td><td>PROVED</td><td>Prospect 51 engine</td></tr>
 </tbody></table>

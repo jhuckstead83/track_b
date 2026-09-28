@@ -1,0 +1,140 @@
+/finance/private/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: private, no-store
+
+/finance/live.html
+  Cache-Control: no-cache
+
+/finance/latest/*.json
+  Cache-Control: no-cache
+
+
+/finance/live
+  Cache-Control: no-cache
+
+/assets/phi_finance_grid_v1.js
+  Cache-Control: no-cache
+
+/assets/phi_finance_grid_v1.css
+  Cache-Control: no-cache
+
+/assets/phi_finance_grid_v2.js
+  Cache-Control: no-cache
+
+/assets/phi_finance_grid_v2.css
+  Cache-Control: no-cache
+
+/finance/latest/overnight_overlay.json
+  Cache-Control: no-cache
+
+# v1.13 reading pages and versioned publication
+/atlas/
+  Cache-Control: no-cache
+
+/papers/active-research.json
+  Cache-Control: no-cache
+
+/atlas/atlas-data.json
+  Cache-Control: no-cache
+
+/papers/feed.xml
+  Content-Type: application/rss+xml; charset=utf-8
+  Cache-Control: public, max-age=300
+
+/papers/TN_Postmaster_Volume_I_v4_2_READING_VOLUME.pdf
+  Content-Type: application/pdf
+  Cache-Control: public, max-age=86400
+
+/papers/TN_Postmaster_Volume_I_v4_7_READING_VOLUME.pdf
+  Content-Type: application/pdf
+  Cache-Control: public, max-age=86400
+
+/papers/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf
+  Content-Type: application/pdf
+  Cache-Control: public, max-age=86400
+
+/papers/TN_Postmaster_Volume_I_v5_2_TECHNICAL_DOSSIER.pdf
+  Content-Type: application/pdf
+  Cache-Control: public, max-age=86400
+
+/papers/TN_Postmaster_Volume_I_v5_2_SOURCE.zip
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/papers/TN_Postmaster_Volume_I_v5_1_READING_VOLUME.pdf
+  Content-Type: application/pdf
+  Cache-Control: public, max-age=86400
+
+/papers/TN_Postmaster_Volume_I_v5_1_TECHNICAL_DOSSIER.pdf
+  Content-Type: application/pdf
+  Cache-Control: public, max-age=86400
+
+/papers/TN_Postmaster_Volume_I_v5_1_PUBLICATION_PACKAGE_PART_1_OF_2.zip
+  Cache-Control: public, max-age=31536000, immutable
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/papers/TN_Postmaster_Volume_I_v5_1_PUBLICATION_PACKAGE_PART_2_OF_2.zip
+  Cache-Control: public, max-age=31536000, immutable
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/papers/TN_Postmaster_Volume_I_v5_1_PUBLICATION_PACKAGE_DOWNLOADS.txt
+  Content-Type: application/zip
+  Content-Disposition: attachment
+  Cache-Control: public, max-age=86400
+
+# v1.13.6 live-paper and maintained-capstone route
+/research/line-game/
+  Cache-Control: no-cache
+
+/research/line-game/*.html
+  Content-Type: text/html; charset=utf-8
+  Cache-Control: no-cache
+
+/research/line-game/*.pdf
+  Content-Type: application/pdf
+  Cache-Control: public, max-age=31536000, immutable
+
+/research/line-game/*.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=300
+
+/research/line-game/*.zip
+  Content-Type: application/zip
+  Content-Disposition: attachment
+  Cache-Control: public, max-age=31536000, immutable
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/assets/site-v1-13-6.css
+  Content-Type: text/css; charset=utf-8
+  Cache-Control: public, max-age=31536000, immutable
+
+
+# v1.13.6 citation and AI-discovery surface
+/citation/catalog.json
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=300
+  Access-Control-Allow-Origin: *
+
+/citation/ai-use-policy.json
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=300
+  Access-Control-Allow-Origin: *
+
+/CITATION.bib
+  Content-Type: application/x-bibtex; charset=utf-8
+  Cache-Control: public, max-age=300
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=300
+
+/research/*
+  Link: <https://cerebralgraphix.com/citation/catalog.json>; rel="describedby", <https://orcid.org/0009-0007-0234-2177>; rel="author"
+
+# v2.0 review routes
+/area-51/*
+  Cache-Control: no-cache
+
+/assets/site-v2-0.css
+  Content-Type: text/css; charset=utf-8
+  Cache-Control: no-cache

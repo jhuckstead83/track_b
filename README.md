@@ -5,9 +5,10 @@ exhibits and games, and the programs that check them. Author: Jeffery Lyn Huckst
 ([ORCID 0009-0007-0234-2177](https://orcid.org/0009-0007-0234-2177)). **RH STATUS: OPEN.**
 Nothing here is evidence for or against the Riemann hypothesis.
 
-This release is **v2.8.3** (28 September 2026). It places the Track B research pass
+This release is **v2.8.4** (28 September 2026). v2.8.3 placed the Track B research pass
 (corrections, independent replays, and new results) on the Fork-A v2.8.2 site, which carries
-the Finance and homepage work. The live site is published from the full site package. This
+the Finance and homepage work. v2.8.4 builds the TN Postmaster v5.2 PDFs and points the site's
+research pages at them. The live site is published from the full site package. This
 repository holds the Track B parts of it, plus the paper sources and the verification programs.
 It does not hold the Finance pages or the homepage. Track B's working draft of 27 September
 was labelled "v2.8.1"; that label was never released, and the only v2.8.1 is Fork-A's.
@@ -22,11 +23,12 @@ replayed by the shipped rule), **COMPUTED** (exhaustive search resting on a prov
 | --- | --- |
 | `site/area-51/` | the Area 51 lab: Invariant, Blackjack 51, Telescope 51, Memory 51, Prospect 51, **51 SEDAPS**, the **51 Twins** exhibit and its calibration report |
 | `site/research/` | research pages: Project 51 and Formula 51, the Line Game, TN Postmaster |
-| `site/citation/`, `site/llms.txt`, `site/sitemap.xml`, `site/site-index.json` | the citation catalog and the index files these pages feed |
+| `site/atlas/`, `site/citation/`, `site/llms.txt`, `site/sitemap.xml`, `site/site-index.*`, `site/_headers`, `site/assets/postmaster-v5-2-cover.webp` | the research atlas, the citation catalog, and the index and header files these pages feed |
 | `papers/TN_Postmaster_Volume_I_v5_2_SOURCE/` | TN Postmaster Volume I v5.2, source edition: Markdown masters, build scripts, interface check (67/67), twin evidence, v5.1 and v5.0 provenance |
 | `verification/` | independent replays and audits (see below) |
-| `dist/` | the release archives: full site (without `papers/`), research-only delta, v5.2 source zip |
-| `RELEASE_NOTES_v2.8.3.md`, `MERGE_GUIDE_v2.8.3.md`, `MANIFEST_v2.8.3.json`, `VALIDATION_v2.8.3.json` | what changed, how to merge it with later UI work, file hashes, and the checks run |
+| `dist/v2.8.4/` | full site (without `papers/`), cumulative research delta, and the papers payload (v5.2 PDFs, source zip, page anchors) to install into `papers/` first |
+| `dist/v2.8.3/` | the v2.8.3 archives |
+| `RELEASE_NOTES_v2.8.4.md`, `MERGE_GUIDE_v2.8.4.md` (cumulative from Fork-A v2.8.2), `MANIFEST_v2.8.4.json`, `VALIDATION_v2.8.4.json`, and the v2.8.3 counterparts | what changed, how to merge it with later UI work, file hashes, and the checks run |
 | `legacy/transient-rational-locking-v1.0.0/` | the earlier Track B release (Transient Rational Locking), kept as it was |
 
 The game pages use root-relative paths (`/area-51/...`, `/assets/...`). To play them, unpack
@@ -55,6 +57,7 @@ the full site package at a web root and serve it over HTTP.
 - Complete censuses of every state through 11 cards (3.11 × 10⁹ states) find no loop with three live queues.
 - **At 12 cards such loops exist**: 1,145,664 of them, of lengths 9 and 60 (CERT). The smallest is A = 6 0 1, B = 2 10 7 3, C = 4 8 11 5 9.
 - None is reachable from an equal deal, because equal-deal sizes stay congruent mod 3 and these loops' sizes are not.
+- None exists at 13 cards either: all 12,454,041,600 packet-form states lose a queue within 26 turns.
 - For the 51-card game the open question is: can a fair deal reach a loop that keeps three queues live?
 
 **Formula 51.**
@@ -65,7 +68,8 @@ the full site package at a web root and serve it over HTTP.
 **51 Twins and TN Postmaster v5.2.**
 - The Davenport–Heilbronn twin has the reflection F(s) = F(1 − s) of completed zeta, but a different Gamma factor.
 - The rung failure at k = 16,589 is computed on a finite zero list. It reproduces at 60 and 100 digits.
-- Löwner sizes: the published table tested steps of 5. Read pivot by pivot, the exact first failing sizes are N* = 105, 106 and 107 at the three centres.
+- Löwner sizes: the published table tested steps of 5. Read pivot by pivot, the exact first failing sizes are N* = 105, 106 and 107 at the three centres (confirmed at 320 digits).
+- The v5.2 PDFs are built: Reader 101 pages, Dossier 287; interface check 74/74. All 22 page anchors the site uses keep their v5.1 pages.
 - "No finite rung prefix decides RH" was an overclaim and is replaced.
 
 **Deep history.**

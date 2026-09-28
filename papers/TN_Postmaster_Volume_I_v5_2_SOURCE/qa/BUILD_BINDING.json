@@ -1,0 +1,87 @@
+[
+  {
+    "tag": "reading",
+    "stem": "TN_Postmaster_Volume_I_v5_2_READING_VOLUME",
+    "source": "src/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.md",
+    "src_sha256": "26cd4f4a382466b54a700fa93fba695d21bcb49dae080a9907f3d3fe0870525a",
+    "preamble_sha256": "9bbb480763528969609ca022b06bf07e9d5ac15214ed53b643cf1f229a25ec26",
+    "tex_sha256": "3ae87cf7a8c1534f5b84547167257626906c28dfab2474fa687dff9113b7a915",
+    "body_pages": 101,
+    "pages": 101,
+    "body_pdf_sha256": "78a281a3e0d272291a59a668dc873cf1f78c11e61f7d1851bcde01656b306647",
+    "pdf_sha256": "78a281a3e0d272291a59a668dc873cf1f78c11e61f7d1851bcde01656b306647",
+    "passes": [
+      {
+        "kind": "draft",
+        "log": "tmp/reading/draft0.log",
+        "seconds": 2.02,
+        "state": "3bc271067980f46b4e5b6f237027886181c1c9767488c2fbc2953a9a2e247b7c"
+      },
+      {
+        "kind": "draft",
+        "log": "tmp/reading/draft1.log",
+        "seconds": 2.01,
+        "state": "28067515a32832253e3f7a12639d5cf06ce8802a92d7c0c01cecc76bf35e5ae1"
+      },
+      {
+        "kind": "draft",
+        "log": "tmp/reading/draft2.log",
+        "seconds": 2.13,
+        "state": "28067515a32832253e3f7a12639d5cf06ce8802a92d7c0c01cecc76bf35e5ae1"
+      },
+      {
+        "kind": "final",
+        "log": "tmp/reading/final.log",
+        "seconds": 8.19
+      }
+    ],
+    "undefined_refs": 0,
+    "missing_characters": 0,
+    "overfull_boxes_pt": [],
+    "overfull_over_30pt": [],
+    "pdf": "output/pdf/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf"
+  },
+  {
+    "tag": "dossier",
+    "stem": "TN_Postmaster_Volume_I_v5_2_TECHNICAL_DOSSIER",
+    "source": "src/TN_Postmaster_Volume_I_v5_2_TECHNICAL_DOSSIER.md",
+    "src_sha256": "dd417563dac47bcf2650160af582abad1e0969c2cbeeaff17a3b1ff0d2208845",
+    "preamble_sha256": "63ad682199947cbe7a262ae20a49afe44c2e7eb15a1705b86a2468bbbe411bc2",
+    "tex_sha256": "a578609db084065d0bb97e5acb18ee48275214962ce6bf2d2f248831c5fb51aa",
+    "body_pages": 284,
+    "pages": 287,
+    "body_pdf_sha256": "a7278a4b0bc4f3f8d4ddec95deef5e0661ce26a739deb6cf68181ac8a63ac029",
+    "pdf_sha256": "f8c1b42c3a985efcdaf3fa682adbd1c9523d244c7cd8aa803ee5985b8cb02c41",
+    "passes": [
+      {
+        "kind": "draft",
+        "log": "tmp/dossier/draft0.log",
+        "seconds": 3.54,
+        "state": "da59dfaaf90a3b9c40032f5f4a3289abaa7ac9997250d23815b9324eb11792fa"
+      },
+      {
+        "kind": "draft",
+        "log": "tmp/dossier/draft1.log",
+        "seconds": 3.64,
+        "state": "5ce3676aa27926dfd723227b615252c2d27860f9fd84e25b1a419e8b0dac31df"
+      },
+      {
+        "kind": "draft",
+        "log": "tmp/dossier/draft2.log",
+        "seconds": 3.43,
+        "state": "5ce3676aa27926dfd723227b615252c2d27860f9fd84e25b1a419e8b0dac31df"
+      },
+      {
+        "kind": "final",
+        "log": "tmp/dossier/final.log",
+        "seconds": 19.31
+      }
+    ],
+    "undefined_refs": 0,
+    "missing_characters": 0,
+    "overfull_boxes_pt": [],
+    "overfull_over_30pt": [],
+    "pdf": "output/pdf/TN_Postmaster_Volume_I_v5_2_TECHNICAL_DOSSIER.pdf",
+    "facsimile_sha256": "d222326cf9b8bd8613a891c1dfc6077686db28351ae926023a25c4b458b7cf21"
+  }
+]

@@ -198,6 +198,9 @@ So a three-live loop exists if and only if some packet-form state never loses a 
 | 10 | 12,096,000 | 0 | 11 |
 | 11 | 119,750,400 | 0 | 15 |
 | 12 | 1,153,152,000 | **1,145,664**: 1,036,800 of length 9 and 108,864 of length 60 | 20 |
+| 13 | 12,454,041,600 | 0 | 26 |
+
+The next odd size, n = 13, again has no three-live loop anywhere in the state graph: all 12,454,041,600 packet-form states lose a queue within 26 turns. So loops keeping three queues live occur at 12 cards, but not at 13 or at 11 or fewer.
 
 At n = 12, the 15,863,040 packet-form states that lie on loops are exactly 9 × 1,036,800 + 60 × 108,864, so the loop count balances. Each loop is counted once, at its lexicographically smallest state. The program classifies every state as losing a queue, lying on a loop, or entering one, using Brent's cycle detection (`independent/live3_loops.c`).
 - **Independent returns.** PP281 ran an unrestricted census of every three-live state with the global maximum in queue 0. That is an exact one-third reduction by seat rotation, and it uses no shape assumption. It covers n ≤ 11 (1,796,256,000 states at n = 11), finds no loop, and gives worst exit times 2, 4, 5, 10, 11, 15 and 19 for n = 5–11. It also reproduces the packet-form counts above for n ≤ 8 from its own shape predicate. The complete census of `census2.c` (every state, three queues, n ≤ 11) is a third method.
@@ -250,7 +253,7 @@ Three exact facts narrow any three-live loop. None of them is a proof that such 
 | Odd-deck War cycles alternate winners | published (Spivey 2010, Thm 6); COMPUTED for n ≤ 11 |
 | In every loop each live queue's maximum card never loses; three-live loops have balanced winners | PROVED |
 | Every state on a three-live loop is in packet form; packet form is preserved while three queues live | PROVED (§2) |
-| No loop in the state graph keeps three queues live | COMPUTED for n ≤ 11 (two methods; PP281 second seat); **false at n = 12** (CERT: 1,145,664 loops, of lengths 9 and 60; PP282 witness) |
+| No loop in the state graph keeps three queues live | COMPUTED for n ≤ 11 (two methods; PP281 second seat) and for n = 13; **false at n = 12** (CERT: 1,145,664 loops, of lengths 9 and 60; PP282 witness); OPEN for n ≥ 14 |
 | Pairwise congruence of the three sizes mod 3 is invariant while three are live | PROVED |
 | No three-live loop is reachable from an equal deal | COMPUTED through n = 12 (two methods); OPEN at 51 |
 | Four-player rules; the count \|H_t(x)\| | OPEN |

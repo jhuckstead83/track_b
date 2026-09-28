@@ -34,7 +34,7 @@
     {
       "path": "/research/postmaster/",
       "file": "research/postmaster/index.html",
-      "title": "Triangular-n Postmaster: v5.1 web reading route; RH OPEN"
+      "title": "Triangular-n Postmaster: v5.2 web reading route; RH OPEN"
     },
     {
       "path": "/research/line-game/",
@@ -529,12 +529,42 @@
       "doi": "10.5281/zenodo.21444929"
     },
     {
+      "path": "/papers/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf",
+      "file": "papers/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf",
+      "title": "Triangular-n Postmaster: Reading Volume I v5.2",
+      "date": "2026-09",
+      "pages": 101,
+      "status": "RH OPEN",
+      "concept_doi": "10.5281/zenodo.21968915"
+    },
+    {
+      "path": "/papers/TN_Postmaster_Volume_I_v5_2_TECHNICAL_DOSSIER.pdf",
+      "file": "papers/TN_Postmaster_Volume_I_v5_2_TECHNICAL_DOSSIER.pdf",
+      "title": "Triangular-n Postmaster: Technical Dossier v5.2",
+      "date": "2026-09",
+      "pages": 287,
+      "status": "RH OPEN",
+      "concept_doi": "10.5281/zenodo.21968915"
+    },
+    {
+      "path": "/papers/TN_Postmaster_Volume_I_v5_2_SOURCE.zip",
+      "file": "papers/TN_Postmaster_Volume_I_v5_2_SOURCE.zip",
+      "title": "Triangular-n Postmaster v5.2 source edition (Markdown masters, build scripts, interface check, evidence)",
+      "status": "public source package"
+    },
+    {
+      "path": "/papers/anchors_v5_2.json",
+      "file": "papers/anchors_v5_2.json",
+      "title": "Named page anchors for the v5.2 volumes (22 targets)",
+      "status": "public data"
+    },
+    {
       "path": "/papers/TN_Postmaster_Volume_I_v5_1_READING_VOLUME.pdf",
       "file": "papers/TN_Postmaster_Volume_I_v5_1_READING_VOLUME.pdf",
       "title": "Triangular-n Postmaster: Reading Volume I v5.1",
       "date": "2026-09",
       "pages": 101,
-      "status": "RH OPEN",
+      "status": "previous local edition; RH OPEN",
       "concept_doi": "10.5281/zenodo.21968915"
     },
     {
@@ -543,7 +573,7 @@
       "title": "Triangular-n Postmaster: Technical Dossier v5.1",
       "date": "2026-09",
       "pages": 281,
-      "status": "RH OPEN",
+      "status": "previous local edition; RH OPEN",
       "concept_doi": "10.5281/zenodo.21968915"
     },
     {
@@ -576,7 +606,7 @@
   "notes": [
     "A fresh public overnight feed with usable coverage automatically drives teal overnight BPS mode; inactive, rejected, error, or data older than 20 minutes fails closed to the regular snapshot.",
     "Charts over time is a first-class companion to the current 4x4 grid.",
-    "The frozen local Postmaster edition is v5.1: a 101-page Reading Volume, 281-page Technical Dossier and web reading route. This edition does not yet have its own Zenodo deposit. RH remains open.",
+    "The local Postmaster edition is v5.2: a 101-page Reading Volume, 287-page Technical Dossier, source edition and web reading route; v5.1 stays hosted as the previous edition. This edition does not yet have its own Zenodo deposit. RH remains open.",
     "The research catalogue lists 61 repository records, not 61 distinct works. The Line Game records 20792999 and 22851517 are linked as editions of the same dual-titled work.",
     "The sitemap includes stable public pages rather than every data artifact.",
     "v1.13.6 distinguishes the evolving Line Game live paper from its maintained v7.2 return edition and reconnects C-Geometry as a first-class interactive paper.",

@@ -1,0 +1,42 @@
+{
+  "tag": "reading",
+  "stem": "TN_Postmaster_Volume_I_v5_2_READING_VOLUME",
+  "source": "src/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.md",
+  "src_sha256": "26cd4f4a382466b54a700fa93fba695d21bcb49dae080a9907f3d3fe0870525a",
+  "preamble_sha256": "9bbb480763528969609ca022b06bf07e9d5ac15214ed53b643cf1f229a25ec26",
+  "tex_sha256": "3ae87cf7a8c1534f5b84547167257626906c28dfab2474fa687dff9113b7a915",
+  "body_pages": 101,
+  "pages": 101,
+  "body_pdf_sha256": "78a281a3e0d272291a59a668dc873cf1f78c11e61f7d1851bcde01656b306647",
+  "pdf_sha256": "78a281a3e0d272291a59a668dc873cf1f78c11e61f7d1851bcde01656b306647",
+  "passes": [
+    {
+      "kind": "draft",
+      "log": "tmp/reading/draft0.log",
+      "seconds": 2.02,
+      "state": "3bc271067980f46b4e5b6f237027886181c1c9767488c2fbc2953a9a2e247b7c"
+    },
+    {
+      "kind": "draft",
+      "log": "tmp/reading/draft1.log",
+      "seconds": 2.01,
+      "state": "28067515a32832253e3f7a12639d5cf06ce8802a92d7c0c01cecc76bf35e5ae1"
+    },
+    {
+      "kind": "draft",
+      "log": "tmp/reading/draft2.log",
+      "seconds": 2.13,
+      "state": "28067515a32832253e3f7a12639d5cf06ce8802a92d7c0c01cecc76bf35e5ae1"
+    },
+    {
+      "kind": "final",
+      "log": "tmp/reading/final.log",
+      "seconds": 8.19
+    }
+  ],
+  "undefined_refs": 0,
+  "missing_characters": 0,
+  "overfull_boxes_pt": [],
+  "overfull_over_30pt": [],
+  "pdf": "output/pdf/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf"
+}

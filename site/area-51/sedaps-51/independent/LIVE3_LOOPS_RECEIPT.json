@@ -127,6 +127,66 @@
      }
     }
    ]
+  },
+  {
+   "n": 13,
+   "packetFormStates": 12454041600,
+   "distinctThreeLiveLoops": 0,
+   "maxStepsToLoseAQueue": 26,
+   "shards": [
+    {
+     "n": 13,
+     "shard": 0,
+     "nshards": 4,
+     "patterns": 17,
+     "packetFormStates": 3151948800,
+     "statesOnThreeLiveLoops": 0,
+     "statesEnteringALoop": 0,
+     "distinctThreeLiveLoops": 0,
+     "capped": 0,
+     "maxStepsToLoseAQueue": 26,
+     "loopLengths": {}
+    },
+    {
+     "n": 13,
+     "shard": 1,
+     "nshards": 4,
+     "patterns": 17,
+     "packetFormStates": 3151948800,
+     "statesOnThreeLiveLoops": 0,
+     "statesEnteringALoop": 0,
+     "distinctThreeLiveLoops": 0,
+     "capped": 0,
+     "maxStepsToLoseAQueue": 26,
+     "loopLengths": {}
+    },
+    {
+     "n": 13,
+     "shard": 2,
+     "nshards": 4,
+     "patterns": 16,
+     "packetFormStates": 3075072000,
+     "statesOnThreeLiveLoops": 0,
+     "statesEnteringALoop": 0,
+     "distinctThreeLiveLoops": 0,
+     "capped": 0,
+     "maxStepsToLoseAQueue": 26,
+     "loopLengths": {}
+    },
+    {
+     "n": 13,
+     "shard": 3,
+     "nshards": 4,
+     "patterns": 16,
+     "packetFormStates": 3075072000,
+     "statesOnThreeLiveLoops": 0,
+     "statesEnteringALoop": 0,
+     "distinctThreeLiveLoops": 0,
+     "capped": 0,
+     "maxStepsToLoseAQueue": 26,
+     "loopLengths": {}
+    }
+   ]
   }
  ],
  "loopReplays": {

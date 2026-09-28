@@ -21,8 +21,14 @@
     }
   },
   "build": {
-    "READING": "not built in this run",
-    "DOSSIER": "not built in this run"
+    "READING": {
+      "pages": 101,
+      "body_pages": 101
+    },
+    "DOSSIER": {
+      "pages": 287,
+      "body_pages": 284
+    }
   },
   "checks": [
     {
@@ -339,9 +345,40 @@
     {
       "name": "row 10 is computed by zero10.py with the exact kernel within +-40, scanning +-3",
       "pass": true
+    },
+    {
+      "name": "READING: built from the v5.2 master",
+      "pass": true
+    },
+    {
+      "name": "READING: rebuilt without undefined references or missing characters",
+      "pass": true
+    },
+    {
+      "name": "READING: no overfull box over 30pt",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "READING: page ceiling 101",
+      "pass": true,
+      "detail": 101
+    },
+    {
+      "name": "DOSSIER: built from the v5.2 master",
+      "pass": true
+    },
+    {
+      "name": "DOSSIER: rebuilt without undefined references or missing characters",
+      "pass": true
+    },
+    {
+      "name": "DOSSIER: no overfull box over 30pt",
+      "pass": true,
+      "detail": []
     }
   ],
-  "passed": 67,
+  "passed": 74,
   "failed": [],
   "status": "PASS"
 }

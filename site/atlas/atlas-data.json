@@ -1,0 +1,769 @@
+{
+  "updated": "2026-09-28",
+  "topics": {
+    "analytic": "Analysis & current research",
+    "number": "Fractions & polar shells",
+    "geometry": "Geometry & coordinates",
+    "measure": "Waves & physical models",
+    "origin": "Meaning & reconstruction",
+    "markets": "Finance"
+  },
+  "nodes": [
+    {
+      "id": "line-game",
+      "record_id": "22851517",
+      "earlier_record_id": "20792999",
+      "label": "The Line Game | Surprise Is Not Meaning",
+      "short": "The Line Game",
+      "kind": "paper",
+      "domain": "origin",
+      "topic_label": "Meaning & reconstruction",
+      "desc": "Version 7.2 pairs a nine-page paper with Invariant: an exact same-profile swap, reversible relabeling, an observation counter and a finite continuation certificate.",
+      "status": "Publication route · v7.2",
+      "fence": "The card certificate belongs to a complete finite state and a declared rule. It does not establish an RH-tail relation; RH remains open.",
+      "url": "/research/line-game/",
+      "source_url": "/research/line-game/The_Line_Game_Surprise_Is_Not_Meaning_v7_2.pdf",
+      "source_label": "Paper v7.2 and Invariant · DOI 10.5281/zenodo.22851517",
+      "connections": [
+        {
+          "node": "message",
+          "label": "Exact recovery through a shared convention",
+          "type": "companion",
+          "why": "Both demonstrations separate an exact recovered address or record from the convention a reader uses to interpret it.",
+          "source": "/research/line-game/"
+        },
+        {
+          "node": "postmaster",
+          "label": "Folded coordinates and a retained weight",
+          "type": "comparison",
+          "why": "The paper uses the Postmaster fold while making the boundary explicit: a scalar weight can leave distinctions unresolved.",
+          "source": "/research/line-game/The_Line_Game_Surprise_Is_Not_Meaning_v7_2.pdf"
+        },
+        {
+          "node": "phase",
+          "label": "A retained record available later",
+          "type": "comparison",
+          "why": "Both works ask what an observer retains. The Line Game's counter concerns declared representation records, not a physical energy measurement.",
+          "source": "/research/line-game/"
+        }
+      ]
+    },
+    {
+      "id": "postmaster",
+      "label": "Triangular-n Postmaster",
+      "short": "Triangular-n Postmaster",
+      "kind": "paper",
+      "domain": "analytic",
+      "topic_label": "Analysis & current research",
+      "desc": "The v5.2 website edition follows the triangular primitive through the completed zeta source, the Widder ladder, source energy and the explicitly open all-order frontier. The HTML route is the approachable layer; the Reading Volume and Technical Dossier supply the full argument.",
+      "status": "Website edition · v5.2",
+      "fence": "The Riemann hypothesis remains open. Certified finite signs and exact equivalences are not an all-order source proof.",
+      "url": "/research/postmaster/",
+      "source_url": "/papers/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf",
+      "source_label": "Reading Volume v5.2 · 101 pages · September 2026",
+      "connections": [
+        {
+          "node": "casimir",
+          "label": "Model versus completed source",
+          "type": "comparison",
+          "why": "Sections R6A and R17 distinguish the positive triangular model from the actual completed zeta source. A common coordinate does not identify their spectra.",
+          "source": "/papers/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf#page=29"
+        },
+        {
+          "node": "laguerre",
+          "label": "Cited analytic companion",
+          "type": "lineage",
+          "why": "Reading Volume v5.2 cites the Laguerre paper as reference 11. Citation is not a transfer of its total-variation result to the full source estimate.",
+          "source": "/papers/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf#page=95"
+        },
+        {
+          "node": "union",
+          "label": "Earlier and current reading entries",
+          "type": "lineage",
+          "why": "The August synthesis remains available as publication history. Read v5.2 for the website's current route and status boundary.",
+          "source": "/research/postmaster/"
+        }
+      ],
+      "local_pdf": "/papers/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf",
+      "dossier_pdf": "/papers/TN_Postmaster_Volume_I_v5_2_TECHNICAL_DOSSIER.pdf",
+      "concept_doi": "10.5281/zenodo.21968915",
+      "section_links": [
+        [
+          "Start here",
+          "/papers/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf#page=5"
+        ],
+        [
+          "R12: controlling rung status",
+          "/papers/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf#page=47"
+        ],
+        [
+          "R23: the unsupported source estimates",
+          "/papers/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf#page=89"
+        ]
+      ]
+    },
+    {
+      "id": "message",
+      "label": "A Message Hidden as an Address",
+      "kind": "paper",
+      "domain": "origin",
+      "desc": "A hand-computable demonstration: the theorem recovers the address, ASCII supplies a public convention, and only the reader supplies meaning.",
+      "url": "https://doi.org/10.5281/zenodo.20683063",
+      "record_id": "20683063",
+      "topic_label": "Meaning & reconstruction",
+      "source_label": "Website entry",
+      "source_url": "https://zenodo.org/records/20683063",
+      "fence": "A visualization or a shared coordinate does not, by itself, establish a new theorem or transfer a claim between subjects.",
+      "status": "Indexed paper",
+      "connections": [
+        {
+          "node": "ascii",
+          "label": "An address and its readout",
+          "type": "companion",
+          "why": "The theorem recovers an address; ASCII provides a reading convention rather than the meaning of a message.",
+          "source": "https://zenodo.org/records/20683063"
+        },
+        {
+          "node": "tfg",
+          "label": "An address demonstration",
+          "type": "coordinate",
+          "why": "The demonstration uses the grid's inverse-address rule. A readable message is a separate convention.",
+          "source": "https://zenodo.org/records/20683063"
+        }
+      ],
+      "short": "A Message Hidden as an Address"
+    },
+    {
+      "id": "phase",
+      "label": "The Phase-Change Ledger",
+      "kind": "paper",
+      "domain": "measure",
+      "desc": "A finite physical observer architecture coupling phase change, memory, reusable reservoir, pressure control, and apparatus cost. It is shown without an earned mathematical edge here.",
+      "url": "https://doi.org/10.5281/zenodo.21274917",
+      "record_id": "21274917",
+      "topic_label": "Waves & physical models",
+      "source_label": "Website entry",
+      "source_url": "https://zenodo.org/records/21274917",
+      "fence": "A visualization or a shared coordinate does not, by itself, establish a new theorem or transfer a claim between subjects.",
+      "status": "Indexed paper",
+      "connections": [],
+      "short": "The Phase-Change Ledger"
+    },
+    {
+      "id": "tfg",
+      "label": "Divisor-Band Bijections & Totient Shells",
+      "kind": "paper",
+      "domain": "number",
+      "desc": "The arithmetic parent. Reduction supplies the denominator shell; the inverse address law recovers location; the totient counts shell population.",
+      "url": "https://doi.org/10.5281/zenodo.21440877",
+      "record_id": "21440877",
+      "topic_label": "Fractions & polar shells",
+      "source_label": "Website entry",
+      "source_url": "https://zenodo.org/records/21440877",
+      "fence": "A visualization or a shared coordinate does not, by itself, establish a new theorem or transfer a claim between subjects.",
+      "status": "Indexed paper",
+      "connections": [
+        {
+          "node": "polarPaper",
+          "label": "Reduction and shell count",
+          "type": "exact",
+          "why": "Reduction supplies the denominator; the polar shell has phi(n) reduced addresses. This is the stated denominator-collapse connection.",
+          "source": "https://zenodo.org/records/21280464"
+        },
+        {
+          "node": "cgeom",
+          "label": "Address inheritance only",
+          "type": "coordinate",
+          "why": "C-Geometry inherits the triangular address. The parent's divisor-band and totient theorems are not imported into the new geometric theorem line.",
+          "source": "https://zenodo.org/records/21444929"
+        },
+        {
+          "node": "message",
+          "label": "An address demonstration",
+          "type": "coordinate",
+          "why": "The demonstration uses the grid's inverse-address rule. A readable message is a separate convention.",
+          "source": "https://zenodo.org/records/20683063"
+        }
+      ],
+      "short": "Divisor Bands & Totient Shells"
+    },
+    {
+      "id": "polarPaper",
+      "label": "The Polar Shell Renderer",
+      "kind": "paper",
+      "domain": "number",
+      "desc": "Equal-area denominator shells for reduced fractions and primitive roots of unity. Each reduced k/n sits at radius √n, angle 2πk/n.",
+      "url": "/papers/polar_shell_renderer.pdf",
+      "record_id": "21280464",
+      "topic_label": "Fractions & polar shells",
+      "source_label": "Website entry",
+      "source_url": "https://zenodo.org/records/21280464",
+      "fence": "A visualization or a shared coordinate does not, by itself, establish a new theorem or transfer a claim between subjects.",
+      "status": "Indexed paper",
+      "connections": [
+        {
+          "node": "tfg",
+          "label": "Reduction and shell count",
+          "type": "exact",
+          "why": "Reduction supplies the denominator; the polar shell has phi(n) reduced addresses. This is the stated denominator-collapse connection.",
+          "source": "https://zenodo.org/records/21280464"
+        },
+        {
+          "node": "polarTool",
+          "label": "Paper and interactive object",
+          "type": "companion",
+          "why": "The renderer implements the paper's radius, angle and equal-area-by-denominator convention.",
+          "source": "/papers/polar_shell_renderer.pdf"
+        },
+        {
+          "node": "reflection",
+          "label": "The reflection in two renderings",
+          "type": "coordinate",
+          "why": "The terminal-fold paper identifies coordinate exchange in the pair plane with conjugation in its polar convention. Its additional results have their own hypotheses.",
+          "source": "https://zenodo.org/records/21574639"
+        }
+      ],
+      "short": "Polar Shell Paper"
+    },
+    {
+      "id": "polarTool",
+      "label": "Polar Shell Renderer",
+      "kind": "tool",
+      "domain": "number",
+      "desc": "The interactive live edition of the paper: place, count, and inspect the equal-area annuli.",
+      "url": "/tools/polar_shell_renderer.html",
+      "topic_label": "Fractions & polar shells",
+      "source_label": "Website entry",
+      "source_url": "/tools/polar_shell_renderer.html",
+      "fence": "A visualization or a shared coordinate does not, by itself, establish a new theorem or transfer a claim between subjects.",
+      "status": "Interactive tool",
+      "connections": [
+        {
+          "node": "polarPaper",
+          "label": "Paper and interactive object",
+          "type": "companion",
+          "why": "The renderer implements the paper's radius, angle and equal-area-by-denominator convention.",
+          "source": "/papers/polar_shell_renderer.pdf"
+        }
+      ],
+      "short": "Polar Shell Renderer"
+    },
+    {
+      "id": "zeta",
+      "label": "Annular Shell Isolation Near Zeta Zeros",
+      "kind": "paper",
+      "domain": "analytic",
+      "desc": "A different shell law: local zero-centered level sets contract as m increases. Same metaphor, different generator and theorem family.",
+      "url": "/papers/annular_shell_isolation.pdf",
+      "record_id": "20564213",
+      "topic_label": "Analysis & current research",
+      "source_label": "Website entry",
+      "source_url": "https://zenodo.org/records/20564213",
+      "fence": "A visualization or a shared coordinate does not, by itself, establish a new theorem or transfer a claim between subjects.",
+      "status": "Indexed paper",
+      "connections": [],
+      "short": "Annular Shell Isolation Near Zeta Zeros"
+    },
+    {
+      "id": "cgeom",
+      "label": "C-Geometry: Triangular Addressing",
+      "kind": "paper",
+      "domain": "geometry",
+      "desc": "Null coordinates, rectangle similarity, reciprocal-metallic locks, Pell and tangent-wing results in a scale-covariant plane.",
+      "url": "/tools/triangular_addressed_c_geometry/",
+      "record_id": "21444929",
+      "topic_label": "Geometry & coordinates",
+      "source_label": "Website entry",
+      "source_url": "https://zenodo.org/records/21444929",
+      "fence": "A visualization or a shared coordinate does not, by itself, establish a new theorem or transfer a claim between subjects.",
+      "status": "Indexed paper",
+      "connections": [
+        {
+          "node": "tfg",
+          "label": "Address inheritance only",
+          "type": "coordinate",
+          "why": "C-Geometry inherits the triangular address. The parent's divisor-band and totient theorems are not imported into the new geometric theorem line.",
+          "source": "https://zenodo.org/records/21444929"
+        },
+        {
+          "node": "vorticity",
+          "label": "A null-coordinate comparison",
+          "type": "comparison",
+          "why": "Both descriptions use a null-coordinate chart. The fluid paper adds the Cauchy vorticity formula; a geometric chart is not an Euler theorem.",
+          "source": "https://zenodo.org/records/21450156"
+        }
+      ],
+      "short": "C-Geometry"
+    },
+    {
+      "id": "showpiece",
+      "label": "Rational Address Showpiece",
+      "kind": "tool",
+      "domain": "geometry",
+      "desc": "A centered rational chamber inside the 1:2:3 sphere frame, with ray-snap address readout and live divisor-band accounting.",
+      "url": "/tools/rational_address_showpiece/",
+      "topic_label": "Geometry & coordinates",
+      "source_label": "Website entry",
+      "source_url": "/tools/rational_address_showpiece/",
+      "fence": "A visualization or a shared coordinate does not, by itself, establish a new theorem or transfer a claim between subjects.",
+      "status": "Interactive tool",
+      "connections": [],
+      "short": "Rational Address Showpiece"
+    },
+    {
+      "id": "chamber",
+      "label": "Centered Rational Chamber",
+      "kind": "tool",
+      "domain": "geometry",
+      "desc": "GCD shell partition, Jordan-totient conservation, convention toggles, six-cardinal projection, and a null baseline.",
+      "url": "/tools/centered_rational_chamber/",
+      "topic_label": "Geometry & coordinates",
+      "source_label": "Website entry",
+      "source_url": "/tools/centered_rational_chamber/",
+      "fence": "A visualization or a shared coordinate does not, by itself, establish a new theorem or transfer a claim between subjects.",
+      "status": "Interactive tool",
+      "connections": [],
+      "short": "Centered Rational Chamber"
+    },
+    {
+      "id": "picone",
+      "label": "Six Cardinal Picone",
+      "kind": "tool",
+      "domain": "geometry",
+      "desc": "The √2/Pell cone-tip cascade and √3 sphere–cube–sphere recursion share a center but stay distinct mechanisms.",
+      "url": "/tools/six_cardinal_picone.html",
+      "topic_label": "Geometry & coordinates",
+      "source_label": "Website entry",
+      "source_url": "/tools/six_cardinal_picone.html",
+      "fence": "A visualization or a shared coordinate does not, by itself, establish a new theorem or transfer a claim between subjects.",
+      "status": "Interactive tool",
+      "connections": [],
+      "short": "Six Cardinal Picone"
+    },
+    {
+      "id": "ledgerA",
+      "label": "From Measure to Flux",
+      "kind": "paper",
+      "domain": "measure",
+      "desc": "Exact boundary scattering and named energy channels — the measure-to-flux half of the pair.",
+      "url": "https://doi.org/10.5281/zenodo.21444339",
+      "record_id": "21444339",
+      "topic_label": "Waves & physical models",
+      "source_label": "Website entry",
+      "source_url": "https://zenodo.org/records/21444339",
+      "fence": "A visualization or a shared coordinate does not, by itself, establish a new theorem or transfer a claim between subjects.",
+      "status": "Indexed paper",
+      "connections": [
+        {
+          "node": "ledgerTool",
+          "label": "Paper and evidence companion",
+          "type": "companion",
+          "why": "The existing companion exposes the boundary-scattering model, named claims and receipt-bound evidence.",
+          "source": "/tools/finite_observer_ledger/"
+        }
+      ],
+      "short": "From Measure to Flux"
+    },
+    {
+      "id": "ledgerB",
+      "label": "The Finite-Observer Ledger",
+      "kind": "paper",
+      "domain": "measure",
+      "desc": "Matched-pair falsification, claim manifests, receipt-bound figures, and a certification wall.",
+      "url": "/tools/finite_observer_ledger/",
+      "topic_label": "Waves & physical models",
+      "source_label": "Website entry",
+      "source_url": "/tools/finite_observer_ledger/",
+      "fence": "A visualization or a shared coordinate does not, by itself, establish a new theorem or transfer a claim between subjects.",
+      "status": "Indexed paper",
+      "connections": [],
+      "short": "The Finite-Observer Ledger"
+    },
+    {
+      "id": "ledgerTool",
+      "label": "Finite-Observer Ledger",
+      "kind": "tool",
+      "domain": "measure",
+      "desc": "Interactive evidence companion. Visualization exposes evidence without creating evidentiary status.",
+      "url": "/tools/finite_observer_ledger/",
+      "topic_label": "Waves & physical models",
+      "source_label": "Website entry",
+      "source_url": "/tools/finite_observer_ledger/",
+      "fence": "A visualization or a shared coordinate does not, by itself, establish a new theorem or transfer a claim between subjects.",
+      "status": "Interactive tool",
+      "connections": [
+        {
+          "node": "ledgerA",
+          "label": "Paper and evidence companion",
+          "type": "companion",
+          "why": "The existing companion exposes the boundary-scattering model, named claims and receipt-bound evidence.",
+          "source": "/tools/finite_observer_ledger/"
+        }
+      ],
+      "short": "Wave Evidence Companion"
+    },
+    {
+      "id": "finance",
+      "label": "Φ Finance Weather",
+      "kind": "tool",
+      "domain": "markets",
+      "fence": "market_truth: NOT_PROVEN_BY_RECEIPT. trade_permission: NO. Finance is a separate application, not evidence for the mathematics or a trading instruction.",
+      "desc": "A live 4×4 chamber grid weighting delayed public market data. Read as weather, not trade instruction.",
+      "url": "/finance/live.html",
+      "topic_label": "Finance",
+      "source_label": "Website entry",
+      "source_url": "/finance/live.html",
+      "status": "Descriptive public data",
+      "connections": [],
+      "short": "Φ Finance Weather"
+    },
+    {
+      "id": "ascii",
+      "label": "ASCII Bridge",
+      "kind": "tool",
+      "domain": "origin",
+      "desc": "The theorem recovers an address; ASCII supplies a public readout convention.",
+      "url": "/tools/01_bridge_ASCII.html",
+      "topic_label": "Meaning & reconstruction",
+      "source_label": "Website entry",
+      "source_url": "/tools/01_bridge_ASCII.html",
+      "fence": "A visualization or a shared coordinate does not, by itself, establish a new theorem or transfer a claim between subjects.",
+      "status": "Interactive tool",
+      "connections": [
+        {
+          "node": "message",
+          "label": "An address and its readout",
+          "type": "companion",
+          "why": "The theorem recovers an address; ASCII provides a reading convention rather than the meaning of a message.",
+          "source": "https://zenodo.org/records/20683063"
+        }
+      ],
+      "short": "ASCII Bridge"
+    },
+    {
+      "id": "utf8",
+      "label": "UTF-8 Alpha",
+      "kind": "tool",
+      "domain": "origin",
+      "desc": "A wider byte-kernel bridge, including the early “Graphix — the data, drawn” mini-plot.",
+      "url": "/tools/02_utf8_alpha.html",
+      "topic_label": "Meaning & reconstruction",
+      "source_label": "Website entry",
+      "source_url": "/tools/02_utf8_alpha.html",
+      "fence": "A visualization or a shared coordinate does not, by itself, establish a new theorem or transfer a claim between subjects.",
+      "status": "Interactive tool",
+      "connections": [],
+      "short": "UTF-8 Alpha"
+    },
+    {
+      "id": "makers",
+      "label": "Maker's Mark",
+      "kind": "tool",
+      "domain": "origin",
+      "desc": "A public 337-fraction reconstruction challenge, preserved from the site's origin story.",
+      "url": "/tools/makers-mark.html",
+      "topic_label": "Meaning & reconstruction",
+      "source_label": "Website entry",
+      "source_url": "/tools/makers-mark.html",
+      "fence": "A visualization or a shared coordinate does not, by itself, establish a new theorem or transfer a claim between subjects.",
+      "status": "Interactive tool",
+      "connections": [],
+      "short": "Maker's Mark"
+    },
+    {
+      "id": "forge",
+      "label": "Forge OS v16.3",
+      "kind": "tool",
+      "domain": "origin",
+      "desc": "An offline just-intonation sequencer and synth built from rational harmonic ratios.",
+      "url": "/tools/forge_os_v16.3.html",
+      "topic_label": "Meaning & reconstruction",
+      "source_label": "Website entry",
+      "source_url": "/tools/forge_os_v16.3.html",
+      "fence": "A visualization or a shared coordinate does not, by itself, establish a new theorem or transfer a claim between subjects.",
+      "status": "Interactive tool",
+      "connections": [],
+      "short": "Forge OS v16.3"
+    },
+    {
+      "id": "union",
+      "record_id": "21968858",
+      "label": "Postmaster: Definitive Master Union",
+      "short": "Postmaster Union",
+      "kind": "paper",
+      "domain": "analytic",
+      "topic_label": "Analysis & current research",
+      "desc": "An earlier Postmaster synthesis preserving source layers, arithmetic gates and an audited research ledger. Read for the development trail; use v5.2 for the current reading route and status table.",
+      "status": "Earlier volume",
+      "fence": "An earlier synthesis in the publication trail, not the current controlling status table.",
+      "url": "https://zenodo.org/records/21968858",
+      "source_url": "https://zenodo.org/records/21968858",
+      "source_label": "Zenodo record · August 16, 2026",
+      "connections": [
+        {
+          "node": "master",
+          "label": "Earlier source layers",
+          "type": "lineage",
+          "why": "The Master Union listing explicitly retains the Triangular n Master Volume among its source layers. This is publication lineage.",
+          "source": "https://zenodo.org/records/21968858"
+        },
+        {
+          "node": "postmaster",
+          "label": "Earlier and current reading entries",
+          "type": "lineage",
+          "why": "The August synthesis remains available as publication history. Read v5.2 for the website's current route and status boundary.",
+          "source": "/research/postmaster/"
+        }
+      ]
+    },
+    {
+      "id": "master",
+      "record_id": "21915297",
+      "label": "Triangular n Master Volume",
+      "short": "Triangular n Master",
+      "kind": "paper",
+      "domain": "analytic",
+      "topic_label": "Analysis & current research",
+      "desc": "A master-volume stage joining counting and spectral constructions with reciprocal coordinates and finite-resource comparisons. It separates exact bridges from unproved positivity targets.",
+      "status": "Earlier volume",
+      "fence": "Exact bridges and comparison constructions do not supply the missing global positivity theorem.",
+      "url": "https://zenodo.org/records/21915297",
+      "source_url": "https://zenodo.org/records/21915297",
+      "source_label": "Zenodo record · August 13, 2026",
+      "connections": [
+        {
+          "node": "union",
+          "label": "Earlier source layers",
+          "type": "lineage",
+          "why": "The Master Union listing explicitly retains the Triangular n Master Volume among its source layers. This is publication lineage.",
+          "source": "https://zenodo.org/records/21968858"
+        }
+      ]
+    },
+    {
+      "id": "casimir",
+      "record_id": "21874657",
+      "label": "Counting & the Spherical Casimir Spectrum",
+      "short": "Casimir Spectrum",
+      "kind": "paper",
+      "domain": "analytic",
+      "topic_label": "Analysis & current research",
+      "desc": "A spherical Casimir construction linking positive degree, reflection, determinants and Mellin-Fourier coordinates. Its operator and comparison models are not identified with the completed zeta source.",
+      "status": "Preprint",
+      "fence": "The positive comparison operator is not an independently positive realization of the completed zeta source.",
+      "url": "https://zenodo.org/records/21874657",
+      "source_url": "https://zenodo.org/records/21874657",
+      "source_label": "Zenodo record · August 10, 2026",
+      "connections": [
+        {
+          "node": "postmaster",
+          "label": "Model versus completed source",
+          "type": "comparison",
+          "why": "Sections R6A and R17 distinguish the positive triangular model from the actual completed zeta source. A common coordinate does not identify their spectra.",
+          "source": "/papers/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf#page=29"
+        }
+      ]
+    },
+    {
+      "id": "laguerre",
+      "record_id": "21861619",
+      "label": "Weighted Laguerre Total Variation",
+      "short": "Laguerre Total Variation",
+      "kind": "paper",
+      "domain": "analytic",
+      "topic_label": "Analysis & current research",
+      "desc": "Two-term asymptotics for the total variation of exponentially weighted Laguerre polynomials, with a Bessel-profile leading constant and a stated correction.",
+      "status": "Preprint",
+      "fence": "The asymptotic statement concerns its specified polynomial family. It is not an all-order completed-source positivity proof.",
+      "url": "https://zenodo.org/records/21861619",
+      "source_url": "https://zenodo.org/records/21861619",
+      "source_label": "Zenodo record · August 9, 2026",
+      "connections": [
+        {
+          "node": "postmaster",
+          "label": "Cited analytic companion",
+          "type": "lineage",
+          "why": "Reading Volume v5.2 cites the Laguerre paper as reference 11. Citation is not a transfer of its total-variation result to the full source estimate.",
+          "source": "/papers/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf#page=95"
+        }
+      ]
+    },
+    {
+      "id": "reflection",
+      "record_id": "21574639",
+      "label": "One Reflection, Two Renderings",
+      "short": "One Reflection, Two Renderings",
+      "kind": "paper",
+      "domain": "number",
+      "topic_label": "Fractions & polar shells",
+      "desc": "One terminal reflection is expressed in the arithmetic pair plane and in reduced polar shells. The paper distinguishes that shared reflection from an obstructed geometry-preserving whitening transfer.",
+      "status": "Preprint",
+      "fence": "A common reflection does not remove the stated obstruction to a geometry-preserving whitening transfer.",
+      "url": "https://zenodo.org/records/21574639",
+      "source_url": "https://zenodo.org/records/21574639",
+      "source_label": "Zenodo record · July 25, 2026",
+      "connections": [
+        {
+          "node": "polarPaper",
+          "label": "The reflection in two renderings",
+          "type": "coordinate",
+          "why": "The terminal-fold paper identifies coordinate exchange in the pair plane with conjugation in its polar convention. Its additional results have their own hypotheses.",
+          "source": "https://zenodo.org/records/21574639"
+        }
+      ]
+    },
+    {
+      "id": "vorticity",
+      "record_id": "21450156",
+      "label": "Vorticity-Aligned Stretching",
+      "short": "Vorticity-Aligned Stretching",
+      "kind": "paper",
+      "domain": "measure",
+      "topic_label": "Waves & physical models",
+      "desc": "A null-coordinate description of vorticity-aligned stretching built from the Cauchy vorticity formula. It is a bounded reduction, not an Euler closure or a blow-up criterion.",
+      "status": "Preprint",
+      "fence": "A one-scalar coordinate reduction, not Euler closure, a blow-up criterion, or a regularity theorem.",
+      "url": "https://zenodo.org/records/21450156",
+      "source_url": "https://zenodo.org/records/21450156",
+      "source_label": "Zenodo record · July 20, 2026",
+      "connections": [
+        {
+          "node": "cgeom",
+          "label": "A null-coordinate comparison",
+          "type": "comparison",
+          "why": "Both descriptions use a null-coordinate chart. The fluid paper adds the Cauchy vorticity formula; a geometric chart is not an Euler theorem.",
+          "source": "https://zenodo.org/records/21450156"
+        }
+      ]
+    },
+    {
+      "id": "vortex",
+      "record_id": "21450826",
+      "label": "Vortex Stretching & the Edge of Blow-Up",
+      "short": "Vortex Stretching & the Edge of Blow-Up",
+      "kind": "paper",
+      "domain": "measure",
+      "topic_label": "Waves & physical models",
+      "desc": "A reading guide to vortex stretching, concentration and the distinction between the engine of amplification and the mechanisms that may restrain it.",
+      "status": "Working paper",
+      "fence": "A guide to established mechanisms and the open blow-up question, not a claim to have resolved it.",
+      "url": "https://zenodo.org/records/21450826",
+      "source_url": "https://zenodo.org/records/21450826",
+      "source_label": "Zenodo record · July 20, 2026",
+      "connections": []
+    }
+  ],
+  "edges": [
+    {
+      "a": "tfg",
+      "b": "polarPaper",
+      "type": "exact",
+      "label": "Reduction and shell count",
+      "why": "Reduction supplies the denominator; the polar shell has phi(n) reduced addresses. This is the stated denominator-collapse connection.",
+      "source": "https://zenodo.org/records/21280464"
+    },
+    {
+      "a": "polarPaper",
+      "b": "polarTool",
+      "type": "companion",
+      "label": "Paper and interactive object",
+      "why": "The renderer implements the paper's radius, angle and equal-area-by-denominator convention.",
+      "source": "/papers/polar_shell_renderer.pdf"
+    },
+    {
+      "a": "tfg",
+      "b": "cgeom",
+      "type": "coordinate",
+      "label": "Address inheritance only",
+      "why": "C-Geometry inherits the triangular address. The parent's divisor-band and totient theorems are not imported into the new geometric theorem line.",
+      "source": "https://zenodo.org/records/21444929"
+    },
+    {
+      "a": "polarPaper",
+      "b": "reflection",
+      "type": "coordinate",
+      "label": "The reflection in two renderings",
+      "why": "The terminal-fold paper identifies coordinate exchange in the pair plane with conjugation in its polar convention. Its additional results have their own hypotheses.",
+      "source": "https://zenodo.org/records/21574639"
+    },
+    {
+      "a": "cgeom",
+      "b": "vorticity",
+      "type": "comparison",
+      "label": "A null-coordinate comparison",
+      "why": "Both descriptions use a null-coordinate chart. The fluid paper adds the Cauchy vorticity formula; a geometric chart is not an Euler theorem.",
+      "source": "https://zenodo.org/records/21450156"
+    },
+    {
+      "a": "casimir",
+      "b": "postmaster",
+      "type": "comparison",
+      "label": "Model versus completed source",
+      "why": "Sections R6A and R17 distinguish the positive triangular model from the actual completed zeta source. A common coordinate does not identify their spectra.",
+      "source": "/papers/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf#page=29"
+    },
+    {
+      "a": "laguerre",
+      "b": "postmaster",
+      "type": "lineage",
+      "label": "Cited analytic companion",
+      "why": "Reading Volume v5.2 cites the Laguerre paper as reference 11. Citation is not a transfer of its total-variation result to the full source estimate.",
+      "source": "/papers/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf#page=95"
+    },
+    {
+      "a": "master",
+      "b": "union",
+      "type": "lineage",
+      "label": "Earlier source layers",
+      "why": "The Master Union listing explicitly retains the Triangular n Master Volume among its source layers. This is publication lineage.",
+      "source": "https://zenodo.org/records/21968858"
+    },
+    {
+      "a": "union",
+      "b": "postmaster",
+      "type": "lineage",
+      "label": "Earlier and current reading entries",
+      "why": "The August synthesis remains available as publication history. Read v5.2 for the website's current route and status boundary.",
+      "source": "/research/postmaster/"
+    },
+    {
+      "a": "ledgerA",
+      "b": "ledgerTool",
+      "type": "companion",
+      "label": "Paper and evidence companion",
+      "why": "The existing companion exposes the boundary-scattering model, named claims and receipt-bound evidence.",
+      "source": "/tools/finite_observer_ledger/"
+    },
+    {
+      "a": "ascii",
+      "b": "message",
+      "type": "companion",
+      "label": "An address and its readout",
+      "why": "The theorem recovers an address; ASCII provides a reading convention rather than the meaning of a message.",
+      "source": "https://zenodo.org/records/20683063"
+    },
+    {
+      "a": "message",
+      "b": "tfg",
+      "type": "coordinate",
+      "label": "An address demonstration",
+      "why": "The demonstration uses the grid's inverse-address rule. A readable message is a separate convention.",
+      "source": "https://zenodo.org/records/20683063"
+    }
+  ],
+  "map_nodes": [
+    "tfg",
+    "polarPaper",
+    "polarTool",
+    "cgeom",
+    "reflection",
+    "casimir",
+    "master",
+    "union",
+    "postmaster",
+    "laguerre",
+    "ledgerA",
+    "ledgerTool"
+  ],
+  "rule": "Solid relationships identify a stated construction, coordinate or paper/tool link; dashed relationships indicate comparison or reading lineage. No edge upgrades mathematical status. Archived maps retain the earlier presentation."
+}
