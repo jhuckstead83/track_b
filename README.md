@@ -25,7 +25,8 @@ replayed by the shipped rule), **COMPUTED** (exhaustive search resting on a prov
 | `site/research/` | research pages: Project 51 and Formula 51, the Line Game, TN Postmaster |
 | `site/atlas/`, `site/citation/`, `site/llms.txt`, `site/sitemap.xml`, `site/site-index.*`, `site/_headers`, `site/assets/postmaster-v5-2-cover.webp` | the research atlas, the citation catalog, and the index and header files these pages feed |
 | `papers/TN_Postmaster_Volume_I_v5_2_SOURCE/` | TN Postmaster Volume I v5.2, source edition: Markdown masters, build scripts, interface check (74/74), title-page DOI, twin evidence, v5.1 and v5.0 provenance |
-| `verification/` | independent replays and audits (see below) |
+| `verification/` | independent replays and audits (see below); `verification/ui_v2_8_6/` holds the v3.0 UI-preservation receipts for the v2.8.6 archive |
+| `HANDOFF_TO_CODEX_v2.8.6.md` | the return note for v3.0 assembly: archives and hashes, the papers payload, and the homepage/Finance verification |
 | `dist/v2.8.6/` | full site (without `papers/`), cumulative research delta, the **v2.8.6 papers payload** (v5.2 PDFs with the DOI on the title page, source zip, page anchors: install it into `papers/` first), and `Project51_Area51_Research_v2_8_6.zip`, the upload for Zenodo record 23004789 |
 | `dist/v2.8.5/` | the v2.8.5 site archives |
 | `dist/v2.8.4/` | the v2.8.4 site archives and the earlier papers payload, superseded by v2.8.6's |

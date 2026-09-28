@@ -1,0 +1,756 @@
+{
+  "status": "BASELINE_PRESERVED",
+  "baseline": "CerebralGraphix v2.8.2 Fork A",
+  "files_checked": 21,
+  "hook_pages_checked": 9,
+  "review_items": 0,
+  "policy": "Review the behavior and retain improvements. A changed hash is not a regression and never authorizes a rollback.",
+  "files": [
+    {
+      "path": "index.html",
+      "status": "UNCHANGED",
+      "baseline_sha256": "f4c4b92064ceb1cd3a3c2a8c8fcac5227fec3f5a41f05a09f337a89ddb13eba2",
+      "current_sha256": "f4c4b92064ceb1cd3a3c2a8c8fcac5227fec3f5a41f05a09f337a89ddb13eba2"
+    },
+    {
+      "path": "finance/live.html",
+      "status": "UNCHANGED",
+      "baseline_sha256": "6ab6f558959f2a80d0dafc173b2b13287143b14d3e94ed32d9312ed578d64542",
+      "current_sha256": "6ab6f558959f2a80d0dafc173b2b13287143b14d3e94ed32d9312ed578d64542"
+    },
+    {
+      "path": "assets/finance-browser-engine-v2_1_0.js",
+      "status": "UNCHANGED",
+      "baseline_sha256": "068d8a7f6db3e117e0a3559c95999ba49c286e18d2be1e234ead22cd0aaef9b9",
+      "current_sha256": "068d8a7f6db3e117e0a3559c95999ba49c286e18d2be1e234ead22cd0aaef9b9"
+    },
+    {
+      "path": "assets/finance-jbit-tower-v2_1_0.js",
+      "status": "UNCHANGED",
+      "baseline_sha256": "4108b3b93d486adf7be292dcfe80485d09e256769d91459245b340436f8c572a",
+      "current_sha256": "4108b3b93d486adf7be292dcfe80485d09e256769d91459245b340436f8c572a"
+    },
+    {
+      "path": "assets/finance-mini-model-v2-8-1.js",
+      "status": "UNCHANGED",
+      "baseline_sha256": "061f0d19d826a189ccb1ff597178dbfbdbc939f61eb82f4b11e7d5db6fdc1acd",
+      "current_sha256": "061f0d19d826a189ccb1ff597178dbfbdbc939f61eb82f4b11e7d5db6fdc1acd"
+    },
+    {
+      "path": "assets/finance-mini-v2-8-2.css",
+      "status": "UNCHANGED",
+      "baseline_sha256": "2d05a35e3ee2582de7e263e9242c98c0fa3fd60eada638768332b31e48a365be",
+      "current_sha256": "2d05a35e3ee2582de7e263e9242c98c0fa3fd60eada638768332b31e48a365be"
+    },
+    {
+      "path": "assets/finance-mini-v2-8-2.js",
+      "status": "UNCHANGED",
+      "baseline_sha256": "de4363657d9270c1ea30b059ff5ac5656f2d98556b174633af7a80f7c04fb64a",
+      "current_sha256": "de4363657d9270c1ea30b059ff5ac5656f2d98556b174633af7a80f7c04fb64a"
+    },
+    {
+      "path": "assets/finance-reference-seed-v2-7.js",
+      "status": "UNCHANGED",
+      "baseline_sha256": "56451318acd0ef4eaedc1b0ef8a56e86e5d7cb02441f58b01f6c2f204f45c597",
+      "current_sha256": "56451318acd0ef4eaedc1b0ef8a56e86e5d7cb02441f58b01f6c2f204f45c597"
+    },
+    {
+      "path": "assets/finance-refinement-v1-13-2.css",
+      "status": "UNCHANGED",
+      "baseline_sha256": "80cb5fc3862b6b86f0bfaa8b5f2cdf854ba6d5ca1e08152dee3762cffc68a434",
+      "current_sha256": "80cb5fc3862b6b86f0bfaa8b5f2cdf854ba6d5ca1e08152dee3762cffc68a434"
+    },
+    {
+      "path": "assets/finance-weather-v2-0b7.css",
+      "status": "UNCHANGED",
+      "baseline_sha256": "b139d5f42b1bbaeca4f88af50b86c9b8a77d0176408722b5eb162a5d3ded8c4a",
+      "current_sha256": "b139d5f42b1bbaeca4f88af50b86c9b8a77d0176408722b5eb162a5d3ded8c4a"
+    },
+    {
+      "path": "assets/finance-weather-v2_0_0.css",
+      "status": "UNCHANGED",
+      "baseline_sha256": "9702d329b2f0e9f03e362179926a0f70d45ef3a3f66cf8cd99c39dda768b2f00",
+      "current_sha256": "9702d329b2f0e9f03e362179926a0f70d45ef3a3f66cf8cd99c39dda768b2f00"
+    },
+    {
+      "path": "assets/finance-weather-v2_1_0.css",
+      "status": "UNCHANGED",
+      "baseline_sha256": "3f40d0440f8aebd2b92e9c11002940b9645e1b532b2f46187a76d26a3dbd39d2",
+      "current_sha256": "3f40d0440f8aebd2b92e9c11002940b9645e1b532b2f46187a76d26a3dbd39d2"
+    },
+    {
+      "path": "assets/home-features-v2-3.css",
+      "status": "UNCHANGED",
+      "baseline_sha256": "8faac1a2804276384a52e6b98ca71242a52693cfee02d92dcbba89fce4335300",
+      "current_sha256": "8faac1a2804276384a52e6b98ca71242a52693cfee02d92dcbba89fce4335300"
+    },
+    {
+      "path": "assets/home-features-v2-8-1.css",
+      "status": "UNCHANGED",
+      "baseline_sha256": "d09723b8ad0ddf0c70ecd0b662e350cd8eec14a3d9a504f52fd5e22027d6648c",
+      "current_sha256": "d09723b8ad0ddf0c70ecd0b662e350cd8eec14a3d9a504f52fd5e22027d6648c"
+    },
+    {
+      "path": "assets/home-features-v2-8-1.js",
+      "status": "UNCHANGED",
+      "baseline_sha256": "f74430a2a6b1a09762c0687eb3407781df843defda3cedac27224fe494a48c9c",
+      "current_sha256": "f74430a2a6b1a09762c0687eb3407781df843defda3cedac27224fe494a48c9c"
+    },
+    {
+      "path": "assets/phi_finance_grid_v2.css",
+      "status": "UNCHANGED",
+      "baseline_sha256": "465f9ef7993fc08c4840233c9a466116694f6c719ffd08ab390260366c209dc9",
+      "current_sha256": "465f9ef7993fc08c4840233c9a466116694f6c719ffd08ab390260366c209dc9"
+    },
+    {
+      "path": "assets/phi_finance_grid_v2_8_1.js",
+      "status": "UNCHANGED",
+      "baseline_sha256": "63bd37844f9884109a95058d9f391bec04d526fd037351a4027a58b00834676f",
+      "current_sha256": "63bd37844f9884109a95058d9f391bec04d526fd037351a4027a58b00834676f"
+    },
+    {
+      "path": "assets/phi_finance_jbits_v2_1_0.js",
+      "status": "UNCHANGED",
+      "baseline_sha256": "6863d10eef8b81b6c241e3ce36740afe28c293e6c9c44647a0278f72b4a12cd6",
+      "current_sha256": "6863d10eef8b81b6c241e3ce36740afe28c293e6c9c44647a0278f72b4a12cd6"
+    },
+    {
+      "path": "assets/research-bridge-v1-13.css",
+      "status": "UNCHANGED",
+      "baseline_sha256": "931ed067d1d8ddac0f7752a6b6674d9f222ac5c1a6ba4249a1b7da859342148f",
+      "current_sha256": "931ed067d1d8ddac0f7752a6b6674d9f222ac5c1a6ba4249a1b7da859342148f"
+    },
+    {
+      "path": "assets/site-v1-13.js",
+      "status": "UNCHANGED",
+      "baseline_sha256": "eb4c0b27c499204d4bd0b9714c46644ca14f36d17083d3155cc2fbd4b580bc9a",
+      "current_sha256": "eb4c0b27c499204d4bd0b9714c46644ca14f36d17083d3155cc2fbd4b580bc9a"
+    },
+    {
+      "path": "assets/site-v2-0b.css",
+      "status": "UNCHANGED",
+      "baseline_sha256": "f7e0e9180e1dd1391a8bf032c69bf37f2bb99540fd1e5df0c97e4bb53a39fe4b",
+      "current_sha256": "f7e0e9180e1dd1391a8bf032c69bf37f2bb99540fd1e5df0c97e4bb53a39fe4b"
+    }
+  ],
+  "hooks": [
+    {
+      "path": "index.html",
+      "status": "UNCHANGED",
+      "baseline": {
+        "body_attributes": [],
+        "finance_assets": [
+          {
+            "tag": "link",
+            "url": "/assets/finance-mini-v2-8-2.css",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-browser-engine-v2_1_0.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-model-v2-8-1.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-reference-seed-v2-7.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-v2-8-2.js",
+            "defer": true
+          }
+        ]
+      },
+      "current": {
+        "body_attributes": [],
+        "finance_assets": [
+          {
+            "tag": "link",
+            "url": "/assets/finance-mini-v2-8-2.css",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-browser-engine-v2_1_0.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-model-v2-8-1.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-reference-seed-v2-7.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-v2-8-2.js",
+            "defer": true
+          }
+        ]
+      }
+    },
+    {
+      "path": "finance/live.html",
+      "status": "UNCHANGED",
+      "baseline": {
+        "body_attributes": [
+          "data-finance-reference-only"
+        ],
+        "finance_assets": [
+          {
+            "tag": "link",
+            "url": "../assets/finance-mini-v2-8-2.css",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "../assets/finance-browser-engine-v2_1_0.js",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "../assets/finance-mini-model-v2-8-1.js",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "../assets/finance-reference-seed-v2-7.js",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "../assets/finance-mini-v2-8-2.js",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "../assets/phi_finance_grid_v2_8_1.js",
+            "defer": false
+          }
+        ]
+      },
+      "current": {
+        "body_attributes": [
+          "data-finance-reference-only"
+        ],
+        "finance_assets": [
+          {
+            "tag": "link",
+            "url": "../assets/finance-mini-v2-8-2.css",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "../assets/finance-browser-engine-v2_1_0.js",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "../assets/finance-mini-model-v2-8-1.js",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "../assets/finance-reference-seed-v2-7.js",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "../assets/finance-mini-v2-8-2.js",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "../assets/phi_finance_grid_v2_8_1.js",
+            "defer": false
+          }
+        ]
+      }
+    },
+    {
+      "path": "area-51/index.html",
+      "status": "UNCHANGED",
+      "baseline": {
+        "body_attributes": [
+          "data-finance-dock"
+        ],
+        "finance_assets": [
+          {
+            "tag": "link",
+            "url": "/assets/finance-mini-v2-8-2.css",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-browser-engine-v2_1_0.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-model-v2-8-1.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-reference-seed-v2-7.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-v2-8-2.js",
+            "defer": true
+          }
+        ]
+      },
+      "current": {
+        "body_attributes": [
+          "data-finance-dock"
+        ],
+        "finance_assets": [
+          {
+            "tag": "link",
+            "url": "/assets/finance-mini-v2-8-2.css",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-browser-engine-v2_1_0.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-model-v2-8-1.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-reference-seed-v2-7.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-v2-8-2.js",
+            "defer": true
+          }
+        ]
+      }
+    },
+    {
+      "path": "area-51/invariant/index.html",
+      "status": "UNCHANGED",
+      "baseline": {
+        "body_attributes": [
+          "data-finance-dock"
+        ],
+        "finance_assets": [
+          {
+            "tag": "link",
+            "url": "/assets/finance-mini-v2-8-2.css",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-browser-engine-v2_1_0.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-model-v2-8-1.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-reference-seed-v2-7.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-v2-8-2.js",
+            "defer": true
+          }
+        ]
+      },
+      "current": {
+        "body_attributes": [
+          "data-finance-dock"
+        ],
+        "finance_assets": [
+          {
+            "tag": "link",
+            "url": "/assets/finance-mini-v2-8-2.css",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-browser-engine-v2_1_0.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-model-v2-8-1.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-reference-seed-v2-7.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-v2-8-2.js",
+            "defer": true
+          }
+        ]
+      }
+    },
+    {
+      "path": "area-51/blackjack-51/index.html",
+      "status": "UNCHANGED",
+      "baseline": {
+        "body_attributes": [
+          "data-finance-dock"
+        ],
+        "finance_assets": [
+          {
+            "tag": "link",
+            "url": "/assets/finance-mini-v2-8-2.css",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-browser-engine-v2_1_0.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-model-v2-8-1.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-reference-seed-v2-7.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-v2-8-2.js",
+            "defer": true
+          }
+        ]
+      },
+      "current": {
+        "body_attributes": [
+          "data-finance-dock"
+        ],
+        "finance_assets": [
+          {
+            "tag": "link",
+            "url": "/assets/finance-mini-v2-8-2.css",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-browser-engine-v2_1_0.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-model-v2-8-1.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-reference-seed-v2-7.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-v2-8-2.js",
+            "defer": true
+          }
+        ]
+      }
+    },
+    {
+      "path": "area-51/telescope-51/index.html",
+      "status": "UNCHANGED",
+      "baseline": {
+        "body_attributes": [
+          "data-finance-dock"
+        ],
+        "finance_assets": [
+          {
+            "tag": "link",
+            "url": "/assets/finance-mini-v2-8-2.css",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-browser-engine-v2_1_0.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-model-v2-8-1.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-reference-seed-v2-7.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-v2-8-2.js",
+            "defer": true
+          }
+        ]
+      },
+      "current": {
+        "body_attributes": [
+          "data-finance-dock"
+        ],
+        "finance_assets": [
+          {
+            "tag": "link",
+            "url": "/assets/finance-mini-v2-8-2.css",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-browser-engine-v2_1_0.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-model-v2-8-1.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-reference-seed-v2-7.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-v2-8-2.js",
+            "defer": true
+          }
+        ]
+      }
+    },
+    {
+      "path": "area-51/sedaps-51/index.html",
+      "status": "UNCHANGED",
+      "baseline": {
+        "body_attributes": [
+          "data-finance-dock"
+        ],
+        "finance_assets": [
+          {
+            "tag": "link",
+            "url": "/assets/finance-mini-v2-8-2.css",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-browser-engine-v2_1_0.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-model-v2-8-1.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-reference-seed-v2-7.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-v2-8-2.js",
+            "defer": true
+          }
+        ]
+      },
+      "current": {
+        "body_attributes": [
+          "data-finance-dock"
+        ],
+        "finance_assets": [
+          {
+            "tag": "link",
+            "url": "/assets/finance-mini-v2-8-2.css",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-browser-engine-v2_1_0.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-model-v2-8-1.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-reference-seed-v2-7.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-v2-8-2.js",
+            "defer": true
+          }
+        ]
+      }
+    },
+    {
+      "path": "area-51/memory-51/index.html",
+      "status": "UNCHANGED",
+      "baseline": {
+        "body_attributes": [
+          "data-finance-dock"
+        ],
+        "finance_assets": [
+          {
+            "tag": "link",
+            "url": "/assets/finance-mini-v2-8-2.css",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-browser-engine-v2_1_0.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-model-v2-8-1.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-reference-seed-v2-7.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-v2-8-2.js",
+            "defer": true
+          }
+        ]
+      },
+      "current": {
+        "body_attributes": [
+          "data-finance-dock"
+        ],
+        "finance_assets": [
+          {
+            "tag": "link",
+            "url": "/assets/finance-mini-v2-8-2.css",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-browser-engine-v2_1_0.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-model-v2-8-1.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-reference-seed-v2-7.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-v2-8-2.js",
+            "defer": true
+          }
+        ]
+      }
+    },
+    {
+      "path": "area-51/prospect-51/index.html",
+      "status": "UNCHANGED",
+      "baseline": {
+        "body_attributes": [
+          "data-finance-dock"
+        ],
+        "finance_assets": [
+          {
+            "tag": "link",
+            "url": "/assets/finance-mini-v2-8-2.css",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-browser-engine-v2_1_0.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-model-v2-8-1.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-reference-seed-v2-7.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-v2-8-2.js",
+            "defer": true
+          }
+        ]
+      },
+      "current": {
+        "body_attributes": [
+          "data-finance-dock"
+        ],
+        "finance_assets": [
+          {
+            "tag": "link",
+            "url": "/assets/finance-mini-v2-8-2.css",
+            "defer": false
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-browser-engine-v2_1_0.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-model-v2-8-1.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-reference-seed-v2-7.js",
+            "defer": true
+          },
+          {
+            "tag": "script",
+            "url": "/assets/finance-mini-v2-8-2.js",
+            "defer": true
+          }
+        ]
+      }
+    }
+  ]
+}

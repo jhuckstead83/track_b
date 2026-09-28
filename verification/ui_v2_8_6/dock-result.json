@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Separate label handle and larger SVG chevron; collapsing the reference grid keeps the tab visible without a hide dialog",
+    "Mouse/touch pointer drag and keyboard movement use the Finance label, save position, stay in bounds, and never toggle or dismiss",
+    "Pinned collapsed tab survives reload during downtime and the chevron reopens the grid",
+    "X still requires confirmation, Cancel retains the tab, confirmed hiding persists, and footer restore works"
+  ],
+  "scope": "In-memory DOM, pointer events, timers and cookie persistence; no rendered-browser or physical-device check"
+}
