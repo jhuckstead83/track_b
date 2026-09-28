@@ -206,7 +206,7 @@
     "required": true,
     "instruction": "Cite Jeffery Lyn Huckstead, the exact Area 51 page and rule version used, its canonical URL, and the v7.2 foundation DOI 10.5281/zenodo.22851517 whenever a summary or claim relies on this work."
   },
-  "site_version": "2.8.4",
+  "site_version": "2.8.5",
   "date_modified": "2026-09-27",
   "play_order": [
     "Invariant",

@@ -10,7 +10,7 @@ authors:
 repository-code: "https://github.com/jhuckstead83/track_b"
 url: "https://cerebralgraphix.com/area-51/"
 license: CC-BY-4.0
-version: "2.8.4"
+version: "2.8.5"
 date-released: 2026-09-28
 abstract: >-
   The Area 51 research line of Cerebral Graphix: the 51 SEDAPS reversible card rule and its
@@ -33,7 +33,8 @@ references:
     authors:
       - family-names: "Huckstead"
         given-names: "Jeffery"
-    doi: "10.5281/zenodo.21968915"
+    doi: "10.5281/zenodo.23004335"
+    notes: "Volume I v5.2 (reserved DOI); version series 10.5281/zenodo.21968915"
   - type: article
     title: "The Line Game | Surprise Is Not Meaning"
     authors:
@@ -45,7 +46,8 @@ references:
     authors:
       - family-names: "Huckstead"
         given-names: "Jeffery Lyn"
-    doi: "10.5281/zenodo.22862811"
+    doi: "10.5281/zenodo.23004789"
+    notes: "Area 51 games and exhibit research (reserved DOI); concept 10.5281/zenodo.22862811"
   - type: article
     title: "Cycles in War"
     authors:

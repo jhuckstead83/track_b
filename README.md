@@ -5,9 +5,9 @@ exhibits and games, and the programs that check them. Author: Jeffery Lyn Huckst
 ([ORCID 0009-0007-0234-2177](https://orcid.org/0009-0007-0234-2177)). **RH STATUS: OPEN.**
 Nothing here is evidence for or against the Riemann hypothesis.
 
-This release is **v2.8.4** (28 September 2026). v2.8.3 placed the Track B research pass
+This release is **v2.8.5** (28 September 2026). It adds the author's reserved DOIs as links and new results on three-live loops. Before it, v2.8.3 placed the Track B research pass
 (corrections, independent replays, and new results) on the Fork-A v2.8.2 site, which carries
-the Finance and homepage work. v2.8.4 builds the TN Postmaster v5.2 PDFs and points the site's
+the Finance and homepage work. v2.8.4 built the TN Postmaster v5.2 PDFs and pointed the site's
 research pages at them. The live site is published from the full site package. This
 repository holds the Track B parts of it, plus the paper sources and the verification programs.
 It does not hold the Finance pages or the homepage. Track B's working draft of 27 September
@@ -26,7 +26,8 @@ replayed by the shipped rule), **COMPUTED** (exhaustive search resting on a prov
 | `site/atlas/`, `site/citation/`, `site/llms.txt`, `site/sitemap.xml`, `site/site-index.*`, `site/_headers`, `site/assets/postmaster-v5-2-cover.webp` | the research atlas, the citation catalog, and the index and header files these pages feed |
 | `papers/TN_Postmaster_Volume_I_v5_2_SOURCE/` | TN Postmaster Volume I v5.2, source edition: Markdown masters, build scripts, interface check (67/67), twin evidence, v5.1 and v5.0 provenance |
 | `verification/` | independent replays and audits (see below) |
-| `dist/v2.8.4/` | full site (without `papers/`), cumulative research delta, and the papers payload (v5.2 PDFs, source zip, page anchors) to install into `papers/` first |
+| `dist/v2.8.5/` | full site (without `papers/`) and cumulative research delta |
+| `dist/v2.8.4/` | the papers payload (v5.2 PDFs, source zip, page anchors), unchanged in v2.8.5: install it into `papers/` first; plus the v2.8.4 site archives |
 | `dist/v2.8.3/` | the v2.8.3 archives |
 | `RELEASE_NOTES_v2.8.4.md`, `MERGE_GUIDE_v2.8.4.md` (cumulative from Fork-A v2.8.2), `MANIFEST_v2.8.4.json`, `VALIDATION_v2.8.4.json`, and the v2.8.3 counterparts | what changed, how to merge it with later UI work, file hashes, and the checks run |
 | `legacy/transient-rational-locking-v1.0.0/` | the earlier Track B release (Transient Rational Locking), kept as it was |
@@ -56,7 +57,8 @@ the full site package at a web root and serve it over HTTP.
 - At 51 cards the formula allows exactly 12 lengths, and those are exactly the 12 seen in 2,000 seeded deals.
 - Complete censuses of every state through 11 cards (3.11 × 10⁹ states) find no loop with three live queues.
 - **At 12 cards such loops exist**: 1,145,664 of them, of lengths 9 and 60 (CERT). The smallest is A = 6 0 1, B = 2 10 7 3, C = 4 8 11 5 9.
-- None is reachable from an equal deal, because equal-deal sizes stay congruent mod 3 and these loops' sizes are not.
+- Every one of them is rigid: on each turn exactly one queue plays a packet head, and that head wins. A proved theorem says no equal deal ever reaches a rigid loop, at any n.
+- An exhaustive search of synchronised states (the only kind an equal deal reaches) finds no loop at 9, 12 or 15 cards.
 - None exists at 13 cards either: all 12,454,041,600 packet-form states lose a queue within 26 turns.
 - For the 51-card game the open question is: can a fair deal reach a loop that keeps three queues live?
 
@@ -106,7 +108,9 @@ material keeps its own terms (see `site/area-51/prospect-51/THIRD_PARTY_NOTICES.
 ## Citation
 
 See `CITATION.cff`. Paper DOIs: TN Postmaster Volume I concept
-[10.5281/zenodo.21968915](https://doi.org/10.5281/zenodo.21968915) (v5.1 =
-10.5281/zenodo.22844194); The Line Game concept 10.5281/zenodo.20792808 (v7.5 =
-10.5281/zenodo.22943070); Project 51 concept 10.5281/zenodo.22862811 (v0.4 =
+[10.5281/zenodo.21968915](https://doi.org/10.5281/zenodo.21968915) (v5.2 =
+[10.5281/zenodo.23004335](https://doi.org/10.5281/zenodo.23004335), reserved; v5.1 =
+10.5281/zenodo.22844194); the Area 51 games and exhibit research are in *Project 51: Reading the
+Record Across Rules*, [10.5281/zenodo.23004789](https://doi.org/10.5281/zenodo.23004789) (reserved); The Line Game concept 10.5281/zenodo.20792808 (latest record
+[10.5281/zenodo.23004800](https://doi.org/10.5281/zenodo.23004800), reserved; v7.5 = 10.5281/zenodo.22943070); Project 51 concept 10.5281/zenodo.22862811 (v0.4 =
 10.5281/zenodo.22985771).

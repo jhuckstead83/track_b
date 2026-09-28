@@ -181,14 +181,14 @@ A census of 1.8 × 10⁹ states (PP281, n = 11) predicted no loop at the next si
 
 **Packet form on a loop (PROVED).** Call a three-live state *packet form* when each queue is the tail of one packet (0, 1 or 2 cards) followed by whole 3-card packets, each led by its largest card.
 
-1. *Every state on a three-live loop is in packet form.*
+1. *Lemma: a loop is never shorter than its queues, so every state on a three-live loop is in packet form.* (PP283 grades this A, withdrawing PP281 §3.)
    - Let the loop have length L, and fix a state x on it. Over L turns each queue plays one card per turn, so queue i plays its first L cards in order and receives cards only at its tail.
    - If L were smaller than |xᵢ|, then after L turns the queue would begin with its card xᵢ[L]. Since the state is x again, that card would equal xᵢ[0], one card in two positions, which is impossible because the cards are distinct.
    - So L ≥ |xᵢ| for every queue, and within one period every card present at x is played. After the period, queue i holds only cards appended during it. Those were appended as 3-packets, each led by its largest card, and the pops have removed a prefix. What is left is the tail of one packet followed by whole packets.
    - That state is x, so x is in packet form. This holds on the whole state graph, with no reachability assumption.
 2. *A turn that leaves all three queues live maps packet form to packet form.* Playing a front card shortens the partial tail, or turns a whole packet into a 2-card tail. The winner appends a new packet led by its largest card.
 
-So a three-live loop exists if and only if some packet-form state never loses a queue. `independent/live3_packet.c` enumerates every packet-form state of n cards and plays each one until a queue empties:
+So a three-live loop exists if and only if some packet-form state never loses a queue. The lemma is what makes a packet-form census a complete search for loops. `independent/live3_packet.c` enumerates every packet-form state of n cards and plays each one until a queue empties:
 
 | n | packet-form states | three-live loops | most turns before a queue empties |
 | --- | ---: | ---: | ---: |
@@ -200,7 +200,35 @@ So a three-live loop exists if and only if some packet-form state never loses a 
 | 12 | 1,153,152,000 | **1,145,664**: 1,036,800 of length 9 and 108,864 of length 60 | 20 |
 | 13 | 12,454,041,600 | 0 | 26 |
 
-The next odd size, n = 13, again has no three-live loop anywhere in the state graph: all 12,454,041,600 packet-form states lose a queue within 26 turns. So loops keeping three queues live occur at 12 cards, but not at 13 or at 11 or fewer.
+The census at n = 13 is also complete: all 12,454,041,600 packet-form states lose a queue within 26 turns, so no loop of any kind keeps three queues live at 13 cards.
+
+**The structure of the loops, and why equal deals cannot reach them.**
+
+*Phase lemma.* In packet form, a queue plays a packet head exactly when its size is divisible by 3. On a three-live turn every size changes by −1 (mod 3), so the pattern of residues only shifts. The sizes are pairwise congruent exactly when all three queues play heads on the same turns ("synchronised"), and pairwise distinct exactly when one queue plays a head on each turn.
+
+*Every loop at n = 12 is rigid* (checked on all 1,145,664 by `live3_struct.c`):
+- on every turn exactly one queue plays a packet head, and that head wins;
+- so the winners rotate, each queue winning every third turn;
+- the sizes run through the rotations of (5, 4, 3), and no queue ever holds more than 5 cards.
+
+PP283 §1 found the same thing from its own enumeration.
+
+**Theorem (PROVED).** On a three-live loop where the winning card is always a packet head, the three sizes are never pairwise congruent mod 3. So no equal deal reaches such a loop, for any n.
+
+*Proof.* Over one period of length L, each queue plays one packet head every three turns, so there are L head plays in all. There are also L wins, and each is by a head, so every head that is played wins. Two heads played on the same turn cannot both win, so exactly one head is played on each turn. By the phase lemma the residues are then pairwise distinct. An equal deal starts with congruent sizes, and congruence is invariant (the mod-3 clock). ∎
+
+- The winners of such a loop rotate. The queue playing the head has size ≡ 0 before its win and ≡ 2 after it, while the other two step down to ≡ 0 and ≡ 1. So queue i wins every third turn, and its sizes cycle xᵢ + 2, xᵢ + 1, xᵢ, where each xᵢ ≡ 0 (mod 3) and xᵢ ≥ 3. So n = x_A + x_B + x_C + 3 is divisible by 3, and n ≥ 12.
+- PP284 proves a companion statement. It does not ask that heads win: uniform gaps and equal post-win sizes a give sizes a, a − 1, a − 2, three consecutive integers, so again never congruent. At n = 12 the two hypotheses coincide, with a = 5. At n = 51 they differ. Equal post-win sizes would be (18, 17, 16), which is not rigid, since the winner at 16 cards plays a member. A rigid loop there would need unequal sizes, for example xᵢ = 15, 15, 18.
+- PP283 §3 derived 3 | n for every loop in which each queue wins every third turn. That assumed equal post-win sizes, and PP284 withdrew it. In general Σ(post-win size) = n + 3, which constrains nothing mod 3. So n = 13 was a genuine candidate, and the complete census above excludes it.
+
+**What the game needs, stated exactly.** A fair deal can enter a three-live loop only if the loop is synchronised: all three queues play heads on the same turns. On such a loop the other two turns of every three are member turns, and a member wins each of them. Synchronised loops are searched directly as follows. Every third turn such a loop passes through a state in which each queue is whole packets. With seat rotation fixing the global maximum in the first queue, `independent/live3_sync.c` walks every such state:
+- n = 9: 4,480 states;
+- n = 12: 5,913,600 states;
+- n = 15 (5–5–5): 10,762,752,000 states, every one of which loses a queue within 27 turns.
+
+So no synchronised loop exists at 9, 12 or 15 cards, and no equal deal of those sizes ever reaches a loop that keeps three queues live. Loops of other kinds at n = 15, such as rigid ones with sizes like (6, 5, 4), were not searched; no equal deal can reach them anyway.
+
+It is OPEN whether a synchronised loop exists for larger n, and in particular at 51. The stronger conjecture is that every three-live loop is rigid, with no member ever winning. It would settle this for every n, and every loop known is rigid.
 
 At n = 12, the 15,863,040 packet-form states that lie on loops are exactly 9 × 1,036,800 + 60 × 108,864, so the loop count balances. Each loop is counted once, at its lexicographically smallest state. The program classifies every state as losing a queue, lying on a loop, or entering one, using Brent's cycle detection (`independent/live3_loops.c`).
 - **Independent returns.** PP281 ran an unrestricted census of every three-live state with the global maximum in queue 0. That is an exact one-third reduction by seat rotation, and it uses no shape assumption. It covers n ≤ 11 (1,796,256,000 states at n = 11), finds no loop, and gives worst exit times 2, 4, 5, 10, 11, 15 and 19 for n = 5–11. It also reproduces the packet-form counts above for n ≤ 8 from its own shape predicate. The complete census of `census2.c` (every state, three queues, n ≤ 11) is a third method.
@@ -255,5 +283,7 @@ Three exact facts narrow any three-live loop. None of them is a proof that such 
 | Every state on a three-live loop is in packet form; packet form is preserved while three queues live | PROVED (§2) |
 | No loop in the state graph keeps three queues live | COMPUTED for n ≤ 11 (two methods; PP281 second seat) and for n = 13; **false at n = 12** (CERT: 1,145,664 loops, of lengths 9 and 60; PP282 witness); OPEN for n ≥ 14 |
 | Pairwise congruence of the three sizes mod 3 is invariant while three are live | PROVED |
-| No three-live loop is reachable from an equal deal | COMPUTED through n = 12 (two methods); OPEN at 51 |
+| No three-live loop is reachable from an equal deal | COMPUTED for n = 9, 12, 15 (synchronised-loop search; two methods at 12); OPEN at 51 |
+| A three-live loop on which the winning card is always a packet head is never reachable from an equal deal, for any n | PROVED |
+| Every loop at n = 12 is rigid (one head per turn, and it wins) | COMPUTED (all 1,145,664) |
 | Four-player rules; the count \|H_t(x)\| | OPEN |

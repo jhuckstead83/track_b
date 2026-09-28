@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "collection": "Cerebral Graphix research catalogue",
   "creator": {
     "name": "Jeffery Huckstead",
@@ -121,6 +121,69 @@
     }
   ],
   "records": [
+    {
+      "type": "ScholarlyArticle",
+      "title": "Triangular-n Postmaster: From the Triangular Primitive to the Completed Source Frontier, Volume I",
+      "author": {
+        "name": "Jeffery Lyn Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-09",
+      "version": "v5.2",
+      "doi": "10.5281/zenodo.23004335",
+      "conceptDoi": "10.5281/zenodo.21968915",
+      "identifier": "https://doi.org/10.5281/zenodo.23004335",
+      "canonicalUrl": "https://cerebralgraphix.com/research/postmaster/",
+      "creditText": "Jeffery Lyn Huckstead · Cerebral Graphix · Volume I v5.2 · 10.5281/zenodo.23004335",
+      "citation": "Jeffery Lyn Huckstead. (2026). Triangular-n Postmaster: From the Triangular Primitive to the Completed Source Frontier, Volume I (v5.2). Cerebral Graphix. https://doi.org/10.5281/zenodo.23004335.",
+      "summary": "Reading Volume (101 pp) and Technical Dossier (287 pp), with the source edition. Adds the Davenport-Heilbronn twin calibration. RH remains open.",
+      "resourceType": "Preprint",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "reserved DOI",
+      "metadataSource": "DOI supplied by the author on 28 September 2026. It is reserved and resolves once the record is published."
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Project 51: Reading the Record Across Rules",
+      "author": {
+        "name": "Jeffery Lyn Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-09",
+      "doi": "10.5281/zenodo.23004789",
+      "conceptDoi": "10.5281/zenodo.22862811",
+      "identifier": "https://doi.org/10.5281/zenodo.23004789",
+      "canonicalUrl": "https://cerebralgraphix.com/research/project-51/",
+      "creditText": "Jeffery Lyn Huckstead · Cerebral Graphix · 10.5281/zenodo.23004789",
+      "citation": "Jeffery Lyn Huckstead. (2026). Project 51: Reading the Record Across Rules. Cerebral Graphix. https://doi.org/10.5281/zenodo.23004789.",
+      "summary": "The Project 51 record for the Area 51 games and exhibit research: 51 SEDAPS v0.4.1, 51 Twins, Formula 51. RH remains open.",
+      "resourceType": "Preprint",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "reserved DOI",
+      "metadataSource": "DOI supplied by the author on 28 September 2026. It is reserved and resolves once the record is published."
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Line Game | Surprise Is Not Meaning",
+      "author": {
+        "name": "Jeffery Lyn Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-09",
+      "doi": "10.5281/zenodo.23004800",
+      "conceptDoi": "10.5281/zenodo.20792808",
+      "identifier": "https://doi.org/10.5281/zenodo.23004800",
+      "canonicalUrl": "https://cerebralgraphix.com/research/line-game/",
+      "creditText": "Jeffery Lyn Huckstead · Cerebral Graphix · 10.5281/zenodo.23004800",
+      "citation": "Jeffery Lyn Huckstead. (2026). The Line Game | Surprise Is Not Meaning. Cerebral Graphix. https://doi.org/10.5281/zenodo.23004800.",
+      "resourceType": "Preprint",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "reserved DOI",
+      "metadataSource": "DOI supplied by the author on 28 September 2026. It is reserved and resolves once the record is published."
+    },
     {
       "type": "ScholarlyArticle",
       "title": "Project 51: Reading the Record Across Rules",

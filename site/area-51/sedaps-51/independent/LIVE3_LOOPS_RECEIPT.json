@@ -288,5 +288,121 @@
   "maxStepsToLoseAQueue": 20,
   "loopLengths": {}
  },
- "congruenceLemma": "on a three-live turn sizes change by (+2,-1,-1) and +2 = -1 (mod 3), so pairwise congruence mod 3 is invariant; equal deals start congruent"
+ "congruenceLemma": "on a three-live turn sizes change by (+2,-1,-1) and +2 = -1 (mod 3), so pairwise congruence mod 3 is invariant; equal deals start congruent",
+ "synchronizedLoops": {
+  "method": "live3_sync.c: every state in which each queue is whole packets, global maximum in queue 0 (seat rotation); a synchronised loop passes through such a state every third turn",
+  "n9": {
+   "states": 4480,
+   "loops": 0
+  },
+  "n12": {
+   "states": 5913600,
+   "loops": 0
+  },
+  "n15": {
+   "states": 10762752000,
+   "loops": 0,
+   "statesEnteringALoop": 0,
+   "maxStepsToLoseAQueue": 27,
+   "shards": [
+    {
+     "n": 15,
+     "synchronizedFullPacketStates_maxInQueue0": 1,
+     "shard": 0,
+     "nshards": 6,
+     "patterns": 1,
+     "packetFormStates": 1076275200,
+     "statesOnThreeLiveLoops": 0,
+     "statesEnteringALoop": 0,
+     "distinctThreeLiveLoops": 0,
+     "capped": 0,
+     "maxStepsToLoseAQueue": 21,
+     "loopLengths": {}
+    },
+    {
+     "n": 15,
+     "synchronizedFullPacketStates_maxInQueue0": 1,
+     "shard": 1,
+     "nshards": 6,
+     "patterns": 1,
+     "packetFormStates": 1076275200,
+     "statesOnThreeLiveLoops": 0,
+     "statesEnteringALoop": 0,
+     "distinctThreeLiveLoops": 0,
+     "capped": 0,
+     "maxStepsToLoseAQueue": 24,
+     "loopLengths": {}
+    },
+    {
+     "n": 15,
+     "synchronizedFullPacketStates_maxInQueue0": 1,
+     "shard": 2,
+     "nshards": 6,
+     "patterns": 1,
+     "packetFormStates": 1076275200,
+     "statesOnThreeLiveLoops": 0,
+     "statesEnteringALoop": 0,
+     "distinctThreeLiveLoops": 0,
+     "capped": 0,
+     "maxStepsToLoseAQueue": 24,
+     "loopLengths": {}
+    },
+    {
+     "n": 15,
+     "synchronizedFullPacketStates_maxInQueue0": 1,
+     "shard": 3,
+     "nshards": 6,
+     "patterns": 1,
+     "packetFormStates": 2152550400,
+     "statesOnThreeLiveLoops": 0,
+     "statesEnteringALoop": 0,
+     "distinctThreeLiveLoops": 0,
+     "capped": 0,
+     "maxStepsToLoseAQueue": 27,
+     "loopLengths": {}
+    },
+    {
+     "n": 15,
+     "synchronizedFullPacketStates_maxInQueue0": 1,
+     "shard": 4,
+     "nshards": 6,
+     "patterns": 1,
+     "packetFormStates": 2152550400,
+     "statesOnThreeLiveLoops": 0,
+     "statesEnteringALoop": 0,
+     "distinctThreeLiveLoops": 0,
+     "capped": 0,
+     "maxStepsToLoseAQueue": 24,
+     "loopLengths": {}
+    },
+    {
+     "n": 15,
+     "synchronizedFullPacketStates_maxInQueue0": 1,
+     "shard": 5,
+     "nshards": 6,
+     "patterns": 1,
+     "packetFormStates": 3228825600,
+     "statesOnThreeLiveLoops": 0,
+     "statesEnteringALoop": 0,
+     "distinctThreeLiveLoops": 0,
+     "capped": 0,
+     "maxStepsToLoseAQueue": 27,
+     "loopLengths": {}
+    }
+   ]
+  }
+ },
+ "loopStructure_n12": {
+  "program": "live3_struct.c",
+  "classes": [
+   {
+    "maxQueue": 5,
+    "allGaps3": 1,
+    "winnerAlwaysPlaysHead": 1,
+    "exactlyOneHeadPerTurn": 1,
+    "loops": 1145664
+   }
+  ],
+  "rotatingWinners": 1145664
+ }
 }

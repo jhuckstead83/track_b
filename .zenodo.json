@@ -1,7 +1,7 @@
 {
-  "title": "Track B — Area 51 research: papers, exhibits and verification (v2.8.4)",
+  "title": "Track B — Area 51 research: papers, exhibits and verification (v2.8.5)",
   "upload_type": "software",
-  "version": "2.8.4",
+  "version": "2.8.5",
   "publication_date": "2026-09-28",
   "creators": [
     {
@@ -22,6 +22,16 @@
     "experimental mathematics"
   ],
   "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23004789",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.23004335",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
     {
       "identifier": "10.5281/zenodo.21968915",
       "relation": "isSupplementTo",
