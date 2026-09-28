@@ -1,0 +1,212 @@
+[
+  {
+    "name": "weighted",
+    "command": [
+      "python3",
+      "qa/audit_weighted_resultants.py",
+      "--output",
+      "qa/WEIGHTED_RESULTANTS.json"
+    ],
+    "exit_code": 0,
+    "log": "qa/weighted_resultants.log",
+    "seconds": 3.26,
+    "script_sha256": "9e64a83a8628dd7fc03910c994285bbfd1126325c133e0f919fffc636ee6e417"
+  },
+  {
+    "name": "common_source",
+    "command": [
+      "python3",
+      "qa/audit_common_source_recovery.py",
+      "--output",
+      "qa/COMMON_SOURCE.json"
+    ],
+    "exit_code": 0,
+    "log": "qa/common_source.log",
+    "seconds": 1.014,
+    "script_sha256": "e4a5d16ed1fb9a71bbefe274e363ed2d6f79c066a3d274a0f4d79552a42943b2"
+  },
+  {
+    "name": "integrated_bridges",
+    "command": [
+      "python3",
+      "qa/audit_integrated_bridges.py",
+      "--output",
+      "qa/INTEGRATED_BRIDGES.json"
+    ],
+    "exit_code": 0,
+    "log": "qa/integrated_bridges.log",
+    "seconds": 2.292,
+    "script_sha256": "facf73c36880383c3043ac2b87361f8c21a1b4981e50ee4bf0c214f614bc0eee"
+  },
+  {
+    "name": "sine_bridge",
+    "command": [
+      "python3",
+      "qa/audit_sine_bridge.py",
+      "--output",
+      "qa/SINE_BRIDGE.json"
+    ],
+    "exit_code": 0,
+    "log": "qa/sine_bridge.log",
+    "seconds": 3.096,
+    "script_sha256": "45ff50f79d7496cbd10129287073f82a92c12ab3645db44c0d6b17a3f910a165"
+  },
+  {
+    "name": "lighthouse_tieout",
+    "command": [
+      "python3",
+      "qa/audit_lighthouse_tieout.py",
+      "--out",
+      "qa/LIGHTHOUSE_TIEOUT.json"
+    ],
+    "exit_code": 0,
+    "log": "qa/lighthouse_tieout.log",
+    "seconds": 0.203,
+    "script_sha256": "c121a67de967298691dbc072d87871502d51c2a6dbfe0661715806670bab31b2"
+  },
+  {
+    "name": "blue_sharpening",
+    "command": [
+      "python3",
+      "qa/audit_blue.py",
+      "--output",
+      "qa/BLUE_SHARPENING.json"
+    ],
+    "exit_code": 0,
+    "log": "qa/blue_sharpening.log",
+    "seconds": 0.301,
+    "script_sha256": "5b0c5192e3d9b6ea7650960a47d8f6629a1de0ea1508843e318f537713f690a7"
+  },
+  {
+    "name": "orange_curvature",
+    "command": [
+      "python3",
+      "qa/audit_orange.py",
+      "--output",
+      "qa/ORANGE_CURVATURE.json"
+    ],
+    "exit_code": 0,
+    "log": "qa/orange_curvature.log",
+    "seconds": 0.881,
+    "script_sha256": "607fbe26f34b4c2fd573fab622b63fd577461ba8cfb5486361cb2e516514fec1"
+  },
+  {
+    "name": "green_blue_merge",
+    "command": [
+      "python3",
+      "qa/audit_green_blue.py",
+      "--output",
+      "qa/GREEN_BLUE_MERGE.json"
+    ],
+    "exit_code": 0,
+    "log": "qa/green_blue_merge.log",
+    "seconds": 0.278,
+    "script_sha256": "fb0136c40989bcf700cb8bcf071bf48917e640d1dd0005e72d932168e0dbe214"
+  },
+  {
+    "name": "green_orange_comparison",
+    "command": [
+      "python3",
+      "qa/audit_green_orange.py",
+      "--output",
+      "qa/GREEN_ORANGE_COMPARISON.json"
+    ],
+    "exit_code": 0,
+    "log": "qa/green_orange_comparison.log",
+    "seconds": 3.793,
+    "script_sha256": "97f0138981a59bb82dd69917897e7debdd9ccc5fc6462d5becc6f88788532d71"
+  },
+  {
+    "name": "lighthouse_progressions",
+    "command": [
+      "python3",
+      "qa/audit_curvature_progressions.py",
+      "--output",
+      "qa/CURVATURE_PROGRESSIONS.json"
+    ],
+    "exit_code": 0,
+    "log": "qa/curvature_progressions.log",
+    "seconds": 0.149,
+    "script_sha256": "47ff21167ab14da57796dde50771b996956649407e116df58159908261813951"
+  },
+  {
+    "name": "gamma_bridge",
+    "command": [
+      "python3",
+      "qa/audit_gamma_bridge.py",
+      "--output",
+      "qa/GAMMA_BRIDGE.json"
+    ],
+    "exit_code": 0,
+    "log": "qa/gamma_bridge.log",
+    "seconds": 57.173,
+    "script_sha256": "67be4903b972adf53c64bf024e17c2d734a402f6d6feb24210e20cf90b7058cc"
+  },
+  {
+    "name": "source_rungs_arb",
+    "command": [
+      "python3",
+      "qa/source_rungs/source_rungs_arb.py",
+      "--output",
+      "qa/source_rungs/RECEIPT_arb.json"
+    ],
+    "exit_code": 0,
+    "log": "qa/source_rungs/arb.log",
+    "seconds": 26.767,
+    "script_sha256": "1247b80a33795b916142baa141184d5a2a7ed395385f7c74cc2254e1b76f0371"
+  },
+  {
+    "name": "source_rungs_decimal",
+    "command": [
+      "python3",
+      "qa/source_rungs/source_rungs_decimal.py",
+      "--output",
+      "qa/source_rungs/RECEIPT_decimal.json"
+    ],
+    "exit_code": 0,
+    "log": "qa/source_rungs/decimal.log",
+    "seconds": 63.241,
+    "script_sha256": "d4a82cad93f7602c21361bb7fe64712ba3cdfc075536732928fb066ad71af1c0"
+  },
+  {
+    "name": "r10c_orbit",
+    "command": [
+      "python3",
+      "qa/audit_r10c_orbit.py",
+      "--output",
+      "qa/R10C_ORBIT.json"
+    ],
+    "exit_code": 0,
+    "log": "qa/r10c_orbit.log",
+    "seconds": 2.752,
+    "script_sha256": "e2117b6c78d10a1921bd7f8be927e9dd7ef1e92189f362103e885b3bf5944b1d"
+  },
+  {
+    "name": "figure_claims",
+    "command": [
+      "python3",
+      "qa/audit_figure_claims.py"
+    ],
+    "exit_code": 0,
+    "log": "qa/figure_claims.log",
+    "seconds": 54.933,
+    "script_sha256": "ba1173d03accbbf70bd1418c30a8e1131fb11d566faec30b3431c4f22506711d"
+  },
+  {
+    "name": "source_rungs_cross_backend",
+    "command": [
+      "python3",
+      "qa/source_rungs/cross_backend_check.py",
+      "--arb",
+      "qa/source_rungs/RECEIPT_arb.json",
+      "--decimal",
+      "qa/source_rungs/RECEIPT_decimal.json",
+      "--output",
+      "qa/source_rungs/CROSS_BACKEND.json"
+    ],
+    "exit_code": 0,
+    "log": "qa/source_rungs/cross.log",
+    "seconds": 0.08,
+    "script_sha256": "f9a82902a4d2043e237bc33469e22371fdd0dca0cb0169968aa14b19c6bce495"
+  }
+]

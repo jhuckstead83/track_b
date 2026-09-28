@@ -1,0 +1,37 @@
+{
+ "script": "dh_twin_highprec.py",
+ "zeroList": "dh-zeros-T260.json",
+ "onLine": 169,
+ "offLinePairs": 5,
+ "scope": "finite zero list below height 260; double-precision ordinates",
+ "runs": [
+  {
+   "dps": 60,
+   "G16589_at_x0": "-4.66009149178e-5",
+   "W16588_min": "0.000175927385895",
+   "W16588_argmin": "7140.06731254",
+   "W16589_min": "-4.66009149179e-5",
+   "W16589_argmin": "7140.06626235"
+  },
+  {
+   "dps": 100,
+   "G16589_at_x0": "-4.66009149178e-5",
+   "W16588_min": "0.000175927385895",
+   "W16588_argmin": "7140.06731254",
+   "W16589_min": "-4.66009149179e-5",
+   "W16589_argmin": "7140.06626235"
+  }
+ ],
+ "perturbation": {
+  "trials": 8,
+  "maxShift": 1e-12,
+  "W16588_near_min_lowest": "0.00017592737",
+  "W16589_at_x0_highest": "-4.6600904e-5"
+ },
+ "published": {
+  "W16588_min": 0.00017592739,
+  "W16589": -4.6600915e-05,
+  "source": "Dossier v5.2 \u00a769A (40-digit Colab recheck)"
+ },
+ "status": "PASS"
+}

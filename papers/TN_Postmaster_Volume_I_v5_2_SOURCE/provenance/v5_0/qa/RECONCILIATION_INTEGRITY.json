@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "total": 569,
+  "passed": 569,
+  "inputs": [
+    {
+      "name": "v4.2 publication",
+      "manifest": "provenance/v42/PACKAGE_MANIFEST.json",
+      "manifest_sha256": "74fc1d074bdfdff204f9182e566bb8dbd9341b9e0e89dcec7bac5ffa3207220c",
+      "total": 527,
+      "passed": 527,
+      "failed": []
+    },
+    {
+      "name": "accepted v4.2 returns",
+      "manifest": "provenance/v43/accepted_returns/MANIFEST.json",
+      "manifest_sha256": "fc1d19a989c134e0890b2d0f68ac5800b8f16ad5f1a574957255c50b6e4e3234",
+      "total": 42,
+      "passed": 42,
+      "failed": []
+    }
+  ]
+}

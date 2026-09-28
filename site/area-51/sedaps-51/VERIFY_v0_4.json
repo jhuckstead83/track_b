@@ -1,0 +1,284 @@
+{
+ "version": "0.4",
+ "rule": "sedaps-core-v0-2.js",
+ "RH_STATUS": "OPEN",
+ "checks": [
+  {
+   "name": "v0.3 certificate replays; constructed witness needs a 44-card prefix",
+   "pass": true,
+   "detail": {
+    "admissibleByPrefixFloor": [
+     "00",
+     "01",
+     "10"
+    ]
+   }
+  },
+  {
+   "name": "turn 85: only 00 comes from a 17-17-17 deal",
+   "pass": true,
+   "detail": {
+    "10": {
+     "lowestTurn": 66,
+     "statesExpanded": 336
+    },
+    "11": [
+     33,
+     17,
+     1
+    ],
+    "01": [
+     36,
+     14,
+     1
+    ]
+   }
+  },
+  {
+   "name": "four-for-four certificates replay",
+   "pass": true,
+   "detail": {
+    "turns": [
+     32,
+     35,
+     41,
+     50,
+     53
+    ]
+   }
+  },
+  {
+   "name": "shape lemma accepts every reached (state, turn) in 300 seeded games",
+   "pass": true,
+   "detail": {
+    "pairs": 384722
+   }
+  },
+  {
+   "name": "turn-85 present: loop from turn 356, period 3,744",
+   "pass": true,
+   "detail": {
+    "fourForFour": [
+     {
+      "t": 32,
+      "kind": "cycle",
+      "enters": 1505,
+      "period": 780
+     },
+     {
+      "t": 35,
+      "kind": "cycle",
+      "enters": 1026,
+      "period": 4004
+     },
+     {
+      "t": 41,
+      "kind": "cycle",
+      "enters": 1082,
+      "period": 4004
+     },
+     {
+      "t": 50,
+      "kind": "end",
+      "turn": 70
+     },
+     {
+      "t": 53,
+      "kind": "cycle",
+      "enters": 771,
+      "period": 3276
+     }
+    ]
+   }
+  },
+  {
+   "name": "periodic remnant: every observed loop length is a multiple of 52 (EVID)",
+   "pass": true,
+   "detail": {
+    "deals": 2000,
+    "ends": 348,
+    "cycles": 1652,
+    "gcd": 52,
+    "periods": [
+     [
+      312,
+      238
+     ],
+     [
+      520,
+      121
+     ],
+     [
+      624,
+      4
+     ],
+     [
+      780,
+      202
+     ],
+     [
+      1196,
+      10
+     ],
+     [
+      1716,
+      54
+     ],
+     [
+      2184,
+      73
+     ],
+     [
+      2964,
+      127
+     ],
+     [
+      3276,
+      166
+     ],
+     [
+      3536,
+      181
+     ],
+     [
+      3744,
+      245
+     ],
+     [
+      4004,
+      231
+     ]
+    ]
+   }
+  },
+  {
+   "name": "deck-size sweep (EVID)",
+   "pass": true,
+   "detail": {
+    "rows": [
+     {
+      "n": 6,
+      "cycles": 0,
+      "gcd": 0,
+      "allDivisibleByNplus1": null
+     },
+     {
+      "n": 7,
+      "cycles": 73,
+      "gcd": 8,
+      "allDivisibleByNplus1": true
+     },
+     {
+      "n": 8,
+      "cycles": 0,
+      "gcd": 0,
+      "allDivisibleByNplus1": null
+     },
+     {
+      "n": 9,
+      "cycles": 34,
+      "gcd": 10,
+      "allDivisibleByNplus1": true
+     },
+     {
+      "n": 10,
+      "cycles": 14,
+      "gcd": 60,
+      "allDivisibleByNplus1": false
+     },
+     {
+      "n": 11,
+      "cycles": 146,
+      "gcd": 12,
+      "allDivisibleByNplus1": true
+     },
+     {
+      "n": 12,
+      "cycles": 0,
+      "gcd": 0,
+      "allDivisibleByNplus1": null
+     },
+     {
+      "n": 13,
+      "cycles": 175,
+      "gcd": 14,
+      "allDivisibleByNplus1": true
+     },
+     {
+      "n": 15,
+      "cycles": 115,
+      "gcd": 16,
+      "allDivisibleByNplus1": true
+     },
+     {
+      "n": 17,
+      "cycles": 211,
+      "gcd": 18,
+      "allDivisibleByNplus1": true
+     },
+     {
+      "n": 20,
+      "cycles": 1,
+      "gcd": 672,
+      "allDivisibleByNplus1": true
+     },
+     {
+      "n": 21,
+      "cycles": 168,
+      "gcd": 22,
+      "allDivisibleByNplus1": true
+     },
+     {
+      "n": 24,
+      "cycles": 0,
+      "gcd": 0,
+      "allDivisibleByNplus1": null
+     },
+     {
+      "n": 27,
+      "cycles": 204,
+      "gcd": 28,
+      "allDivisibleByNplus1": true
+     },
+     {
+      "n": 30,
+      "cycles": 0,
+      "gcd": 0,
+      "allDivisibleByNplus1": null
+     },
+     {
+      "n": 33,
+      "cycles": 196,
+      "gcd": 34,
+      "allDivisibleByNplus1": true
+     },
+     {
+      "n": 39,
+      "cycles": 224,
+      "gcd": 40,
+      "allDivisibleByNplus1": true
+     },
+     {
+      "n": 45,
+      "cycles": 253,
+      "gcd": 46,
+      "allDivisibleByNplus1": true
+     },
+     {
+      "n": 48,
+      "cycles": 0,
+      "gcd": 0,
+      "allDivisibleByNplus1": null
+     },
+     {
+      "n": 51,
+      "cycles": 246,
+      "gcd": 52,
+      "allDivisibleByNplus1": true
+     }
+    ]
+   }
+  }
+ ],
+ "status": "PASS"
+}

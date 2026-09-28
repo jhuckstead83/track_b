@@ -1,0 +1,772 @@
+{
+ "version": "v5.0",
+ "ocr": "tesseract --psm 11",
+ "note": "text is OCR of the bundled figure, whitespace flattened and lowercased; sha256 pins the bytes it was read from",
+ "figures": [
+  {
+   "figure": "axial_flux_widder_bridge.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "5fa185ae97693d2328197610dc0da4601042c01e8f80964610054fec060f1eca",
+   "bytes": 214299,
+   "text": "the negative folded axis is the zero-height slice of the v0.9 parabolic flux q(c, t)=4-c* +t? + 2ict 1.0 5 x=cc? = q’ s=$t+c>l 0.5 4 t=0,c>1/ y qc(o) = 2me(-x) = 2s¢(x) 0.0 q=- <0 i --0.57 al w(x) - pat ixkq vx+1/4(0)] -1.0- c=0.28 == c= == c=0.75 0.50 ~0.25 0.00 0.25 0.50 0.75 1.00 1.25 rq"
+  },
+  {
+   "figure": "balanced_stabilizer_tower_v1_2.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "cbf2bd55cf762dbdf4eb72159477395784d1a1d9256c67edc94df34aa9ec1afc",
+   "bytes": 145615,
+   "text": "the tetrahedron is the unique balanced two-sheet simplex tower 2:1 2:1 complete frames directed edges unoriented edges s4 sa/h salk [sal =24 = 4! lhl =2, ls4/hl =12 lkl=4, lsa/kl =6 =3! balanced-stabilizer identity: 12? = 24-6, hence 12 = v3! 4! for an n-simplex the first fiber is (9 - 1)! and the second is 2; equality forces n=3. coset spaces of sets - not a quotient-group tower."
+  },
+  {
+   "figure": "casimir_positive_branch.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "19c63ef5f359d2a99c58285fb56650a4da0d6ca5dc16a1d097839adf9abf85d3",
+   "bytes": 181147,
+   "text": "the spherical casimir spectrum is a shifted square with a canonical positive branch ai) = n(n +d -2)/2 positive branch recovers degree 12 4 -- d= @ d=3 d=5 d=5 100 4 d=9 = d= 10 4 -= recovered n & 80 4 84 60 4 6-4 405 44 rd 20 4 24 04 04 t t 2 4 6 8 10 12 6 8 10 12 degree n input degree n"
+  },
+  {
+   "figure": "cayley_laguerre_flux_diagnostic.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "57da56992d16067e57d02e0ab822b6e35029ee134f409b37f5ed02450f7095a8",
+   "bytes": 234128,
+   "text": "exact synthetic diagnostic for the two-sheet outward-flux theorem critical-line pair : outward flux stays positive off-axis quartet: a negative witness cell opens cayley collar: outward motion lowers tau 0.25 4 r 7 1.6 4 1.6 4 15 r 6 1.474 1.474 0.20 10 target zero r5 1.24 1.24 8 0.15 4 qa -- tau=1/4-c%*2 t 4 o 1.0 tet retsscrtscceescccseresecerescessersszcsosece sors 1.0 oes eteesees + snencnoegted vw o cc - log odds r 3 0.8 0.8 + -5 g 0.10 -10 © f 2 0.6 4 0.6 4 0.05 4 -15 rl 0.4 + 0.4 + 0.00 01 0.2 0.3 0.4 01 0.2 0.3 0.4 0.0 01 0.2 0.3 0.4 0.5 horizontal displacement c horizontal displacement c horizontal displacement c"
+  },
+  {
+   "figure": "cayley_montgomery_unfolding.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "a52ab8595abef27005b86b28e345bf93e74fdb9c955c206195f554447a3378f1",
+   "bytes": 215291,
+   "text": "cayley local unfolding recovers the conventional zero-spacing coordinate t= 1000: agreement to first order finite-t nonlinear correction === cayley unfolded 0.00 10 47 == linear spacing coordinate -0.01 4 -0.02 4 55 -0.03 4 07> -0.04 4 -0.05 4 -55 -0.06 4 -0.07 -107 [_ \\ t t 0.08 4 -15 -10 -5 0 5 10 15 -15 -10 5 15 local displacement 6 = y- t structural coordinate bridge only; no sine-kernel or pair-correlation limit is claimed"
+  },
+  {
+   "figure": "conic_pencil_diagnostic.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "a9b5e2796603cdfd47d9bc0ff5f10799054da00b9236432dfb29107a60fed776",
+   "bytes": 393022,
+   "text": "the conic pencil closes into a confocal foliation of the folded xi-plane fixed c: tangent circles; centers form x = 0 selector c = lambda x (mu = 0) folded q(c,t): confocal parabolas f] l f 3.0 5 == ellipge llambda c= 1.50 4 ' c= 0.22 === parabola lla dal 1.04 c=0.35 =-- ih erbola mbdal > 2 2.54 c= 1.25 4 common focus 1/4 --- sample directrix 2.0 4 0.5 4 1.00 4 1.5 4 0.75 4 1.0 4 0.0 5 0.50 4 0.5 4 --0.574 0.25 4 0.0 5 0.00 @ --0.574 ' ' -1.07 ' fixed tangency / focus l l -1.0- --0.25 t t i t -0.75 -0.50 -0o 25 0.00 0.25 0.50 0.75 -2 -1 0 0.00 0.25 0.50 0.75 1.00 1.25 1.50 1.75 x=xxx+1/2 x=xxx+1/2 req selector discriminant: lambda“*2 - 4. folded leaves share focus q = 1/4. exact geometry; rh remains open."
+  },
+  {
+   "figure": "cube_a3_twelve_ray_projection_v1_2.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "9996e8597d7e139ab0bd4b60f785f2537f199e537c6c43573b90931213c80291",
+   "bytes": 350137,
+   "text": "old cone cube -a3=d3- exact twelve-ray angular shell cube parity tetrahedron orthogonal projection: after radial normalization: and 12 directed-edge roots two staggered hexagons angles § qual 12 120° 60° 150° 30° 180° 360° o 210° 330° @ radius 1 240° 300° 270° no plane projection has equal radii; no intrinsic c;2 symmetry."
+  },
+  {
+   "figure": "cyclic_moment_hierarchy.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "70a3eb4ab706196da21d43fa5db19edd749a5206324ade8d0cc24b81b36b92a0",
+   "bytes": 139905,
+   "text": "the cyclic theorem is one member of an exact denominator-moment hierarchy moment dirichlet quotient inherited pole first-riesz rh scale ~\\~ vi(n) c(s)c(s - 2)/c(s - 1) -+-»> 1+ oe > x3 pe w2(n) c(s)c(s - 3)/c(s - 2) --» 2+ xe pe w3(n) c(s)c(s - 4)/c(s - 3) ----»> 3+ xp pe for every integer j= 1: first riesz error x/+¥/2+* - rh."
+  },
+  {
+   "figure": "cyclic_order_moments.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "e2c93a35ca822891cead268e736c6419f736e755d3b901bc048736ec00289a5b",
+   "bytes": 146311,
+   "text": "native denominators are cyclic orders; their moments retain multiplicative structure qn, k = n/gcd(k, n) second moment m>(n) 32 30000 4 @ = prime chambers 30 25000 4 24 25 20000 4 20 g ac 15000 + 16 155 we 10000 + 10 5000 4 0-4 16 24 32 0 5 10 15 20 25 30 cell k n"
+  },
+  {
+   "figure": "cyclic_sharp_vs_riesz.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "eb9a872013879aacf5fdd5f1cc032357b334e129a37c07691e83dbcbca9ddcef",
+   "bytes": 306388,
+   "text": "the cyclic-order branch: prime jumps defeat the sharp cutoff; one riesz factor repairs it sharp cutoff: unavoidable q(x*) cusps first riesz mean: continuous entry and an rh spectral scale ° prime locations 0.6 5 10-2 ler hit 0.5 4 ll i i\" i iid ha i! rine bid t dil l ii l h 10-3 0.4 5 0.34 10-4 0.2 5 10-5 0.14 10-° 0.0 0 500 1000 1500 2000 2500 3000 3500 0 500 1000 1500 2000 2500 3000 3500 x x"
+  },
+  {
+   "figure": "dyadic_factorial_classification_v1_2.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "df3325b374255150c5a9332783232c3589abe706518cb06b41540aaab87f2b37",
+   "bytes": 127312,
+   "text": "complete dyadic classification of 2*~ 1(2* - 1) ~\\ - = v2 identity v3 barrier tail killed finite core k=n-s2(n)+1 [n/3] s1+10g3n > n=12 impossible n<l1l > a - (k,n) = (1,1) value =1 (k,n) = (2,3) value =6 value =120 (k,n) = (4,5) exactly (1,1), (2, 3), (4,5); the unrestricted equation 7,, =n! remains open. equivalent square gate: (2k+1-1)*=8n! +1."
+  },
+  {
+   "figure": "figure48_pp103_ray_sieve_audit.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "8fb5ff46027fd765b22017d2b0f31dcfcede605ede4770dbca648d11c6332ba7",
+   "bytes": 347575,
+   "text": "figure 7 ray-sieve audit: reduced-denominator rays and prime dilation layers qn, k = n/gcd(n, k) with exact audit overlay published panel: m2(n) = > ah. 30000 4 32 p=2 only 30 @ prime chambers p=3 only p=2,3 overlap maximum through 32: m2(31) = 28: least prime of gcd(n,k) =5 25000 + = = constant ray d2m,m=2 255 24 20000 + 20 = 15000 7 16 15 10000 + 10 5000 4 04 16 24 32 1 5 10 15 20 25 3032 cell k chamber n published v1.2 domain preserved: 1 <= k <= n <= 32. red/orange/gray mark the p=2,3 sieve; cyan marks its 28 structured omissions."
+  },
+  {
+   "figure": "figure49_pp103_triangularized_sidecar.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "395927ab76ccfde4b2c0aaacda5e32c1653e3b9e0fadd1f5824f48d2b39a211f",
+   "bytes": 202758,
+   "text": "corrected pp100 triangularized-denominator sidecar (one-based coordinates) qn, 64 a sidecar a: nigcd(n, k) 2 64 sidecar b: n(q)q?, n(q)=1+412\\q see eee eee ek coon beebeeeeee 8000 60 ne a ie if 7000 exact maximum 8192 50 n=64, k odd 48 48 6000 40 5000 ac 32 32 4000 30 3000 20 16 16 2000 10 1000 16 32 48 64 16 32 48 64 cell k cell k this is a pp100 audit sidecar, not the published figure 7b moment curve."
+  },
+  {
+   "figure": "figure50_triangularized_denominator_N256.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "c8dd2a931450ac60a132ca11d13190ff318be51d96a6a2aea541ff7910bfbee9",
+   "bytes": 246157,
+   "text": "triangularized-denominator sidecar, n=256 2504 eee 10° - 2 cao eal beal 2 (seah teel inl fier : 200 4 : 104 one pees) srerore ey oe erepefct bets cee sepea: rake bal kr bora rw ed zie eee 150 4 eo eer fikes sed a om oo ne serr re 103 oe soe ecm oom petaitethatncieisba tard vanya == aoe eee ee ea hales dees ec et ee eset raed basra (ag pe od etl cme tet rye oe int ' poe ao is hobe red xs be ole ome itacul les 100 + eis oe seeks ay 102 jedett eig] secte iat sor te ss eet l eee lea el i dat bal oe oom no woe efe iee soe reat ee bls dot fil ee poer eton esf as paes ey ticked rr earore 50 4 iba euesatte re he ia peele 101 ey ree == bn cache lea eth zigiel caan eaiee ha a eet ee een eis we pata fab paises pet sle bt crieles it “l katt rian balnire a 10° 50 100 150 200 250 ambient chamber n (one-based)"
+  },
+  {
+   "figure": "figure51_ray_sieve_audit_N256_q2.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "074b132a20f32ec2971887170053cb278dad66cdd19af609bce1ecb7a40aa0a2",
+   "bytes": 893148,
+   "text": "extended ray-sieve audit with q=2 highlighted, n=256 2504 all native cells ao p=2 sieve layer a p=3 sieve layer higher-prime residual (1940) 2 b@ wo too @ g=2 ray (128) abe 1-5) i ua 200 4 a bert ro wa coo ao apt e) on nopog repos go = ogeroc ex at foo aoe peis: roney 150 4 ab re roy n@eo = oo ym yon ens y 0g 0d, cee es hex e565 ec a ogt 2 ator £ pre fo aodgnen gu wn ione ag goan 9 oo of re eng rts ree a0 engjen ten hoe oo en fen oc qgi wo om oc # qps! o61 wo yoo 100 + ang ox o o q wma ug ron rita you fag ou aonog gock gghan gon, pay et b® cous eou on sup oe) im ot poron a& eu abe ® seco dg f'n or 6@ wn ag? io of ser irr = oo swi roc ac ke gt oe eu wf of pa ng bo@ po us ao ae akon ag ne x eo 0 ole mt a oi oa it) gey aon om so rt a ot ga ne on ao. 50 4 ak pols gs, @2e ng 0 apo ag ge qougn n@ 507 ee ort abe! go a & nn gna yp ob ne 16% gy oo, wn joo a: we, too soo 0g puce 5% 2q2 og fon po ehdebbage doaad = scr wn on ae reem euen ue > eg he, spo. of a igieon § loo gi 1 sige og ow rg sor a po nae oe b abe on cae too ty l = 51g 5 og 1g ze pa @ # - mo a eb af % 8 hat ogc oe oe pus bon ne son sioro hotdnsubdotond ho bo ho oe 8e% po 8 mnone coprime=12948s[ p=2;3uniok sudncue 038 ‘presidual= 1940 50 100 150 200 250 ambient chamber n (one-based)"
+  },
+  {
+   "figure": "figure54_tilted_diagonal_phase.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "51fe531e1e229118d6518912b2a73f250b3673b6c8db70894961674557e57185",
+   "bytes": 234711,
+   "text": "pp168 tilted exact-diagonal phase at c = 1/2 i ==<=-= audited phase 91/2(0) 1.24 - linear branch extension i weeeeee quadratic branch extension 1.15 1.0 5 0.9 - 0.8 + 0.7 4 transition @ =c/2 =1/4 0.6 4 c! but not c2 0.5 + ee [ right-tail rate: i-(a) = (a2 - c2)/4, valid for a= c.l 0.4 0.0 0.2 0.4 0.6 0.8 tilt @"
+  },
+  {
+   "figure": "figure55_exact_diagonal_closure.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "929cbf46f68d257738e7e119a1fb33672131cbc470d392b6c5eb295e840c42e4",
+   "bytes": 244650,
+   "text": "exact-diagonal closure geometry == cep(b) =2(1- y 2/8) 0.74 --- postmaster target c = 1/2 b=4: margin 1/8 5 0.6 0.5 _---e ee eee ee ee ee ee ee ee ee ee ee ee ee ee ee ee ee ee ee -- = eee eee threshold 32/9 5 0.44 pilot 11/3 cep = 0.522902 margin 1/32 at c=1/2 € 0.34 2 0.2- ® o14 the shaded region is exponent room, not a proved correlation theorem. l uniformity in c and closure back to the full grid remain open. l 0.0 25 3.0 35 4.0 return scale exponent b"
+  },
+  {
+   "figure": "figure56_size_owner.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "fe909e8d1ab41c45d7117728ec49112d8839ffed9956db0a201f397b3afc449d",
+   "bytes": 222034,
+   "text": "pp168 localizes the translated loss to one physical size shell 1.0 5 t (feta) = 178/32 -1-(a- b)?/(2b)l 0.8 5 unl owner a= x=t (1) 0.6 5 0.4 4 0.2 4 0.0 5 --0.2 4 t t t 2 3 4 audited right-tail domain product-size exponent a inn =t? a>=b/4=11/12"
+  },
+  {
+   "figure": "figure57_scale_ledger.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "1eef9863f5a6866f86d8179c1d33e07eafa17751fc458dc03746baa325723c06",
+   "bytes": 137657,
+   "text": "pp169-pp172 exponent ledger at by) = 11/3 positive scales q/l = x3/11 + o(1) < xvi xsl x1 +0(1) 0.0 0.2 0.4 0.6 0.8 1.0 exponent e in scale x© error and target scales collar xx-3/11 x74 << spare x~1/44 0.30 0.25 ~0.20 -0.15 0.10 ~0.05 0.00 relative exponent e in x©"
+  },
+  {
+   "figure": "figure58_poisson_total_offdiag.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "4eaf0c6c5d8967d721f7eb1591b1025f3b6068fc9756d42ff5bcbde8a45ca591",
+   "bytes": 277856,
+   "text": "pp171 correction: the spectral hole belongs to the total lattice illustration uses a normalized c-infinity bump w on [-1,1]. the support thresholds and low-u identities are exact. 37 l l 24 14 uy = 2n/(m-1) nth atot = 0 a* =-k,(0) =<-= total action a'(u) -1 eee nent eee eee ss - off-diagonal.action. a*(u).=a'?!(u).=.k,(0) t t t 3 4 5 modulus ratio u=q/l"
+  },
+  {
+   "figure": "figure63_triangular_square_ladder.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "3a5394bf38da572aa43d4afd83e480ed3ee593ae1f7d243c3b519ac1bd9d5086",
+   "bytes": 233854,
+   "text": "square-index triangular dynamics and the euclid-euler intersection [tr-tr-1=n, trttn-1=n%, tre =t3_1 +72] a ~\\ - ~ - ~\\ - mo =2 m=4 m2=16 m3 >= 256 (uo, vo) = (1, 3) > (uj, vi) = (6,10) & (u2, v2) = (120, 136) > (u3, v3) = (32640, 32896) do = 2 d,=4 dz=16 d3 = 256 ae yy nl yy tl yy tl ons=u+v=d?: dwed?2 > a full even-perfect family special lower ladder exact intersection q = 2? -1 mersenne prime = 27-1 q=3,7,31,127,... gx =1,3,15, 255,... tq = 6, 28, 496, 8128, ... t3 = 6 only 2* composite for k > 2 js sy ae exact triangular arithmetic only: no statement about odd perfect numbers or rh."
+  },
+  {
+   "figure": "figure65_finite_weil_dictionary_tail.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "2d21132879eb5edce77f5bd22ff46e3310424058b87c71ef0aaf2785e1dabe1c",
+   "bytes": 307699,
+   "text": "fixed-parameter weil transport: exact dictionary and ordered archimedean tail ~\\ - ~\\ ~~ -- even vector volterra calculus band-limited test exact zero sum ve rt © t(t)=>ume2™™ > suppg, c[-a,a] > (v,ql mv) u_m = um a=log(c)/(2m) - = fixed c>1, finite m kw) =2j5 prime powers q>c vanish t(1/2 +iz)=0 2 gv(z) ty(t)ty(w - t) dat one-way finite dictionary yf jx ff ~~ yy a am a rank-two cauchy density archimedean window certified order t2 >1t1 > max(oem, 7) > qarch, t, - qarch, t; > positive definite ar= t/o every ordered minor positive h,(t)>0 =n-fh4(t) sin? (lt?2) 0<q. - q7 < brl x (prp7 + qrq7 ) dt pr(n) =(ar-n)7!, g7(n) = (ar +n)? nn a scope: 7 - © is controlled only with (c, m) fixed; m-- © and c> ~ are separate open limits."
+  },
+  {
+   "figure": "figure66_connes_suzuki_limit_firewall.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "24ef9d0a2421bf94945de997543eede4d5e5fbec78ea646e9557b4a515162728",
+   "bytes": 364851,
+   "text": "connes--suzuki limit firewall: finite real-zero mechanisms versus zeta-zero recovery finite localized weil object prime cutoff c, galerkin band m, archimedean cutoff t, finite interval a a -- ~ > > > archimedean limit galerkin limit prime-cutoff limit spectral hypothesis to at fixed (c, m) mo (i °°) simple isolated even controlled open open ground state: open globally j \\_ j \\_ a a y 4 finite real-zero mechanisms zero-carrying joint limit cvs: conditional fourier real-zero theorem % ccm approximation to the ground state suzuki: self-adjoint extension gives real zeros and convergence to actual zeta zeros: open ae ae riemann hypothesis: open real zeros of a finite charac ist itt wi without the missing joint limit."
+  },
+  {
+   "figure": "figure67_nonlinear_spectral_hole.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "4e619414027de308bc5d370b3c085899cccd64158f2739dae14ca12183f119c4",
+   "bytes": 251717,
+   "text": "pp178: nonlinear logarithmic spectral-hole persistence every finite nonlinear jet keeps the same hole pilot leakage h7l =x'8- #11 5/11 k=0 0.4 4 [l -2n/u 2m/u 2/11 0.2 4 first crossing spare 5/44 outer edgk 7+ 1 0.0 - -1/11 --0.2 4 ee -=- --0.4 4 -4/11 -0.6 4 smeared jet support - om -7/11 central spectral hole target -1/4 t t t t t -6 -4 -2 0 2 4 1 2 3 fourier frequency & retained jet order / the geometric leakage clears the target only after factorization; the actual coefficient-weighted extraction remains open."
+  },
+  {
+   "figure": "figure68_pell_companion.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "33f1bdc3e45149b5f504091b5249f8362f75f70a671e7bf296d17455a913e86a",
+   "bytes": 221436,
+   "text": "pp176a: complete pell companion and unique fourth-power lock rung o rung 1 rung 2 rung 3 rung 4 (r, §) = = (9,16) = (35, 61) ( ) (132, 229) ceeeal deed deen el t;=37t,+1 (r’, 5‘) (2r+s4+1, 3r+25+2) _ complete square-difference family unique nontrivial quartic lock (2s +1) 3(2r+1)*=6 (t - 3)(t? + 3t4+1) 0 t2 tr t=7t2,=3 t4=10 tt, +t, descent reaches (3,1) 34+10=107 32 =1t33 =91 this pell orbit is independent of pp176's repeated-square orbit; both are elementary and rh-neutral"
+  },
+  {
+   "figure": "figure69_gamma_triangular_scaffold.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "4242d570a894935bb206051a2c50a9b0d920117ea91ff9c0b424e61569168f63",
+   "bytes": 369419,
+   "text": "pp179: exact gamma-triangular scaffold and cancellation firewall all-order positive loewner geometry completion cancels the scaffold negative-even poles fold triangularly 1.00 4 fold axis s=1/2 54 cy=z 2 l am m21 net residue = o at every scaffold pole i (qi + am)(qj + am) >0 0.75 4 ee q=0+-2t 0.50 4 44 -2-1 at : : : 0.25 5 q= -6 ~2t> $3 0.00 - 2:2 il q= -20 =-2t, -0.25 4 -2:3 2- : : : : -0.50 5 q=-42 = --2t6 -0.75 5 -2:-4 14 -1.00 5 q= “74 =-2ts = m= 0 consta see ee ee ee ee ee ee ee ee ee ee ee ee l ma elementary na l 4 ] -7.5 -5.0 25 0.0 25 5.0 7.5 10-2 107} 10° 103 102 6 -20 42 72 two s-sheet representatives safe scaffold coordinate gq >0 folded pole address gq the scaffold has genuine all-order geometry, but it is canceled before the completed source is formed; l_ gamma - l_p remains open."
+  },
+  {
+   "figure": "figure74_safe_axis_and_self_dual.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "d1185c6d8a3013456abb3b617be7fbb7d58d4a7ddbdef2e5f25363c8c0d6709a",
+   "bytes": 208859,
+   "text": "the triangular safe axis and the self-dual magnitude a. triangular safe-axis chart b. self-dual magnitude x~¥/? = 1/vx 60 l == xx=s(s-1)=2t;_1 56 10° 4 = x -0.3 = x =o) = x -0.7 m= ~r=2s-1=v1+4x 50 7 42 40 5 x77 =x 30 30 4 for all x iff => 20 204 1071 4 12 104 04 4 5 6 7 10° 10 10? real safe axis s=o>1 (t=0)"
+  },
+  {
+   "figure": "figure75A_r10c_one_orbit_four_coordinates.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "414a62411abfc4158d24b52f259c9cc294bfe5eb9487eaae38a6549b85b6adf4",
+   "bytes": 232564,
+   "text": "one orbit, four coordinates: s - gq - --q > y=l/q>w-q, on the line: = a 1 2 a. s and its mirror b. fold gq and pole -q c. w=1-1/s and wt d. qn, n=1...24 icritical line r1/q = 0.591716 q) = 0.591716 ports. 31/q=0 r1/q g0.591716 p° -q dw b1-s ~----\" positive ray every rung a square b=0.50, t= 12 lwl = 1.000000 off the line: b =0.75, same height a. s and its mirror b. fold gq and pole -q c. w=1-1/s and wt d. qn, n=1...24 icritical line r1/q = 0.540921 ects q) = 0.540921 es 31/q = 0.199418 r1/q = 0.540921 > wv @. -q ve 0g n=8 ol-s i} ~----\" oo wt b=0.75, t=12 off the ray lwl = 0.866206 first negative rung: n=8 exact calibration orbit: t= v2, q=9/4, -q=--9/4, y=4/9, w=(7 - 4v2/)9 with lwl=1; q,=49, q,=128/81, q3=2116/729, q, = 25088/6561 a single orbit constrains nothing: a, sums q, over all orbits, and rh is a, = 0 for every n."
+  },
+  {
+   "figure": "figure75_li_pp97_loewner_study_atlas.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "dc91383ad6c0153d78f9f33e654a88e2fe64cda203e703d461b1d1b35fbcfe92",
+   "bytes": 342451,
+   "text": "li coefficients - boundary moments - matrix compatibility exact dictionaries; distinct positivity proofs a. central-pascal rows b. moment indices add ho ho m1 m2 h1 all h3= m1 m2 m3 h2 15 -6 m2 m3 ha diagonal: normalized 8 all h3 w,(0), w3(0), ws(0) ha 210 cy(0) = dyhydn same inertia. positive entries ms 792 -495 220 12 all alone do not prove psd. ai a2 a3 na as xe wao)(2k - 1)! = uk-1 mk-1= d(-1¥ (2k) j c. status: controlled by reader §r12 d. completed source rungs sign proof channel wi proved h = xs¢ analytic source, f'?) source a-cat, one certificate, [lrlii = wi(x;) w2-we proved f\"2) (dossier §74a) ly=lr-lp wy, 75k <ky proved zero-assisted, verified height (§r13) all finite positive node sets lyreo0 wr, kk> ky open rh-equivalent: open all orders / all nodes open rh-equivalent sign finite matrix gates through rank eight remain certified. ky = 4,712,664,392,502, fixed at (13.6). all rungs at once is the riemann hypothesis."
+  },
+  {
+   "figure": "figure76_reflection_contour_and_jump_law.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "8e64859bcf77e5318a79453ecb1f66ad72a26e91f80a48865d2053ff04d8d83e",
+   "bytes": 139151,
+   "text": "completion before positivity: the rh content lives in the contour shift a. reflection contour, not a boundary multiplier b. exact jump law; sign of individual jumps is the frontier 1.65 partner shift the contour] collect residues 3- 1.4 > @ 2- 1.25 critical 1- <3 1.05 is} 0.8 5 ll 0- 0.6 5 -1;5 off-line 0.4 5 275 0.2 5 -35 ie(02) = ie(01) = pmpa(0) 0.0 5 ag 1 shp nal pih~ shel 0.50 -0.25 0.00 0.25 0.50 0.75 1.00 1.25 1.50 0.0 0.2 0.4 0.6 0.8 1.0 o=rs contour abscissa do"
+  },
+  {
+   "figure": "figure77_beta_log_projection_and_scale_firewall.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "e463cd581ceb2bc9eabdf33848a9d5b98dc140d957512cc91d4ffcf9090e2456",
+   "bytes": 185728,
+   "text": "pp204 replay: dv, (u) = 2(1-u)du owns a true gram matrix, not a uniform diagonalizer a. fixed rank does not resolve unbounded log frequency b. the log-gap scale must grow with the cutoff 10° 4 e o 10° 4 e e e 10-2 4 107-1 4 10-4 4 10-6 4 10-2 4 -@- fixed scale 1 =-@- scale ni? 10°° > -e- q=2 -® q=1,000 -@ scalen -® q=10 -® q=1,000,000 10-3 4 -@- scale n3? t t t t t t 1 2 3 4 5 6 7 8 10? 103 104 10° polynomial/jacobi projection rank cutoff n"
+  },
+  {
+   "figure": "figure78_beta_and_gamma_measure_separation.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "e388655ba5b7a44e283c24c24bda711d929c07b97359cfa4d76712b06c0bb45d",
+   "bytes": 233581,
+   "text": "two triangular-looking measures: exact, useful, and not interchangeable a. different supports and different total masses b. reciprocal-triangular and polygamma ladders diverge immediately 2.00 + === dv,/du=2(1-u) 108. “= wtks1 r/dv = ey2/(2sinhv) =e k12-+de(k +1, 1/4) 1.75 5 10° + l 101 1.50 5 104 4 1.25 5 103 4 1.00 5 l 10° 102 + 0.75 5 101 4 0.50 5 l 107-1 10° 4 0.25 5 infinite ma§s at v 1 0 probability mass = 1 1071; ee 0.00 5 \"© oe -oe t t t 10-2 1072 10° 10? 6 7 compact variable u € [0, 1] moment order k"
+  },
+  {
+   "figure": "figure79_sqrt_weight_and_gauss_circle_comparison.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "3fe9f4b18c09b4aedb6165e370a8c1d0eb9a2cedcc6f930b0fffe5132f62b833",
+   "bytes": 243624,
+   "text": "why 1/vn is visually important without identifying the rh and circle-problem mechanisms a. the self-dual mellin envelope b. gauss-circle comparison: n = a2 + b* =r 10° 4 - “rain an es -. 7 -_--__ -- (n-¥2)2 =n} =. --- n -0.3 o -0.7 oe ee ---n -. 7 o o o o 7. ; / oe se 0 o oo r= vn 0- [2 5 107-1 4 o o 0 \\: \\: l =< o o vy ee ~~ _----s j ee -675 -_s., ln-sl =n-°; balance at o=1/2 10-2 4 change of variable only: n=r? =n7-¥? = 1/r t t t 10° 10? 102 -6 -4 -2 0 2 4 6 a"
+  },
+  {
+   "figure": "figure81_v26_widder_sector_atlas.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "74571cba87252d9908ad94d5befbf645dce5fd7e7345b6ae74f153a649d53b06",
+   "bytes": 491268,
+   "text": "the widder sector mechanism - exact geometry, finite zero-assisted reach a. every ux(q) phase stays in one sector b. first possible sign crossing moves with height 1.00 - 1.00 7 -- g=0.70, y=20 -= £=0.90, y= 100! 0.75 = - = b=0.70, y=100 -- b=0.55, y= 100) 0.75 = 0.50 = 0.50 = 0.25 > 0.25 5 20, kx = 39.3 0.00 0.00 60-k 41448 -- y5200, kx =392.7 -0.25 5 -0.25 5 -0.50 5 -0.50 5 -0.75 5 -0.75 5 blind radius x = lql u -1.00 5 -1.00 5 10-5 10-3 1071 10! 103 10° 50 100 150 200 250 300 350 400 x/\\ql rung index k c. verified height buys only a finite rung prefix d. powers sharpen the band around the blind radius 1014 4 m= ks =1/(2largql) 1.0 5 m= k=] --- large-height slope 1 - k=4 1012 4 == k=16 verified height h 0.8 = certified ky =4 , 664, 392,502 * 101° 4 0.6 = 108 4 106 4 0.4 - 104 4 0.2 5 102 4 0.0 = 102 104 108 108 1010 1022 10-3 1072 10-1 10° 10! 102 103 zero height y positive folded coordinate q/x"
+  },
+  {
+   "figure": "figure82_v26_carrier_and_defect.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "589c97684eb240c99a7fb3ac20b22c9e6fd6bc7fa03035de1d93e708b95fc63e",
+   "bytes": 224761,
+   "text": "reflection is not conjugation: the exact one-node defect a. two sheets, two involutions c. the missing conjugation in one picture b. the carrier defect vanishes only on the line 1-s $ e e 10-5 4 holomorphic pair 2- 10-6 4 fy(s)fx(1 ~ ss) = qi(x +q)? reflection-even; enters w, 1- 10-7 q 0- hermitian pair 10-8 4 fx(s)fx(s) nonnegative norm square -1- uses conjugation 10-9 4 15 -2- 1l-s §$ 10-10 - -- x=? e e --- x s = 5 a=f;(p), b=fx(1 - p) 1--s=5 only ato=1/2 - x=11 -3 l 10-11 4 1 m,ja-bl?_ zero iff rh 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.2 0.4 0.6 0.8 oo zero abscissa b"
+  },
+  {
+   "figure": "figure83_v26_polar_shell_pairing.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "dd67f5be555eefcb44450ec4aa9190134b0e4a74f7d63214cb1a2c4b276cae86",
+   "bytes": 466150,
+   "text": "1. the shells: r,=vn, 6,=-tlogn 2. normalised term n¥/~%e-tog” (term + reciprocal shell radius) every annulus has area exactly m - equal-area shells o and 1- ao are exact reciprocals: re 1/r 84 n=49 e 64 24 s e e 44 14 o=1/2: every term on the unit circle eee 24 e? neo e n=1 ee ee ee 24 ee -14 ee o=670 e ee -44 se o=0.30 ° n=25. -64 -2 -8 4 -8 -6 -4 -2 0 2 4 6 8 -2 al real real"
+  },
+  {
+   "figure": "figure84_v26_heat_defect.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "adadd31beaa82379cd246d5491173fc6d98caa5aef91fccf015b07ed5f611f91",
+   "bytes": 266569,
+   "text": "heat trace and off-line heat defect are different objects a. a positive total trace can hide a nonreal pair b. the gap can resonate; squared-imaginary energy cannot == real-part envelope 2.0 5 == total heat trace 1.5 5 10° 4 1.0 - eee eee errr errrrreers vereeooe eeeeree (eeeeeeerrrrrrrrrre \\errrrrr 0.5 5 5 10-1 0.0 -0.5 5 synthetic atoms: 1,1,2+/,2-i =-- paired phase:\\cos(u) o(u) = 2e-4 + 2e~*cosu>0 === normalized hea ap: 1 fcos(u) -1.0- normalized squar aginary energy: 1 v 3 on 3m 4n heat time u heat time u (pair has b=1)"
+  },
+  {
+   "figure": "fixed_rung_asymptotic_tails.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "19e1c17f77dfbb24491d111cc1f7747f8bf2be802b447bc220a9bcc891ba60de",
+   "bytes": 229416,
+   "text": "every fixed widder rung has a positive analytic outer tail ky = (2k - 1)! ! (2k - 3)! 1! /22k+2>0 positive leading tails; no uniform-in-k conclusion 10-1 4 1013 4 10-4 4 101! 4 10-7 4 102 4 10-10 4 10’ 4 10-33 4 10° 4 10-16 4 103 4 10-19 4 ms kk = 1] 10: 4 mms kk = 2 ka = 1575/1024 10-22 4 am k=3 10-1 4 me k=4 t t t 1 2 3 4 5 6 7 8 9 10 11 12 101 10? 10° 104 10 10° 107 fixed rung k x"
+  },
+  {
+   "figure": "fixed_scale_hausdorff_map.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "ed690880b170e15907a01ab69c53b9622953d7ba0e03cc3d245e0e8b163b6b02",
+   "bytes": 195748,
+   "text": "one prescribed scale turns rh into a compact hausdorff moment problem a nonreal folded zero leaves the admissible support critical ray maps into [0, 1] 0.6 4 ee st ns et se 1.0 0.4 5 blind image t>1 0.8 4 maximum t,(x) = 0.2 5 0.6 4 0.0 li 0.4 5 -0.2 7 0.2 4 -0.4 4 -a q=3e8 0.0 4 hausdorff support -0.6 4 10-2 10\"? 10° 10! 102 -0.2 0.0 0.2 0.4 0.6 0.8 1.0 1.2 1.4 positive folded zero q rty(q)"
+  },
+  {
+   "figure": "folded_block_phase.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "67b6f1bc531f54a663b18cea1e8824b1da6922ad33dffc303bff111ea4357b60",
+   "bytes": 204174,
+   "text": "a nonreal folded conjugate pair leaves an oscillatory signature in the widder order sign of cos(k[arg q - 2arg(x + q)]); q=3 +2i order oscillation away from the blind radius d radius 1.00 5 0.75 4 20 0.50 5 o15 0.25 4 0.00 \\f 10 -0.25 4 -0.50 4 x/lql = -0.75 4 -- x/lgl= -1.00 xid\\= as t 0.1 0.32 3.2 10 24 x/lql"
+  },
+  {
+   "figure": "folded_zero_geometry.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "19a6d77979c96c48697a079fbcd5b02a439618935da01407c0f68d35bef5ce47",
+   "bytes": 155646,
+   "text": "reflection orbits fold to a real ray exactly when the zero is critical dp = 1/4 + y? - a? - 2iay (synthetic geometry) criti raya = 0 1.0 4 off-axis leaf a = 0.12 off-axis leaf a = 0.25 off-axis_leaf 0740 common focus 1/4 0.5 4 ion q 0.0 --- a <- - --0.574 -1.074 0.0 0.5 1.0 1.5 2.0 rp"
+  },
+  {
+   "figure": "fourier_positivity_firewall.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "e324d74e39c69c36967349274102fea2687c43f6fbb887dfbed13fdc1e4d8af1",
+   "bytes": 144910,
+   "text": "pointwise nonnegativity does not imply a nonnegative fourier transform f(x) = e-**(1 + 6x2) =0 f(t) = vite**/4(4 - 3t?) 2.54 negative transform 67 2.0 4 44 1.54 on 27 1.04 0-7 0.5 4 0.0 -27 -3 2 -1 0 1 2 3 -6 -4 -2 0 2 4 6 frequency t"
+  },
+  {
+   "figure": "fractional_riesz_phase_diagram.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "fd03963db7b44d0d4e72ae6e680e5466502fd062c942fdf459896ddc4acac9ab",
+   "bytes": 98169,
+   "text": "fractional cyclic smoothing: the current rigorous phase diagram arithmetic regularity threshold absolute mellin threshold no-go open rh-equivalent absolute contour prime cusp x2~4 new boundary: a = 1/2 1/2 the interval 1/2 <a <1 is not claimed solved."
+  },
+  {
+   "figure": "hausdorff_finite_witnesses.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "2a2a93d8cedf3e0f1b2b8f0766efe71432454658cdc5116dd81da91be0b657bb",
+   "bytes": 122801,
+   "text": "finite hausdorff differences are explicit fixed-scale witnesses synthetic positive folded spectrum synthetic spectrum with a nonreal pair 14 14 12 12 10 10 0 2 4 6 8 10 12 14 moment index n moment index n"
+  },
+  {
+   "figure": "intrinsic_d8_envelope_v1_2.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "3e76bfdeb61facd24f77f666d83969aa3407535c29988f33b612a1a3ad6a4bde",
+   "bytes": 90534,
+   "text": "one four-state fiber: intrinsic dg, intrinsic v,, transported c, regular c4 = (l) intrinsic v4 = (a, l2) inside intrinsic dg = c(b) (1,1) (0,1) eo. an i (1,0) ‘t om) e e transported quarter-turn l; l?=b a*=l*=1,ala=l\"! v4 nn ca = (l?) = cj the envelope is intrinsic, but l versus l~! is registration-relative."
+  },
+  {
+   "figure": "laguerre_taylor_xi.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "3691a00ae63249d6a9b67bb92eb05a44077d8eedf895ec1e982c600aa562c51e",
+   "bytes": 210458,
+   "text": "the generalized-laguerre hierarchy is the even collar taylor series of xi energy even taylor reconstruction truncation error 1.016 +4 mee direct xi evaluation - through l_1 10-5 4 1.014 - through l_2 - through l_3 10-7 4 1.012 4 - through l_4 10-2 4 1.010 10-114 1.008 + 10-13 4 1.006 + 10-15 4 1.004 + 10-17 4 - - through l_1 1.002 + through l_2 10-19 4 - through l_3 - 1.000 + through l_4 0.00 0.02 0.04 0.06 0.08 0.10 0.12 0.14 0.00 0.02 0.04 0.06 0.08 0.10 0.12 0.14 c2 c2"
+  },
+  {
+   "figure": "local_witness_scaling.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "4f1ab09fb13f9d389c1d3c89fae6367a49a29f2c2302a6b9ad42aaeefd0692b9",
+   "bytes": 163955,
+   "text": "the target pole fixes the normalized local witness while the background stays bounded normalized limit: -1 + o(d) the unnormalized flux diverges negatively 0.75 4 ==== full synthetic field == target contribution = -1 0.50 7 -- normalized background -2000 + 0.25 4 0.00 + --4000 + -0.25 4 -6000 + -0.50 4 -8000 + -0.75 4 -1.00 4 ss ee ee ee ee ee ee -10000 + 10-4 10-3 10-2 107+ 107+ 10-2 10-3 10-4 inward distance d d=a-c"
+  },
+  {
+   "figure": "markov_divided_difference_circle.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "0031cc1c4450aea513c03fa9c3bd3fcd02406a37f19cfdfd262e979916eceda5",
+   "bytes": 155546,
+   "text": "the one-scale markov transform is a reciprocal divided difference on a circle uv = x2, u=xe®, v=xe -i6 h,(z) = [h(u) - h(v)]/(u - v) 1.00 4 1.0 5 0.75 5 0.50 0.25 4 0.00 0.5 4 ll -0.25 4 -0.50 4 -0.75 4 -1.00 4 0.0 4 -1.0 -0.5 0.0 0.5 1.0 ni2 ru, rv circle angle 0"
+  },
+  {
+   "figure": "polyphase_aliasing.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "3e258b6f1f9b1b7e6c4928cedd664a2c6ea04667a08bda9993f318a56469631f",
+   "bytes": 254700,
+   "text": "the half-grid channel resolves the nyquist mirror that the coarse channel aliases integer grid: traces coincide half grid: mirror acquires the opposite sign 1.00 4 1.00 4 eo os((k + 1/2)@) ae ror half-grid 0.75 4 0.75 4 0.50 4 0.50 4 0.25 4 0.25 4 0.00 4 0.00 vy -0.25 4 -0.25 7 -0.50 4 -0.50 4 -0.75 4 -0.75 7 =@=- cos(ké) v7 \\e7 ny -1.00 4 =© cos(k(2m-- @)) -1.00 4 2 4 6 8 10 12 6 10 12 sample k sample k"
+  },
+  {
+   "figure": "radical_prime_support.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "9503288519d0b1f686de7da17cba85c64236b6d24390be5e7abc00a6a51a98c4",
+   "bytes": 108180,
+   "text": "taking the radical keeps prime support and discards factorial multiplicity example: n = 10 the two quantities agree exactly 50 4 == 9(n) mm v,(2n!) 87 (\"radical exponent e log rad(2n! ) 405 67 30 4 54 20 4 275 10 4 o- 07 0 10 20 30 40 50 60 prime p"
+  },
+  {
+   "figure": "secondary_cayley_spectrum.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "c32aab37fb318c2fd734fc395ce4b17276370d0f0c5064247f92902f6c31d8a7",
+   "bytes": 231878,
+   "text": "the widder-order spectrum is governed by the same cayley complement map rh geometry: 0 <a,(q) = 1/4 blind in phase, supercritical in amplitude 0.25 qe ee ee eee ee ee ee eee ee ee ee ee ee ee ee 4.0 +- - ee ee -1 0.20 4 rer i 3.54 0.15 4 3.0 5 i =< 0.10 5 2.54 off-axis blind pole enters (2, 4) 0.05 4 == q=//(1+1r)2 m= z,(q)/xx = 2(1+c0s0) === critical barrier 1/4 2.0 pee cuieical pole a nbel. 4 ee ec eee tee eee ee eeeeeesteeneseeneenseesseesneneensensresteneeeney 0.00 t t t -4 -2 0 2 0 20 40 60 80 log(q/x) on the critical folded ray off-axis folded angle ll at x =lql (degrees)"
+  },
+  {
+   "figure": "signed_zero_block_phase.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "a0a415f4534631a2c14603e2aa1a3467446fcc3f059793834034a469a5b16c9c",
+   "bytes": 100805,
+   "text": "o an off-axis zero block has an exact negative core 1s} o oo boundary: lul = va? -c? with é- 0.30 o) io) 0.4 0.2 0.0 negative positive -0.2 -0.4 0.1 0.2 0.3 0.4 collar displacement c"
+  },
+  {
+   "figure": "stieltjes_heat_model.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "57e297ccc9ad6b36f7e14e33e0c7e78e04dde79b4ad38800354453040d02d2bb",
+   "bytes": 224471,
+   "text": "a positive folded spectrum produces both stieltjes and heat-sign hierarchies all displayed signed derivatives are positive o(u) = pwje-w 10° 4 --_____ 10° 4 10-3 4 10-1 4 10-6 4 > 10-2 4 10-2 4 10-12 4 (-1)°s (-1)'s 10-3 4 10-15 4 (-1)25) (-1)35®) t 2 10 12 0.0 0.5 1.0 1.5 2.0 heat time u"
+  },
+  {
+   "figure": "tfg_rational_collar.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "2e044febb2d99828e10356d62f9ea559255896ff4a7ff341203e4994cb2d2687",
+   "bytes": 165117,
+   "text": "centered native tfg cells fill the rational collar 0.5 +--+). a nn nn nn nn np en nn ne ee ee er eee tee outer collar boundary e e e e 0.4 5 e e °° qt: n=14, k= 1b e e e e e e e 0.3 4 e e e e e ll « 0.27 0.15 0.0 4 10 15 20 25 30 35 40 native chamber n"
+  },
+  {
+   "figure": "transverse_defect_geometry.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "d1fcc25cba85d4de406cceba492e8be25f63366d6659cd387d7f2b85d4838a44",
+   "bytes": 140688,
+   "text": "the transverse triangular polarization is exactly the folded imaginary defect -2y(b - 1/2) 8 jlo(1 - p)] = y(1 - 28) = l 5 =i & 4 -2 -4 -6 0.2 0.4 t 0.6 ™ -8 horizontal zero coordinate b"
+  },
+  {
+   "figure": "triangular_primitive.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "7da25b3edfcbb728116f1497f7e3499c2640ad399a62770b409c35387b96542c",
+   "bytes": 148662,
+   "text": "triangular numbers are both a discrete primitive and a centered split square 2_1 = tnh-tn-1=n tx = 3(x +5) 8 80 4 mms x(xx + 1)/2 707 +12 == centered form 2.0 4 60 4 1.54 50 7 40 4 +9 1.04 30 7 20 7 0.5 4 +5 fixed point (-12, - 1/8) 1074 0.0 \\ 04 ee 0 2 4 6 8 10 12 -1.5 -1.0 -0.5 0.0 0.5 1.0 1.5"
+  },
+  {
+   "figure": "triangular_product_convergence.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "4817320ae05abb3be1c09364a00dd709eaf2ecef5d39d817adf455a8cd9dc6e7",
+   "bytes": 113332,
+   "text": "the triangular canonical product converges to [1], (-1/8) = 4/n value convergence error fa me ee ee eee ee -=- 1.2674 10-1 4 1.247 1.2274 a 1.204 10-2 4 1.184 1.1674 1.1474 --- an 10-3 4 1.124 50 100 150 200 250 300 10° 10! 102 truncation n truncation n"
+  },
+  {
+   "figure": "triangular_reserve_phase_v1_2.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "76a2b8080af8885b5ec4b0766d26a3220415df00f9a9311432ff270dcfaf3438",
+   "bytes": 227048,
+   "text": "the triangular reserve is finite-range; the repaired handoff is all-rung minimal shell (s - 1)log 2 = 2k for ay = y 2klogk 1.0 5 1.600 1.6 7 0.8 5 1.44 there > 2/5 for every k=2 1.2 4 0.6 5 1.07 oonee 0.8 4 ov 0.4 4 0.600 0.6 4 0.2 5 0.375 0.400 0.4 4 =@=- sharpr ve c -ax 0.0 5 _ = 0.2 4 exact valid ladder first failure k= 42 t t t t t t 0.0 - 2 3 4 7 8 9 10 ul 12 13 #1 4 relative stirling product reserve atom factor majorant rung k"
+  },
+  {
+   "figure": "v26c_bessel_coefficients.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "c6e420db3d79ef0dfba94424490227d80947b8dce70862f92a99b8c9f790e1cf",
+   "bytes": 107680,
+   "text": "the exact diagonal: factorials retain prime multiplicities 1. one prime: multiplicity 7 co 24 2) ip(2apv2) - » j=0 (3!)? 2. extract total degree r from the prime product -_*_ > i [z\"] ii ip (2apvz) (ip)p i ip 20 p oy > jp=r 3. restore the multinomial factor - - _- lb (r!)?[2\"] ii io(2ap v2) > b(n)? the gaussian weights in (108.1) make )°., a;, finite at each fixed s > 0."
+  },
+  {
+   "figure": "v26c_certificate_cover.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "6f91242a9a0501e0ff50cec66affac2751db8e4a4a0b31ab5ba7ef96d9e171f9",
+   "bytes": 103028,
+   "text": "finite interval + analytic tail = a global source proof directed continuum analytic domination w> ee ee-c“‘*#ntn..ccu s=l1 s=10 directed continuum analytic domination w3 nee ee--c“‘#n..cu s=l1 s=20 the intervals meet at the proved handoff; no gap is left at infinity."
+  },
+  {
+   "figure": "v26c_dilation_threshold.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "3fff24bcabdd6c9c15eefdcd0e4f3e62187d2d7e6c582016d2fb99ae2aabd646",
+   "bytes": 74751,
+   "text": "dilation isolates the exact endpoint still to be reached cbf condition fails cbf condition holds re 2b « 2 t, cbf = a=2b.« - b« €[1/2,1] - schematic threshold"
+  },
+  {
+   "figure": "v26c_finite_dictionary.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "1a07cb52a218b2c5e42f1158834f4b65fc863fe1a610bf205baeeadd41859017",
+   "bytes": 104285,
+   "text": "the finite guinand-weil dictionary has 2m + 1 coordinates one linear coordinate m sine coordinates m cosine coordinates jwdu jsin(2mkw) du fweos(2mkw) du 1+m+m=2m +1, k=1,...,m exact finite coordinate recovery; no infinite positivity follows from dimension alone."
+  },
+  {
+   "figure": "v26c_measure_obstruction.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "d5444ae68eb2e839c09529efc41cc8518919c34bb420c9526280f7c678e632ee",
+   "bytes": 193762,
+   "text": "one exact resolvent identity would require two incompatible measure types regular translation energyl completed meromorphic resolvent a positive stieltjes representation m(t) dt -» dv(q) q=t?4+1/4 s:(x) - _ pav(q) x+q absolutely continuous; no atoms requires an atomic measure both types would force v = 0, but s<(0) =a; > 0. scope: finite or strong regular multiplier lifts. singular form limits remain outside the theorem."
+  },
+  {
+   "figure": "v26c_rank_scope.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "e51edb3c7ef02847ef7067fb9aa162e7765d8c6de95e54efeb575806134a3992",
+   "bytes": 149165,
+   "text": "matrix size and node range are separate quantifiers global order 8 local rank 12 every positive basepoint one fixed basepoint: x = 56 order-eight matrix monotonicity confluent rank-twelve certificate technical §§92-93 technical §138 global order 9 and the all-order completed sign remain open."
+  },
+  {
+   "figure": "v26c_reflection_pair.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "d8a1f896519cd8bb286fb0db4e9bada05c3ad039c416cef1c865dd5ceabe3015",
+   "bytes": 79111,
+   "text": "reflection is the pairing the completed source must retain functional reflection hermitian pairing pt>1-p pt>o f(p) f(1 - p) lf()l? - l-p=0 - ro=1/2"
+  },
+  {
+   "figure": "v26c_sector_array.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "dd0a6a9628aca9775f08f3cb8de49630725f5ec4cbc56c6390d3540487ab3743",
+   "bytes": 111386,
+   "text": "a finite rectangle, global in the positive scale n 4 fn, k(x) > 0 for every x > 0 ky-1 beyond the finite index boundary: all orders open »k 0 ky ky =4712 664392502 - finite index bounds, not a finite x-interval"
+  },
+  {
+   "figure": "v26c_source_depth.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "dc08384eb546d44d656335a4e8820a8284e44e7fb99cd2d3a98f7c86a7dbfbdb",
+   "bytes": 123047,
+   "text": "one scalar ladder, two proof channels rung boundary / (2k - 1)! source jet global sign independent source wi ho f (2) proved analytic w2 m1 fi) proved a-cat w3 h2 f() proved a-cat wa m3 f (8) proved a-cat ws m4 f (10) proved a-cat we u5 f(12) proved a-cat source frontier: the next independent rung is w7 > f4),"
+  },
+  {
+   "figure": "v26c_two_node_compatibility.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "47c3ae8c6d45361f3628da3570764534fe6dc8c2c8218beae3cef9f8dcd2bf3a",
+   "bytes": 128252,
+   "text": "the two-node lowner test ai(x) = w(x), k = hod - hy) (x, y>0, x #y) a(x) = xs¢(x), x-y scalar entries off-diagonal compatibility w(x) = 0 wily) =0 k* < w4(x) wi(y) det lp = wy(x)w3(y) - k? together these are necessary and sufficient for the 2 x 2 matrix to be positive semidefinite. rh requires every finite positive node set."
+  },
+  {
+   "figure": "v26c_two_objects.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "81eb568425435566411da2412eec232c80b39acf31d304e44fb8fee4ef3dea61",
+   "bytes": 102075,
+   "text": "keep the auxiliary model and completed source distinct triangular-volterra benchmark completed riemann source positive model s¢(x) for every x >0 specified scalar calibrations gamma-prime compensation its own measure and spectral zeta exact equality still required a matching coefficient or scalar is a calibration, not a function identity."
+  },
+  {
+   "figure": "v27_empirical_marker_comparison.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "ede0e19924736c7d1c3f749adf2f5b6c585bc9dfd699fc6af1aa1213b527fb4d",
+   "bytes": 148983,
+   "text": "near 2.75 - reported follow-up comparison a+ 11/4 77/8 2.740 2.780 0.0 0.5 1.0 15 2.0 25 3.0 3.5 4.0 reported observed / surrogate hit ratio"
+  },
+  {
+   "figure": "v27_nested_triangles.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "d9299001c6febbe7b071151ad2562730bec36a3161c97b9f2333e64a469a9edc",
+   "bytes": 85232,
+   "text": "an inner triangle and two neighboring values to =3, ta = 10, tr, = tio = 55 the nested triangle the centered scale 2t3t10 =18-55=990 t31 = 9t10 + 1 = 496 tag =9-10-11 21731 = t44 +2 =992 (496) = 9(990) = 240 = 2745"
+  },
+  {
+   "figure": "v27_square_diagonal.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "c1fff6cc13aee765a1326f1d2dd3344124031d0c7f905d8fe1f832b85137829d",
+   "bytes": 62256,
+   "text": "l two triangles + one diagonal a ll ia mj 7. =45 below the diagonal l l ll l l tyg = 45 above the diagonal ll lll lll ll ) 10 diagonal cells ll lll l l lll} l l {l 2tg +10=102 e} tt tt tt l l"
+  },
+  {
+   "figure": "v27b_energy_isometry.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "efc0c7ca737440bd8b78e27d17def28d796b807d7cf49c64c5e3cc43bcb1ee54",
+   "bytes": 125783,
+   "text": "one coefficient vector - two exact polynomial norms circle polynomial completed row laguerre polynomial by or .by,w) py(z) = 28n,/2 on = 2bn.jl\" 2 j\" [pu(e)l? do en >b n,j j e-tlon(t)/? at (1 -z)'ro tr! zr l(t), exact finite isometry - the source upper growth bound remains open"
+  },
+  {
+   "figure": "v30_rh_equivalence_map.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "5ae6b7087f61937e7868ea0b5140b64eb04b082b85a2bdc72ccc0def6d7b0025",
+   "bytes": 305953,
+   "text": "the completed object and its rh criteria dp = p(1 - p), s(x), h(x) = xs¢(x) rh open : each criterion below retains its full quantifiers folded support li sequence qp > o for every folded zero an = 0 for every n= 1 technical §§16-18 reader §r15; technical §155 moment matrices stieltjes / heat [ui+;] = 0 for every size sz stieltjes; heat completely monotone technical §17 every derivative and every heat time widder signs one prescribed scale w(x) =0 for every k= 1, x>0 complete hausdorff sequence at fixed scale technical §33 all finite-difference orders; §§50-51 cbf / loewner dilation endpoint h cbf; £p(x) = 0 7, cbf along aj v1 every finite positive node set technical §§143-145 bernstein-laguerre energy ata=2: sy[p](2) <(1+log2 +17/6)2 for every n=o full-prime cap open; new cutoff theorems in §166c exact source identity; open all-node sign lp(x) = lr (x) - lp(x) gamma energy estimate proved; the full fixed-scale prime estimate remains open"
+  },
+  {
+   "figure": "v32_pascal_teaser.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "cc119a8aa9243f390e73c44659e0fdd61e2827a5f78d22e4429b21411ed2cfc7",
+   "bytes": 129923,
+   "text": "pascal's triangle, rows 0-14 1 1 1 1 2 1 1 3 3 1 1 4 6 4 1 1 5 10 10 5 1 1 6 15 20 15 6 1 1 7 21 35 35 21 7 1 1 8 28 56 70 56 28 8 1 1 9 36 84 126 126 84 36 9 1 circled in the last row: 1 10 45 120 210 252 210 120 45 10 1 3003 = tr7 = (3) = (3) 1 11 55 165 330 462 462 330 165 55 11 1 it is also (2), (48) and (393) 1 12 ‘66 220 495 792 924 792 495 220 66 12 1 eight places in all, more than 1 13 286 715 1287 1716 1716 1287 715 286 78 13 1 any number is known to reach 1 14 364 91 14 1 1001 2002 g003) 3432 g003) 2002 1001 364 the third column is (3) =tk-2: 1,3, 6,10, 15, 21,"
+  },
+  {
+   "figure": "v32_triangular_root_map.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "c3543ce922dd53fa44d19a5e5500d3242e94793c9721ea8088ee11577c12d391",
+   "bytes": 157383,
+   "text": "triangular root to completed source frontier 1 - triangular root 2 - analytic coordinate th, jn =2n4+1 x=2ts-1, dy =r71d, odd layers, midpoint tails, reciprocals sine, gamma, bessel derivatives 3 - completed fold 4+ rungs and matrices q=s(1-s), se, h=xs¢ wr - box-1,k-1 reflection with both sheets retained exact entries; full matrix quantifiers 5 - exact source energy 6 - open full-prime cap sy[p](2) < (1 + log 2 + 11/6)2 sy = 28h, fj circle and laguerre norms agree every degree; cutoff obstructions in dossier 166c the connecting identities are proved; the final source estimate remains open"
+  },
+  {
+   "figure": "v36_carrier.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "7165ea4775492905c3dcc864906e69dcf6fe85bee30a3d927028cd43aab4d962",
+   "bytes": 409803,
+   "text": "the carrier: one rational function whose k-th power is rung k a b. on the critical line the two are one curve u,x(q) = q/(x + q)?, for q>0 0.14 0.05 - x=2 == ux(q) with q=z +t? 0.12 4 ----= x¥=6 0.04 4 [fu(5 + it)? 0.10 5 the maximum is at gq =x, - x=18 where u, = 1/4x a squared modulus i andjso ix\\every one 0.03 + of its powers: that igthe ol of tha positivity o rh gives the rung or fre > 0.08 4 3 0.06 + 002+ 0.04 + 0.01 5 0.02 + e for every q>0 0.00 0.00 0 10 20 30 40 50 60 -15 ~10 5 10 15 q c. off the line, some rung goes negative 1.04 a conjugate pair contributes 2ju,{<costkarg ux) o=5: ped at + a=0.90 0.5 4 0.0 a=0.60 --0.54 k=33 k=21 -1.07 20 40 60 80 rung index k"
+  },
+  {
+   "figure": "v36_fold_and_poles.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "3a6005cbe5dc365dee9d3d405f3cd7225c834d3a45f1aae5ea1f8e3c0a6c8298",
+   "bytes": 289521,
+   "text": "one orbit, one point, one pole: what the fold buys a. the zeros of & b. q=s(1--s) folds an orbit to one point ae) 1 sq= ttt lost 40 5 a hypothetical off-line exactly when 0 #5 :quartet, for contrast 20 4 -_- se 205 an orbit [e] = {p, 1 - p} rm ies once la ll 07 rm 07 -107 -20 4 a clears the pole both mefmbers of an on-line orbit at s=1 and the trivial -20 4 zeros, and leaves these vertical scale exaggerate land on this one real point --40 4 -0.5 0.0 0.5 1.0 15 2.0 0 500 1000 1500 o=s rq c. one simple pole per orbit, at x = -qp rh <= every pole is real, at x < - = 1 0.015 4 poles, first six orbits -____ fa 0.010 5 s¢(x) = 2 x ¥p [p] lar 0.005 4 0.000 the volume works here ~1500 ~1000 500 500 1000 1500"
+  },
+  {
+   "figure": "v36_mellin_self_dual.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "f9bf22e65ad0f6611ad52c39638c213404757fcb4b9aa12384e9355893d99123",
+   "bytes": 322174,
+   "text": "why 1/vvn: the one abscissa where reflection and conjugation agree a. the phase moves, the length does notb. reflection vs conjugation: they meet oncec. the square-root scale is the split point 1.0 10°f = - rn-v2 - i(3) se ~~. = nn (1 s) =1/n, n=2 -e nvea=in vn os eee - --a- - rn-v2 - i(14.1347) s = _ --~ = 1/n, the reflected product 0.5 - jn-v2- it _ n-le yh (1-5) = in n=al j 1/v'n is the common factor per lside: ng -- ns . ‘olpelyal ps normalization of the q plicit formula 0.0 as 1071; exactly at o=5 10-1 4 -0.5 dashed: n-sn7$ = ni20 every negative frequency travels with solid: n~sn-g-5) = bin \"son, its positive conjugate: same envelope -1.0 10-2 4 10 20 30 0.2 0.4 0.6 0.8 10 20 30 ao o=rs"
+  },
+  {
+   "figure": "v37_first_zero.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "f0d1b57262d81f5e84cb1efd2fd402f92f6948c6db187997f6d2fc1ddcc9198a",
+   "bytes": 273420,
+   "text": "the first zero, in the volume's coordinates a. the boundary row is one number b. the average does not locate the first zero 101 4 84 the gap between the two is s(t), gilq2 = 0.45240 kr the oscillating part; at low height eee serres epp eee rere rere errr rrr re rrr rr ferret errr re rrr errr rere reer rere rere rr errr rey above this line the bound is vacuous © 74 itis in charge 10° 4 67 from k =3 the bound is below 1: a 10-1 4 wo) > 0 with no hypothesis s 55 44 = 10-2 4 yi = 14.1347 joy 37 10-3 4 24 =1 at t=17.8478, the first gram point -® everything but p; si seer =--= no(t), the smooth count 10-4 4 --- bound c(qi/q2)k, c=8.002 0+ -- actual count n(t) t t t t 2 4 6 8 10 12 14 10 20 30 40 50 60 rung index k"
+  },
+  {
+   "figure": "v38_last_unit.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "149a286374cf284b1d1ff3edbcb80fdb13bbcb80c4d70eec7dfa03d67f1e843e",
+   "bytes": 342976,
+   "text": "a. what one orbit at height t= 45 takes off the radius b. positive remainder with a uniform error bound -- on the line positive off-line remainder (13a.1a). - b 0.9 10° the envelope bounds error; it does not sss unconditional ceiling (13a.2) ss ---- prove a computational limitation. square: blind radius x = lql 0.75 dot: maximum at x = 2lql - rq - bp=0.6 10-44\" (28-1)? = 0.64 verified height h 0.5 4 10-8 4 dz -a<2.8 x 1076 (2b - 1) = 0.25 10-12 4 2x 04 0.0 10-16 4 10-297 -- _d=0.8 -0.54 10-2445 -- d=0.1 **=* envelope 1/(4y? +1), uniform in d 1.0 vix 10-28 -60 -40 -20 0 20 40 60 10° 102 104 10° 108 1010 1012 scale offset x-lql (lql =t? =2025) height y"
+  },
+  {
+   "figure": "v48_gamma_bridge.png",
+   "cited_by": [
+    "READING"
+   ],
+   "sha256": "e3156e651b9fcf7aa56a95eade0af2b47e78a63e63676a8d40e955a5691c5f71",
+   "bytes": 247796,
+   "text": "euler's constant on the triangular coordinate a. one unit interval, one triangular zeta term b. centered atn +3, only powers of 1/t, remain 102 4 1 1 + 1 - 1.0 hn ~ ve + 5109 2tp + 127, 12072 63073 -- ee --<- mass on[m-1,m] = xys2mm7*/t, 10-2 4 ee =--- 0.8 l - - 10-6 4 all masses: 2,52 c(k)/tz log 2m - ye 0.6 l = 1.2606614015 10-19 4 10-14 4 0.4 l 0.1137 10-184 == lhn - logn- yel, keeps the odd term 1/2n 0.2 4 0.0448 - lhn- 510g 2t, - yel 0.0239 10-22 --_ after 1 term in 1/tp 2 -- after 2 termsin1/t, 0.0 10-26 t 0 1 2 8 10° 10! 102 103"
+  },
+  {
+   "figure": "w4_global_certificate_v1_2.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "d4bb69432e7fcd347b6ec103d53888f642420e02f02cee6ac59c2faa0bf50410",
+   "bytes": 198657,
+   "text": "directed continuum certificate and analytic tail for w, 153 interval cells cover the full continuum 1ss<s40 analytic tail, s = 40 30 7 25 4 104 7 20 4 154 103 4 10 5 55 10 7 0-7 en sn se ei sais sie ie ae an nn. naan -57 % 512-bit hostile replay 10! 4 10 15 20 25 30 35 40 ar, a/s® tal/s® net margin safe-half-plane coordinate s (lower) (upper) (lower) together: rw, > 24975s° > 0 on the tail"
+  },
+  {
+   "figure": "widder_certificate_margins.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "2c5709d8b8eabd6ad020223c3cfffb501d0d90f1ac9dd014033386c9e04889d4",
+   "bytes": 126545,
+   "text": "every continuum band has a strictly positive polynomialized-owner margin mn. =far’w> (44 cells) m3 = frm ws (135 cells) 1015 - 10° 5 1022 4 103 4 10° 4 10° 5 10: 5 103 4 10-14 10° 5 worst band 10-34 10-34 worst band 10 25 5.0 75 10.0 12.5 15.0 175 20.0 s band s band"
+  },
+  {
+   "figure": "widder_tail_domination.png",
+   "cited_by": [
+    "DOSSIER"
+   ],
+   "sha256": "ee1b8f4a54b788c5746ebaa5ee25abccaadb2c9f03f22aba93878941cfdd23ce",
+   "bytes": 159435,
+   "text": "analytic tails close by explicit gamma domination of the absolute prime block w2:s5210 w3: 5220 10° 4 1033 4 - a; 3>279s° -= lt3l <14s\"2-5 1011 4 104 4 102 4 103 4 10’ 4 102 qo ar,2 > 72975.29 10° 4 -- lt2l<cs’2-5 10 15 20 25 30 20 25 30 35 40 45 50 ss"
+  }
+ ]
+}

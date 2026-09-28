@@ -1,0 +1,95 @@
+Colab outputs of TEAM_B_long_runs.ipynb (Colab Pro, 27 September 2026), as pasted by the
+author into the working session. The notebook in this folder is the local copy without
+cell outputs; the executed copy with outputs is the author's Colab/Drive notebook.
+Transcribed verbatim below. Nothing here was re-executed for v5.2.
+
+=== Section A (40-digit recheck of the first failure; excerpt as pasted) ===
+bottom box {'window': [-0.5, 0.5], 'total': -0.0}
+offline [0.8085171824566377, 85.69934848537758]
+offline [0.6508300806097347, 114.163342730757]
+offline [0.5743560504508111, 166.47930591316813]
+offline [0.7242576946268092, 176.70246124285583]
+offline [0.8695305796406421, 240.4046723514407]
+first online [5.094159844571095, 8.939914408096524, 12.133545425800744, 14.404003112277499, 17.130239400572492]
+listed zeros: 169 on-line, 5 off-line pairs (sigma>1/2); T=260
+theta_max listed 7.199713e-3, tail bound 6.885610e-3 -> sector-safe rungs k <= 218
+  off-line 0: rho=0.808517182+85.699348485i  |q|=7344.7235  arg q=-7.19971e-3
+  off-line 1: rho=0.650830081+114.163342731i  |q|=13033.5416  arg q=-2.64230e-3
+  off-line 2: rho=0.574356050+166.479305913i  |q|=27715.6148  arg q=-8.93269e-4
+  off-line 3: rho=0.724257695+176.702461243i  |q|=31224.0601  arg q=-2.53823e-3
+  off-line 4: rho=0.869530580+240.404672351i  |q|=57794.7930  arg q=-3.07422e-3
+  near off-line 0 (|q|=7344.724): first negative local sum at k=16590 x=7139.781440
+  near off-line 1 (|q|=13033.542): first negative local sum at k=59815 x=13304.817073
+  near off-line 2 (|q|=27715.615): first negative local sum at k=269777 x=27349.437625
+  near off-line 3 (|q|=31224.060): first negative local sum at k=119955 x=30882.477587
+  near off-line 4 (|q|=57794.793): first negative local sum at k=148116 x=58241.530679
+FIRST FAILURE: W_16590(x) < 0 at x = 7140.064895 (full-sum scaled G = -2.6913e-4); driven by off-line zero 0
+  W_16589 min over the same window (scaled) = -4.6601e-5
+
+Section A, 40-digit cells. These values were read from the Drive copy of the notebook on
+27 Sep, not pasted, so they are a transcription rather than a verbatim copy:
+  W_16588 minimum +1.7592739e-4;  W_16589 = -4.6600915e-5 at x = 7140.06626
+  five off-line zeros polished to 25 digits, |f| ~ 1e-40, agreeing with the local values to 16 digits
+  functional equation F(s) = F(1-s) holds to 1e-39
+
+Note: the stepped scan above reports the first k on its grid; the same window gives
+W_16589 < 0 (-4.6601e-5), matching the local bisection k* = 16,589 and the 40-digit value
+-4.6600915e-5 quoted in Dossier §69A. The T=260 tail bound 6.885610e-3 is superseded by
+2.8e-3 once the census reaches T=640; both keep k <= 218.
+
+=== Section B (20-digit census 260-600; first two lines as pasted) ===
+window 320-325: 5 zeros, 3 on-line -> 2 off-line to locate
+window 330-335: 5 zeros, 3 on-line -> 2 off-line to locate
+
+=== Section C (CUE limit for the Project 51 gap classifier; not used in v5.2) ===
+CUE P(next>1 | prev bin) = [0.6763 0.5349 0.389  0.2548]  base 0.4664
+CUE limiting gain (bits) = 0.04366  vs Project 51 observed 0.038-0.055
+
+=== Section D (Dobsch/Löwner inertia of the twin, 250 digits) ===
+x0 = 7124.3818: coefficients in 1894s
+   N= 40: negative pivots 0   smallest |pivot| 2.8177e-46
+   N= 45: negative pivots 0   smallest |pivot| 1.8182e-52
+   N= 50: negative pivots 0   smallest |pivot| 1.0475e-58
+   N= 55: negative pivots 0   smallest |pivot| 4.3273e-65
+   N= 60: negative pivots 0   smallest |pivot| 1.3075e-71
+   N= 65: negative pivots 0   smallest |pivot| 1.7746e-78
+   N= 70: negative pivots 0   smallest |pivot| 2.3808e-85
+   N= 75: negative pivots 0   smallest |pivot| 1.4253e-92
+   N= 80: negative pivots 0   smallest |pivot| 4.9281e-100
+   N= 85: negative pivots 0   smallest |pivot| 9.0959e-108
+   N= 90: negative pivots 0   smallest |pivot| 6.6523e-116
+   N= 95: negative pivots 0   smallest |pivot| 3.8934e-124
+   N=100: negative pivots 0   smallest |pivot| 1.1321e-132
+   N=105: negative pivots 1   smallest |pivot| 1.0311e-141
+x0 = 7344.7235: coefficients in 1914s
+   N= 40: negative pivots 0   smallest |pivot| 2.9312e-46
+   N= 45: negative pivots 0   smallest |pivot| 2.0119e-52
+   N= 50: negative pivots 0   smallest |pivot| 1.1685e-58
+   N= 55: negative pivots 0   smallest |pivot| 5.2636e-65
+   N= 60: negative pivots 0   smallest |pivot| 1.7486e-71
+   N= 65: negative pivots 0   smallest |pivot| 2.9035e-78
+   N= 70: negative pivots 0   smallest |pivot| 4.188e-85
+   N= 75: negative pivots 0   smallest |pivot| 2.8965e-92
+   N= 80: negative pivots 0   smallest |pivot| 1.236e-99
+   N= 85: negative pivots 0   smallest |pivot| 2.7987e-107
+   N= 90: negative pivots 0   smallest |pivot| 2.6818e-115
+   N= 95: negative pivots 0   smallest |pivot| 1.83e-123
+   N=100: negative pivots 0   smallest |pivot| 6.0749e-132
+   N=105: negative pivots 0   smallest |pivot| 3.3228e-141
+   N=110: negative pivots 1   smallest |pivot| 1.3243e-149
+x0 = 7565.0652: coefficients in 1904s
+   N= 40: negative pivots 0   smallest |pivot| 3.1284e-46
+   N= 45: negative pivots 0   smallest |pivot| 2.2524e-52
+   N= 50: negative pivots 0   smallest |pivot| 1.2608e-58
+   N= 55: negative pivots 0   smallest |pivot| 6.4797e-65
+   N= 60: negative pivots 0   smallest |pivot| 2.1432e-71
+   N= 65: negative pivots 0   smallest |pivot| 4.2457e-78
+   N= 70: negative pivots 0   smallest |pivot| 6.7924e-85
+   N= 75: negative pivots 0   smallest |pivot| 5.5984e-92
+   N= 80: negative pivots 0   smallest |pivot| 2.7209e-99
+   N= 85: negative pivots 0   smallest |pivot| 7.5786e-107
+   N= 90: negative pivots 0   smallest |pivot| 9.9455e-115
+   N= 95: negative pivots 0   smallest |pivot| 8.2631e-123
+   N=100: negative pivots 0   smallest |pivot| 3.1215e-131
+   N=105: negative pivots 0   smallest |pivot| 5.1324e-140
+   N=110: negative pivots 1   smallest |pivot| 1.1792e-148

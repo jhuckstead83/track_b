@@ -1,0 +1,53 @@
+/* 51 Twins v1 — exhibit plates. Plate interiors use the manim/3Blue1Brown palette on black. */
+.tw-page{--tw-zeta:#58C4DD;--tw-twin:#F0AC5F;--tw-red:#FC6255;--tw-green:#83C167;--tw-teal:#5CD0B3;--tw-purple:#9A72AC}
+.tw-gold{color:var(--a51-gold)}
+.tw-intro{padding-bottom:14px}
+.tw-intro p{max-width:720px}
+.tw-toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px}
+.tw-toc a{font-size:12px;text-decoration:none;border:1px solid var(--a51-line);border-radius:30px;padding:7px 13px;color:var(--a51-muted)!important;min-height:32px;display:inline-flex;align-items:center}
+.tw-toc a:hover{color:var(--a51-gold)!important;border-color:var(--a51-gold)}
+.tw-toc b{color:var(--a51-gold);font:700 13px Georgia,serif;margin-right:6px}
+.tw-plate{margin:0 0 52px;padding:0;scroll-margin-top:16px}
+.tw-plate figcaption{display:flex;gap:16px;align-items:flex-start;margin:0 0 14px}
+.tw-num{font:700 15px Georgia,serif;color:#18332a;background:var(--a51-gold);border-radius:50%;width:36px;height:36px;display:grid;place-items:center;flex:none;margin-top:2px}
+.tw-plate h2{font:32px/1.1 Georgia,serif;margin:0 0 7px;letter-spacing:-.01em}
+.tw-plate figcaption p{margin:0;color:var(--a51-muted);max-width:780px}
+.tw-frame{background:#000;border:1px solid #262626;border-radius:14px;overflow:hidden;box-shadow:0 18px 50px #0006}
+.tw-svg{display:block;width:100%;height:auto}
+.tw-svg text{font-family:"CMU Serif","Latin Modern Roman","Latin Modern Math",Georgia,"Times New Roman",serif}
+.tw-svg.port{display:none}
+@media (max-width:700px){.tw-svg.land{display:none}.tw-svg.port{display:block}.tw-plate h2{font-size:27px}.tw-plate figcaption{gap:12px}}
+.tw-chips{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;color:var(--a51-muted)}
+.tw-chips li{display:flex;gap:8px;align-items:center}
+.tw-chip{font:700 10px/1 system-ui,sans-serif;letter-spacing:.08em;padding:5px 7px;border-radius:5px;border:1px solid;white-space:nowrap}
+.tw-proved{color:var(--tw-green);border-color:#83C16788}
+.tw-cert{color:var(--tw-zeta);border-color:#58C4DD88}
+.tw-computed{color:var(--tw-teal);border-color:#5CD0B388}
+.tw-evid{color:var(--tw-twin);border-color:#F0AC5F88}
+.tw-open{color:var(--tw-red);border-color:#FC625588}
+.tw-note{font-size:13px;color:var(--a51-muted);max-width:820px;margin:12px 0 0}
+.tw-note code,.tw-copy code{font-size:12px;background:#0d1a15;border:1px solid var(--a51-line);border-radius:4px;padding:1px 5px}
+.tw-run{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center;margin-top:14px}
+.tw-guess{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.tw-guess span{font-size:13px;color:var(--a51-muted);margin-right:4px}
+.tw-page .tw-guess button{min-width:54px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px}
+.tw-page .tw-guess button[aria-pressed=true]{background:var(--a51-gold);border-color:var(--a51-gold);color:#18332a}
+.tw-run-actions{display:flex;gap:8px;flex-wrap:wrap}
+.tw-run-status{flex-basis:100%;margin:0;font-size:14px;min-height:1.6em}
+.tw-svg .tw-step,.tw-svg .tw-lane,.tw-svg .tw-fwd{transition:opacity .18s ease}
+.tw-svg.is-running .tw-step{opacity:.08}
+.tw-svg.is-running .tw-step.on{opacity:1}
+.tw-svg.is-running .tw-lane{opacity:.1}
+.tw-svg.is-running .tw-fwd{opacity:.12}
+.tw-svg.is-running .tw-fwd.on{opacity:1}
+.tw-copy{border-top:1px solid var(--a51-line);padding:28px 0 8px;max-width:900px}
+.tw-copy h2{font:30px/1.1 Georgia,serif;margin:0 0 12px}
+.tw-copy p,.tw-copy li{color:var(--a51-muted);line-height:1.6}
+.tw-copy li{margin:6px 0}
+.tw-copy strong{color:var(--a51-text)}
+.tw-ledger{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 4px}
+.tw-ledger th,.tw-ledger td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--a51-line);vertical-align:top}
+.tw-ledger th{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--a51-muted)}
+.tw-ledger td:nth-child(2){white-space:nowrap;color:var(--a51-gold);font-weight:600}
+@media (max-width:620px){.tw-ledger,.tw-ledger tbody,.tw-ledger tr,.tw-ledger td{display:block}.tw-ledger thead{display:none}.tw-ledger tr{border-bottom:1px solid var(--a51-line);padding:8px 0}.tw-ledger td{border:0;padding:3px 0}.tw-ledger td:nth-child(2){white-space:normal}}
+@media (prefers-reduced-motion:reduce){.tw-svg .tw-step,.tw-svg .tw-lane,.tw-svg .tw-fwd{transition:none}}

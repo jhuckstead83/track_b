@@ -1,0 +1,126 @@
+--- v5_1/TN_Postmaster_Volume_I_v5_1_READING_VOLUME.md
++++ v5_2/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.md
+@@ -1,5 +1,5 @@
+ ---
+ title: "Triangular-n Postmaster: From the Triangular Primitive to the Completed Source Frontier"
+-subtitle: "Volume I — The Reading Volume -- v5.1"
++subtitle: "Volume I — The Reading Volume -- v5.2"
+ author:
+   - "Jeffery Huckstead"
+@@ -38,9 +38,10 @@
+ their distinct open obligations. The Riemann hypothesis is not proved here.
+ 
+-Version 5.1 makes the fold, multiplicities, preserved information, and
+-remaining obligations explicit from the abstract through the summary.
+-It changes no inherited RH status, adds no entropy assumption, and depends
+-on no companion interpretation paper. The detailed proofs and certificates
+-remain in the accompanying Technical Dossier.
++Version 5.2 adds a calibration. A Dirichlet series with the reflection
++$F(s)=F(1-s)$ of $\xi$, a different Gamma factor and no Euler product passes
++every computed rung through $k=16{,}588$ and fails at $k=16{,}589$ (Dossier
++§69A). So a long finite rung prefix does not by itself rule out off-line
++zeros. Two
++firewalls proved in v0.3 are restored, and no inherited status changes.
+ 
+ # Start here
+@@ -234,4 +235,7 @@
+ | $L_\Gamma-L_P\succeq0$ on every finite node set, (23.1) | \EQUIV{} \OPENSTAT{} |
+ | $\mathscr E_N[P](2)\le5$ for every degree $N$, (166B.12a) | \EQUIV{} \OPENSTAT{} |
++| A real finite test sees an off-line folded pair only at second order, (TW.1) | \PROVED{} |
++| The functional-equation twin of Dossier §69A fails some Widder rung | \PROVED{} |
++| Twin rungs positive through $k=16{,}588$ where computed; $W_{16589}<0$; Löwner failure first at $N=105$ (exact, best tested centre) | \EVID{} |
+ 
+ **Where the certificates are.** The five certified source rungs rest on one
+@@ -265,4 +269,16 @@
+ $$
+ The first is the next scalar source rung; the second is RH-equivalent.
++They are not equal in reach. The Davenport–Heilbronn function has the
++reflection $F(s)=F(1-s)$ of $\xi$ with a different Gamma factor, no Euler
++product, and zeros off the line. By the argument behind (R.4), some rung of its ladder fails. \PROVED{}
++Computed, it passes $W_7$ and every rung through $W_{16588}$ and first fails
++at $W_{16589}$ (Dossier §69A). \EVID{} So a proof of $W_7$ extends a finite
++prefix that this twin also passes. The reason is exact. A real test at real
++nodes sees an off-line pair only at second order in its displacement, (TW.1).
++The second line's finite sections detect the twin, but only at about a
++hundred nodes (first failure $N=105$ at the best tested centre) and with deciding eigenvalues
++near $10^{-141}$. By the
++fitted detection scale (TW.3), an off-line zeta zero just above the verified
++height would first break the ladder near $k\sim10^{27}$, far beyond $K_H$.
+ 
+ 
+@@ -307,26 +323,11 @@
+ NO-GO ledger of §R25. The section-level map is printed once, in §R24.
+ 
+-**What changed in v5.1.** This is an interface and exposition revision.
+-The abstract, the folded-state contract after (9.8), and the final summary
+-now state the same object and quantifiers. Section R10C's description of a
+-single resolvent kernel explicitly restricts positivity and monotonicity
+-to a positive real folded node. The polynomial identities, finite
+-certificate domains, and open source obligations are unchanged.
+-The v5.0 certificates and receipts are preserved as inherited evidence;
+-they were not re-executed for this editorial revision. The v5.1 checks
+-cover the new algebraic interface, preservation of the inherited status
+-rows, source changes, and the rebuilt documents.
+-
+-**Retained from v5.0.** Section R10C is new: one folded orbit written in its
+-four coordinates — the folded point $q$, the resolvent pole $-q$, the reciprocal
+-$y=1/q$ and the Li coordinate $w=1-1/\rho$ — with the recurrence that generates
+-the orbit's whole Li column from the pole alone, and the square factorizations
+-that Dossier §155A proves. It joins §R7 to §R15, which earlier editions stated
+-in separate places and never connected. Figure 75 has been regenerated: its
+-rasterized status panel had gone stale against §R12, and a new package audit
+-now checks the printed claims of every bundled figure against the ledger. The
+-five certified source rungs $W_2,\ldots,W_6$ continue to rest on the single
+-certificate of Dossier §74A, re-executed by the v5.0 build on two independent
+-arithmetic backends. No status changed, and no new RH implication is claimed.
++**What changed in v5.2.** Dossier §§69A–69C add a functional-equation
++twin, the parity lemma (TW.1), a local Gaussian form (TW.2) and a measured
++detection law (TW.3), and restore two firewalls proved in the v0.3 edition.
++Here the live pair (R.2) is ranked by reach, §R25 gains two rows, and
++reference [66] is corrected. No inherited status changed. The v5.0
++certificates of §74A were not re-executed for this revision; earlier
++version notes are kept in the package provenance.
+ 
+ **How to cite.** Use the concept DOI
+@@ -4891,5 +4892,4 @@
+ | What degree growth would force the source sign? | Sections R15, R23 | Sections 155D--155E: reserve growth, curvature and progression proofs |
+ | Which cutoff approximates its own matrix target? | Sections R17H, R23 | Sections 166D--166G: whole row, shifted block, and actual boundary reconstruction |
+-
+ ![The proof map for this volume. Each criterion retains its full quantifiers. The source identities are exact; the surviving all-order source bounds are listed by route in §R23.](figures/v30_rh_equivalence_map.png)
+ 
+@@ -4919,4 +4919,6 @@
+ | Theorems 107.1 and 112.1: the loose diagonal is exponent-self-limiting, and the classical blockwise large sieve misses the short-shift target by at least $X^{1/2+o(1)}$ | those two coarse analytic closures | the exact-diagonal/interior-saddle route or a stronger arithmetic mechanism |
+ | §§155F–155G and (H07): PNT-quality envelopes, positive prime-power support, sparse support counts, long prefixes and meromorphic Euler products do not force the needed curvature/source sign | replacing the actual signed arithmetic remainder by support or envelope domination | exact divisor arithmetic and the weighted completed prime error |
++| §69C, proved in v0.3: a conjugation-symmetric linear zero functional erases the orientation bit, and compact Euler-ray data cannot continuously recover the zero defect | first-order detection by symmetric real-axis tests; extraction from finite-order ray data | half-plane projections and one-sided routes such as §R17I; identities using zeta's complete prime and Gamma data |
++| §§69A–69B: a Dirichlet series with the reflection of $\xi$ (different Gamma factor) and no Euler product fails some rung (computed: first at $W_{16589}$), and (TW.1) | functional-equation-only proofs of all rungs; a finite rung prefix read as progress | arguments using the Euler product together with the functional equation |
+ 
+ These are unconditional theorems about what this approach cannot do. They are
+@@ -4952,11 +4954,12 @@
+ a finite certificate cannot supply a missing full quantifier.
+ 
+-Version 5.1 preserves that research boundary. Its additional clarity is
+-local: the index set is declared before summation; coordinate changes are
+-distinguished from projections; and inherited certificates are distinguished
+-from this revision's editorial checks. A reader needs no external
+-interpretation or companion entropy construction to recover the argument.
+-The arithmetic identities and finite certificates stand on their stated
+-domains. The uniform completed-source positivity required by RH remains open.
++Version 5.2 preserves that research boundary and measures one side of it.
++A twin with the reflection of $\xi$, a different Gamma factor and no Euler
++product passes thousands of computed rungs, and a hundred Löwner nodes at the
++tested centres, before failing. What must be
++proved therefore has to use the Euler product and the functional equation
++together. The arithmetic identities and finite certificates stand on their
++stated domains. The uniform completed-source positivity required by RH
++remains open.
+ 
+ # References
+@@ -5164,6 +5167,6 @@
+     completed-source energy.
+ 
+-66. Y. Lamzouri, *A new proof that more than two thirds of the zeros of the
+-    Riemann zeta function are simple or on the critical line*,
++66. Y. Lamzouri, *A new proof that more than 2/3 of the zeros of the
++    Riemann zeta function are simple and on the critical line*,
+     [arXiv:2609.02882v2](https://arxiv.org/abs/2609.02882), 17 pages.
+     Proposition 2.1, Lemma 3.1 and Theorem 1.1 are the statements compared in

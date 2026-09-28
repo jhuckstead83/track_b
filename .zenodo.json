@@ -1,0 +1,46 @@
+{
+  "title": "Track B — Area 51 research: papers, exhibits and verification (v2.8.3)",
+  "upload_type": "software",
+  "version": "2.8.3",
+  "publication_date": "2026-09-28",
+  "creators": [
+    {
+      "name": "Huckstead, Jeffery Lyn",
+      "affiliation": "Cerebral Graphix",
+      "orcid": "0009-0007-0234-2177"
+    }
+  ],
+  "description": "<p>The Area 51 research line of Cerebral Graphix (Track B): the 51 SEDAPS reversible card rule with turn-indexed reachability certificates, the 51 Twins exhibit and its Davenport&ndash;Heilbronn calibration, the Formula 51 deduction, and the TN Postmaster Volume I v5.2 source edition, with independent replays, complete state censuses, a proof that the reachability search is complete, exact first failing L&ouml;wner sizes for the twin, and a re-execution of the inherited v5.0 source-rung certificates.</p><p>RH STATUS: OPEN. Nothing here is evidence for or against the Riemann hypothesis.</p>",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "card games",
+    "War (card game)",
+    "reachability",
+    "certificates",
+    "Widder criterion",
+    "Davenport-Heilbronn function",
+    "experimental mathematics"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.21968915",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.22862811",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.20792808",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://cerebralgraphix.com/area-51/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "exact_checks": 1435,
+  "groups": {
+    "coefficient_formula": 190,
+    "triangular_coefficient": 190,
+    "odd_square": 19,
+    "triangular_ode": 19,
+    "fejer_frequency_counts": 703,
+    "positive_lag_triangle": 19,
+    "triangular_small_y_coefficient": 18,
+    "sum_difference_cross_identity": 100,
+    "christoffel_darboux": 10,
+    "finite_half_integer_cosine_sum": 64,
+    "reciprocal_triangular_partial_fractions": 10,
+    "self_node_coordinate": 16,
+    "triangular_product_zero_value": 1,
+    "triangular_product_first_derivative": 1,
+    "negative_control_positive_moment": 37,
+    "negative_control_li37": 1,
+    "negative_control_positive_filtered_output": 37
+  },
+  "diagnostics": {
+    "finite_projection_direct_sum": [
+      {
+        "N": 1,
+        "absolute_residual": "1.13195988485333904593864e-72"
+      },
+      {
+        "N": 2,
+        "absolute_residual": "4.52783953941335618375456e-72"
+      },
+      {
+        "N": 7,
+        "absolute_residual": "3.73546762001601885159751e-71"
+      },
+      {
+        "N": 18,
+        "absolute_residual": "1.26779507103573973145128e-70"
+      }
+    ],
+    "scalar_sinc_limit": [
+      {
+        "m": 10,
+        "max_absolute_error": "0.000451864071964664488401441"
+      },
+      {
+        "m": 50,
+        "max_absolute_error": "0.000019526753106687219709541"
+      },
+      {
+        "m": 250,
+        "max_absolute_error": "0.000000793578341065467628258351"
+      }
+    ],
+    "bulk_projection_limit": [
+      {
+        "N": 32,
+        "max_absolute_error": "0.0180157280799199203652352"
+      },
+      {
+        "N": 128,
+        "max_absolute_error": "0.00450422018468944726014167"
+      },
+      {
+        "N": 512,
+        "max_absolute_error": "0.00112608205707476099369041"
+      }
+    ],
+    "moving_height_limit": [
+      {
+        "T": 100,
+        "N": 13836,
+        "max_absolute_error": "0.0258571704502590420227448",
+        "error_times_T_log": "7.15543698787767097393378"
+      },
+      {
+        "T": 1000,
+        "N": 2534939,
+        "max_absolute_error": "0.00153480245404067480197565",
+        "error_times_T_log": "7.78126152234407044529113"
+      },
+      {
+        "T": 10000,
+        "N": 368623166,
+        "max_absolute_error": "0.000120811085933917428627449",
+        "error_times_T_log": "8.90675297953488121479512"
+      }
+    ],
+    "boundary_projection_limit": [
+      {
+        "N": 32,
+        "dirichlet_error": "0.000107387538808241345724189",
+        "neumann_error": "0.0000204531779936998774164725"
+      },
+      {
+        "N": 128,
+        "dirichlet_error": "0.00000671059163631787314797819",
+        "neumann_error": "0.00000127892672744769756763036"
+      },
+      {
+        "N": 512,
+        "dirichlet_error": "0.00000041940756610870642318464",
+        "neumann_error": "7.99352753647337446076983e-8"
+      }
+    ]
+  }
+}

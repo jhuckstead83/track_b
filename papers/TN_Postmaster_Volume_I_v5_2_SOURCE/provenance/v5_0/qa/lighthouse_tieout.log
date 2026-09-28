@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "exact_assertions": 3841,
+  "categories": {
+    "Catalan integrality": 101,
+    "odd factorial factorization": 101,
+    "Catalan Beta product": 101,
+    "product-law moments": 101,
+    "Catalan-density moments": 101,
+    "weighted sine coefficients": 101,
+    "arcsine reflected Gram": 100,
+    "sine orthogonality Gram": 100,
+    "Catalan resolvent versus Fourier Gram": 1400,
+    "reserve-component accounting": 1400,
+    "density identity": 70,
+    "density nonnegativity": 70,
+    "finite positive comparison leading minors": 8,
+    "elementary pi lower bound": 1,
+    "Euler constant bound": 1,
+    "log 12 lower bound": 1,
+    "lambda1 upper bound": 1,
+    "original reserve negative witness": 1,
+    "critical anchor above lambda1": 1,
+    "full source-difference preservation": 81
+  },
+  "diagnostics": {
+    "label": "high-precision floating-point orientation only; not interval certificates",
+    "lambda1": "0.0230957089661210338143102479064952916219321271521",
+    "critical_anchor": "0.131971753677420964324276906548964005087042417024",
+    "anchor_shift": "0.108876044711299930509966658642468713465110289872",
+    "original_reserve_y_squared": "-0.614327186876428278901843528837103667930407520601",
+    "original_reserve_det2": "-0.0493479965779438949730756357020960897573081422402"
+  }
+}

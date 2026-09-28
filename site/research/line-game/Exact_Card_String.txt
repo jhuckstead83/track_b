@@ -1,0 +1,43 @@
+Exact card string — The Line Game | Surprise Is Not Meaning v7.2
+
+AS AH AD AC 2S 2H 2D 3S 3H 3D 3C 4S 4H
+4D 4C 5S 5H 5D 5C 6S 6H 6D 6C 7S 7H 7D
+7C 8S 8H 8D 8C 9S 9H 9D 9C QD KH 10H KD
+QH QS JS 10C JC QC KC 10S JD JH KS 10D 2C
+
+Read left to right, then downward. First card is the top card.
+S=spades; H=hearts; D=diamonds; C=clubs.
+A=1; J=11; Q=12; K=13. Fixed null I=2C at position 52.
+Reference order: A,2,...,10,J,Q,K, each with S,H,D,C, omitting 2C.
+At active position i, d_i is the number of unused reference cards
+preceding the displayed card. Rank R=sum(d_i*(51-i)!), i=1,...,51.
+
+R = 14134725141735
+Scale = 1000000000000
+Decoded decimal = 14.134725141735
+Unsigned binary = 11001101101011111111010001010110010011100111
+Six bytes, big-endian = 0C DA FF 45 64 E7
+
+Swap cards 50 and 51 (KS and 10D), leaving I fixed.
+New R = 14134725141734; new decimal = 14.134725141734.
+
+Under the companion's uniform-symbol model, the seven exact component-
+weight class sizes are 2, 1, 9, 1, 9, 11, and 18. The complete profile
+therefore admits 2!*1!*9!*1!*9!*11!*18! =
+67305847895575919030981099520000000 compatible active orders. The swap
+preserves that full position-by-position profile while changing the record.
+
+Card faces are display labels, not required numerals. Any one-to-one
+relabeling, paired with its matching inverse, recovers the same stored
+heights, their order, and their gaps.
+
+The original is the first stored numerical ordinate, at twelve decimal
+places. Moving cards changes the record, not an actual zeta zero.
+The arrangement is meaningful to War as an order; its interpretation
+as a zero ordinate comes from the supplied source and decoding key.
+
+This integer has 44 binary digits. The pack has 51! active orders,
+about 219.88 bits of capacity. Neither figure includes every convention.
+A direct linear-search decoder uses 51 lookups and at most 1326 card
+comparisons, plus factorial arithmetic. This is an algorithmic budget,
+not a minimum complexity result or the cost of computing the zero.

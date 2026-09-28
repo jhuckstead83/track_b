@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "exact_checks": 459,
+  "script_sha256": "facf73c36880383c3043ac2b87361f8c21a1b4981e50ee4bf0c214f614bc0eee",
+  "scope": "Finite exact regressions; analytic and all-order assertions rest on the written proofs. No actual-zeta interval certificate or historical certificate replay."
+}

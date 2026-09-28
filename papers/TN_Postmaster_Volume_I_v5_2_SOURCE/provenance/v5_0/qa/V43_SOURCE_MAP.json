@@ -1,0 +1,42 @@
+{
+  "155F": {
+    "source": "provenance/v43/accepted_returns/sources/BLUE_TEAM_V42_BOUNDARY_GAP_ATTACK_2026-09-12.md",
+    "source_labels": "BC.1-BC.9 and EN.1-EN.6",
+    "final_tags": "155F.1-155F.9",
+    "scope": "Direct curvature identity/remainder and artificial envelope countermodels",
+    "source_sha256": "6afb5f3344970c68705a1b36c48a486dea2b0a2724b46a20b26e3ebce3fd3902"
+  },
+  "155G": {
+    "source": "provenance/v43/accepted_returns/sources/ORANGE_TEAM_V42_SOURCE_GAP_ATTACK_2026-09-13.md",
+    "source_labels": "OA.3-OA.23",
+    "final_tags": "155G.1-155G.15",
+    "scope": "Signed denominator and prime-supported countermodel; classical Fourier identity attributed to [80]",
+    "source_sha256": "3c9e9d2c8df2a4bc88bee4323da54de14f0bf569bb90c230ee739a71aa3de802"
+  },
+  "155H": {
+    "source": "provenance/v43/accepted_returns/sources/GREEN_TEAM_V42_DIVISOR_MELLIN_ATTACK_2026-09-13.md",
+    "source_labels": "GD.1 onward",
+    "final_tags": "155H.1-155H.11",
+    "scope": "Exact-divisor/Mellin construction; subpower norm estimate sufficient, not established",
+    "source_sha256": "d0628db84768c9a16b7478af3fd79edf919358cd3f72df7f5eb4f0eea682e89f"
+  },
+  "155I": {
+    "source": "provenance/v43/accepted_returns/HARDY_LAGUERRE_BRIDGE.md",
+    "source_labels": "Complete accompanying bridge proof",
+    "final_tags": "155I.1-155I.6",
+    "scope": "Exact residual isometry; preserves prefix support and tail obligation",
+    "source_sha256": "a0301ebb8b0269d7bdc9631c91fd46499ea114129b6ad211470de3b39d47584d"
+  },
+  "166G": {
+    "source": "provenance/v43/accepted_returns/sources/BLUE_TEAM_V42_BOUNDARY_GAP_ATTACK_2026-09-12.md",
+    "source_labels": "BA.1-BA.12",
+    "final_tags": "166G.1-166G.10",
+    "scope": "Completed boundary Taylor adapter; not a bound on the actual defect",
+    "source_sha256": "6afb5f3344970c68705a1b36c48a486dea2b0a2724b46a20b26e3ebce3fd3902"
+  },
+  "R17I": {
+    "source": "The preceding accepted sources",
+    "final_tags": "DIV.1-DIV.4",
+    "scope": "Continuous Reader introduction to exact divisors and the common residual"
+  }
+}

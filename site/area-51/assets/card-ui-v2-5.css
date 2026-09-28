@@ -1,0 +1,224 @@
+/* v2.5: main moves on the table; cards open decision tools and information. */
+body[data-game]{--ui-gold:#e5c389;--ui-line:#456354;--ui-muted:#c0d0c5;background:#10241d;color:#f4eee2}
+body[data-game] *{box-sizing:border-box}
+body[data-game] [hidden]{display:none!important}
+body[data-game] :is(button,summary,a,input,select):focus-visible,.card-target:focus-visible{outline:3px solid #f2ce8c;outline-offset:3px}
+.game-header{display:flex;justify-content:space-between;align-items:center;gap:10px;min-height:54px;border-bottom:1px solid var(--ui-line);position:relative;z-index:30}
+.game-brand{font:700 11px/1.4 system-ui;letter-spacing:.12em;text-decoration:none;color:#e5c389!important;display:flex;gap:8px;align-items:center;min-height:44px}
+.game-brand span{border:1px solid #ac9865;border-radius:5px;width:25px;height:31px;display:grid;place-items:center;font:22px Georgia}
+.game-switch summary{list-style:none;border:1px solid var(--ui-line);border-radius:7px;padding:11px 14px;min-height:44px;font:600 13px/1.4 system-ui;cursor:pointer}
+.game-switch summary::-webkit-details-marker{display:none}
+.game-switch nav{position:absolute;right:0;top:52px;width:220px;max-width:85vw;padding:6px;background:#142e24;border:1px solid #6d876f;border-radius:10px;box-shadow:0 10px 40px #0008;display:grid;z-index:90}
+.game-switch a{display:flex;align-items:center;min-height:44px;padding:8px 12px;text-decoration:none;font-size:14px;color:#f4eee2!important;border-radius:6px}
+.game-switch a[aria-current]{background:#395540;color:#ffdfa2!important}
+body[data-game] .a51-tabs{gap:6px;margin:0 0 10px;flex-wrap:nowrap;overflow-x:auto}
+body[data-game] .a51-tabs a{min-height:44px;white-space:nowrap;display:flex;align-items:center;border-radius:7px;padding:7px 11px}
+body[data-game] :is(.a51-intro,.cg51-intro,.intro,.hero){padding:16px 0 12px;gap:12px;align-items:center}
+body[data-game] :is(.a51-intro,.cg51-intro,.intro,.hero) h1{font:36px/1.07 Georgia,serif;letter-spacing:-.035em;margin:0;max-width:none}
+body[data-game] :is(.a51-intro,.cg51-intro,.intro,.hero) :is(.eyebrow,.a51-eyebrow,.cg51-eyebrow){display:none}
+body[data-game] :is(.a51-intro,.cg51-intro,.intro,.hero) p{font-size:12px;margin:6px 0 0;max-width:48ch}
+body[data-game] :is(.a51-bank,.cg51-bank,.bank){min-width:80px;flex:none;text-align:right;padding:0}
+body[data-game] :is(.a51-bank strong,.cg51-balance,.balance){font:27px/1.15 system-ui;color:#e5c389}
+body[data-game] :is(.a51-bank small,.cg51-bank-label,.bank-label){font-size:9px;letter-spacing:.06em}
+body[data-game] :is(.a51-bank span,.cg51-clock,.bank-clock){font-size:10px}
+body[data-game] :is(.stats,.bank-clock-track){display:none}
+body[data-game] :is(.a51-layout,.cg51-layout,.layout,.play-layout){grid-template-columns:minmax(0,1fr);gap:12px}
+body[data-game] main{max-width:100%}
+body[data-game] :is(.a51-felt,.felt,.cg51-felt){padding:14px;border-radius:11px}
+body[data-game] :is(.table-wrap,.cg51-table-wrap){padding:4px;border-radius:14px}
+body[data-game] :is(.a51-status,.stage-message,.cg51-stage-message){min-height:0;padding:11px 8px;margin-top:12px}
+body[data-game] :is(.stage-message,.cg51-stage-message){margin-left:-14px;margin-right:-14px;margin-bottom:-14px}
+body[data-game] :is(.a51-status strong,.stage-message strong,.cg51-stage-message strong){font-size:18px}
+body[data-game] :is(.a51-status p,.stage-message p,.cg51-stage-message p){font-size:12px;line-height:1.4}
+.game-details{border:1px solid #395647;border-radius:10px;margin:10px 0;background:#122b22;min-width:0}
+.game-details>summary{padding:11px 13px;min-height:44px;cursor:pointer;font:600 13px/1.5 system-ui;color:#e4d2b2}
+.game-details-body{padding:0 12px 12px;min-width:0}
+.game-details .a51-toolbar{padding:4px 0}
+.game-details :is(aside,.sidebar,.cg51-sidebar,.aside){display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;width:100%}
+.game-details :is(.panel,.a51-panel,.cg51-panel){padding:12px;box-shadow:none}
+.game-details :is(.a51-panel+.a51-panel){margin-top:0}
+.card-menu{position:fixed;z-index:10000;width:300px;max-width:calc(100vw - 24px);overflow-y:auto;overscroll-behavior:contain;padding:12px;border:1px solid #b4a773;border-radius:12px;background:#112b21;color:#f5eee0;box-shadow:0 15px 55px #0009;font:14px/1.45 system-ui}
+.card-menu-head{display:flex;justify-content:space-between;align-items:center;gap:12px}
+body[data-game] .card-menu-head button{width:44px;height:44px;min-height:44px;padding:0;font-size:24px;background:transparent;color:#e5c389;border:1px solid #46624e;border-radius:8px}
+.card-menu p{font-size:12px!important;margin:5px 0 10px!important;color:#c6d6c9!important}
+.card-menu-actions{display:grid;grid-template-columns:1fr;gap:6px}
+body[data-game] .card-menu-actions button{display:block;width:100%;min-height:44px;padding:10px 12px;text-align:left;font:600 14px/1.4 system-ui;background:#254b37;color:#f4eee2;border:1px solid #537357;border-radius:7px;white-space:normal}
+body[data-game] .card-menu-actions button.primary{background:#e5c389;color:#18332a;border-color:#e5c389}
+.card-menu .card-inspection{display:flex;align-items:center;justify-content:center;gap:12px;margin:6px 0}
+.card-menu .card-inspection p51-token{--p51-size:52px}
+.card-target{cursor:pointer;touch-action:manipulation;position:relative}
+.card-target::after{content:'•••';position:absolute;right:3px;bottom:2px;z-index:5;font:700 10px/1 system-ui;letter-spacing:1px;background:#102b21;color:#f2d99e;border-radius:3px;padding:3px 4px;pointer-events:none}
+.tap-hint{font:11px/1.4 system-ui;text-align:center;color:#bed0c0;margin:6px 0}
+.table-actions{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:10px 0 0!important}
+body[data-game] .table-actions button{min-height:44px;padding:10px 13px}
+body[data-game] .a51-notice:empty,body[data-game] #ui-status:empty{display:none}
+body[data-game] :is(.a51-foot,.cg51-foot,.footer){font-size:10px;margin-top:20px;padding:15px 0;gap:10px}
+/* Invariant */
+body[data-game=invariant] .a51-hands{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+body[data-game=invariant] .a51-hand{display:block;padding:7px 4px;text-align:center;border-radius:8px}
+body[data-game=invariant] .a51-hand-head{font-size:10px;letter-spacing:0;margin:0 3px 8px}
+body[data-game=invariant] .a51-hand-head b{font-size:18px}
+body[data-game=invariant] .next-card{margin:0;min-height:95px;display:inline-flex}
+body[data-game=invariant] .a51-card{width:64px;height:94px;font-size:30px}
+body[data-game=invariant] .a51-card .corner{font-size:15px}
+body[data-game=invariant] .a51-hidden-queue{font-size:10px;padding:5px 0}
+body[data-game=invariant] .a51-hand>[data-peek]{display:none}
+body[data-game=invariant] .a51-queue{margin-top:8px;max-height:68px;justify-content:center}
+body[data-game=invariant] .prediction-panel{margin-top:0!important}
+body[data-game=invariant] #forgive:disabled,body[data-game=invariant] #pause:disabled{display:none}
+/* Blackjack */
+body[data-game=blackjack] .cards{gap:5px;flex-wrap:wrap;justify-content:center;min-height:96px}
+body[data-game=blackjack] .card{width:64px;height:94px;flex:0 0 64px;font-size:30px}
+body[data-game=blackjack] .card .corner{font-size:16px;left:5px;top:5px}
+body[data-game=blackjack] .card .corner.bottom{left:auto;right:5px;top:auto;bottom:5px}
+body[data-game=blackjack] .card .pip{font-size:32px}
+body[data-game=blackjack] .hand-zone{padding:6px 0}
+body[data-game=blackjack] .hands-row{margin-top:8px;gap:10px}
+body[data-game=blackjack] .player-hand{padding:8px;min-width:0}
+body[data-game=blackjack] .hand-note{font-size:10px;margin-top:5px}
+body[data-game=blackjack] .seat-title{font-size:12px;margin-bottom:6px}
+body[data-game=blackjack] .table-lettering{font-size:9px;padding:4px 0;letter-spacing:.06em}
+body[data-game=blackjack] .table-meta{font-size:9px;margin-bottom:6px;gap:8px}
+body[data-game=blackjack] .controls{padding:10px 0 0}
+body[data-game=blackjack] .bet-row{margin-bottom:7px;gap:8px;align-items:center;flex-wrap:wrap}
+body[data-game=blackjack] .bet-label{gap:8px}
+body[data-game=blackjack] .chip{min-width:44px;min-height:44px;padding:7px}
+body[data-game=blackjack] .bet-amount{font-size:11px}
+body[data-game=blackjack] .action-row{gap:6px;flex-wrap:wrap;display:flex}
+body[data-game=blackjack] .action-row button{min-height:44px;flex:1;padding:9px 12px}
+body[data-game=blackjack] .action-row kbd{display:none}
+body[data-game=blackjack] .shoe-action{margin:8px auto 0;width:max-content;max-width:100%;display:flex;align-items:center;gap:9px;border:1px solid #82906c;background:#183b2c;border-radius:8px;padding:8px 12px;font-size:11px;min-height:44px;color:#e5c389}
+/* Telescope */
+body[data-game=telescope] .game{margin:0 auto 12px}
+body[data-game=telescope] .game-head{padding:10px 12px;gap:8px;grid-template-columns:1fr auto}
+body[data-game=telescope] #game-title{font-size:23px}
+body[data-game=telescope] .statusline{font-size:11px;line-height:1.4}
+body[data-game=telescope] .metrics{gap:4px}
+body[data-game=telescope] .metric{min-width:55px;padding:6px;font-size:11px}
+body[data-game=telescope] .metric:last-child{display:none}
+body[data-game=telescope] .game-body{padding:12px}
+body[data-game=telescope] .ticket{display:block;margin:0 0 10px}
+body[data-game=telescope] .ticket-panel{padding:0;border:0;background:none}
+body[data-game=telescope] .ticket-panel h3{font:600 12px system-ui;margin:0 0 8px}
+body[data-game=telescope] .ticket-panel>p,body[data-game=telescope] .ticket-note{display:none}
+body[data-game=telescope] .depth-grid{gap:5px;grid-template-columns:repeat(4,minmax(0,1fr))}
+body[data-game=telescope] .depth-button{padding:7px 3px;min-height:50px;font-size:11px;background:#18392c}
+body[data-game=telescope] .depth-button strong{font-size:15px}
+body[data-game=telescope] .depth-button small{font-size:10px}
+body[data-game=telescope] .table{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+body[data-game=telescope] .player{padding:7px 4px;min-width:0;background:#112d22;border-color:#4b6853}
+body[data-game=telescope] .player-head{display:block;text-align:center;margin-bottom:8px;font-size:11px}
+body[data-game=telescope] .choose-player,body[data-game=telescope] .player>.peek{display:none}
+body[data-game=telescope] .player .card{height:118px;min-height:0;width:100%;padding:7px 3px;border-radius:7px;background:#ece8d7;color:#18332a}
+body[data-game=telescope] .player .card.red{color:#ad3434}
+body[data-game=telescope] .card .stage{font-size:9px;letter-spacing:0}
+body[data-game=telescope] .card .main{font-size:33px;line-height:1.1}
+body[data-game=telescope] .card .sub{font-size:9px;line-height:1.3}
+body[data-game=telescope] .player-account{font-size:9px;gap:2px;flex-wrap:wrap;justify-content:center;margin-top:7px}
+body[data-game=telescope] .action-slot{min-height:0;margin-top:5px}
+body[data-game=telescope] .action-slot button{font-size:11px;padding:8px 4px;width:100%;min-height:44px}
+body[data-game=telescope] #resultBox{margin:10px 0;padding:10px;background:#173628;min-height:0;font-size:12px}
+/* Memory */
+body[data-game=memory] .cg51-stage{min-height:0;padding:5px 0}
+body[data-game=memory] .cg51-stage>div{width:100%}
+body[data-game=memory] .cg51-prompt{margin:0 0 8px;font-size:10px}
+body[data-game=memory] .cg51-symbol{min-height:105px;font-size:75px}
+body[data-game=memory] #prompt-object{display:inline-flex;justify-content:center;align-items:center;min-width:80px;min-height:104px;border-radius:8px}
+body[data-game=memory] .a51-card{width:72px;height:104px;font-size:34px}
+body[data-game=memory] .cg51-answer-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin:12px auto 0;gap:7px;max-width:340px;width:100%}
+body[data-game=memory] .cg51-answer{min-height:66px;padding:7px 10px;font-size:28px}
+body[data-game=memory] .cg51-controls{padding:10px 0 0;gap:8px}
+body[data-game=memory] #study{margin-bottom:12px}
+body[data-game=memory] .cg51-controls #next{flex:1}
+/* Prospect */
+body[data-game=prospect] .hero-note{display:none}
+body[data-game=prospect] .hero h1{font-size:36px}
+body[data-game=prospect] .machine{border-radius:13px}
+body[data-game=prospect] .machine-top{padding:9px 12px}
+body[data-game=prospect] .vault{margin:10px 12px 0;padding:8px 10px}
+body[data-game=prospect] .vault h2{font-size:14px}
+body[data-game=prospect] .vault-amount{font-size:23px}
+body[data-game=prospect] .rotor-header{display:none}
+body[data-game=prospect] .rotors{padding:12px 10px 7px;gap:6px;--cell-h:67px;--window-h:112px}
+body[data-game=prospect] .rotor-label{font-size:9px;margin:0 0 5px}
+body[data-game=prospect] .residue{display:none}
+body[data-game=prospect] .hold{font-size:10px;margin:5px 0 0;min-height:44px}
+body[data-game=prospect] .result{min-height:0;margin:7px 12px 12px}
+body[data-game=prospect] .result strong{font-size:21px}
+body[data-game=prospect] .controls{padding:0 12px 12px}
+body[data-game=prospect] .display-row,body[data-game=prospect] .button-note{display:none}
+body[data-game=prospect] .under-machine{gap:8px;margin-top:10px}
+body[data-game=prospect] .details summary{padding:11px 12px;min-height:44px}
+body[data-game=prospect] .details summary span{display:none}
+body[data-game=prospect] .essay{display:block;margin:0;padding:0;border:0}
+body[data-game=prospect] .essay p{font-size:13px}
+body[data-game=prospect] .reel-face{cursor:pointer}
+body[data-game=prospect] .reel-face.card-target::after{bottom:0;right:1px}
+body[data-game=prospect] .reel-face:focus-visible{outline:3px solid #ffe0a0;outline-offset:-3px}
+body[data-game=prospect] .spin-status{min-height:30px;font-size:11px;justify-content:space-between;margin:0 12px}
+body[data-game=prospect] #skip-reels{min-height:44px;padding:8px 12px}
+body[data-game=hub] .a51-hub-lead{padding:18px;gap:12px;grid-template-columns:1fr 1fr}
+body[data-game=hub] .a51-hub-lead h2{font-size:38px;margin:5px 0 10px}
+body[data-game=hub] .a51-fan{min-height:120px}
+body[data-game=hub] .a51-game-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+body[data-game=hub] .a51-game-tile{padding:15px;min-height:0}
+body[data-game=hub] .a51-game-tile h2{font-size:24px;margin:9px 0}
+body[data-game=hub] .a51-game-tile p{font-size:12px}
+@media(min-width:960px){body[data-game] :is(.a51-shell,.cg51-shell,.shell){max-width:1060px}body[data-game] #play{max-width:850px;margin-inline:auto}body[data-game=prospect] .play-main{max-width:850px;width:100%;margin:auto}body[data-game] :is(.a51-intro,.cg51-intro,.intro,.hero) h1{font-size:43px}body[data-game=blackjack] .card,body[data-game=invariant] .a51-card{width:76px;height:108px;flex-basis:76px}body[data-game=prospect] .rotors{--cell-h:88px;--window-h:146px}body[data-game=prospect] .rotor p51-token{--reel-size:66px}}
+@media(max-width:620px){body[data-game] :is(.a51-shell,.cg51-shell,div.shell){width:auto;max-width:none;padding:0;margin:0 12px}body[data-game=telescope] section.shell{width:auto;margin-inline:12px}body[data-game] :is(.a51-intro,.cg51-intro,.intro,.hero){display:flex;padding:13px 0 11px}body[data-game] :is(.a51-intro,.cg51-intro,.intro,.hero) h1{font-size:30px}body[data-game] :is(.a51-intro,.cg51-intro,.intro,.hero)>div:first-child{min-width:0}body[data-game] :is(.a51-intro,.cg51-intro,.intro,.hero) p{font-size:11px;line-height:1.35}body[data-game] .game-details :is(aside,.sidebar,.cg51-sidebar,.aside){grid-template-columns:1fr}body[data-game] :is(.a51-felt,.felt,.cg51-felt){padding:10px}body[data-game] :is(.stage-message,.cg51-stage-message){margin:10px -10px -10px}body[data-game=blackjack] .table-meta-right{gap:5px}body[data-game=blackjack] .tag{padding:3px 4px;font-size:8px}body[data-game=blackjack] .hands-row.split{grid-template-columns:1fr 1fr}body[data-game=blackjack] .split .card{width:49px;height:74px;flex-basis:49px}body[data-game=blackjack] .split .card .pip{font-size:24px}body[data-game=blackjack] .split .card .corner{font-size:12px}body[data-game=hub] .a51-hub-lead{grid-template-columns:1fr}body[data-game=hub] .a51-fan{display:none}body[data-game=hub] .a51-game-grid{grid-template-columns:1fr}body[data-game=prospect] .rotor p51-token{--reel-size:44px}}
+@media(max-width:350px){body[data-game] :is(.a51-shell,.cg51-shell,div.shell){margin-inline:8px}body[data-game] :is(.a51-intro,.cg51-intro,.intro,.hero) h1{font-size:27px}body[data-game=invariant] .a51-card{width:60px;height:90px}body[data-game=prospect] .rotors{gap:4px;padding-inline:7px}body[data-game=prospect] .drum{padding-inline:0}}
+@media(prefers-reduced-motion:reduce){body[data-game] *,body[data-game] *::before,body[data-game] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+body[data-game=telescope] .depth-button span{font-size:10px;line-height:1.3}
+
+
+.card-decision-readout{margin:6px 0 9px}
+.card-menu .card-quote{display:flex;justify-content:space-between;gap:12px;padding:7px 0;margin:0!important;border-bottom:1px solid #456354}
+.card-quote span{text-align:right;font-variant-numeric:tabular-nums}
+.card-menu .card-odds-table{width:100%;font:12px/1.4 system-ui;border-collapse:collapse;margin-bottom:8px}
+.card-menu .card-odds-table :is(th,td){padding:7px 4px;text-align:right;width:auto;color:inherit}
+.card-menu .card-odds-table :is(th,td):first-child{text-align:left}
+.card-odds-table tr[aria-current=true]{background:#355a3e;color:#ffe0a0}
+body[data-game=blackjack] #decision-market{padding:0;border:0;background:none}
+body[data-game=blackjack] #decision-market :is(.eyebrow,h3){display:none}
+body[data-game=blackjack] .action-row #deal{flex-basis:100%}
+/* Revision 3: resilient surrounding controls, inline research, and direct holds. */
+body[data-game] :is(main,section,aside,.game-details-body,.a51-toolbar,.a51-actions,.cg51-controls,.prediction-panel){min-width:0}
+body[data-game] :is(select,input,textarea){min-width:0;max-width:100%}
+body[data-game] :is(button,.a51-button){white-space:normal;overflow-wrap:anywhere}
+body[data-game] .game-brand{min-width:0;font-size:10px;letter-spacing:.07em}
+body[data-game] .game-switch{flex:none}
+body[data-game] .research-link{display:inline-flex;align-items:center;min-height:40px;font:12px/1.4 system-ui;color:#e5c389;text-decoration:none;white-space:nowrap}
+body[data-game] .research-link:hover{text-decoration:underline}
+body[data-game] .research-details{max-width:850px;margin-inline:auto;margin-top:12px}
+body[data-game] .research-details .a51-rule-card{padding-top:4px}
+body[data-game] .research-details :is(p,code,td,th){overflow-wrap:anywhere}
+body[data-game] .research-details :is(.shell,.a51-shell){width:100%;max-width:none;padding:0;margin:0}
+body[data-game=invariant] .a51-toolbar{display:grid;grid-template-columns:minmax(0,1fr);width:100%}
+body[data-game=invariant] .a51-toolbar>.a51-actions,body[data-game=invariant] .prediction-panel>.a51-actions{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));width:100%;align-items:end}
+body[data-game=invariant] .a51-toolbar label,body[data-game=invariant] .prediction-panel label{width:100%;min-width:0;display:grid}
+body[data-game=invariant] .a51-toolbar :is(select,button),body[data-game=invariant] .prediction-panel :is(select,button){width:100%;min-width:0}
+body[data-game=invariant] .table-actions{justify-content:center;width:100%}
+body[data-game=invariant] .table-actions .research-link{margin:0}
+body[data-game=invariant] .a51-foot{overflow-wrap:anywhere}
+body[data-game=blackjack] #market-start-guide{padding:10px;border-left:2px solid #e5c389;background:#1c3d2b}
+body[data-game=telescope] .depth-button{display:grid;justify-items:center;align-content:center;gap:5px;min-width:0;min-height:58px;padding:7px 2px;line-height:1.2}
+body[data-game=telescope] .depth-button .rule-name{font:13px/1.2 system-ui;white-space:nowrap;overflow-wrap:normal}
+body[data-game=telescope] .depth-button .rule-name strong{font:700 15px/1.2 system-ui;color:#ffe0a0}
+body[data-game=telescope] .depth-button span{font:11px/1.2 system-ui}
+body[data-game=telescope] .depth-button small{font:10px/1.2 system-ui;white-space:nowrap}
+body[data-game=telescope] .game-head{grid-template-columns:1fr auto}
+body[data-game=telescope] #game-title{font-size:20px}
+body[data-game=telescope] .metric:nth-child(2){display:none}
+body[data-game=telescope] .player-account{min-height:14px;font-size:9px;letter-spacing:0}
+body[data-game=telescope] .ledger-grid,body[data-game=telescope] .two-col{grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px}
+body[data-game=telescope] :is(.ledger,.fiber,.panel){min-width:0;padding:12px}
+body[data-game=telescope] .ledger-row{display:flex;flex-wrap:wrap;gap:5px 12px;font-size:12px}
+body[data-game=telescope] .ledger :is(h3,p),body[data-game=telescope] .fiber :is(h3,p){overflow-wrap:anywhere}
+body[data-game=memory] .cg51-form{min-width:0!important;max-width:100%}
+body[data-game=memory] .cg51-answer{min-height:58px;min-width:0;padding:5px 8px}
+body[data-game=prospect] .hold{display:block;pointer-events:auto;min-height:44px;padding:7px 2px;margin-top:6px;border:1px solid #7e895e;line-height:1.2;background:#123426;font-size:11px}
+body[data-game=prospect] .held .hold{color:#18332a;background:#e5c389;border-color:#ffe2a7;box-shadow:0 0 10px #e8c37944}
+body[data-game=prospect] .action-row{grid-template-columns:1fr}
+body[data-game=prospect] .reel-strip{backface-visibility:visible;filter:none}
+body[data-game=prospect] #motion-readout{display:block;font-size:11px;margin-top:5px;color:#d4c18a}
+@media(max-width:420px){body[data-game] :is(.a51-bank,.cg51-bank,.bank){min-width:70px}body[data-game] .game-brand{font-size:9px;gap:6px}body[data-game] .a51-intro h1{font-size:28px}body[data-game=telescope] .player{padding-inline:3px}body[data-game=telescope] .game-body{padding:8px}body[data-game=telescope] .table{gap:5px}}

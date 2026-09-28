@@ -1,0 +1,96 @@
+/* Blackjack 51 interaction language shared by Area 51's three lead games. */
+:root{
+  --a51-felt:#193d30;
+  --a51-felt-deep:#10201c;
+  --a51-panel:#172a24;
+  --a51-panel-2:#1c3029;
+  --a51-line:#395046;
+  --a51-text:#f4eee2;
+  --a51-muted:#b3c0b5;
+  --a51-gold:#e5c389;
+  --a51-green:#b2d6b6;
+  --a51-red:#ffb6a8;
+  --a51-paper:#faf4e7;
+  --a51-ink:#18332a;
+  --a51-radius:18px;
+}
+.area51-invariant{
+  --bg:var(--a51-felt-deep);--bg-soft:#13251f;--panel:var(--a51-panel);--panel-2:var(--a51-panel-2);
+  --line:var(--a51-line);--line-soft:#2b4339;--ink:var(--a51-text);--muted:var(--a51-muted);
+  --gold:var(--a51-gold);--green:var(--a51-green);--red:var(--a51-red);--blue:#c8d7c8;
+  --paper:var(--a51-paper);--card-ink:var(--a51-ink);
+  background:radial-gradient(ellipse at 75% 0,#293c2c55,transparent 50%),var(--a51-felt-deep);
+}
+.area51-invariant::before{display:none!important}
+.area51-invariant .shell{width:min(1240px,calc(100% - 2rem))}
+.area51-invariant .sitebar{min-height:83px;padding:0;border-bottom:1px solid var(--a51-line)}
+.area51-invariant .sitebar .mark{letter-spacing:.09em;font-size:.78rem;text-transform:uppercase}
+.area51-invariant .i-mark{width:33px;height:39px;border-radius:5px;font-size:25px;transform:rotate(-7deg)}
+.area51-invariant .sitebar nav{gap:1.2rem;font-size:.8rem}
+.area51-invariant .sitebar nav a{color:var(--a51-muted)}
+.area51-invariant .sitebar nav a:hover{color:var(--a51-gold)}
+.area51-invariant .a51-core-route{border:0!important;background:transparent!important;padding:0!important;color:var(--a51-gold)!important}
+.area51-invariant .a51-economy{border-color:var(--a51-line);background:var(--a51-panel);border-radius:14px;padding:.55rem .75rem;box-shadow:none}
+.area51-invariant .hero{padding:clamp(3rem,7vw,5.5rem) 0 2.2rem}
+.area51-invariant .hero .eyebrow{color:var(--a51-gold);font-size:.7rem}
+.area51-invariant h1{font-size:clamp(3.2rem,7vw,5.7rem);max-width:none;line-height:1.02;letter-spacing:-.055em}
+.area51-invariant h1 span{display:inline;color:var(--a51-gold)}
+.area51-invariant .dek{font-size:clamp(1rem,2vw,1.25rem);color:#d6dfd4;max-width:52rem}
+.area51-invariant button,.area51-invariant .button-link{border-radius:9px;border-color:var(--a51-line);background:var(--a51-panel-2);color:var(--a51-text);transition:background .15s,transform .15s}
+.area51-invariant button:hover:not(:disabled),.area51-invariant .button-link:hover{background:#304839;transform:translateY(-1px)}
+.area51-invariant button.primary{background:var(--a51-gold);border-color:var(--a51-gold);color:#1c3024}
+.area51-invariant button.primary:hover:not(:disabled){background:#f0d39d}
+.area51-invariant .section{padding:clamp(3rem,6vw,5rem) 0;border-top:1px solid #2d463b}
+.area51-invariant .section-head{margin-bottom:1.4rem}
+.area51-invariant .section-head .eyebrow{color:var(--a51-gold)}
+.area51-invariant .panel{background:linear-gradient(180deg,#172a24f2,#13251ff2);border-color:var(--a51-line);border-radius:var(--a51-radius);box-shadow:0 20px 60px #0002}
+.area51-invariant .record,.area51-invariant .status-card,.area51-invariant .game-pane{background:#12251e;border-color:var(--a51-line);border-radius:14px}
+.area51-invariant .game-grid{gap:1rem}
+.area51-invariant .game-pane{padding:1rem;background:radial-gradient(ellipse at 50% 20%,#24544088,#193d30 70%,#163529);box-shadow:inset 0 0 0 1px #ffffff0c}
+.area51-invariant .hand{background:#0f2b2070;border:1px solid #d3dfc51f;border-radius:12px;padding:.65rem}
+.area51-invariant .hand.win{border-color:#efd39775;background:#4f45291f}
+.area51-invariant .front-card,.area51-invariant .a51-card{background:var(--a51-paper);color:var(--a51-ink);border-color:#fff9;box-shadow:0 4px 1px #0002,0 8px 16px #0002;border-radius:8px}
+.area51-invariant .a51-card.is-red,.area51-invariant .is-red{color:#af3c36}
+.area51-invariant .queue .a51-card{box-shadow:0 2px 7px #0002}
+.area51-invariant .game-account div{background:#10231d;border:1px solid #ffffff0a;border-radius:7px}
+.area51-invariant .status-card strong,.area51-invariant .game-account b,.area51-invariant .value{color:var(--a51-gold)}
+.area51-invariant .counter,.area51-invariant .formula,.area51-invariant .yn-ledger{background:#10231d;border-color:var(--a51-line)}
+.area51-invariant .deck-token,.area51-invariant .mini-token{border-radius:6px}
+.area51-invariant .v72-return-note{color:var(--a51-muted)}
+@media(max-width:760px){
+  .area51-invariant .sitebar{padding:.8rem 0;align-items:flex-start}
+  .area51-invariant .sitebar nav{order:3;width:100%;overflow:auto;flex-wrap:nowrap;padding-bottom:.25rem}
+  .area51-invariant .sitebar nav a{white-space:nowrap}
+  .area51-invariant .a51-economy{margin-left:auto}
+  .area51-invariant .hero{padding-top:2.2rem}
+}
+
+/* Shared Blackjack-like application shell for Memory 51 and future compact games. */
+.cg51-page{margin:0;background:radial-gradient(ellipse at 75% 0,#293c2c55,transparent 50%),var(--a51-felt-deep);color:var(--a51-text);font:16px/1.55 ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.cg51-page *{box-sizing:border-box}
+.cg51-page a{color:var(--a51-gold);text-underline-offset:4px}
+.cg51-shell{max-width:1240px;margin:auto;padding:0 32px}
+.cg51-topbar{display:flex;justify-content:space-between;gap:20px;align-items:center;min-height:83px;border-bottom:1px solid var(--a51-line)}
+.cg51-brand{display:flex;gap:12px;align-items:center;text-decoration:none!important;color:var(--a51-text)!important}
+.cg51-mark{display:grid;place-items:center;width:33px;height:39px;border:1px solid var(--a51-gold);border-radius:5px;font:25px Georgia;color:var(--a51-gold);transform:rotate(-7deg)}
+.cg51-brand strong{font-size:12px;letter-spacing:.15em}.cg51-brand small{display:block;font-size:10px;letter-spacing:.12em;color:var(--a51-muted);margin-top:2px}
+.cg51-nav{display:flex;gap:22px;align-items:center;font-size:13px;flex-wrap:wrap}.cg51-nav a{color:var(--a51-muted);text-decoration:none}.cg51-nav a[aria-current="page"]{color:var(--a51-gold)}
+.cg51-tag{border:1px solid var(--a51-line);border-radius:30px;padding:5px 10px;color:var(--a51-green);font-size:10px;letter-spacing:.1em;white-space:nowrap}
+.cg51-intro{padding:33px 0 27px;display:flex;align-items:end;justify-content:space-between;gap:25px}.cg51-eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:750;color:var(--a51-gold)}
+.cg51-page h1,.cg51-page h2,.cg51-page h3{font-family:Georgia,"Times New Roman",serif;font-weight:400;margin:0}.cg51-page h1{font-size:clamp(44px,5.6vw,72px);line-height:1.06;letter-spacing:-.048em}.cg51-page h2{font-size:32px;line-height:1.15}.cg51-page h3{font-size:22px;line-height:1.25}
+.cg51-muted{color:var(--a51-muted)}.cg51-gold{color:var(--a51-gold)}
+.cg51-bank{text-align:right}.cg51-balance{font-size:38px;line-height:1.15;font-variant-numeric:tabular-nums;color:var(--a51-gold)}.cg51-bank-label{font-size:10px;color:var(--a51-muted);letter-spacing:.12em;text-transform:uppercase}.cg51-clock{font-size:12px;color:var(--a51-muted)}
+.cg51-layout{display:grid;grid-template-columns:minmax(0,1fr) 286px;gap:22px;align-items:start}
+.cg51-table-wrap{border:1px solid #526956;border-radius:var(--a51-radius);padding:7px;background:#1c3027;box-shadow:0 20px 60px #0003}
+.cg51-felt{position:relative;padding:23px 25px;border:1px solid #ffffff16;border-radius:12px;background:radial-gradient(ellipse at 50% 40%,#245440,#193d30 70%,#163529);overflow:hidden}.cg51-felt:before{content:"";pointer-events:none;position:absolute;inset:8px;border:1px solid #ffffff0d;border-radius:9px}
+.cg51-stage{position:relative;min-height:430px;display:grid;place-items:center;text-align:center;padding:22px 0}.cg51-stage>*{position:relative}
+.cg51-prompt{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#d5e1ca;margin-bottom:14px}.cg51-symbol{font:clamp(70px,13vw,132px)/1 Georgia,serif;color:var(--a51-gold);min-height:142px;display:grid;place-items:center}
+.cg51-playing-card{position:relative;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;width:112px;height:160px;border-radius:10px;background:var(--a51-paper);color:var(--a51-ink);box-shadow:0 5px 1px #0002,0 12px 28px #0003;border:1px solid #fff9;user-select:none}.cg51-playing-card.red{color:#af3c36}.cg51-playing-card .corner{position:absolute;left:9px;top:8px;display:grid;justify-items:center;font:700 22px/1 Georgia,serif}.cg51-playing-card .corner.bottom{left:auto;top:auto;right:9px;bottom:8px;transform:rotate(180deg)}.cg51-playing-card .pip{font:58px/1 Georgia,serif}
+.cg51-answer-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;width:min(620px,100%);margin:22px auto 0}.cg51-answer{min-height:64px;border:1px solid #587064;background:#1d342a;color:var(--a51-text);border-radius:10px;padding:10px 14px;font-weight:700;font-size:15px;cursor:pointer}.cg51-answer:hover:not(:disabled){background:#304839}.cg51-answer.correct{border-color:var(--a51-gold);background:#5a4d2b}.cg51-answer.wrong{border-color:#a56a60;background:#4b2c29}.cg51-answer:disabled{cursor:default;opacity:.78}
+.cg51-stage-message{margin:20px -25px -23px;padding:16px 20px;border-top:1px solid #c1d2b623;background:#0c24164d;min-height:78px;display:flex;align-items:center;justify-content:center;flex-direction:column}.cg51-stage-message strong{font-size:19px;font-weight:550}.cg51-stage-message p{margin:2px 0 0;font-size:12px;color:#ccdbc2}
+.cg51-controls{display:flex;gap:9px;flex-wrap:wrap;padding:18px 0}.cg51-button{min-height:44px;border:1px solid var(--a51-line);background:var(--a51-panel-2);color:var(--a51-text);padding:11px 15px;border-radius:9px;font:650 13px/1.3 inherit;cursor:pointer}.cg51-button:hover:not(:disabled){background:#304839;transform:translateY(-1px)}.cg51-button.primary{background:var(--a51-gold);border-color:var(--a51-gold);color:#1c3024}.cg51-button.soft{background:transparent;color:var(--a51-muted)}.cg51-button:disabled{opacity:.4;cursor:not-allowed}
+.cg51-sidebar{display:grid;gap:14px}.cg51-panel{background:var(--a51-panel);border:1px solid var(--a51-line);border-radius:14px;padding:19px}.cg51-panel .cg51-eyebrow{margin-bottom:9px}.cg51-panel p{font-size:13px;color:var(--a51-muted);margin:.6rem 0 0}.cg51-metric{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-top:1px solid #39504670;font-size:12px}.cg51-metric b{color:var(--a51-text)}
+.cg51-progress{height:6px;background:#2c4334;border-radius:20px;overflow:hidden;margin:12px 0}.cg51-progress>span{display:block;height:100%;background:var(--a51-gold);width:0}.cg51-form input,.cg51-form select{width:100%;min-height:44px;background:#10231d;border:1px solid var(--a51-line);border-radius:8px;color:var(--a51-text);padding:8px 10px;font:inherit}.cg51-form label{display:block;color:var(--a51-muted);font-size:12px;margin-top:10px}
+.cg51-below{margin-top:44px;padding:32px 0;border-top:1px solid var(--a51-line)}.cg51-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.cg51-note{padding:16px;border:1px solid var(--a51-line);border-radius:12px;background:#13251f;color:var(--a51-muted);font-size:13px}.cg51-foot{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--a51-line);padding:26px 0 42px;color:var(--a51-muted);font-size:12px}
+@media(max-width:850px){.cg51-layout{grid-template-columns:1fr}.cg51-sidebar{grid-template-columns:repeat(2,minmax(0,1fr))}.cg51-intro{align-items:flex-start}.cg51-bank{padding-top:8px}.cg51-stage{min-height:390px}}
+@media(max-width:620px){.cg51-shell{padding:0 14px}.cg51-topbar{align-items:flex-start;padding:12px 0;flex-wrap:wrap}.cg51-nav{order:3;width:100%;gap:14px;overflow:auto;flex-wrap:nowrap;padding-bottom:3px}.cg51-nav a{white-space:nowrap}.cg51-intro{padding:26px 0 20px}.cg51-intro h1{font-size:clamp(38px,12vw,52px)}.cg51-layout{gap:12px}.cg51-sidebar{grid-template-columns:1fr}.cg51-felt{padding:16px 12px}.cg51-stage{min-height:350px;padding:14px 0}.cg51-answer-grid{grid-template-columns:1fr}.cg51-stage-message{margin:16px -12px -16px}.cg51-grid{grid-template-columns:1fr}.cg51-foot{display:block}.cg51-balance{font-size:28px}}

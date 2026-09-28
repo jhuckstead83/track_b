@@ -1,0 +1,82 @@
+[
+  {
+    "receipt": "WEIGHTED_RESULTANTS.json",
+    "reference": "provenance/v42/qa/WEIGHTED_RESULTANTS.json",
+    "fresh": "qa/WEIGHTED_RESULTANTS.json",
+    "identical": true,
+    "reference_sha256": "180f43874159fc2620cefed1f7a839dd500f4d180010866996c57d1e9ad49696",
+    "fresh_sha256": "180f43874159fc2620cefed1f7a839dd500f4d180010866996c57d1e9ad49696"
+  },
+  {
+    "receipt": "COMMON_SOURCE.json",
+    "reference": "provenance/v42/qa/COMMON_SOURCE.json",
+    "fresh": "qa/COMMON_SOURCE.json",
+    "identical": true,
+    "reference_sha256": "04cff7018db18164192f474e943be5d4753af0f4d67a9ac9fbf37340cca7eaed",
+    "fresh_sha256": "04cff7018db18164192f474e943be5d4753af0f4d67a9ac9fbf37340cca7eaed"
+  },
+  {
+    "receipt": "INTEGRATED_BRIDGES.json",
+    "reference": "provenance/v42/qa/INTEGRATED_BRIDGES.json",
+    "fresh": "qa/INTEGRATED_BRIDGES.json",
+    "identical": true,
+    "reference_sha256": "9030214d1e9bbe72f6fec00186b80a072c3ed012ee318ff210cf9c0f3c53c51a",
+    "fresh_sha256": "9030214d1e9bbe72f6fec00186b80a072c3ed012ee318ff210cf9c0f3c53c51a"
+  },
+  {
+    "receipt": "SINE_BRIDGE.json",
+    "reference": "provenance/v42/qa/SINE_BRIDGE.json",
+    "fresh": "qa/SINE_BRIDGE.json",
+    "identical": true,
+    "reference_sha256": "f96aaa056bd0e489fdc8dc98a3e3575b28a15482fa3d8f9d64a4583db8c9f58b",
+    "fresh_sha256": "f96aaa056bd0e489fdc8dc98a3e3575b28a15482fa3d8f9d64a4583db8c9f58b"
+  },
+  {
+    "receipt": "LIGHTHOUSE_TIEOUT.json",
+    "reference": "provenance/v42/qa/LIGHTHOUSE_TIEOUT.json",
+    "fresh": "qa/LIGHTHOUSE_TIEOUT.json",
+    "identical": true,
+    "reference_sha256": "aca7231ef2fa5737a4b433103483962d054724440c51f3c13bab5b0b01e8e616",
+    "fresh_sha256": "aca7231ef2fa5737a4b433103483962d054724440c51f3c13bab5b0b01e8e616"
+  },
+  {
+    "receipt": "BLUE_SHARPENING.json",
+    "reference": "provenance/v42/qa/BLUE_SHARPENING.json",
+    "fresh": "qa/BLUE_SHARPENING.json",
+    "identical": true,
+    "reference_sha256": "0ff87f21c6e74347836699bc9339824d02289c2339215f06d264b28b652e7542",
+    "fresh_sha256": "0ff87f21c6e74347836699bc9339824d02289c2339215f06d264b28b652e7542"
+  },
+  {
+    "receipt": "ORANGE_CURVATURE.json",
+    "reference": "provenance/v42/qa/ORANGE_CURVATURE.json",
+    "fresh": "qa/ORANGE_CURVATURE.json",
+    "identical": true,
+    "reference_sha256": "c81d34132b477f2bd26ae6ccec450fdb9f263837a694a89c1a1a94e28a7163cd",
+    "fresh_sha256": "c81d34132b477f2bd26ae6ccec450fdb9f263837a694a89c1a1a94e28a7163cd"
+  },
+  {
+    "receipt": "GREEN_BLUE_MERGE.json",
+    "reference": "provenance/v42/qa/GREEN_BLUE_MERGE.json",
+    "fresh": "qa/GREEN_BLUE_MERGE.json",
+    "identical": true,
+    "reference_sha256": "8728cb2d6f3c048013a730643a58b85aefa888c9d77902bfd4a662d262571653",
+    "fresh_sha256": "8728cb2d6f3c048013a730643a58b85aefa888c9d77902bfd4a662d262571653"
+  },
+  {
+    "receipt": "GREEN_ORANGE_COMPARISON.json",
+    "reference": "provenance/v42/qa/GREEN_ORANGE_COMPARISON.json",
+    "fresh": "qa/GREEN_ORANGE_COMPARISON.json",
+    "identical": true,
+    "reference_sha256": "c82bd56c73c6bf84206c037705a181043c4f4f467498f6a18e139e330e93d8c5",
+    "fresh_sha256": "c82bd56c73c6bf84206c037705a181043c4f4f467498f6a18e139e330e93d8c5"
+  },
+  {
+    "receipt": "CURVATURE_PROGRESSIONS.json",
+    "reference": "provenance/v42/qa/CURVATURE_PROGRESSIONS.json",
+    "fresh": "qa/CURVATURE_PROGRESSIONS.json",
+    "identical": true,
+    "reference_sha256": "7dfefe58ecb627d88c0948722a27a2e418d57494b961d42f62b4e3b53285e026",
+    "fresh_sha256": "7dfefe58ecb627d88c0948722a27a2e418d57494b961d42f62b4e3b53285e026"
+  }
+]

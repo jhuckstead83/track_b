@@ -1,0 +1,72 @@
+/* Area 51 shared core language: Invariant + Blackjack 51. */
+.a51-economy {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  padding: .55rem .75rem;
+  border: 1px solid #6f6034;
+  border-radius: .8rem;
+  background: rgba(9, 21, 32, .92);
+  white-space: nowrap;
+  box-shadow: inset 0 0 22px rgba(245, 200, 93, .035);
+}
+.a51-economy small { display: block; color: var(--muted, #a8bac4); font-size: .68rem; text-transform: uppercase; letter-spacing: .12em; }
+.a51-economy strong { color: var(--gold, #f5c85d); font: 1.45rem/1 Georgia, serif; }
+.a51-economy__clock { color: var(--muted, #a8bac4); font-size: .75rem; }
+.a51-card {
+  position: relative;
+  display: grid;
+  place-items: center;
+  border: 1px solid #fff;
+  border-radius: .55rem;
+  color: #152230;
+  background: #f7f3e8;
+  box-shadow: 0 9px 20px rgba(0, 0, 0, .28);
+  font-family: Georgia, "Times New Roman", serif;
+}
+.a51-card.is-red { color: #ad283b; }
+.a51-card.is-lucky { box-shadow: 0 0 0 2px var(--gold, #f5c85d), 0 0 28px rgba(245, 200, 93, .4); }
+.a51-card.is-back {
+  color: var(--gold, #f5c85d);
+  border-color: #3c5a6f;
+  background: repeating-linear-gradient(135deg, #173147 0, #173147 8px, #102335 8px, #102335 16px);
+  box-shadow: inset 0 0 0 4px #0b1d2d, 0 9px 20px rgba(0, 0, 0, .28);
+}
+.a51-card--table { width: 88px; height: 126px; }
+.a51-card__corner { position: absolute; top: .42rem; left: .5rem; font: 700 1.05rem/1 Georgia, serif; }
+.a51-card__corner.is-bottom { inset: auto .5rem .42rem auto; transform: rotate(180deg); }
+.a51-card__pip { font-size: 2.8rem; }
+.a51-card.is-back .a51-card__pip { font: 2.5rem Georgia, serif; }
+.a51-card--swap { width: 4.8rem; min-width: 4.8rem; height: 6.65rem; padding: .4rem; font-weight: 800; font-size: 1.15rem; }
+.a51-card--micro { min-width: 0; min-height: 3.8rem; padding: .4rem .1rem; font-family: inherit; font-size: .8rem; box-shadow: 0 4px 10px rgba(0, 0, 0, .22); }
+.a51-card--front { width: 100%; min-height: 3.5rem; padding: .25rem; font-family: inherit; font-weight: 800; overflow-wrap: anywhere; text-align: center; }
+.a51-card--queue { min-width: 1.85rem; min-height: 1.65rem; padding: 0 .25rem; border-radius: .25rem; font-family: inherit; font-size: .68rem; box-shadow: 0 2px 5px rgba(0, 0, 0, .2); }
+.a51-core-route { border-color: #756332 !important; background: rgba(245, 200, 93, .08) !important; color: var(--gold, #f5c85d) !important; }
+.a51-core-note { color: var(--muted, #a8bac4); font-size: .8rem; }
+.yn-ledger { display: grid; grid-template-columns: minmax(15rem,.75fr) minmax(18rem,1.25fr); gap: 1rem; margin: 0 0 1rem; padding: 1rem; border: 1px solid #486279; border-radius: .75rem; background: #081a2a; }
+.yn-ledger strong, .yn-ledger small { display: block; overflow-wrap: anywhere; }
+.yn-ledger strong { color: var(--gold, #f5c85d); font: 1.05rem/1.4 ui-monospace, SFMono-Regular, Consolas, monospace; }
+.yn-ledger small { margin-top: .35rem; color: #9fcaec; font: .78rem/1.4 ui-monospace, SFMono-Regular, Consolas, monospace; }
+.yn-ledger p { margin: 0 0 .45rem; color: var(--muted, #a8bac4); font-size: .8rem; }
+.yn-ledger a { font-size: .78rem; }
+
+.area51-invariant .sitebar { flex-wrap: wrap; }
+.area51-invariant .sitebar nav { margin-left: auto; }
+.area51-invariant .a51-economy { margin-left: auto; }
+.area51-invariant .deck-token.recorded { background: #d4f3e7; border-color: #2a9b77; }
+.area51-invariant .deck-token.swap-position { border-color: #bd8a1c; }
+.area51-invariant .a51-card.is-back .pos { color: #f5c85d; }
+
+@media (max-width: 720px) {
+  .a51-card--table { width: 69px; height: 100px; }
+  .a51-card__pip { font-size: 2.15rem; }
+  .a51-card__corner { font-size: .85rem; }
+  .area51-invariant .sitebar nav { order: 3; width: 100%; margin-left: 0; }
+  .area51-invariant .a51-economy { order: 2; }
+  .yn-ledger { grid-template-columns: 1fr; }
+}
+
+@media print {
+  .a51-economy { display: none !important; }
+  .a51-card { color: #111; background: #fff; box-shadow: none; border-color: #777; }
+}

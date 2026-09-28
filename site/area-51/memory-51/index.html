@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#10201c">
+<title>Memory 51 · Area 51 · Cerebral Graphix</title>
+<meta name="description" content="Memory 51 is a two-way active-recall game for the 51-card Invariant alphabet. Completed recall time feeds the shared Area 51 credit economy.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="citation_title" content="Memory 51 — Area 51 public Alpha research extension">
+<meta name="citation_author" content="Jeffery Lyn Huckstead">
+<meta name="citation_publication_date" content="2026/09/20">
+<meta name="citation_public_url" content="https://cerebralgraphix.com/area-51/memory-51/">
+<meta name="citation_reference" content="Huckstead, Jeffery Lyn. The Line Game | Surprise Is Not Meaning, v7.2. https://doi.org/10.5281/zenodo.22851517">
+<meta name="DC.creator" content="Jeffery Lyn Huckstead">
+<meta name="DC.source" content="https://doi.org/10.5281/zenodo.22851517">
+<link rel="canonical" href="https://cerebralgraphix.com/area-51/memory-51/">
+<link rel="author" href="https://orcid.org/0009-0007-0234-2177">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<link rel="up" href="https://cerebralgraphix.com/area-51/">
+<link rel="stylesheet" href="../assets/area51-blackjack-ui-v1.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Memory 51","url":"https://cerebralgraphix.com/area-51/memory-51/","applicationCategory":"EducationalApplication","operatingSystem":"Any modern web browser","isAccessibleForFree":true,"softwareVersion":"memory51-v2.0","dateModified":"2026-09-21","author":{"@type":"Person","name":"Jeffery Lyn Huckstead","sameAs":"https://orcid.org/0009-0007-0234-2177"},"isBasedOn":"https://doi.org/10.5281/zenodo.22851517","license":"https://creativecommons.org/licenses/by/4.0/"}</script>
+<link rel="stylesheet" href="../assets/area51-v2.css">
+<noscript><style>[data-pane="rule-card"]{display:block!important}</style></noscript><link rel="stylesheet" href="/area-51/assets/card-ui-v2-5.css"><script src="/area-51/prospect-51/data.js"></script><script src="/area-51/prospect-51/tokens.js"></script><script src="/area-51/assets/card-ui-v2-5.js"></script><link rel="stylesheet" href="../assets/house-cards-v2-5.css"><link rel="stylesheet" href="/assets/finance-mini-v2-8-2.css"><script defer src="/assets/finance-browser-engine-v2_1_0.js"></script><script defer src="/assets/finance-mini-model-v2-8-1.js"></script><script defer src="/assets/finance-reference-seed-v2-7.js"></script><script defer src="/assets/finance-mini-v2-8-2.js"></script></head>
+<body class="a51-page memory-page" data-game="memory" data-ui-version="2.5.0" data-finance-dock>
+<div class="cg51-shell">
+<header class="game-header"><a href="/area-51/" class="game-brand"><span>Ⅰ</span>AREA 51 / CEREBRAL GRAPHIX</a><details class="game-switch"><summary>Games ▾</summary><nav aria-label="Area 51 games"><a href="/area-51/">The lab</a><a href="/area-51/invariant/">Invariant</a><a href="/area-51/blackjack-51/">Blackjack 51</a><a href="/area-51/telescope-51/">Telescope 51</a><a href="/area-51/sedaps-51/">51 SEDAPS</a><a href="/area-51/memory-51/" aria-current="page">Memory 51</a><a href="/area-51/prospect-51/">Prospect 51</a><a href="/finance/live.html">Finance ↗</a><a href="/">Main site</a></nav></details></header><main>
+<noscript><div class="cg51-note" style="margin-top:24px">
+<strong>Memory 51 needs JavaScript for active recall.</strong> The mapping itself is the 51-symbol Invariant alphabet; 2♣ remains outside as marker Ⅰ.</div></noscript>
+<section class="cg51-intro" aria-labelledby="memory-title">
+  <div>
+<div class="cg51-eyebrow">Memory becomes the economy</div>
+<h1 id="memory-title">Memory <span class="cg51-gold">51.</span>
+</h1><a class="research-link" href="#rule-card">Research ↗</a>
+<p class="cg51-muted" style="margin:.6rem 0 0">Match the mark. Collect the stamp. Earn jbits.</p>
+</div>
+  <div class="cg51-bank">
+<div class="cg51-bank-label">Area 51 jbits</div>
+<div class="cg51-balance" id="bank">—</div>
+<div class="cg51-clock" id="bank-clock">Opening bank…</div>
+</div>
+</section>
+<section id="play"><div class="cg51-layout">
+  <section aria-label="Memory 51 active recall table">
+    <div class="cg51-table-wrap"><div class="cg51-felt">
+      <div class="cg51-stage">
+        <div>
+          <div class="cg51-prompt" id="prompt-kind">Card → stamp</div>
+          <div id="prompt-object" aria-live="polite"></div>
+          <div class="cg51-answer-grid" id="answers" role="group" aria-label="Recall choices"></div>
+        </div>
+      </div>
+      <div class="cg51-stage-message" aria-live="polite" aria-atomic="true">
+<strong id="message-title">First prompt ready.</strong><p id="message-sub">Choose the matching half of the pair.</p>
+</div>
+    </div></div>
+    <div class="cg51-controls">
+      <button class="cg51-button primary" id="next">Next card</button>
+      <a class="cg51-button soft" id="return-blackjack" href="../blackjack-51/" hidden>Return to Blackjack 51</a>
+    </div>
+  <details class="game-details"><summary>Practice setup · direction &amp; receipts</summary><div class="game-details-body"><div class="cg51-controls"><label class="cg51-form" style="min-width:220px">Direction
+        <select id="direction"><option value="mixed">Mixed directions</option>
+<option value="card-symbol">Card → stamp</option>
+<option value="symbol-card">Stamp → card</option></select>
+      </label>
+      <button class="cg51-button soft" id="save-receipt">Save local receipt</button>
+      <button class="cg51-button soft" id="reset-session">Reset session stats</button>
+      </div></div></details></section>
+  </div>
+<details class="game-details"><summary>Recall progress · pair notes</summary><div class="game-details-body"><aside class="cg51-sidebar" aria-label="Memory 51 companion panels">
+    <section class="cg51-panel"><div>
+<div class="cg51-eyebrow">EARN THROUGH RECALL</div>
+<h3>Four choices. Two jbits.</h3>
+<p>Match the pair without Study: +2 jbits. Incorrect or assisted answers are practice. Up to 8 jbits can be earned per UTC day.</p>
+<div class="cg51-metric">
+<span>Earned today</span><b id="learning-progress">0 / 8</b>
+</div>
+<div class="cg51-progress"><span id="learning-fill"></span></div>
+<p class="cg51-small" id="generator">The shared reserve also recovers 1 every 5:10 below 8.</p>
+</div></section><section class="cg51-panel"><div class="cg51-eyebrow">This session</div>
+<h3>Keep moving.</h3>
+<div class="cg51-metric">
+<span>Completed</span><b id="completed">0</b>
+</div>
+<div class="cg51-metric">
+<span>Correct</span><b id="correct">0</b>
+</div>
+<div class="cg51-metric">
+<span>Accuracy</span><b id="accuracy">—</b>
+</div>
+<div class="cg51-metric">
+<span>Current streak</span><b id="streak">0</b>
+</div></section>
+    <section class="cg51-panel"><div class="cg51-eyebrow">Current pair</div>
+<h3 id="pair-title">—</h3>
+<p id="pair-detail">The card and component symbol are an exact reversible pair inside the 51-symbol alphabet.</p>
+<div class="cg51-form">
+<button id="study" class="cg51-button soft">Study / reveal pair</button><label for="meaning">Your local note for this pair</label><input id="meaning" maxlength="100" placeholder="Optional memory hook"><button class="cg51-button" id="save-meaning" style="margin-top:9px">Save note locally</button>
+</div></section>
+  </aside>
+</div></details></section><details class="game-details" id="stamp-lab"><summary>Your stamps <span id="stamp-count">0 / 51</span></summary><div class="game-details-body stamp-lab"><p>Recall a pair in Memory 51 to earn its stamp. Your collection travels between these tables, even after the daily jbit award is full.</p><div class="stamp-lab-grid"><div id="stamp-collection" class="stamp-collection" aria-label="Collected card stamps"></div><div class="stamp-inspector"><label for="stamp-select">Explore a pair</label><select id="stamp-select"><option value="">Choose a card</option></select><div class="stamp-preview" id="stamp-preview"></div><p id="stamp-pair">The familiar face and its exact paper mark.</p><div class="a51-actions"><button id="stamp-flip" type="button" disabled>Turn the card</button><button id="stamp-practice" type="button">Practice an uncollected stamp</button></div></div></div></div></details>
+<details class="game-details research-details" id="rule-card"><summary>Research · Rule Card / Live Paper</summary><div class="game-details-body a51-rule-card"><p class="a51-eyebrow">MEMORY 51 / LIVE RULE CARD · v2.0</p>
+<h2>A card and its other name.</h2>
+<p>The default key is the exact 51-component alphabet from Invariant. The marker Ⅰ = 2♣ is outside it. Card → stamp and symbol → card test the same bijection in opposite directions.</p>
+<p>Each question offers four distinct choices. A correct answer without using Study earns 2 jbits, up to 8 per UTC day. Opening the page, waiting, skipping, or revealing the answer earns nothing. Incorrect and assisted answers remain useful practice and are recorded separately.</p>
+<p>The four-choice reference has a two-bit fixed-width answer budget. The +2 jbit award is a chosen price, not an estimate of knowledge gained. Correctness, direction, response time and assisted status remain separate in your receipt.</p>
+<p><a href="../assets/SYMBOLS_51.json">Download the exact alphabet</a> · <a href="../invariant/rule-card.html">Read the source and decoder</a></p>
+<div>
+<h2>One bank. Clear prices.</h2>
+<p><strong>jbits are the lab’s play currency.</strong> Start with 8. The reserve recovers 1 every 5:10 while below 8; winnings can carry it higher. Reloading and switching games preserve the bank.</p>
+<table>
+<tr>
+<th>Action</th>
+<th>Price or award</th>
+</tr>
+<tr>
+<td>Blackjack stake</td>
+<td>1, 2, 4 or 8 jbits</td>
+</tr>
+<tr>
+<td>One full hidden-card reveal</td>
+<td>6 jbits</td>
+</tr>
+<tr>
+<td>Blackjack odds view / forecast entry</td>
+<td>1 jbit each</td>
+</tr>
+<tr>
+<td>Correct four-choice Memory recall without a reveal</td>
+<td>+2 jbits; up to 8 per UTC day</td>
+</tr>
+</table>
+<p>These are declared prices. The reveal price of 6 follows the six-bit fixed-width budget for 51 identities; the recall award of 2 follows the two-bit budget for four choices. Neither converts play into a measurement of personal memory, surprise or learning. jbits have no monetary value.</p>
+</div></div></details></main>
+<footer class="cg51-foot"><span>Memory 51 · Area 51 v2.0</span><span>Jeffery Lyn Huckstead · Cerebral Graphix · based on DOI <a href="https://doi.org/10.5281/zenodo.22851517">10.5281/zenodo.22851517</a></span></footer>
+</div>
+<script type="module" src="./app-v2-5.js"></script>
+
+<script src="../assets/research-links-v2-3.js" defer></script></body>
+</html>

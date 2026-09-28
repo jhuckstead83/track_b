@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark"><meta name="theme-color" content="#000000">
+<title>Twin calibration · 51 Twins · Area 51</title>
+<meta name="description" content="The Davenport–Heilbronn twin on the Widder rung ladder and the Löwner route: census to height 640, first detected negative at rung 16,589, Löwner failure by 105 nodes, and the detection law k* ≈ 1.3 t²/(aδ). RH remains open.">
+<link rel="canonical" href="https://cerebralgraphix.com/area-51/twins-51/calibration.html"><link rel="icon" href="/favicon.svg">
+<meta name="author" content="Jeffery Lyn Huckstead"><meta name="citation_author" content="Jeffery Lyn Huckstead"><meta name="citation_title" content="Twin calibration: the Davenport–Heilbronn function on the TN Postmaster ladder">
+<link rel="author" href="https://orcid.org/0009-0007-0234-2177">
+<link rel="stylesheet" href="/area-51/assets/area51-v2.css"><link rel="stylesheet" href="/area-51/assets/card-ui-v2-5.css"><link rel="stylesheet" href="twins-v1.css">
+<style>.tw-cal .tw-copy{max-width:940px}.tw-cal .tw-copy h3{font:22px/1.2 Georgia,serif;margin:22px 0 8px;color:var(--a51-text)}.tw-scroll{overflow-x:auto}.tw-cal .tw-ledger td:nth-child(2){white-space:normal;color:inherit;font-weight:400}.tw-tabular{font-variant-numeric:tabular-nums}.tw-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin:10px 0 6px}.tw-fact{border:1px solid var(--a51-line);border-radius:12px;padding:14px;background:#000}.tw-fact b{display:block;font:30px/1.1 Georgia,serif;color:var(--tw-zeta)}.tw-fact b.bad{color:var(--tw-red)}.tw-fact span{font-size:13px;color:var(--a51-muted)}.tw-scroll table{min-width:600px}@media (max-width:620px){.tw-cal .tw-scroll .tw-ledger{display:table}.tw-cal .tw-scroll .tw-ledger thead{display:table-header-group}.tw-cal .tw-scroll .tw-ledger tbody{display:table-row-group}.tw-cal .tw-scroll .tw-ledger tr{display:table-row}.tw-cal .tw-scroll .tw-ledger :is(td,th){display:table-cell;padding:8px 6px;border-bottom:1px solid var(--a51-line)}}</style>
+</head>
+<body class="a51-page tw-page tw-cal" data-game="twins">
+<div class="a51-shell">
+<header class="game-header"><a href="/area-51/" class="game-brand"><span>Ⅰ</span>AREA 51 / CEREBRAL GRAPHIX</a><details class="game-switch"><summary>Games ▾</summary><nav aria-label="Area 51 games"><a href="/area-51/">The lab</a><a href="/area-51/invariant/">Invariant</a><a href="/area-51/blackjack-51/">Blackjack 51</a><a href="/area-51/telescope-51/">Telescope 51</a><a href="/area-51/sedaps-51/">51 SEDAPS</a><a href="/area-51/memory-51/">Memory 51</a><a href="/area-51/prospect-51/">Prospect 51</a><a href="/finance/live.html">Finance ↗</a><a href="/">Main site</a></nav></details></header>
+<main>
+<section class="a51-intro tw-intro"><div><p class="a51-eyebrow"><a href="./">← 51 Twins</a> · calibration report · RH OPEN</p><h1>Twin <span class="tw-gold">calibration.</span></h1>
+<p>The Davenport–Heilbronn function has the same reflection symmetry as completed zeta, F(s) = F(1 − s), but a different Gamma factor and no Euler product, and it has zeros off the critical line. Run through the TN Postmaster ladder, it shows how far a positivity test can go before it sees an off-line zero. The numbers here are the ones printed in TN Postmaster Volume I v5.2, Technical Dossier §§69A–69B.</p></div></section>
+
+<div class="tw-facts">
+<div class="tw-fact"><b>218</b><span>sector-safe rungs conditional on the un-certified zero census</span></div>
+<div class="tw-fact"><b>16,588</b><span>last positive rung checked near the first detected negative</span></div>
+<div class="tw-fact"><b class="bad">W<sub>16589</sub> &lt; 0</b><span>first detected negative in these scans, at x = 7140.066, from the zero 0.8085 + 85.699i</span></div>
+<div class="tw-fact"><b>N = 105</b><span>first Löwner size at which the principal route fails at the best tested centre: exact, read pivot by pivot (106 and 107 at the other two)</span></div>
+</div>
+<ul class="tw-chips"><li><span class="tw-chip tw-proved">PROVED</span>short argument given</li><li><span class="tw-chip tw-cert">CERT</span>explicit object, replayed</li><li><span class="tw-chip tw-evid">EVID</span>numerical, not a theorem</li><li><span class="tw-chip tw-open">OPEN</span>unresolved</li></ul>
+
+<section class="tw-copy"><p class="a51-eyebrow">1 · The function</p><h2>Same reflection, different Gamma factor, no Euler product.</h2>
+<p>Let κ = (√(10 − 2√5) − 2)/(√5 − 1) = 0.2840790438… and let a<sub>n</sub> repeat with period 5 as (1, κ, −κ, −1, 0). Then f(s) = Σ a<sub>n</sub> n<sup>−s</sup> and F(s) = (5/π)<sup>s/2</sup> Γ((s+1)/2) f(s) = F(1 − s). The identity checks to 2 × 10<sup>−13</sup> in double precision and 10<sup>−39</sup> at 40 digits. Completed zeta is π<sup>−s/2</sup>Γ(s/2)ζ(s). The twin keeps the reflection s ↔ 1 − s but carries the Gamma factor Γ((s+1)/2) of an odd character, and conductor 5. The textbook odd-character completion uses (5/π)<sup>(s+1)/2</sup>. It differs from the factor above only by the constant (5/π)<sup>1/2</sup> ≈ 1.2616, which cancels in F(s) = F(1 − s) and in d/ds log F, the only quantity the rungs and the Löwner test use. The form above is kept deliberately (both forms checked at 40 digits, PP276 monitoring). The coefficients c(n) of −f′/f play the role of Λ(n), but they are signed and live on composites too:</p>
+<div class="tw-scroll"><table class="tw-ledger tw-tabular"><thead><tr><th>n</th><th>2</th><th>3</th><th>4</th><th>6</th><th>9</th><th>11</th><th>12</th><th>13</th><th>14</th><th>19</th><th>21</th></tr></thead>
+<tbody><tr><td>twin c(n)</td><td>+0.197</td><td>−0.312</td><td>−1.442</td><td>+1.936</td><td>−2.286</td><td>+2.398</td><td>−0.763</td><td>−0.729</td><td>−2.852</td><td>−2.944</td><td>+3.290</td></tr>
+<tr><td>ζ: Λ(n)</td><td>0.693</td><td>1.099</td><td>0.693</td><td>0</td><td>1.099</td><td>2.398</td><td>0</td><td>2.565</td><td>0</td><td>2.944</td><td>0</td></tr></tbody></table></div>
+<p><span class="tw-chip tw-proved">PROVED</span> Some Widder rung of the twin is negative (Dossier Theorem 69A.1): the argument behind (R.4) uses only the absolutely convergent folded resolvent, and a Stieltjes function cannot have the poles that off-line zeros put off the negative axis.</p></section>
+
+<section class="tw-copy"><p class="a51-eyebrow">2 · Census and the rung ladder</p><h2>Where each off-line zero is first seen.</h2>
+<p>The census covers −0.45 ≤ σ ≤ 1.45 up to height 640 in windows of 5. In every window, the argument-principle count equals the on-line zeros plus twice the off-line zeros. It finds 501 on-line zeros and 16 off-line pairs. An independent 20-digit census over 260–600 flags the same windows. <span class="tw-chip tw-evid">EVID</span></p>
+<div class="tw-scroll"><table class="tw-ledger tw-tabular"><thead><tr><th>#</th><th>off-line zero (σ &gt; ½)</th><th>δ</th><th>a</th><th>first failing rung k*</th><th>k* / ((π/2)t²/(aδ))</th></tr></thead><tbody>
+<tr><td>0</td><td>0.808517182 + 85.699348485i</td><td>0.3085</td><td>1.9481</td><td>16,589</td><td>0.864</td></tr>
+<tr><td>1</td><td>0.650830081 + 114.163342731i</td><td>0.1508</td><td>1.7869</td><td>59,814</td><td>0.787</td></tr>
+<tr><td>2</td><td>0.574356050 + 166.479305913i</td><td>0.0744</td><td>1.8449</td><td>269,777</td><td>0.850</td></tr>
+<tr><td>3</td><td>0.724257695 + 176.702461243i</td><td>0.2243</td><td>1.4674</td><td>119,953</td><td>0.805</td></tr>
+<tr><td>4</td><td>0.869530580 + 240.404672351i</td><td>0.3695</td><td>1.3365</td><td>148,116</td><td>0.806</td></tr>
+<tr><td>5</td><td>0.819549592 + 320.876489669i</td><td>0.3195</td><td>1.5022</td><td>313,749</td><td>0.931</td></tr>
+<tr><td>6</td><td>0.768223124 + 331.050259408i</td><td>0.2682</td><td>1.1843</td><td>402,203</td><td>0.742</td></tr>
+<tr><td>7</td><td>0.628508108 + 366.640907576i</td><td>0.1285</td><td>1.3254</td><td>1,164,418</td><td>0.939</td></tr>
+<tr><td>8</td><td>0.815873678 + 411.796737549i</td><td>0.3159</td><td>1.1367</td><td>503,773</td><td>0.679</td></tr>
+<tr><td>9</td><td>0.708882224 + 440.484510740i</td><td>0.2089</td><td>1.2136</td><td>868,748</td><td>0.723</td></tr>
+<tr><td>10</td><td>0.515918314 + 520.943801035i</td><td>0.0159</td><td>1.1050</td><td>18,519,801</td><td>0.764</td></tr>
+<tr><td>11</td><td>0.846953803 + 531.279726897i</td><td>0.3470</td><td>1.3622</td><td>841,972</td><td>0.898</td></tr>
+<tr><td>12</td><td>0.729533400 + 548.906793778i</td><td>0.2295</td><td>1.1494</td><td>1,593,139</td><td>0.888</td></tr>
+<tr><td>13</td><td>0.786559082 + 566.509712911i</td><td>0.2866</td><td>1.1907</td><td>1,542,049</td><td>1.044</td></tr>
+<tr><td>14</td><td>0.582855670 + 595.023378028i</td><td>0.0829</td><td>1.4920</td><td>3,593,590</td><td>0.799</td></tr>
+<tr><td>15</td><td>0.628251983 + 611.775097639i</td><td>0.1283</td><td>—</td><td>—</td><td>local list incomplete</td></tr>
+</tbody></table></div>
+<p>Here δ = σ − ½, and a is the distance to the nearest on-line zero. Row 10 is computed on its own, because zero 11 fails first in any window that contains both.</p>
+<ul>
+<li><strong>Sector bound.</strong> θ<sub>max</sub> = 7.1997 × 10<sup>−3</sup> comes from zero 0; the zero-free strip bounds the tail above 640 by 2.8 × 10<sup>−3</sup>. So every rung k ≤ 218 is positive at every x &gt; 0. The implication is PROVED; the value rests on the census, which is not interval-certified.</li>
+<li><strong>First failure.</strong> Every rung 219 ≤ k ≤ 16,589 was evaluated near each off-line node of the census to 260. A full-orbit scan over 0.524 ≤ x ≤ 43,264 at k = 219, 500, 1000, 3000, 8000, 12000 and 16588 finds no negative minimum. At k = 16,589 there is exactly one. A 40-digit recheck gives positive-rescaled finite-census sums +1.7592739 × 10<sup>−4</sup> at k = 16,588 and −4.6600915 × 10<sup>−5</sup> at k = 16,589 at x = 7140.06626. An independent replay at 60 and 100 digits on the same list of zeros below height 260 gives +1.759274 × 10<sup>−4</sup> and −4.660091 × 10<sup>−5</sup>. Both signs survive moving every listed zero by 10<sup>−12</sup>. Precision is therefore not the limit; the scope is the finite zero list. <span class="tw-chip tw-evid">EVID</span></li>
+<li>The scans use a finite zero list, sampled x grids and numerical refinement. They do not certify the omitted tail or all x, including between sample points. Positivity for all 219 ≤ k ≤ 16,588 and all x &gt; 0 is not established.</li>
+</ul></section>
+
+<section class="tw-copy"><p class="a51-eyebrow">3 · The principal route</p><h2>A hundred nodes, at 250 digits.</h2>
+<p>By the Dobsch–Donoghue theorem, every N-node Löwner matrix of h = xS is positive semidefinite exactly when the local matrix [h<sup>(i+j+1)</sup>(x₀)/(i+j+1)!] is, at every centre x₀. The Taylor coefficients come from the twin’s source formula, so every zero is included.</p>
+<div class="tw-scroll"><table class="tw-ledger tw-tabular"><thead><tr><th>centre x₀</th><th>PSD through (tested)</th><th>first tested size with a negative pivot</th><th>smallest pivot there</th><th>exact first failure N*</th></tr></thead><tbody>
+<tr><td>7124.38 = 0.97|q₀|</td><td>N = 100</td><td>N = 105</td><td>1.0 × 10<sup>−141</sup></td><td>105</td></tr>
+<tr><td>7344.72 = |q₀|</td><td>N = 105</td><td>N = 110</td><td>1.3 × 10<sup>−149</sup></td><td>106</td></tr>
+<tr><td>7565.07 = 1.03|q₀|</td><td>N = 105</td><td>N = 110</td><td>1.2 × 10<sup>−148</sup></td><td>107</td></tr></tbody></table></div>
+<p>The original run tested multiples of 5 only. Leading sections are nested, so one elimination of a 112-node matrix reads every leading minor at once: its first negative pivot is the exact first failing size. That gives N* = 105, 106 and 107 at the three centres, and the pivots at the tested sizes reproduce the table (Team B replay, <code>provenance/v5_2/evidence/team_b_replay/</code>). Positivity is established only at these three centres; the Dobsch–Donoghue criterion needs every centre. An N-node test uses about 2N ≈ 210 derivatives; the first failing rung uses about 33,000. The principal route sees the twin with far fewer derivatives, but only with arithmetic beyond 150 digits. In double precision the twin is indistinguishable from an on-line control through N = 64. <span class="tw-chip tw-evid">EVID</span></p></section>
+
+<section class="tw-copy"><p class="a51-eyebrow">4 · Why it takes so long</p><h2>Parity, a Gaussian, and the detection law.</h2>
+<ul>
+<li><strong>Parity lemma (TW.1).</strong> A real test at real nodes sees a conjugate folded pair as F(q<sub>r</sub> + iη) + F(q<sub>r</sub> − iη) = 2F(q<sub>r</sub>) − η²F″(q<sub>r</sub>) + O(η⁴). The first-order, orientation-carrying term cancels. <span class="tw-chip tw-proved">PROVED</span></li>
+<li><strong>Local Gaussian form (TW.2).</strong> With q = ¼ + z² and x = ¼ + τ², log(4xq/(x+q)²) = −ε²/4 + ε³/4 − 7ε⁴/32 + …, where ε = (z² − τ²)/x. So a high rung is a Gaussian smoothing of the zero ordinates, of width τ/√(2k). <span class="tw-chip tw-proved">PROVED</span></li>
+<li><strong>Detection law (TW.3).</strong> An off-line zero at height t, displacement δ and gap a is first seen near k* ≈ 1.3 t²/(aδ). The median ratio is 0.81 on the 15 twin zeros above. On 90 off-line pairs planted among Platt’s zeta zeros (heights 1.9 × 10³ to 10⁹, δ ∈ {0.02, 0.1, 0.3}) it is 0.82, with 10–90% range 0.57–1.09. The older reading k*θ² ≈ constant spreads over a factor of 71 on the same plants. <span class="tw-chip tw-evid">EVID</span></li>
+<li><strong>Consequence.</strong> K<sub>H</sub> = 4,712,664,392,502 is a guarantee from phase alone, linear in the verified height. The detection scale is quadratic. An off-line zeta zero just above the verified height, with δ ≈ a ≈ 0.1, would first break the ladder near k ~ 10<sup>27</sup>.</li>
+</ul></section>
+
+<section class="tw-copy"><p class="a51-eyebrow">5 · Corrections carried into v5.2</p><h2>What the calibration fixed.</h2>
+<ul>
+<li>An earlier working paper (PP199) quoted a twin zero at 1.10078201 + 86.14311231i. It does not reproduce: |f| = 0.576 there, and there is no twin zero with σ &gt; 1 below height 640.</li>
+<li>Reference [66] now carries its arXiv title (“simple <em>and</em> on the critical line”), and Alpöge–Furman, the primary source of the unconditional two-thirds theorem, is cited.</li>
+<li>Two firewalls proved in the v0.3 edition, orientation annihilation and compact Euler-ray instability, are restored as Dossier §69C.</li>
+<li>Site v2.8.1 (Fork-A research pass): the rung results are scoped to the finite zero list and sampled x grids, and the 218 sector-safe rungs are conditional on the un-certified census.</li>
+<li>Site v2.8.3 (Team B): the twin is described as sharing ξ's reflection, not its Gamma factor; the rung signs are replayed at 60 and 100 digits; Löwner sizes are reported as first <em>tested</em> failures, beside the exact first failures N* = 105, 106 and 107; and a finite ladder prefix is not said to decide RH.</li>
+</ul></section>
+
+<section class="tw-copy"><p class="a51-eyebrow">Evidence</p><h2>Where to replay it.</h2>
+<p>The programs, zero lists and Colab transcripts are in <code>provenance/v5_2/evidence/</code> of the <a href="/papers/TN_Postmaster_Volume_I_v5_2_SOURCE.zip">TN Postmaster v5.2 source package</a>, which maps every printed number to its file. The census to height 260 used by the 51 Twins plates is also here as <a href="evidence/dh-zeros-T260.json">evidence/dh-zeros-T260.json</a>. RH STATUS: OPEN.</p>
+<div class="a51-actions"><a class="a51-button primary" href="./">Back to 51 Twins</a><a class="a51-button" href="/research/postmaster/">TN Postmaster</a></div></section>
+</main>
+<footer class="a51-foot"><span>Twin calibration · Jeffery Lyn Huckstead / Cerebral Graphix · CC BY 4.0</span><span>RH STATUS: OPEN</span></footer>
+</div>
+</body>
+</html>

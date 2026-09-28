@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "scope": "Finite exact identities and rational synthetic controls only.",
+  "total_assertions": 17976,
+  "groups": {
+    "coefficient_alternation": 41,
+    "radius_three_quarters_closed_value": 41,
+    "direct_Cauchy_coefficient_sum": 41,
+    "full_window_majorant": 41,
+    "rational_source_direct_bound": 369,
+    "full_admissible_window": 16641,
+    "alpha3_greater_than_seven_tenths": 1,
+    "cutoff_five_exact_decay": 1,
+    "alpha4_greater_than_seven_tenths": 1,
+    "full_row_thirteen_exact_decay": 1,
+    "Catalan_third_kind_orthogonality": 324,
+    "anchor_Gram_and_trace_bound": 324,
+    "reserve_single_atom_lower_bound": 101,
+    "isolated_pair_exact_indefiniteness": 41,
+    "Li_Chebyshev_inverse_dictionary": 4,
+    "off_line_radial_defect": 3,
+    "critical_line_unit_modulus": 1
+  },
+  "diagnostics": {
+    "precision_digits": 70,
+    "scope": "Non-directed orientation decimals; not interval certificates.",
+    "alpha3": "0.7247448713915890490986420373529456959829737403283350642163462836254802",
+    "full_window_20_base": "0.342142037896460662590487885419000012441464976465898819431358994747283",
+    "full_window_5_base": "0.9344290441416661877240990936252948633015202019649010209040686799552728",
+    "full_window_20_constant": "0.6324663288083191972094482182430777529174645909368530988875228406438084",
+    "alpha4": "0.7041594578792295480128241030378608052425352405053833952072433324526493",
+    "full_row_13_base": "0.9857289312134112512081024530580798557364103526019372295338606323947376",
+    "old_window_base": "0.9335696952126939272262454963315365485727175678116388147301407903915197"
+  },
+  "written_proofs_not_certified_by_this_script": [
+    "uniform complex-disk Euler-tail bound for every cutoff",
+    "all-rank exact exponential reserve growth rate",
+    "conditional linear absolute-norm growth",
+    "any actual-source RH-forcing upper estimate"
+  ],
+  "script_sha256": "5b0c5192e3d9b6ea7650960a47d8f6629a1de0ea1508843e318f537713f690a7"
+}

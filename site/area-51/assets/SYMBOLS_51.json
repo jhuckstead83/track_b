@@ -1,0 +1,317 @@
+{
+  "alphabetId": "line-game-v7.2-components-51",
+  "marker": {
+    "id": "I",
+    "card": "2C",
+    "activeSymbol": false
+  },
+  "source": "The Line Game | Surprise Is Not Meaning v7.2",
+  "symbols": [
+    {
+      "id": "L0",
+      "card": "AS",
+      "symbol": "ᄀ",
+      "codePoint": "U+1100"
+    },
+    {
+      "id": "L1",
+      "card": "AH",
+      "symbol": "ᄁ",
+      "codePoint": "U+1101"
+    },
+    {
+      "id": "L2",
+      "card": "AD",
+      "symbol": "ᄂ",
+      "codePoint": "U+1102"
+    },
+    {
+      "id": "V0",
+      "card": "AC",
+      "symbol": "ᅡ",
+      "codePoint": "U+1161"
+    },
+    {
+      "id": "V1",
+      "card": "2S",
+      "symbol": "ᅢ",
+      "codePoint": "U+1162"
+    },
+    {
+      "id": "V2",
+      "card": "2H",
+      "symbol": "ᅣ",
+      "codePoint": "U+1163"
+    },
+    {
+      "id": "V3",
+      "card": "2D",
+      "symbol": "ᅤ",
+      "codePoint": "U+1164"
+    },
+    {
+      "id": "V4",
+      "card": "3S",
+      "symbol": "ᅥ",
+      "codePoint": "U+1165"
+    },
+    {
+      "id": "V5",
+      "card": "3H",
+      "symbol": "ᅦ",
+      "codePoint": "U+1166"
+    },
+    {
+      "id": "V6",
+      "card": "3D",
+      "symbol": "ᅧ",
+      "codePoint": "U+1167"
+    },
+    {
+      "id": "V7",
+      "card": "3C",
+      "symbol": "ᅨ",
+      "codePoint": "U+1168"
+    },
+    {
+      "id": "V8",
+      "card": "4S",
+      "symbol": "ᅩ",
+      "codePoint": "U+1169"
+    },
+    {
+      "id": "V9",
+      "card": "4H",
+      "symbol": "ᅪ",
+      "codePoint": "U+116A"
+    },
+    {
+      "id": "T1",
+      "card": "4D",
+      "symbol": "ᆨ",
+      "codePoint": "U+11A8"
+    },
+    {
+      "id": "T2",
+      "card": "4C",
+      "symbol": "ᆩ",
+      "codePoint": "U+11A9"
+    },
+    {
+      "id": "T3",
+      "card": "5S",
+      "symbol": "ᆪ",
+      "codePoint": "U+11AA"
+    },
+    {
+      "id": "T4",
+      "card": "5H",
+      "symbol": "ᆫ",
+      "codePoint": "U+11AB"
+    },
+    {
+      "id": "T5",
+      "card": "5D",
+      "symbol": "ᆬ",
+      "codePoint": "U+11AC"
+    },
+    {
+      "id": "T6",
+      "card": "5C",
+      "symbol": "ᆭ",
+      "codePoint": "U+11AD"
+    },
+    {
+      "id": "T7",
+      "card": "6S",
+      "symbol": "ᆮ",
+      "codePoint": "U+11AE"
+    },
+    {
+      "id": "T8",
+      "card": "6H",
+      "symbol": "ᆯ",
+      "codePoint": "U+11AF"
+    },
+    {
+      "id": "T9",
+      "card": "6D",
+      "symbol": "ᆰ",
+      "codePoint": "U+11B0"
+    },
+    {
+      "id": "V10",
+      "card": "6C",
+      "symbol": "ᅫ",
+      "codePoint": "U+116B"
+    },
+    {
+      "id": "V11",
+      "card": "7S",
+      "symbol": "ᅬ",
+      "codePoint": "U+116C"
+    },
+    {
+      "id": "V12",
+      "card": "7H",
+      "symbol": "ᅭ",
+      "codePoint": "U+116D"
+    },
+    {
+      "id": "V13",
+      "card": "7D",
+      "symbol": "ᅮ",
+      "codePoint": "U+116E"
+    },
+    {
+      "id": "V14",
+      "card": "7C",
+      "symbol": "ᅯ",
+      "codePoint": "U+116F"
+    },
+    {
+      "id": "V15",
+      "card": "8S",
+      "symbol": "ᅰ",
+      "codePoint": "U+1170"
+    },
+    {
+      "id": "V16",
+      "card": "8H",
+      "symbol": "ᅱ",
+      "codePoint": "U+1171"
+    },
+    {
+      "id": "V17",
+      "card": "8D",
+      "symbol": "ᅲ",
+      "codePoint": "U+1172"
+    },
+    {
+      "id": "V18",
+      "card": "8C",
+      "symbol": "ᅳ",
+      "codePoint": "U+1173"
+    },
+    {
+      "id": "V19",
+      "card": "9S",
+      "symbol": "ᅴ",
+      "codePoint": "U+1174"
+    },
+    {
+      "id": "V20",
+      "card": "9H",
+      "symbol": "ᅵ",
+      "codePoint": "U+1175"
+    },
+    {
+      "id": "T10",
+      "card": "9D",
+      "symbol": "ᆱ",
+      "codePoint": "U+11B1"
+    },
+    {
+      "id": "T11",
+      "card": "9C",
+      "symbol": "ᆲ",
+      "codePoint": "U+11B2"
+    },
+    {
+      "id": "T12",
+      "card": "10S",
+      "symbol": "ᆳ",
+      "codePoint": "U+11B3"
+    },
+    {
+      "id": "T13",
+      "card": "10H",
+      "symbol": "ᆴ",
+      "codePoint": "U+11B4"
+    },
+    {
+      "id": "T14",
+      "card": "10D",
+      "symbol": "ᆵ",
+      "codePoint": "U+11B5"
+    },
+    {
+      "id": "T15",
+      "card": "10C",
+      "symbol": "ᆶ",
+      "codePoint": "U+11B6"
+    },
+    {
+      "id": "T16",
+      "card": "JS",
+      "symbol": "ᆷ",
+      "codePoint": "U+11B7"
+    },
+    {
+      "id": "T17",
+      "card": "JH",
+      "symbol": "ᆸ",
+      "codePoint": "U+11B8"
+    },
+    {
+      "id": "T18",
+      "card": "JD",
+      "symbol": "ᆹ",
+      "codePoint": "U+11B9"
+    },
+    {
+      "id": "T19",
+      "card": "JC",
+      "symbol": "ᆺ",
+      "codePoint": "U+11BA"
+    },
+    {
+      "id": "T20",
+      "card": "QS",
+      "symbol": "ᆻ",
+      "codePoint": "U+11BB"
+    },
+    {
+      "id": "T21",
+      "card": "QH",
+      "symbol": "ᆼ",
+      "codePoint": "U+11BC"
+    },
+    {
+      "id": "T22",
+      "card": "QD",
+      "symbol": "ᆽ",
+      "codePoint": "U+11BD"
+    },
+    {
+      "id": "T23",
+      "card": "QC",
+      "symbol": "ᆾ",
+      "codePoint": "U+11BE"
+    },
+    {
+      "id": "T24",
+      "card": "KS",
+      "symbol": "ᆿ",
+      "codePoint": "U+11BF"
+    },
+    {
+      "id": "T25",
+      "card": "KH",
+      "symbol": "ᇀ",
+      "codePoint": "U+11C0"
+    },
+    {
+      "id": "T26",
+      "card": "KD",
+      "symbol": "ᇁ",
+      "codePoint": "U+11C1"
+    },
+    {
+      "id": "T27",
+      "card": "KC",
+      "symbol": "ᇂ",
+      "codePoint": "U+11C2"
+    }
+  ]
+}

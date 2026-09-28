@@ -1,0 +1,7 @@
+/* Hit, Stand and Double keep a predictable three-column position. */
+body[data-game=blackjack] .action-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+body[data-game=blackjack] .action-row #deal{grid-column:1/-1}
+body[data-game=blackjack] .action-row :is(#hit,#stand,#double){min-width:0;min-height:48px;padding:12px 5px}
+body[data-game=blackjack] .action-row #split{grid-column:1/-1}
+body[data-game=blackjack] .action-row #double:disabled{opacity:.4}
+@media(max-width:420px){body[data-game=blackjack] .action-row{gap:6px}body[data-game=blackjack] .action-row kbd{display:none}}

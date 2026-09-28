@@ -1,0 +1,1 @@
+export const ECONOMY_CONFIG=Object.freeze({version:'area51-play-bits-2.0',unit:'play bit',subunitsPerBit:100,openingBalanceCents:800,recoveryCapCents:800,passiveGeneratorEnabled:true,passiveSecondsPerCredit:310,activeLearningSecondsPerCredit:310,identityRevealBits:6,recallOptions:4,correctUnassistedRecallBits:2,memoryDailyEarnCapBits:8});

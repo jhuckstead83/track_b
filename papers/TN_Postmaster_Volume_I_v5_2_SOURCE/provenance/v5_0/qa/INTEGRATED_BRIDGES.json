@@ -1,0 +1,1844 @@
+{
+  "status": "PASS",
+  "exact_checks": 459,
+  "script_sha256": "facf73c36880383c3043ac2b87361f8c21a1b4981e50ee4bf0c214f614bc0eee",
+  "scope": "Finite exact regressions; analytic and all-order assertions rest on the written proofs. No actual-zeta interval certificate or historical certificate replay.",
+  "checks": [
+    {
+      "name": "155A coefficients m=0",
+      "passed": true
+    },
+    {
+      "name": "155A triangular product m=0",
+      "passed": true
+    },
+    {
+      "name": "155A odd square m=0",
+      "passed": true
+    },
+    {
+      "name": "155A even coefficients r=0",
+      "passed": true
+    },
+    {
+      "name": "155A coefficients m=1",
+      "passed": true
+    },
+    {
+      "name": "155A triangular product m=1",
+      "passed": true
+    },
+    {
+      "name": "155A odd square m=1",
+      "passed": true
+    },
+    {
+      "name": "155A even coefficients r=1",
+      "passed": true
+    },
+    {
+      "name": "155A coefficients m=2",
+      "passed": true
+    },
+    {
+      "name": "155A triangular product m=2",
+      "passed": true
+    },
+    {
+      "name": "155A odd square m=2",
+      "passed": true
+    },
+    {
+      "name": "155A even coefficients r=2",
+      "passed": true
+    },
+    {
+      "name": "155A coefficients m=3",
+      "passed": true
+    },
+    {
+      "name": "155A triangular product m=3",
+      "passed": true
+    },
+    {
+      "name": "155A odd square m=3",
+      "passed": true
+    },
+    {
+      "name": "155A even coefficients r=3",
+      "passed": true
+    },
+    {
+      "name": "155A coefficients m=4",
+      "passed": true
+    },
+    {
+      "name": "155A triangular product m=4",
+      "passed": true
+    },
+    {
+      "name": "155A odd square m=4",
+      "passed": true
+    },
+    {
+      "name": "155A even coefficients r=4",
+      "passed": true
+    },
+    {
+      "name": "155A coefficients m=5",
+      "passed": true
+    },
+    {
+      "name": "155A triangular product m=5",
+      "passed": true
+    },
+    {
+      "name": "155A odd square m=5",
+      "passed": true
+    },
+    {
+      "name": "155A even coefficients r=5",
+      "passed": true
+    },
+    {
+      "name": "155A coefficients m=6",
+      "passed": true
+    },
+    {
+      "name": "155A triangular product m=6",
+      "passed": true
+    },
+    {
+      "name": "155A odd square m=6",
+      "passed": true
+    },
+    {
+      "name": "155A even coefficients r=6",
+      "passed": true
+    },
+    {
+      "name": "155A coefficients m=7",
+      "passed": true
+    },
+    {
+      "name": "155A triangular product m=7",
+      "passed": true
+    },
+    {
+      "name": "155A odd square m=7",
+      "passed": true
+    },
+    {
+      "name": "155A even coefficients r=7",
+      "passed": true
+    },
+    {
+      "name": "155A coefficients m=8",
+      "passed": true
+    },
+    {
+      "name": "155A triangular product m=8",
+      "passed": true
+    },
+    {
+      "name": "155A odd square m=8",
+      "passed": true
+    },
+    {
+      "name": "155A even coefficients r=8",
+      "passed": true
+    },
+    {
+      "name": "155A coefficients m=9",
+      "passed": true
+    },
+    {
+      "name": "155A triangular product m=9",
+      "passed": true
+    },
+    {
+      "name": "155A odd square m=9",
+      "passed": true
+    },
+    {
+      "name": "155A even coefficients r=9",
+      "passed": true
+    },
+    {
+      "name": "155A coefficients m=10",
+      "passed": true
+    },
+    {
+      "name": "155A triangular product m=10",
+      "passed": true
+    },
+    {
+      "name": "155A odd square m=10",
+      "passed": true
+    },
+    {
+      "name": "155A even coefficients r=10",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=0,s=0",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=0,s=0",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=0,s=1",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=0,s=1",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=0,s=2",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=0,s=2",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=0,s=3",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=0,s=3",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=0,s=4",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=0,s=4",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=0,s=5",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=0,s=5",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=0,s=6",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=0,s=6",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=1,s=0",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=1,s=0",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=1,s=1",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=1,s=1",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=1,s=2",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=1,s=2",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=1,s=3",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=1,s=3",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=1,s=4",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=1,s=4",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=1,s=5",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=1,s=5",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=1,s=6",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=1,s=6",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=2,s=0",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=2,s=0",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=2,s=1",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=2,s=1",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=2,s=2",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=2,s=2",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=2,s=3",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=2,s=3",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=2,s=4",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=2,s=4",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=2,s=5",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=2,s=5",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=2,s=6",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=2,s=6",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=3,s=0",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=3,s=0",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=3,s=1",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=3,s=1",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=3,s=2",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=3,s=2",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=3,s=3",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=3,s=3",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=3,s=4",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=3,s=4",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=3,s=5",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=3,s=5",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=3,s=6",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=3,s=6",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=4,s=0",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=4,s=0",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=4,s=1",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=4,s=1",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=4,s=2",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=4,s=2",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=4,s=3",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=4,s=3",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=4,s=4",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=4,s=4",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=4,s=5",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=4,s=5",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=4,s=6",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=4,s=6",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=5,s=0",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=5,s=0",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=5,s=1",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=5,s=1",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=5,s=2",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=5,s=2",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=5,s=3",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=5,s=3",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=5,s=4",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=5,s=4",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=5,s=5",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=5,s=5",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=5,s=6",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=5,s=6",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=6,s=0",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=6,s=0",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=6,s=1",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=6,s=1",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=6,s=2",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=6,s=2",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=6,s=3",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=6,s=3",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=6,s=4",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=6,s=4",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=6,s=5",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=6,s=5",
+      "passed": true
+    },
+    {
+      "name": "155A odd cross r=6,s=6",
+      "passed": true
+    },
+    {
+      "name": "155A even cross r=6,s=6",
+      "passed": true
+    },
+    {
+      "name": "155A reflected congruence N=1",
+      "passed": true
+    },
+    {
+      "name": "155A unimodularity N=1",
+      "passed": true
+    },
+    {
+      "name": "155A reflected congruence N=2",
+      "passed": true
+    },
+    {
+      "name": "155A unimodularity N=2",
+      "passed": true
+    },
+    {
+      "name": "155A reflected congruence N=3",
+      "passed": true
+    },
+    {
+      "name": "155A unimodularity N=3",
+      "passed": true
+    },
+    {
+      "name": "155A reflected congruence N=4",
+      "passed": true
+    },
+    {
+      "name": "155A unimodularity N=4",
+      "passed": true
+    },
+    {
+      "name": "155A reflected congruence N=5",
+      "passed": true
+    },
+    {
+      "name": "155A unimodularity N=5",
+      "passed": true
+    },
+    {
+      "name": "155A reflected congruence N=6",
+      "passed": true
+    },
+    {
+      "name": "155A unimodularity N=6",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=0,e=1/2,q=2",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=0,e=1/2,q=2 + I",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=0,e=1/7,q=2",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=0,e=1/7,q=2 + I",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=1,e=1/2,q=2",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=1,e=1/2,q=2 + I",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=1,e=1/7,q=2",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=1,e=1/7,q=2 + I",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=2,e=1/2,q=2",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=2,e=1/2,q=2 + I",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=2,e=1/7,q=2",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=2,e=1/7,q=2 + I",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=3,e=1/2,q=2",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=3,e=1/2,q=2 + I",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=3,e=1/7,q=2",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=3,e=1/7,q=2 + I",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=4,e=1/2,q=2",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=4,e=1/2,q=2 + I",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=4,e=1/7,q=2",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=4,e=1/7,q=2 + I",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=5,e=1/2,q=2",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=5,e=1/2,q=2 + I",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=5,e=1/7,q=2",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=5,e=1/7,q=2 + I",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=6,e=1/2,q=2",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=6,e=1/2,q=2 + I",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=6,e=1/7,q=2",
+      "passed": true
+    },
+    {
+      "name": "155A witness m=6,e=1/7,q=2 + I",
+      "passed": true
+    },
+    {
+      "name": "155B finite source-split algebra n=1",
+      "passed": true
+    },
+    {
+      "name": "155B Laguerre coefficient identity n=1",
+      "passed": true
+    },
+    {
+      "name": "155B integration-by-parts kernel n=1",
+      "passed": true
+    },
+    {
+      "name": "155B finite source-split algebra n=2",
+      "passed": true
+    },
+    {
+      "name": "155B Laguerre coefficient identity n=2",
+      "passed": true
+    },
+    {
+      "name": "155B integration-by-parts kernel n=2",
+      "passed": true
+    },
+    {
+      "name": "155B finite source-split algebra n=3",
+      "passed": true
+    },
+    {
+      "name": "155B Laguerre coefficient identity n=3",
+      "passed": true
+    },
+    {
+      "name": "155B integration-by-parts kernel n=3",
+      "passed": true
+    },
+    {
+      "name": "155B finite source-split algebra n=4",
+      "passed": true
+    },
+    {
+      "name": "155B Laguerre coefficient identity n=4",
+      "passed": true
+    },
+    {
+      "name": "155B integration-by-parts kernel n=4",
+      "passed": true
+    },
+    {
+      "name": "155B finite source-split algebra n=5",
+      "passed": true
+    },
+    {
+      "name": "155B Laguerre coefficient identity n=5",
+      "passed": true
+    },
+    {
+      "name": "155B integration-by-parts kernel n=5",
+      "passed": true
+    },
+    {
+      "name": "155B finite source-split algebra n=6",
+      "passed": true
+    },
+    {
+      "name": "155B Laguerre coefficient identity n=6",
+      "passed": true
+    },
+    {
+      "name": "155B integration-by-parts kernel n=6",
+      "passed": true
+    },
+    {
+      "name": "155B finite source-split algebra n=7",
+      "passed": true
+    },
+    {
+      "name": "155B Laguerre coefficient identity n=7",
+      "passed": true
+    },
+    {
+      "name": "155B integration-by-parts kernel n=7",
+      "passed": true
+    },
+    {
+      "name": "155B finite source-split algebra n=8",
+      "passed": true
+    },
+    {
+      "name": "155B Laguerre coefficient identity n=8",
+      "passed": true
+    },
+    {
+      "name": "155B integration-by-parts kernel n=8",
+      "passed": true
+    },
+    {
+      "name": "155B finite source-split algebra n=9",
+      "passed": true
+    },
+    {
+      "name": "155B Laguerre coefficient identity n=9",
+      "passed": true
+    },
+    {
+      "name": "155B integration-by-parts kernel n=9",
+      "passed": true
+    },
+    {
+      "name": "155B finite source-split algebra n=10",
+      "passed": true
+    },
+    {
+      "name": "155B Laguerre coefficient identity n=10",
+      "passed": true
+    },
+    {
+      "name": "155B integration-by-parts kernel n=10",
+      "passed": true
+    },
+    {
+      "name": "155B finite source-split algebra n=11",
+      "passed": true
+    },
+    {
+      "name": "155B Laguerre coefficient identity n=11",
+      "passed": true
+    },
+    {
+      "name": "155B integration-by-parts kernel n=11",
+      "passed": true
+    },
+    {
+      "name": "155B finite source-split algebra n=12",
+      "passed": true
+    },
+    {
+      "name": "155B Laguerre coefficient identity n=12",
+      "passed": true
+    },
+    {
+      "name": "155B integration-by-parts kernel n=12",
+      "passed": true
+    },
+    {
+      "name": "155B curvature kernel n=0",
+      "passed": true
+    },
+    {
+      "name": "155B triangular accumulated weights N=2",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=0,ell=3",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=0,ell=5",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=0,ell=9",
+      "passed": true
+    },
+    {
+      "name": "155B curvature kernel n=1",
+      "passed": true
+    },
+    {
+      "name": "155B triangular accumulated weights N=3",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=1,ell=3",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=1,ell=5",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=1,ell=9",
+      "passed": true
+    },
+    {
+      "name": "155B curvature kernel n=2",
+      "passed": true
+    },
+    {
+      "name": "155B triangular accumulated weights N=4",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=2,ell=3",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=2,ell=5",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=2,ell=9",
+      "passed": true
+    },
+    {
+      "name": "155B curvature kernel n=3",
+      "passed": true
+    },
+    {
+      "name": "155B triangular accumulated weights N=5",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=3,ell=3",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=3,ell=5",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=3,ell=9",
+      "passed": true
+    },
+    {
+      "name": "155B curvature kernel n=4",
+      "passed": true
+    },
+    {
+      "name": "155B triangular accumulated weights N=6",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=4,ell=3",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=4,ell=5",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=4,ell=9",
+      "passed": true
+    },
+    {
+      "name": "155B curvature kernel n=5",
+      "passed": true
+    },
+    {
+      "name": "155B triangular accumulated weights N=7",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=5,ell=3",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=5,ell=5",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=5,ell=9",
+      "passed": true
+    },
+    {
+      "name": "155B curvature kernel n=6",
+      "passed": true
+    },
+    {
+      "name": "155B triangular accumulated weights N=8",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=6,ell=3",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=6,ell=5",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=6,ell=9",
+      "passed": true
+    },
+    {
+      "name": "155B curvature kernel n=7",
+      "passed": true
+    },
+    {
+      "name": "155B triangular accumulated weights N=9",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=7,ell=3",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=7,ell=5",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=7,ell=9",
+      "passed": true
+    },
+    {
+      "name": "155B curvature kernel n=8",
+      "passed": true
+    },
+    {
+      "name": "155B triangular accumulated weights N=10",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=8,ell=3",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=8,ell=5",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=8,ell=9",
+      "passed": true
+    },
+    {
+      "name": "155B curvature kernel n=9",
+      "passed": true
+    },
+    {
+      "name": "155B triangular accumulated weights N=11",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=9,ell=3",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=9,ell=5",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=9,ell=9",
+      "passed": true
+    },
+    {
+      "name": "155B curvature kernel n=10",
+      "passed": true
+    },
+    {
+      "name": "155B triangular accumulated weights N=12",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=10,ell=3",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=10,ell=5",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=10,ell=9",
+      "passed": true
+    },
+    {
+      "name": "155B curvature kernel n=11",
+      "passed": true
+    },
+    {
+      "name": "155B triangular accumulated weights N=13",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=11,ell=3",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=11,ell=5",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=11,ell=9",
+      "passed": true
+    },
+    {
+      "name": "155B curvature kernel n=12",
+      "passed": true
+    },
+    {
+      "name": "155B triangular accumulated weights N=14",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=12,ell=3",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=12,ell=5",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=12,ell=9",
+      "passed": true
+    },
+    {
+      "name": "155B curvature kernel n=13",
+      "passed": true
+    },
+    {
+      "name": "155B triangular accumulated weights N=15",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=13,ell=3",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=13,ell=5",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=13,ell=9",
+      "passed": true
+    },
+    {
+      "name": "155B curvature kernel n=14",
+      "passed": true
+    },
+    {
+      "name": "155B triangular accumulated weights N=16",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=14,ell=3",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=14,ell=5",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=14,ell=9",
+      "passed": true
+    },
+    {
+      "name": "155B curvature kernel n=15",
+      "passed": true
+    },
+    {
+      "name": "155B triangular accumulated weights N=17",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=15,ell=3",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=15,ell=5",
+      "passed": true
+    },
+    {
+      "name": "155B reserve curvature n=15,ell=9",
+      "passed": true
+    },
+    {
+      "name": "38A differential recurrence k=1",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=1,x=1/2,q=2/3",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=1,x=1/2,q=5",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=1,x=3,q=2/3",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=1,x=3,q=5",
+      "passed": true
+    },
+    {
+      "name": "38A differential recurrence k=2",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=2,x=1/2,q=2/3",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=2,x=1/2,q=5",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=2,x=3,q=2/3",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=2,x=3,q=5",
+      "passed": true
+    },
+    {
+      "name": "38A differential recurrence k=3",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=3,x=1/2,q=2/3",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=3,x=1/2,q=5",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=3,x=3,q=2/3",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=3,x=3,q=5",
+      "passed": true
+    },
+    {
+      "name": "38A differential recurrence k=4",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=4,x=1/2,q=2/3",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=4,x=1/2,q=5",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=4,x=3,q=2/3",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=4,x=3,q=5",
+      "passed": true
+    },
+    {
+      "name": "38A differential recurrence k=5",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=5,x=1/2,q=2/3",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=5,x=1/2,q=5",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=5,x=3,q=2/3",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=5,x=3,q=5",
+      "passed": true
+    },
+    {
+      "name": "38A differential recurrence k=6",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=6,x=1/2,q=2/3",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=6,x=1/2,q=5",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=6,x=3,q=2/3",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=6,x=3,q=5",
+      "passed": true
+    },
+    {
+      "name": "38A differential recurrence k=7",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=7,x=1/2,q=2/3",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=7,x=1/2,q=5",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=7,x=3,q=2/3",
+      "passed": true
+    },
+    {
+      "name": "38A descent one-atom k=7,x=3,q=5",
+      "passed": true
+    },
+    {
+      "name": "133A quarter fold",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=1",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=1",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=2",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=2",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=3",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=3",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=4",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=4",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=5",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=5",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=6",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=6",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=7",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=7",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=8",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=8",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=9",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=9",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=10",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=10",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=11",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=11",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=12",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=12",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=13",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=13",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=14",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=14",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=15",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=15",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=16",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=16",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=17",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=17",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=18",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=18",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=19",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=19",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=20",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=20",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=21",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=21",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=22",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=22",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=23",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=23",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=24",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=24",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=25",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=25",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=26",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=26",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=27",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=27",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=28",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=28",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=29",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=29",
+      "passed": true
+    },
+    {
+      "name": "133A Gaussian adjacent scaling n=30",
+      "passed": true
+    },
+    {
+      "name": "133A finite telescope N=30",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=1,j=0",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=1,j=1",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=2,j=0",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=2,j=1",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=2,j=2",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=3,j=0",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=3,j=1",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=3,j=2",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=3,j=3",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=4,j=0",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=4,j=1",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=4,j=2",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=4,j=3",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=4,j=4",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=5,j=0",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=5,j=1",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=5,j=2",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=5,j=3",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=5,j=4",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=5,j=5",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=6,j=0",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=6,j=1",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=6,j=2",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=6,j=3",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=6,j=4",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=6,j=5",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=6,j=6",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=7,j=0",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=7,j=1",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=7,j=2",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=7,j=3",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=7,j=4",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=7,j=5",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=7,j=6",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=7,j=7",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=8,j=0",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=8,j=1",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=8,j=2",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=8,j=3",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=8,j=4",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=8,j=5",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=8,j=6",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=8,j=7",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=8,j=8",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=9,j=0",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=9,j=1",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=9,j=2",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=9,j=3",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=9,j=4",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=9,j=5",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=9,j=6",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=9,j=7",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=9,j=8",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=9,j=9",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=10,j=0",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=10,j=1",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=10,j=2",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=10,j=3",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=10,j=4",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=10,j=5",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=10,j=6",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=10,j=7",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=10,j=8",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=10,j=9",
+      "passed": true
+    },
+    {
+      "name": "R15 derivative column sign k=10,j=10",
+      "passed": true
+    }
+  ]
+}

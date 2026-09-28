@@ -1,0 +1,1121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Line Game | Surprise Is Not Meaning — Invariant</title>
+  <meta name="description" content="Swap two cards without changing their complete weight profile, decode a different record, and compare exact continuations in a finite card game.">
+  <link rel="canonical" href="https://cerebralgraphix.com/research/line-game/">
+  <meta name="citation_title" content="The Line Game | Surprise Is Not Meaning">
+  <meta name="citation_author" content="Jeffery Lyn Huckstead">
+  <meta name="citation_publication_date" content="2026/09/20">
+  <meta name="citation_technical_report_institution" content="Cerebral Graphix">
+  <meta name="citation_technical_report_number" content="v7.2">
+  <meta name="citation_pdf_url" content="https://cerebralgraphix.com/research/line-game/The_Line_Game_Surprise_Is_Not_Meaning_v7_2.pdf">
+  <meta name="citation_doi" content="10.5281/zenodo.22851517">
+  <meta name="DC.rights" content="CC BY 4.0 — attribution required">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="The Line Game | Surprise Is Not Meaning — Invariant">
+  <meta property="og:description" content="Swap two cards without changing their complete weight profile, decode a different record, and compare exact continuations in a finite card game.">
+  <meta property="og:url" content="https://cerebralgraphix.com/research/line-game/">
+  <meta property="og:image" content="https://cerebralgraphix.com/assets/cardinal_cube_THE_GRAIN.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ScholarlyArticle",
+        "name": "The Line Game | Surprise Is Not Meaning",
+        "author": {"@type": "Person", "name": "Jeffery Lyn Huckstead", "sameAs": "https://orcid.org/0009-0007-0234-2177"},
+        "version": "7.2",
+        "identifier": "https://doi.org/10.5281/zenodo.22851517",
+        "sameAs": "https://doi.org/10.5281/zenodo.22851517",
+        "dateModified": "2026-09-20",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "creditText": "Jeffery Lyn Huckstead · Cerebral Graphix · DOI 10.5281/zenodo.22851517",
+        "copyrightHolder": {"@type": "Person", "name": "Jeffery Lyn Huckstead"},
+        "publishingPrinciples": "https://cerebralgraphix.com/citation/",
+        "url": "https://cerebralgraphix.com/research/line-game/",
+        "associatedMedia": {"@id": "https://cerebralgraphix.com/research/line-game/#invariant"}
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://cerebralgraphix.com/research/line-game/#invariant",
+        "name": "Invariant",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Any modern web browser",
+        "isAccessibleForFree": true,
+        "softwareVersion": "7.2",
+        "isBasedOn": "https://doi.org/10.5281/zenodo.22851517",
+        "url": "https://cerebralgraphix.com/research/line-game/"
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #071523;
+      --bg-soft: #0b1c2d;
+      --panel: #10263a;
+      --panel-2: #142e45;
+      --line: #345069;
+      --line-soft: #213a51;
+      --ink: #f3f6fa;
+      --muted: #afbed0;
+      --gold: #f3c96b;
+      --green: #76d8b7;
+      --red: #ff9b9b;
+      --blue: #91c8ff;
+      --paper: #f7f4ed;
+      --card-ink: #13263a;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.55; }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 18% 0%, #163b55aa 0, transparent 34rem),
+        linear-gradient(180deg, #071523 0, #091827 42%, #06121e 100%);
+    }
+    a { color: var(--green); text-underline-offset: .22em; }
+    button, select, input { font: inherit; }
+    button, select { min-height: 44px; }
+    button {
+      border: 1px solid var(--line);
+      border-radius: .55rem;
+      background: #18334b;
+      color: var(--ink);
+      padding: .68rem .95rem;
+      cursor: pointer;
+    }
+    button:hover:not(:disabled) { background: #23445f; }
+    button:disabled { opacity: .45; cursor: default; }
+    button.primary { background: var(--gold); color: #122236; border-color: var(--gold); font-weight: 800; }
+    button.primary:hover:not(:disabled) { background: #ffe29d; }
+    button.ghost { background: transparent; }
+    button[aria-pressed="true"] { border-color: var(--gold); color: var(--gold); background: #283d50; }
+    button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible, summary:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
+    }
+    h1, h2, .serif { font-family: Georgia, "Times New Roman", serif; font-weight: 500; }
+    h1 { font-size: clamp(2.25rem, 7vw, 5.4rem); line-height: .97; letter-spacing: -.045em; margin: .45rem 0 1rem; max-width: 15ch; }
+    h1 span { display: block; color: var(--gold); }
+    h2 { font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.08; margin: 0 0 1rem; }
+    h3 { font-size: 1.05rem; margin: 1.25rem 0 .5rem; }
+    p { margin: .55rem 0 1rem; }
+    code, .mono { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+    .shell { width: min(1240px, calc(100% - 2rem)); margin-inline: auto; }
+    .sitebar { display: flex; justify-content: space-between; gap: 1rem; align-items: center; padding: 1rem 0; border-bottom: 1px solid var(--line-soft); }
+    .sitebar a { color: var(--ink); text-decoration: none; }
+    .sitebar .mark { display: flex; gap: .65rem; align-items: center; font-weight: 750; letter-spacing: .02em; }
+    .i-mark { display: grid; place-items: center; width: 2rem; height: 2.5rem; border: 1px solid var(--gold); border-radius: .35rem; color: var(--gold); font: 1.65rem Georgia, serif; }
+    .sitebar nav { display: flex; gap: 1rem; flex-wrap: wrap; font-size: .9rem; }
+    .hero { padding: clamp(3.5rem, 9vw, 8rem) 0 4rem; }
+    .eyebrow { color: var(--green); text-transform: uppercase; letter-spacing: .14em; font-weight: 750; font-size: .78rem; }
+    .dek { max-width: 49rem; font-size: clamp(1.15rem, 2.4vw, 1.55rem); color: #dbe5ef; }
+    .hero-actions, .controls, .segmented { display: flex; flex-wrap: wrap; gap: .65rem; align-items: center; }
+    .hero-actions { margin-top: 1.7rem; }
+    .button-link { display: inline-flex; min-height: 44px; align-items: center; border: 1px solid var(--line); border-radius: .55rem; padding: .65rem .95rem; color: var(--ink); text-decoration: none; }
+    .button-link:hover { background: #19344d; }
+    .section { padding: clamp(3.6rem, 8vw, 7rem) 0; border-top: 1px solid var(--line-soft); }
+    .section-head { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(16rem, .8fr); gap: 2rem; align-items: end; margin-bottom: 2rem; }
+    .section-head p { color: var(--muted); max-width: 48rem; }
+    .panel { background: #0e2134e8; border: 1px solid var(--line); border-radius: 1rem; padding: clamp(1rem, 3vw, 1.65rem); min-width: 0; }
+    .panel + .panel { margin-top: 1rem; }
+    .pair-grid, .two-col, .provenance-grid, .game-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .record { padding: 1.2rem; border: 1px solid var(--line); border-radius: .75rem; background: var(--bg-soft); }
+    .record.active { border-color: var(--gold); box-shadow: inset 0 0 0 1px var(--gold); }
+    .record .value { font: clamp(1.35rem, 4vw, 2.15rem) Georgia, serif; color: var(--gold); overflow-wrap: anywhere; }
+    .record .label { color: var(--muted); font-size: .82rem; text-transform: uppercase; letter-spacing: .1em; }
+    .swap-cards { display: flex; gap: .6rem; align-items: center; margin: 1rem 0; flex-wrap: wrap; }
+    .mini-token { min-width: 4.25rem; padding: .75rem; text-align: center; border-radius: .5rem; background: var(--paper); color: var(--card-ink); font-weight: 800; }
+    .position-tag { color: var(--muted); font-size: .82rem; }
+    .delta-list { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; margin-top: 1.2rem; }
+    .delta-list ul { margin: .4rem 0 0; padding-left: 1.15rem; }
+    .delta-list li { margin: .3rem 0; }
+    .affirmation { border-left: 3px solid var(--green); padding: .65rem 0 .65rem 1rem; color: #dbe6ef; margin-top: 1.4rem; }
+    .inspector-controls { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: .75rem; align-items: end; }
+    label { display: flex; flex-direction: column; gap: .3rem; color: var(--muted); font-size: .85rem; }
+    label.check { flex-direction: row; align-items: center; gap: .6rem; min-height: 44px; padding: .4rem 0; }
+    select { width: 100%; border: 1px solid var(--line); border-radius: .5rem; background: #10263b; color: var(--ink); padding: .55rem .7rem; }
+    input[type="checkbox"] { width: 1.2rem; height: 1.2rem; accent-color: var(--gold); }
+    .deck-grid { display: grid; grid-template-columns: repeat(13, minmax(0,1fr)); gap: .35rem; margin: 1.2rem 0; }
+    .deck-token { padding: .45rem .1rem; min-height: 3.8rem; min-width: 0; font-size: .8rem; background: #e8eef3; color: #10253a; border: 2px solid transparent; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: .15rem; }
+    .deck-token.swap-position { border-color: #bd8a1c; }
+    .deck-token.recorded { background: #d4f3e7; border-color: #2a9b77; }
+    .deck-token .pos { font-size: .65rem; opacity: .72; }
+    .deck-token .symbol { font-size: .96rem; white-space: nowrap; }
+    .counter { display: grid; grid-template-columns: 1.3fr .7fr; gap: 1rem; margin-top: 1rem; }
+    .exact-count { font-size: clamp(1.05rem, 2.3vw, 1.5rem); color: var(--gold); overflow-wrap: anywhere; }
+    .counter-note, .muted, small { color: var(--muted); }
+    .formula { background: #071523; border-radius: .55rem; padding: .8rem; color: var(--gold); overflow-wrap: anywhere; }
+    .class-table, .fact-table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: .9rem; }
+    .class-table th, .class-table td, .fact-table th, .fact-table td { padding: .65rem .55rem; border-bottom: 1px solid var(--line-soft); text-align: left; vertical-align: top; }
+    .class-table th, .fact-table th { color: var(--green); }
+    .legend-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); gap: .4rem; margin-top: .75rem; }
+    .legend-item { display: flex; justify-content: space-between; gap: .5rem; padding: .45rem .55rem; background: #091a2a; border-radius: .4rem; font-size: .8rem; }
+    details { margin-top: 1rem; border-top: 1px solid var(--line-soft); padding-top: 1rem; }
+    summary { cursor: pointer; font-weight: 750; }
+    .provenance-row { display: grid; grid-template-columns: 6rem 1fr; gap: 1rem; padding: .75rem 0; border-bottom: 1px solid var(--line-soft); }
+    .provenance-row strong { color: var(--gold); }
+    .game-toolbar { display: flex; justify-content: space-between; gap: 1rem; align-items: flex-end; flex-wrap: wrap; margin-bottom: 1rem; }
+    .mode-switch { display: flex; justify-content: space-between; gap: 1rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem; padding: 1rem; background: #10283d; border: 1px solid var(--line); border-radius: .75rem; }
+    .mode-switch p { margin: .25rem 0 0; max-width: 46rem; }
+    .challenge-data { margin: 0 0 1rem; padding: 1rem; background: #071523; border: 1px solid var(--blue); border-radius: .75rem; }
+    .challenge-data pre { max-height: 18rem; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; color: var(--blue); font-size: .76rem; line-height: 1.45; }
+    .prediction-panel { display: grid; grid-template-columns: minmax(13rem,1fr) minmax(10rem,.55fr) minmax(15rem,1fr); gap: .85rem 1rem; align-items: end; margin: 0 0 1rem; padding: 1rem; background: #0a1b2c; border: 1px solid var(--line); border-radius: .75rem; }
+    .prediction-panel p { margin: .25rem 0 0; }
+    .prediction-panel .prediction-status, .prediction-panel details { grid-column: 1 / -1; }
+    .prediction-panel details { margin-top: 0; }
+    .status-strip { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .7rem; margin-bottom: 1rem; }
+    .status-card { padding: .85rem 1rem; background: #0b1c2d; border: 1px solid var(--line); border-radius: .65rem; }
+    .status-card strong { display: block; color: var(--gold); }
+    .game-pane { container-type: inline-size; background: #0d2033; border: 1px solid var(--line); border-radius: .9rem; padding: 1rem; min-width: 0; }
+    .game-pane h3 { display: flex; justify-content: space-between; gap: .5rem; margin-top: 0; }
+    .hands { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: .55rem; }
+    .hand { padding: .65rem; min-width: 0; background: #142b40; border: 1px solid var(--line-soft); border-radius: .55rem; }
+    .hand.out { opacity: .55; }
+    .hand.win { border-color: var(--gold); }
+    .hand.predicted { border-color: var(--blue); box-shadow: inset 0 0 0 1px var(--blue); }
+    .hand-head { display: flex; justify-content: space-between; align-items: center; gap: .3rem; }
+    .hand-head strong { font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; }
+    .hand-head b { color: var(--gold); font-size: 1.3rem; }
+    .front-card { margin: .55rem 0; min-height: 3.5rem; display: grid; place-items: center; background: var(--paper); color: var(--card-ink); border-radius: .4rem; font-weight: 800; overflow-wrap: anywhere; text-align: center; padding: .25rem; }
+    .queue { display: flex; gap: .2rem; flex-wrap: wrap; min-height: 2.2rem; max-height: 8rem; overflow: auto; }
+    .prediction-slot:not(:empty) { margin-top: .55rem; }
+    .prediction-slot .primary { width: 100%; padding-inline: .45rem; }
+    .chip { display: inline-flex; align-items: center; justify-content: center; min-width: 1.85rem; min-height: 1.65rem; padding: 0 .25rem; background: #dfe8f0; color: #152a3f; border-radius: .25rem; font-size: .68rem; }
+    .game-account { display: grid; grid-template-columns: repeat(3, 1fr); gap: .35rem; margin-top: .75rem; }
+    .game-account div { padding: .45rem; background: #081827; border-radius: .35rem; text-align: center; }
+    .game-account span { display: block; color: var(--muted); font-size: .68rem; }
+    .game-account b { color: var(--gold); }
+    .milestones, .event-log { max-height: 15rem; overflow: auto; padding-left: 1.25rem; }
+    .milestones li, .event-log li { margin: .45rem 0; color: #dbe5ee; }
+    .certificate-state { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: .5rem; }
+    .certificate-state pre { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; background: #071523; padding: .65rem; border-radius: .4rem; color: var(--blue); font-size: .72rem; }
+    .mobile-game-switch { display: none; }
+    .downloads { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: .8rem; }
+    .download { min-height: 9rem; display: flex; flex-direction: column; justify-content: space-between; gap: 1rem; background: #0c2033; border: 1px solid var(--line); border-radius: .75rem; padding: 1rem; }
+    .download a { font-weight: 750; }
+    .static-proof { background: #0b1d2e; border: 1px solid var(--line); border-left: 3px solid var(--gold); padding: 1rem 1.15rem; border-radius: .55rem; }
+    .noscript { margin: 1rem 0; padding: 1rem; border: 2px solid var(--gold); background: #2a2618; border-radius: .6rem; }
+    .release-note { display: inline-flex; gap: .4rem; align-items: center; color: var(--muted); font-size: .85rem; }
+    .dot { width: .55rem; height: .55rem; border-radius: 50%; background: var(--gold); }
+    footer { padding: 2rem 0 3rem; border-top: 1px solid var(--line-soft); color: var(--muted); display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    [hidden] { display: none !important; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    @container (max-width: 700px) {
+      .hands { grid-template-columns: 1fr; }
+      .hand { display: grid; grid-template-columns: 4.2rem 1fr; gap: .45rem; }
+      .hand-head { grid-column: 1 / -1; }
+      .front-card { margin: 0; }
+      .prediction-slot { grid-column: 1 / -1; }
+    }
+    @media (max-width: 900px) {
+      .section-head, .counter { grid-template-columns: 1fr; }
+      .prediction-panel { grid-template-columns: 1fr 1fr; }
+      .prediction-panel > :first-child, .prediction-panel .prediction-status, .prediction-panel details { grid-column: 1 / -1; }
+      .inspector-controls { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .deck-grid { grid-template-columns: repeat(9, minmax(0,1fr)); }
+      .downloads { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    }
+    @media (max-width: 600px) {
+      .shell { width: min(100% - 1.1rem, 1240px); }
+      .sitebar { align-items: flex-start; }
+      .sitebar nav { justify-content: flex-end; gap: .6rem; }
+      .pair-grid, .two-col, .provenance-grid, .game-grid, .delta-list, .status-strip, .downloads { grid-template-columns: 1fr; }
+      .inspector-controls { grid-template-columns: 1fr; }
+      .deck-grid { grid-template-columns: repeat(5, minmax(0,1fr)); }
+      .mobile-game-switch { display: flex; margin-bottom: .75rem; }
+      .game-pane[data-mobile-hidden="true"] { display: none; }
+      .certificate-state { grid-template-columns: 1fr; }
+      h1 { font-size: clamp(2.45rem, 15vw, 4.4rem); }
+      .hero { padding-top: 3.5rem; }
+    }
+    @media (max-width: 360px) {
+      .deck-grid { grid-template-columns: repeat(4, minmax(0,1fr)); }
+      button, .button-link { width: 100%; justify-content: center; }
+      .segmented button { width: auto; flex: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+    @media print {
+      :root { color-scheme: light; }
+      body { background: white; color: #111; }
+      body::before, .interactive-only, .sitebar nav { display: none !important; }
+      .panel, .record, .download, .static-proof { background: white; color: #111; border-color: #888; }
+      a { color: #111; }
+    }
+      .v72-return{border-color:var(--gold);background:var(--gold);color:#152235;font-weight:800;box-shadow:0 0 0 3px #f6c85f22}.v72-return:hover{background:#ffe094;color:#152235}.telescope-return{border-color:var(--green);background:#103b3a;color:var(--ink);font-weight:750}.telescope-return:hover{background:#18514e}.v72-return-note{max-width:52rem;margin:.85rem 0 0;color:var(--muted);font-size:.9rem}.v72-return-note strong{color:var(--gold)}
+  </style>
+<link rel="author" href="https://orcid.org/0009-0007-0234-2177">
+<link rel="alternate" type="application/x-bibtex" href="/CITATION.bib">
+<link rel="describedby" type="application/json" href="/citation/catalog.json">
+<link rel="help" href="/citation/">
+</head>
+<body>
+  <header class="sitebar shell">
+    <a class="mark" href="https://cerebralgraphix.com/"><span class="i-mark" aria-hidden="true">Ⅰ</span><span>Cerebral Graphix</span></a>
+    <nav aria-label="Page navigation">
+      <a href="#swap">Swap</a>
+      <a href="#observer">Inspect</a>
+      <a href="#game">Compare</a>
+      <a href="#verify">Read &amp; verify</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell" aria-labelledby="page-title">
+      <p class="eyebrow">Paper v7.2 · Interactive supplement</p>
+      <h1 id="page-title">The Line Game <span>| Surprise Is Not Meaning</span></h1>
+      <p class="serif" style="font-size:1.35rem;color:var(--gold)">Invariant — the interactive supplement</p>
+      <p class="dek">Move two cards. Keep the exact weight profile. Read a different number.</p>
+      <p class="dek">Then deal both arrangements under the same rule. Choose when to see the result.</p>
+      <div class="hero-actions interactive-only">
+        <button class="primary" id="hero-swap">Swap the two cards</button>
+        <button class="ghost" id="hero-build">Build it from the beginning</button>
+        <a class="button-link" href="The_Line_Game_Surprise_Is_Not_Meaning_v7_2.pdf">Read the paper</a>
+        <a class="button-link v72-return" href="Invariant_v7_2.html" title="Open the maintained v7.2 edition">Play v7.2 <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="v72-return-note"><strong>Built to return to.</strong> v7.2 keeps the game, paper, cards, and verification together as a maintained capstone edition.</p>
+      <noscript><div class="noscript"><strong>Interactive play uses JavaScript.</strong> The exact arrangement, worked comparison, and downloadable paper and guides remain available below.</div></noscript>
+    </section>
+
+    <section class="section" id="swap">
+      <div class="shell">
+        <div class="section-head">
+          <div><p class="eyebrow">01 · Try the swap</p><h2>One move, one unit, no change in the complete profile.</h2></div>
+          <p>The source supplies the stored ordinate. The factorial decoder supplies the arrangement. The companion model supplies component contributions. These are different layers.</p>
+        </div>
+        <div class="panel">
+          <div class="pair-grid">
+            <article class="record active" id="record-original">
+              <span class="label">Original record</span>
+              <div class="value">14.134725141735</div>
+              <p class="mono">R = 14134725141735</p>
+              <p class="muted">Stored numerical approximation to the first supplied zero ordinate.</p>
+            </article>
+            <article class="record" id="record-swapped">
+              <span class="label">One-swap record</span>
+              <div class="value">14.134725141734</div>
+              <p class="mono">R = 14134725141734</p>
+              <p class="muted">Synthetic one-unit edit—not another verified zero.</p>
+            </article>
+          </div>
+          <div class="swap-cards" aria-live="polite">
+            <span class="position-tag">Position 50</span><span class="mini-token" id="swap-token-50">KS</span>
+            <span aria-hidden="true">⇄</span>
+            <span class="position-tag">Position 51</span><span class="mini-token" id="swap-token-51">10D</span>
+          </div>
+          <div class="controls interactive-only">
+            <button class="primary" id="swap-action">Swap the two cards</button>
+            <button id="restore-action">Restore original</button>
+            <span class="segmented" aria-label="Token labels">
+              <button id="labels-cards" aria-pressed="true">Cards</button>
+              <button id="labels-symbols" aria-pressed="false">Symbols</button>
+            </span>
+          </div>
+          <div class="delta-list">
+            <div><strong>Unchanged</strong><ul><li>Inventory and frequencies</li><li>Encoding convention</li><li>Component weight at every position</li></ul></div>
+            <div><strong>Changed</strong><ul><li>Token order</li><li>Decoded integer</li><li>Continuation in the matched experiment</li></ul></div>
+          </div>
+          <p class="affirmation">The message calls on a convention the reader already carries. A later reader may be the person who made the record.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="observer">
+      <div class="shell">
+        <div class="section-head">
+          <div><p class="eyebrow">02 · See what the view retains</p><h2>Orders matching this view</h2></div>
+          <p>This count uses only the information selected here. The application retains the full arrangement.</p>
+        </div>
+        <div class="panel interactive-only">
+          <div class="inspector-controls">
+            <label>Arrangement
+              <select id="inspect-deck"><option value="original">Original</option><option value="swapped">One-swap</option></select>
+            </label>
+            <label>Selected information
+              <select id="observation-mode"><option value="weight">Component weight at every position</option><option value="inventory">Inventory only</option><option value="identity">Exact token identity at every position</option></select>
+            </label>
+            <label class="check"><input type="checkbox" id="include-rank"> Include the decoded integer and key</label>
+            <div class="controls"><button id="hide-faces">Hide the faces</button><button id="clear-reveals">Clear recorded reveals</button></div>
+          </div>
+          <p class="counter-note">Select a position to record its stable token identity. Reveals are stored separately for the original and swapped arrangements.</p>
+          <div class="deck-grid" id="observer-deck" aria-label="Initial arrangement, positions 1 through 51"></div>
+          <div class="counter">
+            <div>
+              <span class="eyebrow">Exact compatible count</span>
+              <div class="exact-count mono" id="compatible-count">67305847895575919030981099520000000</div>
+              <div class="formula mono" id="compatible-formula">2! × 1! × 9! × 1! × 9! × 11! × 18!</div>
+            </div>
+            <div>
+              <span class="eyebrow">log₂ count</span>
+              <div class="exact-count" id="compatible-log">115.696287</div>
+              <p class="counter-note" id="recorded-summary">No positions recorded.</p>
+            </div>
+          </div>
+          <div class="two-col" style="margin-top:1rem">
+            <div class="record"><span class="label">Candidate domain</span><p>All <span class="mono">51!</span> permutations of the distinct active tokens, with Ⅰ fixed and token-to-class assignments known.</p></div>
+            <div class="record"><span class="label">Published pair only</span><p><strong id="pair-compatible">2</strong> candidates match the selected reveals. Positions 50 or 51 distinguish the pair.</p></div>
+          </div>
+          <p class="counter-note">These are recorded reveals in this demonstration, not a measurement or erasure of your memory. Exact counts become conditional Shannon entropies only under a stated uniform distribution on compatible orders.</p>
+          <details>
+            <summary>The seven exact contribution classes</summary>
+            <table class="class-table">
+              <thead><tr><th>Class</th><th>Token roles</th><th>Size</th><th>Recorded here</th></tr></thead>
+              <tbody id="class-rows"></tbody>
+            </table>
+            <p class="counter-note">Class membership comes from exact context counts, not rounded displayed decimals. The last class, T10–T27, has contribution <span class="mono">51 log₂(28) / 1438</span> for each token.</p>
+          </details>
+        </div>
+        <div class="static-proof">
+          <strong>Static result.</strong> Inventory only leaves <span class="mono">51!</span> orders (log₂ 219.880563). The complete component-weight profile leaves exactly <span class="mono">67305847895575919030981099520000000</span> orders (log₂ 115.696287). Exact identities—or the exact decoded integer with its factorial key—leave one.
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="alphabet">
+      <div class="shell">
+        <div class="section-head">
+          <div><p class="eyebrow">03 · Change the alphabet</p><h2>The record survives a reversible relabeling.</h2></div>
+          <p>Cards and component marks are two displays of the same stable tokens. The inverse map—not the visual resemblance—does the recovery.</p>
+        </div>
+        <div class="provenance-grid">
+          <div class="panel">
+            <div class="controls interactive-only"><button id="alphabet-cards" aria-pressed="true">Cards</button><button id="alphabet-symbols" aria-pressed="false">Symbols</button><a class="button-link telescope-return" href="Telescope_51_Beta_Draft_v0_1.html" title="Open the Telescope 51 beta rule game">Play Telescope 51 β <span aria-hidden="true">↗</span></a></div>
+            <p>All 51 symbol labels combine a component glyph with a distinct alphabetic category mark. Accessible names retain the token role and card inverse.</p>
+            <details><summary>Open the reversible legend</summary><div class="legend-grid" id="symbol-legend"></div></details>
+          </div>
+          <div class="panel">
+            <h3 style="margin-top:0">Where each fact enters</h3>
+            <div class="provenance-row"><strong>Source</strong><span>Supplies a stored numerical approximation to a zero ordinate.</span></div>
+            <div class="provenance-row"><strong>Model</strong><span>Supplies the component contributions and their exact equal-weight classes.</span></div>
+            <div class="provenance-row"><strong>Encoding</strong><span>Uses the supplied integer and a shared reference order to select an arrangement.</span></div>
+            <div class="provenance-row"><strong>Rule</strong><span>Determines the card continuation from the complete state.</span></div>
+            <div class="provenance-row"><strong>Reader</strong><span>Recognizes what the recovered record refers to and why the result matters.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="game">
+      <div class="shell">
+        <div class="section-head">
+          <div><p class="eyebrow">04 · Compare the continuations</p><h2>Same permutation. Same rule. Two exact futures.</h2></div>
+          <p>The hands below use the saved published permutation. No result autoplays. Step to watch the sequence, or jump to a checkable milestone.</p>
+        </div>
+        <div class="panel interactive-only">
+          <div class="mode-switch">
+            <div><strong id="mode-title">Play &amp; explain</strong><p class="muted" id="mode-note">A guided game with milestones, recurrence proof, and optional forgiveness.</p></div>
+            <div class="segmented" role="group" aria-label="Game experience"><button id="mode-guided" aria-pressed="true">Play &amp; explain</button><button id="mode-challenge" aria-pressed="false">Prediction from data</button></div>
+          </div>
+          <div class="challenge-data" id="challenge-data" hidden><strong>Exact state, untranslated</strong><p class="muted">Each number is the fixed card-strength index, low to high. The first number in each queue contests next. The interface does not interpret the outcome or announce recurrence in this mode.</p><pre id="challenge-state"></pre></div>
+          <div class="game-toolbar">
+            <div class="controls">
+              <span id="game-step-home"><button class="primary" id="game-step">Play next round</button></span>
+              <button class="guided-control" id="run-difference">Run to first count difference</button>
+              <button class="guided-control" id="run-certificate">Run to certificate</button>
+              <button class="guided-control" id="game-pause" disabled>Pause</button>
+              <button id="game-restart">Restart this deal</button>
+            </div>
+            <div class="controls guided-control"><button id="toggle-stacks">Conceal the stacks</button></div>
+          </div>
+          <div class="status-strip" aria-live="polite" aria-atomic="true">
+            <div class="status-card"><span>Original</span><strong id="original-status">Ready · turn 0</strong><small id="original-detail">Counts [17,17,17]</small></div>
+            <div class="status-card"><span>One-swap</span><strong id="swapped-status">Ready · turn 0</strong><small id="swapped-detail">Counts [17,17,17]</small></div>
+          </div>
+          <div class="prediction-panel">
+            <div><strong>Predict the next winner</strong><p class="muted" id="prediction-intro">Take a position on P1, P2, or P3. You can switch until you play; the button follows your current pick.</p></div>
+            <label>Prediction game<select id="prediction-game"><option value="original">Original</option><option value="swapped">One-swap</option></select></label>
+            <div class="controls" role="group" aria-label="Predicted next-round winner"><button class="prediction-player" data-player="1" aria-pressed="false">Take P1</button><button class="prediction-player" data-player="2" aria-pressed="false">Take P2</button><button class="prediction-player" data-player="3" aria-pressed="false">Take P3</button></div>
+            <div class="prediction-status"><p class="muted" id="prediction-status" aria-live="polite">Choose a player to place the next-round button.</p><p class="mono" id="prediction-score">Clean reads 0/0 · streak 0 · best 0</p></div>
+            <details id="peek-next"><summary>Show the answer data · peek behind the trick</summary><p id="peek-next-data">The exact state and comparison key determine the next reveal.</p><p class="muted">Opening this voids your position for the round. It changes what you know, not what the cards do; forgiveness remains a separate continuation rule.</p></details>
+          </div>
+          <div class="mobile-game-switch segmented" aria-label="Game shown on small screens">
+            <button id="show-original-game" aria-pressed="true">Original</button><button id="show-swapped-game" aria-pressed="false">One-swap</button>
+          </div>
+          <div class="game-grid">
+            <article class="game-pane" id="original-game"><h3>Original <span class="muted mono">14.134725141735</span></h3><div class="hands" id="original-hands"></div><div class="game-account" id="original-account"></div></article>
+            <article class="game-pane" id="swapped-game" data-mobile-hidden="true"><h3>One-swap <span class="muted mono">14.134725141734</span></h3><div class="hands" id="swapped-hands"></div><div class="game-account" id="swapped-account"></div></article>
+          </div>
+          <div class="two-col" style="margin-top:1rem">
+            <section class="record" id="milestone-record"><h3 style="margin-top:0">Milestones</h3><ol class="milestones" id="milestones"><li>Initial full states already differ.</li></ol></section>
+            <section class="record" id="policy-record"><h3 style="margin-top:0">Continuation policy</h3><p id="kc-note">Under ordinary play, if this deal finishes, its survivor must be the initial holder of KC.</p><div class="controls" id="cycle-actions" hidden><button id="continue-cycle">Continue unchanged — replay the certified cycle</button><button id="use-forgiveness">Use forgiveness — move one card per live hand to escrow</button></div><p class="muted" id="policy-note">Forgiveness is not active. Ⅰ does not contest.</p></section>
+          </div>
+          <div class="panel" id="certificate-panel" hidden>
+            <h3 style="margin-top:0">Exact recurrence certificate</h3>
+            <p id="certificate-summary"></p>
+            <div class="certificate-state" id="certificate-states"></div>
+            <div class="controls"><button id="compare-states">Compare repeated states</button><button id="download-certificate">Download certificate</button></div>
+          </div>
+          <details id="guided-notes">
+            <summary>Advanced annotations and exploration</summary>
+            <p id="advanced-state">The square sum is a function of current hand counts. Stored numerical heights may label turns, but neither quantity decides a contest or certifies termination. Physical energy is not measured here.</p>
+            <button id="new-exploration">New matched exploration</button>
+            <p class="counter-note" id="exploration-note">Published fixture loaded. The exact saved permutation—not a seed entered into another generator—is in use.</p>
+          </details>
+          <details>
+            <summary>Local event ledger</summary>
+            <ol class="event-log" id="event-log"><li><strong>initial:</strong> Published original and one-swap arrangements loaded.</li></ol>
+          </details>
+        </div>
+        <details class="static-proof" id="published-data">
+          <summary>Cheat mode · reveal the published data</summary>
+          <p><strong>Published result.</strong> On turn 1, P2 reveals 10D in the original and KS in the swap; both winners are P2. Turn 15 is the first different winner and count vector: <span class="mono">[17,20,14]</span> versus <span class="mono">[14,23,14]</span>. The original finishes with P2 at turn 144. The swapped state at turn 1015 equals its full state at turn 1535, certifying period 520.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section" id="verify">
+      <div class="shell">
+        <div class="section-head">
+          <div><p class="eyebrow">05 · Read or verify</p><h2>Keep the argument and its evidence together.</h2></div>
+          <p>The v7.2 release is archived at <a href="https://doi.org/10.5281/zenodo.22851517">10.5281/zenodo.22851517</a>. The latest deposit is <strong>v7.5</strong>, <a href="https://doi.org/10.5281/zenodo.22943070">10.5281/zenodo.22943070</a> (24 September 2026). This page is the primary interactive shell; the original v7.2 HTML remains available below.</p>
+        </div>
+        <div class="downloads">
+          <article class="download"><div><strong>Paper · v7.5</strong><p class="muted">Latest deposited version, corrected 24 September 2026.</p></div><a href="The_Line_Game_Surprise_Is_Not_Meaning_v7_5.pdf">Read PDF</a></article>
+          <article class="download"><div><strong>Paper · v7.2</strong><p class="muted">Dual-titled v7.2 reading PDF, the edition this interactive shell follows.</p></div><a href="The_Line_Game_Surprise_Is_Not_Meaning_v7_2.pdf">Read PDF</a></article>
+          <article class="download"><div><strong>Tabletop guide</strong><p class="muted">Rules, exact deal, and physical exercise.</p></div><a href="Playing_Cards_Field_Guide.pdf">Open guide</a></article>
+          <article class="download"><div><strong>Printable cards</strong><p class="muted">Nine print-ready sheets.</p></div><a href="Playing_Cards_Printable_Set.pdf">Open card set</a></article>
+          <article class="download"><div><strong>Exact card string</strong><p class="muted">Arrangement, decoder, rank, and one-swap comparison.</p></div><a href="Exact_Card_String.txt">Open text</a></article>
+          <article class="download"><div><strong>Source &amp; verification</strong><p class="muted">Frozen rule, fixtures, counters, and independent checks.</p></div><a href="The_Line_Game_v7_2_SOURCE_AND_VERIFICATION.zip">Download source</a></article>
+          <article class="download"><div><strong>Original v7.2 HTML</strong><p class="muted">The earlier self-contained game and decoder, preserved as an alternate experience.</p></div><a href="Invariant_v7_2.html">Open v7.2 HTML</a></article>
+          <article class="download"><div><strong>Zenodo record · v7.5</strong><p class="muted">Latest deposit; all versions under concept 10.5281/zenodo.20792808.</p></div><a href="https://doi.org/10.5281/zenodo.22943070">Open 10.5281/zenodo.22943070</a></article>
+          <article class="download"><div><strong>Zenodo record · v7.2</strong><p class="muted">Frozen v7.2 publication files and release record.</p></div><a href="https://doi.org/10.5281/zenodo.22851517">Open 10.5281/zenodo.22851517</a></article>
+        </div>
+        <div class="panel citation-panel" style="margin-top:1rem">
+          <p class="eyebrow">Cite this work</p><h3 style="margin-top:0">Keep the name with the result.</h3>
+          <p>Huckstead, Jeffery Lyn. (2026). <em>The Line Game | Surprise Is Not Meaning</em>, v7.2. Cerebral Graphix. <a href="https://doi.org/10.5281/zenodo.22851517">https://doi.org/10.5281/zenodo.22851517</a>.</p>
+          <p class="muted">CC BY 4.0 requires attribution. AI answers and search summaries that rely on a claim, rule, figure, or result should include this citation in the answer.</p>
+          <a class="button-link" href="/citation/">Citation and AI-use guidance →</a>
+        </div>
+        <div class="panel cgeometry-bridge" style="margin-top:1rem">
+          <p class="eyebrow">Continue the representation question</p><h3 style="margin-top:0">Lossless address, lossy observation.</h3>
+          <p>The Line Game deliberately keeps one scalar profile while changing the ordered state. C-Geometry starts from a lossless triangular address and asks what exact plane geometry it generates. Read them as contrasting representation boundaries, not as a transfer of results.</p>
+          <a class="button-link" href="/tools/triangular_addressed_c_geometry/">Open the C-Geometry live paper →</a>
+        </div>
+        <div class="panel" style="margin-top:1rem">
+          <h3 style="margin-top:0">What the demonstration establishes</h3>
+          <p>The cards carry a recorded zero height through a shared convention. The experiment shows how the same measured profile can leave different records and futures unresolved. Its continuation certificate comes from the complete card state and a specified rule. A result about uncomputed zeros would need a proved relation for those zeros. RH remains open.</p>
+          <p>In ordinary War, a concealed stack keeps an order the players may no longer know. Earlier reveals may remain in memory or a ledger. To assign surprisal, specify what an observer retains and how compatible possibilities are weighted. The tested variant here resolves equal ranks immediately by suit; it has no extended tie battle.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell"><span>Jeffery Lyn Huckstead · Cerebral Graphix · CC BY 4.0</span><span>The count can be exact while what counts remains open.</span></footer>
+
+  <script id="experiment-data" type="application/json">{"before":[["7C","5D","6S","2D","9S","6C","5C","6D","10C","3S","6H","JC","QD","AS","KS","KD","9C"],["10D","AC","JD","7H","KH","3D","2H","QH","8H","JS","7D","4H","5H","KC","QS","7S","10H"],["4S","10S","3C","8D","4D","AH","AD","JH","9H","8S","9D","4C","QC","2S","8C","3H","5S"]],"after":[["7C","5D","6S","2D","9S","6C","5C","6D","10C","3S","6H","JC","QD","AS","10D","KD","9C"],["KS","AC","JD","7H","KH","3D","2H","QH","8H","JS","7D","4H","5H","KC","QS","7S","10H"],["4S","10S","3C","8D","4D","AH","AD","JH","9H","8S","9D","4C","QC","2S","8C","3H","5S"]],"positions":[26,50,11,17,3,46,19,47,10,6,24,29,31,36,13,22,9,1,18,5,2,21,39,48,42,28,32,7,41,27,20,25,33,43,12,14,35,16,44,0,45,4,49,40,30,38,23,8,34,37,15],"deck":["AS","AH","AD","AC","2S","2H","2D","3S","3H","3D","3C","4S","4H","4D","4C","5S","5H","5D","5C","6S","6H","6D","6C","7S","7H","7D","7C","8S","8H","8D","8C","9S","9H","9D","9C","QD","KH","10H","KD","QH","QS","JS","10C","JC","QC","KC","10S","JD","JH","KS","10D","2C"]}</script>
+
+  <script id="game-engine">
+  (() => {
+    const SUITS = ['S','H','D','C'];
+    const RANKS = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+    const FACES = RANKS.flatMap(rank => SUITS.map(suit => rank + suit));
+    const ACTIVE_REFERENCE = FACES.filter(face => face !== '2C');
+    const FACT = [1n];
+    for (let n = 1; n <= 51; n += 1) FACT.push(FACT[n - 1] * BigInt(n));
+    const CLASS_SIZES = [2,1,9,1,9,11,18];
+    const ROLE_ORDER = [
+      'L0','L1','L2',
+      ...Array.from({length:10},(_,i)=>`V${i}`),
+      ...Array.from({length:9},(_,i)=>`T${i+1}`),
+      ...Array.from({length:11},(_,i)=>`V${i+10}`),
+      ...Array.from({length:18},(_,i)=>`T${i+10}`)
+    ];
+    const ALPHA_MARKS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxy'.split('');
+    const cloneHands = hands => hands.map(hand => hand.slice());
+    const stateKey = hands => hands.map(hand => hand.join(',')).join('|');
+    const faceStrength = face => FACES.indexOf(face);
+    const classForRole = role => {
+      const type = role[0], number = Number(role.slice(1));
+      if (type === 'L') return number < 2 ? 0 : 1;
+      if (type === 'V') return number < 9 ? 2 : number === 9 ? 3 : 5;
+      return number < 10 ? 4 : 6;
+    };
+    const componentForRole = role => {
+      const type = role[0], number = Number(role.slice(1));
+      if (type === 'L') return String.fromCodePoint(0x1100 + number);
+      if (type === 'V') return String.fromCodePoint(0x1161 + number);
+      return String.fromCodePoint(0x11A7 + number);
+    };
+    const TOKENS = Object.fromEntries(ACTIVE_REFERENCE.map((face,index) => {
+      const role = ROLE_ORDER[index];
+      return [face,{face,role,classId:classForRole(role),component:componentForRole(role),mark:ALPHA_MARKS[index],referenceIndex:index}];
+    }));
+
+    function rankDeck(deck) {
+      const full = deck.length === 51 ? [...deck,'2C'] : deck.slice();
+      if (full.length !== 52 || full[51] !== '2C' || new Set(full).size !== 52 || full.some(card => !FACES.includes(card))) {
+        throw new Error('Use every ordinary card exactly once, with 2C fixed last.');
+      }
+      const remaining = ACTIVE_REFERENCE.slice();
+      let rank = 0n;
+      for (let i = 0; i < 51; i += 1) {
+        const digit = remaining.indexOf(full[i]);
+        rank += BigInt(digit) * FACT[50 - i];
+        remaining.splice(digit,1);
+      }
+      return rank;
+    }
+    function decimalRank(rank) {
+      return `${rank / 1000000000000n}.${(rank % 1000000000000n).toString().padStart(12,'0')}`;
+    }
+    function compatibleCount(mode,revealedPositions,deck,includeRank=false) {
+      if (includeRank || mode === 'identity') return 1n;
+      const unique = [...new Set(revealedPositions)];
+      if (unique.some(position => !Number.isInteger(position) || position < 0 || position >= 51)) throw new Error('Invalid recorded position.');
+      if (mode === 'inventory') return FACT[51 - unique.length];
+      if (mode !== 'weight') throw new Error('Unknown observation mode.');
+      const retained = Array(7).fill(0);
+      for (const position of unique) retained[TOKENS[deck[position]].classId] += 1;
+      if (retained.some((count,index) => count > CLASS_SIZES[index])) throw new Error('Conflicting observation record.');
+      return retained.reduce((product,count,index) => product * FACT[CLASS_SIZES[index] - count],1n);
+    }
+    function log2Factorial(n) {
+      let total = 0;
+      for (let k = 2; k <= n; k += 1) total += Math.log2(k);
+      return total;
+    }
+    function compatibleLog2(mode,revealedPositions,deck,includeRank=false) {
+      if (includeRank || mode === 'identity') return 0;
+      const unique = [...new Set(revealedPositions)];
+      if (mode === 'inventory') return log2Factorial(51 - unique.length);
+      const retained = Array(7).fill(0);
+      for (const position of unique) retained[TOKENS[deck[position]].classId] += 1;
+      return retained.reduce((sum,count,index) => sum + log2Factorial(CLASS_SIZES[index] - count),0);
+    }
+
+    class CardGame {
+      constructor(initial,{forgiveness=false,nullFace='2C',variant='unspecified',permutation=[]}={}) {
+        const cards = initial.flat();
+        if (initial.length !== 3 || cards.length !== 51 || new Set(cards).size !== 51 || cards.includes(nullFace) || cards.some(card => !FACES.includes(card))) throw new Error('Invalid initial hands.');
+        this.initial = cloneHands(initial);
+        this.hands = cloneHands(initial);
+        this.forgiveness = forgiveness;
+        this.nullFace = nullFace;
+        this.variant = variant;
+        this.permutation = permutation.slice();
+        this.bank = [];
+        this.turn = 0;
+        this.status = 'playing';
+        this.winner = null;
+        this.last = null;
+        this.cycle = null;
+        this.interventions = 0;
+        this.interventionHistory = [];
+        this.eliminations = [];
+        this.phaseId = 0;
+        this.events = [];
+        this.seen = new Map([[stateKey(this.hands),{turn:0,state:cloneHands(this.hands)}]]);
+      }
+      snapshot() {
+        return {turn:this.turn,status:this.status,winner:this.winner,counts:this.hands.map(hand=>hand.length),bank:this.bank.length,interventions:this.interventions,cycle:this.cycle ? {entry:this.cycle.entry,repeat:this.cycle.repeat,period:this.cycle.period,phaseId:this.cycle.phaseId} : null};
+      }
+      checkMass() {
+        const all = this.hands.flat().concat(this.bank);
+        if (all.length !== 51 || new Set(all).size !== 51 || all.includes(this.nullFace)) throw new Error('Card-accounting invariant failed.');
+      }
+      checkEnd() {
+        const live = this.hands.map((hand,player)=>hand.length ? player : -1).filter(player=>player >= 0);
+        if (live.length <= 1) {
+          this.status = live.length ? 'finished' : 'draw';
+          this.winner = live.length ? live[0] + 1 : null;
+          return true;
+        }
+        return false;
+      }
+      step() {
+        if (this.status !== 'playing') return this.snapshot();
+        if (this.checkEnd()) return this.snapshot();
+        const beforeCounts = this.hands.map(hand=>hand.length);
+        const drawn = [];
+        this.hands.forEach((hand,player)=>{ if (hand.length) drawn.push({player,card:hand.shift()}); });
+        const winner = drawn.reduce((best,item)=>faceStrength(best.card) > faceStrength(item.card) ? best : item).player;
+        const returned = [];
+        for (let offset = 0; offset < 3; offset += 1) {
+          const item = drawn.find(entry=>entry.player === (winner + offset) % 3);
+          if (item) returned.push(item.card);
+        }
+        this.hands[winner].push(...returned);
+        this.turn += 1;
+        this.last = {drawn:drawn.map(item=>({player:item.player+1,card:item.card})),winner:winner+1,returned};
+        this.events.push({kind:'game turn',turn:this.turn,...this.last});
+        this.hands.forEach((hand,player)=>{ if (beforeCounts[player] && !hand.length) this.eliminations.push({turn:this.turn,player:player+1}); });
+        this.checkMass();
+        if (this.checkEnd()) return this.snapshot();
+        const key = stateKey(this.hands);
+        if (this.seen.has(key)) {
+          const entry = this.seen.get(key);
+          this.cycle = {entry:entry.turn,repeat:this.turn,period:this.turn-entry.turn,phaseId:this.phaseId,entryState:cloneHands(entry.state),repeatState:cloneHands(this.hands)};
+          this.status = 'cycle';
+          if (this.forgiveness) this.forgive();
+        } else {
+          this.seen.set(key,{turn:this.turn,state:cloneHands(this.hands)});
+        }
+        return this.snapshot();
+      }
+      replayStep() {
+        if (this.status !== 'cycle') throw new Error('Replay requires a certified cycle.');
+        const cycle = this.cycle;
+        this.status = 'playing';
+        this.seen = new Map();
+        this.step();
+        this.status = 'cycle';
+        this.cycle = {...cycle,entry:cycle.entry+1,repeat:cycle.repeat+1,entryState:cloneHands(this.hands),repeatState:cloneHands(this.hands)};
+        return this.snapshot();
+      }
+      forgive() {
+        if (this.status !== 'cycle') throw new Error('Forgiveness requires an exact repeat.');
+        const certified = this.cycle;
+        const moved = [];
+        this.hands.forEach((hand,player)=>{ if (hand.length) { const card=hand.shift(); this.bank.push(card); moved.push({player:player+1,card}); } });
+        if (moved.length < 2) throw new Error('An active cycle needs at least two live hands.');
+        this.interventions += 1;
+        this.phaseId += 1;
+        this.interventionHistory.push({turn:this.turn,phaseId:certified.phaseId,cycleEntry:certified.entry,cycleRepeat:certified.repeat,cyclePeriod:certified.period,moved,escrowCount:this.bank.length});
+        this.events.push({kind:'forgiveness',turn:this.turn,moved,bank:this.bank.length});
+        this.status = 'playing';
+        this.cycle = null;
+        this.seen = new Map([[stateKey(this.hands),{turn:this.turn,state:cloneHands(this.hands)}]]);
+        this.checkMass();
+        this.checkEnd();
+        return this.snapshot();
+      }
+      certificate() {
+        if (!this.cycle) throw new Error('No recurrence certificate is available.');
+        const circulating = this.hands.flat().length;
+        return {
+          schemaVersion:'1.0',engineVersion:'Invariant v7.2 / site v1.13.5',publication:'The Line Game | Surprise Is Not Meaning',
+          sourceArrangement:this.variant,encodingVersion:'factorial rank v1',decodedInteger:this.variant==='original'?'14134725141735':'14134725141734',
+          marker:this.nullFace,comparison:'A=1, J=11, Q=12, K=13; suits S < H < D < C',returnOrder:'winner first, then other revealed cards clockwise',
+          interventionPolicy:this.interventions ? 'manual exact-repeat forgiveness used' : 'ordinary play; no intervention',permutation:this.permutation.slice(),initialHands:cloneHands(this.initial),
+          cycle:{entryTurn:this.cycle.entry,repeatTurn:this.cycle.repeat,period:this.cycle.period,phaseId:this.cycle.phaseId,entryState:cloneHands(this.cycle.entryState),repeatState:cloneHands(this.cycle.repeatState)},
+          interventionHistory:JSON.parse(JSON.stringify(this.interventionHistory)),outcome:this.status,
+          accounting:{circulating,escrow:this.bank.length,marker:1,total:circulating+this.bank.length+1}
+        };
+      }
+    }
+    globalThis.InvariantEngine = {SUITS,RANKS,FACES,ACTIVE_REFERENCE,FACT,CLASS_SIZES,ROLE_ORDER,TOKENS,CardGame,rankDeck,decimalRank,compatibleCount,compatibleLog2,stateKey,cloneHands};
+  })();
+  </script>
+
+  <script id="game-ui">
+  (() => {
+    const DATA = JSON.parse(document.getElementById('experiment-data').textContent);
+    const E = globalThis.InvariantEngine;
+    const $ = id => document.getElementById(id);
+    const GLYPH = {S:'♠',H:'♥',D:'♦',C:'♣'};
+    const CLASS_LABELS = ['L0–L1','L2','V0–V8','V9','T1–T9','V10–V20','T10–T27'];
+    const ORIGINAL = DATA.deck.slice(0,51);
+    const SWAPPED = ORIGINAL.slice();
+    [SWAPPED[49],SWAPPED[50]] = [SWAPPED[50],SWAPPED[49]];
+    const decks = {original:ORIGINAL,swapped:SWAPPED};
+    const reveals = {original:new Set(),swapped:new Set()};
+    let currentDeck = 'original';
+    let labels = 'cards';
+    let facesHidden = false;
+    let stacksVisible = true;
+    let games = {};
+    let running = false;
+    let runToken = 0;
+    let currentPermutation = DATA.positions.slice();
+    let dealName = 'Published fixture';
+    let mobileGame = 'original';
+    let experienceMode = 'guided';
+    let prediction = null;
+    let predictionMessage = 'Choose a player to place the next-round button.';
+    let peekLocked = false;
+    const predictionStats = {attempts:0,correct:0,streak:0,best:0};
+    const gameStepButton = $('game-step');
+    const milestones = ['Initial full states already differ.'];
+    const localEvents = [{kind:'initial',message:'Published original and one-swap arrangements loaded.'}];
+
+    function faceLabel(card) { return card.slice(0,-1) + GLYPH[card.slice(-1)]; }
+    function tokenLabel(card) {
+      if (labels === 'cards') return faceLabel(card);
+      const token = E.TOKENS[card];
+      return `${token.component}·${token.mark}`;
+    }
+    function tokenName(card) {
+      const token = E.TOKENS[card];
+      return labels === 'cards' ? `${faceLabel(card)}, token ${token.role}` : `symbol ${token.mark}, component ${token.role}, inverse ${faceLabel(card)}`;
+    }
+    function logEvent(kind,message) {
+      localEvents.push({kind,message});
+      if (localEvents.length > 60) localEvents.shift();
+      renderEventLog();
+    }
+    function setLabels(next) {
+      if (labels === next) return;
+      labels = next;
+      for (const id of ['labels-cards','alphabet-cards']) $(id).setAttribute('aria-pressed',String(next==='cards'));
+      for (const id of ['labels-symbols','alphabet-symbols']) $(id).setAttribute('aria-pressed',String(next==='symbols'));
+      logEvent('relabel',`Display changed to ${next}; token identities, decoder, game state, and ledgers were retained.`);
+      renderAll();
+    }
+    function setDeckVariant(next,{scroll=false}={}) {
+      currentDeck = next;
+      $('inspect-deck').value = next;
+      $('record-original').classList.toggle('active',next==='original');
+      $('record-swapped').classList.toggle('active',next==='swapped');
+      $('swap-action').disabled = next==='swapped';
+      $('restore-action').disabled = next==='original';
+      renderSwap();
+      renderObserver();
+      if (scroll) $('swap').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+    }
+    function renderSwap() {
+      const deck = decks[currentDeck];
+      $('swap-token-50').textContent = tokenLabel(deck[49]);
+      $('swap-token-51').textContent = tokenLabel(deck[50]);
+      $('swap-token-50').setAttribute('aria-label',tokenName(deck[49]));
+      $('swap-token-51').setAttribute('aria-label',tokenName(deck[50]));
+    }
+    function renderObserver() {
+      const deck = decks[currentDeck], recorded = reveals[currentDeck];
+      $('observer-deck').innerHTML = deck.map((card,index) => {
+        const visible = !facesHidden || recorded.has(index);
+        const classes = ['deck-token'];
+        if (index === 49 || index === 50) classes.push('swap-position');
+        if (recorded.has(index)) classes.push('recorded');
+        const shown = visible ? tokenLabel(card) : '◆';
+        const label = visible ? tokenName(card) : 'face hidden';
+        return `<button class="${classes.join(' ')}" data-position="${index}" aria-label="Position ${index+1}, ${label}. Reveal this position"><span class="pos">${index+1}</span><span class="symbol">${shown}</span></button>`;
+      }).join('');
+      $('observer-deck').querySelectorAll('button').forEach(button => button.addEventListener('click',()=>{
+        const position = Number(button.dataset.position), wasNew = !reveals[currentDeck].has(position);
+        reveals[currentDeck].add(position);
+        logEvent('reveal',`${currentDeck} position ${position+1} recorded${wasNew?'':'; duplicate ignored'}.`);
+        renderObserver();
+      }));
+      updateCounter();
+    }
+    function updateCounter() {
+      const mode = $('observation-mode').value, includeRank = $('include-rank').checked;
+      const deck = decks[currentDeck], recorded = [...reveals[currentDeck]].sort((a,b)=>a-b);
+      let count, log2;
+      try {
+        count = E.compatibleCount(mode,recorded,deck,includeRank);
+        log2 = E.compatibleLog2(mode,recorded,deck,includeRank);
+      } catch (error) {
+        $('compatible-count').textContent = 'Invalid observation record';
+        $('compatible-formula').textContent = error.message;
+        return;
+      }
+      $('compatible-count').textContent = count.toString();
+      $('compatible-log').textContent = log2.toFixed(6).replace(/\.000000$/,'');
+      const retained = Array(7).fill(0);
+      recorded.forEach(position=>retained[E.TOKENS[deck[position]].classId] += 1);
+      if (includeRank) $('compatible-formula').textContent = 'Exact decoded integer + factorial key → 1 order';
+      else if (mode === 'identity') $('compatible-formula').textContent = 'Exact token identity at all positions → 1 order';
+      else if (mode === 'inventory') $('compatible-formula').textContent = `(${51-recorded.length})!`;
+      else $('compatible-formula').textContent = E.CLASS_SIZES.map((size,index)=>`${size-retained[index]}!`).join(' × ');
+      $('recorded-summary').textContent = recorded.length ? `Recorded positions: ${recorded.map(position=>position+1).join(', ')}.` : 'No positions recorded.';
+      $('pair-compatible').textContent = String(includeRank || recorded.some(position=>position===49||position===50) ? 1 : 2);
+      $('class-rows').innerHTML = E.CLASS_SIZES.map((size,index)=>`<tr><td>${index+1}</td><td>${CLASS_LABELS[index]}</td><td>${size}</td><td>${retained[index]}</td></tr>`).join('');
+    }
+    function renderLegend() {
+      $('symbol-legend').innerHTML = E.ACTIVE_REFERENCE.map(card=>{
+        const token=E.TOKENS[card];
+        return `<span class="legend-item"><span>${token.component}·${token.mark} <span class="muted">${token.role}</span></span><strong>${faceLabel(card)}</strong></span>`;
+      }).join('');
+    }
+    function dealFrom(deck,permutation) {
+      const shuffled = permutation.map(index=>deck[index]);
+      return [0,1,2].map(player=>shuffled.filter((_,index)=>index%3===player));
+    }
+    function resetGames(permutation=currentPermutation,name=dealName) {
+      pauseRun();
+      currentPermutation = permutation.slice();
+      dealName = name;
+      games.original = new E.CardGame(dealFrom(ORIGINAL,currentPermutation),{variant:'original',permutation:currentPermutation});
+      games.swapped = new E.CardGame(dealFrom(SWAPPED,currentPermutation),{variant:'one-swap',permutation:currentPermutation});
+      prediction = null;
+      peekLocked = false;
+      stacksVisible = experienceMode === 'guided';
+      predictionMessage = 'Choose a player to place the next-round button.';
+      $('peek-next').open = false;
+      milestones.splice(0,milestones.length,'Initial full states already differ.');
+      $('certificate-panel').hidden = true;
+      $('cycle-actions').hidden = true;
+      $('exploration-note').textContent = name === 'Published fixture' ? 'Published fixture loaded. The exact saved permutation—not a seed entered into another generator—is in use.' : `${name} loaded. Its exact generated permutation is retained for export; this is one exploration, not a statistical study.`;
+      logEvent('game',`${name} restarted from its exact initial hands.`);
+      renderGames();
+    }
+    function gameStatus(game) {
+      if (game.status === 'finished') return [`Finished at ${game.turn}`,`P${game.winner} survives · counts [${game.hands.map(hand=>hand.length).join(',')}]`];
+      if (game.status === 'cycle') return experienceMode==='challenge' ? [`Turn ${game.turn}`,`Counts [${game.hands.map(hand=>hand.length).join(',')}] · continuation remains yours to interpret`] : [`Certified repeat at ${game.turn}`,`State ${game.cycle.entry} = ${game.cycle.repeat} · period ${game.cycle.period}`];
+      if (game.status === 'draw') return [`Draw at ${game.turn}`,'No live hand remains.'];
+      return [game.turn ? `Turn ${game.turn}` : 'Ready · turn 0',`Counts [${game.hands.map(hand=>hand.length).join(',')}]${game.last?` · last winner P${game.last.winner}`:''}`];
+    }
+    function renderHand(hand,player,game,name) {
+      const next = hand[0];
+      const challenge = experienceMode === 'challenge';
+      const front = next ? (challenge ? '?' : tokenLabel(next)) : 'Eliminated';
+      const frontName = next ? (challenge ? 'Next card hidden until play; use the untranslated data panel' : `Next card ${tokenName(next)}`) : 'No cards remain';
+      const queue = hand.map(card=>`<span class="chip" aria-label="${stacksVisible?tokenName(card):'concealed card'}">${stacksVisible?tokenLabel(card):'●'}</span>`).join('');
+      const predicted = prediction?.game===name && prediction.player===player+1;
+      return `<section class="hand ${hand.length?'':'out'} ${game.last?.winner===player+1?'win':''} ${predicted?'predicted':''}"><div class="hand-head"><strong>Player ${player+1}</strong><b>${hand.length}</b></div><div class="front-card" aria-label="${frontName}">${front}</div><div class="queue" aria-label="Player ${player+1} ordered queue, ${stacksVisible?'revealed':'concealed'}">${queue}</div><div class="prediction-slot" id="${name}-prediction-${player+1}"></div></section>`;
+    }
+    function renderGame(name) {
+      const game = games[name];
+      $(`${name}-hands`).innerHTML = game.hands.map((hand,player)=>renderHand(hand,player,game,name)).join('');
+      const circulating = game.hands.flat().length;
+      $(`${name}-account`).innerHTML = `<div><span>Turn</span><b>${game.turn}</b></div><div><span>Circulating</span><b>${circulating}</b></div><div><span>Escrow</span><b>${game.bank.length}</b></div>`;
+      const [title,detail] = gameStatus(game);
+      $(`${name}-status`).textContent = title;
+      $(`${name}-detail`).textContent = detail;
+    }
+    function addMilestones() {
+      const a=games.original,b=games.swapped;
+      if (a.turn>=1 && b.turn>=1 && !milestones.some(item=>item.startsWith('Turn 1:'))) milestones.push(`Turn 1: original P2 shows ${a.events[0].drawn.find(x=>x.player===2).card}; swap P2 shows ${b.events[0].drawn.find(x=>x.player===2).card}. Both winners are P2.`);
+      if (a.turn>=15 && b.turn>=15 && !milestones.some(item=>item.startsWith('Turn 15:'))) milestones.push('Turn 15: first different winner and count vector — original [17,20,14], swap [14,23,14].');
+      for (const [label,game] of [['Original',a],['One-swap',b]]) for (const item of game.eliminations) {
+        const line=`${label}: P${item.player} eliminated at turn ${item.turn}.`;
+        if (!milestones.includes(line)) milestones.push(line);
+      }
+      if (a.status==='finished') { const line=`Original: P${a.winner} survives at turn ${a.turn}.`; if(!milestones.includes(line)) milestones.push(line); }
+      if (b.status==='cycle') { const line=`One-swap: full states ${b.cycle.entry} and ${b.cycle.repeat} agree; period ${b.cycle.period}.`; if(!milestones.includes(line)) milestones.push(line); }
+    }
+    function predictionGameLabel(name) { return name==='original' ? 'original' : 'one-swap'; }
+    function nextTurnData(name) {
+      const game=games[name];
+      if (!game || game.status!=='playing') return `No next round: the ${predictionGameLabel(name)} game is ${game?.status||'unavailable'}.`;
+      const preview=new E.CardGame(game.hands.map(hand=>hand.slice()),{variant:game.variant,permutation:game.permutation});
+      preview.step();
+      const reveals=preview.last.drawn.map(item=>`P${item.player} ${faceLabel(item.card)}`).join(' · ');
+      return `Next-turn data: ${reveals}. Winner: P${preview.last.winner}.`;
+    }
+    function placeStepButton() {
+      const target=prediction && games[prediction.game]?.hands[prediction.player-1]?.length ? $(`${prediction.game}-prediction-${prediction.player}`) : $('game-step-home');
+      (target||$('game-step-home')).append(gameStepButton);
+      gameStepButton.textContent=prediction ? `Play next round — P${prediction.player}` : 'Play next round';
+    }
+    function renderPrediction() {
+      const selectedGame=$('prediction-game').value;
+      document.querySelectorAll('.prediction-player').forEach(button=>{
+        const player=Number(button.dataset.player);
+        button.setAttribute('aria-pressed',String(prediction?.game===selectedGame&&prediction.player===player));
+        button.disabled=running||peekLocked||games[selectedGame].status!=='playing'||!games[selectedGame].hands[player-1].length;
+      });
+      $('prediction-status').textContent=predictionMessage;
+      $('prediction-score').textContent=`Clean reads ${predictionStats.correct}/${predictionStats.attempts} · streak ${predictionStats.streak} · best ${predictionStats.best}`;
+      $('peek-next-data').textContent=nextTurnData(selectedGame);
+      placeStepButton();
+    }
+    function choosePrediction(player) {
+      const gameName=$('prediction-game').value;
+      if (peekLocked) {
+        predictionMessage='This round was peeked. Play it without an answer to unlock the next clean prediction.';
+        renderPrediction();
+        return;
+      }
+      if (games[gameName].status!=='playing'||!games[gameName].hands[player-1].length) {
+        predictionMessage=`P${player} cannot be selected in the ${predictionGameLabel(gameName)} game.`;
+        renderPrediction();
+        return;
+      }
+      prediction={game:gameName,player};
+      predictionMessage=`Prediction set: P${player} wins the next ${predictionGameLabel(gameName)} round.`;
+      if (matchMedia('(max-width: 600px)').matches) {
+        mobileGame=gameName;
+        $('show-original-game').setAttribute('aria-pressed',String(gameName==='original'));
+        $('show-swapped-game').setAttribute('aria-pressed',String(gameName==='swapped'));
+      }
+      logEvent('prediction',predictionMessage);
+      renderGames();
+    }
+    function enterPeekMode() {
+      if (!$('peek-next').open || peekLocked) return;
+      peekLocked=true;
+      if (prediction) logEvent('prediction','Prediction withdrawn because the next-turn data was opened.');
+      prediction=null;
+      predictionMessage='Peek used: this round cannot carry an answer. Play it to unlock the next clean prediction.';
+      renderGames();
+    }
+    function renderChallengeData() {
+      const line=(name,game)=>`${name} · turn ${game.turn}\n`+game.hands.map((hand,index)=>`P${index+1} [${hand.map(card=>String(E.FACES.indexOf(card)).padStart(2,'0')).join(' ')}]`).join('\n');
+      $('challenge-state').textContent=`Strength key: A=00–03, 2=04–07, …, K=48–51; larger wins.\n\n${line('ORIGINAL',games.original)}\n\n${line('ONE-SWAP',games.swapped)}`;
+    }
+    function setExperienceMode(next) {
+      if (next===experienceMode) return;
+      experienceMode=next;
+      predictionStats.attempts=0;predictionStats.correct=0;predictionStats.streak=0;predictionStats.best=0;
+      $('mode-guided').setAttribute('aria-pressed',String(next==='guided'));
+      $('mode-challenge').setAttribute('aria-pressed',String(next==='challenge'));
+      resetGames(DATA.positions,'Published fixture');
+      logEvent('mode',next==='guided' ? 'Play & explain started from a fresh deal.' : 'Prediction from data started from a fresh deal; prior picks, progress, and score were not carried in.');
+    }
+    function renderGames() {
+      gameStepButton.remove();
+      renderGame('original');
+      renderGame('swapped');
+      addMilestones();
+      $('milestones').innerHTML = milestones.map(item=>`<li>${item}</li>`).join('');
+      const guided=experienceMode==='guided';
+      const cycleGame = games.swapped.status==='cycle' ? games.swapped : games.original.status==='cycle' ? games.original : null;
+      $('cycle-actions').hidden = !guided || !cycleGame;
+      if (cycleGame && guided) renderCertificate(cycleGame); else $('certificate-panel').hidden=true;
+      const interventions=games.original.interventions+games.swapped.interventions;
+      $('kc-note').textContent = interventions ? 'The ordinary KC-holder guarantee no longer applies: forgiveness can move KC into escrow.' : 'Under ordinary play, if this deal finishes, its survivor must be the initial holder of KC.';
+      $('policy-note').textContent = interventions ? `${interventions} forgiveness intervention${interventions===1?'':'s'} used. Circulating cards decrease only at interventions.` : 'Forgiveness is not active. Ⅰ does not contest.';
+      const sums=Object.fromEntries(Object.entries(games).map(([name,game])=>[name,game.hands.reduce((sum,hand)=>sum+hand.length*hand.length,0)]));
+      $('advanced-state').textContent = `Current square sums: original ${sums.original}; one-swap ${sums.swapped}. This is a function of hand counts. Stored numerical heights may label turns, but neither quantity decides a contest or certifies termination. Physical energy is not measured here.`;
+      const canStep=Object.values(games).some(game=>game.status==='playing'||(!guided&&game.status==='cycle'));
+      gameStepButton.disabled = running || !canStep;
+      $('run-difference').disabled = running || games.original.hands.map(h=>h.length).some((n,i)=>n!==games.swapped.hands[i].length);
+      $('run-certificate').disabled = running || (games.original.status!=='playing' && games.swapped.status!=='playing');
+      $('game-pause').disabled = !running;
+      $('toggle-stacks').textContent = stacksVisible ? 'Conceal the stacks' : 'Reveal the stacks';
+      $('original-game').dataset.mobileHidden=String(mobileGame!=='original');
+      $('swapped-game').dataset.mobileHidden=String(mobileGame!=='swapped');
+      document.querySelectorAll('.guided-control').forEach(control=>control.hidden=!guided);
+      $('milestone-record').hidden=!guided;
+      $('policy-record').hidden=!guided;
+      $('guided-notes').hidden=!guided;
+      $('published-data').hidden=!guided;
+      $('peek-next').hidden=!guided;
+      $('challenge-data').hidden=guided;
+      $('mode-title').textContent=guided ? 'Play & explain' : 'Prediction from data';
+      $('mode-note').textContent=guided ? 'A guided game with milestones, recurrence proof, and optional forgiveness.' : 'A fresh, harder deal view: exact strength queues, no guided milestones, no forgiveness, and no announced recurrence.';
+      $('prediction-intro').textContent=guided ? 'Take a position on P1, P2, or P3. You can switch until you play; the button follows your current pick.' : 'Read the untranslated strength queues, take a position, then play to settle it. No answer or progress crossed the mode boundary.';
+      if (!guided) renderChallengeData();
+      renderPrediction();
+    }
+    function renderCertificate(game) {
+      const cert=game.certificate();
+      $('certificate-panel').hidden=false;
+      $('certificate-summary').textContent=`${game.variant} phase ${cert.cycle.phaseId}: state ${cert.cycle.entryTurn} equals state ${cert.cycle.repeatTurn}; period ${cert.cycle.period}. Full ordered queues compare directly.`;
+      $('certificate-states').innerHTML=cert.cycle.entryState.map((hand,index)=>`<pre><strong>P${index+1} entry</strong>\n${hand.join(' ')}\n\n<strong>P${index+1} repeat</strong>\n${cert.cycle.repeatState[index].join(' ')}</pre>`).join('');
+      $('certificate-states').hidden=true;
+    }
+    function renderEventLog() { $('event-log').innerHTML=localEvents.slice().reverse().map(item=>`<li><strong>${item.kind}:</strong> ${item.message}</li>`).join(''); }
+    function advancePair() {
+      const picked=prediction ? {...prediction} : null;
+      const consumedPeek=peekLocked;
+      for (const game of Object.values(games)) {
+        if (game.status==='playing') game.step();
+        else if (experienceMode==='challenge'&&game.status==='cycle') game.replayStep();
+      }
+      if (picked) {
+        const winner=games[picked.game].last?.winner;
+        const correct=winner===picked.player;
+        predictionStats.attempts+=1;
+        if (correct) {
+          predictionStats.correct+=1;
+          predictionStats.streak+=1;
+          predictionStats.best=Math.max(predictionStats.best,predictionStats.streak);
+          predictionMessage=`Clean read — P${winner} won that ${predictionGameLabel(picked.game)} round. Streak ${predictionStats.streak}.`;
+        } else {
+          predictionStats.streak=0;
+          predictionMessage=`P${winner} won that ${predictionGameLabel(picked.game)} round; your pick was P${picked.player}. Try the next state.`;
+        }
+        logEvent('prediction',predictionMessage);
+        prediction=null;
+      } else if (consumedPeek) {
+        peekLocked=false;
+        $('peek-next').open=false;
+        predictionMessage='Peeked round played. A new clean prediction is available.';
+      }
+      renderGames();
+    }
+    function pauseRun() { running=false; runToken+=1; if($('game-pause')) $('game-pause').disabled=true; }
+    async function runUntil(predicate,label) {
+      if (running) return;
+      if (prediction) { prediction=null; predictionMessage='Prediction cleared for fast-forward.'; }
+      running=true;
+      const token=++runToken;
+      const start=Math.max(games.original.turn,games.swapped.turn),limit=start+100000;
+      renderGames();
+      while(running && token===runToken && !predicate() && Math.max(games.original.turn,games.swapped.turn)<limit) {
+        for(let batch=0;batch<180 && !predicate() && Math.max(games.original.turn,games.swapped.turn)<limit;batch+=1) advancePair();
+        await new Promise(resolve=>requestAnimationFrame(resolve));
+      }
+      if(token!==runToken) return;
+      running=false;
+      renderGames();
+      if(Math.max(games.original.turn,games.swapped.turn)>=limit && !predicate()) {
+        logEvent('game',`${label}: paused — unresolved at the 100,000-turn limit.`);
+        $('swapped-detail').textContent='Paused — unresolved at this computational limit.';
+      } else logEvent('game',`${label} reached.`);
+    }
+    function randomPermutation() {
+      const values=Array.from({length:51},(_,index)=>index);
+      for(let i=values.length-1;i>0;i-=1) {
+        const sample=new Uint32Array(1),limit=4294967296-(4294967296%(i+1));
+        do crypto.getRandomValues(sample); while(sample[0]>=limit);
+        const j=sample[0]%(i+1);
+        [values[i],values[j]]=[values[j],values[i]];
+      }
+      return values;
+    }
+    function downloadJSON(filename,data) {
+      const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)+'\n'],{type:'application/json'}));
+      const anchor=document.createElement('a');anchor.href=url;anchor.download=filename;anchor.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+    }
+    function renderAll() { renderSwap(); renderObserver(); renderLegend(); renderGames(); }
+
+    $('hero-swap').addEventListener('click',()=>{setDeckVariant('swapped',{scroll:true});logEvent('swap','Active positions 50 and 51 exchanged; the complete class profile remained unchanged.');});
+    $('hero-build').addEventListener('click',()=>$('observer').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}));
+    $('swap-action').addEventListener('click',()=>{setDeckVariant('swapped');logEvent('swap','Active positions 50 and 51 exchanged; the complete class profile remained unchanged.');});
+    $('restore-action').addEventListener('click',()=>{setDeckVariant('original');logEvent('swap','Original arrangement restored.');});
+    $('labels-cards').addEventListener('click',()=>setLabels('cards'));$('alphabet-cards').addEventListener('click',()=>setLabels('cards'));
+    $('labels-symbols').addEventListener('click',()=>setLabels('symbols'));$('alphabet-symbols').addEventListener('click',()=>setLabels('symbols'));
+    $('inspect-deck').addEventListener('change',event=>{setDeckVariant(event.target.value);logEvent('swap',`Inspector changed to ${event.target.value}; its separate observation ledger was restored.`);});
+    $('observation-mode').addEventListener('change',updateCounter);$('include-rank').addEventListener('change',updateCounter);
+    $('hide-faces').addEventListener('click',()=>{facesHidden=!facesHidden;$('hide-faces').textContent=facesHidden?'Show all faces':'Hide the faces';logEvent(facesHidden?'hide':'reveal',`Faces ${facesHidden?'hidden':'shown'}; recorded constraints retained.`);renderObserver();});
+    $('clear-reveals').addEventListener('click',()=>{reveals[currentDeck].clear();logEvent('clear',`${currentDeck} recorded reveals cleared.`);renderObserver();});
+    $('mode-guided').addEventListener('click',()=>setExperienceMode('guided'));
+    $('mode-challenge').addEventListener('click',()=>setExperienceMode('challenge'));
+    gameStepButton.addEventListener('click',advancePair);
+    $('prediction-game').addEventListener('change',event=>{
+      prediction=null;
+      predictionMessage=peekLocked ? 'This round was peeked. Play it without an answer to unlock the next clean prediction.' : `Choose a player for the ${predictionGameLabel(event.target.value)} game.`;
+      if(matchMedia('(max-width: 600px)').matches){mobileGame=event.target.value;$('show-original-game').setAttribute('aria-pressed',String(mobileGame==='original'));$('show-swapped-game').setAttribute('aria-pressed',String(mobileGame==='swapped'));}
+      renderGames();
+    });
+    document.querySelectorAll('.prediction-player').forEach(button=>button.addEventListener('click',()=>choosePrediction(Number(button.dataset.player))));
+    $('peek-next').addEventListener('toggle',enterPeekMode);
+    $('run-difference').addEventListener('click',()=>runUntil(()=>games.original.hands.some((hand,index)=>hand.length!==games.swapped.hands[index].length),'First count difference'));
+    $('run-certificate').addEventListener('click',()=>runUntil(()=>games.original.status!=='playing'&&games.swapped.status!=='playing','Published outcome certificate'));
+    $('game-pause').addEventListener('click',()=>{pauseRun();logEvent('game','Fast-forward paused by reader.');renderGames();});
+    $('game-restart').addEventListener('click',()=>resetGames());
+    $('toggle-stacks').addEventListener('click',()=>{stacksVisible=!stacksVisible;logEvent(stacksVisible?'reveal':'hide',`Existing queues ${stacksVisible?'revealed':'concealed'} without reset or advancement.`);renderGames();});
+    $('show-original-game').addEventListener('click',()=>{mobileGame='original';$('show-original-game').setAttribute('aria-pressed','true');$('show-swapped-game').setAttribute('aria-pressed','false');renderGames();});
+    $('show-swapped-game').addEventListener('click',()=>{mobileGame='swapped';$('show-original-game').setAttribute('aria-pressed','false');$('show-swapped-game').setAttribute('aria-pressed','true');renderGames();});
+    $('compare-states').addEventListener('click',()=>{$('certificate-states').hidden=!$('certificate-states').hidden;});
+    $('download-certificate').addEventListener('click',()=>{const game=games.swapped.status==='cycle'?games.swapped:games.original;downloadJSON('Invariant_Recurrence_Certificate.json',game.certificate());});
+    $('continue-cycle').addEventListener('click',async()=>{const game=games.swapped.status==='cycle'?games.swapped:games.original;if(!game||running)return;const period=game.cycle.period;running=true;renderGames();for(let i=0;i<period;i+=1){game.replayStep();if(i%180===0)await new Promise(resolve=>requestAnimationFrame(resolve));}running=false;logEvent('game',`Certified ${period}-turn cycle replayed unchanged.`);renderGames();});
+    $('use-forgiveness').addEventListener('click',()=>{if(experienceMode!=='guided')return;const game=games.swapped.status==='cycle'?games.swapped:games.original.status==='cycle'?games.original:null;if(!game)return;const live=game.hands.filter(hand=>hand.length).length;game.forgive();logEvent('forgiveness',`${live} cards moved to escrow at exact recurrence; a new phase ledger began.`);renderGames();});
+    $('new-exploration').addEventListener('click',()=>resetGames(randomPermutation(),'Cryptographic Fisher–Yates exploration'));
+
+    const originalRank=E.rankDeck(DATA.deck),swappedRank=E.rankDeck([...SWAPPED,'2C']);
+    if(originalRank!==14134725141735n||swappedRank!==14134725141734n) throw new Error('Published rank invariant failed.');
+    if(ORIGINAL.some((card,index)=>E.TOKENS[card].classId!==E.TOKENS[SWAPPED[index]].classId)) throw new Error('Complete weight profile changed.');
+    resetGames(DATA.positions,'Published fixture');
+    setDeckVariant('original');
+    renderAll();
+
+    const modelContext=document.modelContext;
+    if(modelContext?.registerTool) {
+      const lifecycle=new AbortController();
+      try { modelContext.registerTool({name:'read_invariant_pair',description:'Read the current original and one-swap game states.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true},execute:()=>({original:games.original.snapshot(),swapped:games.swapped.snapshot()})},{signal:lifecycle.signal}); } catch {}
+      window.addEventListener('pagehide',()=>lifecycle.abort(),{once:true});
+    }
+  })();
+  </script>
+</body>
+</html>

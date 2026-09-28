@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "total_assertions": 837,
+  "groups": {
+    "signed_weighted_recovery": 1,
+    "magnitudes_not_monotone": 1,
+    "independent_error_amplification": 1,
+    "inside_disk_iff_right_half_strip": 12,
+    "pole_phase_formula": 12,
+    "phase_tangent_upper_bound": 12,
+    "nonzero_phase": 12,
+    "real_rational_model": 3,
+    "original_residue_from_polynomial_quotient": 12,
+    "no_pole_alias_in_synthetic_sector": 9,
+    "no_positive_real_image": 9,
+    "decimated_coefficients_from_independent_recurrences": 450,
+    "decimated_residue_nonzero": 72,
+    "decimated_residue_from_quotient": 72,
+    "zeta_dictionary_residue_formula": 72,
+    "even_odd_filter_rational_identity": 18,
+    "warning_poles_collide_under_square": 1,
+    "warning_odd_residues_cancel": 1,
+    "warning_even_residue_survives": 1,
+    "warning_odd_subsequence_zero": 30,
+    "warning_even_subsequence_alternates": 30,
+    "H_regular_part_even_identity": 3,
+    "H_regular_part_odd_identity": 3
+  },
+  "script_sha256": "47ff21167ab14da57796dde50771b996956649407e116df58159908261813951",
+  "scope": "Exact finite rational identities and synthetic pole models; no actual-zeta computation.",
+  "not_certified": [
+    "Infinite progression RH equivalences or meromorphic continuation",
+    "A one-sided source bound for any parity",
+    "New Riemann-zero, Li, Widder, or publication certification"
+  ]
+}

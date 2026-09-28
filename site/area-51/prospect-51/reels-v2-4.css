@@ -1,0 +1,44 @@
+/* Five rectangular reel windows: the paper band moves behind a fixed glass payline. */
+body[data-game=prospect] .machine{border:2px solid #aaa48e;border-radius:13px;background:linear-gradient(115deg,#31483a,#153528 35%,#1e3a2e);box-shadow:inset 0 1px 0 #fff8,0 14px 35px #0005}
+body[data-game=prospect] .machine-top{background:linear-gradient(180deg,#263d30,#0d281f);border-bottom:1px solid #97916a}
+body[data-game=prospect] .reel-stage{position:relative;isolation:isolate;margin:12px 12px 0;border:1px solid #b8b29c;border-radius:5px;background:linear-gradient(120deg,#d1c9ac,#747869 8%,#a6a895 30%,#666f61 70%,#c8c7ad);box-shadow:inset 0 1px 0 #ffffdaaa,0 4px 9px #0005}
+body[data-game=prospect] .rotors{--cell-h:88px;--window-h:208px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;padding:9px 9px 10px;perspective:none}
+body[data-game=prospect] .rotor{min-width:0;position:relative}
+body[data-game=prospect] .rotor-label{color:#162c23;line-height:1;letter-spacing:.08em;font-size:9px;margin:0 0 5px;text-shadow:0 1px #f3ebcaaa}
+body[data-game=prospect] .drum{display:block;border:1px solid #252d24;border-radius:3px;padding:4px;background:linear-gradient(90deg,#fff3ce,#767c69 5%,#25362c 13%,#25362c 87%,#b4b7a1 95%,#f2e9c3);box-shadow:inset 0 1px 1px #fff9,0 1px 0 #ffffff66;overflow:hidden}
+body[data-game=prospect] .drum::before,body[data-game=prospect] .drum::after{display:none}
+body[data-game=prospect] .reel-window{height:var(--window-h);border-radius:1px;background:#eee9d7;box-shadow:inset 0 0 0 1px #0d1e16;contain:layout paint;transform:none}
+body[data-game=prospect] .reel-window::before{z-index:4;background:linear-gradient(180deg,#132118ed,#354033a6 7%,#74796755 16%,#d5d1ba22 30%,transparent 42%,transparent 59%,#d5d1ba22 70%,#74796755 84%,#354033a6 93%,#132118ed);box-shadow:inset 4px 0 7px #14241e77,inset -4px 0 7px #14241e77}
+body[data-game=prospect] .reel-window::after{z-index:5;height:var(--cell-h);border-block:1px solid #b15e4d99;background:linear-gradient(105deg,#ffffff18,transparent 40%,#ffffff24 75%,transparent);box-shadow:0 -1px 0 #f5f0d344,0 1px 0 #f5f0d344}
+body[data-game=prospect] :is(.reel-rest,.reel-strip){position:absolute;left:0;right:0;top:calc(50% - var(--cell-h)/2)}
+body[data-game=prospect] .reel-rest{transform:translateY(calc(-1 * var(--cell-h)))}
+body[data-game=prospect] .reel-cell{height:var(--cell-h);background:linear-gradient(90deg,#d2cdb6,#faf5df 22%,#fff9e6 50%,#f3efd8 78%,#cac5ad);overflow:hidden}
+body[data-game=prospect] .reel-cell::after{left:0;right:0;background:#706b4b22}
+body[data-game=prospect] .rotor p51-token{--reel-size:66px;pointer-events:none;filter:drop-shadow(0 1px 1px #13201933)}
+body[data-game=prospect] :is(.reel-above,.reel-below){opacity:1;filter:none;pointer-events:none}
+body[data-game=prospect] .reel-above p51-token{transform:perspective(220px) rotateX(34deg);transform-origin:50% 100%}
+body[data-game=prospect] .reel-below p51-token{transform:perspective(220px) rotateX(-34deg);transform-origin:50% 0}
+body[data-game=prospect] .reel-strip{display:none;backface-visibility:visible;filter:none;pointer-events:none}
+body[data-game=prospect] .is-spinning .reel-strip{display:block;will-change:transform}
+body[data-game=prospect] .is-spinning .reel-rest{visibility:hidden}
+body[data-game=prospect] .is-spinning .drum{box-shadow:inset 0 1px 1px #fff9,0 1px 0 #ffffff66;border-color:#252d24}
+body[data-game=prospect] .is-spinning .reel-window{box-shadow:inset 0 0 0 1px #0d1e16}
+body[data-game=prospect] .reel-face{cursor:pointer;touch-action:manipulation}
+body[data-game=prospect] .reel-face.card-target::after{content:'···';height:17px;bottom:0;right:0;left:0;width:auto;border:0;border-radius:0;background:#183426e6;color:#f5e4b4;font:700 15px/12px system-ui;box-shadow:none;pointer-events:none}
+body[data-game=prospect] .reel-face[aria-expanded=true]{outline:3px solid #b78430;outline-offset:-3px}
+body[data-game=prospect] .held .drum{border-color:#e8b951;background:linear-gradient(90deg,#ffe3a3,#b99149 8%,#39402e 15%,#39402e 85%,#ceae65 94%,#ffe3a3)}
+body[data-game=prospect] .hold{width:100%;min-height:44px;padding:8px 1px;margin-top:7px;border:1px solid #172a20;border-radius:3px;background:linear-gradient(#263d2f,#12251b);color:#f5ebce;font-size:10px;letter-spacing:.02em;box-shadow:inset 0 1px 0 #a4aa8477,0 1px 1px #14221988}
+body[data-game=prospect] .held .hold{background:linear-gradient(#fff0b6,#dfb865);color:#173224;border-color:#7e683a;box-shadow:0 0 9px #ffdf7788,inset 0 1px #fff7d7}
+body[data-game=prospect] .reel-card-actions{position:absolute;z-index:20;left:6px;right:6px;bottom:6px;top:auto;width:auto;max-width:none;padding:10px 12px;border:1px solid #dec995;border-radius:5px;background:#102c22f5;box-shadow:0 -4px 22px #0007;overflow-y:auto;overscroll-behavior:contain;font-size:12px}
+body[data-game=prospect] .reel-card-actions .card-menu-head{gap:9px;margin:0 0 4px;align-items:center}
+body[data-game=prospect] .reel-card-actions .card-menu-head>p51-token{--p51-size:27px;flex:none}
+body[data-game=prospect] .reel-card-actions .card-menu-head strong{flex:1;font:600 13px system-ui}
+body[data-game=prospect] .reel-card-actions .card-menu-head button{min-width:44px;min-height:44px}
+body[data-game=prospect] .reel-card-actions .card-menu-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+body[data-game=prospect] .reel-card-actions .card-menu-actions button{min-height:44px;padding:8px;font-size:12px}
+body[data-game=prospect] .reel-card-actions p{font-size:11px;margin:0 0 6px;line-height:1.4}
+body[data-game=prospect] .reel-card-actions .card-decision-readout{margin:0 0 7px}
+body[data-game=prospect] .tap-hint{font-size:11px;color:#c0cebf;text-align:center;margin-top:9px}
+@media(max-width:620px){body[data-game=prospect] .reel-stage{margin-inline:9px}body[data-game=prospect] .rotors{--cell-h:68px;--window-h:166px;gap:5px;padding:7px 5px 8px}body[data-game=prospect] .drum{padding:3px 1px}body[data-game=prospect] .rotor p51-token{--reel-size:44px}body[data-game=prospect] .reel-card-actions{padding:7px 9px}}
+@media(max-width:350px){body[data-game=prospect] .reel-stage{margin-inline:6px}body[data-game=prospect] .rotors{--cell-h:62px;--window-h:152px;gap:4px;padding-inline:4px}body[data-game=prospect] .rotor p51-token{--reel-size:38px}body[data-game=prospect] .hold{font-size:9px}}
+@media(prefers-reduced-motion:reduce){body[data-game=prospect] .reel-strip{will-change:auto}}

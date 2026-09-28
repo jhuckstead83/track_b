@@ -1,0 +1,347 @@
+{
+  "edition": "5.2",
+  "scope": "Editorial/interface delta, preservation, exact algebra of the new displays, internal consistency of the new twin tables, and document build if present. No v5.0 interval certificate rerun; twin computations are replayed by the evidence programs.",
+  "python": "3.11.15",
+  "sources": {
+    "READING_VOLUME": {
+      "v51_sha256": "cdfbc51e986471e3a403be16726a83a36eeced4e04e43b2fd4852fa46137fcac",
+      "v52_sha256": "26cd4f4a382466b54a700fa93fba695d21bcb49dae080a9907f3d3fe0870525a",
+      "equation_tags_v51": 274,
+      "equation_tags_v52": 274,
+      "status_marks_v51": 47,
+      "status_marks_v52": 52
+    },
+    "TECHNICAL_DOSSIER": {
+      "v51_sha256": "1426ee1c73e6ccafa2f21debe207c833918d8d84bc93702564a26fcc875785e0",
+      "v52_sha256": "dd417563dac47bcf2650160af582abad1e0969c2cbeeaff17a3b1ff0d2208845",
+      "equation_tags_v51": 908,
+      "equation_tags_v52": 911,
+      "status_marks_v51": 4,
+      "status_marks_v52": 14
+    }
+  },
+  "build": {
+    "READING": "not built in this run",
+    "DOSSIER": "not built in this run"
+  },
+  "checks": [
+    {
+      "name": "READING_VOLUME: inherited equation-tag sequence preserved",
+      "pass": true
+    },
+    {
+      "name": "READING_VOLUME: new equation tags are exactly []",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "READING_VOLUME: no duplicate equation tags",
+      "pass": true
+    },
+    {
+      "name": "READING_VOLUME: inherited status-tag sequence preserved as a subsequence",
+      "pass": true
+    },
+    {
+      "name": "READING_VOLUME: has abstract and summary",
+      "pass": true
+    },
+    {
+      "name": "READING_VOLUME: no dependence on companion entropy article",
+      "pass": true
+    },
+    {
+      "name": "READING_VOLUME: inherited replay scope disclosed",
+      "pass": true
+    },
+    {
+      "name": "READING_VOLUME: edition string is v5.2 and no stale v5.1 edition claim",
+      "pass": true
+    },
+    {
+      "name": "READING_VOLUME: v5.1 reference numbers preserved, none added",
+      "pass": true,
+      "detail": [
+        "116",
+        "117",
+        "118",
+        "119",
+        "120"
+      ]
+    },
+    {
+      "name": "READING_VOLUME: [66] carries the arXiv title \"... simple and on the critical line\"",
+      "pass": true
+    },
+    {
+      "name": "READING_VOLUME: cites no reference beyond its own list",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "READING_VOLUME: no \"|\" inside $...$ in pipe-table rows",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "READING_VOLUME: no non-ASCII character that v5.1 did not already typeset",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: inherited equation-tag sequence preserved",
+      "pass": true
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: new equation tags are exactly [TW.1, TW.2, TW.3]",
+      "pass": true,
+      "detail": [
+        "TW.1",
+        "TW.2",
+        "TW.3"
+      ]
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: no duplicate equation tags",
+      "pass": true
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: inherited status-tag sequence preserved as a subsequence",
+      "pass": true
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: has abstract and summary",
+      "pass": true
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: no dependence on companion entropy article",
+      "pass": true
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: inherited replay scope disclosed",
+      "pass": true
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: edition string is v5.2 and no stale v5.1 edition claim",
+      "pass": true
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: v5.1 reference numbers preserved, then 121-124",
+      "pass": true,
+      "detail": [
+        "120",
+        "121",
+        "122",
+        "123",
+        "124"
+      ]
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: [66] carries the arXiv title \"... simple and on the critical line\"",
+      "pass": true
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: [66] carries the v2 88.76% note and points to [121]",
+      "pass": true
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: [121] is cited in the text",
+      "pass": true
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: [122] is cited in the text",
+      "pass": true
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: [123] is cited in the text",
+      "pass": true
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: [124] is cited in the text",
+      "pass": true
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: no \"|\" inside $...$ in pipe-table rows",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: no non-ASCII character that v5.1 did not already typeset",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "all v5.1 status rows preserved verbatim in the Reading Volume",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Dossier has section 69A",
+      "pass": true
+    },
+    {
+      "name": "Dossier has section 69B",
+      "pass": true
+    },
+    {
+      "name": "Dossier has section 69C",
+      "pass": true
+    },
+    {
+      "name": "Reading Volume points to Dossier §69A-§69C and cites (TW.1), (TW.3)",
+      "pass": true
+    },
+    {
+      "name": "Reading Volume (R.2) paragraph carries both a \\PROVED{} and an \\EVID{} marker",
+      "pass": true
+    },
+    {
+      "name": "Dossier: (TW.1) and (TW.2) followed by \\PROVED{}",
+      "pass": true
+    },
+    {
+      "name": "Dossier: (TW.3) followed by \\EVID{}",
+      "pass": true
+    },
+    {
+      "name": "preamble_v52_reading: footer reads v5.2 and RH OPEN",
+      "pass": true
+    },
+    {
+      "name": "preamble_v52_dossier: footer reads v5.2 and RH OPEN",
+      "pass": true
+    },
+    {
+      "name": "fold identities: q=s(1-s)=1/4+z^2=-2T_{s-1} with z=gamma-i*delta (exact)",
+      "pass": true
+    },
+    {
+      "name": "(TW.2) kernel identity and series 0, -1/4, +1/4, -7/32 (exact)",
+      "pass": true,
+      "detail": [
+        "0",
+        "-1/4",
+        "1/4",
+        "-7/32"
+      ]
+    },
+    {
+      "name": "(TW.1) parity expansion exact on a degree-5 real polynomial",
+      "pass": true
+    },
+    {
+      "name": "Theorem 69C.1: g_c odd under conjugation; first-order defect 2c*eta/(Q^2+c^2)",
+      "pass": true
+    },
+    {
+      "name": "kappa = 0.2840790438...",
+      "pass": true,
+      "detail": 0.28407904384041227
+    },
+    {
+      "name": "Dossier c(n) table matches Dirichlet inversion of the twin coefficients",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Dossier off-line table: 16 rows, delta and ratio columns recompute",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "median ratio over the 15 resolved twin zeros is 0.806 (printed 0.81)",
+      "pass": true,
+      "detail": 0.806
+    },
+    {
+      "name": "|q_0| = 7344.72 and theta_max = 7.1997e-3",
+      "pass": true,
+      "detail": [
+        7344.723507125386,
+        0.007199712798045772
+      ]
+    },
+    {
+      "name": "sector bound floor(pi/(2 theta_max)) = 218 and the tail bound 2.8e-3 < theta_max",
+      "pass": true
+    },
+    {
+      "name": "Löwner centres are 0.97, 1.00, 1.03 times |q_0|",
+      "pass": true
+    },
+    {
+      "name": "first failing rung sits inside the scanned range 0.52 <= x <= 43,264",
+      "pass": true
+    },
+    {
+      "name": "(TW.3) at t=3e12, a=delta=0.1 gives k ~ 1e27",
+      "pass": true,
+      "detail": "1.17e+27"
+    },
+    {
+      "name": "number 16588 appears in both volumes",
+      "pass": true
+    },
+    {
+      "name": "number 16589 appears in both volumes",
+      "pass": true
+    },
+    {
+      "name": "number N=105 appears in both volumes",
+      "pass": true
+    },
+    {
+      "name": "number 10^{-141} appears in both volumes",
+      "pass": true
+    },
+    {
+      "name": "number 10^{27} appears in both volumes",
+      "pass": true
+    },
+    {
+      "name": "number 218 appears in the Dossier",
+      "pass": true
+    },
+    {
+      "name": "number 43264 appears in the Dossier",
+      "pass": true
+    },
+    {
+      "name": "number 7140.0 appears in the Dossier",
+      "pass": true
+    },
+    {
+      "name": "number N=100 appears in the Dossier",
+      "pass": true
+    },
+    {
+      "name": "number 0.808517182+85.699348485i appears in the Dossier",
+      "pass": true
+    },
+    {
+      "name": "evidence files match provenance/v5_2/evidence/SHA256SUMS.txt",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "evidence census: 501 on-line zeros and 16 off-line pairs to T=640",
+      "pass": true,
+      "detail": [
+        501,
+        16
+      ]
+    },
+    {
+      "name": "evidence rungs3_T640.json: sector bound 218 and k* of rows 0-9, 11-14 match the printed table",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "row 10 is computed by zero10.py with the exact kernel within +-40, scanning +-3",
+      "pass": true
+    }
+  ],
+  "passed": 67,
+  "failed": [],
+  "status": "PASS"
+}

@@ -1,35 +1,56 @@
 cff-version: 1.2.0
-message: "If you use this repository, please cite the software release and associated manuscript."
-title: "Transient Rational Locking in Modular Logarithmic Orbits"
+message: "If you use this repository, please cite it and the papers it carries."
+title: "Track B — Area 51 research: papers, exhibits and verification"
 type: software
 authors:
   - family-names: "Huckstead"
-    given-names: "J."
+    given-names: "Jeffery Lyn"
     orcid: "https://orcid.org/0009-0007-0234-2177"
-repository-code: "https://github.com/jhuckstead83/transient-rational-locking"
-url: "https://github.com/jhuckstead83/transient-rational-locking"
-license: "MIT"
-version: "v1.0.0"
-date-released: 2026-03-17
+    affiliation: "Cerebral Graphix"
+repository-code: "https://github.com/jhuckstead83/track_b"
+url: "https://cerebralgraphix.com/area-51/"
+license: CC-BY-4.0
+version: "2.8.3"
+date-released: 2026-09-28
 abstract: >-
-  A reproducible research repository containing the Track A manuscript and the
-  Track B survey engine for studying transient rational locking in modular
-  logarithmic orbits, including the torus-sawtooth dephasing law, modulus-as-lens
-  diagnostics, and automated atlas generation.
+  The Area 51 research line of Cerebral Graphix: the 51 SEDAPS reversible card rule and its
+  turn-indexed reachability certificates, the 51 Twins exhibit and its Davenport-Heilbronn
+  calibration, the Formula 51 deduction, and the TN Postmaster Volume I v5.2 source edition,
+  with independent replays, complete state censuses, a proof that the reachability search is
+  complete, exact first failing Loewner sizes for the twin, and a re-execution of the inherited
+  v5.0 source-rung certificates. RH status: open.
 keywords:
-  - arithmetic dynamics
-  - irrational rotations
-  - Diophantine approximation
-  - modular geometry
-  - continued fractions
+  - card games
+  - War (card game)
+  - reachability
+  - certificates
+  - Widder criterion
+  - Davenport-Heilbronn function
   - experimental mathematics
-preferred-citation:
-  type: article
-  title: "Transient Rational Locking in Modular Logarithmic Orbits"
-  authors:
-    - family-names: "Huckstead"
-      given-names: "J."
-      orcid: "https://orcid.org/0009-0007-0234-2177"
-  year: 2026
-  publisher: "Zenodo"
-  repository-code: "https://github.com/jhuckstead83/transient-rational-locking"
+references:
+  - type: article
+    title: "Triangular-n Postmaster, Volume I"
+    authors:
+      - family-names: "Huckstead"
+        given-names: "Jeffery"
+    doi: "10.5281/zenodo.21968915"
+  - type: article
+    title: "The Line Game | Surprise Is Not Meaning"
+    authors:
+      - family-names: "Huckstead"
+        given-names: "Jeffery Lyn"
+    doi: "10.5281/zenodo.20792808"
+  - type: article
+    title: "Project 51: Reading the Record Across Rules"
+    authors:
+      - family-names: "Huckstead"
+        given-names: "Jeffery Lyn"
+    doi: "10.5281/zenodo.22862811"
+  - type: article
+    title: "Cycles in War"
+    authors:
+      - family-names: "Spivey"
+        given-names: "Michael Z."
+    journal: "INTEGERS"
+    volume: 10
+    year: 2010

@@ -1,0 +1,72 @@
+{
+ "document": "TN Postmaster Research Volume I v0.5 synthesis (10.5281/zenodo.21968858)",
+ "checks": [
+  {
+   "check": "(5.1) floor(r_n/(n-1)) = 1_P(n) for 2 <= n < 400",
+   "pass": true
+  },
+  {
+   "check": "(6.1) reduced numerator of T_j/j! is j+1 at odd primes j+1, else 1 (2 <= j < 300)",
+   "pass": true
+  },
+  {
+   "check": "(5.3) Willans' formula gives p_1..p_9",
+   "pass": true
+  },
+  {
+   "check": "(8.1) n^2 = T_n + T_{n-1}, 2n-1 = T_n - T_{n-2}",
+   "pass": true
+  },
+  {
+   "check": "(10.4) Psi_sq(X) = sum_j Theta_sq(X^(1/j)) at X = 10^8",
+   "pass": true,
+   "detail": [
+    10013.396693,
+    10013.396693
+   ]
+  },
+  {
+   "check": "(19.4) (1/2)(x-1)(y-1) = 2(x+y)^2 is G = 0",
+   "pass": true
+  },
+  {
+   "check": "(19.6)-(19.8) tangent slope -4/3, y''=32/27, curvature 32/125, chord slope -(27+5 sqrt17)/38",
+   "pass": true
+  },
+  {
+   "check": "(20.4k) R_{3,2} - sin = -11 t^7/50400 + O(t^9)",
+   "pass": true
+  },
+  {
+   "check": "(20.4c) R143L table F(M)/M^2 reproduces all six printed rows",
+   "pass": true
+  },
+  {
+   "check": "(20.4e) mod-4 densities 1/pi^2 (classes 1, 3) and 1/(2 pi^2) (classes 0, 2)",
+   "pass": true,
+   "detail": [
+    0.0506608,
+    0.101321,
+    0.0506607,
+    0.1013212
+   ]
+  },
+  {
+   "check": "(20.4t) branch values of x^5 - x + b lie on |b| = 4/5^(5/4)",
+   "pass": true
+  },
+  {
+   "check": "(20.5) H_sigma = log zeta - sigma zeta'/zeta = sum over primes (sigma = 3)",
+   "pass": true,
+   "detail": [
+    0.6785022218663231,
+    0.6785022217125399
+   ]
+  },
+  {
+   "check": "(18.2)-(18.3) det J_F = -2 identically; F = (-1/4, 0, 0) has exactly the three stated preimages",
+   "pass": true
+  }
+ ],
+ "status": "PASS"
+}

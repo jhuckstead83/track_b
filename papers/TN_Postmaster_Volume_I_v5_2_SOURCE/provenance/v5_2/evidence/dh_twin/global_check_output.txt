@@ -1,0 +1,10 @@
+k=219: x in [0.524, 43264], 5661 grid pts, min refined scaled G = 1.0000e+0 at x=0.526110, negative minima: 0
+k=500: x in [0.524, 43264], 5661 grid pts, min refined scaled G = 1.0000e+0 at x=0.526110, negative minima: 0
+k=1000: x in [0.524, 43264], 5661 grid pts, min refined scaled G = 1.0000e+0 at x=0.526110, negative minima: 0
+k=3000: x in [0.524, 43264], 5661 grid pts, min refined scaled G = 1.0000e+0 at x=0.526110, negative minima: 0
+k=8000: x in [0.524, 43264], 5661 grid pts, min refined scaled G = 1.0000e+0 at x=0.526110, negative minima: 0
+k=12000: x in [0.524, 43264], 5661 grid pts, min refined scaled G = 9.8932e-1 at x=7064.485237, negative minima: 0
+k=16588: x in [0.524, 43264], 5833 grid pts, min refined scaled G = 1.7593e-4 at x=7140.067301, negative minima: 0
+k=16589: x in [0.524, 43264], 5833 grid pts, min refined scaled G = -4.6601e-5 at x=7140.066257, negative minima: 1
+
+[exited with code 0]

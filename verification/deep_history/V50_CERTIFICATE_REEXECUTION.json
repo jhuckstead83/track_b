@@ -1,0 +1,131 @@
+{
+ "title": "TN Postmaster v5.0 certificate re-execution (Team B, 27-28 Sep 2026)",
+ "package": "provenance/v5_0 of TN_Postmaster_Volume_I_v5_2_SOURCE (copied unchanged to a scratch directory)",
+ "environment": {
+  "python": "3.11",
+  "python-flint": "0.9.0",
+  "sympy": "1.14.0",
+  "decimal": "CPython libmpdec 2.5.1",
+  "tesseract": "5.3.4"
+ },
+ "replay_math": {
+  "command": "python3 qa/replay_math.py",
+  "exit_code": 0,
+  "wall_seconds": 184,
+  "steps": [
+   {
+    "name": "weighted",
+    "exit_code": 0,
+    "script_sha256": "9e64a83a8628dd7fc03910c994285bbfd1126325c133e0f919fffc636ee6e417"
+   },
+   {
+    "name": "common_source",
+    "exit_code": 0,
+    "script_sha256": "e4a5d16ed1fb9a71bbefe274e363ed2d6f79c066a3d274a0f4d79552a42943b2"
+   },
+   {
+    "name": "integrated_bridges",
+    "exit_code": 0,
+    "script_sha256": "facf73c36880383c3043ac2b87361f8c21a1b4981e50ee4bf0c214f614bc0eee"
+   },
+   {
+    "name": "sine_bridge",
+    "exit_code": 0,
+    "script_sha256": "45ff50f79d7496cbd10129287073f82a92c12ab3645db44c0d6b17a3f910a165"
+   },
+   {
+    "name": "lighthouse_tieout",
+    "exit_code": 0,
+    "script_sha256": "c121a67de967298691dbc072d87871502d51c2a6dbfe0661715806670bab31b2"
+   },
+   {
+    "name": "blue_sharpening",
+    "exit_code": 0,
+    "script_sha256": "5b0c5192e3d9b6ea7650960a47d8f6629a1de0ea1508843e318f537713f690a7"
+   },
+   {
+    "name": "orange_curvature",
+    "exit_code": 0,
+    "script_sha256": "607fbe26f34b4c2fd573fab622b63fd577461ba8cfb5486361cb2e516514fec1"
+   },
+   {
+    "name": "green_blue_merge",
+    "exit_code": 0,
+    "script_sha256": "fb0136c40989bcf700cb8bcf071bf48917e640d1dd0005e72d932168e0dbe214"
+   },
+   {
+    "name": "green_orange_comparison",
+    "exit_code": 0,
+    "script_sha256": "97f0138981a59bb82dd69917897e7debdd9ccc5fc6462d5becc6f88788532d71"
+   },
+   {
+    "name": "lighthouse_progressions",
+    "exit_code": 0,
+    "script_sha256": "47ff21167ab14da57796dde50771b996956649407e116df58159908261813951"
+   },
+   {
+    "name": "gamma_bridge",
+    "exit_code": 0,
+    "script_sha256": "67be4903b972adf53c64bf024e17c2d734a402f6d6feb24210e20cf90b7058cc"
+   },
+   {
+    "name": "source_rungs_arb",
+    "exit_code": 0,
+    "script_sha256": "1247b80a33795b916142baa141184d5a2a7ed395385f7c74cc2254e1b76f0371"
+   },
+   {
+    "name": "source_rungs_decimal",
+    "exit_code": 0,
+    "script_sha256": "d4a82cad93f7602c21361bb7fe64712ba3cdfc075536732928fb066ad71af1c0"
+   },
+   {
+    "name": "r10c_orbit",
+    "exit_code": 0,
+    "script_sha256": "e2117b6c78d10a1921bd7f8be927e9dd7ef1e92189f362103e885b3bf5944b1d"
+   },
+   {
+    "name": "figure_claims",
+    "exit_code": 0,
+    "script_sha256": "ba1173d03accbbf70bd1418c30a8e1131fb11d566faec30b3431c4f22506711d"
+   },
+   {
+    "name": "source_rungs_cross_backend",
+    "exit_code": 0,
+    "script_sha256": "f9a82902a4d2043e237bc33469e22371fdd0dca0cb0169968aa14b19c6bce495"
+   }
+  ],
+  "all_steps_exit_0": true,
+  "note": "Every regenerated receipt equals the shipped one apart from timing fields (first pass, 27 Sep)."
+ },
+ "second_parameter_runs": {
+  "arb": "--precision 384 --degree 22 --step 1/128",
+  "decimal": "--digits 100 --degree 24 --step 1/128 --em-terms 40 --em-bernoulli 26 --psi-shift 40 --psi-bernoulli 34 --remainder-exponent -50",
+  "wall_seconds": 249,
+  "comparison_with_shipped_second_receipts": {
+   "RERUN_arb_second.json": {
+    "shipped": "RECEIPT_arb_second.json",
+    "identical_except_timing_and_file_fields": true,
+    "shipped_sha256": "362d78e486af47cb6129fea46a1fadd3fa16293bf516dd45649ffaf4d2a8fd0c",
+    "rerun_sha256": "4781b59e2ba7a3d9a6c4af27b105728148f6249c1747425eda1ff72c4ffc0ac1"
+   },
+   "RERUN_decimal_second.json": {
+    "shipped": "RECEIPT_decimal_second.json",
+    "identical_except_timing_and_file_fields": true,
+    "shipped_sha256": "2830376945efe42e66db637e2aab0c9741268585ec7e57f5e88d992d26446e79",
+    "rerun_sha256": "bdec2829cc2ce0c481f8c1f57dc2d7c04ff8f77da3c3403f47c55b84680373d1"
+   },
+   "RERUN_CROSS_SECOND.json": {
+    "shipped": "CROSS_BACKEND_SECOND.json",
+    "identical_except_timing_and_file_fields": true,
+    "shipped_sha256": "7ca9de0d2a89de2a2c3bbe792f6b887531eceec3b692345ff2f6bb11cbe3ada0",
+    "rerun_sha256": "155670296490ae595cebb6696a3fe3c02fa4cf5e2b1e89b10b5fe2381ccb61ef"
+   }
+  }
+ },
+ "figure_audit": {
+  "mode": "shipped OCR cache, figures present",
+  "result": "PASS: 85 cited figures, 0 orphans",
+  "live_ocr_rerun": "not completed in this session"
+ },
+ "scope": "Re-executes the shipped certificates for the source rungs W2-W6 with both backends at the shipped parameters and at the second parameter set. It adds no new rung; W7 via F^(14) remains OPEN. RH STATUS: OPEN."
+}

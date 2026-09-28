@@ -1,0 +1,285 @@
+PASS  no version strings in Reading Volume
+PASS  no version strings in Dossier
+PASS  no in-house term: 'author review'
+PASS  no in-house term: 'author-review'
+PASS  no in-house term: 'grading-review'
+PASS  no in-house term: 'red team'
+PASS  no in-house term: 'blue team'
+PASS  no in-house term: 'green team'
+PASS  no in-house term: 'supersedes the earlier'
+PASS  no "technical §" left in Reading Volume
+PASS  Dossier convention stated once in Reading Volume
+PASS  reader headings unique
+PASS  dossier headings unique
+PASS  no reader heading in the Dossier
+PASS  no bare numeric heading in the Reading Volume
+PASS  badge \PROVED defined in both preambles
+PASS  badge \CERT defined in both preambles
+PASS  badge \EQUIV defined in both preambles
+PASS  badge \OPENSTAT defined in both preambles
+PASS  badge \EVID defined in both preambles
+PASS  legend appears in Reading Volume
+PASS  legend appears in Dossier
+PASS  all five badges used in the Reading Volume
+PASS  EVIDENCE badge used in the Dossier
+PASS  closed-form box used
+PASS  open box used
+PASS  every tcolorbox is balanced
+PASS  (R.1a) C(k,2)=T_{k-1}
+PASS  C(k,3)=sum of triangular numbers
+PASS  3003 occurs exactly 8 times in Pascal
+PASS  3003 = T_77 = C(78,2)
+PASS  (R.1b) sum c(k,j) z^j = (1-z)^k at rational z
+PASS  (SW.5) recurrence c(k+1,j)=c(k,j)-c(k,j-1)
+PASS  seed c(0,0)=+1
+PASS  row 12 entry j=9 is -220 and equals j=3
+PASS  (SW.5a) carrier power = row k, exactly
+PASS  (SW.4b) row k reproduces the exact derivative, k=1..12 at three scales
+PASS  (R.3) derivative and folded-zero forms agree exactly, k=1..12
+PASS  (12.4a) W_k(0)/(2k-1)! = mu_{k-1} = Z_k(0), k=1..12
+PASS  (SW.6) coefficients A(k,j) reproduce W_k exactly, k=1..10
+PASS  (12.2a) printed row for W_6
+PASS  (SW.6) recurrence generates the next row
+PASS  (SW.4d) (2k-1)! = prod 2T_{2r}
+PASS  (SW.4d) 11!/9! = 2T_10 = 110 = 2*c(11,2)
+PASS  energy matrix anti-diagonal r+s=k is unsigned row k
+PASS  energy matrix row 2 is T_{s+1}
+PASS  (SW.4e) census is exactly as printed
+PASS  (SW.4e) values
+PASS  reference [67] exists in the Reading Volume
+PASS  reference [67] is cited in the body
+PASS  reference [68] exists in the Reading Volume
+PASS  reference [68] is cited in the body
+PASS  reference [69] exists in the Reading Volume
+PASS  reference [69] is cited in the body
+PASS  reference [70] exists in the Reading Volume
+PASS  reference [70] is cited in the body
+PASS  reference [71] exists in the Reading Volume
+PASS  reference [71] is cited in the body
+PASS  reference [72] exists in the Reading Volume
+PASS  reference [72] is cited in the body
+PASS  reference [73] exists in the Reading Volume
+PASS  reference [73] is cited in the body
+PASS  the new block says once that none of it is verified here
+PASS  no reference entry repeats the disclaimer
+PASS  the retracted support constant 2.38 is absent from both documents
+PASS  the live Weil-window support figure is the one quoted
+PASS  the window barrier is scoped, not generalized
+PASS  the volume does not claim to evade the barrier
+PASS  the Landau-Widom rate is quoted with its exponent
+PASS  the k/n coordinate note states independence and priority
+PASS  the shape claim still refuses to transport an inequality
+PASS  the transporting counter-instance is present
+PASS  the Lean formalization is reported as read and not built
+PASS  the Lean item asserts nothing about coefficient signs
+PASS  the exponent route is stated as open and untaken
+PASS  the exponent route distinguishes a differential recurrence from the required arithmetic transfer
+PASS  the certified-row scope line is stated once, with a pointer at the table
+PASS  the scope line no longer breaks "fourth-rung" across a source line
+PASS  the Dossier front matter carries the same scope sentence
+PASS  no historical certificate is claimed to be replayed here
+PASS  no literal check count in either document
+PASS  no bare tilde-ref survives in the Reading Volume source
+PASS  the figure pointer is a macro
+PASS  the grid figure is never pointed at from the Dossier
+PASS  \figref is defined in the reading preamble
+PASS  Reading Volume: no equation is printed twice under the same number
+PASS  Dossier: no equation is printed twice under the same number
+PASS  (R.3) is still numbered exactly once
+PASS  (R.4) is still numbered exactly once
+PASS  (SW.4b) is still numbered exactly once
+PASS  (11.1) is still numbered exactly once
+PASS  (23.1) is still numbered exactly once
+PASS  the front matter teasers cite their homes
+PASS  Part IV cites the criterion rather than reprinting it
+PASS  the volume has seven Parts
+PASS  front-matter cap and long-range formulas carry corrected addresses
+PASS  the two R17C tags cited from R5D carry their address
+PASS  the reader is not sent to a Part that does not exist
+PASS  the grid catalogue left the Reading Volume
+PASS  it arrived in the Dossier as 173
+PASS  moved block kept its tag (SW.4c)
+PASS  moved block kept its tag (SW.4e)
+PASS  moved block kept its tag (SW.4f)
+PASS  moved block kept its tag (SW.4h)
+PASS  moved block kept its tag (SW.4g)
+PASS  moved block kept its tag (SW.4d)
+PASS  the Reading Volume points at the new home
+PASS  the closing firewall sentence stayed with the reader
+PASS  the pointer and the firewall close are one paragraph
+PASS  every figure file in the package is referenced
+PASS  every referenced figure is in the package
+PASS  the resolvent line is row 6 of the signed grid
+PASS  the printed weights are 11!/(5+j)!
+PASS  the differential line is row 6 times those weights, under one sign
+PASS  the column-dependent derivative sign cancels the row alternation
+PASS  the Li line is row 12, columns 5 down to 0
+PASS  the hinge prints Z_6-6xZ_7+15x^2Z_8-20x^3Z_...
+PASS  the hinge prints -332640S^{(5)}-332640xS^{(...
+PASS  the hinge prints 792\lambda_1-495\lambda_2+...
+PASS  the hinge display takes no number of its own
+PASS  the hinge names all three homes
+PASS  the hinge states the axis
+PASS  the hinge no longer says the row does not vary
+PASS  the hinge explains the column-dependent cancellation
+PASS  the hinge states where positivity is not
+PASS  Li coefficients are defined before Part V uses them
+PASS  the earlier use in R10A names the definition
+PASS  both standard forms are printed
+PASS  1/rho + 1/(1-rho) = 1/q_rho on rationals
+PASS  (15.2) is an identity on every test set, including off-axis orbits
+PASS  Part IV opens with a preamble, not a section heading
+PASS  Part V opens with a preamble, not a section heading
+PASS  Part VI opens with a preamble, not a section heading
+PASS  Part VII opens with a preamble, not a section heading
+PASS  Part V names the crossing it is built on
+PASS  the equivalents block distinguishes four equivalents from the separate source channel
+PASS  the displayed source channel is not promoted from the equivalent criteria
+PASS  the vocabulary is the volume's own
+PASS  the Hadamard product of the folded function is displayed
+PASS  the pole identity is displayed in Part III, not only in the teaser
+PASS  Part III says why the fold halves the order
+PASS  the s-plane comparison is made explicitly
+PASS  R11 names the identity it is built from
+PASS  the orbit convention is stated where it is first used
+PASS  (9.8) prints 1 + gamma_E/2 - log(2 sqrt(pi)) correctly
+PASS  (9.8) is stated as three names for one number
+PASS  the pairing identity behind (9.8) is stated
+PASS  Stieltjes function is defined, not just used
+PASS  complete Bernstein function is defined, not just used
+PASS  operator monotone is defined, not just used
+PASS  Widder is said to characterize the same class
+PASS  the rungs are named as that characterization read one derivative at a time
+PASS  all seven Parts have a preamble
+PASS  v36_fold_and_poles.png is placed with a caption and a label
+PASS  v36_fold_and_poles.png exists in the package
+PASS  v36_carrier.png is placed with a caption and a label
+PASS  v36_carrier.png exists in the package
+PASS  v36_mellin_self_dual.png is placed with a caption and a label
+PASS  v36_mellin_self_dual.png exists in the package
+PASS  the retired R8 figure is gone from the package
+PASS  figure generators ship with the source
+PASS  the carrier figure prints the right first-turn indices
+PASS  the carrier caption states the finite sector exclusion without a whole-sum localization claim
+PASS  (9.9) q_1 = 1/4 + gamma_1^2 as printed
+PASS  (9.9) q_1 = -2 T_{rho_1-1}, exactly
+PASS  (9.10) q_1/q_2 = 0.4523999...
+PASS  the first orbit carries just under 22% of (9.8)
+PASS  the constant C of (12.7) is 8.0019...
+PASS  (12.8): C (q_1/q_2)^k first falls below 1 at k = 3
+PASS  (12.7) holds against the verified folded data, k = 1..12
+PASS  the boundary-dominance proposition is stated with its proof
+PASS  and it is used to say where the hypothesis is not
+PASS  the prime-side log-period 2 pi / gamma_1 is printed correctly
+PASS  the multiplicative period e^{2 pi / gamma_1} is printed correctly
+PASS  the smooth count reaches 1 at T = 17.8478
+PASS  the first Gram point is 17.8456
+PASS  the first zero is lower by 3.71
+PASS  the 1/x coefficient of (OP.1) computed from Gamma and primes alone is 7/8
+PASS  R9A states the three 7/8 are one constant
+PASS  R9A grades itself as not evidence
+PASS  Riemann 1859 is in the reference list
+PASS  and is cited in the body
+PASS  the first-zero figure is placed, captioned and labelled
+PASS  (12.7) C = q2(lambda_1 - 1/q1) = 8.0019380...
+PASS  (12.7) unconditional C <= 8.001938048 as printed
+PASS  (12.8) threshold: C(q1/q2)^3 = 0.741 < 1 < 1.64 = C(q1/q2)^2
+PASS  D3 sentence printed
+PASS  (11.7) c_x = tanh(s/2)
+PASS  (11.7) u_x = sech^2(s/2)/(4x)
+PASS  (11.7) printed and tagged once
+PASS  window width 1.665/sqrt(k): 2 arcsech(2^{-1/2k}) sqrt(k) -> 1.665
+PASS  E2: closed-form transform of the k=1 rung test matches quadrature
+PASS  E2: crossover u_x below log 2 exactly from x = 2.68
+PASS  E2 printed as the all-order theorem with the exact first-rung transform and crossover
+PASS  (9.11) residue of pi/sin(pi p) at p=1 is -1
+PASS  (9.11) printed once with its contour statement
+PASS  D6: 1/(48 pi T) term printed
+PASS  D6: theta/pi + 1 - N0 = 1/(48 pi T) at the first Gram point to 2e-7
+PASS  (13A.1) 4x-|z| = 4x sin^2(th/2) - (|q|-x)^2/|q| at q=(9.02999999999999936051153781591 + 3.0j)
+PASS  (13A.1) maximum value and location at q=(9.02999999999999936051153781591 + 3.0j)
+PASS  (13A.1) 4x-|z| = 4x sin^2(th/2) - (|q|-x)^2/|q| at q=(2025.0 - 36.0j)
+PASS  (13A.1) maximum value and location at q=(2025.0 - 36.0j)
+PASS  (13A.1) 4x-|z| = 4x sin^2(th/2) - (|q|-x)^2/|q| at q=(0.5 + 0.699999999999999955591079014994j)
+PASS  (13A.1) maximum value and location at q=(0.5 + 0.699999999999999955591079014994j)
+PASS  blind-radius deficit at beta=0.9, t=45.0 equals 2(|q|-Re q) and approaches (2beta-1)^2
+PASS  blind-radius deficit at beta=0.75, t=80.0 equals 2(|q|-Re q) and approaches (2beta-1)^2
+PASS  blind-radius deficit at beta=0.6, t=1000.0 equals 2(|q|-Re q) and approaches (2beta-1)^2
+PASS  (13A.2) legacy F(a) < 1 still holds where the old route applied
+PASS  (13A.2) the exact remainder supersedes the parabola estimate in the text
+PASS  (13A.2) squared inequality reduces to a > 0
+PASS  (13A.2) unconditional supremum of the deficit at x=10,100,1000 as printed
+PASS  (13A.2) printed in the closed box with the boundary-strip statement
+PASS  status row for (13A.2) present and pointwise
+PASS  the missing-line section points to R13A
+PASS  (13A.3) sum a_k w^k = 4xw [h(b)-h(a)]/(b-a)
+PASS  (13A.3) = 2 tan(phi/2) Im h(x e^{i phi})
+PASS  (13A.3) printed once, and 48.28 carries it in the Dossier
+PASS  Dossier §48A present with (48.26)-(48.27)
+PASS  (12.9) normalisation: the product equals 1 at x=0 when divided by xi(1)=1/2
+PASS  (12.9) e_1 = lambda_1 = S_xi(0) from the source side
+PASS  (12.9) e_2 = (p_1^2 - p_2)/2 with p_2 = 3.7100639e-5 (zero side)
+PASS  (12.9) printed once with the actual PF criterion and no unproved finite-minor transfer
+PASS  references 75-77 present in order
+PASS  E2: prime block of W_1 is positive at x = 3 and 10
+PASS  E4: compact-window comparison does not convert a frequency scale into compact support
+PASS  the R13A figure is placed, captioned, labelled and shipped
+PASS  Part openers no longer force a page break (straight class with Needspace)
+PASS  READING_VOLUME PDF exists
+PASS  READING_VOLUME page count >= 90
+PASS  READING_VOLUME front matter free of version strings
+PASS  TECHNICAL_DOSSIER PDF exists
+PASS  TECHNICAL_DOSSIER page count >= 240
+PASS  TECHNICAL_DOSSIER front matter free of version strings
+PASS  Start here reaches the exact criterion
+PASS  Start here states the eight occurrences
+PASS  Start here carries the status legend
+
+236/236 checks pass
+
+PASS  no line runs more than 30pt past the margin in either document
+PASS  neither document has an undefined reference
+PASS  Technical Dossier within the standing limit of 299
+FAIL  Technical Dossier at or under the standing target of 275   [297 pages]
+PASS  (6A.2) closed form matches the partial product at x=1,2 to the 1/N tail
+PASS  (6A.2) the cosh form equals section 11 Gamma form under x=q(s), three s
+PASS  (6A.2) the fixed point is x=q(1/2)=1/4 and the value is 4/pi
+PASS  (6A.2) cosh(pi*sqrt(x-1/4)) vanishes exactly at x=-n(n+1), n=0..4
+PASS  (6A.3) resolvent closed form matches the sum at x=0.05,1,7,100
+PASS  (6A) the model first-moment is exactly 1 and lambda_1 is 0.0230957...
+PASS  (PR.6) (2m+1)! = prod 2T_(2r) for m<=6
+PASS  (PR.7) 7! = 180*T_7 = 8*T_2*T_4*T_6
+PASS  R6A states the model does not transfer
+PASS  R6A names the self-adjoint input as the thing the volume cannot supply
+PASS  R6A keeps the prime row out of the node dictionary
+PASS  section 11 withdraws the caution only for the fold contact
+PASS  (13A.1a) the remainder is a symbolic identity, residual exactly 0
+PASS  (13A.1b) the two-sided chain is strict at four planted off-line orbits
+PASS  (13A.1b) lower bound reduces to v < v+1/4
+PASS  (13A.2a) 4H^2+1 is the printed integer
+PASS  (13A.2a) its reciprocal is below 2.8e-26
+PASS  (13A.2) is printed as pointwise in x, not as Delta<1
+PASS  the one-sided strip phrasing is withdrawn in both documents
+PASS  status row for (13A.2) states the pointwise scope
+PASS  (48.33) the high-scale limsup is printed as strictly weaker
+PASS  (22A.1) degree 2k-1, leading sign (-1)^k, at least k positive roots for k<=3, x=1,3,10
+PASS  (22A.1) the k=1 root is the published crossover (1+1/2x)/sqrt(x+1/4)
+PASS  (22A) records the exact-k count as open and unused
+PASS  (32.16) Leibniz identity holds for all n<=3, k<=4
+PASS  (32.15) L_k^(k-1) has exactly k simple positive roots for k=1..6
+PASS  (32A) states that neither placement creates the missing information
+PASS  (48.39) the countermodel fourth derivative is exactly -18/3125
+PASS  (48B) the three cutoffs are distinguished at X=2
+PASS  (48B) the forcing step is printed as failing
+PASS  (166D.1) alpha = (sqrt5-1)/2 exceeds 3/5, and 20^3 > 5^5
+PASS  (166D.1) kappa = 5/20^alpha is 0.785035410093857... and is below one
+PASS  (166D.1) min Re s_x on |x-2|<=1 is exactly 1+alpha, so the disk bound is tight
+PASS  (166D.1) the log tail integral equals X^-a(logX/a + 1/a^2)
+PASS  (166D.1) the Pascal step sum C(N,r)4^r = 5^N for N<=8
+PASS  (166D.2) the uniform bound is printed as open and RH-equivalent
+PASS  (166D) the generalization qualification is recorded
+PASS  every new section states RH open or claims nothing for it
+PASS  no new section promotes a rung or a certificate
+PASS  the AM-GM strengthening is stated with its class
+
+TOTAL 310/312 checks pass

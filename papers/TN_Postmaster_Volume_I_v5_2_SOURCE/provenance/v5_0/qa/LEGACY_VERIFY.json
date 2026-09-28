@@ -1,0 +1,1574 @@
+{
+  "total": 312,
+  "passed": 310,
+  "failed": [
+    "Reading Volume at or under the standing target of 90 (advisory)",
+    "Technical Dossier at or under the standing target of 275"
+  ],
+  "pages": {
+    "reading_volume": 99,
+    "technical_dossier": 297
+  },
+  "checks": [
+    {
+      "name": "no version strings in Reading Volume",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "no version strings in Dossier",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "no in-house term: 'author review'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no in-house term: 'author-review'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no in-house term: 'grading-review'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no in-house term: 'red team'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no in-house term: 'blue team'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no in-house term: 'green team'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no in-house term: 'supersedes the earlier'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no \"technical \u00a7\" left in Reading Volume",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dossier convention stated once in Reading Volume",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reader headings unique",
+      "passed": true,
+      "detail": "47 headings"
+    },
+    {
+      "name": "dossier headings unique",
+      "passed": true,
+      "detail": "157 headings"
+    },
+    {
+      "name": "no reader heading in the Dossier",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no bare numeric heading in the Reading Volume",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "badge \\PROVED defined in both preambles",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "badge \\CERT defined in both preambles",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "badge \\EQUIV defined in both preambles",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "badge \\OPENSTAT defined in both preambles",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "badge \\EVID defined in both preambles",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "legend appears in Reading Volume",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "legend appears in Dossier",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "all five badges used in the Reading Volume",
+      "passed": true,
+      "detail": "['CERT', 'EQUIV', 'EVID', 'OPENSTAT', 'PROVED']"
+    },
+    {
+      "name": "EVIDENCE badge used in the Dossier",
+      "passed": true,
+      "detail": "['EVID']"
+    },
+    {
+      "name": "closed-form box used",
+      "passed": true,
+      "detail": "7"
+    },
+    {
+      "name": "open box used",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "every tcolorbox is balanced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(R.1a) C(k,2)=T_{k-1}",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C(k,3)=sum of triangular numbers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3003 occurs exactly 8 times in Pascal",
+      "passed": true,
+      "detail": "[(14, 6), (15, 5), (78, 2), (3003, 1)]"
+    },
+    {
+      "name": "3003 = T_77 = C(78,2)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(R.1b) sum c(k,j) z^j = (1-z)^k at rational z",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(SW.5) recurrence c(k+1,j)=c(k,j)-c(k,j-1)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "seed c(0,0)=+1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "row 12 entry j=9 is -220 and equals j=3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(SW.5a) carrier power = row k, exactly",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(SW.4b) row k reproduces the exact derivative, k=1..12 at three scales",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(R.3) derivative and folded-zero forms agree exactly, k=1..12",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(12.4a) W_k(0)/(2k-1)! = mu_{k-1} = Z_k(0), k=1..12",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(SW.6) coefficients A(k,j) reproduce W_k exactly, k=1..10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(12.2a) printed row for W_6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(SW.6) recurrence generates the next row",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(SW.4d) (2k-1)! = prod 2T_{2r}",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(SW.4d) 11!/9! = 2T_10 = 110 = 2*c(11,2)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "energy matrix anti-diagonal r+s=k is unsigned row k",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "energy matrix row 2 is T_{s+1}",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(SW.4e) census is exactly as printed",
+      "passed": true,
+      "detail": "[(10, 3, 120), (10, 4, 210), (14, 6, 3003), (15, 5, 3003), (17, 8, 24310), (19, 5, 11628)]"
+    },
+    {
+      "name": "(SW.4e) values",
+      "passed": true,
+      "detail": "[(10, 3, 120), (10, 4, 210), (14, 6, 3003), (15, 5, 3003), (17, 8, 24310), (19, 5, 11628)]"
+    },
+    {
+      "name": "reference [67] exists in the Reading Volume",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reference [67] is cited in the body",
+      "passed": true,
+      "detail": "2"
+    },
+    {
+      "name": "reference [68] exists in the Reading Volume",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reference [68] is cited in the body",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "reference [69] exists in the Reading Volume",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reference [69] is cited in the body",
+      "passed": true,
+      "detail": "2"
+    },
+    {
+      "name": "reference [70] exists in the Reading Volume",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reference [70] is cited in the body",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "reference [71] exists in the Reading Volume",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reference [71] is cited in the body",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "reference [72] exists in the Reading Volume",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reference [72] is cited in the body",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "reference [73] exists in the Reading Volume",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reference [73] is cited in the body",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "the new block says once that none of it is verified here",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no reference entry repeats the disclaimer",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the retracted support constant 2.38 is absent from both documents",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the live Weil-window support figure is the one quoted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the window barrier is scoped, not generalized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the volume does not claim to evade the barrier",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the Landau-Widom rate is quoted with its exponent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the k/n coordinate note states independence and priority",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the shape claim still refuses to transport an inequality",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the transporting counter-instance is present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the Lean formalization is reported as read and not built",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the Lean item asserts nothing about coefficient signs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the exponent route is stated as open and untaken",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the exponent route distinguishes a differential recurrence from the required arithmetic transfer",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the certified-row scope line is stated once, with a pointer at the table",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "the scope line no longer breaks \"fourth-rung\" across a source line",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the Dossier front matter carries the same scope sentence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no historical certificate is claimed to be replayed here",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no literal check count in either document",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no bare tilde-ref survives in the Reading Volume source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the figure pointer is a macro",
+      "passed": true,
+      "detail": "13"
+    },
+    {
+      "name": "the grid figure is never pointed at from the Dossier",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "\\figref is defined in the reading preamble",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Reading Volume: no equation is printed twice under the same number",
+      "passed": true,
+      "detail": "{}"
+    },
+    {
+      "name": "Dossier: no equation is printed twice under the same number",
+      "passed": true,
+      "detail": "{}"
+    },
+    {
+      "name": "(R.3) is still numbered exactly once",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(R.4) is still numbered exactly once",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(SW.4b) is still numbered exactly once",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(11.1) is still numbered exactly once",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(23.1) is still numbered exactly once",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the front matter teasers cite their homes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Part IV cites the criterion rather than reprinting it",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the volume has seven Parts",
+      "passed": true,
+      "detail": "['Part I', 'Part II', 'Part III', 'Part IV', 'Part V', 'Part VI', 'Part VII']"
+    },
+    {
+      "name": "front-matter cap and long-range formulas carry corrected addresses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the two R17C tags cited from R5D carry their address",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the reader is not sent to a Part that does not exist",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the grid catalogue left the Reading Volume",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "it arrived in the Dossier as 173",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "moved block kept its tag (SW.4c)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "moved block kept its tag (SW.4e)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "moved block kept its tag (SW.4f)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "moved block kept its tag (SW.4h)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "moved block kept its tag (SW.4g)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "moved block kept its tag (SW.4d)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the Reading Volume points at the new home",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the closing firewall sentence stayed with the reader",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the pointer and the firewall close are one paragraph",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "every figure file in the package is referenced",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "every referenced figure is in the package",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "the resolvent line is row 6 of the signed grid",
+      "passed": true,
+      "detail": "[1, -6, 15, -20, 15, -6, 1]"
+    },
+    {
+      "name": "the printed weights are 11!/(5+j)!",
+      "passed": true,
+      "detail": "[332640, 55440, 7920, 990, 110, 11, 1]"
+    },
+    {
+      "name": "the differential line is row 6 times those weights, under one sign",
+      "passed": true,
+      "detail": "[Fraction(-332640, 1), Fraction(-332640, 1), Fraction(-118800, 1), Fraction(-19800, 1), Fraction(-1650, 1), Fraction(-66, 1), Fraction(-1, 1)]"
+    },
+    {
+      "name": "the column-dependent derivative sign cancels the row alternation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the Li line is row 12, columns 5 down to 0",
+      "passed": true,
+      "detail": "[792, -495, 220, -66, 12, -1]"
+    },
+    {
+      "name": "the hinge prints Z_6-6xZ_7+15x^2Z_8-20x^3Z_...",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the hinge prints -332640S^{(5)}-332640xS^{(...",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the hinge prints 792\\lambda_1-495\\lambda_2+...",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the hinge display takes no number of its own",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the hinge names all three homes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the hinge states the axis",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the hinge no longer says the row does not vary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the hinge explains the column-dependent cancellation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the hinge states where positivity is not",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Li coefficients are defined before Part V uses them",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the earlier use in R10A names the definition",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "both standard forms are printed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1/rho + 1/(1-rho) = 1/q_rho on rationals",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(15.2) is an identity on every test set, including off-axis orbits",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Part IV opens with a preamble, not a section heading",
+      "passed": true,
+      "detail": "This Part develops the reduced-Widder ru"
+    },
+    {
+      "name": "Part V opens with a preamble, not a section heading",
+      "passed": true,
+      "detail": "The boundary values $\\mu_{k-1}=W_k(0)/(2"
+    },
+    {
+      "name": "Part VI opens with a preamble, not a section heading",
+      "passed": true,
+      "detail": "The defects record what an off-line zero"
+    },
+    {
+      "name": "Part VII opens with a preamble, not a section heading",
+      "passed": true,
+      "detail": "Section R22 records results with their q"
+    },
+    {
+      "name": "Part V names the crossing it is built on",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the equivalents block distinguishes four equivalents from the separate source channel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the displayed source channel is not promoted from the equivalent criteria",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the vocabulary is the volume's own",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the Hadamard product of the folded function is displayed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the pole identity is displayed in Part III, not only in the teaser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Part III says why the fold halves the order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the s-plane comparison is made explicitly",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "R11 names the identity it is built from",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the orbit convention is stated where it is first used",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(9.8) prints 1 + gamma_E/2 - log(2 sqrt(pi)) correctly",
+      "passed": true,
+      "detail": "0.023095708966121033"
+    },
+    {
+      "name": "(9.8) is stated as three names for one number",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the pairing identity behind (9.8) is stated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Stieltjes function is defined, not just used",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "complete Bernstein function is defined, not just used",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "operator monotone is defined, not just used",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Widder is said to characterize the same class",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the rungs are named as that characterization read one derivative at a time",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "all seven Parts have a preamble",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "v36_fold_and_poles.png is placed with a caption and a label",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v36_fold_and_poles.png exists in the package",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v36_carrier.png is placed with a caption and a label",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v36_carrier.png exists in the package",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v36_mellin_self_dual.png is placed with a caption and a label",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v36_mellin_self_dual.png exists in the package",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the retired R8 figure is gone from the package",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "figure generators ship with the source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the carrier figure prints the right first-turn indices",
+      "passed": true,
+      "detail": "(21, 33, 83)"
+    },
+    {
+      "name": "the carrier caption states the finite sector exclusion without a whole-sum localization claim",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(9.9) q_1 = 1/4 + gamma_1^2 as printed",
+      "passed": true,
+      "detail": "200.04045483238685946"
+    },
+    {
+      "name": "(9.9) q_1 = -2 T_{rho_1-1}, exactly",
+      "passed": true,
+      "detail": "(200.040454832 + 0.0j)"
+    },
+    {
+      "name": "(9.10) q_1/q_2 = 0.4523999...",
+      "passed": true,
+      "detail": "0.4523999192916"
+    },
+    {
+      "name": "the first orbit carries just under 22% of (9.8)",
+      "passed": true,
+      "detail": "0.2164466499"
+    },
+    {
+      "name": "the constant C of (12.7) is 8.0019...",
+      "passed": true,
+      "detail": "8.00193804616"
+    },
+    {
+      "name": "(12.8): C (q_1/q_2)^k first falls below 1 at k = 3",
+      "passed": true,
+      "detail": "k=2:1.63772 k=3:0.740905"
+    },
+    {
+      "name": "(12.7) holds against the verified folded data, k = 1..12",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the boundary-dominance proposition is stated with its proof",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "and it is used to say where the hypothesis is not",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the prime-side log-period 2 pi / gamma_1 is printed correctly",
+      "passed": true,
+      "detail": "0.44452122302878"
+    },
+    {
+      "name": "the multiplicative period e^{2 pi / gamma_1} is printed correctly",
+      "passed": true,
+      "detail": "1.5597432478881"
+    },
+    {
+      "name": "the smooth count reaches 1 at T = 17.8478",
+      "passed": true,
+      "detail": "17.84783651"
+    },
+    {
+      "name": "the first Gram point is 17.8456",
+      "passed": true,
+      "detail": "17.84559954"
+    },
+    {
+      "name": "the first zero is lower by 3.71",
+      "passed": true,
+      "detail": "3.7131114"
+    },
+    {
+      "name": "the 1/x coefficient of (OP.1) computed from Gamma and primes alone is 7/8",
+      "passed": true,
+      "detail": "0.8749517041"
+    },
+    {
+      "name": "R9A states the three 7/8 are one constant",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "R9A grades itself as not evidence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Riemann 1859 is in the reference list",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "and is cited in the body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the first-zero figure is placed, captioned and labelled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(12.7) C = q2(lambda_1 - 1/q1) = 8.0019380...",
+      "passed": true,
+      "detail": "8.00193804616"
+    },
+    {
+      "name": "(12.7) unconditional C <= 8.001938048 as printed",
+      "passed": true,
+      "detail": "8.00193804752"
+    },
+    {
+      "name": "(12.8) threshold: C(q1/q2)^3 = 0.741 < 1 < 1.64 = C(q1/q2)^2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D3 sentence printed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(11.7) c_x = tanh(s/2)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(11.7) u_x = sech^2(s/2)/(4x)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(11.7) printed and tagged once",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "window width 1.665/sqrt(k): 2 arcsech(2^{-1/2k}) sqrt(k) -> 1.665",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E2: closed-form transform of the k=1 rung test matches quadrature",
+      "passed": true,
+      "detail": "-11.9730562679414382886524417496 vs -11.9730562679414382886524417496"
+    },
+    {
+      "name": "E2: crossover u_x below log 2 exactly from x = 2.68",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E2 printed as the all-order theorem with the exact first-rung transform and crossover",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(9.11) residue of pi/sin(pi p) at p=1 is -1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(9.11) printed once with its contour statement",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D6: 1/(48 pi T) term printed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D6: theta/pi + 1 - N0 = 1/(48 pi T) at the first Gram point to 2e-7",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.1) 4x-|z| = 4x sin^2(th/2) - (|q|-x)^2/|q| at q=(9.02999999999999936051153781591 + 3.0j)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.1) maximum value and location at q=(9.02999999999999936051153781591 + 3.0j)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.1) 4x-|z| = 4x sin^2(th/2) - (|q|-x)^2/|q| at q=(2025.0 - 36.0j)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.1) maximum value and location at q=(2025.0 - 36.0j)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.1) 4x-|z| = 4x sin^2(th/2) - (|q|-x)^2/|q| at q=(0.5 + 0.699999999999999955591079014994j)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.1) maximum value and location at q=(0.5 + 0.699999999999999955591079014994j)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "blind-radius deficit at beta=0.9, t=45.0 equals 2(|q|-Re q) and approaches (2beta-1)^2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "blind-radius deficit at beta=0.75, t=80.0 equals 2(|q|-Re q) and approaches (2beta-1)^2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "blind-radius deficit at beta=0.6, t=1000.0 equals 2(|q|-Re q) and approaches (2beta-1)^2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.2) legacy F(a) < 1 still holds where the old route applied",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.2) the exact remainder supersedes the parabola estimate in the text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.2) squared inequality reduces to a > 0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.2) unconditional supremum of the deficit at x=10,100,1000 as printed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.2) printed in the closed box with the boundary-strip statement",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "status row for (13A.2) present and pointwise",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the missing-line section points to R13A",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.3) sum a_k w^k = 4xw [h(b)-h(a)]/(b-a)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.3) = 2 tan(phi/2) Im h(x e^{i phi})",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.3) printed once, and 48.28 carries it in the Dossier",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dossier \u00a748A present with (48.26)-(48.27)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(12.9) normalisation: the product equals 1 at x=0 when divided by xi(1)=1/2",
+      "passed": true,
+      "detail": "1.0"
+    },
+    {
+      "name": "(12.9) e_1 = lambda_1 = S_xi(0) from the source side",
+      "passed": true,
+      "detail": "0.023095708966121"
+    },
+    {
+      "name": "(12.9) e_2 = (p_1^2 - p_2)/2 with p_2 = 3.7100639e-5 (zero side)",
+      "passed": true,
+      "detail": "0.000248155568105"
+    },
+    {
+      "name": "(12.9) printed once with the actual PF criterion and no unproved finite-minor transfer",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "references 75-77 present in order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E2: prime block of W_1 is positive at x = 3 and 10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E4: compact-window comparison does not convert a frequency scale into compact support",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the R13A figure is placed, captioned, labelled and shipped",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Part openers no longer force a page break (straight class with Needspace)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "READING_VOLUME PDF exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "READING_VOLUME page count >= 90",
+      "passed": true,
+      "detail": "99 pages"
+    },
+    {
+      "name": "READING_VOLUME front matter free of version strings",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "TECHNICAL_DOSSIER PDF exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "TECHNICAL_DOSSIER page count >= 240",
+      "passed": true,
+      "detail": "297 pages"
+    },
+    {
+      "name": "TECHNICAL_DOSSIER front matter free of version strings",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "Start here reaches the exact criterion",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Start here states the eight occurrences",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Start here carries the status legend",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "R4A-R4C, R5B are out of the Reading Volume",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "they arrived in the Dossier as 169-172",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "moved block kept tag (4A.1a)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "moved block kept tag (4A.5)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "moved block kept tag (NR.1)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "moved block kept tag (NR.4)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "moved block kept tag (NR.5)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "moved block kept tag (RP.3)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "moved block kept tag (RP.6)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "moved block kept tag (AR.1)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the Reading Volume still cites the moved sections by their new numbers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no hard-coded \"Figure 8\"",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the grid figure is referenced by label, never by number",
+      "passed": true,
+      "detail": "13"
+    },
+    {
+      "name": "exactly one grid figure label",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "K_H = floor(pi/(2 arctan(1/H))) = 4,712,664,392,502",
+      "passed": true,
+      "detail": "4712664392502"
+    },
+    {
+      "name": "K_H is stated in the Reading Volume",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the quoted zero count matches Riemann-von Mangoldt to +/-2",
+      "passed": true,
+      "detail": "12363153437137.1"
+    },
+    {
+      "name": "rungs 7..K_H are CERTIFIED, not OPEN",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rungs above K_H are OPEN in both columns",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no blanket \"OPEN for all k>=7\" survives",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Start here gives the certified index and calls it not evidence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "L_Gamma and L_P are explained on the page they first appear",
+      "passed": true,
+      "detail": "gap 1884 chars"
+    },
+    {
+      "name": "Reading Volume still says RH is open",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dossier still says RH is open",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no finite prefix is offered as RH",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "neither document states its own page count",
+      "passed": true,
+      "detail": "looking for 99/297"
+    },
+    {
+      "name": "neither document states a check count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the delivered Reading Volume prints no literal tilde in a figure pointer",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "every figure pointer resolves to the grid figure number, whatever it is",
+      "passed": true,
+      "detail": "grid is Figure 12, 14 mentions"
+    },
+    {
+      "name": "Reading Volume within the standing limit of 99",
+      "passed": true,
+      "detail": "99 pages"
+    },
+    {
+      "name": "Reading Volume at or under the standing target of 90 (advisory)",
+      "passed": false,
+      "detail": "99 pages"
+    },
+    {
+      "name": "the pair is within the standing budget",
+      "passed": true,
+      "detail": "99+297=396"
+    },
+    {
+      "name": "no line runs more than 30pt past the margin in either document",
+      "passed": true,
+      "detail": "[[], []]"
+    },
+    {
+      "name": "neither document has an undefined reference",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Technical Dossier within the standing limit of 299",
+      "passed": true,
+      "detail": "297 pages"
+    },
+    {
+      "name": "Technical Dossier at or under the standing target of 275",
+      "passed": false,
+      "detail": "297 pages"
+    },
+    {
+      "name": "(6A.2) closed form matches the partial product at x=1,2 to the 1/N tail",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(6A.2) the cosh form equals section 11 Gamma form under x=q(s), three s",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(6A.2) the fixed point is x=q(1/2)=1/4 and the value is 4/pi",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(6A.2) cosh(pi*sqrt(x-1/4)) vanishes exactly at x=-n(n+1), n=0..4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(6A.3) resolvent closed form matches the sum at x=0.05,1,7,100",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(6A) the model first-moment is exactly 1 and lambda_1 is 0.0230957...",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(PR.6) (2m+1)! = prod 2T_(2r) for m<=6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(PR.7) 7! = 180*T_7 = 8*T_2*T_4*T_6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "R6A states the model does not transfer",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "R6A names the self-adjoint input as the thing the volume cannot supply",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "R6A keeps the prime row out of the node dictionary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "section 11 withdraws the caution only for the fold contact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.1a) the remainder is a symbolic identity, residual exactly 0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.1b) the two-sided chain is strict at four planted off-line orbits",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.1b) lower bound reduces to v < v+1/4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.2a) 4H^2+1 is the printed integer",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.2a) its reciprocal is below 2.8e-26",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(13A.2) is printed as pointwise in x, not as Delta<1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the one-sided strip phrasing is withdrawn in both documents",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "status row for (13A.2) states the pointwise scope",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(48.33) the high-scale limsup is printed as strictly weaker",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(22A.1) degree 2k-1, leading sign (-1)^k, at least k positive roots for k<=3, x=1,3,10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(22A.1) the k=1 root is the published crossover (1+1/2x)/sqrt(x+1/4)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(22A) records the exact-k count as open and unused",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(32.16) Leibniz identity holds for all n<=3, k<=4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(32.15) L_k^(k-1) has exactly k simple positive roots for k=1..6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(32A) states that neither placement creates the missing information",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(48.39) the countermodel fourth derivative is exactly -18/3125",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(48B) the three cutoffs are distinguished at X=2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(48B) the forcing step is printed as failing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(166D.1) alpha = (sqrt5-1)/2 exceeds 3/5, and 20^3 > 5^5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(166D.1) kappa = 5/20^alpha is 0.785035410093857... and is below one",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(166D.1) min Re s_x on |x-2|<=1 is exactly 1+alpha, so the disk bound is tight",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(166D.1) the log tail integral equals X^-a(logX/a + 1/a^2)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(166D.1) the Pascal step sum C(N,r)4^r = 5^N for N<=8",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(166D.2) the uniform bound is printed as open and RH-equivalent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "(166D) the generalization qualification is recorded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "every new section states RH open or claims nothing for it",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no new section promotes a rung or a certificate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "the AM-GM strengthening is stated with its class",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

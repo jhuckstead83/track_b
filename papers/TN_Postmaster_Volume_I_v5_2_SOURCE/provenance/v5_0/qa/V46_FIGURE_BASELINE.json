@@ -1,0 +1,456 @@
+{
+  "version": "v4.6",
+  "figure_count": 90,
+  "files": [
+    {
+      "path": "axial_flux_widder_bridge.png",
+      "size": 214299,
+      "sha256": "5fa185ae97693d2328197610dc0da4601042c01e8f80964610054fec060f1eca"
+    },
+    {
+      "path": "balanced_stabilizer_tower_v1_2.png",
+      "size": 145615,
+      "sha256": "cbf2bd55cf762dbdf4eb72159477395784d1a1d9256c67edc94df34aa9ec1afc"
+    },
+    {
+      "path": "casimir_positive_branch.png",
+      "size": 181147,
+      "sha256": "19c63ef5f359d2a99c58285fb56650a4da0d6ca5dc16a1d097839adf9abf85d3"
+    },
+    {
+      "path": "cayley_laguerre_flux_diagnostic.png",
+      "size": 234128,
+      "sha256": "57da56992d16067e57d02e0ab822b6e35029ee134f409b37f5ed02450f7095a8"
+    },
+    {
+      "path": "cayley_montgomery_unfolding.png",
+      "size": 215291,
+      "sha256": "a52ab8595abef27005b86b28e345bf93e74fdb9c955c206195f554447a3378f1"
+    },
+    {
+      "path": "conic_pencil_diagnostic.png",
+      "size": 393022,
+      "sha256": "a9b5e2796603cdfd47d9bc0ff5f10799054da00b9236432dfb29107a60fed776"
+    },
+    {
+      "path": "cube_a3_twelve_ray_projection_v1_2.png",
+      "size": 350137,
+      "sha256": "9996e8597d7e139ab0bd4b60f785f2537f199e537c6c43573b90931213c80291"
+    },
+    {
+      "path": "cyclic_moment_hierarchy.png",
+      "size": 139905,
+      "sha256": "70a3eb4ab706196da21d43fa5db19edd749a5206324ade8d0cc24b81b36b92a0"
+    },
+    {
+      "path": "cyclic_order_moments.png",
+      "size": 146311,
+      "sha256": "e2c93a35ca822891cead268e736c6419f736e755d3b901bc048736ec00289a5b"
+    },
+    {
+      "path": "cyclic_sharp_vs_riesz.png",
+      "size": 306388,
+      "sha256": "eb9a872013879aacf5fdd5f1cc032357b334e129a37c07691e83dbcbca9ddcef"
+    },
+    {
+      "path": "dyadic_factorial_classification_v1_2.png",
+      "size": 127312,
+      "sha256": "df3325b374255150c5a9332783232c3589abe706518cb06b41540aaab87f2b37"
+    },
+    {
+      "path": "figure48_pp103_ray_sieve_audit.png",
+      "size": 347575,
+      "sha256": "8fb5ff46027fd765b22017d2b0f31dcfcede605ede4770dbca648d11c6332ba7"
+    },
+    {
+      "path": "figure49_pp103_triangularized_sidecar.png",
+      "size": 202758,
+      "sha256": "395927ab76ccfde4b2c0aaacda5e32c1653e3b9e0fadd1f5824f48d2b39a211f"
+    },
+    {
+      "path": "figure50_triangularized_denominator_N256.png",
+      "size": 246157,
+      "sha256": "c8dd2a931450ac60a132ca11d13190ff318be51d96a6a2aea541ff7910bfbee9"
+    },
+    {
+      "path": "figure51_ray_sieve_audit_N256_q2.png",
+      "size": 893148,
+      "sha256": "074b132a20f32ec2971887170053cb278dad66cdd19af609bce1ecb7a40aa0a2"
+    },
+    {
+      "path": "figure54_tilted_diagonal_phase.png",
+      "size": 234711,
+      "sha256": "51fe531e1e229118d6518912b2a73f250b3673b6c8db70894961674557e57185"
+    },
+    {
+      "path": "figure55_exact_diagonal_closure.png",
+      "size": 244650,
+      "sha256": "929cbf46f68d257738e7e119a1fb33672131cbc470d392b6c5eb295e840c42e4"
+    },
+    {
+      "path": "figure56_size_owner.png",
+      "size": 222034,
+      "sha256": "fe909e8d1ab41c45d7117728ec49112d8839ffed9956db0a201f397b3afc449d"
+    },
+    {
+      "path": "figure57_scale_ledger.png",
+      "size": 137657,
+      "sha256": "1eef9863f5a6866f86d8179c1d33e07eafa17751fc458dc03746baa325723c06"
+    },
+    {
+      "path": "figure58_poisson_total_offdiag.png",
+      "size": 277856,
+      "sha256": "4eaf0c6c5d8967d721f7eb1591b1025f3b6068fc9756d42ff5bcbde8a45ca591"
+    },
+    {
+      "path": "figure63_triangular_square_ladder.png",
+      "size": 233854,
+      "sha256": "3a5394bf38da572aa43d4afd83e480ed3ee593ae1f7d243c3b519ac1bd9d5086"
+    },
+    {
+      "path": "figure65_finite_weil_dictionary_tail.png",
+      "size": 307699,
+      "sha256": "2d21132879eb5edce77f5bd22ff46e3310424058b87c71ef0aaf2785e1dabe1c"
+    },
+    {
+      "path": "figure66_connes_suzuki_limit_firewall.png",
+      "size": 364851,
+      "sha256": "24ef9d0a2421bf94945de997543eede4d5e5fbec78ea646e9557b4a515162728"
+    },
+    {
+      "path": "figure67_nonlinear_spectral_hole.png",
+      "size": 251717,
+      "sha256": "4e619414027de308bc5d370b3c085899cccd64158f2739dae14ca12183f119c4"
+    },
+    {
+      "path": "figure68_pell_companion.png",
+      "size": 221436,
+      "sha256": "33f1bdc3e45149b5f504091b5249f8362f75f70a671e7bf296d17455a913e86a"
+    },
+    {
+      "path": "figure69_gamma_triangular_scaffold.png",
+      "size": 369419,
+      "sha256": "4242d570a894935bb206051a2c50a9b0d920117ea91ff9c0b424e61569168f63"
+    },
+    {
+      "path": "figure74_s_sigma_it_fold_atlas.png",
+      "size": 338206,
+      "sha256": "83bd092e1145f05fcff88c59315328bc65d583a40934012600ff0105400004e7"
+    },
+    {
+      "path": "figure75_li_pp97_loewner_study_atlas.png",
+      "size": 438294,
+      "sha256": "a43532c16d1625ed8ee719bb7f6f493fe947759577ed63767885cfc1a2396aa2"
+    },
+    {
+      "path": "figure76_reflection_contour_and_jump_law.png",
+      "size": 139151,
+      "sha256": "8e64859bcf77e5318a79453ecb1f66ad72a26e91f80a48865d2053ff04d8d83e"
+    },
+    {
+      "path": "figure77_beta_log_projection_and_scale_firewall.png",
+      "size": 185728,
+      "sha256": "e463cd581ceb2bc9eabdf33848a9d5b98dc140d957512cc91d4ffcf9090e2456"
+    },
+    {
+      "path": "figure78_beta_and_gamma_measure_separation.png",
+      "size": 233581,
+      "sha256": "e388655ba5b7a44e283c24c24bda711d929c07b97359cfa4d76712b06c0bb45d"
+    },
+    {
+      "path": "figure79_sqrt_weight_and_gauss_circle_comparison.png",
+      "size": 243624,
+      "sha256": "3fe9f4b18c09b4aedb6165e370a8c1d0eb9a2cedcc6f930b0fffe5132f62b833"
+    },
+    {
+      "path": "figure81_v26_widder_sector_atlas.png",
+      "size": 491268,
+      "sha256": "74571cba87252d9908ad94d5befbf645dce5fd7e7345b6ae74f153a649d53b06"
+    },
+    {
+      "path": "figure82_v26_carrier_and_defect.png",
+      "size": 224761,
+      "sha256": "589c97684eb240c99a7fb3ac20b22c9e6fd6bc7fa03035de1d93e708b95fc63e"
+    },
+    {
+      "path": "figure83_v26_polar_shell_pairing.png",
+      "size": 466150,
+      "sha256": "dd67f5be555eefcb44450ec4aa9190134b0e4a74f7d63214cb1a2c4b276cae86"
+    },
+    {
+      "path": "figure84_v26_heat_defect.png",
+      "size": 266569,
+      "sha256": "adadd31beaa82379cd246d5491173fc6d98caa5aef91fccf015b07ed5f611f91"
+    },
+    {
+      "path": "fixed_rung_asymptotic_tails.png",
+      "size": 229416,
+      "sha256": "19e1c17f77dfbb24491d111cc1f7747f8bf2be802b447bc220a9bcc891ba60de"
+    },
+    {
+      "path": "fixed_scale_hausdorff_map.png",
+      "size": 195748,
+      "sha256": "ed690880b170e15907a01ab69c53b9622953d7ba0e03cc3d245e0e8b163b6b02"
+    },
+    {
+      "path": "folded_block_phase.png",
+      "size": 204174,
+      "sha256": "67b6f1bc531f54a663b18cea1e8824b1da6922ad33dffc303bff111ea4357b60"
+    },
+    {
+      "path": "folded_zero_geometry.png",
+      "size": 155646,
+      "sha256": "19a6d77979c96c48697a079fbcd5b02a439618935da01407c0f68d35bef5ce47"
+    },
+    {
+      "path": "fourier_positivity_firewall.png",
+      "size": 144910,
+      "sha256": "e324d74e39c69c36967349274102fea2687c43f6fbb887dfbed13fdc1e4d8af1"
+    },
+    {
+      "path": "fractional_riesz_phase_diagram.png",
+      "size": 98169,
+      "sha256": "fd03963db7b44d0d4e72ae6e680e5466502fd062c942fdf459896ddc4acac9ab"
+    },
+    {
+      "path": "hausdorff_finite_witnesses.png",
+      "size": 122801,
+      "sha256": "2a2a93d8cedf3e0f1b2b8f0766efe71432454658cdc5116dd81da91be0b657bb"
+    },
+    {
+      "path": "intrinsic_d8_envelope_v1_2.png",
+      "size": 90534,
+      "sha256": "3e76bfdeb61facd24f77f666d83969aa3407535c29988f33b612a1a3ad6a4bde"
+    },
+    {
+      "path": "laguerre_taylor_xi.png",
+      "size": 210458,
+      "sha256": "3691a00ae63249d6a9b67bb92eb05a44077d8eedf895ec1e982c600aa562c51e"
+    },
+    {
+      "path": "local_witness_scaling.png",
+      "size": 163955,
+      "sha256": "4f1ab09fb13f9d389c1d3c89fae6367a49a29f2c2302a6b9ad42aaeefd0692b9"
+    },
+    {
+      "path": "markov_divided_difference_circle.png",
+      "size": 155546,
+      "sha256": "0031cc1c4450aea513c03fa9c3bd3fcd02406a37f19cfdfd262e979916eceda5"
+    },
+    {
+      "path": "polyphase_aliasing.png",
+      "size": 254700,
+      "sha256": "3e258b6f1f9b1b7e6c4928cedd664a2c6ea04667a08bda9993f318a56469631f"
+    },
+    {
+      "path": "pringsheim_no_dominance.png",
+      "size": 230632,
+      "sha256": "4fdc39ed10885ad222a73cb7b98927c24d29bca5992678c008060777082835fd"
+    },
+    {
+      "path": "radical_prime_support.png",
+      "size": 108180,
+      "sha256": "9503288519d0b1f686de7da17cba85c64236b6d24390be5e7abc00a6a51a98c4"
+    },
+    {
+      "path": "secondary_cayley_spectrum.png",
+      "size": 231878,
+      "sha256": "c32aab37fb318c2fd734fc395ce4b17276370d0f0c5064247f92902f6c31d8a7"
+    },
+    {
+      "path": "signed_zero_block_phase.png",
+      "size": 100805,
+      "sha256": "a0a415f4534631a2c14603e2aa1a3467446fcc3f059793834034a469a5b16c9c"
+    },
+    {
+      "path": "stieltjes_heat_model.png",
+      "size": 224471,
+      "sha256": "57e297ccc9ad6b36f7e14e33e0c7e78e04dde79b4ad38800354453040d02d2bb"
+    },
+    {
+      "path": "tfg_rational_collar.png",
+      "size": 165117,
+      "sha256": "2e044febb2d99828e10356d62f9ea559255896ff4a7ff341203e4994cb2d2687"
+    },
+    {
+      "path": "transverse_defect_geometry.png",
+      "size": 140688,
+      "sha256": "d1fcc25cba85d4de406cceba492e8be25f63366d6659cd387d7f2b85d4838a44"
+    },
+    {
+      "path": "triangular_primitive.png",
+      "size": 148662,
+      "sha256": "7da25b3edfcbb728116f1497f7e3499c2640ad399a62770b409c35387b96542c"
+    },
+    {
+      "path": "triangular_product_convergence.png",
+      "size": 113332,
+      "sha256": "4817320ae05abb3be1c09364a00dd709eaf2ecef5d39d817adf455a8cd9dc6e7"
+    },
+    {
+      "path": "triangular_reserve_phase_v1_2.png",
+      "size": 227048,
+      "sha256": "76a2b8080af8885b5ec4b0766d26a3220415df00f9a9311432ff270dcfaf3438"
+    },
+    {
+      "path": "v26c_bessel_coefficients.png",
+      "size": 107680,
+      "sha256": "c6e420db3d79ef0dfba94424490227d80947b8dce70862f92a99b8c9f790e1cf"
+    },
+    {
+      "path": "v26c_certificate_cover.png",
+      "size": 103028,
+      "sha256": "6f91242a9a0501e0ff50cec66affac2751db8e4a4a0b31ab5ba7ef96d9e171f9"
+    },
+    {
+      "path": "v26c_dilation_threshold.png",
+      "size": 74751,
+      "sha256": "3fff24bcabdd6c9c15eefdcd0e4f3e62187d2d7e6c582016d2fb99ae2aabd646"
+    },
+    {
+      "path": "v26c_finite_dictionary.png",
+      "size": 104285,
+      "sha256": "1a07cb52a218b2c5e42f1158834f4b65fc863fe1a610bf205baeeadd41859017"
+    },
+    {
+      "path": "v26c_measure_obstruction.png",
+      "size": 193762,
+      "sha256": "d5444ae68eb2e839c09529efc41cc8518919c34bb420c9526280f7c678e632ee"
+    },
+    {
+      "path": "v26c_rank_scope.png",
+      "size": 149165,
+      "sha256": "e51edb3c7ef02847ef7067fb9aa162e7765d8c6de95e54efeb575806134a3992"
+    },
+    {
+      "path": "v26c_reciprocal_window.png",
+      "size": 61941,
+      "sha256": "4a0efa3edf65bf4c059f18ffdb63be794d798a8be12073ff64c7bd004883af71"
+    },
+    {
+      "path": "v26c_reflection_pair.png",
+      "size": 79111,
+      "sha256": "d8a1f896519cd8bb286fb0db4e9bada05c3ad039c416cef1c865dd5ceabe3015"
+    },
+    {
+      "path": "v26c_sector_array.png",
+      "size": 111386,
+      "sha256": "dd0a6a9628aca9775f08f3cb8de49630725f5ec4cbc56c6390d3540487ab3743"
+    },
+    {
+      "path": "v26c_source_depth.png",
+      "size": 118026,
+      "sha256": "dca410b6cdb580717f21950403cb6f946e5c22a25e6cc65f13abd7a634e7f83c"
+    },
+    {
+      "path": "v26c_two_node_compatibility.png",
+      "size": 128252,
+      "sha256": "47c3ae8c6d45361f3628da3570764534fe6dc8c2c8218beae3cef9f8dcd2bf3a"
+    },
+    {
+      "path": "v26c_two_objects.png",
+      "size": 102075,
+      "sha256": "81eb568425435566411da2412eec232c80b39acf31d304e44fb8fee4ef3dea61"
+    },
+    {
+      "path": "v27_bernstein_route.png",
+      "size": 163158,
+      "sha256": "87c6a3ddfdf3be25fc75300633787e25619b1bf99b780b6fadf509bee899b186"
+    },
+    {
+      "path": "v27_empirical_marker_comparison.png",
+      "size": 148983,
+      "sha256": "ede0e19924736c7d1c3f749adf2f5b6c585bc9dfd699fc6af1aa1213b527fb4d"
+    },
+    {
+      "path": "v27_nested_triangles.png",
+      "size": 85232,
+      "sha256": "d9299001c6febbe7b071151ad2562730bec36a3161c97b9f2333e64a469a9edc"
+    },
+    {
+      "path": "v27_square_diagonal.png",
+      "size": 62256,
+      "sha256": "c1fff6cc13aee765a1326f1d2dd3344124031d0c7f905d8fe1f832b85137829d"
+    },
+    {
+      "path": "v27b_energy_isometry.png",
+      "size": 125783,
+      "sha256": "efc0c7ca737440bd8b78e27d17def28d796b807d7cf49c64c5e3cc43bcb1ee54"
+    },
+    {
+      "path": "v27b_energy_spectral_cases.png",
+      "size": 109178,
+      "sha256": "bc136656b41bb2f2c34e80255468a2a2cc3005440cfbd5c41bf9e6544929f92a"
+    },
+    {
+      "path": "v29_even_triangle_geometry.png",
+      "size": 74286,
+      "sha256": "c15266ac4fe38c275b59f021868a633e815ead11b0fb3950b8c08aa72b099397"
+    },
+    {
+      "path": "v29_prime_energy_cases.png",
+      "size": 149846,
+      "sha256": "d7ce51af65aa9b5250c2d1ba168078e49b7a16f154be7e1a5ea18e85a52c2afe"
+    },
+    {
+      "path": "v30_rh_equivalence_map.png",
+      "size": 339755,
+      "sha256": "aac853c9688cafc22631e44ce3c432af420890dd7f897e99f0929fe7510882c2"
+    },
+    {
+      "path": "v30c_widder_pascal_grid.pdf",
+      "size": 4688,
+      "sha256": "899bb721985aaf1a2203741933f0c8ed83f7e741f9269c184238814c75aad151"
+    },
+    {
+      "path": "v32_pascal_teaser.png",
+      "size": 129923,
+      "sha256": "cc119a8aa9243f390e73c44659e0fdd61e2827a5f78d22e4429b21411ed2cfc7"
+    },
+    {
+      "path": "v32_triangular_root_map.png",
+      "size": 157383,
+      "sha256": "c3543ce922dd53fa44d19a5e5500d3242e94793c9721ea8088ee11577c12d391"
+    },
+    {
+      "path": "v36_carrier.png",
+      "size": 409803,
+      "sha256": "7165ea4775492905c3dcc864906e69dcf6fe85bee30a3d927028cd43aab4d962"
+    },
+    {
+      "path": "v36_fold_and_poles.png",
+      "size": 289521,
+      "sha256": "3a6005cbe5dc365dee9d3d405f3cd7225c834d3a45f1aae5ea1f8e3c0a6c8298"
+    },
+    {
+      "path": "v36_mellin_self_dual.png",
+      "size": 322174,
+      "sha256": "f9bf22e65ad0f6611ad52c39638c213404757fcb4b9aa12384e9355893d99123"
+    },
+    {
+      "path": "v37_first_zero.png",
+      "size": 273420,
+      "sha256": "f0d1b57262d81f5e84cb1efd2fd402f92f6948c6db187997f6d2fc1ddcc9198a"
+    },
+    {
+      "path": "v38_last_unit.png",
+      "size": 342976,
+      "sha256": "149a286374cf284b1d1ff3edbcb80fdb13bbcb80c4d70eec7dfa03d67f1e843e"
+    },
+    {
+      "path": "w4_global_certificate_v1_2.png",
+      "size": 198657,
+      "sha256": "d4bb69432e7fcd347b6ec103d53888f642420e02f02cee6ac59c2faa0bf50410"
+    },
+    {
+      "path": "widder_certificate_margins.png",
+      "size": 126545,
+      "sha256": "2c5709d8b8eabd6ad020223c3cfffb501d0d90f1ac9dd014033386c9e04889d4"
+    },
+    {
+      "path": "widder_tail_domination.png",
+      "size": 159435,
+      "sha256": "ee1b8f4a54b788c5746ebaa5ee25abccaadb2c9f03f22aba93878941cfdd23ce"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+--- TN_Postmaster_Volume_I_v5_0_TECHNICAL_DOSSIER.md
++++ TN_Postmaster_Volume_I_v5_1_TECHNICAL_DOSSIER.md
+@@ -1,11 +1,11 @@
+ ---
+ title: "Triangular-n Postmaster: Technical Dossier and Empirical Context"
+-subtitle: "Volume I — the proofs behind the Reading Volume -- v5.0"
++subtitle: "Volume I — the proofs behind the Reading Volume -- v5.1"
+ author:
+   - "Jeffery Huckstead"
+   - "ORCID 0009-0007-0234-2177"
+   - "Cerebral Graphix"
+-date: "17 September 2026"
++date: "September 2026"
+ lang: en-US
+ fontsize: 11pt
+ toc: true
+@@ -13,6 +13,31 @@
+ ---
+ 
+ \newpage
++
++# Abstract
++
++This Dossier supplies the proofs, finite certificates, countermodels, and
++separately marked empirical material behind *Triangular-n Postmaster,
++Volume I*. The analytic coordinate is
++$q_\rho=\rho(1-\rho)=-2T_{\rho-1}$, indexed by reflection orbits
++$[\rho]=\{\rho,1-\rho\}$ with multiplicity $m_\rho$. An off-line quartet
++contributes two conjugate folded nodes. This convention controls the
++canonical product, resolvent, Widder and heat identities, and the Li sum.
++Conjugation is not silently included in the quotient.
++
++The chapters develop the triangular arithmetic, the completed source,
++finite positivity certificates, and exact obstructions to several proposed
++shortcuts. The inherited analytic source result covers $W_1$; the v5.0
++computer-assisted certificates cover $W_2$--$W_6$ on their stated domains.
++The independent source proof at $W_7$, the all-node matrix inequality,
++and the specified uniform energy and arithmetic bounds remain open.
++This edition clarifies the interface and closes with a local summary; it
++adds no RH implication and invokes no companion entropy paper.
++
++The v5.0 certificate programs and receipts are retained unchanged as
++provenance. They have not been re-executed for this editorial revision.
++The current receipt distinguishes preservation and interface checks from
++those inherited mathematical certificates.
+ 
+ # How to use this Dossier
+ 
+@@ -48,7 +73,7 @@
+ 
+ Status tags in this Dossier use the **single master key in the Reading Volume
+ front matter**. The certificate that carries the source rungs of §74A is
+-bundled with this edition and re-executed by its build; software versions,
++bundled with this edition and re-executed by the v5.0 build; software versions,
+ precisions and run dates are recorded in the package's QA receipt rather than
+ in the text. The Riemann hypothesis is open, and no result in this Dossier is
+ offered as a proof of it.
+@@ -68,13 +93,15 @@
+ sources. Reference numbers are shared with the Reading Volume; entries 83--120
+ were added in the previous edition.
+ 
+-**What changed in v5.0.** Section 155A now prints the diagonal specializations
++**What changed in v5.1.** The abstract, the folded-multiplicity explanation in Section 32, and the technical summary make the object and the open boundary explicit. No theorem status changed.
++
++**Retained from v5.0.** Section 155A now prints the diagonal specializations
+ (155A.4a) of its two product identities, so the square form of every reflected
+ Li rung, odd and even, appears in one place, and cross-references Reading Volume
+ §R10C, the new one-orbit coordinate dictionary. Section 74A is unchanged and
+ still carries the five certified source rungs $W_2,\ldots,W_6$ in one
+ certificate — one partition of $1\le s\le128$, one exact tail for $s\ge128$, and
+-two programs that share no arithmetic — re-executed by this build on both
++two programs that share no arithmetic — re-executed by the v5.0 build on both
+ backends. No status changed, and the Riemann hypothesis remains open.
+ 
+ \newpage
+@@ -1564,7 +1591,7 @@
+ the carried decimals of §R12.
+ 
+ An independent mpmath evaluation agrees with $q_1$ and $q_2$ to twelve
+-decimals. These enclosures are recomputed by this edition's build; the receipt
++decimals. These enclosures were recomputed by the v5.0 build; the receipt
+ is `qa/GAMMA_BRIDGE.json` and is bundled.
+ 
+ ## 97. Dyadic Gram amplification and the triangular exponent law
+@@ -7108,6 +7135,23 @@
+ of the completion term $1/x$ is the constant heat mode $1$; every
+ $k\ge1$ heat derivative annihilates it.
+ 
++### Folded multiplicity and preserved information
++
++Here $[\rho]$ is the reflection pair $\{\rho,1-\rho\}$, and $m_\rho$
++is its common zero multiplicity. For an off-line quartet, the two factors
++in the product are $(1-q/q_\rho)^{m_\rho}$ and
++$(1-q/\bar q_\rho)^{m_\rho}$. On the critical line there is one such factor,
++not two copies of it. No assumption of simplicity is made.
++
++The factorization
++$q(s_1)-q(s_2)=(s_1-s_2)(1-s_1-s_2)$ proves that the only
++identification made by the fold is $s\sim1-s$. Since nontrivial zeros have
++nonzero imaginary part, $q_\rho$ is real exactly when $\Re\rho=1/2$;
++in that case $q_\rho=1/4+(\Im\rho)^2>1/4$. Reciprocal and sign changes of
++$q_\rho$ are invertible, whereas a real-part observation is a further map.
++Any probability construction made from these data must declare its own
++atoms and multiplicity convention; none is needed for Theorem F.
++
+ ## 32A. The Widder array as a Laguerre transform of the heat trace
+ 
+ Theorem F places the derivatives on the heat trace. Moving them onto the
+@@ -7967,7 +8011,7 @@
+ coordinates: a directed finite certificate on $1\le s\le40$ and the analytic
+ tail (74.11)--(74.14) beyond it. Section 74A proves $W_4>0$ again, on the
+ uniform partition and tail shared by $W_2,\ldots,W_6$, with a bundled
+-certificate that this edition's build re-executes; the two arguments are
++certificate that the v5.0 build re-executed; the two arguments are
+ independent of each other in partition, threshold and handoff point.
+ Independently of both, the verified-height theorem in Reading Volume §R13
+ includes $W_4>0$ in its finite zero-assisted prefix.
+@@ -15917,6 +15961,30 @@
+ next branch from silently rebuilding an already closed route.
+ 
+ \newpage
++
++# Summary of the technical boundary
++
++The Dossier starts with exact triangular arithmetic and reaches the
++completed source without identifying its comparison measures with the
++actual folded zero data. Its common index set is the reflection-pair set,
++with algebraic multiplicity retained. The canonical product and resolvent
++therefore count an off-line quartet as two conjugate folded nodes. This
++indexing is sufficient to recover the first-Li normalization and the
++Widder-zero-heat identities without an RH assumption.
++
++The inherited finite source certificates and exact arithmetic identities
++remain the results recorded in the Reading Volume's status key. Their
++receipt provenance is v5.0, not a newly claimed replay. The independently
++unproved next source rung is $W_7$; the all-order, all-node and all-degree
++requirements in the corresponding criteria remain unproved. Countermodels
++exclude the listed shortcuts under their stated hypotheses, not every
++possible route to the required source inequalities.
++
++Thus the proofs establish their own domains, the certificates establish
++their own finite ranges, and the empirical appendix establishes neither.
++Version 5.1 clarifies those interfaces but advances no RH status. No
++entropy construction or semantic interpretation is a premise of this
++Dossier.
+ 
+ # Part E. Empirical context and historical transcriptions
+ 
