@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "total_assertions": 982,
+  "groups": {
+    "arbitrary_curvature_telescope": 20,
+    "triangular_weight_sum": 20,
+    "linear_anchor_is_not_in_curvature": 15,
+    "missing_initial_slope_negative_control": 15,
+    "cosine_arithmetic_entries": 204,
+    "cosine_reserve_entries": 204,
+    "compensation_identity_matrix": 204,
+    "cosine_Gram_characteristic_polynomial": 9,
+    "rational_generating_function_identity": 1,
+    "genuine_pole_residue": 1,
+    "curvature_coefficients_from_rational_poles": 39,
+    "previous_exact_mixed_block_constant": 40,
+    "Orange_coarse_constant_is_valid": 40,
+    "same_row_rank_schedule": 40,
+    "same_simple_error_budget": 40,
+    "constant_ratio_limit": 1,
+    "shifted_reciprocal_map": 1,
+    "shifted_resolvent_jet_identity": 12,
+    "nonreal_shifted_negative_direction": 1,
+    "completed_cutoff_error_sign": 1,
+    "defect_error_sign_in_jets": 12,
+    "sparse_scalar_warning_model": 30,
+    "both_scalar_signs_in_warning_model": 30,
+    "recovery_decay_exact": 1,
+    "whole_row_decay_exact": 1
+  },
+  "exact_negative_control": {
+    "model": "q=2+i,2-i; a=2; p(y)=y-4/17",
+    "K2_p": "-8/4913"
+  },
+  "scope": "Finite symbolic identities and rational synthetic models; no actual-prime bound or infinite-order theorem is numerically certified.",
+  "script_sha256": "97f0138981a59bb82dd69917897e7debdd9ccc5fc6462d5becc6f88788532d71"
+}

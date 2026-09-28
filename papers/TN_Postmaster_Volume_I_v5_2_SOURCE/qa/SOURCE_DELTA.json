@@ -1,0 +1,42 @@
+[
+  {
+    "document": "READING_VOLUME",
+    "source_v51_sha256": "cdfbc51e986471e3a403be16726a83a36eeced4e04e43b2fd4852fa46137fcac",
+    "source_v52_sha256": "26cd4f4a382466b54a700fa93fba695d21bcb49dae080a9907f3d3fe0870525a",
+    "added_lines": 41,
+    "removed_lines": 38
+  },
+  {
+    "document": "TECHNICAL_DOSSIER",
+    "source_v51_sha256": "1426ee1c73e6ccafa2f21debe207c833918d8d84bc93702564a26fcc875785e0",
+    "source_v52_sha256": "dd417563dac47bcf2650160af582abad1e0969c2cbeeaff17a3b1ff0d2208845",
+    "added_lines": 344,
+    "removed_lines": 25
+  },
+  {
+    "document": "preamble_reading",
+    "source_v51_sha256": "bf5909ef23606853c7132344f38b91aa1a11ad828dcdf82a59b33cb8e6f3e6b1",
+    "source_v52_sha256": "a21a4523a655bdad035d4cacbeaf14847949d4f2b03b09eca4f295d0b4c11343",
+    "changed_lines": [
+      "+  \\par\\vspace{0.2em}",
+      "+  {\\small DOI \\href{https://doi.org/10.5281/zenodo.23004335}{10.5281/zenodo.23004335}}",
+      "-\\fancyfoot[C]{\\scriptsize\\color{tngray}Volume I -- Reading Volume, v5.1 -- RH OPEN}",
+      "+\\fancyfoot[C]{\\scriptsize\\color{tngray}Volume I -- Reading Volume, v5.2 -- RH OPEN}",
+      "-    pdfsubject={v5.1 reading volume: triangular coordinates, Euler constant bridge, completed folding, Widder sectors, Li-Loewner geometry, Bernstein-Laguerre energy, exponential prime cutoffs and the open fixed-scale prime estimate; Riemann hypothesis open}",
+      "+    pdfsubject={v5.2 reading volume: triangular coordinates, Euler constant bridge, completed folding, Widder sectors, Li-Loewner geometry, Bernstein-Laguerre energy, exponential prime cutoffs, the open fixed-scale prime estimate and a functional-equation twin calibration; Riemann hypothesis open}"
+    ]
+  },
+  {
+    "document": "preamble_dossier",
+    "source_v51_sha256": "9d55feccbd3998abc0ae1861a092ad924face5be971871d3e375bae7355bfedf",
+    "source_v52_sha256": "66b129a52baa5a66ec29f4e7d695904ef98e2614d69be4fcef15d90d6412753e",
+    "changed_lines": [
+      "+  \\par\\vspace{0.2em}",
+      "+  {\\small DOI \\href{https://doi.org/10.5281/zenodo.23004335}{10.5281/zenodo.23004335}}",
+      "-\\fancyfoot[C]{\\scriptsize\\color{tngray}Volume I -- Technical Dossier, v5.1 -- RH OPEN}",
+      "+\\fancyfoot[C]{\\scriptsize\\color{tngray}Volume I -- Technical Dossier, v5.2 -- RH OPEN}",
+      "-    pdfsubject={v5.1 technical dossier: triangular coordinates, Euler constant bridge, completed folding, Widder sectors, Li-Loewner geometry, Bernstein-Laguerre energy, exponential prime cutoffs and the open fixed-scale prime estimate; Riemann hypothesis open}",
+      "+    pdfsubject={v5.2 technical dossier: triangular coordinates, Euler constant bridge, completed folding, Widder sectors, Li-Loewner geometry, Bernstein-Laguerre energy, exponential prime cutoffs, the open fixed-scale prime estimate and a functional-equation twin calibration; Riemann hypothesis open}"
+    ]
+  }
+]

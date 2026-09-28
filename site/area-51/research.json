@@ -1,0 +1,233 @@
+{
+  "schema": "cerebralgraphix.area51.research-index.v1.0",
+  "status": "public-alpha",
+  "indexing": true,
+  "dateModified": "2026-09-27",
+  "title": "Area 51",
+  "canonicalUrl": "https://cerebralgraphix.com/area-51/",
+  "author": {
+    "name": "Jeffery Lyn Huckstead",
+    "orcid": "https://orcid.org/0009-0007-0234-2177"
+  },
+  "description": "HTML-forward card-game research: frozen object, declared rule, playable experiment, reproducible local receipt, exact result, then paper.",
+  "foundation": {
+    "title": "The Line Game | Surprise Is Not Meaning",
+    "version": "v7.2",
+    "doi": "10.5281/zenodo.22851517",
+    "url": "https://doi.org/10.5281/zenodo.22851517",
+    "license": "CC BY 4.0 — attribution required",
+    "licenseAuthority": "The archived Zenodo record is authoritative for the deposited foundation and its license."
+  },
+  "fixedObject": {
+    "activeCards": 51,
+    "outsideMarker": "2C",
+    "markerGlyph": "Ⅰ",
+    "sourceInteger": "14134725141735",
+    "scale": "10^12",
+    "displayedValue": "14.134725141735",
+    "sourceRole": "Supplied stored approximation to the first zeta-zero ordinate; transported by the codec, not calculated or independently certified by it.",
+    "publishedAdjacentSwap": [
+      "KS",
+      "10D"
+    ],
+    "cardOrder": [
+      "AS",
+      "AH",
+      "AD",
+      "AC",
+      "2S",
+      "2H",
+      "2D",
+      "3S",
+      "3H",
+      "3D",
+      "3C",
+      "4S",
+      "4H",
+      "4D",
+      "4C",
+      "5S",
+      "5H",
+      "5D",
+      "5C",
+      "6S",
+      "6H",
+      "6D",
+      "6C",
+      "7S",
+      "7H",
+      "7D",
+      "7C",
+      "8S",
+      "8H",
+      "8D",
+      "8C",
+      "9S",
+      "9H",
+      "9D",
+      "9C",
+      "QD",
+      "KH",
+      "10H",
+      "KD",
+      "QH",
+      "QS",
+      "JS",
+      "10C",
+      "JC",
+      "QC",
+      "KC",
+      "10S",
+      "JD",
+      "JH",
+      "KS",
+      "10D"
+    ]
+  },
+  "declaredRepresentations": [
+    {
+      "id": "identity",
+      "meaning": "ordinary card identity and frozen position"
+    },
+    {
+      "id": "V",
+      "meaning": "blackjack value class"
+    },
+    {
+      "id": "R",
+      "meaning": "natural rank"
+    },
+    {
+      "id": "C",
+      "meaning": "declared color coordinate"
+    },
+    {
+      "id": "S",
+      "meaning": "declared suit identity"
+    },
+    {
+      "id": "memory",
+      "meaning": "user-authored symbol and meaning under a versioned Memory 51 mapping"
+    }
+  ],
+  "representationBoundary": "These meanings are declared maps or conventions. No card is claimed to possess a unique intrinsic psychological, physical, financial, or number-theoretic meaning.",
+  "objects": [
+    {
+      "name": "Invariant",
+      "status": "maintained-foundation",
+      "url": "https://cerebralgraphix.com/area-51/invariant/",
+      "version": "7.2",
+      "question": "What does the exact card order carry, and what changes after one same-profile swap?"
+    },
+    {
+      "name": "Telescope 51",
+      "status": "public-beta",
+      "url": "https://cerebralgraphix.com/area-51/telescope-51/",
+      "version": "0.1-public-beta",
+      "paperVersion": "0.2-working-edition",
+      "question": "What can a declared observation rule see and recover?"
+    },
+    {
+      "name": "Memory 51",
+      "status": "public-alpha",
+      "url": "https://cerebralgraphix.com/area-51/memory-51/",
+      "version": "memory51-alpha-0.1",
+      "question": "Can a user learn a versioned card-to-symbol correspondence in both directions?"
+    },
+    {
+      "name": "Blackjack 51",
+      "status": "public-alpha",
+      "url": "https://cerebralgraphix.com/area-51/blackjack-51/",
+      "version": "blackjack51-alpha-0.2",
+      "question": "Which distinctions survive contextual value rules, priced odds, and chosen observations?"
+    },
+    {
+      "name": "Prospect 51",
+      "status": "public-alpha",
+      "url": "https://cerebralgraphix.com/area-51/prospect-51/",
+      "version": "R51-0.3 / UI 2.3.0",
+      "paperVersion": "Project 51 v0.3",
+      "paperUrl": "https://cerebralgraphix.com/research/project-51/Project_51_v0_3.pdf",
+      "question": "Which distinctions survive unordered poker scoring and an ordered archive key?"
+    },
+    {
+      "name": "51 SEDAPS",
+      "status": "working-prototype",
+      "url": "https://cerebralgraphix.com/area-51/sedaps-51/",
+      "version": "sedaps51-0.4.1",
+      "paperVersion": "51 SEDAPS v0.1 working note",
+      "paperUrl": "https://cerebralgraphix.com/area-51/sedaps-51/51_SEDAPS_v0_1.pdf",
+      "question": "How much extra ledger is needed to recover a past when a deterministic forward rule has several legal predecessors?",
+      "researchUpdateUrl": "https://cerebralgraphix.com/area-51/sedaps-51/RESEARCH_UPDATE_v0_4_1.md"
+    },
+    {
+      "name": "51 Twins",
+      "status": "exhibit",
+      "url": "https://cerebralgraphix.com/area-51/twins-51/",
+      "version": "twins51-1.0",
+      "calibrationUrl": "https://cerebralgraphix.com/area-51/twins-51/calibration.html",
+      "question": "When two runs obey the same rule for a long time, which gate separates them, and how late?"
+    }
+  ],
+  "proofValue": {
+    "supports": [
+      "exact decoding under the declared codec",
+      "finite equality or difference of declared projections",
+      "finite recurrence certificates",
+      "complete finite census under a frozen rule"
+    ],
+    "doesNotSupport": [
+      "Riemann Hypothesis",
+      "a newly calculated or newly certified zero",
+      "an uncomputed decimal tail",
+      "intrinsic card meaning",
+      "human cognition",
+      "entropy",
+      "general prediction ability",
+      "human-study evidence from traffic"
+    ]
+  },
+  "creditBoundary": "Credits are designed game rewards and are not bits, entropy, intelligence, proof of learning, cash, or a scarce asset.",
+  "runningLabelBoundary": {
+    "ledger": "https://cerebralgraphix.com/area-51/assets/invariant-y-n-ledger-v7-2.csv",
+    "relation": "For the published fixture, the card rule determines the running state and turn n; n selects the supplied stored label y_n and the ledger records both original and one-swap hand counts.",
+    "notClaimed": "The cards do not generate y_n, supply a recurrence for y_(n+1), calculate an unobserved zero, or make y_n part of the card transition."
+  },
+  "blackjackInformationMarket": {
+    "ruleVersion": "blackjack51-alpha-0.2",
+    "visibleOddsCostCredits": 1,
+    "forecastStakeCredits": 1,
+    "nextCardObservationCostCredits": 6,
+    "visibleOddsModel": "Uniform over card identities not visible to the player at the current decision state.",
+    "separation": "Buying odds exposes the safe/bust distribution but not the next card. The forecast stake and exact-card observation are separate transactions and ledgers."
+  },
+  "dataPolicy": "Local exports only in public Alpha; no automatic transmission or passive-traffic inference.",
+  "citation": {
+    "required": true,
+    "instruction": "Cite Jeffery Lyn Huckstead, the exact Area 51 page and rule version used, its canonical URL, and the v7.2 foundation DOI 10.5281/zenodo.22851517 whenever a summary or claim relies on this work."
+  },
+  "site_version": "2.8.6",
+  "date_modified": "2026-09-27",
+  "play_order": [
+    "Invariant",
+    "Blackjack 51",
+    "Telescope 51",
+    "Memory 51",
+    "Prospect 51",
+    "51 SEDAPS"
+  ],
+  "rule_card_route": "/area-51/invariant/rule-card.html",
+  "economy": {
+    "unit": "jbit",
+    "opening": 8,
+    "refill_seconds": 310,
+    "refill_cap": 8,
+    "identity_reveal": 6,
+    "memory_correct_four_choice": 2,
+    "memory_daily_cap": 8,
+    "prospect_entry": 1,
+    "prospect_archive_meter_start": 51,
+    "prospect_archive_entry_increment": 0.01,
+    "prospect_scope": "Same browser-local bank; no global jackpot or cash value."
+  }
+}

@@ -1,0 +1,408 @@
+{
+ "title": "Complete state censuses of the SEDAPS capture rule for small decks",
+ "program": "census2.c (two bits per state); census_alt.c adds winner alternation and alpha; census_deals.c counts alternate deals",
+ "rule": "every nonempty queue plays its front card; the highest wins; the winner appends the played cards in seat order starting from itself",
+ "censuses": [
+  {
+   "queues": 2,
+   "subset": "both nonempty",
+   "n": 2,
+   "states": 2,
+   "statesThatCycle": 0,
+   "loops": 0,
+   "loopLengths": {},
+   "liveQueuesOnLoops": {},
+   "allLengthsDivisibleByNplus1": null
+  },
+  {
+   "queues": 2,
+   "subset": "both nonempty",
+   "n": 3,
+   "states": 12,
+   "statesThatCycle": 0,
+   "loops": 0,
+   "loopLengths": {},
+   "liveQueuesOnLoops": {},
+   "allLengthsDivisibleByNplus1": null
+  },
+  {
+   "queues": 2,
+   "subset": "both nonempty",
+   "n": 4,
+   "states": 72,
+   "statesThatCycle": 0,
+   "loops": 0,
+   "loopLengths": {},
+   "liveQueuesOnLoops": {},
+   "allLengthsDivisibleByNplus1": null
+  },
+  {
+   "queues": 2,
+   "subset": "both nonempty",
+   "n": 5,
+   "states": 480,
+   "statesThatCycle": 84,
+   "loops": 4,
+   "loopLengths": {
+    "6": 4
+   },
+   "liveQueuesOnLoops": {
+    "2": 4
+   },
+   "allLengthsDivisibleByNplus1": true
+  },
+  {
+   "queues": 2,
+   "subset": "both nonempty",
+   "n": 6,
+   "states": 3600,
+   "statesThatCycle": 0,
+   "loops": 0,
+   "loopLengths": {},
+   "liveQueuesOnLoops": {},
+   "allLengthsDivisibleByNplus1": null
+  },
+  {
+   "queues": 2,
+   "subset": "both nonempty",
+   "n": 7,
+   "states": 30240,
+   "statesThatCycle": 9390,
+   "loops": 104,
+   "loopLengths": {
+    "8": 104
+   },
+   "liveQueuesOnLoops": {
+    "2": 104
+   },
+   "allLengthsDivisibleByNplus1": true
+  },
+  {
+   "queues": 2,
+   "subset": "both nonempty",
+   "n": 8,
+   "states": 282240,
+   "statesThatCycle": 0,
+   "loops": 0,
+   "loopLengths": {},
+   "liveQueuesOnLoops": {},
+   "allLengthsDivisibleByNplus1": null
+  },
+  {
+   "queues": 2,
+   "subset": "both nonempty",
+   "n": 9,
+   "states": 2903040,
+   "statesThatCycle": 1155462,
+   "loops": 672,
+   "loopLengths": {
+    "20": 288,
+    "30": 384
+   },
+   "liveQueuesOnLoops": {
+    "2": 672
+   },
+   "allLengthsDivisibleByNplus1": true
+  },
+  {
+   "queues": 2,
+   "subset": "both nonempty",
+   "n": 10,
+   "states": 32659200,
+   "statesThatCycle": 2421216,
+   "loops": 96,
+   "loopLengths": {
+    "60": 96
+   },
+   "liveQueuesOnLoops": {
+    "2": 96
+   },
+   "allLengthsDivisibleByNplus1": false
+  },
+  {
+   "queues": 2,
+   "subset": "both nonempty",
+   "n": 11,
+   "states": 399168000,
+   "statesThatCycle": 184833096,
+   "loops": 111184,
+   "loopLengths": {
+    "12": 85120,
+    "24": 26064
+   },
+   "liveQueuesOnLoops": {
+    "2": 111184
+   },
+   "allLengthsDivisibleByNplus1": true
+  },
+  {
+   "queues": 2,
+   "subset": "both nonempty",
+   "n": 12,
+   "states": 5269017600,
+   "statesThatCycle": 0,
+   "loops": 0,
+   "loopLengths": {},
+   "liveQueuesOnLoops": {},
+   "allLengthsDivisibleByNplus1": null
+  },
+  {
+   "queues": 3,
+   "subset": "all",
+   "n": 3,
+   "states": 60,
+   "statesThatCycle": 0,
+   "loops": 0,
+   "loopLengths": {},
+   "liveQueuesOnLoops": {},
+   "allLengthsDivisibleByNplus1": null
+  },
+  {
+   "queues": 3,
+   "subset": "all",
+   "n": 4,
+   "states": 360,
+   "statesThatCycle": 0,
+   "loops": 0,
+   "loopLengths": {},
+   "liveQueuesOnLoops": {},
+   "allLengthsDivisibleByNplus1": null
+  },
+  {
+   "queues": 3,
+   "subset": "all",
+   "n": 5,
+   "states": 2520,
+   "statesThatCycle": 324,
+   "loops": 12,
+   "loopLengths": {
+    "6": 12
+   },
+   "liveQueuesOnLoops": {
+    "2": 12
+   },
+   "allLengthsDivisibleByNplus1": true
+  },
+  {
+   "queues": 3,
+   "subset": "all",
+   "n": 6,
+   "states": 20160,
+   "statesThatCycle": 0,
+   "loops": 0,
+   "loopLengths": {},
+   "liveQueuesOnLoops": {},
+   "allLengthsDivisibleByNplus1": null
+  },
+  {
+   "queues": 3,
+   "subset": "all",
+   "n": 7,
+   "states": 181440,
+   "statesThatCycle": 46995,
+   "loops": 312,
+   "loopLengths": {
+    "8": 312
+   },
+   "liveQueuesOnLoops": {
+    "2": 312
+   },
+   "allLengthsDivisibleByNplus1": true
+  },
+  {
+   "queues": 3,
+   "subset": "all",
+   "n": 8,
+   "states": 1814400,
+   "statesThatCycle": 0,
+   "loops": 0,
+   "loopLengths": {},
+   "liveQueuesOnLoops": {},
+   "allLengthsDivisibleByNplus1": null
+  },
+  {
+   "queues": 3,
+   "subset": "all",
+   "n": 9,
+   "states": 19958400,
+   "statesThatCycle": 7453653,
+   "loops": 2016,
+   "loopLengths": {
+    "20": 864,
+    "30": 1152
+   },
+   "liveQueuesOnLoops": {
+    "2": 2016
+   },
+   "allLengthsDivisibleByNplus1": true
+  },
+  {
+   "queues": 3,
+   "subset": "all",
+   "n": 10,
+   "states": 239500800,
+   "statesThatCycle": 17007696,
+   "loops": 288,
+   "loopLengths": {
+    "60": 288
+   },
+   "liveQueuesOnLoops": {
+    "2": 288
+   },
+   "allLengthsDivisibleByNplus1": false
+  },
+  {
+   "queues": 3,
+   "subset": "all",
+   "n": 11,
+   "states": 3113510400,
+   "statesThatCycle": 1416202371,
+   "loops": 333552,
+   "loopLengths": {
+    "12": 255360,
+    "24": 78192
+   },
+   "liveQueuesOnLoops": {
+    "2": 333552
+   },
+   "allLengthsDivisibleByNplus1": true
+  },
+  {
+   "queues": 3,
+   "subset": "all three nonempty",
+   "n": 5,
+   "states": 720,
+   "statesThatCycle": 0,
+   "loops": 0,
+   "loopLengths": {},
+   "liveQueuesOnLoops": {},
+   "allLengthsDivisibleByNplus1": null
+  },
+  {
+   "queues": 3,
+   "subset": "all three nonempty",
+   "n": 7,
+   "states": 75600,
+   "statesThatCycle": 0,
+   "loops": 0,
+   "loopLengths": {},
+   "liveQueuesOnLoops": {},
+   "allLengthsDivisibleByNplus1": null
+  },
+  {
+   "queues": 3,
+   "subset": "all three nonempty",
+   "n": 9,
+   "states": 10160640,
+   "statesThatCycle": 0,
+   "loops": 0,
+   "loopLengths": {},
+   "liveQueuesOnLoops": {},
+   "allLengthsDivisibleByNplus1": null
+  }
+ ],
+ "twoQueueLoops_alternation": [
+  {
+   "n": 5,
+   "loops": 4,
+   "allAlternate": true,
+   "byLengthAndAlpha": [
+    {
+     "length": 6,
+     "alpha": 2,
+     "loops": 4,
+     "formula": 6
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "loops": 104,
+   "allAlternate": true,
+   "byLengthAndAlpha": [
+    {
+     "length": 8,
+     "alpha": 2,
+     "loops": 52,
+     "formula": 8
+    },
+    {
+     "length": 8,
+     "alpha": 4,
+     "loops": 52,
+     "formula": 8
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "loops": 672,
+   "allAlternate": true,
+   "byLengthAndAlpha": [
+    {
+     "length": 20,
+     "alpha": 4,
+     "loops": 288,
+     "formula": 20
+    },
+    {
+     "length": 30,
+     "alpha": 2,
+     "loops": 192,
+     "formula": 30
+    },
+    {
+     "length": 30,
+     "alpha": 6,
+     "loops": 192,
+     "formula": 30
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "loops": 111184,
+   "allAlternate": true,
+   "byLengthAndAlpha": [
+    {
+     "length": 12,
+     "alpha": 4,
+     "loops": 42560,
+     "formula": 12
+    },
+    {
+     "length": 12,
+     "alpha": 6,
+     "loops": 42560,
+     "formula": 12
+    },
+    {
+     "length": 24,
+     "alpha": 2,
+     "loops": 13032,
+     "formula": 24
+    },
+    {
+     "length": 24,
+     "alpha": 8,
+     "loops": 13032,
+     "formula": 24
+    }
+   ]
+  }
+ ],
+ "formula": "L = 2*lcm(alpha/2, (n+1)/2, (n-1-alpha)/2) for alternating two-queue loops, alpha = A's length before its winning turns (even)",
+ "crossCheck_OEIS_A400411": {
+  "definition": "alternate deals (first card to the first player) whose two-player game never ends",
+  "computed": {
+   "5": 30,
+   "7": 2304,
+   "9": 218680,
+   "10": 395940,
+   "11": 28223770,
+   "2,3,4,6,8": 0
+  },
+  "matchesPublished": true
+ },
+ "status": "COMPUTED (exhaustive); RH STATUS: OPEN"
+}

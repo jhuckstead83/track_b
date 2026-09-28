@@ -1,0 +1,224 @@
+--- TN_Postmaster_Volume_I_v5_0_READING_VOLUME.md
++++ TN_Postmaster_Volume_I_v5_1_READING_VOLUME.md
+@@ -1,11 +1,11 @@
+ ---
+ title: "Triangular-n Postmaster: From the Triangular Primitive to the Completed Source Frontier"
+-subtitle: "Volume I — The Reading Volume -- v5.0"
++subtitle: "Volume I — The Reading Volume -- v5.1"
+ author:
+   - "Jeffery Huckstead"
+   - "ORCID 0009-0007-0234-2177"
+   - "Cerebral Graphix"
+-date: "17 September 2026"
++date: "September 2026"
+ lang: en-US
+ fontsize: 11pt
+ toc: true
+@@ -13,6 +13,35 @@
+ ---
+ 
+ \newpage
++
++# Abstract
++
++The triangular primitive $T_n=n(n+1)/2$ becomes a reflection-invariant
++coordinate after centering at the half-step. Its analytic continuation gives
++$q=s(1-s)=-2T_{s-1}=1/4-(s-1/2)^2$. This volume follows that coordinate from
++finite arithmetic into the completed Riemann function, its folded resolvent,
++and the exact positivity criteria it supports. Throughout,
++$[\rho]=\{\rho,1-\rho\}$ is one functional-equation reflection orbit with
++multiplicity $m_\rho$: an off-line quartet supplies two conjugate folded
++nodes, not one full-symmetry state. The reciprocal coordinate $1/q$ retains
++the folded node; taking a real part is a separate operation and is not part
++of this fold.
++
++The central identities express every reduced Widder rung as one finite row
++of the signed Pascal triangle and connect the folded moments to Li's
++coefficients. The inherited source ledger establishes the first six rungs,
++analytically at $W_1$ and by the bundled v5.0 interval certificates at
++$W_2$--$W_6$. A separate verified-height argument establishes a much longer
++finite prefix. Neither channel supplies the all-order quantifier.
++The all-node inequality $L_\Gamma-L_P\succeq0$, the next independent source
++rung $W_7$, and the stated source-energy and exact-divisor bounds retain
++their distinct open obligations. The Riemann hypothesis is not proved here.
++
++Version 5.1 makes the fold, multiplicities, preserved information, and
++remaining obligations explicit from the abstract through the summary.
++It changes no inherited RH status, adds no entropy assumption, and depends
++on no companion interpretation paper. The detailed proofs and certificates
++remain in the accompanying Technical Dossier.
+ 
+ # Start here
+ 
+@@ -206,9 +235,9 @@
+ | $\mathscr E_N[P](2)\le5$ for every degree $N$, (166B.12a) | \EQUIV{} \OPENSTAT{} |
+ 
+ **Where the certificates are.** The five certified source rungs rest on one
+-certificate, bundled with this edition and re-executed by its build on two
++certificate, bundled with this edition and re-executed by the v5.0 build on two
+ independent arithmetic backends (Dossier §74A). The enclosures of $q_1$, $q_2$
+-and $\lambda_1$ printed in §R12 are recomputed by the same build (Dossier
++and $\lambda_1$ printed in §R12 were recomputed by that v5.0 build (Dossier
+ §96A.5). The verified-height row uses the external input named in §R13.
+ Software versions, precisions and run dates belong to the package's QA receipt
+ and are not carried in the text.
+@@ -277,7 +306,18 @@
+ exact-divisor residual → reflection defects → the live targets of §R23 and the
+ NO-GO ledger of §R25. The section-level map is printed once, in §R24.
+ 
+-**What changed in v5.0.** Section R10C is new: one folded orbit written in its
++**What changed in v5.1.** This is an interface and exposition revision.
++The abstract, the folded-state contract after (9.8), and the final summary
++now state the same object and quantifiers. Section R10C's description of a
++single resolvent kernel explicitly restricts positivity and monotonicity
++to a positive real folded node. The polynomial identities, finite
++certificate domains, and open source obligations are unchanged.
++The v5.0 certificates and receipts are preserved as inherited evidence;
++they were not re-executed for this editorial revision. The v5.1 checks
++cover the new algebraic interface, preservation of the inherited status
++rows, source changes, and the rebuilt documents.
++
++**Retained from v5.0.** Section R10C is new: one folded orbit written in its
+ four coordinates — the folded point $q$, the resolvent pole $-q$, the reciprocal
+ $y=1/q$ and the Li coordinate $w=1-1/\rho$ — with the recurrence that generates
+ the orbit's whole Li column from the pole alone, and the square factorizations
+@@ -286,7 +326,7 @@
+ rasterized status panel had gone stale against §R12, and a new package audit
+ now checks the printed claims of every bundled figure against the ledger. The
+ five certified source rungs $W_2,\ldots,W_6$ continue to rest on the single
+-certificate of Dossier §74A, re-executed by this build on two independent
++certificate of Dossier §74A, re-executed by the v5.0 build on two independent
+ arithmetic backends. No status changed, and no new RH implication is claimed.
+ 
+ **How to cite.** Use the concept DOI
+@@ -333,7 +373,7 @@
+ | **owner** | used mainly in the Dossier: the explicit object (a measure, kernel, matrix or derivative expression) that carries a quantity and from which its sign is read; "the owner of $W_7$ reaches $F^{(14)}$" means that the source expression for $W_7$ uses derivatives of $F(s)=(s-1)\zeta(s)$ through order fourteen |
+ | **rail** | a progression of distinguished points, such as the even-triangular rail $2T_{2n}$ of §R5C |
+ | **A-CAT** | a computer-assisted theorem: a rigorous finite certificate in interval arithmetic, joined to an analytic proof for the remaining range |
+-| **certificate of record** | the executable and receipt that establish a \CERT{} row; for the source rungs it is bundled with this edition and re-run by its build |
++| **certificate of record** | the executable and receipt that establish a \CERT{} row; for the source rungs it is bundled with this edition and re-run by the v5.0 build |
+ | **firewall** | a proved statement that blocks a tempting but invalid inference |
+ | **NO-GO** | an unconditional theorem showing that a proposed route cannot work as stated |
+ | **frontier** | the first inequality on a route that is not proved |
+@@ -1642,6 +1682,39 @@
+ the function in (9.7).** Section R4A pairs it with a series of zeta values:
+ by (GA.8), twice this number plus $\sum_{k\ge2}\zeta(k)/T_k$ equals
+ $2-\log2$.
++
++### The folded-state contract
++
++The definition of $[\rho]$ above is a definition of the index set, not a
++positivity hypothesis. Conjugation acts on this set: away from the critical
++line, $[\bar\rho]$ is a second orbit and $q_{\bar\rho}=\bar q_\rho$.
++Multiplicity is the common zero order of the two members of the reflection
++pair; it is not multiplied by the size of a four-slot symmetry list.
++An off-line quartet of multiplicity $m$ therefore contributes
++$m/q+m/\bar q$ to (9.8), while a critical-line reflection pair of
++multiplicity $m$ contributes $m/q$.
++
++The fold identifies exactly the two inverse branches. For arbitrary
++complex $s_1,s_2$,
++
++$$
++q(s_1)-q(s_2)=(s_1-s_2)(1-s_1-s_2),\qquad
++q(s_1)=q(s_2)\iff s_2=s_1\ \text{or}\ s_2=1-s_1.
++\tag{IF.1}
++$$
++
++For a nontrivial zero, which is nonreal, critical-line membership is
++therefore retained by $q$: it is equivalent to $q\in(1/4,\infty)$.
++The changes $q\mapsto-q$ and $q\mapsto1/q$ are invertible on the folded
++zero set. They do not create a new loss of information. A later real-valued
++observation, aggregation of conjugate nodes, or probability normalization
++must be defined separately; none changes what $[\rho]$ means here.
++
++This is the complete interface a downstream construction needs to inherit:
++the reflection orbit, its multiplicity, the complex folded coordinate,
++and the absolutely convergent first-Li identity (9.8). Positivity of a
++separately chosen scalar does not establish the Stieltjes property of the
++complex folded resolvent. Dossier Section 32 records the same contract.
+ 
+ ```{=latex}
+ \begin{figure}[!tb]
+@@ -2032,8 +2105,9 @@
+ - $q$ is the **folded point** of §R6: one point per orbit, because the
+   reflection $\rho\mapsto1-\rho$ fixes it.
+ - $p=-q$ is the **resolvent pole** of §R10: the kernel $(x+q)^{-1}$ summed in
+-  (10.1) is singular at $x=p$ and nowhere else, and the branch to its right is
+-  positive and decreasing with value $1/q$ at the origin.
++  (10.1) is singular at $x=p$ and nowhere else, with value $1/q$ at the origin.
++  When $q>0$ is real, the kernel on $x>0$ is positive and decreasing; for
++  nonreal $q$ no real-order statement is attached to the individual kernel.
+ - $y=1/q$ is the **reciprocal coordinate** of (7.2), the one in which the
+   central-Pascal rows of §R15 are polynomial.
+ - $w$ is the **Li coordinate** of (15.1a). It is the Cayley coordinate of §R7
+@@ -2389,7 +2463,7 @@
+ no verified height and no use of RH: the first rung analytically, the next five
+ by the certificate of Dossier §74A, which covers $1\le s\le128$ by a complete
+ rational partition of continuum cells and $s\ge128$ by an exact analytic tail.
+-That certificate is bundled with this edition and re-executed by its build on
++That certificate is bundled with this edition and re-executed by the v5.0 build on
+ two independent arithmetic backends. The verified-height theorem of §R13 is a
+ different channel — it uses verified zero locations — and it reaches every rung
+ index up to $K_H=4{,}712{,}664{,}392{,}502$, fixed exactly at (13.6), and none
+@@ -2444,7 +2518,7 @@
+ $$
+ 
+ using $\sqrt{1+h}-1\le h/2$. The enclosures of $q_1$, $q_2$ and $\lambda_1$ are
+-recomputed in interval arithmetic by this edition's build (Dossier §96A.5), and
++recomputed in interval arithmetic by the v5.0 build (Dossier §96A.5), and
+ with (12.7a) they give, with no hypothesis,
+ 
+ $$
+@@ -4848,6 +4922,42 @@
+ These are unconditional theorems about what this approach cannot do. They are
+ finished and explain the surviving corridor; none is evidence for RH or against
+ it.
++
++# Summary: the object, the results, and the remaining line
++
++The starting object is the triangular primitive, not a conjectured zero
++pattern. Its half-step symmetry continues to the exact fold
++$q=s(1-s)=-2T_{s-1}$. The completed function factors as $\xi(s)=X(q)$,
++and one reflection orbit $[\rho]=\{\rho,1-\rho\}$ gives one folded node
++$q_\rho$, one resolvent pole $-q_\rho$, and one reciprocal seed
++$y_\rho=1/q_\rho$. An off-line quartet remains two conjugate folded nodes,
++each carrying its original multiplicity. The branch label is folded away;
++critical-line membership is not.
++
++From these nodes the volume constructs the absolutely convergent resolvent
++$S_\xi$, the Widder rungs, the moment and Li dictionaries, the source
++matrices, and the completed energies. The signed Pascal identity is exact
++at every rung. Its existence does not decide the sign of every rung.
++The proved source prefix reaches $W_6$ on the inherited v5.0 certificates;
++the verified-height channel reaches a much longer but still finite range.
++Those are different proof channels with different inputs. The next
++independent source proof is $W_7\rightsquigarrow F^{(14)}$.
++
++The full statement remains the one printed near the beginning:
++$\mathrm{RH}\iff W_k(x)\ge0$ for every $k\ge1$ and every $x>0$.
++The all-node Gamma-minus-prime matrix inequality is a second equivalent
++form. Sections R17F--R17I and R23 give additional exact energy and divisor
++routes with their own unproved uniform bounds; no unproved reduction among
++those routes is used. A positive comparison model, a real-part scalar, or
++a finite certificate cannot supply a missing full quantifier.
++
++Version 5.1 preserves that research boundary. Its additional clarity is
++local: the index set is declared before summation; coordinate changes are
++distinguished from projections; and inherited certificates are distinguished
++from this revision's editorial checks. A reader needs no external
++interpretation or companion entropy construction to recover the argument.
++The arithmetic identities and finite certificates stand on their stated
++domains. The uniform completed-source positivity required by RH remains open.
+ 
+ # References
+ 
+@@ -5061,7 +5171,7 @@
+     critical-line counting symbol is not the smooth approximation $N_0$
+     of §168.
+ 
+-Entries 67--73 are external work consulted while this edition was
++Entries 67--73 are external work consulted while the v5.0 edition was
+ prepared. Each was read at the level its entry states and **none is
+ verified anywhere in this work**; they are cited for what they say, not
+ as support for anything claimed here.

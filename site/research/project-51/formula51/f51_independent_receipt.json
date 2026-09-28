@@ -1,0 +1,99 @@
+{
+ "script": "f51_independent.py",
+ "checks": [
+  {
+   "name": "component counts for N = 1..11172; band and self-describing radices",
+   "pass": true,
+   "band": [
+    1177,
+    1764,
+    588
+   ],
+   "selfDescribing": [
+    1428,
+    1455,
+    28
+   ]
+  },
+  {
+   "name": "Section 3 repaired: bracket holds for every N; the old step ceil(N/588) = ceil(floor(N/28)/21) fails",
+   "pass": true,
+   "failuresOfOldStep": 486,
+   "firstFailures": [
+    589,
+    590,
+    591
+   ]
+  },
+  {
+   "name": "all 588 band tables match f51_band.json",
+   "pass": true,
+   "tables": 588,
+   "mismatches": 0
+  },
+  {
+   "name": "window optimum 1437-1440; balanced partial classes (9 vowels = r - 1 trailing) only at 1438",
+   "pass": true,
+   "optimum": [
+    1437,
+    1438,
+    1439,
+    1440
+   ],
+   "balanced": [
+    1438
+   ]
+  },
+  {
+   "name": "PP270 4.1 replayed (second seat): edge inequalities exact; trailing class is the minimum for 257 radices",
+   "pass": true,
+   "window": [
+    [
+     1219,
+     1455
+    ],
+    [
+     1745,
+     1764
+    ]
+   ],
+   "margin1438": 0.794675,
+   "factor": 1.7347
+  },
+  {
+   "name": "PP270 4.2 replayed (second seat): polar fibre formula, 30 labels, 50 164 531 200 lifts, J has 8 lifts, sectors 15/23/45",
+   "pass": true,
+   "triangularFibre": [
+    1,
+    3,
+    6,
+    10,
+    15,
+    21,
+    28,
+    36,
+    45
+   ],
+   "Jpairs": [
+    [
+     6,
+     10
+    ],
+    [
+     15,
+     21
+    ],
+    [
+     36,
+     45
+    ]
+   ],
+   "sectors": [
+    15,
+    23,
+    45
+   ]
+  }
+ ],
+ "status": "PASS"
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "scope": "Exact finite algebra and rational directed enclosures for a polynomial model. No zeta-source interval or RH certificate.",
+  "total_checks": 1684,
+  "checks": {
+    "P_recurrence_vs_closed_form": 31,
+    "coefficient_signs": 31,
+    "half_scale_closed_form": 31,
+    "absolute_coefficient_sum": 31,
+    "each_mode_recovered": 81,
+    "common_moment_error_collapse": 9,
+    "combined_transport_equals_unfiltered": 378,
+    "row_to_filtered_output": 1080,
+    "model_all_output_intervals_positive": 2,
+    "model_exact_reconstruction": 2,
+    "model_interval_contains_exact": 2,
+    "positive_model_lambda17": 1,
+    "interval_width_budget": 2,
+    "transport_norm_root_enclosure": 2,
+    "mandatory_negative_control": 1
+  },
+  "script_sha256": "e4a5d16ed1fb9a71bbefe274e363ed2d6f79c066a3d274a0f4d79552a42943b2"
+}
+MODEL 17 RECONSTRUCTED 6.461413239453946387813975541278228183310958086 6.461413239453946387813975541278228201721394758
+MODEL 37 RECONSTRUCTED -0.5974811932657912684352232584057216485966044221361963719588455586851697 -0.5974811932657912684352232584057216485966043330221986658840023187040796
+TRANSPORT_NORM 8 301.6897993224049526279616022 301.6897993224049526279616023
+TRANSPORT_NORM 18 1658.1055162021131295753497846 1658.1055162021131295753497847

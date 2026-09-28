@@ -1,0 +1,120 @@
+{
+ "version": "2.8.4",
+ "base_version": "2.8.3",
+ "base_archive": "CerebralGraphix_v2_8_3_FULL_SITE_no-papers.zip",
+ "base_archive_sha256": "12593c22a2436fa296cfe9d3b9600153e68206350e98b8ed5522ea85b44586a8",
+ "input_files": 646,
+ "unchanged_files": 631,
+ "removed_files": [],
+ "changed": [
+  {
+   "path": "_headers",
+   "before": "41b37b9ca4faf88d42f67c6b898b56182f4e91b38b0809fbcbc90835c2a3cae5",
+   "after": "e14e747dca49dc304413759074b35817f11354175d3e02c97f646857867d78a3"
+  },
+  {
+   "path": "area-51/llms.txt",
+   "before": "58c0ae705d880d5cfbf1fd4fd22b1e328f254c536295b8c333e68ce21bad5996",
+   "after": "59c1814b580dd02f5d2294946015705334093ab060c827e1638cc2db3260047a"
+  },
+  {
+   "path": "area-51/research.json",
+   "before": "ae4d4836781980bc06ba0848ee0d6c0f5cfb32dafd86ee6f45d2d8e12a5dc38b",
+   "after": "6436fd4ccf80c40094377e6ca0ffcd3f41d72dab72b4a57728bded7325f20596"
+  },
+  {
+   "path": "area-51/sedaps-51/RESEARCH_UPDATE_v0_4_1.md",
+   "before": "062824279cd22926691e3e7e0e6eadaad287f2ba34bf0e726d868de7e3ac8370",
+   "after": "005740252fed3dd611aea31b4ad396e13d4c14c8e713de61d86344b97925364c"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/LIVE3_LOOPS_RECEIPT.json",
+   "before": "0bfe5efbd806b464b1158f52362b7999dd5e729c31172bc5a78c6ed281de36b0",
+   "after": "16a9d0683953fd18084be920aa481e1de402ea7fad3e91aaa6844f0937199f8f"
+  },
+  {
+   "path": "area-51/sedaps-51/index.html",
+   "before": "b0c02a2817418040094b82fcc224f7e0fc796bc4862302256901d80fb1978b21",
+   "after": "bc3e8a9aa2dd704ea35b14defdbfdb560a0e3445dbceec0c15c08be214da3e2b"
+  },
+  {
+   "path": "area-51/twins-51/build-twins-page-v1.cjs",
+   "before": "7bbec0f4f03925f1d3e5d529e9fb2dcdec12789fa3b216935099b0af2e518c8c",
+   "after": "c2408fc1ea1ac5eca822a62f3ba6635c80c5e165571f343b6510f35883ab6328"
+  },
+  {
+   "path": "area-51/twins-51/index.html",
+   "before": "4993788e60be785e50e37d19d4a4c90c21574e43259666c98401c20d76f85711",
+   "after": "4059a72ebe389dce61a7fe9f004c6f0f9a213d8dc5891ed962cd1dd15cc7e2df"
+  },
+  {
+   "path": "atlas/atlas-data.json",
+   "before": "5b7072b2572d81172624000398124d16992a0012b684899d1b1b4e6f7b0f5be0",
+   "after": "caff31ae8d9197dd12cf62b8ce947751270484b66598d3fc03c40f23f4d7708a"
+  },
+  {
+   "path": "atlas/index.html",
+   "before": "afd614101f2c35750618c65ace29bc9c8fe856990a6ce09ce70d16cca7b7fdcf",
+   "after": "e0d4b15864121f0b483e340cf072890a1d30e63f7a0e301d14b0c4356f7a87f7"
+  },
+  {
+   "path": "llms.txt",
+   "before": "3b67155869612a9c6d026a5dcdd2db73a75172db4f4e19b9daf74db518f50f31",
+   "after": "178bcf7b8c6c965c7236e605f9433ca2d909fe7255e39ac654bd7fa6f4768b57"
+  },
+  {
+   "path": "research/postmaster/index.html",
+   "before": "35f93619e3a234d3bca27d1befa105f57bec2a7468d59810c40efa9c14065ad1",
+   "after": "da972b1b05ddebe3ca4294ead7243ba761e2bb0fcfb46dbd7b36d0b89ac63fa6"
+  },
+  {
+   "path": "site-index.html",
+   "before": "364b8a80821a2210c91ff1b721dd969bc47d1af54dfcc5d58e68d5a2daea1c26",
+   "after": "52b117bf96c79fc1af1b6dd43d3fb1e623a17c85b0a513c49be930dd2255e2c6"
+  },
+  {
+   "path": "site-index.json",
+   "before": "0712fd954242a1dca912708049862a51e04d587e08064a054268620219866a92",
+   "after": "b95906d18ff3224bb83b07a7772971e2e7155f900b54c70d98c115d8367164b9"
+  },
+  {
+   "path": "sitemap.xml",
+   "before": "c3a28455ced1a4022c3d7e9e77ec2b9182cfbadb807f2afda3762f97d679d60f",
+   "after": "dda32dc0d1d24bd4bbb8e62db9c5cea7dd1199111383a40603260f3572f671b7"
+  }
+ ],
+ "added": [
+  {
+   "path": "RELEASE_NOTES_v2_8_4.md",
+   "sha256": "4f70ac637ede7c1a58251a0cf5de3709db6348e08c1823366c9c23dc7615a633"
+  },
+  {
+   "path": "VALIDATION_v2_8_4.json",
+   "sha256": "15cce8bbf0bd4357486bb618af87723c35680372c20990f01a5355a8d57592c2"
+  },
+  {
+   "path": "ZENODO_RELEASE_PLAN_v2_8_4.md",
+   "sha256": "08d65b0c450823743c12ef96f95d6b34cf590cc1aa27bb5fd4c63c569fbe0666"
+  },
+  {
+   "path": "assets/postmaster-v5-2-cover.webp",
+   "sha256": "73bf27c044debda403206a53e028a5d34a2820c5c7988372a4011d87c8bf4658"
+  },
+  {
+   "path": "research/postmaster/anchors_v5_2.json",
+   "sha256": "33092cf0c907e5dfc3e6889011ae7a0c98d4829124e3cf03ad8ae6e665d8b700"
+  },
+  {
+   "path": "research/postmaster/check_anchors_v5_2.py",
+   "sha256": "739bd5156b2f2d51588f3fb21ca150eff1e84f960b9f74fb7cea128136276c04"
+  }
+ ],
+ "not_in_archive": {
+  "papers/": "install TN_Postmaster_v5_2_PAPERS_PAYLOAD.zip into papers/ before deploying (RELEASE_NOTES_v2_8_4.md)"
+ },
+ "excluded_from_packaging": [
+  "__pycache__/",
+  "*.pyc"
+ ],
+ "note": "This manifest and the merge guide do not list themselves."
+}

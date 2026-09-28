@@ -1,0 +1,16 @@
+[
+  {
+    "document": "READING_VOLUME",
+    "source_v50_sha256": "3e68f9623c9e342f49f7bf6c5839ad2a0d7676906a2fe8dbeb6cf57a1a8a530f",
+    "source_v51_sha256": "cdfbc51e986471e3a403be16726a83a36eeced4e04e43b2fd4852fa46137fcac",
+    "added_lines": 122,
+    "removed_lines": 12
+  },
+  {
+    "document": "TECHNICAL_DOSSIER",
+    "source_v50_sha256": "736f80e77baf207dd69b5400d23b2c7f10da801b02fb80e7387ba0b8af222b69",
+    "source_v51_sha256": "1426ee1c73e6ccafa2f21debe207c833918d8d84bc93702564a26fcc875785e0",
+    "added_lines": 75,
+    "removed_lines": 7
+  }
+]

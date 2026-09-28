@@ -1,0 +1,278 @@
+{
+  "from_version": "v4.9",
+  "to_version": "v5.0",
+  "policy": "v5.0 is a slim current-edition package. Superseded v4.9 receipts, audits, deltas and provenance records are replaced by their v5.0 counterparts; the delivered PDFs are published beside the package and bound by SHA-256 in PACKAGE_MANIFEST.json (PP251 §5). The full v4.9 package remains in the Zenodo version chain.",
+  "predecessor_package_sha256": "82b64968ab3e45a301357211af88d63fa67d0f5e0d51ad1adc4ecb0d7bb0a382",
+  "old_package_members": 191,
+  "old_manifest_members": 189,
+  "pruned_or_superseded_members": 22,
+  "members": [
+    {
+      "path": "QA_RECEIPT_V4_9.md",
+      "size": 11852,
+      "sha256": "8c51ca7be6714b154aadbac641ae27f460d8e03dcaf5ea45c93ce2e7355949f3",
+      "superseded_by": "QA_RECEIPT_V5_0.md"
+    },
+    {
+      "path": "V49_PUBLICATION_DELTA_2026-09-17.md",
+      "size": 6387,
+      "sha256": "ecea1fd5ab8ff0c5c215355f542e847be5d2492555ad7e59d71413103def6bb3",
+      "superseded_by": "V50_PUBLICATION_DELTA_2026-09-17.md"
+    },
+    {
+      "path": "figures/figure74_s_sigma_it_fold_atlas.png",
+      "size": 338206,
+      "sha256": "83bd092e1145f05fcff88c59315328bc65d583a40934012600ff0105400004e7",
+      "superseded_by": "figures/figure74_safe_axis_and_self_dual.png + figures/figure75A_r10c_one_orbit_four_coordinates.png"
+    },
+    {
+      "path": "figures/pringsheim_no_dominance.png",
+      "size": 230632,
+      "sha256": "4fdc39ed10885ad222a73cb7b98927c24d29bca5992678c008060777082835fd",
+      "superseded_by": "(retired; uncited)"
+    },
+    {
+      "path": "figures/v26c_reciprocal_window.png",
+      "size": 61941,
+      "sha256": "4a0efa3edf65bf4c059f18ffdb63be794d798a8be12073ff64c7bd004883af71",
+      "superseded_by": "(retired; uncited)"
+    },
+    {
+      "path": "figures/v27_bernstein_route.png",
+      "size": 163158,
+      "sha256": "87c6a3ddfdf3be25fc75300633787e25619b1bf99b780b6fadf509bee899b186",
+      "superseded_by": "(retired; uncited)"
+    },
+    {
+      "path": "figures/v27b_energy_spectral_cases.png",
+      "size": 109178,
+      "sha256": "bc136656b41bb2f2c34e80255468a2a2cc3005440cfbd5c41bf9e6544929f92a",
+      "superseded_by": "(retired; uncited)"
+    },
+    {
+      "path": "figures/v29_even_triangle_geometry.png",
+      "size": 74286,
+      "sha256": "c15266ac4fe38c275b59f021868a633e815ead11b0fb3950b8c08aa72b099397",
+      "superseded_by": "(retired; archived under provenance/v50/pruned_figures)"
+    },
+    {
+      "path": "figures/v29_prime_energy_cases.png",
+      "size": 149846,
+      "sha256": "d7ce51af65aa9b5250c2d1ba168078e49b7a16f154be7e1a5ea18e85a52c2afe",
+      "superseded_by": "(retired; uncited)"
+    },
+    {
+      "path": "provenance/v49/accepted_updates/V49_WORK_ORDER_2026-09-17.md",
+      "size": 4361,
+      "sha256": "fd06cd277b536a3cd6776c303ca3a514d09dda95b0e0bd52501acaae6054c492",
+      "superseded_by": "provenance/v50/accepted_updates/V50_WORK_ORDER_2026-09-17.md"
+    },
+    {
+      "path": "provenance/v49/predecessor/PREDECESSOR.json",
+      "size": 1231,
+      "sha256": "93902672b6fc1db4882b3e26664badb93831ccf9c1a04e8b2642daf729e166da",
+      "superseded_by": "provenance/v50/predecessor/PREDECESSOR.json"
+    },
+    {
+      "path": "qa/V49_FIGURE_BASELINE.json",
+      "size": 13105,
+      "sha256": "5f1f63511f76131f76ace91d4362108c52e34fe13d3529ed525c5b31aeb15034",
+      "superseded_by": "qa/V50_FIGURE_BASELINE.json (kept as the incoming baseline)"
+    },
+    {
+      "path": "qa/V49_UPDATE_AUDIT.json",
+      "size": 35493,
+      "sha256": "90004ab1a2b4426ac960292de8b81f2aab6afb5b73dd9ed591a759aa0d48c6fc",
+      "superseded_by": "qa/V50_UPDATE_AUDIT.json"
+    },
+    {
+      "path": "qa/V49_VERIFY.json",
+      "size": 8350,
+      "sha256": "9681280c552c68ba4995d65f1f232afe8ad798f386c6df40a365ab5003e0c994",
+      "superseded_by": "qa/V50_VERIFY.json"
+    },
+    {
+      "path": "qa/V49_VISUAL_REVIEW.json",
+      "size": 735,
+      "sha256": "220fab119999e49fbe9a65d104672766b9dae20076f18c03e7fb2ba958b829ad",
+      "superseded_by": "qa/V50_VISUAL_REVIEW.json"
+    },
+    {
+      "path": "qa/audit_v49_updates.py",
+      "size": 25756,
+      "sha256": "acc5deaef9b6c23dda264927587f149adb3ef66f42f675b8993811a668ca5478",
+      "superseded_by": "qa/audit_v50_updates.py"
+    },
+    {
+      "path": "qa/render_review_v49.py",
+      "size": 3034,
+      "sha256": "bb7661e8ea009cf2c94f6b0bf78d219feff4be8c89481dda6a0d042bc5b8a412",
+      "superseded_by": "qa/render_review_v50.py"
+    },
+    {
+      "path": "qa/verify_v49.py",
+      "size": 7826,
+      "sha256": "785b16b05b3f467653e793527b3f8d010d17f09c111dccf977a2dd5633519158",
+      "superseded_by": "qa/verify_v50.py"
+    },
+    {
+      "path": "src/TN_Postmaster_Volume_I_v4_9_READING_VOLUME.md",
+      "size": 202956,
+      "sha256": "9501d0d4a8065d4ab450489b29b1c6ea501e4bb13e2572a379260b93b71339ca",
+      "superseded_by": "src/TN_Postmaster_Volume_I_v5_0_READING_VOLUME.md"
+    },
+    {
+      "path": "src/TN_Postmaster_Volume_I_v4_9_TECHNICAL_DOSSIER.md",
+      "size": 490205,
+      "sha256": "fe85dceb44c6195dd4f453bb471ae205e53fe6e6384a8b7155936f1b8f5188c0",
+      "superseded_by": "src/TN_Postmaster_Volume_I_v5_0_TECHNICAL_DOSSIER.md"
+    },
+    {
+      "path": "src/preamble_v49_dossier.tex",
+      "size": 6319,
+      "sha256": "fa36e943ec1ebb4bb046c8e0dd1b22c45bc3dd37e9d9884f9224fdfb50c39b55",
+      "superseded_by": "src/preamble_v50_dossier.tex"
+    },
+    {
+      "path": "src/preamble_v49_reading.tex",
+      "size": 7181,
+      "sha256": "c62c7db500967cf40769baca2b215235d73c8d8c70ac34ad5c656bf3d137349e",
+      "superseded_by": "src/preamble_v50_reading.tex"
+    }
+  ],
+  "changed_members": [
+    {
+      "path": "README.md",
+      "v49_sha256": "2f52a965d7b5ac91c4daa5462298597f15a80c4206064774bae87ad45806c854",
+      "v50_sha256": "4ac09ca1e86feae92117247575e6869afcc0acb0703b64ace6112e572a98ca1d"
+    },
+    {
+      "path": "figures/figure75_li_pp97_loewner_study_atlas.png",
+      "v49_sha256": "a43532c16d1625ed8ee719bb7f6f493fe947759577ed63767885cfc1a2396aa2",
+      "v50_sha256": "dc91383ad6c0153d78f9f33e654a88e2fe64cda203e703d461b1d1b35fbcfe92"
+    },
+    {
+      "path": "figures/v26c_source_depth.png",
+      "v49_sha256": "dca410b6cdb580717f21950403cb6f946e5c22a25e6cc65f13abd7a634e7f83c",
+      "v50_sha256": "dc08384eb546d44d656335a4e8820a8284e44e7fb99cd2d3a98f7c86a7dbfbdb"
+    },
+    {
+      "path": "figures/v30_rh_equivalence_map.png",
+      "v49_sha256": "aac853c9688cafc22631e44ce3c432af420890dd7f897e99f0929fe7510882c2",
+      "v50_sha256": "5ae6b7087f61937e7868ea0b5140b64eb04b082b85a2bdc72ccc0def6d7b0025"
+    },
+    {
+      "path": "qa/BUILD_BINDING.json",
+      "v49_sha256": "cbec5e4ba50e551c2925ba8232d6fee89c6c2e8b796f18517e5768065c7147da",
+      "v50_sha256": "0370b2a29ca37664efac0282801c645f04f6b553122db2171f12e542e5a03f1c"
+    },
+    {
+      "path": "qa/BUILD_DOSSIER.json",
+      "v49_sha256": "429c4f87e832266c8a9892a21d3d43e9a229ba4eb79c41ee06fcb4c2897349e3",
+      "v50_sha256": "07044895a170d49ce4544730b13a478f89930c81147289db0e832860db787c47"
+    },
+    {
+      "path": "qa/BUILD_READING.json",
+      "v49_sha256": "c3f8872bdfa53fb5ae7150f20b6e232f57238ea89f48718ec3d57edcde5491af",
+      "v50_sha256": "cd3ce136f88d0226d858760f5e72e47bc9da91b68a9999c8021e467d3cf309f0"
+    },
+    {
+      "path": "qa/ENVIRONMENT.json",
+      "v49_sha256": "332bbd6d29d01ef06fbac513b773324eef007ea32aad0c5df0cd5841e902e980",
+      "v50_sha256": "5e6e23d1491396e3691e87366c81354565aac4c9009ae6c37591417db416c0af"
+    },
+    {
+      "path": "qa/GAMMA_BRIDGE.json",
+      "v49_sha256": "a6a39f50543adfd39e1c6604750b0cdc874013dd8a95863d29e08d699b0ee767",
+      "v50_sha256": "15314412cfc81c8414d1d4026edce14dcce3769e2af245fd8693c7c4cf500580"
+    },
+    {
+      "path": "qa/MATH_REPLAY_LEDGER.json",
+      "v49_sha256": "f04b564e121dcf084f556558a7256a321692287fb4f0055725a78d1da1bacafc",
+      "v50_sha256": "a5334504732440879c461a1a75105f3a7b287e7c2b13296eb6d17dfc5c909ab1"
+    },
+    {
+      "path": "qa/build_release.py",
+      "v49_sha256": "896529895eabe5afbf3477c15b6cd224f37540afe018d6d7122fcbf67318db45",
+      "v50_sha256": "d45a062435dd526a3d15af91ffe46abc86ad40b890dd678bc6423d71ff47c237"
+    },
+    {
+      "path": "qa/gamma_bridge.log",
+      "v49_sha256": "b8d4a00b8be023eca03da09fb75730e039376892d07ceb5297f1e021d37b0c76",
+      "v50_sha256": "5c4c5b995adb46b8e24c03f610923d722c7628e85c5800f370523ccd1a6d6b73"
+    },
+    {
+      "path": "qa/replay_math.py",
+      "v49_sha256": "e4f0d1cdebcfadd9c81a54f9e7d617d60182f0982cc76db24263583b23fc7e39",
+      "v50_sha256": "bcae55836bcef193b91f765534a13b9250565b1417b79c2a35d7f98b6eb0b37c"
+    },
+    {
+      "path": "qa/source_rungs/CROSS_BACKEND.json",
+      "v49_sha256": "7732511832203ffc892ca64ef61a4eef7193b43f7fe565495561e5bf2456a1f0",
+      "v50_sha256": "965a8cc8bf0e696dd8821c3e1aefb6b69ffb150c6b71b46b474bde51afb5f528"
+    },
+    {
+      "path": "qa/source_rungs/RECEIPT_arb.json",
+      "v49_sha256": "07cfaa386ac7f36b83c910e44576d2c8bc451ae39096e0653ee90b6a79621c1d",
+      "v50_sha256": "5061f7d3c43c1ca1c80501f244fab4af5ec8d4d74b12fcd1e3f88b8b62c6507a"
+    },
+    {
+      "path": "qa/source_rungs/RECEIPT_decimal.json",
+      "v49_sha256": "16ffadfd684f6129eeb6a4ccaae3d1aaf822c9e0cc2e87a9c3c0ad9d12ff0fac",
+      "v50_sha256": "afb9cca049dec303f85833c678a2357fe416679da635398ccd6b54413d304a4b"
+    },
+    {
+      "path": "qa/source_rungs/arb.log",
+      "v49_sha256": "503d739164cf7f6187578808c2024cb829cbc996b998a29ae6a74859f2c84285",
+      "v50_sha256": "6a1b430d5aad603d9714c3ede0e2441452ce977acd613a50f881b42d9b070c84"
+    },
+    {
+      "path": "qa/source_rungs/cross.log",
+      "v49_sha256": "7732511832203ffc892ca64ef61a4eef7193b43f7fe565495561e5bf2456a1f0",
+      "v50_sha256": "965a8cc8bf0e696dd8821c3e1aefb6b69ffb150c6b71b46b474bde51afb5f528"
+    },
+    {
+      "path": "qa/source_rungs/decimal.log",
+      "v49_sha256": "aad2d7ab4789ead3aed4679260c70680e6244e261c7be59dfa0e7cbe1a725ffa",
+      "v50_sha256": "e6d1dd1922553104d5227c736a6e8a48e8ada19016981ad4469f8553d39c7901"
+    }
+  ],
+  "unchanged_members": 147,
+  "added_members": [
+    "QA_RECEIPT_V5_0.md",
+    "V50_PUBLICATION_DELTA_2026-09-17.md",
+    "figures/figure74_safe_axis_and_self_dual.png",
+    "figures/figure75A_r10c_one_orbit_four_coordinates.png",
+    "provenance/v50/accepted_updates/V50_WORK_ORDER_2026-09-17.md",
+    "provenance/v50/figures/v30_rh_equivalence_map__pre_v50_titleband.png",
+    "provenance/v50/predecessor/PREDECESSOR.json",
+    "provenance/v50/pruned_figures/figure74_s_sigma_it_fold_atlas.png",
+    "provenance/v50/pruned_figures/pringsheim_no_dominance.png",
+    "provenance/v50/pruned_figures/v26c_reciprocal_window.png",
+    "provenance/v50/pruned_figures/v27_bernstein_route.png",
+    "provenance/v50/pruned_figures/v27b_energy_spectral_cases.png",
+    "provenance/v50/pruned_figures/v29_even_triangle_geometry.png",
+    "provenance/v50/pruned_figures/v29_prime_energy_cases.png",
+    "qa/R10C_ORBIT.json",
+    "qa/V50_FIGURE_BASELINE.json",
+    "qa/V50_FIGURE_CLAIMS.json",
+    "qa/V50_FIGURE_CLAIMS_AUDIT.json",
+    "qa/V50_FIGURE_STATE.json",
+    "qa/V50_UPDATE_AUDIT.json",
+    "qa/V50_VERIFY.json",
+    "qa/audit_figure_claims.py",
+    "qa/audit_r10c_orbit.py",
+    "qa/audit_v50_updates.py",
+    "qa/figsrc/fig_one_orbit_four_coordinates.py",
+    "qa/figsrc/fig_safe_axis_and_self_dual.py",
+    "qa/figsrc/fig_status_panels.py",
+    "qa/figure_claims.log",
+    "qa/r10c_orbit.log",
+    "qa/render_review_v50.py",
+    "qa/verify_v50.py",
+    "src/TN_Postmaster_Volume_I_v5_0_READING_VOLUME.md",
+    "src/TN_Postmaster_Volume_I_v5_0_TECHNICAL_DOSSIER.md",
+    "src/preamble_v50_dossier.tex",
+    "src/preamble_v50_reading.tex"
+  ]
+}

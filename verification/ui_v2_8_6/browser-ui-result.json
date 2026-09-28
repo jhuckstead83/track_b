@@ -1,0 +1,340 @@
+{
+ "status": "PASS",
+ "scope": "Chromium (Playwright) against the extracted v2.8.6 archive served on localhost; external feeds unreachable, so Finance ran in its offline/reference mode. Touch via CDP synthetic gestures, not a physical device.",
+ "results": [
+  {
+   "view": "desktop",
+   "name": "pause control hidden at load",
+   "ok": true
+  },
+  {
+   "view": "desktop",
+   "name": "untouched hero advances within ~6 s",
+   "ok": true,
+   "detail": {
+    "before": 0,
+    "after": 602
+   }
+  },
+  {
+   "view": "desktop",
+   "name": "no bottom control bar / count / Open-Play footer",
+   "ok": true
+  },
+  {
+   "view": "desktop",
+   "name": "no horizontal overflow on homepage",
+   "ok": true,
+   "detail": {
+    "scrollWidth": 1280
+   }
+  },
+  {
+   "view": "desktop",
+   "name": "hover reveals Play",
+   "ok": true
+  },
+  {
+   "view": "desktop",
+   "name": "hover pauses rotation",
+   "ok": true
+  },
+  {
+   "view": "desktop",
+   "name": "explicit Play resumes",
+   "ok": true
+  },
+  {
+   "view": "desktop",
+   "name": "pause control does not overlap the ghost arrows",
+   "ok": true,
+   "detail": [
+    [
+     "#feature-prev",
+     627.609375,
+     287.09375,
+     662.609375,
+     349.09375
+    ],
+    [
+     "#feature-next",
+     1228.984375,
+     287.09375,
+     1263.984375,
+     349.09375
+    ],
+    [
+     "#feature-pause",
+     1189.984375,
+     468.1875,
+     1227.984375,
+     506.1875
+    ]
+   ]
+  },
+  {
+   "view": "desktop",
+   "name": "homepage page errors",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "view": "desktop",
+   "name": "untouched dock stays hidden without real activity",
+   "ok": true
+  },
+  {
+   "view": "desktop",
+   "name": "no dotted grip",
+   "ok": true
+  },
+  {
+   "view": "desktop",
+   "name": "footer restore shows the dock, grid open",
+   "ok": true
+  },
+  {
+   "view": "desktop",
+   "name": "chevron collapses only the grid, tab stays, no dialog",
+   "ok": true
+  },
+  {
+   "view": "desktop",
+   "name": "dragging the Finance label moves the tab",
+   "ok": true,
+   "detail": {
+    "from": [
+     1050,
+     848
+    ],
+    "to": [
+     850,
+     698
+    ]
+   }
+  },
+  {
+   "view": "desktop",
+   "name": "tab stays inside the viewport",
+   "ok": true,
+   "detail": {
+    "right": 1072,
+    "bottom": 742
+   }
+  },
+  {
+   "view": "desktop",
+   "name": "drag neither toggles nor dismisses",
+   "ok": true
+  },
+  {
+   "view": "desktop",
+   "name": "X asks for confirmation",
+   "ok": true
+  },
+  {
+   "view": "desktop",
+   "name": "Cancel keeps the tab",
+   "ok": true
+  },
+  {
+   "view": "desktop",
+   "name": "engaged tab and its position survive reload (offline)",
+   "ok": true,
+   "detail": {
+    "left": 850,
+    "top": 698
+   }
+  },
+  {
+   "view": "desktop",
+   "name": "confirmed hide persists across reload",
+   "ok": true
+  },
+  {
+   "view": "desktop",
+   "name": "game page errors",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "view": "desktop",
+   "name": "Finance boots offline with 16 labelled reference tiles",
+   "ok": true,
+   "detail": {
+    "tiles": 16,
+    "state": "GOOGLE REFERENCE",
+    "fresh": "REFERENCE · 2026-09-25"
+   }
+  },
+  {
+   "view": "desktop",
+   "name": "no horizontal overflow on Finance",
+   "ok": true,
+   "detail": {
+    "scrollWidth": 1280
+   }
+  },
+  {
+   "view": "desktop",
+   "name": "Finance page errors",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "view": "phone",
+   "name": "pause control hidden at load",
+   "ok": true
+  },
+  {
+   "view": "phone",
+   "name": "untouched hero advances within ~6 s",
+   "ok": true,
+   "detail": {
+    "before": 0,
+    "after": 356
+   }
+  },
+  {
+   "view": "phone",
+   "name": "no bottom control bar / count / Open-Play footer",
+   "ok": true
+  },
+  {
+   "view": "phone",
+   "name": "no horizontal overflow on homepage",
+   "ok": true,
+   "detail": {
+    "scrollWidth": 390
+   }
+  },
+  {
+   "view": "phone",
+   "name": "touch swipe moves the carousel",
+   "ok": true,
+   "detail": {
+    "before": 356,
+    "after": 712
+   }
+  },
+  {
+   "view": "phone",
+   "name": "swipe pauses and reveals Play",
+   "ok": true
+  },
+  {
+   "view": "phone",
+   "name": "rotation stays paused after swipe",
+   "ok": true
+  },
+  {
+   "view": "phone",
+   "name": "homepage page errors",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "view": "phone",
+   "name": "untouched dock stays hidden without real activity",
+   "ok": true
+  },
+  {
+   "view": "phone",
+   "name": "no dotted grip",
+   "ok": true
+  },
+  {
+   "view": "phone",
+   "name": "footer restore shows the dock, grid open",
+   "ok": true
+  },
+  {
+   "view": "phone",
+   "name": "chevron collapses only the grid, tab stays, no dialog",
+   "ok": true
+  },
+  {
+   "view": "phone",
+   "name": "dragging the Finance label moves the tab",
+   "ok": true,
+   "detail": {
+    "from": [
+     155,
+     792
+    ],
+    "to": [
+     59,
+     592
+    ]
+   }
+  },
+  {
+   "view": "phone",
+   "name": "tab stays inside the viewport",
+   "ok": true,
+   "detail": {
+    "right": 286,
+    "bottom": 636
+   }
+  },
+  {
+   "view": "phone",
+   "name": "drag neither toggles nor dismisses",
+   "ok": true
+  },
+  {
+   "view": "phone",
+   "name": "X asks for confirmation",
+   "ok": true
+  },
+  {
+   "view": "phone",
+   "name": "Cancel keeps the tab",
+   "ok": true
+  },
+  {
+   "view": "phone",
+   "name": "engaged tab and its position survive reload (offline)",
+   "ok": true,
+   "detail": {
+    "left": 59,
+    "top": 592
+   }
+  },
+  {
+   "view": "phone",
+   "name": "confirmed hide persists across reload",
+   "ok": true
+  },
+  {
+   "view": "phone",
+   "name": "game page errors",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "view": "phone",
+   "name": "Finance boots offline with 16 labelled reference tiles",
+   "ok": true,
+   "detail": {
+    "tiles": 16,
+    "state": "GOOGLE REFERENCE",
+    "fresh": "REFERENCE · 2026-09-25"
+   }
+  },
+  {
+   "view": "phone",
+   "name": "no horizontal overflow on Finance",
+   "ok": true,
+   "detail": {
+    "scrollWidth": 390
+   }
+  },
+  {
+   "view": "phone",
+   "name": "Finance page errors",
+   "ok": true,
+   "detail": []
+  }
+ ]
+}

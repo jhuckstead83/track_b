@@ -1,0 +1,417 @@
+{
+  "total": 76,
+  "passed": 76,
+  "failed": [],
+  "checks": [
+    {
+      "name": "two build bindings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reading: v5.0 source path",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reading: source hash bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reading: preamble hash bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reading: pdf present",
+      "passed": true,
+      "detail": "output/pdf/TN_Postmaster_Volume_I_v5_0_READING_VOLUME.pdf"
+    },
+    {
+      "name": "reading: pdf hash bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reading: zero undefined refs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reading: zero missing characters",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reading: zero overfull boxes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reading: page count equals the recorded count",
+      "passed": true,
+      "detail": 98
+    },
+    {
+      "name": "reading: under the hard ceiling",
+      "passed": true,
+      "detail": [
+        98,
+        99,
+        "target",
+        90
+      ]
+    },
+    {
+      "name": "reading: v5.0 visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reading: RH open visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reading: PDF metadata subject says v5.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dossier: v5.0 source path",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dossier: source hash bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dossier: preamble hash bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dossier: pdf present",
+      "passed": true,
+      "detail": "output/pdf/TN_Postmaster_Volume_I_v5_0_TECHNICAL_DOSSIER.pdf"
+    },
+    {
+      "name": "dossier: pdf hash bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dossier: zero undefined refs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dossier: zero missing characters",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dossier: zero overfull boxes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dossier: page count equals the recorded count",
+      "passed": true,
+      "detail": 279
+    },
+    {
+      "name": "dossier: under the hard ceiling",
+      "passed": true,
+      "detail": [
+        279,
+        299,
+        "target",
+        275
+      ]
+    },
+    {
+      "name": "dossier: v5.0 visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dossier: RH open visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dossier: PDF metadata subject says v5.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "combined page count",
+      "passed": true,
+      "detail": 377
+    },
+    {
+      "name": "v5.0 update audit passes",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "sixteen mathematical replays recorded",
+      "passed": true,
+      "detail": 16
+    },
+    {
+      "name": "the source-rung certificate is re-executed by the replay suite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "the v5.0 replays are in the suite",
+      "passed": true,
+      "detail": [
+        "blue_sharpening",
+        "common_source",
+        "figure_claims",
+        "gamma_bridge",
+        "green_blue_merge",
+        "green_orange_comparison",
+        "integrated_bridges",
+        "lighthouse_progressions",
+        "lighthouse_tieout",
+        "orange_curvature",
+        "r10c_orbit",
+        "sine_bridge",
+        "source_rungs_arb",
+        "source_rungs_cross_backend",
+        "source_rungs_decimal",
+        "weighted"
+      ]
+    },
+    {
+      "name": "the R10C replay is exact and passing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "the figure-claims audit is passing with no orphan figure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all mathematical replays exit zero",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "replay script hash current: weighted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay script hash current: common_source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay script hash current: integrated_bridges",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay script hash current: sine_bridge",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay script hash current: lighthouse_tieout",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay script hash current: blue_sharpening",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay script hash current: orange_curvature",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay script hash current: green_blue_merge",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay script hash current: green_orange_comparison",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay script hash current: lighthouse_progressions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay script hash current: gamma_bridge",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay script hash current: source_rungs_arb",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay script hash current: source_rungs_decimal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay script hash current: r10c_orbit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay script hash current: figure_claims",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "replay script hash current: source_rungs_cross_backend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gamma-bridge receipt: all checks pass",
+      "passed": true,
+      "detail": [
+        60,
+        60
+      ]
+    },
+    {
+      "name": "gamma-bridge receipt carries certified enclosures",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "single master status legend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R25 consolidated no-go ledger",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R23 plural route frontier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R13A two classical inputs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source frontier W1-W6 and W7 open",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-rung certificate: cross-backend comparison passes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-rung receipt PASS: RECEIPT_arb.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-rung receipt PASS: RECEIPT_decimal.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-rung receipt PASS: RECEIPT_arb_second.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-rung receipt PASS: RECEIPT_decimal_second.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stale W4-open sentence absent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reading: unique equation tags",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dossier: unique equation tags",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Reading PDF: R4A present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Reading PDF: lineage table and glossary present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Reading PDF: status legend words present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Reading PDF: W7 source row and RH OPEN footer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Reading PDF: the rung status is stated once, without run notes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Reading PDF: recomputed C bounds printed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Reading PDF: references run to 120",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Dossier PDF: §96A present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Dossier PDF: one source-rung certificate, no run notes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Dossier PDF: three facsimile pages appended and bound",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

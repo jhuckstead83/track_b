@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "exact_assertions": 3841,
+  "categories": {
+    "Catalan integrality": 101,
+    "odd factorial factorization": 101,
+    "Catalan Beta product": 101,
+    "product-law moments": 101,
+    "Catalan-density moments": 101,
+    "weighted sine coefficients": 101,
+    "arcsine reflected Gram": 100,
+    "sine orthogonality Gram": 100,
+    "Catalan resolvent versus Fourier Gram": 1400,
+    "reserve-component accounting": 1400,
+    "density identity": 70,
+    "density nonnegativity": 70,
+    "finite positive comparison leading minors": 8,
+    "elementary pi lower bound": 1,
+    "Euler constant bound": 1,
+    "log 12 lower bound": 1,
+    "lambda1 upper bound": 1,
+    "original reserve negative witness": 1,
+    "critical anchor above lambda1": 1,
+    "full source-difference preservation": 81
+  },
+  "script_sha256": "c121a67de967298691dbc072d87871502d51c2a6dbfe0661715806670bab31b2",
+  "small_odd_slice": [
+    {
+      "m": 0,
+      "Catalan": 1,
+      "odd_index": 1,
+      "reduced_denominator": 1,
+      "beta": "1"
+    },
+    {
+      "m": 1,
+      "Catalan": 1,
+      "odd_index": 3,
+      "reduced_denominator": 1,
+      "beta": "2/3"
+    },
+    {
+      "m": 2,
+      "Catalan": 2,
+      "odd_index": 5,
+      "reduced_denominator": 8,
+      "beta": "8/15"
+    },
+    {
+      "m": 3,
+      "Catalan": 5,
+      "odd_index": 7,
+      "reduced_denominator": 180,
+      "beta": "16/35"
+    },
+    {
+      "m": 4,
+      "Catalan": 14,
+      "odd_index": 9,
+      "reduced_denominator": 8064,
+      "beta": "128/315"
+    },
+    {
+      "m": 5,
+      "Catalan": 42,
+      "odd_index": 11,
+      "reduced_denominator": 604800,
+      "beta": "256/693"
+    },
+    {
+      "m": 6,
+      "Catalan": 132,
+      "odd_index": 13,
+      "reduced_denominator": 68428800,
+      "beta": "1024/3003"
+    }
+  ],
+  "positive_comparison_finite_ells": [
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+  ],
+  "leading_determinants": [
+    "435796/3828825",
+    "1880825337937121932/540830937602389809375",
+    "121153857198605704229098181474872/1145905479100820980783682008927734375",
+    "23338030915051631414150025650897725610024774816/7283788384154818259667501113224560037456124267578125",
+    "4486307256397703712324139914847753837504334623948669933956448/46298385157193937929124336574515568466217239190858008132171630859375",
+    "861217646823986573650876309915499980900554635684139793203635135967712334144/294289229053790505378627727779625275718019581459472553512319888628136157989501953125",
+    "165168966319037611647459794574929899526017919929105274766672886226485620274954663358194432/1870608446558688076822652029681520085934274429967491338893336806826366425501164105832576751708984375",
+    "31656362115636720864502599006645345335656096483118593155432649191530166171666369336611523298642146826496/11890261738723454940547403953515790462501755737211499241935967366461919641898587856023341767694242298603057861328125"
+  ],
+  "rational_bounds": {
+    "log2_lower": "842/1215",
+    "log3_lower": "263/240",
+    "gamma_upper": "771298592218151/1299631976042400",
+    "pi_lower": "135904/45045",
+    "reserve_witness_strict_upper": "-47/600"
+  },
+  "diagnostics": {
+    "label": "high-precision floating-point orientation only; not interval certificates",
+    "lambda1": "0.0230957089661210338143102479064952916219321271521",
+    "critical_anchor": "0.131971753677420964324276906548964005087042417024",
+    "anchor_shift": "0.108876044711299930509966658642468713465110289872",
+    "original_reserve_y_squared": "-0.614327186876428278901843528837103667930407520601",
+    "original_reserve_det2": "-0.0493479965779438949730756357020960897573081422402"
+  },
+  "scope": "Finite algebra regressions only. Infinite-rank positivity and sharpness rest on the written measure proof. No actual-source all-order domination, RH proof, historical certificate replay, or PDF build."
+}

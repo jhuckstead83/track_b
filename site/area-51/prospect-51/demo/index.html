@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0c221d"><meta name="description" content="Prospect 51: five scrolling card reels, one poker decision, and the exact Project 51 symbol dictionary. Free isolated play-point demo."><title>Prospect 51 | Project 51 | v0.3.2</title><link rel="canonical" href="https://cerebralgraphix.com/area-51/prospect-51/"><style>
+:root{color-scheme:dark;--bg:#0c221d;--panel:#123128;--panel2:#193e32;--paper:#fffbef;--text:#f7f3e6;--muted:#b9cbbf;--line:#3b5b4b;--gold:#e6c486;--mint:#b6dcc3;--red:#ffc0bc;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px;background:var(--bg);color:var(--text)}
+*{box-sizing:border-box}body{margin:0;line-height:1.55;background:radial-gradient(ellipse at 80% 0,#37533744,transparent 50%),var(--bg)}[hidden]{display:none!important}a{color:var(--gold);text-underline-offset:4px}button,input,select{font:inherit}button,select,input[type=number]{min-height:44px}button,summary{cursor:pointer}button{touch-action:manipulation}button:disabled{cursor:not-allowed;opacity:.45}button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:4px}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.12}h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(40px,6vw,72px);letter-spacing:-.035em}h2{font-family:Georgia,serif;font-weight:400;font-size:30px}h3{font-size:18px}.shell{max-width:1120px;margin:auto;padding:0 28px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text);letter-spacing:.13em;font-size:12px;font-weight:750}.mark{height:34px;width:34px;display:grid;place-items:center;border:1px solid var(--gold);border-radius:7px;color:var(--gold);font:24px Georgia,serif}.brand small{display:block;letter-spacing:.1em;color:var(--muted);font-size:10px}.toplinks{display:flex;gap:20px;font-size:13px}.eyebrow{text-transform:uppercase;letter-spacing:.16em;color:var(--gold);font-size:11px;font-weight:700}.hero{display:flex;align-items:end;justify-content:space-between;gap:32px;padding:35px 0 28px}.hero h1{margin:8px 0 10px}.hero p:not(.eyebrow){color:var(--muted);max-width:560px}.hero-note{font:italic 22px/1.5 Georgia,serif;color:var(--mint);text-align:right;flex:none}.play-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:22px;align-items:start}.machine{border:1px solid #697659;border-radius:20px;overflow:hidden;background:linear-gradient(140deg,#264838,#133329 45%,#17372c);box-shadow:0 20px 45px #0003}.machine-top{padding:17px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #5f755344;background:#0a211c66}.machine-label{font-size:11px;letter-spacing:.17em;font-weight:700;color:var(--mint)}.bank{text-align:right;font-variant-numeric:tabular-nums}.bank small{font-size:10px;color:var(--muted);display:block}.bank strong{font-size:21px;font-weight:600}.vault{margin:19px 22px 0;border:1px solid #c39d5266;border-radius:12px;padding:12px 15px;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#152d20}.vault h2{font:15px/1.3 Georgia,serif;color:var(--gold)}.vault p{font-size:11px;color:var(--muted)}.vault-amount{font-size:27px;color:var(--gold);font-variant-numeric:tabular-nums;line-height:1.1;text-align:right;white-space:nowrap}.vault-amount small{font-size:10px;display:block;color:var(--muted)}.rotors{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;padding:25px 22px 12px}.rotor{text-align:center;min-width:0}.rotor-label{font:11px ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--muted);letter-spacing:.1em;margin-bottom:10px}.drum{position:relative;display:flex;align-items:center;justify-content:center;padding:17px 0 15px;border:1px solid #6b8062;border-radius:50% 50% 12px 12px;background:linear-gradient(180deg,#69806844,#0f281f88);box-shadow:inset 0 5px 16px #0003}.drum:before{content:"";position:absolute;top:7px;left:calc(50% - 2px);width:4px;height:5px;border-radius:1px;background:var(--gold)}.rotor p51-token{--reel-size:clamp(42px,5.5vw,65px);position:relative}.rotor.held .drum{border-color:var(--gold);background:linear-gradient(180deg,#b5985744,#132f2588)}.rotor.held .drum:after{content:"";position:absolute;inset:-3px;border:1px solid #d1ad6477;border-radius:inherit;pointer-events:none}.residue{font:10px ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--muted);margin-top:10px;min-height:16px;white-space:nowrap}.hold{border:1px solid #73876988;border-radius:7px;background:#102b21;color:var(--text);width:100%;min-height:40px;margin-top:10px;font-size:11px;font-weight:650;letter-spacing:.05em}.held .hold{background:var(--gold);color:#20382b;border-color:var(--gold)}.result{margin:5px 22px 12px;min-height:71px;text-align:center;display:flex;flex-direction:column;justify-content:center}.result strong{font:25px Georgia,serif}.result p{font-size:12px;color:var(--muted);margin-top:4px}.result.win strong{color:var(--gold)}.controls{padding:0 22px 20px}.action-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.btn{min-height:46px;border-radius:8px;background:#234938;color:var(--text);border:1px solid #70856a;padding:9px 14px;font-size:13px;font-weight:650}.btn.primary{background:var(--gold);color:#17362b;border-color:var(--gold)}.btn.soft{background:transparent;border-color:var(--line);font-weight:500}.button-note{font-size:11px;color:var(--muted);text-align:center;margin-top:10px}.display-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:15px;padding-top:14px;border-top:1px solid #66805b44}.display-row p{font-size:11px;color:var(--muted)}.segmented{display:flex;gap:2px;background:#09241c;border:1px solid var(--line);padding:3px;border-radius:8px}.segmented button{background:transparent;color:var(--muted);border:0;border-radius:5px;font-size:11px;min-height:32px;padding:5px 11px}.segmented button[aria-pressed=true]{background:#375b43;color:var(--paper)}.aside{display:grid;gap:15px}.panel{border:1px solid var(--line);border-radius:14px;background:#14332966;padding:20px}.panel h2{font-size:25px;margin:8px 0 12px}.panel p{color:var(--muted);font-size:12px}.paytable{border-collapse:collapse;width:100%;font-size:12px;margin:8px 0 10px}.paytable td{padding:6px 0;border-bottom:1px solid #3b5b4b66}.paytable td:last-child{text-align:right;font-variant-numeric:tabular-nums;color:var(--gold)}.paytable tr.active{background:#48643a66}.paytable tr.active td{font-weight:700;color:var(--text)}.key{display:flex;gap:6px;margin:12px 0}.key p51-token{--p51-size:27px}.mini{font-size:11px;color:var(--muted)}.under-machine{display:grid;gap:15px;margin-top:15px}.details{border:1px solid var(--line);border-radius:12px;background:#102e2566;overflow:hidden}.details summary{padding:15px 18px;font-size:13px;font-weight:650;min-height:48px}.details summary span{color:var(--muted);font-size:11px;font-weight:400;float:right}.details-body{padding:0 18px 18px}.settings-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}label{font-size:12px;color:var(--muted);display:block}select,input[type=number]{display:block;width:100%;border:1px solid var(--line);border-radius:7px;background:#0b251d;color:var(--text);padding:8px;margin-top:6px}input[type=range]{width:100%;accent-color:var(--gold)}.settings-grid .wide{grid-column:1/-1}.settings-grid p,.details-body p{font-size:12px;color:var(--muted);margin-top:10px}.odds-btn{width:100%;margin-top:12px}.odds-result{font-size:13px;margin-top:12px;color:var(--mint);font-variant-numeric:tabular-nums;min-height:24px}.error{background:#562c24;color:#ffe3d3;padding:14px 18px;border:1px solid #d99580;border-radius:10px;margin:14px 0}.example-banner{background:#66562f;color:#fff0c6;text-align:center;padding:10px 18px;font-size:12px}.examples{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.examples .btn{font-size:11px;min-height:40px}.essay{margin:42px 0 0;padding-top:28px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:28px}.essay h2{font-size:32px;margin:8px 0 13px}.essay p{font-size:14px;color:var(--muted);margin-bottom:14px}.essay p51-token{--p51-size:24px}.equation{font:15px ui-monospace,SFMono-Regular,Consolas,monospace;background:#08241c;border-radius:7px;padding:12px 14px;color:var(--gold);margin:15px 0;overflow-wrap:anywhere}.lab{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:24px 0}.lab h3{margin:5px 0 10px}.lab label{margin-top:12px}.lab-result{display:flex;align-items:center;gap:15px;margin-top:15px}.lab-result p51-token{--p51-size:45px}.lab .dots{display:grid;grid-template-columns:repeat(17,1fr);gap:4px;margin-top:14px}.dot{aspect-ratio:1;border-radius:50%;background:#334b3e}.dot.on{background:var(--gold)}.lab p{font-size:12px;color:var(--muted)}.fineprint{font-size:12px;color:var(--muted);margin:20px 0}.trace{width:100%;border-collapse:collapse;font:11px ui-monospace,SFMono-Regular,Consolas,monospace}.trace td,.trace th{padding:6px 5px;text-align:center;border-bottom:1px solid var(--line)}.trace-wrap{overflow-x:auto;max-width:100%}.history{margin-top:12px;font-size:12px}.history-row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line)}.footer{display:flex;justify-content:space-between;gap:20px;margin:34px 0 25px;border-top:1px solid var(--line);padding-top:18px;font-size:11px;color:var(--muted)}.footer button{background:none;color:var(--gold);border:0;min-height:32px;font-size:11px;padding:0}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.skip{position:absolute;top:-80px;left:20px;background:var(--gold);color:#123128;padding:8px;z-index:10}.skip:focus{top:10px}
+@media(max-width:900px){.play-layout{grid-template-columns:minmax(0,1fr) 240px;gap:16px}.shell{padding:0 20px}.hero-note{font-size:19px}.rotors{gap:7px;padding-inline:15px}.machine-top,.controls{padding-inline:16px}.vault{margin-inline:16px}.rotor p51-token{--reel-size:clamp(42px,6vw,60px)}}
+@media(max-width:700px){.shell{padding:0 16px}.topbar{padding:15px 0}.toplinks{gap:15px;font-size:12px}.toplinks .desktop-link{display:none}.hero{padding:22px 0 20px;display:block}.hero-note{display:none}.hero h1{font-size:46px;margin-top:6px}.hero p:not(.eyebrow){font-size:13px}.play-layout{display:flex;flex-direction:column;gap:16px}.play-main,.aside{width:100%}.aside{grid-template-columns:1fr 1fr}.machine{border-radius:15px}.machine-top{padding:12px 15px}.machine-label{font-size:10px}.vault{margin-top:14px;padding:10px 12px}.vault-amount{font-size:24px}.vault h2{font-size:14px}.rotors{padding-top:19px;gap:8px}.rotor p51-token{--reel-size:clamp(42px,12vw,65px)}.rotor-label{font-size:9px;margin-bottom:8px}.residue{font-size:9px}.hold{min-height:44px;font-size:10px}.drum{padding:16px 0 12px}.result{min-height:65px;margin-bottom:8px}.result strong{font-size:23px}.panel{padding:16px}.essay{grid-template-columns:1fr;gap:16px;margin-top:28px}.essay h2{font-size:28px}.lab{grid-template-columns:1fr}.footer{display:block}.footer p{margin-top:8px}.display-row p{max-width:50%}}
+@media(max-width:370px){.shell{padding:0 12px}.topbar{gap:10px}.brand{font-size:10px;gap:8px}.brand small{font-size:9px}.toplinks{font-size:11px}.hero h1{font-size:42px}.rotors{padding-inline:10px;gap:5px}.rotor p51-token{--reel-size:42px}.vault{margin-inline:12px}.vault p{font-size:10px}.controls{padding-inline:12px}.aside{grid-template-columns:1fr}.residue{font-size:8px}.settings-grid{grid-template-columns:1fr}.details summary span{float:none;display:block;margin-top:4px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* Two-line readouts remain inside each rotor on narrow phones. */
+.residue{display:grid;line-height:1.35;min-height:28px;white-space:normal}.residue span{display:block;white-space:nowrap}.action-row:has(#deal:not([hidden])) #deal,.action-row:has(#exit-example:not([hidden])) #exit-example{grid-column:1/-1}
+@media(max-width:370px){.rotor p51-token{--reel-size:44px}}
+/* The hold operation is a full-size touch target at every layout breakpoint. */
+.hold{min-height:44px}
+
+/* Prospect 51: video reels deliberately imitate a traditional mechanical slot.
+   The rotors only reveal an already-committed deal; they never choose it. */
+.title-stop{color:var(--gold)}
+.rotor-header{display:flex;align-items:center;gap:12px;margin:19px 22px 0;color:var(--gold);font:9px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.18em;white-space:nowrap}
+.rotor-rule{height:1px;flex:1;background:linear-gradient(90deg,transparent,#c8ab6555,transparent)}
+.rotors{--cell-h:86px;--window-h:154px;padding-top:15px;position:relative;gap:10px;perspective:900px}
+.drum{display:block;position:relative;isolation:isolate;padding:11px 6px;background:linear-gradient(90deg,#5c5638 0,#c8b06d 3%,#5e5a3b 7%,#203929 13%,#0a1912 23%,#102a1d 77%,#203929 87%,#6d6541 93%,#d1ba76 97%,#554d31 100%);border:1px solid #d3bb78;border-radius:16px;box-shadow:0 8px 15px #0005,inset 0 1px 0 #fff7,inset 0 -1px 0 #0008;overflow:hidden}
+.drum:before{content:"";position:absolute;z-index:6;top:3px;left:17%;right:17%;height:4px;border-radius:50%;background:linear-gradient(90deg,transparent,#fff3,#ffe5a5aa,#fff3,transparent);box-shadow:0 1px 4px #0008}
+.drum:after{content:"";position:absolute;z-index:5;inset:5px;border:1px solid #e4ce8a55;border-radius:11px;pointer-events:none;box-shadow:inset 0 0 0 1px #07130d99}
+.rotor.held .drum{border-color:#f0d48b;background:linear-gradient(90deg,#6f6035 0,#e0c170 3%,#71643b 8%,#31482a 15%,#102016 24%,#18321f 76%,#31482a 87%,#88713b 94%,#e4c776 98%,#695831 100%)}
+.reel-window{height:var(--window-h);position:relative;overflow:hidden;background:linear-gradient(90deg,#08100c 0,#1b3525 12%,#4b6545 49%,#1b3525 88%,#08100c 100%);border-radius:8px;box-shadow:inset 0 0 0 2px #030806bb,inset 0 10px 20px #000a,inset 0 -10px 20px #000a;contain:layout paint;transform:translateZ(0)}
+.reel-window:before,.reel-window:after{content:"";position:absolute;left:0;right:0;pointer-events:none;z-index:4}
+.reel-window:before{top:0;height:100%;background:linear-gradient(180deg,#020704f2 0%,#07120ccd 9%,#142a1b44 23%,transparent 37%,transparent 63%,#142a1b44 77%,#07120ccd 91%,#020704f2 100%);box-shadow:inset 14px 0 16px #0006,inset -14px 0 16px #0006}
+.reel-window:after{top:50%;height:calc(var(--cell-h) - 4px);transform:translateY(-50%);border-block:2px solid #e7cc7a66;box-shadow:0 -1px 0 #050906cc,0 1px 0 #050906cc,inset 0 5px 12px #fff1,inset 0 -5px 12px #0002;background:linear-gradient(90deg,#f6da7d0a,transparent 18%,transparent 82%,#f6da7d0a)}
+.reel-rest,.reel-strip{position:absolute;left:0;right:0;top:calc(50% - var(--cell-h)/2)}
+.reel-rest{transform:translateY(calc(-1 * var(--cell-h)))}
+.reel-cell{height:var(--cell-h);display:flex;align-items:center;justify-content:center;flex:none;position:relative}
+.reel-cell:after{content:"";position:absolute;left:13%;right:13%;bottom:0;height:1px;background:linear-gradient(90deg,transparent,#eed48722,transparent)}
+.reel-face{position:relative;z-index:2}
+.reel-strip{display:none;pointer-events:none;will-change:auto;backface-visibility:hidden}
+.is-spinning .reel-strip{display:block;will-change:transform,filter}
+.is-spinning .reel-rest{visibility:hidden}
+.is-spinning .drum{border-color:#f0d48b;box-shadow:0 9px 18px #0005,0 0 0 1px #f0d48b33,inset 0 1px 0 #fff8}
+.is-spinning .reel-window{box-shadow:inset 0 0 0 2px #030806bb,inset 0 16px 24px #000b,inset 0 -16px 24px #000b,0 0 10px #e6c48618}
+.is-stopping .drum{animation:prospect-clunk .19s cubic-bezier(.22,.72,.35,1)}
+@keyframes prospect-clunk{0%{transform:translateY(-2px)}42%{transform:translateY(2px) scaleY(.997)}72%{transform:translateY(-.7px)}100%{transform:translateY(0)}}
+.reel-above,.reel-below{pointer-events:none;opacity:.48;filter:saturate(.72) brightness(.76)}
+.spin-status{min-height:33px;display:flex;align-items:center;justify-content:center;gap:8px;margin:0 18px 1px;font:10px ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--muted)}
+.status-light{width:5px;height:5px;border-radius:50%;background:#a4c7a8;box-shadow:0 0 5px #a4c7a844;flex:none}
+.machine:has(.spinning) .status-light{background:var(--gold);box-shadow:0 0 7px #e6c48677}
+.reveal-now{border:1px solid #768562;background:transparent;color:var(--gold);font-size:10px;min-height:32px;border-radius:6px;padding:4px 10px;margin-left:3px}
+.motion-setting{margin-top:14px}
+.motion-setting select{max-width:280px}
+#show-cards:disabled,#show-symbols:disabled{opacity:.6}
+@media(max-width:900px) and (min-width:701px){.rotors{--cell-h:78px;--window-h:140px;gap:7px}.drum{padding:9px 4px}.rotor-header{margin-inline:16px;font-size:8px;gap:8px}}
+@media(max-width:700px){.rotors{--cell-h:80px;--window-h:138px;gap:8px;padding-top:12px}.drum{padding:9px 3px}.rotor-header{margin:15px 16px 0;font-size:8px}.hero{padding-top:19px;padding-bottom:17px}.spin-status{font-size:9px;min-height:34px}.result{margin-top:0}.rotor p51-token{--reel-size:clamp(44px,12vw,65px)}}
+@media(max-width:430px){.rotors{--cell-h:68px;--window-h:116px}.drum{padding:7px 2px}.rotor p51-token{--reel-size:44px}.rotor-header{letter-spacing:.11em;gap:9px}.spin-status{gap:6px}}
+@media(max-width:370px){.rotors{gap:5px}.rotor-header{margin-inline:12px;font-size:7px}.spin-status{font-size:8px;gap:5px;margin-inline:12px}.reveal-now{font-size:9px;padding-inline:8px}.drum{padding-inline:1px}}
+@media(prefers-reduced-motion:reduce){.reel-strip{will-change:auto!important}.is-stopping .drum{animation:none!important}}
+
+@media(max-width:700px){.hero{padding-top:16px;padding-bottom:13px}.spin-status{min-height:26px}.action-row .btn{font-size:12px;padding-inline:8px}}
+
+</style></head>
+<body><a class="skip" href="#play">Skip to the game</a><div class="shell">
+<header class="topbar"><a class="brand" href="https://cerebralgraphix.com/area-51/"><span class="mark" aria-hidden="true">I</span><span>CEREBRAL GRAPHIX<small>AREA 51 / THE CARD LAB</small></span></a><nav class="toplinks" aria-label="Page"><a href="#rule-card">The rule</a><a class="desktop-link" href="#mechanism">The mechanism</a><a href="/research/project-51/Project_51_v0_3.pdf">Paper &nearr;</a></nav></header>
+<main><section class="hero"><div><p class="eyebrow">05 / PROJECT 51 &middot; MECHANICAL REELS v0.3.2</p><h1>Prospect 51<span class="title-stop">.</span></h1><p>Five reels. One hand. Hold what matters. Discover what comes next.</p></div><div class="hero-note">Chance deals.<br>You choose what stays.</div></section>
+<div id="error" class="error" role="alert" hidden></div>
+<div class="play-layout" id="play"><div class="play-main"><section class="machine" aria-label="Prospect 51 table">
+<div class="machine-top"><div><p class="machine-label">51 CARDS / 5 ROTORS</p><p class="mini">Free play &middot; no cash value</p></div><div class="bank"><small>ISOLATED DEMO POINTS</small><strong id="bank">100.00</strong></div></div>
+<div id="example-banner" class="example-banner" hidden>ILLUSTRATION ONLY &mdash; no entry, no award, no bank change.</div>
+<div class="vault"><div><h2>The archive lock</h2><p>One exact five-card order. Initial deal only.</p></div><div class="vault-amount"><span id="meter">51.00</span><small>LOCAL DEMO JACKPOT</small></div></div>
+<div class="rotor-header"><span class="rotor-rule"></span><span>THE PROSPECT WINDOW</span><span class="rotor-rule"></span></div>
+<div class="rotors" id="rotors" aria-label="Five-card hand" aria-busy="false"></div>
+<div class="spin-status"><span class="status-light" aria-hidden="true"></span><span id="motion-status">Five rotors. Your decision.</span><button id="reveal-now" class="reveal-now" type="button" hidden>Reveal now</button></div>
+<div class="result" id="result" role="status" aria-live="polite" aria-atomic="true"><strong id="result-title">A new reading of the same cards.</strong><p id="result-note">Deal five, hold any, then draw once or bank the hand.</p></div>
+<div class="controls"><div class="action-row"><button class="btn primary" id="deal">Spin five &middot; 1 point</button><button class="btn" id="draw" disabled>Respin unheld &middot; free</button><button class="btn primary" id="bank-hand" hidden>Bank this hand</button><button class="btn soft" id="exit-example" hidden>Exit illustration</button></div><p class="button-note" id="action-note">One entry. One optional draw. No duplicate identities.</p><div class="display-row"><p>Tap a tile to read its other face.</p><div class="segmented" role="group" aria-label="Card display"><button id="show-cards" aria-pressed="true">Cards</button><button id="show-symbols" aria-pressed="false">Symbols</button></div></div></div>
+</section>
+<div class="under-machine"><details class="details" id="odds-panel"><summary>Read the decision <span>Exact conditional odds</span></summary><div class="details-body"><p>Keep a hold pattern, then count every possible draw from the 46 identities not in the first hand. Discarded cards stay out. These are draw odds for this decision, not the opening-deal odds.</p><button class="btn odds-btn" id="odds" disabled>Count completions for this hold</button><div class="odds-result" id="odds-result" role="status" aria-live="polite">Deal a hand to compare a decision.</div></div></details>
+<details class="details" id="settings-panel"><summary>Set the rotors <span>Frozen during a hand</span></summary><div class="details-body"><div class="settings-grid"><label>Wiring<select id="wiring"><option value="geared">Coprime gears</option><option value="straight">Unit gears</option></select></label><label>Ring setting <output id="knob-out">0</output><input id="knob" type="range" min="0" max="50" value="0"></label></div><label class="motion-setting">Reel motion<select id="motion"><option value="scroll">Scroll the reels</option><option value="instant">Instant result</option></select></label><p>Reduced-motion preferences use an instant result. Reveal now ends the animation, not the draw.</p><p>Different valid wiring changes the mapping, not the uniform opening odds. The live moduli follow the remaining inventory: 51, 50, 49, 48, 47. A redraw starts at 46.</p></div></details>
+<details class="details"><summary>Inspect the record <span>No hidden redraw peeks</span></summary><div class="details-body"><div class="trace-wrap"><table class="trace"><thead><tr><th>Slot</th><th>mod</th><th>a</th><th>b</th><th>digit</th><th>index</th><th>Identity</th></tr></thead><tbody id="trace"></tbody></table></div><p>Each row records e = (a&middot;digit + b) mod m, then removes that indexed identity. It is a reproducibility record of observed draws, not a fairness certificate.</p><div id="history" class="history"></div><button class="btn soft" id="export-record">Export this demo record</button></div></details>
+</div></div>
+<aside class="aside" aria-label="Awards and examples"><section class="panel"><p class="eyebrow">THE POKER READING</p><h2>The hand pays.</h2><table class="paytable" aria-label="Gross awards for one-point entry"><thead class="sr-only"><tr><th>Hand</th><th>Gross points</th></tr></thead><tbody id="paytable"></tbody></table><p>Gross points, not profit. Low pairs and high-card hands pay zero. Aces are high, or low only in A&ndash;2&ndash;3&ndash;4&ndash;5. There is no 2&clubs; in this game.</p></section>
+<section class="panel"><p class="eyebrow">THE ORDER READING</p><h2>The record unlocks.</h2><div class="key" id="archive-key" aria-label="Archive jackpot key"></div><p>The published record's final five identities, in that order. Match them on the initial deal to add the local meter to the hand's award. Each paid deal adds 0.01 point; a hit resets the meter to 51.</p><p class="mini" style="margin-top:10px">Initial key chance: 1 in 281,887,200. The draw cannot create eligibility.</p></section>
+<section class="panel"><p class="eyebrow">SEE WITHOUT SPENDING</p><h2>Open an example.</h2><p>Inspect a royal or the archive key without changing your game or bank.</p><div class="examples"><button class="btn soft" data-example="royal">Royal flush</button><button class="btn soft" data-example="key">Archive lock</button></div></section></aside></div>
+<section class="essay" id="rule-card"><div><p class="eyebrow">THE RULE CARD / P51-0.3.1</p><h2>Keep the object.<br>Declare the reading.</h2><p>The 51 identities and their exact card&ndash;symbol dictionary are unchanged. <p51-token card="8S"></p51-token> is an operable identity, not a picture that must be explained before use. Its paper symbol is another face of the same token; changing the display does not change a hand.</p><p>Deal five distinct identities. Press HOLD below any to keep them. Draw once to replace the others from the remaining 46, or bank the original hand. A redraw settles immediately. All five original identities stay out of the replacement inventory, including discards.</p><p>Poker reads an unordered hand. The archive lock reads an ordered string. A swap can preserve the poker award and change the jackpot result. That distinction is the experiment.</p></div><div><p class="eyebrow">PROBABILITY HAS A DOMAIN</p><h2>A rule, not a promise.</h2><p>There are 2,349,060 possible five-card subsets of this 51-identity alphabet. Four are royal flushes. Those are opening-deal counts, before the player chooses a hold. The conditional-odds panel enumerates the appropriate remaining inventory instead.</p><p>The scrolling tiles are decorative travel, not a preview of future draws or a claim about which card nearly won. Only the five center stops form your hand. The numbered-ring styling is rotor-inspired, not an Enigma simulation and not encryption. Rotors are selection maps; no stored zeta ordinate is used as a random seed. The triangular offsets are a declared design choice, not a discovered probability law.</p><p>Demo points are local to this browser tab and have no monetary value. They are not shared jbits, are not Finance holdings, and are not a site-wide jackpot. No autoplay, payment, or cash-out is provided.</p></div></section>
+<details class="details" id="mechanism"><summary>Open the mechanism <span>Dial count, modulus, and lost distinctions</span></summary><div class="details-body"><div class="lab"><section><p class="eyebrow">TWO DIALS / ONE IDENTITY</p><h3>3 &times; 17 = 51</h3><p>Mixed radix, not a new alphabet. Set u and v; i = 17u + v names canonical identity a<sub>i+1</sub>. Neither dial alone identifies the token.</p><label>u in 0&ndash;2 <output id="u-out">0</output><input id="lab-u" type="range" min="0" max="2" value="0"></label><label>v in 0&ndash;16 <output id="v-out">0</output><input id="lab-v" type="range" min="0" max="16" value="0"></label><div class="lab-result"><p51-token id="lab-token" card="AS"></p51-token><p id="lab-address"></p></div></section>
+<section><p class="eyebrow">ONE DIAL / TEST THE GEAR</p><h3>Not every step is a permutation.</h3><p>For e = a&middot;d mod 51, coprime steps reach all identities. A shared factor removes possibilities. The dots show reachable positions, not a play prediction.</p><label>Step a<select id="lab-step"><option value="2">2 &mdash; coprime</option><option value="3">3 &mdash; common factor 3</option><option value="17">17 &mdash; common factor 17</option><option value="1">1 &mdash; identity</option></select></label><div class="dots" id="lab-dots" aria-hidden="true"></div><p id="lab-reach" role="status"></p></section></div><div class="equation">m<sub>j</sub> = 52 &minus; j &nbsp;|&nbsp; e<sub>j</sub> = (a<sub>j</sub>d<sub>j</sub> + b<sub>j</sub>) mod m<sub>j</sub></div><p>Five live depletion rotors produce 51&middot;50&middot;49&middot;48&middot;47 equally likely ordered hands under independent uniform input digits. Five independent mod-51 reels instead allow duplicate identities; that would be a different game with a different score table. Changing to three- or seven-card play likewise requires new scoring and fresh probability counts.</p></div></details>
+<p class="fineprint">Working research demo &middot; Prospect 51 v0.3.1 / Project 51 rules v0.3 &middot; Exact identity map retained from the supplied v0.2 fixtures. The paper proves recovery statements; a game win is not evidence of a zero law, semantic meaning, or predictive power.</p>
+<noscript><div class="error">JavaScript is required to deal. The rules above remain readable. No entry has been charged.</div></noscript></main>
+<footer class="footer"><p>Jeffery Lyn Huckstead &middot; Cerebral Graphix &middot; 25 September 2026</p><p><span id="save-status">Tab-local demo bank</span> &middot; <button id="reset">Reset demo</button></p></footer></div>
+<script>
+/* Exact frozen Project 51 identity dictionary. Glyphs are outlined, not font files. */
+(function(g){
+"use strict";
+const data = [{"m":1,"card":"AS","cls":1,"n":1,"k":1,"point":"1","gcd":1,"color":-1,"natural":1,"value":1,"component":"ᄀ","role":"L0","codePoint":"U+1100","cardSlot":0,"rank":"A","suit":"S","svgPath":"M151 753V684H687C687 612 687 525 667 406L746 398C767 518 767 609 767 684V753Z","svgViewBox":"95.56 -938.94 726.88 726.88"},{"m":2,"card":"AH","cls":1,"n":2,"k":1,"point":"1/2","gcd":1,"color":1,"natural":1,"value":1,"component":"ᄁ","role":"L1","codePoint":"U+1101","cardSlot":1,"rank":"A","suit":"H","svgPath":"M151 744V676H357C356 617 351 530 321 408L390 393C428 540 427 647 427 707V744ZM484 744V676H695C695 605 694 514 675 389L746 382C766 513 766 610 766 684V744Z","svgViewBox":"95.65 -925.85 725.70 725.70"},{"m":3,"card":"AD","cls":2,"n":2,"k":2,"point":"1","gcd":2,"color":1,"natural":1,"value":1,"component":"ᄂ","role":"L2","codePoint":"U+1102","cardSlot":2,"rank":"A","suit":"D","svgPath":"M150 485V417H772V485H228V754H150Z","svgViewBox":"94.02 -952.48 733.96 733.96"},{"m":4,"card":"AC","cls":3,"n":3,"k":1,"point":"1/3","gcd":1,"color":-1,"natural":1,"value":1,"component":"ᅡ","role":"V0","codePoint":"U+1161","cardSlot":3,"rank":"A","suit":"C","svgPath":"M674 827V319H752V538H873V605H752V827Z","svgViewBox":"473.78 -872.72 599.44 599.44"},{"m":5,"card":"2S","cls":3,"n":3,"k":2,"point":"2/3","gcd":1,"color":-1,"natural":2,"value":2,"component":"ᅢ","role":"V1","codePoint":"U+1162","cardSlot":4,"rank":"2","suit":"S","svgPath":"M593 806V320H663V539H739V318H810V827H739V600H663V806Z","svgViewBox":"401.19 -872.81 600.62 600.62"},{"m":6,"card":"2H","cls":3,"n":3,"k":3,"point":"1","gcd":3,"color":1,"natural":2,"value":2,"component":"ᅣ","role":"V2","codePoint":"U+1163","cardSlot":5,"rank":"2","suit":"H","svgPath":"M674 828V319H752V441H873V508H752V639H873V705H752V828Z","svgViewBox":"473.19 -873.81 600.62 600.62"},{"m":7,"card":"2D","cls":3,"n":4,"k":1,"point":"1/4","gcd":1,"color":1,"natural":2,"value":2,"component":"ᅤ","role":"V3","codePoint":"U+1164","cardSlot":6,"rank":"2","suit":"D","svgPath":"M739 643V509H663V643ZM593 806V320H663V447H739V318H810V827H739V705H663V806Z","svgViewBox":"401.19 -872.81 600.62 600.62"},{"m":8,"card":"3S","cls":3,"n":4,"k":2,"point":"1/2","gcd":2,"color":-1,"natural":3,"value":3,"component":"ᅥ","role":"V4","codePoint":"U+1165","cardSlot":8,"rank":"3","suit":"S","svgPath":"M701 827V612H608V544H701V319H779V827Z","svgViewBox":"393.78 -872.72 599.44 599.44"},{"m":9,"card":"3H","cls":3,"n":4,"k":3,"point":"3/4","gcd":1,"color":1,"natural":3,"value":3,"component":"ᅦ","role":"V5","codePoint":"U+1166","cardSlot":9,"rank":"3","suit":"H","svgPath":"M742 827V318H811V827ZM517 618V555H611V320H678V807H611V618Z","svgViewBox":"363.69 -872.81 600.62 600.62"},{"m":10,"card":"3D","cls":3,"n":4,"k":4,"point":"1","gcd":4,"color":1,"natural":3,"value":3,"component":"ᅧ","role":"V6","codePoint":"U+1167","cardSlot":10,"rank":"3","suit":"D","svgPath":"M701 827V702H608V634H701V510H608V442H701V319H778V827Z","svgViewBox":"393.28 -872.72 599.44 599.44"},{"m":11,"card":"3C","cls":3,"n":5,"k":1,"point":"1/5","gcd":1,"color":-1,"natural":3,"value":3,"component":"ᅨ","role":"V7","codePoint":"U+1168","cardSlot":11,"rank":"3","suit":"C","svgPath":"M742 827V318H811V827ZM517 518V455H611V320H678V807H611V698H517V635H611V518Z","svgViewBox":"363.69 -872.81 600.62 600.62"},{"m":12,"card":"4S","cls":3,"n":5,"k":2,"point":"2/5","gcd":1,"color":-1,"natural":4,"value":4,"component":"ᅩ","role":"V8","codePoint":"U+1169","cardSlot":12,"rank":"4","suit":"S","svgPath":"M419 477V392H50V325H869V392H498V477Z","svgViewBox":"-23.71 -884.21 966.42 966.42"},{"m":13,"card":"4H","cls":4,"n":5,"k":3,"point":"3/5","gcd":1,"color":1,"natural":4,"value":4,"component":"ᅪ","role":"V9","codePoint":"U+116A","cardSlot":13,"rank":"4","suit":"H","svgPath":"M274 443V382C193 379 113 378 43 378L54 309C219 310 431 318 614 345L609 405C527 395 437 389 347 385V443ZM674 827V292H752V530H874V594H752V827Z","svgViewBox":"-31.79 -1049.79 980.58 980.58"},{"m":14,"card":"4D","cls":5,"n":5,"k":4,"point":"4/5","gcd":1,"color":1,"natural":4,"value":4,"component":"ᆨ","role":"T1","codePoint":"U+11A8","cardSlot":14,"rank":"4","suit":"D","svgPath":"M156 202V137H685V-79H762V202Z","svgViewBox":"101.46 -419.04 715.08 715.08"},{"m":15,"card":"4C","cls":5,"n":5,"k":5,"point":"1","gcd":5,"color":-1,"natural":4,"value":4,"component":"ᆩ","role":"T2","codePoint":"U+11A9","cardSlot":15,"rank":"4","suit":"C","svgPath":"M154 207V142H356V-75H433V207ZM489 207V142H690V-75H767V207Z","svgViewBox":"98.83 -427.67 723.34 723.34"},{"m":16,"card":"5S","cls":5,"n":6,"k":1,"point":"1/6","gcd":1,"color":-1,"natural":5,"value":5,"component":"ᆪ","role":"T3","codePoint":"U+11AA","cardSlot":16,"rank":"5","suit":"S","svgPath":"M154 207V142H356V-83H432V207ZM588 212V182C588 106 552 14 457 -26L498 -85C565 -56 606 -3 628 58C650 -3 691 -56 759 -85L800 -26C705 14 668 106 668 182V212Z","svgViewBox":"95.86 -444.64 762.28 762.28"},{"m":17,"card":"5H","cls":5,"n":6,"k":2,"point":"1/3","gcd":2,"color":1,"natural":5,"value":5,"component":"ᆫ","role":"T4","codePoint":"U+11AB","cardSlot":17,"rank":"5","suit":"H","svgPath":"M158 202V-66H780V-1H235V202Z","svgViewBox":"102.02 -434.98 733.96 733.96"},{"m":18,"card":"5D","cls":5,"n":6,"k":3,"point":"1/2","gcd":3,"color":1,"natural":5,"value":5,"component":"ᆬ","role":"T5","codePoint":"U+11AC","cardSlot":18,"rank":"5","suit":"D","svgPath":"M170 -12V-79H212C286 -79 354 -78 443 -61L435 6C364 -8 306 -11 247 -12V212H170ZM469 207V146H577C573 78 535 8 452 -22L492 -82C556 -57 595 -10 617 43C637 -10 676 -57 741 -82L781 -22C698 8 660 78 656 146H760V207Z","svgViewBox":"115.01 -425.49 720.98 720.98"},{"m":19,"card":"5C","cls":5,"n":6,"k":4,"point":"2/3","gcd":2,"color":-1,"natural":5,"value":5,"component":"ᆭ","role":"T6","codePoint":"U+11AD","cardSlot":19,"rank":"5","suit":"C","svgPath":"M629 110C555 110 492 71 492 11C492 -48 555 -87 629 -87C703 -87 766 -48 766 11C766 71 703 110 629 110ZM629 62C669 62 701 41 701 11C701 -18 669 -39 629 -39C589 -39 557 -18 557 11C557 41 589 62 629 62ZM170 -18V-79H212C286 -79 353 -78 443 -61L435 0C364 -14 306 -17 247 -18V212H170ZM593 243V193H471V132H781V193H664V243Z","svgViewBox":"115.01 -438.49 720.98 720.98"},{"m":20,"card":"6S","cls":5,"n":6,"k":5,"point":"5/6","gcd":1,"color":-1,"natural":6,"value":6,"component":"ᆮ","role":"T7","codePoint":"U+11AE","cardSlot":20,"rank":"6","suit":"S","svgPath":"M158 -16V-77H763V-16H235V137H747V199H158Z","svgViewBox":"103.55 -417.95 713.90 713.90"},{"m":21,"card":"6H","cls":5,"n":6,"k":6,"point":"1","gcd":6,"color":1,"natural":6,"value":6,"component":"ᆯ","role":"T8","codePoint":"U+11AF","cardSlot":21,"rank":"6","suit":"H","svgPath":"M158 -35V-94H765V-35H237V33H763V210H156V156H684V90H158Z","svgViewBox":"101.19 -417.31 718.62 718.62"},{"m":22,"card":"6D","cls":5,"n":7,"k":1,"point":"1/7","gcd":1,"color":1,"natural":6,"value":6,"component":"ᆰ","role":"T9","codePoint":"U+11B0","cardSlot":22,"rank":"6","suit":"D","svgPath":"M485 208V146H689V-80H766V208ZM153 -25V-79H196C269 -79 339 -80 447 -71L445 -17C355 -25 292 -25 231 -25V43H434V208H151V154H357V94H153Z","svgViewBox":"95.65 -426.85 725.70 725.70"},{"m":23,"card":"6C","cls":6,"n":7,"k":2,"point":"2/7","gcd":1,"color":-1,"natural":6,"value":6,"component":"ᅫ","role":"V10","codePoint":"U+116B","cardSlot":23,"rank":"6","suit":"C","svgPath":"M593 806V292H663V539H739V291H810V827H739V600H663V806ZM59 310C201 311 403 319 561 343L556 402C490 394 416 389 340 385V458H266V382C188 380 113 378 49 378Z","svgViewBox":"-19.49 -1007.99 897.98 897.98"},{"m":24,"card":"7S","cls":6,"n":7,"k":3,"point":"3/7","gcd":1,"color":-1,"natural":7,"value":7,"component":"ᅬ","role":"V11","codePoint":"U+116C","cardSlot":24,"rank":"7","suit":"S","svgPath":"M702 826V291H779V826ZM65 309C236 310 452 319 642 346L638 406C553 396 461 389 370 385V453H299V382C213 379 129 378 54 378Z","svgViewBox":"-11.25 -986.25 855.50 855.50"},{"m":25,"card":"7H","cls":6,"n":7,"k":4,"point":"4/7","gcd":1,"color":1,"natural":7,"value":7,"component":"ᅭ","role":"V12","codePoint":"U+116D","cardSlot":25,"rank":"7","suit":"H","svgPath":"M569 478V392H349V478H272V392H50V325H869V392H646V478Z","svgViewBox":"-23.71 -884.71 966.42 966.42"},{"m":26,"card":"7D","cls":6,"n":7,"k":5,"point":"5/7","gcd":1,"color":1,"natural":7,"value":7,"component":"ᅮ","role":"V13","codePoint":"U+116E","cardSlot":26,"rank":"7","suit":"D","svgPath":"M50 399V334H418V250H498V334H869V399Z","svgViewBox":"-23.71 -807.71 966.42 966.42"},{"m":27,"card":"7C","cls":6,"n":7,"k":6,"point":"6/7","gcd":1,"color":-1,"natural":7,"value":7,"component":"ᅯ","role":"V14","codePoint":"U+116F","cardSlot":27,"rank":"7","suit":"C","svgPath":"M63 356C132 356 212 358 295 362V277H366V366C457 372 550 381 636 395L632 448C447 423 220 416 53 415ZM702 826V362H542V310H702V284H779V826Z","svgViewBox":"-12.34 -979.84 856.68 856.68"},{"m":28,"card":"8S","cls":6,"n":7,"k":7,"point":"1","gcd":7,"color":-1,"natural":8,"value":8,"component":"ᅰ","role":"V15","codePoint":"U+1170","cardSlot":28,"rank":"8","suit":"S","svgPath":"M742 827V282H810V827ZM472 362V309H611V283H678V806H611V362ZM53 366C123 366 205 368 290 372V279H364V377C439 382 515 389 584 399L580 450C412 430 198 424 43 424Z","svgViewBox":"-26.03 -1005.53 905.06 905.06"},{"m":29,"card":"8H","cls":6,"n":8,"k":1,"point":"1/8","gcd":1,"color":1,"natural":8,"value":8,"component":"ᅱ","role":"V16","codePoint":"U+1171","cardSlot":29,"rank":"8","suit":"H","svgPath":"M702 826V291H779V826ZM66 332C137 332 217 334 299 338V277H370V342C461 348 553 357 639 369L634 429C450 407 227 402 54 401Z","svgViewBox":"-11.25 -979.25 855.50 855.50"},{"m":30,"card":"8D","cls":6,"n":8,"k":2,"point":"1/4","gcd":2,"color":1,"natural":8,"value":8,"component":"ᅲ","role":"V17","codePoint":"U+1172","cardSlot":30,"rank":"8","suit":"D","svgPath":"M50 399V334H271V251H350V334H568V251H647V334H869V399Z","svgViewBox":"-23.71 -808.21 966.42 966.42"},{"m":31,"card":"8C","cls":6,"n":8,"k":3,"point":"3/8","gcd":1,"color":-1,"natural":8,"value":8,"component":"ᅳ","role":"V18","codePoint":"U+1173","cardSlot":31,"rank":"8","suit":"C","svgPath":"M50 395V330H869V395Z","svgViewBox":"-23.71 -845.71 966.42 966.42"},{"m":32,"card":"9S","cls":6,"n":8,"k":4,"point":"1/2","gcd":4,"color":-1,"natural":9,"value":9,"component":"ᅴ","role":"V19","codePoint":"U+1174","cardSlot":32,"rank":"9","suit":"S","svgPath":"M702 826V291H779V826ZM66 317C231 318 450 326 639 357L634 416C448 392 224 386 54 385Z","svgViewBox":"-11.25 -986.25 855.50 855.50"},{"m":33,"card":"9H","cls":6,"n":8,"k":5,"point":"5/8","gcd":1,"color":1,"natural":9,"value":9,"component":"ᅵ","role":"V20","codePoint":"U+1175","cardSlot":33,"rank":"9","suit":"H","svgPath":"M702 826V318H779V826Z","svgViewBox":"440.78 -871.72 599.44 599.44"},{"m":34,"card":"9D","cls":7,"n":8,"k":6,"point":"3/4","gcd":2,"color":1,"natural":9,"value":9,"component":"ᆱ","role":"T10","codePoint":"U+11B1","cardSlot":34,"rank":"9","suit":"D","svgPath":"M488 208V-79H767V208ZM701 152V-22H553V152ZM153 -25V-79H196C269 -79 339 -80 447 -70L445 -17C355 -25 292 -25 231 -25V43H434V208H151V154H357V94H153Z","svgViewBox":"95.56 -427.93 726.88 726.88"},{"m":35,"card":"9C","cls":7,"n":8,"k":7,"point":"7/8","gcd":1,"color":-1,"natural":9,"value":9,"component":"ᆲ","role":"T11","codePoint":"U+11B2","cardSlot":35,"rank":"9","suit":"C","svgPath":"M488 212V-78H766V212H693V134H561V212ZM561 71H693V-16H561ZM154 -24V-78H196C268 -78 335 -79 440 -69L437 -16C352 -23 291 -24 232 -24V42H431V208H152V154H355V93H154Z","svgViewBox":"96.74 -429.25 724.52 724.52"},{"m":36,"card":"10S","cls":7,"n":8,"k":8,"point":"1","gcd":8,"color":-1,"natural":10,"value":10,"component":"ᆳ","role":"T12","codePoint":"U+11B3","cardSlot":36,"rank":"10","suit":"S","svgPath":"M153 -25V-79H196C269 -79 339 -80 447 -71L445 -17C355 -25 292 -25 231 -25V42H434V207H151V154H357V93H153ZM588 212V182C588 106 552 14 457 -26L498 -85C565 -56 605 -3 627 56C650 -4 691 -56 759 -86L800 -25C706 14 668 106 668 182V212Z","svgViewBox":"92.59 -445.91 765.82 765.82"},{"m":37,"card":"10H","cls":7,"n":9,"k":1,"point":"1/9","gcd":1,"color":1,"natural":10,"value":10,"component":"ᆴ","role":"T13","codePoint":"U+11B4","cardSlot":37,"rank":"10","suit":"H","svgPath":"M153 -25V-79H196C269 -79 339 -80 447 -71L445 -17C355 -25 292 -25 231 -25V43H434V208H151V154H357V94H153ZM488 -25V-79H768V-25H565V41H753V93H565V154H761V208H488Z","svgViewBox":"95.47 -428.51 728.06 728.06"},{"m":38,"card":"10D","cls":7,"n":9,"k":2,"point":"2/9","gcd":1,"color":1,"natural":10,"value":10,"component":"ᆵ","role":"T14","codePoint":"U+11B5","cardSlot":38,"rank":"10","suit":"D","svgPath":"M153 -25V-79H196C269 -79 339 -80 447 -71L445 -17C355 -25 292 -25 231 -25V44H434V208H151V154H357V95H153ZM481 -22V-79H773V-22H729V151H773V208H481V151H526V-22ZM594 151H661V-22H594Z","svgViewBox":"95.02 -431.46 733.96 733.96"},{"m":39,"card":"10C","cls":7,"n":9,"k":3,"point":"1/3","gcd":3,"color":-1,"natural":10,"value":10,"component":"ᆶ","role":"T15","codePoint":"U+11B6","cardSlot":39,"rank":"10","suit":"C","svgPath":"M629 103C553 103 491 66 491 7C491 -53 553 -89 629 -89C704 -89 766 -53 766 7C766 66 704 103 629 103ZM629 56C669 56 701 36 701 7C701 -23 669 -42 629 -42C589 -42 556 -23 556 7C556 36 589 56 629 56ZM153 -25V-79H196C269 -79 339 -80 447 -71L445 -17C355 -25 292 -25 231 -25V43H434V208H151V154H357V94H153ZM591 226V181H472V123H782V181H663V226Z","svgViewBox":"94.21 -440.79 744.58 744.58"},{"m":40,"card":"JS","cls":7,"n":9,"k":4,"point":"4/9","gcd":1,"color":-1,"natural":11,"value":10,"component":"ᆷ","role":"T16","codePoint":"U+11B7","cardSlot":40,"rank":"J","suit":"S","svgPath":"M158 210V-77H763V210ZM688 149V-15H233V149Z","svgViewBox":"103.55 -423.45 713.90 713.90"},{"m":41,"card":"JH","cls":7,"n":9,"k":5,"point":"5/9","gcd":1,"color":1,"natural":11,"value":10,"component":"ᆸ","role":"T17","codePoint":"U+11B8","cardSlot":41,"rank":"J","suit":"H","svgPath":"M158 210V-76H764V210H687V132H235V210ZM235 72H687V-15H235Z","svgViewBox":"103.46 -424.54 715.08 715.08"},{"m":42,"card":"JD","cls":7,"n":9,"k":6,"point":"2/3","gcd":3,"color":1,"natural":11,"value":10,"component":"ᆹ","role":"T18","codePoint":"U+11B9","cardSlot":42,"rank":"J","suit":"D","svgPath":"M158 212V-78H434V212H362V134H232V212ZM232 72H362V-15H232ZM588 212V183C588 107 552 14 457 -25L498 -85C565 -55 606 -2 628 58C650 -2 691 -55 759 -85L800 -25C705 14 668 107 668 183V212Z","svgViewBox":"100.22 -442.28 757.56 757.56"},{"m":43,"card":"JC","cls":7,"n":9,"k":7,"point":"7/9","gcd":1,"color":-1,"natural":11,"value":10,"component":"ᆺ","role":"T19","codePoint":"U+11BA","cardSlot":43,"rank":"J","suit":"C","svgPath":"M418 220V181C418 74 297 4 138 -17L167 -78C298 -58 410 -6 459 79C508 -6 620 -58 751 -78L781 -17C621 4 500 74 500 181V220Z","svgViewBox":"80.13 -450.37 758.74 758.74"},{"m":44,"card":"QS","cls":7,"n":9,"k":8,"point":"8/9","gcd":1,"color":-1,"natural":12,"value":10,"component":"ᆻ","role":"T20","codePoint":"U+11BB","cardSlot":44,"rank":"Q","suit":"S","svgPath":"M582 215V194C582 116 543 29 462 -20C380 29 341 116 341 194V215H258V194C258 110 210 14 105 -27L146 -87C224 -55 274 5 300 74C326 0 378 -66 462 -101C545 -66 598 0 624 74C649 5 699 -55 777 -87L819 -27C713 14 666 110 666 194V215Z","svgViewBox":"40.74 -478.26 842.52 842.52"},{"m":45,"card":"QH","cls":7,"n":9,"k":9,"point":"1","gcd":9,"color":1,"natural":12,"value":10,"component":"ᆼ","role":"T21","codePoint":"U+11BC","cardSlot":45,"rank":"Q","suit":"H","svgPath":"M460 217C277 217 163 162 163 71C163 -21 277 -75 460 -75C642 -75 757 -21 757 71C757 162 642 217 460 217ZM460 161C590 161 675 126 675 71C675 15 590 -20 460 -20C329 -20 244 15 244 71C244 126 329 161 460 161Z","svgViewBox":"109.54 -421.46 700.92 700.92"},{"m":46,"card":"QD","cls":7,"n":10,"k":1,"point":"1/10","gcd":1,"color":1,"natural":12,"value":10,"component":"ᆽ","role":"T22","codePoint":"U+11BD","cardSlot":46,"rank":"Q","suit":"D","svgPath":"M173 212V151H418C404 58 288 -3 138 -22L168 -83C298 -64 409 -15 459 67C509 -15 620 -64 750 -83L779 -22C629 -3 514 58 500 151H748V212Z","svgViewBox":"80.31 -442.69 756.38 756.38"},{"m":47,"card":"QC","cls":7,"n":10,"k":2,"point":"1/5","gcd":2,"color":-1,"natural":12,"value":10,"component":"ᆾ","role":"T23","codePoint":"U+11BE","cardSlot":47,"rank":"Q","suit":"C","svgPath":"M162 169V108H416C399 38 287 -9 137 -21L163 -81C296 -68 409 -28 459 41C509 -28 621 -68 755 -81L781 -21C630 -9 519 38 502 108H757V169H499V216H419V169Z","svgViewBox":"79.04 -447.46 759.92 759.92"},{"m":48,"card":"KS","cls":7,"n":10,"k":3,"point":"3/10","gcd":1,"color":-1,"natural":13,"value":10,"component":"ᆿ","role":"T24","codePoint":"U+11BF","cardSlot":48,"rank":"K","suit":"S","svgPath":"M158 209V149H685V83L144 60L154 -8L685 25V-83H762V209Z","svgViewBox":"88.38 -427.62 729.24 729.24"},{"m":49,"card":"KH","cls":7,"n":10,"k":4,"point":"2/5","gcd":2,"color":1,"natural":13,"value":10,"component":"ᇀ","role":"T25","codePoint":"U+11C0","cardSlot":49,"rank":"K","suit":"H","svgPath":"M158 -22V-77H763V-22H235V42H740V94H235V156H755V210H158Z","svgViewBox":"103.55 -423.45 713.90 713.90"},{"m":50,"card":"KD","cls":7,"n":10,"k":5,"point":"1/2","gcd":5,"color":1,"natural":13,"value":10,"component":"ᇁ","role":"T26","codePoint":"U+11C1","cardSlot":50,"rank":"K","suit":"D","svgPath":"M163 -16V-77H769V-16H648V150H768V210H164V150H284V-16ZM361 150H571V-16H361Z","svgViewBox":"108.46 -424.04 715.08 715.08"},{"m":51,"card":"KC","cls":7,"n":10,"k":6,"point":"3/5","gcd":2,"color":-1,"natural":13,"value":10,"component":"ᇂ","role":"T27","codePoint":"U+11C2","cardSlot":51,"rank":"K","suit":"C","svgPath":"M460 97C306 97 210 65 210 7C210 -51 306 -82 460 -82C614 -82 710 -51 710 7C710 65 614 97 460 97ZM460 49C558 49 623 34 623 7C623 -19 558 -34 460 -34C362 -34 297 -19 297 7C297 34 362 49 460 49ZM419 220V177H151V120H769V177H499V220Z","svgViewBox":"95.38 -433.62 729.24 729.24"}];
+g.P51_DATA=Object.freeze(data.map(Object.freeze));
+if(typeof module!=="undefined"&&module.exports)module.exports=g.P51_DATA;
+})(globalThis);
+
+</script>
+<script>
+/* Prospect 51 rule engine v0.3 (first released as Rotor 51). Pure rules. No wallet, DOM, network, or implicit random fallback. */
+(function (g) {
+  'use strict';
+  const DATA = g.P51_DATA || (typeof require === 'function' ? require('./data.js') : null);
+  if (!DATA || DATA.length !== 51) throw new Error('The frozen 51-identity dictionary is required.');
+  const CARDS = Object.freeze(DATA.map(x => x.card));
+  const BY_ID = new Map(DATA.map(x => [x.card, x]));
+  const ARCHIVE_KEY = Object.freeze(['10S','JD','JH','KS','10D']);
+  const CATEGORIES = Object.freeze(['No award','Jacks or better','Two pair','Three of a kind','Straight','Flush','Full house','Four of a kind','Straight flush','Royal flush']);
+  const PAYS = Object.freeze([0,1,2,3,4,6,9,25,50,250]); // gross points, 1-point entry
+  const SCHEMA = 'project51.rotor51.demo.v0.3'; // original id kept on purpose: renaming it would orphan saved hands
+  const mod = (x,m) => ((x%m)+m)%m;
+  function gcd(a,b) { while(b) [a,b]=[b,a%b]; return Math.abs(a); }
+  function choose(n,k) { if(k<0||k>n)return 0; let v=1;for(let i=1;i<=Math.min(k,n-k);i++)v=v*(n-i+1)/i;return Math.round(v); }
+  function randBelow(m, fill) {
+    if (!Number.isInteger(m)||m<1||m>0x100000000) throw new Error('Invalid random bound.');
+    const fn=fill || (g.crypto && (a=>g.crypto.getRandomValues(a)));
+    if(!fn)throw new Error('Secure browser randomness is unavailable. Random play is disabled; examples remain available.');
+    const word=new Uint32Array(1), limit=0x100000000-(0x100000000%m);
+    do {fn(word);} while(word[0]>=limit);
+    return word[0]%m;
+  }
+  function gear(m,j,wire) {
+    if(wire==='straight')return 1;
+    if(wire!=='geared')throw new Error('Unknown rotor wiring.');
+    let a=mod(2*j+1,m);while(gcd(a,m)!==1)a=mod(a+1,m);return a;
+  }
+  function draw(pool, slots, settings, random=randBelow, carry=0) {
+    if(!Array.isArray(pool)||new Set(pool).size!==pool.length||pool.some(c=>!BY_ID.has(c)))throw new Error('Invalid remaining inventory.');
+    if(!Number.isInteger(settings.knob)||settings.knob<0||settings.knob>50)throw new Error('Invalid ring setting.');
+    if(!Array.isArray(slots)||new Set(slots).size!==slots.length||slots.some(x=>!Number.isInteger(x)||x<0||x>4)||slots.length>pool.length)throw new Error('Invalid rotor slots.');
+    const left=pool.slice(),cards=[],trace=[];
+    for(const slot of slots){
+      const j=slot+1,m=left.length,a=gear(m,j,settings.wire),b=mod(settings.knob+j*(j+1)/2+carry,m),d=random(m);
+      if(!Number.isInteger(d)||d<0||d>=m)throw new Error('Random source returned an invalid digit.');
+      const e=mod(a*d+b,m),card=left.splice(e,1)[0];
+      cards.push(card);trace.push({slot,j,m,a,b,d,e,card});carry+=e+1;
+    }
+    return {cards,remaining:left,trace};
+  }
+  function assertHand(hand){if(!Array.isArray(hand)||hand.length!==5||new Set(hand).size!==5||hand.some(c=>!BY_ID.has(c)))throw new Error('A hand must contain five distinct active identities.');}
+  // Fast evaluator used by exact enumeration; callers validate the source hand/pool.
+  function scoreFast(hand) {
+    const ranks=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];let suit=null,flush=true;
+    for(const c of hand){const d=BY_ID.get(c),r=d.natural===1?14:d.natural;ranks[r]++;if(suit===null)suit=d.suit;else if(d.suit!==suit)flush=false;}
+    let pairs=0,trips=0,fours=0,highPair=false,unique=0,low=15,high=0;
+    for(let r=2;r<=14;r++){const n=ranks[r];if(n){unique++;low=Math.min(low,r);high=r;}if(n===2){pairs++;if(r>=11)highPair=true;}if(n===3)trips++;if(n===4)fours++;}
+    const wheel=unique===5&&ranks[14]&&ranks[2]&&ranks[3]&&ranks[4]&&ranks[5];
+    const straight=unique===5&&(high-low===4||wheel);
+    if(straight&&flush)return !wheel&&low===10?9:8;
+    if(fours)return 7;if(trips&&pairs)return 6;if(flush)return 5;if(straight)return 4;
+    if(trips)return 3;if(pairs===2)return 2;if(pairs===1&&highPair)return 1;return 0;
+  }
+  function score(hand){assertHand(hand);const category=scoreFast(hand);return {category,name:CATEGORIES[category],grossCents:PAYS[category]*100};}
+  function isKey(hand){return hand.length===5&&hand.every((c,i)=>c===ARCHIVE_KEY[i]);}
+  function fresh(){return {schema:SCHEMA,balanceCents:10000,meterCents:5100,roundNo:0,phase:'ready',round:null,history:[]};}
+  function validate(s){
+    if(!s||s.schema!==SCHEMA||!['ready','hold','settled'].includes(s.phase)||!Number.isSafeInteger(s.balanceCents)||s.balanceCents<0||!Number.isSafeInteger(s.meterCents)||s.meterCents<5100||!Number.isSafeInteger(s.roundNo)||s.roundNo<0||!Array.isArray(s.history))throw new Error('Demo save is invalid. Use Reset demo to start a new isolated bank.');
+    const checkResult=(result,hand)=>{
+      if(!result||result.category!==score(hand).category||result.name!==CATEGORIES[result.category]||result.grossCents!==PAYS[result.category]*100||!Number.isSafeInteger(result.bonusCents)||result.bonusCents<0||result.totalCents!==result.grossCents+result.bonusCents||result.netCents!==result.totalCents-100)throw new Error('Invalid saved settlement.');
+    };
+    if(s.history.length>12)throw new Error('Invalid saved history.');
+    for(const h of s.history){if(!h||!Number.isSafeInteger(h.id)||h.id<1||h.id>s.roundNo)throw new Error('Invalid history entry.');assertHand(h.initial);assertHand(h.hand);checkResult(h.result,h.hand);}
+    if(s.phase==='ready'&&(s.round!==null||s.roundNo!==0||s.history.length!==0))throw new Error('Invalid ready state.');
+    if(s.phase!=='ready'){
+      const r=s.round;if(!r||r.id!==s.roundNo)throw new Error('Missing saved round.');
+      assertHand(r.initial);assertHand(r.hand);
+      if(!r.settings||!['straight','geared'].includes(r.settings.wire)||!Number.isInteger(r.settings.knob)||r.settings.knob<0||r.settings.knob>50)throw new Error('Invalid saved settings.');
+      if(!Array.isArray(r.trace)||r.trace.length<5||r.trace.length>10||r.trace.some(t=>!t||!Number.isInteger(t.slot)||t.slot<0||t.slot>4||t.j!==t.slot+1||!Number.isInteger(t.m)||t.m<42||t.m>51||!Number.isInteger(t.a)||gcd(t.a,t.m)!==1||!Number.isInteger(t.b)||t.b<0||t.b>=t.m||!Number.isInteger(t.d)||t.d<0||t.d>=t.m||t.e!==mod(t.a*t.d+t.b,t.m)||!BY_ID.has(t.card)))throw new Error('Invalid saved rotor record.');
+      if(!Array.isArray(r.holds)||r.holds.length!==5||r.holds.some(x=>typeof x!=='boolean'))throw new Error('Invalid saved hold mask.');
+      if(!Array.isArray(r.remaining)||new Set(r.remaining).size!==r.remaining.length||r.remaining.some(c=>!BY_ID.has(c)||r.initial.includes(c)||r.hand.includes(c)))throw new Error('Invalid saved inventory.');
+      if(s.phase==='hold'&&(r.remaining.length!==46||r.hand.some((c,i)=>c!==r.initial[i])||r.settled))throw new Error('Invalid unsettled round.');
+      if(!Number.isSafeInteger(r.pendingBonusCents)||r.pendingBonusCents<0||(!isKey(r.initial)&&r.pendingBonusCents!==0))throw new Error('Invalid saved award.');
+      if(s.phase==='settled'){
+        if(!r.settled||r.remaining.length!==46-r.hand.filter(c=>!r.initial.includes(c)).length)throw new Error('Invalid settled inventory.');
+        checkResult(r.result,r.hand);if(r.result.bonusCents!==r.pendingBonusCents)throw new Error('Invalid saved bonus.');
+      }
+    }
+    return s;
+  }
+  const clone=x=>JSON.parse(JSON.stringify(x));
+  function deal(s,settings,random){
+    validate(s);if(s.phase==='hold')throw new Error('Finish the current hand first.');if(s.balanceCents<100)throw new Error('The demo bank needs one point. Reset demo to practice again.');
+    const n=clone(s);n.roundNo++;const d=draw(CARDS,[0,1,2,3,4],settings,random,n.roundNo);
+    n.balanceCents-=100;n.meterCents++;
+    const pending=isKey(d.cards)?n.meterCents:0;if(pending)n.meterCents=5100;
+    n.round={id:n.roundNo,settings:clone(settings),initial:d.cards.slice(),hand:d.cards,remaining:d.remaining,trace:d.trace,holds:[false,false,false,false,false],pendingBonusCents:pending,settled:false};n.phase='hold';return validate(n);
+  }
+  function hold(s,i){validate(s);if(s.phase!=='hold'||!Number.isInteger(i)||i<0||i>4)throw new Error('Hold is not available.');const n=clone(s);n.round.holds[i]=!n.round.holds[i];return n;}
+  function finish(s,redraw,random){
+    validate(s);if(s.phase!=='hold')throw new Error('This hand has already been settled, or no hand is active.');
+    const n=clone(s),r=n.round;
+    if(redraw){const slots=[0,1,2,3,4].filter(i=>!r.holds[i]);const d=draw(r.remaining,slots,r.settings,random,n.roundNo+51);slots.forEach((i,k)=>r.hand[i]=d.cards[k]);r.remaining=d.remaining;r.trace.push(...d.trace);}
+    const result=score(r.hand);r.result={...result,bonusCents:r.pendingBonusCents,totalCents:result.grossCents+r.pendingBonusCents,netCents:result.grossCents+r.pendingBonusCents-100};r.settled=true;n.phase='settled';n.balanceCents+=r.result.totalCents;
+    n.history.unshift({id:r.id,initial:r.initial,hand:r.hand.slice(),holds:r.holds.slice(),result:r.result});n.history=n.history.slice(0,12);return validate(n);
+  }
+  function* combinations(pool,k,start=0,prefix=[]){if(k===0){yield prefix;return;}for(let i=start;i<=pool.length-k;i++)yield*combinations(pool,k-1,i+1,[...prefix,pool[i]]);}
+  function drawOdds(initial,holds){
+    assertHand(initial);if(!Array.isArray(holds)||holds.length!==5||holds.some(x=>typeof x!=='boolean'))throw new Error('Invalid hold mask.');
+    const kept=initial.filter((c,i)=>holds[i]),pool=CARDS.filter(c=>!initial.includes(c)),k=5-kept.length;
+    return {kept,k,total:choose(46,k),iterator:combinations(pool,k)};
+  }
+  g.P51Engine=Object.freeze({DATA,CARDS,BY_ID,ARCHIVE_KEY,CATEGORIES,PAYS,SCHEMA,mod,gcd,choose,randBelow,gear,draw,scoreFast,score,isKey,fresh,validate,deal,hold,finish,combinations,drawOdds});
+  if(typeof module!=='undefined'&&module.exports)module.exports=g.P51Engine;
+})(globalThis);
+
+</script>
+<script>
+/* Compact identity notation. No hidden game action is attached to flipping a token. */
+(function(g){'use strict';
+ const records=new Map(g.P51_DATA.map(x=>[x.card,x]));
+ const suits={S:'\u2660',H:'\u2665',D:'\u2666',C:'\u2663'}, suitNames={S:'spades',H:'hearts',D:'diamonds',C:'clubs'};
+ class P51Token extends HTMLElement{
+  static get observedAttributes(){return ['card','face','size','static'];}
+  constructor(){super();this.attachShadow({mode:'open'});}
+  connectedCallback(){this.render();}
+  attributeChangedCallback(){if(this.isConnected)this.render();}
+  render(){
+   const hadFocus=!!this.shadowRoot.activeElement;
+   const card=this.getAttribute('card'),d=records.get(card),symbol=this.getAttribute('face')==='symbol',passive=this.hasAttribute('static');
+   const isMarker=card==='2C',rank=d?d.rank:isMarker?'2':'',suit=d?d.suit:isMarker?'C':'';
+   const label=d?`${rank} of ${suitNames[suit]}; ${d.role}, ${d.codePoint}. ${passive?'':symbol?'Show card face':'Show paper symbol'}`:isMarker?'2 of clubs, outside marker Ⅰ':'Undealt rotor';
+   const tag=passive?'span':'button';
+   this.shadowRoot.innerHTML=`<style>
+    :host{display:inline-flex;vertical-align:-.24em;--size:var(--p51-size,1.8em);--r:calc(var(--size)*.29)}
+    :host([size="reel"]){--size:var(--reel-size,64px)}
+    .tile{box-sizing:border-box;width:var(--size);height:var(--size);padding:calc(var(--size)*.1);border:1px solid #c9d5cc;border-radius:calc(var(--size)*.12);background:#fffcf3;color:#193c33;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;line-height:1;box-shadow:0 1px 1px #001a1018;text-decoration:none;font-family:Arial,sans-serif;flex:none;cursor:pointer;position:relative}
+    .red{color:#b5263c}.rank{font-size:calc(var(--size)*.40);font-weight:750}.suit{font-size:calc(var(--size)*.35)}
+    .glyph{width:100%;height:100%;overflow:visible;fill:currentColor}.empty{align-items:center;justify-content:center;background:#173d32;color:#adbbac;border:1px dashed #729285;box-shadow:none;font-family:Georgia,serif;font-size:calc(var(--size)*.52)}
+    .tile:focus-visible{outline:3px solid #e3b963;outline-offset:3px}button:hover{border-color:#957538}span.tile{cursor:default}
+    @media(prefers-contrast:more){.tile{border-color:currentColor}}
+   </style><${tag} class="tile ${d&&d.color===1?'red':''} ${!d&&!isMarker?'empty':''}" ${passive?'role="img"':'type="button"'} aria-label="${label}">${d&&symbol?`<svg class="glyph" viewBox="${d.svgViewBox}" aria-hidden="true"><g transform="scale(1,-1)"><path d="${d.svgPath}"/></g></svg>`:d||isMarker?`<span class="rank" aria-hidden="true">${rank}</span><span class="suit" aria-hidden="true">${suits[suit]}</span>`:'<span aria-hidden="true">I</span>'}</${tag}>`;
+   if(hadFocus&&!passive)this.shadowRoot.querySelector('button')?.focus({preventScroll:true});
+   if(!passive&&d)this.shadowRoot.querySelector('button').onclick=()=>{this.setAttribute('face',symbol?'card':'symbol');this.dispatchEvent(new CustomEvent('p51-inspect',{detail:{card,face:symbol?'card':'symbol'},bubbles:true,composed:true}));};
+  }
+ }
+ if(!customElements.get('p51-token'))customElements.define('p51-token',P51Token);
+})(globalThis);
+
+</script>
+<script>
+/* Prospect 51 v0.3.2 - presentation only.
+ * This module never samples a deal, evaluates a hand, or writes a bank.
+ * Decorative travel follows the canonical dictionary, independent of the score.
+ * A committed engine result is supplied once and revealed, never re-selected.
+ */
+(function (g) {
+  'use strict';
+  const emit = (name, detail) => document.dispatchEvent(new CustomEvent(name, {detail}));
+  const set = (el, name, value) => {
+    if (value === null) { if (el.hasAttribute(name)) el.removeAttribute(name); }
+    else if (el.getAttribute(name) !== String(value)) el.setAttribute(name, String(value));
+  };
+  class P51Reels {
+    constructor(root, cards) {
+      this.root = root;
+      this.cards = cards.slice();
+      this.active = new Set();
+      this.current = null;
+      this.rotors = [...root.querySelectorAll('.rotor')];
+    }
+    neighbors(slot) {
+      // The same score-independent decorative neighbors are used at rest and on landing.
+      return [this.cards[(slot * 11 + 7) % 51], this.cards[(slot * 11 + 29) % 51]];
+    }
+    token(card, face) {
+      const token = document.createElement('p51-token');
+      token.setAttribute('size', 'reel');
+      token.setAttribute('static', '');
+      if (card) token.setAttribute('card', card);
+      token.setAttribute('face', face);
+      return token;
+    }
+    cell(card, face) {
+      const cell = document.createElement('div');
+      cell.className = 'reel-cell';
+      cell.appendChild(this.token(card, face));
+      return cell;
+    }
+    syncSlot(slot, card, face, locked) {
+      if (this.active.has(slot)) return;
+      const rotor = this.rotors[slot], token = rotor.querySelector('.reel-face p51-token');
+      set(token, 'card', card || null);
+      set(token, 'face', face);
+      set(token, 'static', !card || locked ? '' : null);
+      const around = this.neighbors(slot);
+      for (const [i, selector] of ['.reel-above', '.reel-below'].entries()) {
+        const ghost = rotor.querySelector(selector + ' p51-token');
+        set(ghost, 'card', around[i]);
+        set(ghost, 'face', face);
+      }
+    }
+    play({slots, before, after, faceFor, instant, onStop, onDone}) {
+      if (this.current) throw new Error('A reel presentation is already active.');
+      const pending = new Set(slots);
+      const job = {pending, animations:new Map(), onStop, onDone};
+      this.current = job;
+      job.watchdog = setTimeout(() => this.skip(), 2800);
+      this.active = new Set(slots);
+      this.root.classList.add('spinning');
+      this.root.setAttribute('aria-busy', 'true');
+      for (const slot of slots) {
+        const rotor = this.rotors[slot];
+        rotor.classList.add('is-spinning');
+        rotor.setAttribute('aria-busy', 'true');
+      }
+      emit('p51:reels-start', {slots:slots.slice(), instant:!!instant});
+      if (instant || !slots.length || !Element.prototype.animate) {
+        queueMicrotask(() => this.skip());
+        return;
+      }
+      try {
+        for (const [order, slot] of slots.entries()) {
+          const rotor = this.rotors[slot], strip = rotor.querySelector('.reel-strip');
+          const [top, bottom] = this.neighbors(slot);
+          // The decorative belt is outcome-independent. A long, coprime walk through
+          // the 51-card dictionary makes the digital window read like a physical reel.
+          const travel = Array.from({length:30 + slot * 3}, (_, k) =>
+            this.cards[(slot * 13 + k * 7) % this.cards.length]);
+          // The target is fixed at index one for the final center stop. The already
+          // committed previous card sits near the far end so the belt appears continuous.
+          const sequence = [top, after[slot], bottom, ...travel, top, before[slot] || null, bottom];
+          strip.replaceChildren(...sequence.map(card => this.cell(card, faceFor(card))));
+          const cellHeight = rotor.querySelector('.reel-face').getBoundingClientRect().height;
+          if (!(cellHeight > 0)) throw new Error('Reel window has no height.');
+          const start = -(sequence.length - 2) * cellHeight;
+          const end = -cellHeight;
+          const distance = end - start;
+          // Classic slot cadence: quick pick-up, a fast belt, then a brake, tiny
+          // overshoot, and rebound. Timing depends only on reel order, never score.
+          const duration = 1450 + order * 235;
+          const animation = strip.animate([
+            {offset:0, transform:`translate3d(0, ${start}px, 0)`, filter:'blur(.2px)'},
+            {offset:.10, transform:`translate3d(0, ${start + distance * .13}px, 0)`, filter:'blur(1.55px)'},
+            {offset:.58, transform:`translate3d(0, ${start + distance * .72}px, 0)`, filter:'blur(1.25px)'},
+            {offset:.84, transform:`translate3d(0, ${end - cellHeight * .38}px, 0)`, filter:'blur(.65px)'},
+            {offset:.935, transform:`translate3d(0, ${end + cellHeight * .12}px, 0)`, filter:'blur(.08px)'},
+            {offset:.975, transform:`translate3d(0, ${end - cellHeight * .035}px, 0)`, filter:'blur(0)'},
+            {offset:1, transform:`translate3d(0, ${end}px, 0)`, filter:'blur(0)'}
+          ], {duration, easing:'linear', fill:'both'});
+          job.animations.set(slot, animation);
+          animation.onfinish = () => this.stop(slot);
+          animation.oncancel = () => this.stop(slot);
+        }
+      } catch (err) {
+        // A rendering failure reveals the already-committed result. Never reroll.
+        emit('p51:reels-fallback', {reason:err.message});
+        this.skip();
+      }
+    }
+    stop(slot) {
+      const job = this.current;
+      if (!job || !job.pending.has(slot)) return;
+      job.pending.delete(slot);
+      this.active.delete(slot);
+      const animation = job.animations.get(slot);
+      if (animation) { animation.onfinish = null; animation.oncancel = null; animation.cancel(); }
+      const rotor = this.rotors[slot];
+      rotor.classList.remove('is-spinning');
+      rotor.classList.remove('is-stopping');
+      // A brief cabinet kick makes the video reel land like an old mechanical stop.
+      void rotor.offsetWidth;
+      rotor.classList.add('is-stopping');
+      setTimeout(() => rotor.classList.remove('is-stopping'), 220);
+      rotor.setAttribute('aria-busy', 'false');
+      rotor.querySelector('.reel-strip').replaceChildren();
+      job.onStop(slot);
+      emit('p51:reel-stop', {slot});
+      if (!job.pending.size) this.complete(job);
+    }
+    complete(job) {
+      if (this.current !== job) return;
+      this.current = null;
+      clearTimeout(job.watchdog);
+      this.root.classList.remove('spinning');
+      this.root.setAttribute('aria-busy', 'false');
+      job.onDone();
+      emit('p51:reels-end', {});
+    }
+    skip() {
+      const job = this.current;
+      if (!job) return;
+      for (const slot of [...job.pending]) this.stop(slot);
+      if (!job.pending.size && this.current === job) this.complete(job);
+    }
+  }
+  g.P51Reels = P51Reels;
+})(globalThis);
+
+</script>
+<script>
+/* Prospect 51 v0.3.2. UI-only mechanical-reel update over the frozen Project 51 v0.3 engine. */
+(function () {
+  'use strict';
+  const E = globalThis.P51Engine, $ = id => document.getElementById(id);
+  // Keep the existing key and rule schema: renaming must not erase an unfinished hand.
+  const KEY = 'project51.rotor51.v0.3.tab-demo';
+  let state = E.fresh(), preview = null, busy = false, display = 'card';
+  let transition = null, oddsEpoch = 0, countingOdds = false, saveInvalid = false;
+  const faces = new Map(), motionQuery = matchMedia('(prefers-reduced-motion: reduce)');
+  const money = n => (n / 100).toFixed(2), fmt = n => n.toLocaleString('en-US');
+  function error(err) { $('error').hidden = false; $('error').textContent = err.message || String(err); }
+  function save() {
+    try { sessionStorage.setItem(KEY, JSON.stringify(state)); $('save-status').textContent = 'Saved in this tab only'; }
+    catch { $('save-status').textContent = 'Memory only; browser storage unavailable'; }
+  }
+  let savedRaw = null;
+  try { savedRaw = sessionStorage.getItem(KEY); }
+  catch { $('save-status').textContent = 'Memory only; browser storage unavailable'; }
+  if (savedRaw) {
+    try { state = E.validate(JSON.parse(savedRaw)); }
+    catch { saveInvalid = true; error(new Error('The saved demo could not be read. It has not been replaced. Reset demo to start a new isolated bank.')); }
+  }
+  if (state.round) {
+    $('wiring').value = state.round.settings.wire;
+    $('knob').value = state.round.settings.knob;
+    $('knob-out').textContent = String(state.round.settings.knob);
+  }
+  if (motionQuery.matches) $('motion').value = 'instant';
+  function cancelOdds() {
+    oddsEpoch++; countingOdds = false;
+    $('odds-result').textContent = state.phase === 'hold' ? 'Choose a hold and count its possible draws.' : 'Deal a hand to compare a decision.';
+  }
+  for (let i = 0; i < 5; i++) {
+    const div = document.createElement('div'); div.className = 'rotor'; div.id = 'rotor-' + i;
+    div.innerHTML = `<p class="rotor-label">ROTOR ${String(i + 1).padStart(2, '0')}</p>
+      <div class="drum"><div class="reel-window">
+        <div class="reel-rest">
+          <div class="reel-cell reel-above" aria-hidden="true" inert><p51-token size="reel" static></p51-token></div>
+          <div class="reel-cell reel-face"><p51-token size="reel" id="token-${i}" static></p51-token></div>
+          <div class="reel-cell reel-below" aria-hidden="true" inert><p51-token size="reel" static></p51-token></div>
+        </div>
+        <div class="reel-strip" aria-hidden="true" inert></div>
+      </div></div>
+      <p class="residue" id="residue-${i}">mod ${51 - i}</p>
+      <button class="hold" id="hold-${i}" aria-pressed="false" aria-label="Hold rotor ${i + 1}" disabled>HOLD</button>`;
+    $('rotors').appendChild(div);
+    $('hold-' + i).onclick = () => act(() => { state = E.hold(state, i); save(); cancelOdds(); render(); });
+  }
+  const reels = new P51Reels($('rotors'), E.CARDS);
+  for (const card of E.ARCHIVE_KEY) {
+    const t = document.createElement('p51-token'); t.setAttribute('card', card); $('archive-key').appendChild(t);
+  }
+  for (let i = 9; i >= 1; i--) {
+    const tr = document.createElement('tr'); tr.id = 'pay-' + i;
+    tr.innerHTML = `<td>${E.CATEGORIES[i]}</td><td>${E.PAYS[i]}</td>`; $('paytable').appendChild(tr);
+  }
+  document.addEventListener('p51-inspect', e => { faces.set(e.detail.card, e.detail.face); });
+  function act(fn) {
+    if (busy || saveInvalid) return;
+    try { $('error').hidden = true; fn(); }
+    catch (err) { error(err); render(); }
+  }
+  function settings() { return {wire:$('wiring').value, knob:Number($('knob').value)}; }
+  function faceFor(card) { return faces.get(card) || display; }
+  function animate(before, slots, kind) {
+    if (!slots.length) { render(); return; }
+    const keyboard = document.activeElement?.matches(':focus-visible');
+    const beforeHand = before.round ? before.round.hand.slice() : Array(5).fill(null);
+    transition = {
+      kind, cards:beforeHand.slice(), stops:0, total:slots.length,
+      // Charge appears immediately; settlement and jackpot reveal wait for the stops.
+      ledger:kind === 'deal' ? {...before, balanceCents:state.balanceCents} : before
+    };
+    busy = true; render();
+    if (keyboard) $('reveal-now').focus({preventScroll:true});
+    reels.play({
+      slots, before:beforeHand, after:state.round.hand.slice(), faceFor,
+      instant:motionQuery.matches || $('motion').value === 'instant' || document.hidden,
+      onStop(i) { transition.cards[i] = state.round.hand[i]; transition.stops++; render(); },
+      onDone() {
+        const restoreFocus = document.activeElement === $('reveal-now');
+        busy = false; transition = null; render();
+        if (restoreFocus) (state.phase === 'hold' ? $('hold-0') : $('deal')).focus({preventScroll:true});
+      }
+    });
+  }
+  function render() {
+    const ledger = busy ? transition.ledger : state, r = ledger.round;
+    const hand = preview ? preview.hand : busy ? transition.cards : r ? r.hand : [];
+    const active = state.phase === 'hold' && !preview && !busy;
+    const holdingUI = !preview && (state.phase === 'hold' || (busy && transition.kind === 'redraw'));
+    const settled = state.phase === 'settled' && !preview && !busy;
+    $('bank').textContent = money(ledger.balanceCents); $('meter').textContent = money(ledger.meterCents);
+    $('example-banner').hidden = !preview;
+    for (let i = 0; i < 5; i++) {
+      reels.syncSlot(i, hand[i], faceFor(hand[i]), busy);
+      const held = !preview && !!state.round?.holds[i];
+      $('rotor-' + i).classList.toggle('held', held);
+      $('hold-' + i).setAttribute('aria-pressed', String(held));
+      $('hold-' + i).textContent = held ? 'HELD' : 'HOLD';
+      $('hold-' + i).disabled = !active || saveInvalid;
+      const rows = !preview && r ? r.trace.filter(t => t.slot === i) : [], row = rows[rows.length - 1];
+      $('residue-' + i).innerHTML = row ? `<span>mod ${row.m}</span><span>${row.d} &rarr; ${row.e}</span>` : `<span>mod ${51 - i}</span><span>&nbsp;</span>`;
+    }
+    $('deal').hidden = holdingUI || !!preview; $('deal').disabled = busy || saveInvalid || state.balanceCents < 100;
+    $('draw').hidden = !holdingUI; $('draw').disabled = !active || saveInvalid;
+    $('draw').textContent = state.round?.holds.every(Boolean) ? 'Keep all \u00b7 bank' : 'Respin unheld \u00b7 free';
+    $('bank-hand').hidden = !holdingUI; $('bank-hand').disabled = !active || saveInvalid;
+    $('exit-example').hidden = !preview; $('reveal-now').hidden = !busy;
+    $('wiring').disabled = state.phase === 'hold' || busy;
+    $('knob').disabled = state.phase === 'hold' || busy; $('motion').disabled = busy;
+    $('odds').disabled = !active || countingOdds || saveInvalid;
+    $('reset').disabled = busy; $('export-record').disabled = busy;
+    for (const b of document.querySelectorAll('[data-example]')) b.disabled = busy;
+    for (const [id, mode] of [['show-cards', 'card'], ['show-symbols', 'symbol']]) {
+      $(id).setAttribute('aria-pressed', String(display === mode)); $(id).disabled = busy;
+    }
+    $('motion-status').textContent = busy ? `${transition.total - transition.stops} reels turning` : preview ? 'Illustration only. No points change.' : active ? 'Choose your hold. One redraw.' : settled ? 'Five stops. One reading.' : 'Five rotors. Your decision.';
+    for (let i = 1; i <= 9; i++) $('pay-' + i).classList.remove('active');
+    const score = !busy && hand.length ? E.score(hand) : null;
+    if (score?.category) $('pay-' + score.category).classList.add('active');
+    $('result').classList.toggle('win', !!(score?.category && (settled || preview)));
+    if (busy) {
+      $('result-title').textContent = transition.kind === 'deal' ? 'A prospect in motion.' : 'Keep what matters.';
+      $('result-note').textContent = transition.kind === 'deal' ? 'The reels are turning. Your deal is already saved.' : 'Held rotors stay put. The new stops are already saved.';
+    } else if (preview) {
+      $('result-title').textContent = preview.name;
+      $('result-note').textContent = E.score(preview.hand).name + ' \u00b7 illustration only; no points awarded.';
+    } else if (active) {
+      $('result-title').textContent = 'What will you keep?';
+      $('result-note').textContent = score.name + ' now. ' + (state.round.pendingBonusCents ? 'Archive lock matched; ' + money(state.round.pendingBonusCents) + ' bonus secured for settlement.' : 'Hold any cards, then respin once or bank this hand.');
+    } else if (settled) {
+      const result = state.round.result;
+      $('result-title').textContent = result.name + (result.totalCents ? ' \u00b7 +' + money(result.totalCents) : '');
+      $('result-note').textContent = 'Gross ' + money(result.totalCents) + '; net ' + (result.netCents >= 0 ? '+' : '') + money(result.netCents) + ' after the one-point entry.';
+    } else {
+      $('result-title').textContent = 'A new reading of the same cards.';
+      $('result-note').textContent = 'Spin five, hold any, then respin once or bank the hand.';
+    }
+    $('trace').replaceChildren();
+    if (!preview && r) for (const row of r.trace) {
+      const tr = document.createElement('tr');
+      for (const val of [row.slot + 1, row.m, row.a, row.b, row.d, row.e, row.card]) {
+        const td = document.createElement('td');
+        if (typeof val === 'string') { const t = document.createElement('p51-token'); t.setAttribute('card', val); td.appendChild(t); }
+        else td.textContent = val;
+        tr.appendChild(td);
+      }
+      $('trace').appendChild(tr);
+    }
+    $('history').replaceChildren();
+    for (const h of ledger.history) {
+      const div = document.createElement('div'); div.className = 'history-row';
+      const left = document.createElement('span'), right = document.createElement('span');
+      left.textContent = '#' + h.id + ' \u00b7 ' + h.result.name; right.textContent = money(h.result.totalCents) + ' gross';
+      div.append(left, right); $('history').appendChild(div);
+    }
+  }
+  $('deal').onclick = () => act(() => {
+    const before = state; preview = null;
+    state = E.deal(state, settings()); save(); cancelOdds(); animate(before, [0, 1, 2, 3, 4], 'deal');
+  });
+  $('draw').onclick = () => act(() => {
+    const before = state, slots = [0, 1, 2, 3, 4].filter(i => !state.round.holds[i]);
+    state = E.finish(state, true); save(); cancelOdds(); animate(before, slots, 'redraw');
+  });
+  $('bank-hand').onclick = () => act(() => { state = E.finish(state, false); save(); cancelOdds(); render(); });
+  $('reveal-now').onclick = () => reels.skip();
+  $('exit-example').onclick = () => { if (busy) return; preview = null; cancelOdds(); render(); };
+  for (const b of document.querySelectorAll('[data-example]')) b.onclick = () => {
+    if (busy) return;
+    preview = b.dataset.example === 'royal' ? {name:'A royal, read two ways.', hand:['10H', 'JH', 'QH', 'KH', 'AH']} : {name:'The archive lock, exactly.', hand:E.ARCHIVE_KEY};
+    cancelOdds(); render();
+  };
+  for (const [id, mode] of [['show-cards', 'card'], ['show-symbols', 'symbol']]) $(id).onclick = () => {
+    if (busy) return; display = mode; faces.clear(); render();
+  };
+  $('knob').oninput = () => { $('knob-out').textContent = $('knob').value; };
+  $('reset').onclick = () => {
+    if (busy) return;
+    if (!confirm('Reset only the Prospect 51 sandbox to 100 demo points and a 51-point local meter? Shared jbits and Finance are not touched.')) return;
+    state = E.fresh(); preview = null; saveInvalid = false; $('error').hidden = true;
+    save(); cancelOdds(); render();
+  };
+  $('export-record').onclick = () => {
+    if (busy) return;
+    const payload = {format:'Prospect51-public-demo-record-v0.3.1', ruleSchema:E.SCHEMA, createdAt:new Date().toISOString(), disclaimer:'Client-side example record. No server validation or random-source certification.', state};
+    const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], {type:'application/json'}));
+    const a = document.createElement('a'); a.href = url; a.download = 'Prospect_51_demo_record.json'; a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 2000);
+  };
+  $('odds').onclick = () => act(() => {
+    if (state.phase !== 'hold' || preview) return;
+    const epoch = ++oddsEpoch, job = E.drawOdds(state.round.initial, state.round.holds), counts = E.PAYS.map(() => 0);
+    let done = 0, gross = 0; countingOdds = true; $('odds').disabled = true;
+    function batch() {
+      if (epoch !== oddsEpoch) return;
+      try {
+        let item;
+        for (let n = 0; n < 3500; n++) {
+          item = job.iterator.next(); if (item.done) break;
+          const c = E.scoreFast(job.kept.concat(item.value)); counts[c]++; gross += E.PAYS[c]; done++;
+        }
+        if (item?.done) {
+          countingOdds = false;
+          $('odds-result').textContent = `${fmt(done)} equally likely completions. Award chance ${(100 * (done - counts[0]) / done).toFixed(4)}%. Royal: ${counts[9]} / ${fmt(done)}. Expected base gross: ${(gross / done).toFixed(6)} points. The entry is already paid; the archive bonus is fixed by the initial deal.`;
+          $('odds').disabled = false;
+        } else {
+          $('odds-result').textContent = `Counting ${fmt(done)} / ${fmt(job.total)} completions... Change a hold to cancel.`;
+          setTimeout(batch, 0);
+        }
+      } catch (err) { countingOdds = false; error(err); render(); }
+    }
+    setTimeout(batch, 0);
+  });
+  function lab() {
+    const u = Number($('lab-u').value), v = Number($('lab-v').value), i = 17 * u + v, d = E.DATA[i];
+    $('u-out').textContent = u; $('v-out').textContent = v; $('lab-token').setAttribute('card', d.card);
+    $('lab-address').textContent = `i = ${i}; canonical identity a${i + 1}; ${d.role}, ${d.codePoint}. Triangular address (${d.n}, ${d.k}).`;
+    const a = Number($('lab-step').value), reach = new Set(Array.from({length:51}, (_, j) => (a * j) % 51));
+    $('lab-dots').replaceChildren();
+    for (let j = 0; j < 51; j++) { const s = document.createElement('span'); s.className = 'dot' + (reach.has(j) ? ' on' : ''); $('lab-dots').appendChild(s); }
+    $('lab-reach').textContent = `gcd(${a}, 51) = ${E.gcd(a, 51)}. ${reach.size} of 51 positions reachable; ${E.gcd(a, 51)} input digits per reachable output.`;
+  }
+  for (const id of ['lab-u', 'lab-v', 'lab-step']) $(id).oninput = lab;
+  // Visibility, resizing, and a changed motion preference end presentation only.
+  document.addEventListener('visibilitychange', () => { if (document.hidden) reels.skip(); });
+  window.addEventListener('resize', () => { if (busy) reels.skip(); });
+  const onMotionChange = e => { if (e.matches) { $('motion').value = 'instant'; reels.skip(); } };
+  if (motionQuery.addEventListener) motionQuery.addEventListener('change', onMotionChange);
+  else if (motionQuery.addListener) motionQuery.addListener(onMotionChange);
+  if (!globalThis.crypto?.getRandomValues) error(new Error('Secure browser randomness is unavailable. Random deals will not run; examples and the mechanism lab remain available.'));
+  lab(); render();
+})();
+
+</script>
+</body></html>

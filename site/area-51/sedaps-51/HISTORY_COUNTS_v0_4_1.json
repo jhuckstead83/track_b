@@ -1,0 +1,186 @@
+{
+ "version": "0.4.1",
+ "rule": "sedaps-core-v0-2.js",
+ "lemma": "sedaps-lemma-v0-4.js",
+ "RH_STATUS": "OPEN",
+ "meaning": "number of 17-17-17 deals whose play reaches the state at the stated elapsed turn",
+ "presents": [
+  {
+   "turn": 32,
+   "deals": "484731472",
+   "statesSearched": 2263,
+   "boundaryStates": 531,
+   "pasts": [
+    {
+     "bits": "00",
+     "dealsAtTurn": 31,
+     "deals": "77014080"
+    },
+    {
+     "bits": "01",
+     "dealsAtTurn": 31,
+     "deals": "179358976"
+    },
+    {
+     "bits": "10",
+     "dealsAtTurn": 31,
+     "deals": "24504480"
+    },
+    {
+     "bits": "11",
+     "dealsAtTurn": 31,
+     "deals": "203853936"
+    }
+   ]
+  },
+  {
+   "turn": 35,
+   "deals": "266342128",
+   "statesSearched": 3153,
+   "boundaryStates": 312,
+   "pasts": [
+    {
+     "bits": "00",
+     "dealsAtTurn": 34,
+     "deals": "54493296"
+    },
+    {
+     "bits": "01",
+     "dealsAtTurn": 34,
+     "deals": "175092112"
+    },
+    {
+     "bits": "10",
+     "dealsAtTurn": 34,
+     "deals": "18378360"
+    },
+    {
+     "bits": "11",
+     "dealsAtTurn": 34,
+     "deals": "18378360"
+    }
+   ]
+  },
+  {
+   "turn": 41,
+   "deals": "4376374600",
+   "statesSearched": 29386,
+   "boundaryStates": 4911,
+   "pasts": [
+    {
+     "bits": "00",
+     "dealsAtTurn": 40,
+     "deals": "2633897448"
+    },
+    {
+     "bits": "01",
+     "dealsAtTurn": 40,
+     "deals": "1671141888"
+    },
+    {
+     "bits": "10",
+     "dealsAtTurn": 40,
+     "deals": "71062992"
+    },
+    {
+     "bits": "11",
+     "dealsAtTurn": 40,
+     "deals": "272272"
+    }
+   ]
+  },
+  {
+   "turn": 50,
+   "deals": "77430403880",
+   "statesSearched": 300290,
+   "boundaryStates": 65745,
+   "pasts": [
+    {
+     "bits": "00",
+     "dealsAtTurn": 49,
+     "deals": "3035825388"
+    },
+    {
+     "bits": "01",
+     "dealsAtTurn": 49,
+     "deals": "33385199692"
+    },
+    {
+     "bits": "10",
+     "dealsAtTurn": 49,
+     "deals": "5471721320"
+    },
+    {
+     "bits": "11",
+     "dealsAtTurn": 49,
+     "deals": "35537657480"
+    }
+   ]
+  },
+  {
+   "turn": 53,
+   "deals": "264906968790",
+   "statesSearched": 1390319,
+   "boundaryStates": 279822,
+   "pasts": [
+    {
+     "bits": "00",
+     "dealsAtTurn": 52,
+     "deals": "32672640"
+    },
+    {
+     "bits": "01",
+     "dealsAtTurn": 52,
+     "deals": "66411520"
+    },
+    {
+     "bits": "10",
+     "dealsAtTurn": 52,
+     "deals": "13051046778"
+    },
+    {
+     "bits": "11",
+     "dealsAtTurn": 52,
+     "deals": "251756837852"
+    }
+   ]
+  }
+ ],
+ "turn85": {
+  "present": "69150842132",
+  "viaPast00AtTurn84": "69150842132",
+  "past10": [
+   {
+    "turn": 24,
+    "deals": "24310"
+   },
+   {
+    "turn": 27,
+    "deals": "97240"
+   },
+   {
+    "turn": 30,
+    "deals": "1361360"
+   },
+   {
+    "turn": 33,
+    "deals": "8751600"
+   }
+  ]
+ },
+ "checks": [
+  {
+   "name": "every past of the five four-for-four presents is reached by at least one deal, and the pasts sum to the present",
+   "pass": true
+  },
+  {
+   "name": "the turn-85 present is reached only through past 00",
+   "pass": true
+  },
+  {
+   "name": "deal-by-deal enumeration equals the formula on five cases (past 10 of the turn-85 present at turns 24-33; past 10 of the turn-32 present)",
+   "pass": true
+  }
+ ],
+ "status": "PASS"
+}

@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Telescope 51 — What a Rule Can See</title>
+  <meta name="description" content="A public-beta card laboratory for nested value, rank, color, and suit observations on the unchanged 51-card Line Game record, with an exact archive-addressing corollary.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="citation_title" content="Telescope 51: What a Rule Can See">
+  <meta name="citation_author" content="Jeffery Lyn Huckstead">
+  <meta name="citation_publication_date" content="2026/09/20">
+  <meta name="citation_pdf_url" content="https://cerebralgraphix.com/research/line-game/Telescope_51_What_a_Rule_Can_See_v0_2.pdf">
+  <meta name="citation_public_url" content="https://cerebralgraphix.com/area-51/telescope-51/">
+  <meta name="citation_reference" content="Huckstead, Jeffery Lyn. The Line Game | Surprise Is Not Meaning, v7.2. https://doi.org/10.5281/zenodo.22851517">
+  <meta name="DC.creator" content="Jeffery Lyn Huckstead">
+  <meta name="DC.identifier" content="https://cerebralgraphix.com/area-51/telescope-51/">
+  <meta name="DC.source" content="https://doi.org/10.5281/zenodo.22851517">
+  <meta name="DC.relation" content="The Line Game | Surprise Is Not Meaning, v7.2">
+  <meta name="DC.rights" content="Prototype derived from CC BY 4.0 source — attribution required">
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+  <link rel="canonical" href="https://cerebralgraphix.com/area-51/telescope-51/">
+  <link rel="up" href="https://cerebralgraphix.com/area-51/">
+  <link rel="alternate" type="application/pdf" href="/research/line-game/Telescope_51_What_a_Rule_Can_See_v0_2.pdf" title="Telescope 51: What a Rule Can See, v0.2 working paper">
+  <link rel="alternate" type="application/json" href="/research/line-game/Telescope_51_Archive_Addressing_v0_1.json" title="Telescope 51 archive-addressing corollary">
+  <link rel="alternate" type="application/x-bibtex" href="/CITATION.bib">
+  <link rel="describedby" type="application/json" href="/citation/catalog.json">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='6'%20fill='%23091727'/%3E%3Ctext%20x='16'%20y='25'%20text-anchor='middle'%20fill='%23f6c85f'%20font-family='Georgia'%20font-size='27'%3E%E2%85%A0%3C/text%3E%3C/svg%3E">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"SoftwareApplication",
+    "name":"Telescope 51: What a Rule Can See",
+    "url":"https://cerebralgraphix.com/area-51/telescope-51/",
+    "applicationCategory":"EducationalApplication",
+    "softwareVersion":"0.1-public-beta",
+    "author":{"@type":"Person","name":"Jeffery Lyn Huckstead","sameAs":"https://orcid.org/0009-0007-0234-2177"},
+    "isBasedOn":"https://doi.org/10.5281/zenodo.22851517",
+    "isPartOf":{"@type":"SoftwareApplication","name":"Area 51","url":"https://cerebralgraphix.com/area-51/"},
+    "citation":{
+      "@type":"ScholarlyArticle",
+      "name":"The Line Game | Surprise Is Not Meaning",
+      "version":"7.2",
+      "author":{"@type":"Person","name":"Jeffery Lyn Huckstead","sameAs":"https://orcid.org/0009-0007-0234-2177"},
+      "identifier":"https://doi.org/10.5281/zenodo.22851517"
+    },
+    "license":"https://creativecommons.org/licenses/by/4.0/",
+    "subjectOf":{
+      "@type":"ScholarlyArticle",
+      "name":"Telescope 51: What a Rule Can See",
+      "version":"0.2 working edition",
+      "url":"https://cerebralgraphix.com/research/line-game/Telescope_51_What_a_Rule_Can_See_v0_2.pdf",
+      "author":{"@type":"Person","name":"Jeffery Lyn Huckstead","sameAs":"https://orcid.org/0009-0007-0234-2177"}
+    },
+    "operatingSystem":"Any modern web browser",
+    "isAccessibleForFree":true
+  }
+  </script>
+  <style>
+    :root{
+      color-scheme:dark;
+      --bg:#071523;
+      --bg2:#091a2a;
+      --panel:#10263a;
+      --panel2:#142e45;
+      --line:#345069;
+      --softline:#213a51;
+      --ink:#f3f6fa;
+      --muted:#afbed0;
+      --gold:#f3c96b;
+      --green:#76d8b7;
+      --blue:#91c8ff;
+      --red:#ff9b9b;
+      --paper:#f7f4ed;
+      --cardink:#13263a;
+      --shadow:0 18px 55px #0006;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      font-size:16px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);line-height:1.5}
+    body:before{
+      content:"";position:fixed;inset:0;z-index:-1;
+      background:
+        radial-gradient(circle at 18% -10%,#17425fbb 0,transparent 34rem),
+        radial-gradient(circle at 85% 8%,#173b3c66 0,transparent 30rem),
+        linear-gradient(180deg,#071523 0,#091827 48%,#06121e 100%);
+    }
+    button,select{font:inherit}
+    button{cursor:pointer}
+    button:disabled{cursor:default;opacity:.45}
+    button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible{
+      outline:3px solid var(--gold);outline-offset:3px
+    }
+    a{color:var(--green);text-underline-offset:.22em}
+    .shell{width:min(1180px,calc(100% - 2rem));margin-inline:auto}
+    .topbar{
+      display:flex;justify-content:space-between;align-items:center;gap:1rem;
+      padding:1rem 0;border-bottom:1px solid var(--softline)
+    }
+    .brand{display:flex;align-items:center;gap:.7rem;color:var(--ink);text-decoration:none;font-weight:750}
+    .topnav{display:flex;align-items:center;justify-content:flex-end;gap:.35rem;flex-wrap:wrap}
+    .topnav a{padding:.55rem .65rem;border-radius:.45rem;color:var(--muted);font-size:.82rem;text-decoration:none}
+    .topnav a:hover,.topnav a[aria-current="page"]{color:var(--ink);background:#142e45}
+    .mark{
+      display:grid;place-items:center;width:2.2rem;height:2.7rem;border:1px solid var(--gold);
+      border-radius:.38rem;color:var(--gold);font:1.75rem Georgia,serif
+    }
+    .draft{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--green)}
+    .hero{padding:clamp(3rem,8vw,6.5rem) 0 3rem}
+    .eyebrow{color:var(--green);font-size:.78rem;font-weight:750;letter-spacing:.14em;text-transform:uppercase}
+    h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:500}
+    h1{font-size:clamp(2.7rem,8vw,5.6rem);line-height:.94;letter-spacing:-.045em;margin:.55rem 0 1rem;max-width:12ch}
+    h1 span{display:block;color:var(--gold)}
+    h2{font-size:clamp(1.8rem,4vw,3rem);line-height:1.05;margin:0 0 .8rem}
+    h3{font-size:1.25rem;margin:.25rem 0 .65rem}
+    p{margin:.5rem 0 1rem}
+    .dek{max-width:52rem;font-size:clamp(1.1rem,2.2vw,1.45rem);color:#dce6ef}
+    .chain{display:flex;align-items:center;gap:.45rem;flex-wrap:wrap;margin-top:1.6rem}
+    .chain-step{
+      display:flex;align-items:center;gap:.55rem;padding:.62rem .78rem;border:1px solid var(--line);
+      border-radius:.55rem;background:#0c2133
+    }
+    .chain-step b{display:grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:50%;background:var(--gold);color:#14243a}
+    .arrow{color:var(--muted)}
+    .boundary{
+      margin-top:1.35rem;padding:.9rem 1rem;border-left:3px solid var(--green);
+      background:#0b1d2e;color:#dce6ef;border-radius:.35rem
+    }
+    .game{
+      margin:0 0 4rem;background:#0c2033e8;border:1px solid var(--line);border-radius:1rem;
+      box-shadow:var(--shadow);overflow:hidden
+    }
+    .game.shell{margin-inline:auto}
+    .game-head{
+      display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:center;
+      padding:1.1rem 1.2rem;background:#10283d;border-bottom:1px solid var(--line)
+    }
+    .game-head h2{font-size:1.7rem;margin:0}
+    .statusline{color:var(--muted);font-size:.9rem;margin-top:.2rem}
+    .metrics{display:flex;gap:.55rem;flex-wrap:wrap;justify-content:flex-end}
+    .metric{min-width:6rem;padding:.55rem .7rem;background:#071827;border-radius:.5rem;text-align:center}
+    .metric span{display:block;color:var(--muted);font-size:.7rem;text-transform:uppercase;letter-spacing:.08em}
+    .metric b{color:var(--gold);font-size:1.15rem}
+    .game-body{padding:1.2rem}
+    .toolbar{display:flex;justify-content:space-between;gap:1rem;align-items:end;flex-wrap:wrap}
+    .branch-group{display:flex;gap:.45rem;flex-wrap:wrap}
+    .branch-group button,.quiet,.primary,.depth-button,.choose-player,.peek,.next-button{
+      border:1px solid var(--line);border-radius:.5rem;background:#173149;color:var(--ink);
+      min-height:42px;padding:.58rem .78rem
+    }
+    .branch-group button[aria-pressed="true"],.depth-button[aria-pressed="true"],.choose-player[aria-pressed="true"]{
+      background:var(--gold);border-color:var(--gold);color:#13243a;font-weight:750
+    }
+    .quiet{background:transparent}
+    .primary{background:var(--gold);border-color:var(--gold);color:#13243a;font-weight:800}
+    .primary:hover:not(:disabled){background:#ffe29d}
+    .quiet:hover:not(:disabled),.branch-group button:hover:not(:disabled),.depth-button:hover:not(:disabled),.choose-player:hover:not(:disabled),.peek:hover:not(:disabled),.next-button:hover:not(:disabled){background:#24465f}
+    .word-wrap{margin:1.15rem 0;padding:1rem;background:#081a2a;border-radius:.65rem;border:1px solid var(--softline)}
+    .word-head{display:flex;justify-content:space-between;gap:1rem;align-items:center;margin-bottom:.65rem}
+    .word-head strong{letter-spacing:.08em;text-transform:uppercase;font-size:.78rem;color:var(--green)}
+    .word-head span{font-size:.82rem;color:var(--muted)}
+    .word{display:flex;gap:.42rem;align-items:center;flex-wrap:wrap}
+    .word-group{display:flex;gap:.25rem;padding-right:.42rem;border-right:1px solid var(--line)}
+    .word-group:last-child{border-right:0;padding-right:0}
+    .letter{
+      display:grid;place-items:center;width:2rem;height:2rem;border-radius:.38rem;background:#122a40;
+      border:1px solid var(--line);color:#6f8499;font:1rem ui-monospace,SFMono-Regular,Consolas,monospace
+    }
+    .letter.filled{background:#213c50;color:var(--gold);border-color:#8b7440}
+    .letter.current{box-shadow:0 0 0 2px var(--blue);color:var(--blue)}
+    .ticket{display:grid;grid-template-columns:1.2fr .8fr;gap:1rem;margin-bottom:1rem}
+    .ticket-panel{padding:1rem;background:#0a1b2c;border:1px solid var(--line);border-radius:.7rem}
+    .ticket-panel p{color:var(--muted);font-size:.88rem;margin:.2rem 0 .75rem}
+    .depth-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.45rem}
+    .depth-button{text-align:left;padding:.65rem;min-width:0}
+    .depth-button .rule-name strong{display:inline;font-weight:700}
+    .depth-button span{display:block;color:var(--muted);font-size:.72rem;margin-top:.15rem}
+    .depth-button[aria-pressed="true"] span{color:#283a4e}
+    .ticket-note{display:flex;flex-direction:column;justify-content:space-between}
+    .ticket-note .formula{font:1.05rem ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--gold);background:#071523;padding:.7rem;border-radius:.45rem}
+    .table{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem}
+    .player{
+      position:relative;min-width:0;padding:.85rem;background:#122a40;border:1px solid var(--line);
+      border-radius:.75rem;transition:border-color .2s,transform .2s
+    }
+    .player.selected{border-color:var(--gold)}
+    .player.leader{box-shadow:inset 0 0 0 2px var(--blue)}
+    .player.eliminated{opacity:.58}
+    .player.winner{border-color:var(--green);box-shadow:inset 0 0 0 2px var(--green)}
+    .player-head{display:flex;justify-content:space-between;gap:.45rem;align-items:center;margin-bottom:.6rem}
+    .player-head b{font-size:.78rem;text-transform:uppercase;letter-spacing:.09em}
+    .choose-player{padding:.38rem .52rem;min-height:34px;font-size:.78rem}
+    .card{
+      min-height:12.5rem;border-radius:.65rem;background:
+        linear-gradient(135deg,#e9eef3 0,#f8f6ef 55%,#dde6ed 100%);
+      color:var(--cardink);display:flex;flex-direction:column;align-items:center;justify-content:center;
+      padding:.7rem;text-align:center;position:relative;overflow:hidden;border:2px solid transparent
+    }
+    .card:before{
+      content:"Ⅰ";position:absolute;font:7rem Georgia,serif;color:#18395510;transform:rotate(-12deg)
+    }
+    .card.red{color:#9c2032}
+    .card .stage{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;opacity:.68;z-index:1}
+    .card .main{font:clamp(2.3rem,7vw,4.2rem) Georgia,serif;line-height:1;z-index:1;margin:.35rem 0}
+    .card .sub{font-size:.78rem;z-index:1}
+    .lucky{
+      position:absolute;top:.45rem;right:.45rem;background:var(--gold);color:#14243a;border-radius:999px;
+      padding:.2rem .42rem;font-size:.68rem;font-weight:800;z-index:2
+    }
+    .peek{width:100%;margin-top:.55rem;font-size:.8rem}
+    .action-slot{min-height:3rem;margin-top:.55rem}
+    .action-slot .primary{width:100%}
+    .player-account{display:flex;justify-content:space-between;gap:.4rem;margin-top:.5rem;color:var(--muted);font-size:.72rem}
+    .result{
+      margin-top:1rem;padding:1rem;border:1px solid var(--line);border-left:3px solid var(--blue);
+      border-radius:.6rem;background:#0a1c2d;min-height:5rem
+    }
+    .result strong{display:block;font-size:1.05rem;color:var(--gold)}
+    .result p{margin:.25rem 0 0;color:#dce6ef}
+    .after-actions{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:.75rem}
+    .ledger-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:1rem;margin-top:1rem}
+    .ledger,.fiber{padding:1rem;background:#081a2a;border:1px solid var(--softline);border-radius:.65rem}
+    .ledger h3,.fiber h3{font-family:inherit;font-size:.86rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin:0 0 .7rem}
+    .ledger-rows{display:grid;gap:.35rem}
+    .ledger-row{
+      display:grid;grid-template-columns:4.2rem 1fr 1fr;gap:.5rem;padding:.45rem .5rem;
+      background:#10283c;border-radius:.38rem;font-size:.8rem
+    }
+    .ledger-row b{color:var(--gold)}
+    .fiber-rail{display:flex;align-items:center;gap:.3rem;flex-wrap:wrap;margin:.5rem 0}
+    .fiber-node{padding:.38rem .48rem;background:#173149;border-radius:.35rem;color:var(--gold);font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+    .fiber-arrow{color:var(--muted)}
+    .micro{color:var(--muted);font-size:.76rem;margin:.5rem 0 0}
+    .twin{margin-top:1rem;padding:1rem;border:1px solid var(--gold);border-radius:.65rem;background:#211f19}
+    .twin[hidden]{display:none}
+    .twin-cards{display:flex;gap:.45rem;flex-wrap:wrap;margin:.55rem 0}
+    .twin-card{padding:.45rem .6rem;border-radius:.38rem;background:var(--paper);color:var(--cardink);font-weight:800}
+    .section{padding:4rem 0;border-top:1px solid var(--softline)}
+    .two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+    .panel{padding:1.15rem;background:#0d2133;border:1px solid var(--line);border-radius:.75rem}
+    .panel p,.panel li{color:#c9d6e2}
+    .panel ul{padding-left:1.1rem}
+    details{border-top:1px solid var(--softline);padding:1rem 0}
+    summary{cursor:pointer;font-weight:750}
+    .rule-table{width:100%;border-collapse:collapse;margin-top:.8rem;font-size:.86rem}
+    .rule-table th,.rule-table td{padding:.62rem .5rem;text-align:left;border-bottom:1px solid var(--softline);vertical-align:top}
+    .rule-table th{color:var(--green)}
+    code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--gold);overflow-wrap:anywhere;word-break:break-word}
+    footer{padding:2rem 0 3rem;border-top:1px solid var(--softline);color:var(--muted);font-size:.86rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    [hidden]{display:none!important}
+    @media(max-width:820px){
+      .game-head,.ticket,.ledger-grid,.two-col{grid-template-columns:1fr}
+      .metrics{justify-content:flex-start}
+      .depth-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    @media(max-width:560px){
+      .shell{width:min(100% - 1rem,1180px)}
+      .topbar{align-items:flex-start;flex-direction:column}.topnav{justify-content:flex-start}
+      .hero{padding-top:2.5rem}
+      .game-body{padding:.7rem}
+      .table{gap:.35rem}
+      .player{padding:.45rem}
+      .player-head{align-items:stretch;flex-direction:column}
+      .choose-player{width:100%}
+      .card{min-height:9.5rem;padding:.3rem}
+      .card .main{font-size:2.2rem}
+      .card .sub{font-size:.66rem}
+      .peek{padding:.45rem .2rem}
+      .ledger-row{grid-template-columns:3.6rem 1fr}
+      .ledger-row span:last-child{grid-column:2}
+      .word-group{gap:.15rem;padding-right:.25rem}
+      .letter{width:1.55rem;height:1.75rem;font-size:.85rem}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*:before,*:after{transition:none!important;animation:none!important}
+    }
+    @media print{
+      :root{color-scheme:light}
+      body{background:white;color:#111}
+      body:before,.interactive-only{display:none!important}
+      .game,.panel,.ledger,.fiber{box-shadow:none;background:white;color:#111;border-color:#777}
+      a{color:#111}
+    }
+  </style>
+<link rel="stylesheet" href="../assets/area51-v2.css">
+<noscript><style>[data-pane="rule-card"]{display:block!important}</style></noscript><link rel="stylesheet" href="/area-51/assets/card-ui-v2-5.css"><script src="/area-51/assets/card-ui-v2-5.js"></script><script src="/area-51/prospect-51/data.js"></script><script src="/area-51/prospect-51/tokens.js"></script><link rel="stylesheet" href="../assets/house-cards-v2-5.css"><link rel="stylesheet" href="/assets/finance-mini-v2-8-2.css"><script defer src="/assets/finance-browser-engine-v2_1_0.js"></script><script defer src="/assets/finance-mini-model-v2-8-1.js"></script><script defer src="/assets/finance-reference-seed-v2-7.js"></script><script defer src="/assets/finance-mini-v2-8-2.js"></script></head>
+<body class="a51-page telescope-page" data-game="telescope" data-ui-version="2.6.0" data-finance-dock>
+  <div class="a51-shell"><header class="game-header"><a href="/area-51/" class="game-brand"><span>Ⅰ</span>AREA 51 / CEREBRAL GRAPHIX</a><details class="game-switch"><summary>Games ▾</summary><nav aria-label="Area 51 games"><a href="/area-51/">The lab</a><a href="/area-51/invariant/">Invariant</a><a href="/area-51/blackjack-51/">Blackjack 51</a><a href="/area-51/telescope-51/" aria-current="page">Telescope 51</a><a href="/area-51/sedaps-51/">51 SEDAPS</a><a href="/area-51/memory-51/">Memory 51</a><a href="/area-51/prospect-51/">Prospect 51</a><a href="/finance/live.html">Finance ↗</a><a href="/">Main site</a></nav></details></header></div>
+<main>
+    <div class="a51-shell">
+<section class="a51-intro"><div>
+<p class="a51-eyebrow">THREE CARDS. FOUR NESTED RULES.</p>
+<h1>Telescope 51.</h1><a class="research-link" href="#rule-card">Research ↗</a>
+<p>Predict where the tie breaks. Watch what the next rule can see.</p>
+</div>
+<div class="a51-bank">
+<small>Available jbits</small><strong data-play-bits>—</strong><span data-bank-clock>Opening bank…</span>
+</div></section>
+</div>
+<section class="game shell interactive-only" aria-labelledby="game-title" id="play">
+      <div class="game-head">
+        <div>
+          <h2 id="game-title">The next three</h2>
+          <div class="statusline" id="statusline">Round 1 of 17 · choose a rule depth and a player</div>
+        </div>
+        <div class="metrics" aria-label="Game status">
+          <div class="metric">
+<span>Round</span><b id="roundMetric">1 / 17</b>
+</div>
+          <div class="metric">
+<span>jbits</span><b id="balanceMetric">—</b>
+</div>
+          <div class="metric">
+<span>Marker</span><b>Ⅰ · 2♣</b>
+</div>
+        </div>
+      </div>
+
+      <div class="game-body">
+        <div class="ticket">
+          <div class="ticket-panel">
+            <h3>Where will the tie break?</h3>
+            <p>Choose the first rule that leaves one winner.</p>
+            <div class="depth-grid" id="depthGrid"></div>
+          </div>
+          <div class="ticket-panel ticket-note">
+            <div>
+              <h3>2. Choose the winner</h3>
+              <p>Select P1, P2, or P3 below. The ticket button will move under that player.</p>
+            </div>
+            <div class="formula">1/m₀ → 1/m₁ → … → 1</div>
+          </div>
+        </div>
+
+        <div class="table" id="playerTable" aria-label="Three hidden player cards"></div>
+
+        <div class="result" id="resultBox" aria-live="polite">
+          <strong>No ticket yet.</strong>
+          <p>A funded ticket costs 1 jbit. Tap a card for odds or a 6-jbit reveal.</p>
+        </div>
+
+        <details><summary>Inspect this round’s rule ledger</summary><div class="ledger-grid">
+          <div class="ledger">
+            <h3>Reciprocal candidate ledger</h3>
+            <div class="ledger-rows" id="ledgerRows"><p class="micro">The ledger begins at three candidates: 1/3. Rule contributions telescope to 1, for total change 2/3.</p></div>
+          </div>
+          <div class="fiber">
+            <h3>Winner identity fiber</h3>
+            <div id="fiberRail"><p class="micro">Revealed after settlement. This is reciprocal fiber size under the uniform active-card convention, not entropy.</p></div>
+          </div>
+        </div>
+
+        </details><div class="twin" id="twinPanel" hidden aria-live="polite"></div>
+      <details class="game-details"><summary>Walk setup · branch &amp; receipts</summary><div class="game-details-body"><div class="toolbar">
+          <div>
+            <span class="sr-only" id="branchLabel">Select record branch</span>
+            <div class="branch-group" role="group" aria-labelledby="branchLabel">
+              <button type="button" id="branchA" aria-pressed="true">Recorded branch A</button>
+              <button type="button" id="branchB" aria-pressed="false">Adjacent-swap branch B</button>
+            </div>
+          </div>
+          <div class="branch-group">
+            <button type="button" class="quiet" id="restartButton">Restart walk</button>
+            <button type="button" class="quiet" id="receiptButton">Save local receipt</button>
+          </div>
+        </div>
+
+        </div></details><details class="game-details"><summary>Resolution word · 17 rounds</summary><div class="game-details-body"><div class="word-wrap">
+          <div class="word-head">
+            <strong>Resolution word</strong>
+            <span id="wordNote">The unread tail stays hidden.</span>
+          </div>
+          <div class="word" id="ruleWord" aria-label="Seventeen-round resolution word"></div>
+        </div>
+
+        </div></details></div>
+    </section>
+
+    <details class="game-details" id="telescope-mechanism"><summary>Open the mechanism · move the rule</summary><div class="game-details-body telescope-demo"><p>Example cards. Move through Value → Rank → Color → Suit and watch the tied leaders separate.</p><div class="telescope-demo-selects"><label>P1<select id="lab-card-0"></select></label><label>P2<select id="lab-card-1"></select></label><label>P3<select id="lab-card-2"></select></label></div><label for="lab-depth">Rule depth <output id="lab-depth-name">Face down</output></label><input id="lab-depth" type="range" min="0" max="4" value="0"><div id="lab-cards" class="telescope-demo-cards"></div><p id="lab-rule-result" role="status"></p><p class="micro">The candidate ledger adds reciprocal differences. The card menu’s odds use a separate uniform reference over 20,825 triples.</p></div></details><details class="game-details" id="stamp-lab"><summary>Your stamps <span id="stamp-count">0 / 51</span></summary><div class="game-details-body stamp-lab"><p>Recall a pair in Memory 51 to earn its stamp. Your collection travels between these tables, even after the daily jbit award is full.</p><div class="stamp-lab-grid"><div id="stamp-collection" class="stamp-collection" aria-label="Collected card stamps"></div><div class="stamp-inspector"><label for="stamp-select">Explore a pair</label><select id="stamp-select"><option value="">Choose a card</option></select><div class="stamp-preview" id="stamp-preview"></div><p id="stamp-pair">The familiar face and its exact paper mark.</p><div class="a51-actions"><button id="stamp-flip" type="button" disabled>Turn the card</button><button id="stamp-practice" type="button">Practice an uncollected stamp</button></div></div></div></div></details>
+<details class="game-details research-details" id="rule-card"><summary>Research · Rule Card / Live Paper</summary><div class="game-details-body a51-rule-card"><p class="a51-eyebrow">TELESCOPE 51 / LIVE RULE CARD · v2.0</p>
+<h2>Rules first. Then the record.</h2>
+<p>The V → R → C → S transition is unchanged from the published beta. The table now uses the shared jbit bank. A fixed branch/round can fund one ticket; subsequent passes are study. Opening its adjacent twin records that exposure and makes that twin a study position.</p>
+<section class="section shell">
+      <div class="two-col">
+        <div class="panel">
+          <h2>The telescope</h2>
+          <p>The object stays fixed. Value collapses face cards to 10. Rank separates them. Color introduces the signed <code>−1/+1</code> coordinate. Suit finishes the identity.</p>
+          <p>For candidate counts <code>m</code>, the increments <code>Δ=(1/m_after)−(1/m_before)</code> always sum from <code>1/3</code> to <code>1</code>. That is the telescoping ledger; it is not automatically a probability model.</p>
+        </div>
+        <div class="panel">
+          <h2>The invariant marker</h2>
+          <p>The 51 active cards contain 25 black and 26 red identities. With black <code>−1</code> and red <code>+1</code>, their signed total is <code>+1</code>. Outside marker <code>Ⅰ=2♣</code> contributes <code>−1</code> and restores zero.</p>
+          <p>The marker balances the physical pack but never enters a round.</p>
+        </div>
+      </div>
+
+      <div class="panel" id="archive-address" style="margin-top:1rem">
+        <p class="eyebrow">Archive-addressing corollary</p>
+        <h2>One equal-weight fiber can address the verified archive.</h2>
+        <p>The v7.2 contribution profile contains a class of 18 distinct cards with exactly equal component weight. Hold its 18 occupied positions—and every card outside that class—fixed. Permuting only those 18 identities gives <code>18! = 6,402,373,705,728,000</code> arrangements with the same complete position-by-position weight profile.</p>
+        <p><code>14! = 87,178,291,200 &lt; 103,800,788,359 &lt; 15! = 1,307,674,368,000 ≤ 18!</code></p>
+        <p>Therefore every one-based index in the verified LMFDB archive can be injected into this single observational fiber. The cards carry an <em>address</em>; recovering an ordinate still requires the declared factorial ordering, the index convention, and the external archive. This does not compute a zero, extend the verified height, or imply RH.</p>
+        <p class="micro">Data boundary: <a href="https://www.lmfdb.org/zeros/zeta/Completeness">LMFDB reports 103,800,788,359 zeros through height 30,610,046,000</a>. The twelve-decimal terminal ordinate, treated as an integer under the current codec, is larger than <code>18!</code> and does not remain inside this equal-weight fiber. <a href="/research/line-game/Telescope_51_Archive_Addressing_v0_1.json">Open the machine-readable statement →</a></p>
+      </div>
+    </section>
+
+    <section class="section shell">
+      <h2>Rules, odds, and provenance</h2>
+      <details open>
+        <summary>Frozen v0.1 rules</summary>
+        <table class="rule-table">
+          <thead><tr>
+<th>Letter</th>
+<th>Rule</th>
+<th>Acts only on</th>
+<th>Draft reward</th>
+</tr></thead>
+          <tbody>
+            <tr>
+<td><code>V</code></td>
+<td>A=1; 2–9 face value; 10/J/Q/K=10</td>
+<td>All three players</td>
+<td>4</td>
+</tr>
+            <tr>
+<td><code>R</code></td>
+<td>A=1 through K=13</td>
+<td>Value-tied leaders</td>
+<td>17</td>
+</tr>
+            <tr>
+<td><code>C</code></td>
+<td>Black=−1; red=+1</td>
+<td>Rank-tied leaders</td>
+<td>51</td>
+</tr>
+            <tr>
+<td><code>S</code></td>
+<td>♣&gt;♠ within black; ♦&gt;♥ within red</td>
+<td>Color-tied leaders</td>
+<td>100</td>
+</tr>
+          </tbody>
+        </table>
+      </details>
+      <details>
+        <summary>Uniform three-card reference counts</summary>
+        <p>Among <code>C(51,3)=20,825</code> unordered triples, Value resolves 15,222; Rank 3,760; Color 1,220; Suit 623. Player labels are symmetric. Rounded joint depth-and-player gross odds give the displayed 4, 17, 51, and 100-jbit schedule.</p>
+      </details>
+      <details>
+        <summary>Source and claim boundary</summary>
+        <p>The exact card order is the v7.2 factorial encoding of the supplied first stored ordinate at twelve decimal places. Telescope 51 is a knowingly designed post-publication rule system applied to that order. It does not derive the ordinate, an uncomputed decimal tail, a zero theorem, or RH.</p>
+        <p>Underlying work: Jeffery Lyn Huckstead, <em>The Line Game | Surprise Is Not Meaning</em>, v7.2, DOI <a href="https://doi.org/10.5281/zenodo.22851517">10.5281/zenodo.22851517</a>.</p>
+        <p>Current finite-observation paper: Jeffery Lyn Huckstead, <a href="/research/line-game/Telescope_51_What_a_Rule_Can_See_v0_2.pdf"><em>Telescope 51: What a Rule Can See</em>, v0.2 working edition</a>, Cerebral Graphix, 20 September 2026.</p>
+        <p><strong>Attribution:</strong> cite Telescope 51 for its recoverability theorem, declared game, census, or archive-addressing corollary. When describing the card order, invariant marker, or published decoder, also cite the underlying v7.2 work above. This page carries machine-readable author, source, license, and citation metadata.</p>
+      </details>
+      <details>
+        <summary>The 3♥ lucky sentinel</summary>
+        <p>The 3♥ is marked only because it is the author’s lucky card. It was selected after the object was known, carries no inferential weight, and remains unchanged at position 9: round 3, Player 3.</p>
+      </details>
+      <details>
+        <summary>Privacy and local receipt</summary>
+        <p>This draft sends nothing. The optional JSON receipt is generated in the browser and records the exact branch, tickets, peeks, rule traces, balance, and whether the adjacent twin was opened. It states <code>collected: false</code>.</p>
+      </details>
+    </section>
+  <div>
+<h2>One bank. Clear prices.</h2>
+<p><strong>jbits are the lab’s play currency.</strong> Start with 8. The reserve recovers 1 every 5:10 while below 8; winnings can carry it higher. Reloading and switching games preserve the bank.</p>
+<table>
+<tr>
+<th>Action</th>
+<th>Price or award</th>
+</tr>
+<tr>
+<td>Blackjack stake</td>
+<td>1, 2, 4 or 8 jbits</td>
+</tr>
+<tr>
+<td>One full hidden-card reveal</td>
+<td>6 jbits</td>
+</tr>
+<tr>
+<td>Blackjack odds view / forecast entry</td>
+<td>1 jbit each</td>
+</tr>
+<tr>
+<td>Correct four-choice Memory recall without a reveal</td>
+<td>+2 jbits; up to 8 per UTC day</td>
+</tr>
+</table>
+<p>These are declared prices. The reveal price of 6 follows the six-bit fixed-width budget for 51 identities; the recall award of 2 follows the two-bit budget for four choices. Neither converts play into a measurement of personal memory, surprise or learning. jbits have no monetary value.</p>
+</div></div></details></main>
+
+  <footer class="shell">
+    <span>Telescope 51 v2.0 table · original V/R/C/S rule · <a href="/area-51/">back to Area 51</a></span>
+    <span>Cite this page and its rule version. Foundation, archive and license record: Jeffery Lyn Huckstead · DOI <a href="https://doi.org/10.5281/zenodo.22851517">10.5281/zenodo.22851517</a></span>
+  </footer>
+
+  <script type="module" src="app-v2-5.js"></script><script type="module" src="../assets/bank-display-v2-0b3.js"></script>
+<script src="../assets/research-links-v2-3.js" defer></script></body>
+</html>

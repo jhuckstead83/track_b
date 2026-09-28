@@ -1,142 +1,121 @@
-# Transient Rational Locking in Modular Logarithmic Orbits
+# Track B — Area 51 research (Team B)
 
-This repository studies the arithmetic dynamics of transient rational locking in modular logarithmic orbits. It shows that apparent geometric skeletons observed in modular projections are not fundamental structural properties of the constants themselves, but rather predictable transient shadows of rational approximants to logarithmic rotation numbers.
+Track B is the Area 51 research line of Cerebral Graphix: the papers, the interactive HTML
+exhibits and games, and the programs that check them. Author: Jeffery Lyn Huckstead
+([ORCID 0009-0007-0234-2177](https://orcid.org/0009-0007-0234-2177)). **RH STATUS: OPEN.**
+Nothing here is evidence for or against the Riemann hypothesis.
 
-Their visual persistence is governed by a torus-sawtooth dephasing law, and their visual clarity is dictated by the arithmetic commensurability of the rendering modulus.
+This release is **v2.8.6** (28 September 2026). The three Zenodo records it cites are published. The TN Postmaster v5.2 title pages print their DOI, and the page-anchor check now opens the PDFs. Loops that keep three queues live are proved to exist at 51 cards, with an exact period formula. v2.8.5 added the DOIs as links. Before it, v2.8.3 placed the Track B research pass
+(corrections, independent replays, and new results) on the Fork-A v2.8.2 site, which carries
+the Finance and homepage work. v2.8.4 built the TN Postmaster v5.2 PDFs and pointed the site's
+research pages at them. The live site is published from the full site package. This
+repository holds the Track B parts of it, plus the paper sources and the verification programs.
+It does not hold the Finance pages or the homepage. Track B's working draft of 27 September
+was labelled "v2.8.1"; that label was never released, and the only v2.8.1 is Fork-A's.
 
-The fog resolves not into metaphysics, but into mechanics.
+Status words are used exactly: **PROVED** (argument given), **CERT** (explicit object
+replayed by the shipped rule), **COMPUTED** (exhaustive search resting on a proved lemma),
+**EVID** (sampled or numerical, not a theorem), **OPEN**.
 
-While **Track A** establishes the mechanism (**Part I**), **Track B** develops the taxonomy (**Part II**). This repository contains the computational engine used to mine these resonances, filter mathematical redundancies, and classify the survivors into a strict “Standard Model” of Diophantine archetypes.
+## What is here
 
-## Quickstart
+| Path | Contents |
+| --- | --- |
+| `site/area-51/` | the Area 51 lab: Invariant, Blackjack 51, Telescope 51, Memory 51, Prospect 51, **51 SEDAPS**, the **51 Twins** exhibit and its calibration report |
+| `site/research/` | research pages: Project 51 and Formula 51, the Line Game, TN Postmaster |
+| `site/atlas/`, `site/citation/`, `site/llms.txt`, `site/sitemap.xml`, `site/site-index.*`, `site/_headers`, `site/assets/postmaster-v5-2-cover.webp` | the research atlas, the citation catalog, and the index and header files these pages feed |
+| `papers/TN_Postmaster_Volume_I_v5_2_SOURCE/` | TN Postmaster Volume I v5.2, source edition: Markdown masters, build scripts, interface check (74/74), title-page DOI, twin evidence, v5.1 and v5.0 provenance |
+| `verification/` | independent replays and audits (see below); `verification/ui_v2_8_6/` holds the v3.0 UI-preservation receipts for the v2.8.6 archive |
+| `HANDOFF_TO_CODEX_v2.8.6.md` | the return note for v3.0 assembly: archives and hashes, the papers payload, and the homepage/Finance verification |
+| `dist/v2.8.6/` | full site (without `papers/`), cumulative research delta, the **v2.8.6 papers payload** (v5.2 PDFs with the DOI on the title page, source zip, page anchors: install it into `papers/` first), and `Project51_Area51_Research_v2_8_6.zip`, the upload for Zenodo record 23004789 |
+| `dist/v2.8.5/` | the v2.8.5 site archives |
+| `dist/v2.8.4/` | the v2.8.4 site archives and the earlier papers payload, superseded by v2.8.6's |
+| `dist/v2.8.3/` | the v2.8.3 archives |
+| `RELEASE_NOTES_v2.8.6.md`, `MERGE_GUIDE_v2.8.6.md` (cumulative from Fork-A v2.8.2), `MANIFEST_v2.8.6.json`, `VALIDATION_v2.8.6.json`, `ZENODO_RELEASE_PLAN_v2.8.6.md` (the files to swap into each record, with MD5 and SHA-256), and the earlier counterparts | what changed, how to merge it with later UI work, file hashes, and the checks run |
+| `legacy/transient-rational-locking-v1.0.0/` | the earlier Track B release (Transient Rational Locking), kept as it was |
 
-```bash
-pip install -r requirements.txt
-python track_b/run_quarry.py
-```
+The game pages use root-relative paths (`/area-51/...`, `/assets/...`). To play them, unpack
+the full site package at a web root and serve it over HTTP.
 
-Outputs, including the master taxonomy ledger and automated visual case cards, are written to:
+## Results in this release
 
-```text
-track_b/quarry_output/
-```
+**51 SEDAPS: the turn count is part of the filter (v0.4.1).**
+- The certified turn-85 present has four legal pasts.
+- 01 and 11 fail the mod-3 clock at every turn (PROVED).
+- Past 10 is reached from 17–17–17 deals at elapsed turns 24, 27, 30 and 33, and at no other turn (CERT + COMPUTED).
+- So at turn 85 exactly one past comes from a fair deal, and no history bit is needed. Without the turn count, two pasts survive and one bit decides.
+- The search is a proof (PROVED, §1.1 of the v0.4.1 update). For a start state with at least two live queues, the predecessor list is complete and the shape test is necessary. The lemma's header now states that scope, because terminal states fail the test yet are reachable.
+- Independent returns: the Blue Team replayed the certificates (PP274), reproduced the turn-84 exclusion exactly (PP275: 336 states, lowest turn 66) and audited the proof (PP276).
+- Files: `site/area-51/sedaps-51/past10-certificates-v0-4-1.json`, `verify-past10-v0-4-1.cjs`.
 
-## Repository Architecture
+**Exact history counts.**
+- Below turn 17, a three-live state that passes the shape test is reached by exactly t!/(a! b! c!) deals, where a, b, c are its packet counts (PROVED).
+- So the turn-32 present with four pasts is reached by exactly 484,731,472 fair deals. The count is confirmed deal by deal for three of its four pasts.
 
-The project is divided into two wings:
+**Loop periods.**
+- Once one queue empties, the rule is War with the winning card placed first.
+- For odd decks its loops alternate winners (Spivey, *Cycles in War*, 2010).
+- Alternation forces the period L = 2·lcm(α/2, (n+1)/2, (n−1−α)/2), a multiple of n + 1 (PROVED).
+- At 51 cards the formula allows exactly 12 lengths, and those are exactly the 12 seen in 2,000 seeded deals.
+- Complete censuses of every state through 11 cards (3.11 × 10⁹ states) find no loop with three live queues.
+- **At 12 cards such loops exist**: 1,145,664 of them, of lengths 9 and 60 (CERT). The smallest is A = 6 0 1, B = 2 10 7 3, C = 4 8 11 5 9.
+- Every one of them is rigid: on each turn exactly one queue plays a packet head, and that head wins. A proved theorem says no equal deal ever reaches a rigid loop, at any n.
+- An exhaustive search of synchronised states (the only kind an equal deal reaches) finds no loop at 9, 12 or 15 cards.
+- None exists at 13 cards either: all 12,454,041,600 packet-form states lose a queue within 26 turns.
+- **At 51 cards they exist too (PROVED).** Take a packet-form state whose partial tails have lengths 0, 1 and 2, with a whole packet in every queue, and whose packet heads are the n/3 − 1 largest cards. Every such state lies on a three-live loop, so rigid loops exist exactly when 3 divides n and n ≥ 12. The site's own engine replays a 51-card one that returns after 180 turns.
+- **Their periods (PROVED).** A rigid loop's period is 3·lcm(k_A, k_B, k_C, k_A+k_B+1, k_B+k_C+1, k_C+k_A+1) or 3·lcm(k_A, k_B, k_C, K+1, K+2), where the k are whole-packet counts. At 51 cards that gives exactly 29 periods, all multiples of 18. Only 6 are multiples of 52, so the multiple-of-52 law belongs to two-queue loops only.
+- A second enumeration at 12 cards reproduces the census exactly and shows that every loop there is rigid.
+- For the 51-card game the open question is still: can a fair deal reach a loop that keeps three queues live? Only a synchronised loop could be reached, and complete searches find none at 9, 12 or 15 cards.
 
-- **`paper/`**: manuscripts (Part I and Part II), publication figures, and Overleaf-ready LaTeX source
-- **`track_b/`**: a modular Python survey engine that mines, fingerprints, and ranks constant pairs into canonical classes
+**Formula 51.**
+- The self-description proof had a false ceiling step; it is repaired, and the conclusion stands.
+- An independent recomputation reproduces all 588 band tables.
+- It also replays, as the requested second return, two Blue Team results: the 257-radix trailing-minimum window and the polar-fibre closed form.
 
-## Structural Laws
+**51 Twins and TN Postmaster v5.2.**
+- The Davenport–Heilbronn twin has the reflection F(s) = F(1 − s) of completed zeta, but a different Gamma factor.
+- The rung failure at k = 16,589 is computed on a finite zero list. It reproduces at 60 and 100 digits.
+- Löwner sizes: the published table tested steps of 5. Read pivot by pivot, the exact first failing sizes are N* = 105, 106 and 107 at the three centres (confirmed at 320 digits).
+- The v5.2 PDFs are built: Reader 101 pages, Dossier 287; interface check 74/74. All 22 page anchors the site uses keep their v5.1 pages.
+- "No finite rung prefix decides RH" was an overclaim and is replaced.
 
-The framework is governed by four core laws, which the Track B engine uses to collapse redundant observations into single **canonical forms** \(\mathcal{C}\):
+**Deep history.**
+- The v0.5 Definitive Union synthesis (Zenodo 10.5281/zenodo.21968858) replays 13/13.
+- The v5.0 source-rung certificates W₂–W₆ were re-executed for the first time since v5.0. Both backends reproduce their shipped receipts, at the shipped parameters and at the second parameter set.
 
-1. **Torus-Sawtooth Dephasing Law**  
-   The orbit shadows a rational carrier with a phase error that follows a periodic wraparound cycle on the torus.
+## Verification
 
-2. **Modulus as Lens, Not Composer**  
-   The discrete modulus acts only as a rendering grid. It amplifies or blurs intrinsic geometry based on divisibility, but composes none of it.
+| Program | Checks |
+| --- | --- |
+| `node site/area-51/sedaps-51/verify-sedaps-v0-4.cjs --decks` | SEDAPS v0.4 certificates, clock, remnant, deck sweep |
+| `node site/area-51/sedaps-51/count-histories-v0-4-1.cjs --brute` | exact history counts, with a deal-by-deal cross-check |
+| `site/area-51/sedaps-51/independent/live3_loops.c` | every packet-form state, played until a queue empties; catalogues three-live loops |
+| `node site/area-51/sedaps-51/verify-past10-v0-4-1.cjs` | the four past-10 certificates, every elapsed turn, and the lemma's scope on 2,000 deals |
+| `python3 site/area-51/sedaps-51/independent/sedaps_independent.py` | independent Python replay of all SEDAPS certificates |
+| `site/area-51/sedaps-51/independent/census2.c` (and `census_alt.c`, `census_deals.c`) | complete state censuses; OEIS A400411 cross-check |
+| `node site/area-51/twins-51/verify-twins-v1.cjs` | rebuilds the Twins data byte for byte |
+| `python3 site/area-51/twins-51/evidence/dh_twin_highprec.py site/area-51/twins-51/evidence/dh-zeros-T260.json` | twin rung signs at 60 and 100 digits |
+| `python3 site/research/project-51/formula51/f51_independent.py site/research/project-51/formula51/f51_band.json` | Formula 51, all radices, independently |
+| `python3 papers/TN_Postmaster_Volume_I_v5_2_SOURCE/qa/check_v52_interface.py` | TN Postmaster v5.2 interface check, 67/67 |
+| `python3 verification/deep_history/v05_synthesis_checks.py` | v0.5 synthesis identities and the constant-Jacobian counterexample |
+| `verification/deep_history/` receipts | v5.0 certificate re-execution (both parameter sets) |
+| `python3 papers/TN_Postmaster_Volume_I_v5_2_SOURCE/provenance/v5_2/evidence/team_b_replay/lowner_nstar.py 0.97` | exact first failing Löwner size (about 16 minutes per centre) |
 
-3. **Inversion Theorem**  
-   Inverting the numerator constant preserves the lock scale, sector count, and geometric stability of the original orbit, up to observation-equivalence.
+Requirements: Node 18+, Python 3.11 with `mpmath` and `sympy`; `python-flint` 0.9.0 for the
+v5.0 Arb certificate; a C compiler for the censuses.
 
-4. **Base-Shift Identity / Phase Equivalence**  
-   Presentations that yield the same torus phase increment, or its inversion,
-   \[
-   \rho_2 = \pm \rho_1 + k, \qquad k \in \mathbb{Z},
-   \]
-   are phase-equivalent shadows of the same canonical class.
+## Licence
 
-## The Taxonomic Engine
+Research text, papers, figures and data: CC BY 4.0, attribution to Jeffery Lyn Huckstead /
+Cerebral Graphix. The legacy engine code under `legacy/` is MIT (`LICENSE`). Third-party
+material keeps its own terms (see `site/area-51/prospect-51/THIRD_PARTY_NOTICES.txt`).
 
-The `track_b` pipeline does not merely hunt for pretty pictures. It is a theorem-aware engine that separates:
+## Citation
 
-- **intrinsic toral persistence**, governed primarily by \((q, \varepsilon)\)
-- **extrinsic rendering commensurability**, governed by the \(M\)-profile
-
-Each survivor is assigned a canonical signature of the form:
-
-```text
-C = (q, delta, M-profile, Sym, EqTags) | Archetype: ...
-```
-
-The engine currently uses an operational classifier on the standard composite rendering family \(\{120, 360, 720, 840, 990\}\).
-
-## Visual Archetypes
-
-Three extreme archetypes anchor the taxonomy:
-
-- 🛕 **Cathedral Square**  
-  Low spatial frequency (\(q \le 10\)) with perfect or near-perfect rendering alignment. Wide, highly legible sectors and strong visual charisma.
-
-- 🦕 **Behemoth**  
-  High spatial frequency (\(q \ge 15\)), exact or near-exact commensurability with the rendering lens, and ultra-low dephasing error. Massive, complex structures that survive for very long iteration windows.
-
-- 👻 **Ghost**  
-  High spatial frequency (\(q \ge 15\)) but strongly mismatched to the rendering lens. The toral lock is mathematically strong, but visually aliased on standard composite grids.
-
-## Standard Model of Transient Rational Locking
-### First Census
-
-Running the engine across the standard constant registry yields an irreducible canonical survivor set. When plotted in the phase space of spatial resolution (\(q\)) versus temporal stability (\(N_{\mathrm{lock}}\)), a Dirichlet-shaped survivor floor emerges.
-
-| Canonical Pair | Carrier (\(p/q\)) | \(N_{\mathrm{lock}}\) | \(\mu_{720}\) | \(\mu_{990}\) | Archetype |
-| :--- | :--- | ---: | ---: | ---: | :--- |
-| **`catalan` vs `log3`** | \(1/15\) | 62,845 | 0.00 | 0.00 | **BEHEMOTH** |
-| **`euler_gamma` vs `sqrt11`** | \(13/24\) | 55,388 | 0.00 | 0.25 | **BEHEMOTH** |
-| **`catalan` vs `ln_phi`** | \(3/25\) | 266,036 | 0.20 | 0.40 | GHOST |
-| **`log2` vs `pi_over_4`** | \(15/29\) | 185,401 | 0.17 | 0.14 | GHOST |
-| **`ln_phi` vs `phi`** | \(12/25\) | 83,732 | 0.20 | 0.40 | GHOST |
-| **`log2` vs `pi_over_3`** | \(1/19\) | 74,998 | 0.11 | 0.11 | GHOST |
-| **`silver_inv` vs `sqrt5`** | \(19/21\) | 54,630 | 0.29 | 0.14 | GHOST |
-| **`catalan` vs `log10`** | \(17/19\) | 50,815 | 0.11 | 0.11 | GHOST |
-| **`sqrt7` vs `two_pi`** | \(9/17\) | 47,531 | 0.35 | 0.24 | GHOST |
-| **`pi_over_3` vs `sqrt11`** | \(1/26\) | 283,670 | 0.31 | 0.08 | STANDARD TRANSIENT |
-| **`log10` vs `sqrt11`** | \(16/23\) | 66,297 | 0.30 | 0.04 | STANDARD TRANSIENT |
-| **`sqrt5` vs `silver_inv`** | \(2/23\) | 65,532 | 0.30 | 0.04 | STANDARD TRANSIENT |
-| **`log3` vs `catalan`** | \(13/14\) | 54,744 | 0.43 | 0.29 | STANDARD TRANSIENT |
-| **`pi_over_2` vs `e`** | \(14/31\) | 33,114 | 0.23 | 0.06 | STANDARD TRANSIENT |
-
-> Exact permanent locks, such as `e_over_pi` vs `pi_over_e -> 0/1`, are treated as **Vacuum States** and filtered from the transient taxonomy by the theorem-aware separator.
-
-## Canonical Outputs
-
-The Track B engine emits:
-
-- raw phase data: `rho`, `best_p`, `best_q`, `delta`, `n_lock`
-- rendering diagnostics: `mu_120`, `mu_360`, `mu_720`, `mu_840`, `mu_990`
-- canonical metadata: `sym_class`, `eq_tags`, `canonical_signature`
-- operational archetype classification: `CATHEDRAL SQUARE`, `BEHEMOTH`, `GHOST`, or `STANDARD TRANSIENT`
-
-Primary output files include:
-
-```text
-track_b/quarry_output/master_canonical_ledger.csv
-track_b/quarry_output/filtered_unique_taxonomy.csv
-track_b/quarry_output/featured_case_cards/
-```
-
-## Included Bundles
-
-- `paper/Constants_Analysis_Part_I.tex` and compiled PDF (mechanism)
-- `paper/Constants_Analysis_Part_II.tex` and compiled PDF (taxonomy)
-- all Track B Python modules under `track_b/`
-- packaging and documentation artifacts under `docs/` where applicable
-
-## Publication Notes
-
-- **GitHub Repository:** <https://github.com/jhuckstead83/track_b>
-- **ORCID:** <https://orcid.org/0009-0007-0234-2177>
-
-Please review author-display metadata before any Zenodo release or `CITATION.cff` finalization.
-
-## Future Work
-
-Natural next branches include:
-
-- nonstandard rendering bases
-- angle/circle inheritance scans
-- zeta-family and logarithmic-family expansions
-- semiconvergent-specific surveys
-- phase-space visualization and “Standard Model” chart generation
+See `CITATION.cff`. Paper DOIs: TN Postmaster Volume I concept
+[10.5281/zenodo.21968915](https://doi.org/10.5281/zenodo.21968915) (v5.2 =
+[10.5281/zenodo.23004335](https://doi.org/10.5281/zenodo.23004335), published 28 September 2026; v5.1 =
+10.5281/zenodo.22844194); the Area 51 games and exhibit research are in *Project 51: Reading the
+Record Across Rules*, [10.5281/zenodo.23004789](https://doi.org/10.5281/zenodo.23004789) (published); The Line Game concept 10.5281/zenodo.20792808 (latest record
+[10.5281/zenodo.23004800](https://doi.org/10.5281/zenodo.23004800), published; v7.5 = 10.5281/zenodo.22943070); Project 51 concept 10.5281/zenodo.22862811 (v0.4 =
+10.5281/zenodo.22985771).

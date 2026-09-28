@@ -1,0 +1,13 @@
+{
+ "program": "live3_rigid12.c",
+ "n": 12,
+ "perHeadSet": [
+  {"heads": [6, 10, 11], "statesOnRigidLoops": 77760, "loops": {"9": 8640}},
+  {"heads": [7, 10, 11], "statesOnRigidLoops": 544320, "loops": {"9": 60480}},
+  {"heads": [8, 10, 11], "statesOnRigidLoops": 2177280, "loops": {"9": 241920}},
+  {"heads": [9, 10, 11], "statesOnRigidLoops": 13063680, "loops": {"9": 725760, "60": 108864}}
+ ],
+ "statesEnumerated": 718502400,
+ "statesOnRigidLoops": 15863040,
+ "loops": {"9": 1036800, "60": 108864}
+}

@@ -1,0 +1,8 @@
+{
+  "name": "cerebralgraphix-area51-v2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node ../tests/v2/check.mjs"
+  }
+}

@@ -1,0 +1,28 @@
+/* Original brass lamps and jbit coins; one scoring line, no additional outcomes. */
+body[data-game=prospect] .machine{position:relative;isolation:isolate}
+body[data-game=prospect] .machine-top>div:first-child{min-width:0}
+body[data-game=prospect] .machine-options{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+body[data-game=prospect] .sound-toggle{display:inline-flex;align-items:center;justify-content:center;gap:4px;min-height:44px;padding:5px 9px;border:1px solid #526c52;border-radius:6px;background:#142f24;color:#ddd4b8;font:600 11px/1.2 system-ui;white-space:nowrap}
+body[data-game=prospect] .sound-toggle[aria-pressed=true]{color:#ffdfa0;border-color:#b99b5e;background:#324532}
+body[data-game=prospect] .reel-stage::before{content:'';position:absolute;z-index:6;inset:1px;pointer-events:none;opacity:.2;background:radial-gradient(circle,#fff3bb 1px,#d3a63d 2px,transparent 3px) left top/13px 5px repeat-x,radial-gradient(circle,#fff3bb 1px,#d3a63d 2px,transparent 3px) left bottom/13px 5px repeat-x}
+body[data-game=prospect] .reward-win .reel-stage{border-color:#e3bb63;box-shadow:inset 0 1px 0 #fff3b8,0 0 16px #e3bc4b38}
+body[data-game=prospect] .reward-win .reel-stage::before{opacity:.85}
+body[data-game=prospect] .scoring-card{outline:3px solid #ffd67d;outline-offset:-3px;background:linear-gradient(100deg,#e5c984,#fff0b9 45%,#f3d787)}
+body[data-game=prospect] .scoring-card::before{content:'★';position:absolute;right:3px;top:3px;z-index:3;display:grid;place-items:center;width:16px;height:16px;border-radius:50%;background:#183527;color:#ffdf8f;font:11px/1 system-ui;box-shadow:0 0 0 1px #f5d27c;pointer-events:none}
+body[data-game=prospect] .scoring-card.card-target::after{color:#fff0bd;background:#715322}
+body[data-game=prospect] .scoring-card p51-token{filter:drop-shadow(0 0 5px #f5bf36aa)}
+body[data-game=prospect] .scoring-rotor .drum{border-color:#c99029;box-shadow:0 0 0 1px #f9d176,0 0 11px #e9c36c55}
+body[data-game=prospect] .reward-win #result-title{color:#ffe0a1;text-shadow:0 0 16px #efbb4455}
+body[data-game=prospect] .archive-award .vault{border-color:#f8ce6f;box-shadow:0 0 16px #dfb85055}
+body[data-game=prospect] .award-amount{white-space:nowrap;font-variant-numeric:tabular-nums}
+body[data-game=prospect] .reward-layer{position:absolute;inset:0;z-index:10;overflow:hidden;border-radius:inherit;pointer-events:none;contain:paint}
+body[data-game=prospect] .jbit-coin{position:absolute;display:grid;place-items:center;width:24px;height:24px;margin:-12px 0 0 -12px;border:2px solid #b27a29;border-radius:50%;background:radial-gradient(circle at 30% 25%,#fff9d6,#f4cd6a 45%,#c28e34);box-shadow:inset 0 0 0 2px #ffe6a4,0 2px 5px #0005;color:#6f4619;font:italic 700 17px/1 Georgia;opacity:0;animation:jbit-flight 1150ms var(--delay) cubic-bezier(.18,.5,.35,1) both}
+body[data-game=prospect] .celebrating .reel-stage::before{animation:prospect-lamps 1200ms ease-in-out 2}
+body[data-game=prospect] .celebrating .scoring-card{animation:prospect-card-glow 1200ms ease-in-out 2}
+body[data-game=prospect] .jbit-arrival{animation:jbit-bank-glow 1800ms ease-in-out 1}
+@keyframes jbit-flight{0%{opacity:0;transform:translate(0,8px) scale(.5) rotate(0)}12%{opacity:1}46%{opacity:1;transform:translate(var(--arc-x),var(--arc-y)) scale(1.08) rotate(var(--turn))}88%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.35) rotate(0)}}
+@keyframes prospect-lamps{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes prospect-card-glow{0%,100%{outline-color:#e7b54e}50%{outline-color:#fff0b8}}
+@keyframes jbit-bank-glow{0%,100%{text-shadow:none}55%,80%{text-shadow:0 0 16px #ffe7a0}}
+@media(max-width:620px){body[data-game=prospect] .machine-options{gap:4px}body[data-game=prospect] .sound-toggle{padding-inline:7px;font-size:10px}body[data-game=prospect] .machine-top .mini{font-size:9px}body[data-game=prospect] .jbit-coin{width:20px;height:20px;margin:-10px 0 0 -10px;font-size:14px}}
+@media(prefers-reduced-motion:reduce){body[data-game=prospect] :is(.jbit-coin,.celebrating .reel-stage::before,.celebrating .scoring-card,.jbit-arrival){animation:none!important}body[data-game=prospect] .jbit-coin{display:none}}

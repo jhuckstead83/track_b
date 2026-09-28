@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "total_assertions": 9787,
+  "groups": {
+    "third_kind_binomial_coefficients": 34,
+    "third_kind_Cauchy_value": 34,
+    "third_kind_value_bound": 34,
+    "P_to_V_triangular_conversion": 34,
+    "cosine_basis_difference": 33,
+    "V_orthogonality_Catalan": 324,
+    "mixed_coefficient_absolute_sum": 324,
+    "mixed_Cauchy_entry_majorant": 324,
+    "cosine_anchor_diagonal": 324,
+    "Catalan_cosine_tridiagonal": 324,
+    "P_Catalan_Gram_entries": 324,
+    "exact_Gram_inverse": 2109,
+    "Gram_inverse_absolute_row_sum": 18,
+    "block_geometric_sum": 18,
+    "rank_to_row_degree": 18,
+    "Laguerre_second_difference_kernel": 41,
+    "curvature_eta_binomial_transform": 41,
+    "local_generating_series_coefficients": 861,
+    "curvature_Toeplitz_Hankel_congruence": 289,
+    "compensation_exact_diagonalization": 289,
+    "rational_mixed_jet_Cauchy_control": 3900,
+    "nonreal_pole_map": 4,
+    "pole_derivative_nonzero": 4,
+    "pole_residue_nonzero": 4,
+    "shifted_reciprocal_dictionary": 4,
+    "shift_preserves_nonreality": 4,
+    "normalized_shifted_resolvent_jets": 68,
+    "cutoff_five_exact_decay": 1,
+    "cutoff_thirteen_exact_decay": 1
+  },
+  "scope": "Finite exact algebra, rational analytic examples, and synthetic complex points only.",
+  "diagnostics": {
+    "scope": "Non-directed orientation values, not interval certificates.",
+    "alpha3": "0.724744871391589049098642037352945695982973740328335064216346",
+    "q5": "0.934429044141666187724099093625294863301520201964901020904069",
+    "q5_squared_rank_rate": "0.873157638535507936744378212379381231398322969595697497807074",
+    "RH_curvature_absolute_cap": "0.279891968068411894982931870797509475158076680209200347352453",
+    "I0_eta1": "0.18754623284036522459720338460544158838394446358095383795282"
+  },
+  "not_certified_by_computation": [
+    "Pringsheim continuation and the all-degree curvature criterion",
+    "all-rank positive-scale escape and RH equivalences",
+    "uniform bounds on the actual arithmetic curvature or cutoff matrices",
+    "any Riemann-zero, Widder-rung, or historical certificate"
+  ],
+  "script_sha256": "607fbe26f34b4c2fd573fab622b63fd577461ba8cfb5486361cb2e516514fec1"
+}

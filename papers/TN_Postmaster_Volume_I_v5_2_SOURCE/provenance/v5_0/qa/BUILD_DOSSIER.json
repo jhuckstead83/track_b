@@ -1,0 +1,43 @@
+{
+  "tag": "dossier",
+  "stem": "TN_Postmaster_Volume_I_v5_0_TECHNICAL_DOSSIER",
+  "source": "src/TN_Postmaster_Volume_I_v5_0_TECHNICAL_DOSSIER.md",
+  "src_sha256": "736f80e77baf207dd69b5400d23b2c7f10da801b02fb80e7387ba0b8af222b69",
+  "preamble_sha256": "4df684e79713d37aa301275737ac0fcab42f7352a4a14130e8393408960e9718",
+  "tex_sha256": "38c26182849ae809c0039518ae8a92741683418ca82c7e0a7d3de0fc28c45099",
+  "body_pages": 276,
+  "pages": 279,
+  "body_pdf_sha256": "804682398780253467fbe08217d7d4109639e74b4d89024b0071a471976c3cd9",
+  "pdf_sha256": "9f86bd39f60a513180b5a2f640c35a33cb3fd521e4d2deed35b7341b6cdf9a25",
+  "passes": [
+    {
+      "kind": "draft",
+      "log": "tmp/dossier/draft0.log",
+      "seconds": 2.99,
+      "state": "4b748c024b133a78c3fb4ec846c3fbed86e0e6a8975ca92b4738a896ca3cdfa7"
+    },
+    {
+      "kind": "draft",
+      "log": "tmp/dossier/draft1.log",
+      "seconds": 3.01,
+      "state": "b1e0a55146a1bec66c0a83eb2744121ad1fc89d1dce03a329bfb8f82ac40e47a"
+    },
+    {
+      "kind": "draft",
+      "log": "tmp/dossier/draft2.log",
+      "seconds": 3.05,
+      "state": "b1e0a55146a1bec66c0a83eb2744121ad1fc89d1dce03a329bfb8f82ac40e47a"
+    },
+    {
+      "kind": "final",
+      "log": "tmp/dossier/final.log",
+      "seconds": 20.55
+    }
+  ],
+  "undefined_refs": 0,
+  "missing_characters": 0,
+  "overfull_boxes_pt": [],
+  "overfull_over_30pt": [],
+  "pdf": "output/pdf/TN_Postmaster_Volume_I_v5_0_TECHNICAL_DOSSIER.pdf",
+  "facsimile_sha256": "d222326cf9b8bd8613a891c1dfc6077686db28351ae926023a25c4b458b7cf21"
+}

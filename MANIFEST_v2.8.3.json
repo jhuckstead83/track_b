@@ -1,0 +1,243 @@
+{
+ "version": "2.8.3",
+ "base_version": "2.8.2",
+ "base_archive": "CerebralGraphix_v2_8_2_FORK-A_Finance_Homepage_no-papers.zip",
+ "base_archive_sha256": "81d5a616a9d5485b9eefca23733f86f1deba0ce30481e2f2503ce419f0262410",
+ "common_ancestor": "CerebralGraphix_v2_8_0_FULL_SITE - PDFs REMOVED.zip",
+ "input_files": 617,
+ "unchanged_files": 596,
+ "removed_files": [
+  {
+   "path": "research/project-51/formula51/__pycache__/derive51.cpython-312.pyc",
+   "before": "1adb7bf9edcd2c8cac3450a2e2ddcdba6b72ff8f59bdb807437f7953ac5d543d"
+  }
+ ],
+ "changed": [
+  {
+   "path": "area-51/llms.txt",
+   "before": "a3486996fd9c472ffaa491ebbdcb1231440316a93321f5cecf2d85a05b185ce7",
+   "after": "58c0ae705d880d5cfbf1fd4fd22b1e328f254c536295b8c333e68ce21bad5996"
+  },
+  {
+   "path": "area-51/research.json",
+   "before": "298a99cdd817950a870930d76a75ba58440e1987f402727f28ec00d336f5ff07",
+   "after": "ae4d4836781980bc06ba0848ee0d6c0f5cfb32dafd86ee6f45d2d8e12a5dc38b"
+  },
+  {
+   "path": "area-51/sedaps-51/README.md",
+   "before": "6a583b9e2a111a75578b73d9598fe17ab0209acf918a97d64b5914351de6ed2e",
+   "after": "492581a07a477526b5411198a3892dac847a9ff9897018a939889a36bf936c08"
+  },
+  {
+   "path": "area-51/sedaps-51/RESEARCH_UPDATE_v0_4.md",
+   "before": "0e0c2789d23e2f70788f4c74c5d4f1f0e9d52b83a4e9b7249bb771a2a0353a00",
+   "after": "16638efec8a3f70412970eb94eced0e4e3d2ea17c8b2e78bd1543d3278139f41"
+  },
+  {
+   "path": "area-51/sedaps-51/index.html",
+   "before": "ca50d15f47ed99e17702a9dc45dd5aaf20bbe65462a024c9acef8a0b80082f95",
+   "after": "b0c02a2817418040094b82fcc224f7e0fc796bc4862302256901d80fb1978b21"
+  },
+  {
+   "path": "area-51/sedaps-51/sedaps-lemma-v0-4.js",
+   "before": "35ed0bba961829212cb84cf1c5404c2697a4ce2262b788719ea3589d5863a9cc",
+   "after": "79d1d0796bc4fa766281ea2d8e25bb1926585274b710d91645784d3bd7105dbd"
+  },
+  {
+   "path": "area-51/sedaps-51/sedaps-v0-4.js",
+   "before": "81030df45f350efcffd089e4af76ecc1e5c0523efb4b2bd596b33227ae2523d8",
+   "after": "dfbf7c6ced5a99d5e875729c7a49797ff5f614297ac19ed94ed29f741cb98bbb"
+  },
+  {
+   "path": "area-51/twins-51/build-twins-page-v1.cjs",
+   "before": "185c0eea48139bb66c797583f65c90c82626c85e542f1d8f8b035d14bca3dbd0",
+   "after": "7bbec0f4f03925f1d3e5d529e9fb2dcdec12789fa3b216935099b0af2e518c8c"
+  },
+  {
+   "path": "area-51/twins-51/calibration.html",
+   "before": "62099a0f5e6067b48844e5d5cd6ef905fb4f34d2381ae77844b1d381b3d3cdac",
+   "after": "75c0ab65ea4c4264a181a76db46f433428bc43bbe766bc12521c78727f5d7c4a"
+  },
+  {
+   "path": "area-51/twins-51/index.html",
+   "before": "635d565abadbee8c064abe40fcf4fe8dad8b390ba4160fca9c814946ee29df64",
+   "after": "4993788e60be785e50e37d19d4a4c90c21574e43259666c98401c20d76f85711"
+  },
+  {
+   "path": "area-51/twins-51/twins-data-v1.js",
+   "before": "2a7d34815e4ec3e99cdb49475fab9136c68e9c57f98a4234751468cad898e534",
+   "after": "0eac2c83bbaf27137cfc95899ed184a7248af349380e6fff9ccddd3e3b9c659b"
+  },
+  {
+   "path": "area-51/twins-51/verify-twins-v1.cjs",
+   "before": "240d4c331e807f4ebc8b0b2364963944a1dfb05a2b866d23366ed62ff0f0c0cc",
+   "after": "2e11d1e50bad4db067c6d237b7ae9c27e9726e59c3c5e5c8e732fd5014351d74"
+  },
+  {
+   "path": "citation/catalog.json",
+   "before": "97e321ae43245062fea1b701e2c9447d3d4a30226c0f35729d4de5cc823b993b",
+   "after": "000678504f022439a8d36e26a882798cfe5c530aed69afa3b32a248754195dc8"
+  },
+  {
+   "path": "llms.txt",
+   "before": "911e66b19a22f727b6dddda06a98469db1fd599cd9eb17ceb2178242b0be1ac7",
+   "after": "3b67155869612a9c6d026a5dcdd2db73a75172db4f4e19b9daf74db518f50f31"
+  },
+  {
+   "path": "research/line-game/index.html",
+   "before": "dade3ed42932b88bb1afce3d7cf12128cf0f86f6d2cfe8f79e75bc0a39369e05",
+   "after": "b991937d9ec8d78cb81ae4381df34a14746c5cbc83c9a4c4257b6269d3e5cba6"
+  },
+  {
+   "path": "research/postmaster/index.html",
+   "before": "56ed101816c290acb778e9c6945a284cebd6c66e31eafe3d13c4cd4745179070",
+   "after": "35f93619e3a234d3bca27d1befa105f57bec2a7468d59810c40efa9c14065ad1"
+  },
+  {
+   "path": "research/project-51/formula51/FORMULA51_BAND_AND_DEDUCTION.md",
+   "before": "15efad2450c0d863ae17fbb903f9f9d505c0bca9d86867a63d7c4f5d7ebfb39b",
+   "after": "c157f47b4b49137243df87e0d6d6ecf0dc655492b3276b44ab8df8326fe64145"
+  },
+  {
+   "path": "research/project-51/index.html",
+   "before": "6e80130c914a70651edf078969ed1a52ffbac51f074c1924ab6f7fa2ad5ba394",
+   "after": "8239e00e9efa4b4b1994f3a55abf150af8889a38c5323b98854b9ff64ce64af2"
+  },
+  {
+   "path": "site-index.json",
+   "before": "1cc49c52a070c274de20602763fbaa5e646838b50c31b8f95853312a3a959b4c",
+   "after": "0712fd954242a1dca912708049862a51e04d587e08064a054268620219866a92"
+  },
+  {
+   "path": "sitemap.xml",
+   "before": "45abfeac5f89672f4c5ddd8651809576af43e6dd545465e6e27ecc02e22e5e4f",
+   "after": "c3a28455ced1a4022c3d7e9e77ec2b9182cfbadb807f2afda3762f97d679d60f"
+  }
+ ],
+ "added": [
+  {
+   "path": "MERGE_GUIDE_v2_8_3.md",
+   "sha256": "83884bb31a179c744da7b09cd03697eca0ad79c91452f30d7c79d39f4d5bc922"
+  },
+  {
+   "path": "RELEASE_NOTES_v2_8_3.md",
+   "sha256": "0653be91ec21af8811c5feba2bf8bcd5e8a1a2e5cbb9137b5a99514e11d72981"
+  },
+  {
+   "path": "VALIDATION_v2_8_3.json",
+   "sha256": "588702d049cfa516938ed8ed5edeec3e3653f0977e7c41fc5bf6981a2360e9d7"
+  },
+  {
+   "path": "ZENODO_RELEASE_PLAN_v2_8_3.md",
+   "sha256": "26468a36f0ccfe471eabd434a91a7a7c6819f3da0e66d870818a9e5bef5f74cc"
+  },
+  {
+   "path": "area-51/sedaps-51/HISTORY_COUNTS_v0_4_1.json",
+   "sha256": "45ef257c0308c3f4aeccc30f3c77664a8213b6436466e3af872be28aa6a65c8d"
+  },
+  {
+   "path": "area-51/sedaps-51/RESEARCH_UPDATE_v0_4_1.md",
+   "sha256": "062824279cd22926691e3e7e0e6eadaad287f2ba34bf0e726d868de7e3ac8370"
+  },
+  {
+   "path": "area-51/sedaps-51/VERIFY_v0_4_1.json",
+   "sha256": "14f64fe2b6c99978cce20f1155a1f428fdca72229fff2e4bdbdeacd6376a9867"
+  },
+  {
+   "path": "area-51/sedaps-51/count-histories-v0-4-1.cjs",
+   "sha256": "a22ab741a44eb12372a8abd02d19b26e1ddeee43870bddcecafe125cb39efae9"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/CENSUS_RECEIPT.json",
+   "sha256": "8005b301126b59b690bf4085bafad2803797c5af005374a410ea95b2b2ad7d97"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/LIVE3_LOOPS_RECEIPT.json",
+   "sha256": "0bfe5efbd806b464b1158f52362b7999dd5e729c31172bc5a78c6ed281de36b0"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/README.md",
+   "sha256": "3a7fff2e23df1128fd65f4d7bd72d86ad24c43bafbe58683f859618d1e066087"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/census2.c",
+   "sha256": "0bdaaccce8dab4b06bb0a1dda7fd484f409803ce98e994287a833d08e521c1d3"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/census_alt.c",
+   "sha256": "67554fb254381d3c4c25b5462482c8f9783199eb72739e736093a027845fe33d"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/census_deals.c",
+   "sha256": "c2903cb222e89e9614337a9869d49c18ae41dbce0790a3a0f367d84b956df6f9"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/live3_loops.c",
+   "sha256": "786088d0daf47dae0a4c18eec65aec37321c749607c280ca0d3166c5e63999d9"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/live3_packet.c",
+   "sha256": "0d70ff7a0b9033ede2bc6bffaf13eb30f1f846e4fb9544f4550545bd9ff208cd"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/sedaps_independent.py",
+   "sha256": "f7d34f2b01d60a4c57a776ea140dc49fe44c9a28614090647a18fac184ea61b5"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/sedaps_independent_receipt.json",
+   "sha256": "46d72544a8651a7e9ba796e18d0ff273edfcafa7bb1eacd55429e20eb44b8d3f"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/war_period_sigma.py",
+   "sha256": "56838aa057faf99d3c5c5b598b17afb687c977a0b0967749dbd94221d94f871b"
+  },
+  {
+   "path": "area-51/sedaps-51/past10-certificates-v0-4-1.json",
+   "sha256": "97a76858be9a933bf3962cdc6fb2fa8a822e58d8c25601b9acb7db8db8af87b5"
+  },
+  {
+   "path": "area-51/sedaps-51/verify-past10-v0-4-1.cjs",
+   "sha256": "78d63c0522c92776cf167579dfc583b4e2de96dedad8a9a59ef73238ac3774ee"
+  },
+  {
+   "path": "area-51/twins-51/evidence/dh_twin_highprec.py",
+   "sha256": "b9227cfd416985030f7d08c8bd478695d964673d001018fced6a94e16f059f0c"
+  },
+  {
+   "path": "area-51/twins-51/evidence/dh_twin_highprec_receipt.json",
+   "sha256": "7fe78c04670e5b8abfc40589ef1f312125db2f3612d497d5667bc38aac6b9baa"
+  },
+  {
+   "path": "research/line-game/The_Line_Game_Surprise_Is_Not_Meaning_v7_5.pdf",
+   "sha256": "4bef214c475b5239af0c7c54ba395ed875424b70eb3251b638445b97809219b6"
+  },
+  {
+   "path": "research/project-51/Project_51_v0_4.pdf",
+   "sha256": "becd348f5cdd7073145f150def61d210543339e8fc3938b5af0d30c034ceb0f1"
+  },
+  {
+   "path": "research/project-51/Telescope_51_v0_7.pdf",
+   "sha256": "3a13181d422a51175e2573a5628fb92e99768579128a12e7b51ec2b51507e5cd"
+  },
+  {
+   "path": "research/project-51/formula51/Formula_51_Concise_Method_2026-09-26.pdf",
+   "sha256": "ed97b5716a149d7cb9adac3a7cb66c5f542d737adeadeb1a8267c8911f9ec7be"
+  },
+  {
+   "path": "research/project-51/formula51/f51_independent.py",
+   "sha256": "864bca30942ad0e5f4dadf20b9700c203b7dbf7c8173daa65755d3dd1309ccd5"
+  },
+  {
+   "path": "research/project-51/formula51/f51_independent_receipt.json",
+   "sha256": "3e778469fd764428878d3762e69f07b82f53e428b29ed589a12385540bf10df1"
+  }
+ ],
+ "not_in_archive": {
+  "papers/": "omitted, as in both inputs; restore it and replace papers/TN_Postmaster_Volume_I_v5_2_SOURCE.zip with the v2.8.3 source zip that ships beside this archive"
+ },
+ "excluded_from_packaging": [
+  "__pycache__/",
+  "*.pyc"
+ ],
+ "note": "This manifest does not list itself."
+}

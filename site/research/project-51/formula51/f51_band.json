@@ -1,0 +1,16764 @@
+[
+{
+"N": 1177,
+"class_sizes": [
+2,
+21,
+27,
+1
+],
+"n_classes": 4,
+"arrangements": 11520,
+"collision_pairs": 17,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1178,
+"class_sizes": [
+2,
+21,
+1,
+26,
+1
+],
+"n_classes": 5,
+"arrangements": 11520,
+"collision_pairs": 17,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1179,
+"class_sizes": [
+2,
+21,
+2,
+25,
+1
+],
+"n_classes": 5,
+"arrangements": 11520,
+"collision_pairs": 17,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1180,
+"class_sizes": [
+2,
+21,
+3,
+24,
+1
+],
+"n_classes": 5,
+"arrangements": 11520,
+"collision_pairs": 17,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1181,
+"class_sizes": [
+2,
+21,
+4,
+23,
+1
+],
+"n_classes": 5,
+"arrangements": 11520,
+"collision_pairs": 17,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1182,
+"class_sizes": [
+2,
+21,
+5,
+22,
+1
+],
+"n_classes": 5,
+"arrangements": 3840,
+"collision_pairs": 15,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1183,
+"class_sizes": [
+2,
+21,
+6,
+21,
+1
+],
+"n_classes": 5,
+"arrangements": 3840,
+"collision_pairs": 15,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1184,
+"class_sizes": [
+2,
+21,
+7,
+20,
+1
+],
+"n_classes": 5,
+"arrangements": 3840,
+"collision_pairs": 15,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1185,
+"class_sizes": [
+2,
+21,
+8,
+19,
+1
+],
+"n_classes": 5,
+"arrangements": 3840,
+"collision_pairs": 15,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1186,
+"class_sizes": [
+2,
+21,
+9,
+18,
+1
+],
+"n_classes": 5,
+"arrangements": 1920,
+"collision_pairs": 14,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1187,
+"class_sizes": [
+2,
+21,
+10,
+17,
+1
+],
+"n_classes": 5,
+"arrangements": 1920,
+"collision_pairs": 14,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1188,
+"class_sizes": [
+2,
+21,
+11,
+16,
+1
+],
+"n_classes": 5,
+"arrangements": 1920,
+"collision_pairs": 14,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1189,
+"class_sizes": [
+2,
+21,
+12,
+15,
+1
+],
+"n_classes": 5,
+"arrangements": 1920,
+"collision_pairs": 14,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1190,
+"class_sizes": [
+2,
+21,
+13,
+14,
+1
+],
+"n_classes": 5,
+"arrangements": 1920,
+"collision_pairs": 14,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1191,
+"class_sizes": [
+2,
+21,
+14,
+13,
+1
+],
+"n_classes": 5,
+"arrangements": 1920,
+"collision_pairs": 14,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1192,
+"class_sizes": [
+2,
+21,
+15,
+12,
+1
+],
+"n_classes": 5,
+"arrangements": 1920,
+"collision_pairs": 14,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1193,
+"class_sizes": [
+2,
+21,
+16,
+11,
+1
+],
+"n_classes": 5,
+"arrangements": 1920,
+"collision_pairs": 14,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1194,
+"class_sizes": [
+2,
+21,
+17,
+10,
+1
+],
+"n_classes": 5,
+"arrangements": 1920,
+"collision_pairs": 14,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1195,
+"class_sizes": [
+2,
+21,
+18,
+9,
+1
+],
+"n_classes": 5,
+"arrangements": 1920,
+"collision_pairs": 14,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1196,
+"class_sizes": [
+2,
+21,
+19,
+8,
+1
+],
+"n_classes": 5,
+"arrangements": 1920,
+"collision_pairs": 14,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1197,
+"class_sizes": [
+2,
+21,
+20,
+7,
+1
+],
+"n_classes": 5,
+"arrangements": 1920,
+"collision_pairs": 14,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1198,
+"class_sizes": [
+2,
+21,
+21,
+6,
+1
+],
+"n_classes": 5,
+"arrangements": 1920,
+"collision_pairs": 14,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1199,
+"class_sizes": [
+2,
+21,
+22,
+5,
+1
+],
+"n_classes": 5,
+"arrangements": 5760,
+"collision_pairs": 16,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1200,
+"class_sizes": [
+2,
+21,
+23,
+4,
+1
+],
+"n_classes": 5,
+"arrangements": 5760,
+"collision_pairs": 16,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1201,
+"class_sizes": [
+2,
+21,
+24,
+3,
+1
+],
+"n_classes": 5,
+"arrangements": 5760,
+"collision_pairs": 16,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1202,
+"class_sizes": [
+2,
+21,
+25,
+2,
+1
+],
+"n_classes": 5,
+"arrangements": 5760,
+"collision_pairs": 16,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1203,
+"class_sizes": [
+2,
+21,
+26,
+1,
+1
+],
+"n_classes": 5,
+"arrangements": 5760,
+"collision_pairs": 16,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 42,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1204,
+"class_sizes": [
+2,
+21,
+27,
+1
+],
+"n_classes": 4,
+"arrangements": 11520,
+"collision_pairs": 17,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1205,
+"class_sizes": [
+2,
+1,
+1,
+19,
+27,
+1
+],
+"n_classes": 6,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1206,
+"class_sizes": [
+2,
+1,
+1,
+19,
+1,
+26,
+1
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1207,
+"class_sizes": [
+2,
+1,
+1,
+19,
+2,
+25,
+1
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1208,
+"class_sizes": [
+2,
+1,
+1,
+19,
+3,
+24,
+1
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1209,
+"class_sizes": [
+2,
+1,
+1,
+19,
+4,
+23,
+1
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1210,
+"class_sizes": [
+2,
+1,
+1,
+19,
+5,
+22,
+1
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 43,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1211,
+"class_sizes": [
+2,
+1,
+1,
+19,
+6,
+21,
+1
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 43,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1212,
+"class_sizes": [
+2,
+1,
+1,
+19,
+7,
+20,
+1
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 43,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1213,
+"class_sizes": [
+2,
+1,
+1,
+19,
+8,
+19,
+1
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 43,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1214,
+"class_sizes": [
+2,
+1,
+1,
+19,
+9,
+18,
+1
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 43,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1215,
+"class_sizes": [
+2,
+1,
+1,
+19,
+10,
+17,
+1
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 43,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1216,
+"class_sizes": [
+2,
+1,
+1,
+19,
+11,
+16,
+1
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 43,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1217,
+"class_sizes": [
+2,
+1,
+1,
+19,
+12,
+15,
+1
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 43,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1218,
+"class_sizes": [
+2,
+1,
+1,
+19,
+13,
+14,
+1
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"L2"
+],
+"lowest_size": 1
+},
+{
+"N": 1219,
+"class_sizes": [
+2,
+1,
+1,
+19,
+14,
+1,
+13
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 13
+},
+{
+"N": 1220,
+"class_sizes": [
+2,
+1,
+1,
+19,
+1,
+15,
+12
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 12
+},
+{
+"N": 1221,
+"class_sizes": [
+2,
+1,
+1,
+19,
+1,
+16,
+11
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 11
+},
+{
+"N": 1222,
+"class_sizes": [
+2,
+1,
+1,
+19,
+1,
+17,
+10
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 10
+},
+{
+"N": 1223,
+"class_sizes": [
+2,
+1,
+1,
+19,
+1,
+18,
+9
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 9
+},
+{
+"N": 1224,
+"class_sizes": [
+2,
+1,
+1,
+19,
+1,
+19,
+8
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 8
+},
+{
+"N": 1225,
+"class_sizes": [
+2,
+1,
+1,
+19,
+1,
+20,
+7
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 7
+},
+{
+"N": 1226,
+"class_sizes": [
+2,
+1,
+1,
+19,
+1,
+21,
+6
+],
+"n_classes": 7,
+"arrangements": 576,
+"collision_pairs": 11,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 6
+},
+{
+"N": 1227,
+"class_sizes": [
+2,
+1,
+1,
+19,
+1,
+22,
+5
+],
+"n_classes": 7,
+"arrangements": 576,
+"collision_pairs": 11,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 5
+},
+{
+"N": 1228,
+"class_sizes": [
+2,
+1,
+1,
+19,
+1,
+23,
+4
+],
+"n_classes": 7,
+"arrangements": 576,
+"collision_pairs": 11,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 4
+},
+{
+"N": 1229,
+"class_sizes": [
+2,
+1,
+1,
+19,
+1,
+24,
+3
+],
+"n_classes": 7,
+"arrangements": 576,
+"collision_pairs": 11,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 3
+},
+{
+"N": 1230,
+"class_sizes": [
+2,
+1,
+1,
+19,
+1,
+25,
+2
+],
+"n_classes": 7,
+"arrangements": 576,
+"collision_pairs": 11,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"T26",
+"T27"
+],
+"lowest_size": 2
+},
+{
+"N": 1231,
+"class_sizes": [
+2,
+1,
+1,
+1,
+19,
+26,
+1
+],
+"n_classes": 7,
+"arrangements": 576,
+"collision_pairs": 11,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 43,
+"lowest": [
+"T27"
+],
+"lowest_size": 1
+},
+{
+"N": 1232,
+"class_sizes": [
+2,
+2,
+1,
+19,
+27
+],
+"n_classes": 5,
+"arrangements": 576,
+"collision_pairs": 11,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T1",
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 27
+},
+{
+"N": 1233,
+"class_sizes": [
+2,
+2,
+1,
+1,
+18,
+27
+],
+"n_classes": 6,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T1",
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 27
+},
+{
+"N": 1234,
+"class_sizes": [
+2,
+2,
+1,
+1,
+18,
+1,
+26
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 26
+},
+{
+"N": 1235,
+"class_sizes": [
+2,
+2,
+1,
+1,
+18,
+2,
+25
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 25
+},
+{
+"N": 1236,
+"class_sizes": [
+2,
+2,
+1,
+1,
+18,
+3,
+24
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 24
+},
+{
+"N": 1237,
+"class_sizes": [
+2,
+2,
+1,
+1,
+18,
+4,
+23
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 44,
+"lowest": [
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 23
+},
+{
+"N": 1238,
+"class_sizes": [
+2,
+2,
+1,
+1,
+18,
+5,
+22
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 44,
+"lowest": [
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 22
+},
+{
+"N": 1239,
+"class_sizes": [
+2,
+2,
+1,
+1,
+18,
+6,
+21
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 44,
+"lowest": [
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 21
+},
+{
+"N": 1240,
+"class_sizes": [
+2,
+2,
+1,
+1,
+18,
+7,
+20
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 44,
+"lowest": [
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 20
+},
+{
+"N": 1241,
+"class_sizes": [
+2,
+2,
+1,
+1,
+18,
+8,
+19
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 44,
+"lowest": [
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 19
+},
+{
+"N": 1242,
+"class_sizes": [
+2,
+2,
+1,
+1,
+18,
+9,
+18
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 44,
+"lowest": [
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 18
+},
+{
+"N": 1243,
+"class_sizes": [
+2,
+1,
+2,
+1,
+18,
+10,
+17
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 44,
+"lowest": [
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 17
+},
+{
+"N": 1244,
+"class_sizes": [
+2,
+1,
+2,
+1,
+18,
+11,
+16
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 44,
+"lowest": [
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 16
+},
+{
+"N": 1245,
+"class_sizes": [
+2,
+1,
+2,
+1,
+18,
+12,
+15
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 15
+},
+{
+"N": 1246,
+"class_sizes": [
+2,
+1,
+2,
+1,
+18,
+13,
+14
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 14
+},
+{
+"N": 1247,
+"class_sizes": [
+2,
+1,
+2,
+1,
+18,
+14,
+13
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 13
+},
+{
+"N": 1248,
+"class_sizes": [
+2,
+1,
+2,
+1,
+18,
+15,
+12
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 12
+},
+{
+"N": 1249,
+"class_sizes": [
+2,
+1,
+2,
+1,
+18,
+16,
+11
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 11
+},
+{
+"N": 1250,
+"class_sizes": [
+2,
+1,
+2,
+1,
+18,
+17,
+10
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 10
+},
+{
+"N": 1251,
+"class_sizes": [
+2,
+1,
+2,
+1,
+18,
+18,
+9
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 9
+},
+{
+"N": 1252,
+"class_sizes": [
+2,
+1,
+2,
+1,
+18,
+19,
+8
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 8
+},
+{
+"N": 1253,
+"class_sizes": [
+2,
+1,
+2,
+1,
+18,
+20,
+7
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 7
+},
+{
+"N": 1254,
+"class_sizes": [
+2,
+1,
+2,
+1,
+18,
+21,
+6
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 6
+},
+{
+"N": 1255,
+"class_sizes": [
+2,
+1,
+2,
+1,
+18,
+22,
+5
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 5
+},
+{
+"N": 1256,
+"class_sizes": [
+2,
+1,
+2,
+1,
+18,
+23,
+4
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 4
+},
+{
+"N": 1257,
+"class_sizes": [
+2,
+1,
+2,
+1,
+18,
+24,
+3
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 3
+},
+{
+"N": 1258,
+"class_sizes": [
+2,
+1,
+2,
+1,
+18,
+25,
+2
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T26",
+"T27"
+],
+"lowest_size": 2
+},
+{
+"N": 1259,
+"class_sizes": [
+2,
+1,
+2,
+1,
+18,
+26,
+1
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 44,
+"lowest": [
+"T27"
+],
+"lowest_size": 1
+},
+{
+"N": 1260,
+"class_sizes": [
+2,
+1,
+3,
+18,
+27
+],
+"n_classes": 5,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T1",
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 27
+},
+{
+"N": 1261,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+27
+],
+"n_classes": 6,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T1",
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 27
+},
+{
+"N": 1262,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+1,
+26
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 26
+},
+{
+"N": 1263,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+2,
+25
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 25
+},
+{
+"N": 1264,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+3,
+24
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 24
+},
+{
+"N": 1265,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+4,
+23
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 45,
+"lowest": [
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 23
+},
+{
+"N": 1266,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+5,
+22
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 45,
+"lowest": [
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 22
+},
+{
+"N": 1267,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+6,
+21
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 45,
+"lowest": [
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 21
+},
+{
+"N": 1268,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+7,
+20
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 45,
+"lowest": [
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 20
+},
+{
+"N": 1269,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+8,
+19
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 45,
+"lowest": [
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 19
+},
+{
+"N": 1270,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+9,
+18
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 45,
+"lowest": [
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 18
+},
+{
+"N": 1271,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+10,
+17
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 45,
+"lowest": [
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 17
+},
+{
+"N": 1272,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+11,
+16
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 45,
+"lowest": [
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 16
+},
+{
+"N": 1273,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+12,
+15
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 15
+},
+{
+"N": 1274,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+13,
+14
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 14
+},
+{
+"N": 1275,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+14,
+13
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 13
+},
+{
+"N": 1276,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+15,
+12
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 12
+},
+{
+"N": 1277,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+16,
+11
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 11
+},
+{
+"N": 1278,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+17,
+10
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 10
+},
+{
+"N": 1279,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+18,
+9
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 9
+},
+{
+"N": 1280,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+19,
+8
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 8
+},
+{
+"N": 1281,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+20,
+7
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 7
+},
+{
+"N": 1282,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+21,
+6
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 6
+},
+{
+"N": 1283,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+22,
+5
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 5
+},
+{
+"N": 1284,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+23,
+4
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 4
+},
+{
+"N": 1285,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+24,
+3
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 3
+},
+{
+"N": 1286,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+25,
+2
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T26",
+"T27"
+],
+"lowest_size": 2
+},
+{
+"N": 1287,
+"class_sizes": [
+2,
+1,
+3,
+1,
+17,
+26,
+1
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 45,
+"lowest": [
+"T27"
+],
+"lowest_size": 1
+},
+{
+"N": 1288,
+"class_sizes": [
+2,
+1,
+4,
+17,
+27
+],
+"n_classes": 5,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T1",
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 27
+},
+{
+"N": 1289,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+27
+],
+"n_classes": 6,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T1",
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 27
+},
+{
+"N": 1290,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+1,
+26
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 26
+},
+{
+"N": 1291,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+2,
+25
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 25
+},
+{
+"N": 1292,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+3,
+24
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 24
+},
+{
+"N": 1293,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+4,
+23
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 46,
+"lowest": [
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 23
+},
+{
+"N": 1294,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+5,
+22
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 46,
+"lowest": [
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 22
+},
+{
+"N": 1295,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+6,
+21
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 46,
+"lowest": [
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 21
+},
+{
+"N": 1296,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+7,
+20
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 46,
+"lowest": [
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 20
+},
+{
+"N": 1297,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+8,
+19
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 46,
+"lowest": [
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 19
+},
+{
+"N": 1298,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+9,
+18
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 46,
+"lowest": [
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 18
+},
+{
+"N": 1299,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+10,
+17
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 46,
+"lowest": [
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 17
+},
+{
+"N": 1300,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+11,
+16
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 46,
+"lowest": [
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 16
+},
+{
+"N": 1301,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+12,
+15
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 15
+},
+{
+"N": 1302,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+13,
+14
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 14
+},
+{
+"N": 1303,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+14,
+13
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 13
+},
+{
+"N": 1304,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+15,
+12
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 12
+},
+{
+"N": 1305,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+16,
+11
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 11
+},
+{
+"N": 1306,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+17,
+10
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 10
+},
+{
+"N": 1307,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+18,
+9
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 9
+},
+{
+"N": 1308,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+19,
+8
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 8
+},
+{
+"N": 1309,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+20,
+7
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 7
+},
+{
+"N": 1310,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+21,
+6
+],
+"n_classes": 7,
+"arrangements": 36,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 6
+},
+{
+"N": 1311,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+22,
+5
+],
+"n_classes": 7,
+"arrangements": 36,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 5
+},
+{
+"N": 1312,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+23,
+4
+],
+"n_classes": 7,
+"arrangements": 36,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 4
+},
+{
+"N": 1313,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+24,
+3
+],
+"n_classes": 7,
+"arrangements": 36,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 3
+},
+{
+"N": 1314,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+25,
+2
+],
+"n_classes": 7,
+"arrangements": 36,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T26",
+"T27"
+],
+"lowest_size": 2
+},
+{
+"N": 1315,
+"class_sizes": [
+2,
+1,
+4,
+1,
+16,
+26,
+1
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 46,
+"lowest": [
+"T27"
+],
+"lowest_size": 1
+},
+{
+"N": 1316,
+"class_sizes": [
+2,
+1,
+5,
+16,
+27
+],
+"n_classes": 5,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T1",
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 27
+},
+{
+"N": 1317,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+27
+],
+"n_classes": 6,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T1",
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 27
+},
+{
+"N": 1318,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+1,
+26
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 26
+},
+{
+"N": 1319,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+2,
+25
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 25
+},
+{
+"N": 1320,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+3,
+24
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 24
+},
+{
+"N": 1321,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+4,
+23
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 47,
+"lowest": [
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 23
+},
+{
+"N": 1322,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+5,
+22
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 47,
+"lowest": [
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 22
+},
+{
+"N": 1323,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+6,
+21
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 47,
+"lowest": [
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 21
+},
+{
+"N": 1324,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+7,
+20
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 47,
+"lowest": [
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 20
+},
+{
+"N": 1325,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+8,
+19
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 47,
+"lowest": [
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 19
+},
+{
+"N": 1326,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+9,
+18
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 47,
+"lowest": [
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 18
+},
+{
+"N": 1327,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+10,
+17
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 47,
+"lowest": [
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 17
+},
+{
+"N": 1328,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+11,
+16
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 47,
+"lowest": [
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 16
+},
+{
+"N": 1329,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+12,
+15
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 15
+},
+{
+"N": 1330,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+13,
+14
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 14
+},
+{
+"N": 1331,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+14,
+13
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 13
+},
+{
+"N": 1332,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+15,
+12
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 12
+},
+{
+"N": 1333,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+16,
+11
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 11
+},
+{
+"N": 1334,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+17,
+10
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 10
+},
+{
+"N": 1335,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+18,
+9
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 9
+},
+{
+"N": 1336,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+19,
+8
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 8
+},
+{
+"N": 1337,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+20,
+7
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 7
+},
+{
+"N": 1338,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+21,
+6
+],
+"n_classes": 7,
+"arrangements": 36,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 6
+},
+{
+"N": 1339,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+22,
+5
+],
+"n_classes": 7,
+"arrangements": 36,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 5
+},
+{
+"N": 1340,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+23,
+4
+],
+"n_classes": 7,
+"arrangements": 36,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 4
+},
+{
+"N": 1341,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+24,
+3
+],
+"n_classes": 7,
+"arrangements": 36,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 3
+},
+{
+"N": 1342,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+25,
+2
+],
+"n_classes": 7,
+"arrangements": 36,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T26",
+"T27"
+],
+"lowest_size": 2
+},
+{
+"N": 1343,
+"class_sizes": [
+2,
+1,
+5,
+1,
+15,
+26,
+1
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 47,
+"lowest": [
+"T27"
+],
+"lowest_size": 1
+},
+{
+"N": 1344,
+"class_sizes": [
+2,
+1,
+6,
+15,
+27
+],
+"n_classes": 5,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T1",
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 27
+},
+{
+"N": 1345,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+27
+],
+"n_classes": 6,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T1",
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 27
+},
+{
+"N": 1346,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+1,
+26
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 26
+},
+{
+"N": 1347,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+2,
+25
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 25
+},
+{
+"N": 1348,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+3,
+24
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 24
+},
+{
+"N": 1349,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+4,
+23
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 51,
+"complete_contexts": 48,
+"lowest": [
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 23
+},
+{
+"N": 1350,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+5,
+22
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 51,
+"complete_contexts": 48,
+"lowest": [
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 22
+},
+{
+"N": 1351,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+6,
+21
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 51,
+"complete_contexts": 48,
+"lowest": [
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 21
+},
+{
+"N": 1352,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+7,
+20
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 51,
+"complete_contexts": 48,
+"lowest": [
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 20
+},
+{
+"N": 1353,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+8,
+19
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 51,
+"complete_contexts": 48,
+"lowest": [
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 19
+},
+{
+"N": 1354,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+9,
+18
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 51,
+"complete_contexts": 48,
+"lowest": [
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 18
+},
+{
+"N": 1355,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+10,
+17
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 51,
+"complete_contexts": 48,
+"lowest": [
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 17
+},
+{
+"N": 1356,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+11,
+16
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 51,
+"complete_contexts": 48,
+"lowest": [
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 16
+},
+{
+"N": 1357,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+12,
+15
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 15
+},
+{
+"N": 1358,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+13,
+14
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 14
+},
+{
+"N": 1359,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+14,
+13
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 13
+},
+{
+"N": 1360,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+15,
+12
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 12
+},
+{
+"N": 1361,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+16,
+11
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 11
+},
+{
+"N": 1362,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+17,
+10
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 10
+},
+{
+"N": 1363,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+18,
+9
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 9
+},
+{
+"N": 1364,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+19,
+8
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 8
+},
+{
+"N": 1365,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+20,
+7
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 7
+},
+{
+"N": 1366,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+21,
+6
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 6
+},
+{
+"N": 1367,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+22,
+5
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 5
+},
+{
+"N": 1368,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+23,
+4
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 4
+},
+{
+"N": 1369,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+24,
+3
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 3
+},
+{
+"N": 1370,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+25,
+2
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T26",
+"T27"
+],
+"lowest_size": 2
+},
+{
+"N": 1371,
+"class_sizes": [
+2,
+1,
+6,
+1,
+14,
+26,
+1
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 48,
+"lowest": [
+"T27"
+],
+"lowest_size": 1
+},
+{
+"N": 1372,
+"class_sizes": [
+2,
+1,
+7,
+14,
+27
+],
+"n_classes": 5,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T1",
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 27
+},
+{
+"N": 1373,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+27
+],
+"n_classes": 6,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T1",
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 27
+},
+{
+"N": 1374,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+1,
+26
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 26
+},
+{
+"N": 1375,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+2,
+25
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 25
+},
+{
+"N": 1376,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+3,
+24
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 24
+},
+{
+"N": 1377,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+4,
+23
+],
+"n_classes": 7,
+"arrangements": 16,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 49,
+"lowest": [
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 23
+},
+{
+"N": 1378,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+5,
+22
+],
+"n_classes": 7,
+"arrangements": 16,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 49,
+"lowest": [
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 22
+},
+{
+"N": 1379,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+6,
+21
+],
+"n_classes": 7,
+"arrangements": 16,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 49,
+"lowest": [
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 21
+},
+{
+"N": 1380,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+7,
+20
+],
+"n_classes": 7,
+"arrangements": 16,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 49,
+"lowest": [
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 20
+},
+{
+"N": 1381,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+8,
+19
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 49,
+"lowest": [
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 19
+},
+{
+"N": 1382,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+9,
+18
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 49,
+"lowest": [
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 18
+},
+{
+"N": 1383,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+10,
+17
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 49,
+"lowest": [
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 17
+},
+{
+"N": 1384,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+11,
+16
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 49,
+"lowest": [
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 16
+},
+{
+"N": 1385,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+12,
+15
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 15
+},
+{
+"N": 1386,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+13,
+14
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 14
+},
+{
+"N": 1387,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+14,
+13
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 13
+},
+{
+"N": 1388,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+15,
+12
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 12
+},
+{
+"N": 1389,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+16,
+11
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 11
+},
+{
+"N": 1390,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+17,
+10
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 10
+},
+{
+"N": 1391,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+18,
+9
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 9
+},
+{
+"N": 1392,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+19,
+8
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 8
+},
+{
+"N": 1393,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+20,
+7
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 7
+},
+{
+"N": 1394,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+21,
+6
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 6
+},
+{
+"N": 1395,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+22,
+5
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 5
+},
+{
+"N": 1396,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+23,
+4
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 4
+},
+{
+"N": 1397,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+24,
+3
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 3
+},
+{
+"N": 1398,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+25,
+2
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T26",
+"T27"
+],
+"lowest_size": 2
+},
+{
+"N": 1399,
+"class_sizes": [
+2,
+1,
+7,
+1,
+13,
+26,
+1
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 49,
+"lowest": [
+"T27"
+],
+"lowest_size": 1
+},
+{
+"N": 1400,
+"class_sizes": [
+2,
+1,
+8,
+13,
+27
+],
+"n_classes": 5,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T1",
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 27
+},
+{
+"N": 1401,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+27
+],
+"n_classes": 6,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T1",
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 27
+},
+{
+"N": 1402,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+1,
+26
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 26
+},
+{
+"N": 1403,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+2,
+25
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 25
+},
+{
+"N": 1404,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+3,
+24
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 24
+},
+{
+"N": 1405,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+4,
+23
+],
+"n_classes": 7,
+"arrangements": 16,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 50,
+"lowest": [
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 23
+},
+{
+"N": 1406,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+5,
+22
+],
+"n_classes": 7,
+"arrangements": 16,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 50,
+"lowest": [
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 22
+},
+{
+"N": 1407,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+6,
+21
+],
+"n_classes": 7,
+"arrangements": 16,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 50,
+"lowest": [
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 21
+},
+{
+"N": 1408,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+7,
+20
+],
+"n_classes": 7,
+"arrangements": 16,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 50,
+"lowest": [
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 20
+},
+{
+"N": 1409,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+8,
+19
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 50,
+"lowest": [
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 19
+},
+{
+"N": 1410,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+9,
+18
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 50,
+"lowest": [
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 18
+},
+{
+"N": 1411,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+10,
+17
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 50,
+"lowest": [
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 17
+},
+{
+"N": 1412,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+11,
+16
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 50,
+"lowest": [
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 16
+},
+{
+"N": 1413,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+12,
+15
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 15
+},
+{
+"N": 1414,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+13,
+14
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 14
+},
+{
+"N": 1415,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+14,
+13
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 13
+},
+{
+"N": 1416,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+15,
+12
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 12
+},
+{
+"N": 1417,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+16,
+11
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 11
+},
+{
+"N": 1418,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+17,
+10
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 10
+},
+{
+"N": 1419,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+18,
+9
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 9
+},
+{
+"N": 1420,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+19,
+8
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 8
+},
+{
+"N": 1421,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+20,
+7
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 7
+},
+{
+"N": 1422,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+21,
+6
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 6
+},
+{
+"N": 1423,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+22,
+5
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 5
+},
+{
+"N": 1424,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+23,
+4
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 4
+},
+{
+"N": 1425,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+24,
+3
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 3
+},
+{
+"N": 1426,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+25,
+2
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T26",
+"T27"
+],
+"lowest_size": 2
+},
+{
+"N": 1427,
+"class_sizes": [
+2,
+1,
+8,
+1,
+12,
+26,
+1
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 50,
+"lowest": [
+"T27"
+],
+"lowest_size": 1
+},
+{
+"N": 1428,
+"class_sizes": [
+2,
+1,
+9,
+12,
+27
+],
+"n_classes": 5,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 51,
+"lowest": [
+"T1",
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 27
+},
+{
+"N": 1429,
+"class_sizes": [
+2,
+1,
+9,
+1,
+11,
+27
+],
+"n_classes": 6,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 51,
+"lowest": [
+"T1",
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 27
+},
+{
+"N": 1430,
+"class_sizes": [
+2,
+1,
+9,
+1,
+1,
+11,
+26
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 51,
+"lowest": [
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 26
+},
+{
+"N": 1431,
+"class_sizes": [
+2,
+1,
+9,
+1,
+2,
+11,
+25
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 51,
+"lowest": [
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 25
+},
+{
+"N": 1432,
+"class_sizes": [
+2,
+1,
+9,
+1,
+3,
+11,
+24
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 51,
+"lowest": [
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 24
+},
+{
+"N": 1433,
+"class_sizes": [
+2,
+1,
+9,
+1,
+4,
+11,
+23
+],
+"n_classes": 7,
+"arrangements": 16,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 51,
+"lowest": [
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 23
+},
+{
+"N": 1434,
+"class_sizes": [
+2,
+1,
+9,
+1,
+5,
+11,
+22
+],
+"n_classes": 7,
+"arrangements": 16,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 51,
+"lowest": [
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 22
+},
+{
+"N": 1435,
+"class_sizes": [
+2,
+1,
+9,
+1,
+6,
+11,
+21
+],
+"n_classes": 7,
+"arrangements": 16,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 51,
+"lowest": [
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 21
+},
+{
+"N": 1436,
+"class_sizes": [
+2,
+1,
+9,
+1,
+7,
+11,
+20
+],
+"n_classes": 7,
+"arrangements": 16,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 51,
+"lowest": [
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 20
+},
+{
+"N": 1437,
+"class_sizes": [
+2,
+1,
+9,
+1,
+8,
+11,
+19
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 51,
+"lowest": [
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 19
+},
+{
+"N": 1438,
+"class_sizes": [
+2,
+1,
+9,
+1,
+9,
+11,
+18
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 51,
+"lowest": [
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 18
+},
+{
+"N": 1439,
+"class_sizes": [
+2,
+1,
+9,
+1,
+10,
+11,
+17
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 51,
+"lowest": [
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 17
+},
+{
+"N": 1440,
+"class_sizes": [
+2,
+1,
+9,
+1,
+11,
+11,
+16
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 51,
+"lowest": [
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 16
+},
+{
+"N": 1441,
+"class_sizes": [
+2,
+1,
+9,
+1,
+12,
+11,
+15
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 51,
+"lowest": [
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 15
+},
+{
+"N": 1442,
+"class_sizes": [
+2,
+1,
+9,
+1,
+13,
+11,
+14
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 51,
+"lowest": [
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 14
+},
+{
+"N": 1443,
+"class_sizes": [
+2,
+1,
+9,
+1,
+14,
+11,
+13
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 51,
+"lowest": [
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 13
+},
+{
+"N": 1444,
+"class_sizes": [
+2,
+1,
+9,
+1,
+15,
+11,
+12
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 36,
+"complete_contexts": 51,
+"lowest": [
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 12
+},
+{
+"N": 1445,
+"class_sizes": [
+2,
+1,
+9,
+1,
+16,
+11,
+11
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 36,
+"complete_contexts": 51,
+"lowest": [
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 11
+},
+{
+"N": 1446,
+"class_sizes": [
+2,
+1,
+9,
+1,
+17,
+11,
+10
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 36,
+"complete_contexts": 51,
+"lowest": [
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 10
+},
+{
+"N": 1447,
+"class_sizes": [
+2,
+1,
+9,
+1,
+18,
+11,
+9
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 36,
+"complete_contexts": 51,
+"lowest": [
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 9
+},
+{
+"N": 1448,
+"class_sizes": [
+2,
+1,
+9,
+1,
+19,
+11,
+8
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 36,
+"complete_contexts": 51,
+"lowest": [
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 8
+},
+{
+"N": 1449,
+"class_sizes": [
+2,
+1,
+9,
+1,
+20,
+11,
+7
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 36,
+"complete_contexts": 51,
+"lowest": [
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 7
+},
+{
+"N": 1450,
+"class_sizes": [
+2,
+1,
+9,
+1,
+21,
+11,
+6
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 36,
+"complete_contexts": 51,
+"lowest": [
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 6
+},
+{
+"N": 1451,
+"class_sizes": [
+2,
+1,
+9,
+1,
+22,
+11,
+5
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 36,
+"complete_contexts": 51,
+"lowest": [
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 5
+},
+{
+"N": 1452,
+"class_sizes": [
+2,
+1,
+9,
+1,
+23,
+11,
+4
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 51,
+"lowest": [
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 4
+},
+{
+"N": 1453,
+"class_sizes": [
+2,
+1,
+9,
+1,
+24,
+11,
+3
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 51,
+"lowest": [
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 3
+},
+{
+"N": 1454,
+"class_sizes": [
+2,
+1,
+9,
+1,
+25,
+11,
+2
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 51,
+"lowest": [
+"T26",
+"T27"
+],
+"lowest_size": 2
+},
+{
+"N": 1455,
+"class_sizes": [
+2,
+1,
+9,
+1,
+26,
+11,
+1
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 51,
+"lowest": [
+"T27"
+],
+"lowest_size": 1
+},
+{
+"N": 1456,
+"class_sizes": [
+2,
+1,
+10,
+27,
+11
+],
+"n_classes": 5,
+"arrangements": 192,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V10",
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 11
+},
+{
+"N": 1457,
+"class_sizes": [
+2,
+1,
+10,
+1,
+27,
+10
+],
+"n_classes": 6,
+"arrangements": 192,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1458,
+"class_sizes": [
+2,
+1,
+10,
+1,
+1,
+26,
+10
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1459,
+"class_sizes": [
+2,
+1,
+10,
+1,
+2,
+25,
+10
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1460,
+"class_sizes": [
+2,
+1,
+10,
+1,
+3,
+24,
+10
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1461,
+"class_sizes": [
+2,
+1,
+10,
+1,
+4,
+23,
+10
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1462,
+"class_sizes": [
+2,
+1,
+10,
+1,
+5,
+22,
+10
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1463,
+"class_sizes": [
+2,
+1,
+10,
+1,
+6,
+21,
+10
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1464,
+"class_sizes": [
+2,
+1,
+10,
+1,
+7,
+20,
+10
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1465,
+"class_sizes": [
+2,
+1,
+10,
+1,
+8,
+19,
+10
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1466,
+"class_sizes": [
+2,
+1,
+10,
+1,
+9,
+18,
+10
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1467,
+"class_sizes": [
+2,
+1,
+10,
+1,
+10,
+17,
+10
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1468,
+"class_sizes": [
+2,
+1,
+10,
+1,
+11,
+16,
+10
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1469,
+"class_sizes": [
+2,
+1,
+10,
+1,
+12,
+15,
+10
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1470,
+"class_sizes": [
+2,
+1,
+10,
+1,
+13,
+14,
+10
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1471,
+"class_sizes": [
+2,
+1,
+10,
+1,
+14,
+13,
+10
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 36,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1472,
+"class_sizes": [
+2,
+1,
+10,
+1,
+15,
+12,
+10
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 36,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1473,
+"class_sizes": [
+2,
+1,
+10,
+1,
+16,
+11,
+10
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 36,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1474,
+"class_sizes": [
+2,
+1,
+10,
+1,
+17,
+10,
+10
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 36,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1475,
+"class_sizes": [
+2,
+1,
+10,
+1,
+18,
+9,
+10
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 36,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1476,
+"class_sizes": [
+2,
+1,
+10,
+1,
+19,
+8,
+10
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 36,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1477,
+"class_sizes": [
+2,
+1,
+10,
+1,
+20,
+7,
+10
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 36,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1478,
+"class_sizes": [
+2,
+1,
+10,
+1,
+21,
+6,
+10
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 36,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1479,
+"class_sizes": [
+2,
+1,
+10,
+1,
+22,
+5,
+10
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1480,
+"class_sizes": [
+2,
+1,
+10,
+1,
+23,
+4,
+10
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1481,
+"class_sizes": [
+2,
+1,
+10,
+1,
+24,
+3,
+10
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1482,
+"class_sizes": [
+2,
+1,
+10,
+1,
+25,
+2,
+10
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1483,
+"class_sizes": [
+2,
+1,
+10,
+1,
+26,
+1,
+10
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 52,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1484,
+"class_sizes": [
+2,
+1,
+11,
+27,
+10
+],
+"n_classes": 5,
+"arrangements": 192,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V11",
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 10
+},
+{
+"N": 1485,
+"class_sizes": [
+2,
+1,
+11,
+27,
+1,
+9
+],
+"n_classes": 6,
+"arrangements": 192,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1486,
+"class_sizes": [
+2,
+1,
+11,
+1,
+1,
+26,
+9
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1487,
+"class_sizes": [
+2,
+1,
+11,
+1,
+2,
+25,
+9
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1488,
+"class_sizes": [
+2,
+1,
+11,
+1,
+3,
+24,
+9
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1489,
+"class_sizes": [
+2,
+1,
+11,
+1,
+4,
+23,
+9
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1490,
+"class_sizes": [
+2,
+1,
+11,
+1,
+5,
+22,
+9
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1491,
+"class_sizes": [
+2,
+1,
+11,
+1,
+6,
+21,
+9
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1492,
+"class_sizes": [
+2,
+1,
+11,
+1,
+7,
+20,
+9
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1493,
+"class_sizes": [
+2,
+1,
+11,
+1,
+8,
+19,
+9
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1494,
+"class_sizes": [
+2,
+1,
+11,
+1,
+9,
+18,
+9
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1495,
+"class_sizes": [
+2,
+1,
+11,
+1,
+10,
+17,
+9
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1496,
+"class_sizes": [
+2,
+1,
+11,
+1,
+11,
+16,
+9
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1497,
+"class_sizes": [
+2,
+1,
+11,
+1,
+12,
+15,
+9
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1498,
+"class_sizes": [
+2,
+1,
+11,
+1,
+13,
+14,
+9
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1499,
+"class_sizes": [
+2,
+1,
+11,
+1,
+14,
+13,
+9
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1500,
+"class_sizes": [
+2,
+1,
+11,
+1,
+15,
+12,
+9
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1501,
+"class_sizes": [
+2,
+1,
+11,
+1,
+16,
+11,
+9
+],
+"n_classes": 7,
+"arrangements": 4,
+"collision_pairs": 2,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1502,
+"class_sizes": [
+2,
+1,
+11,
+1,
+17,
+10,
+9
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1503,
+"class_sizes": [
+2,
+1,
+11,
+1,
+18,
+9,
+9
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1504,
+"class_sizes": [
+2,
+1,
+11,
+1,
+19,
+8,
+9
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1505,
+"class_sizes": [
+2,
+1,
+11,
+1,
+20,
+7,
+9
+],
+"n_classes": 7,
+"arrangements": 8,
+"collision_pairs": 3,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1506,
+"class_sizes": [
+2,
+1,
+11,
+1,
+21,
+6,
+9
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1507,
+"class_sizes": [
+2,
+1,
+11,
+1,
+22,
+5,
+9
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1508,
+"class_sizes": [
+2,
+1,
+11,
+1,
+23,
+4,
+9
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1509,
+"class_sizes": [
+2,
+1,
+11,
+1,
+24,
+3,
+9
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1510,
+"class_sizes": [
+2,
+1,
+11,
+1,
+25,
+2,
+9
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1511,
+"class_sizes": [
+2,
+1,
+11,
+1,
+26,
+1,
+9
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 53,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1512,
+"class_sizes": [
+2,
+1,
+12,
+27,
+9
+],
+"n_classes": 5,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V12",
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 9
+},
+{
+"N": 1513,
+"class_sizes": [
+2,
+1,
+12,
+27,
+1,
+8
+],
+"n_classes": 6,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1514,
+"class_sizes": [
+2,
+1,
+12,
+1,
+1,
+26,
+8
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1515,
+"class_sizes": [
+2,
+1,
+12,
+1,
+2,
+25,
+8
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1516,
+"class_sizes": [
+2,
+1,
+12,
+1,
+3,
+24,
+8
+],
+"n_classes": 7,
+"arrangements": 36,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1517,
+"class_sizes": [
+2,
+1,
+12,
+1,
+4,
+23,
+8
+],
+"n_classes": 7,
+"arrangements": 36,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1518,
+"class_sizes": [
+2,
+1,
+12,
+1,
+5,
+22,
+8
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1519,
+"class_sizes": [
+2,
+1,
+12,
+1,
+6,
+21,
+8
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1520,
+"class_sizes": [
+2,
+1,
+12,
+1,
+7,
+20,
+8
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1521,
+"class_sizes": [
+2,
+1,
+12,
+1,
+8,
+19,
+8
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1522,
+"class_sizes": [
+2,
+1,
+12,
+1,
+9,
+18,
+8
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1523,
+"class_sizes": [
+2,
+1,
+12,
+1,
+10,
+17,
+8
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1524,
+"class_sizes": [
+2,
+1,
+12,
+1,
+11,
+16,
+8
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1525,
+"class_sizes": [
+2,
+1,
+12,
+1,
+12,
+15,
+8
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1526,
+"class_sizes": [
+2,
+1,
+12,
+1,
+13,
+14,
+8
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1527,
+"class_sizes": [
+2,
+1,
+12,
+1,
+14,
+13,
+8
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1528,
+"class_sizes": [
+2,
+1,
+12,
+1,
+15,
+12,
+8
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1529,
+"class_sizes": [
+2,
+1,
+12,
+1,
+16,
+11,
+8
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1530,
+"class_sizes": [
+2,
+1,
+12,
+1,
+17,
+10,
+8
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1531,
+"class_sizes": [
+2,
+1,
+12,
+1,
+18,
+9,
+8
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1532,
+"class_sizes": [
+2,
+1,
+12,
+1,
+19,
+8,
+8
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1533,
+"class_sizes": [
+2,
+1,
+12,
+1,
+20,
+7,
+8
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1534,
+"class_sizes": [
+2,
+1,
+12,
+1,
+21,
+6,
+8
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1535,
+"class_sizes": [
+2,
+1,
+12,
+1,
+22,
+5,
+8
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1536,
+"class_sizes": [
+2,
+1,
+12,
+1,
+23,
+4,
+8
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1537,
+"class_sizes": [
+2,
+1,
+12,
+1,
+24,
+3,
+8
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1538,
+"class_sizes": [
+2,
+1,
+12,
+1,
+25,
+2,
+8
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1539,
+"class_sizes": [
+2,
+1,
+12,
+1,
+26,
+1,
+8
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 54,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1540,
+"class_sizes": [
+2,
+1,
+13,
+27,
+8
+],
+"n_classes": 5,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V13",
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 8
+},
+{
+"N": 1541,
+"class_sizes": [
+2,
+1,
+13,
+27,
+1,
+7
+],
+"n_classes": 6,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1542,
+"class_sizes": [
+2,
+1,
+13,
+1,
+26,
+1,
+7
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1543,
+"class_sizes": [
+2,
+1,
+13,
+1,
+2,
+25,
+7
+],
+"n_classes": 7,
+"arrangements": 36,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1544,
+"class_sizes": [
+2,
+1,
+13,
+1,
+3,
+24,
+7
+],
+"n_classes": 7,
+"arrangements": 36,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1545,
+"class_sizes": [
+2,
+1,
+13,
+1,
+4,
+23,
+7
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1546,
+"class_sizes": [
+2,
+1,
+13,
+1,
+5,
+22,
+7
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1547,
+"class_sizes": [
+2,
+1,
+13,
+1,
+6,
+21,
+7
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1548,
+"class_sizes": [
+2,
+1,
+13,
+1,
+7,
+20,
+7
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1549,
+"class_sizes": [
+2,
+1,
+13,
+1,
+8,
+19,
+7
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1550,
+"class_sizes": [
+2,
+1,
+13,
+1,
+9,
+18,
+7
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1551,
+"class_sizes": [
+2,
+1,
+13,
+1,
+10,
+17,
+7
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1552,
+"class_sizes": [
+2,
+1,
+13,
+1,
+11,
+16,
+7
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1553,
+"class_sizes": [
+2,
+1,
+13,
+1,
+12,
+15,
+7
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1554,
+"class_sizes": [
+2,
+1,
+13,
+1,
+13,
+14,
+7
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1555,
+"class_sizes": [
+2,
+1,
+13,
+1,
+14,
+13,
+7
+],
+"n_classes": 7,
+"arrangements": 12,
+"collision_pairs": 4,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1556,
+"class_sizes": [
+2,
+1,
+13,
+1,
+15,
+12,
+7
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1557,
+"class_sizes": [
+2,
+1,
+13,
+1,
+16,
+11,
+7
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1558,
+"class_sizes": [
+2,
+1,
+13,
+1,
+17,
+10,
+7
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1559,
+"class_sizes": [
+2,
+1,
+13,
+1,
+18,
+9,
+7
+],
+"n_classes": 7,
+"arrangements": 24,
+"collision_pairs": 5,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1560,
+"class_sizes": [
+2,
+1,
+13,
+1,
+19,
+8,
+7
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1561,
+"class_sizes": [
+2,
+1,
+13,
+1,
+20,
+7,
+7
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1562,
+"class_sizes": [
+2,
+1,
+13,
+1,
+21,
+6,
+7
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1563,
+"class_sizes": [
+2,
+1,
+13,
+1,
+22,
+5,
+7
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1564,
+"class_sizes": [
+2,
+1,
+13,
+1,
+23,
+4,
+7
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1565,
+"class_sizes": [
+2,
+1,
+13,
+1,
+24,
+3,
+7
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1566,
+"class_sizes": [
+2,
+1,
+13,
+1,
+25,
+2,
+7
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1567,
+"class_sizes": [
+2,
+1,
+13,
+1,
+26,
+1,
+7
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 55,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1568,
+"class_sizes": [
+2,
+1,
+14,
+27,
+7
+],
+"n_classes": 5,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V14",
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 7
+},
+{
+"N": 1569,
+"class_sizes": [
+2,
+1,
+14,
+27,
+1,
+6
+],
+"n_classes": 6,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1570,
+"class_sizes": [
+2,
+1,
+14,
+1,
+26,
+1,
+6
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1571,
+"class_sizes": [
+2,
+1,
+14,
+2,
+25,
+1,
+6
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1572,
+"class_sizes": [
+2,
+1,
+14,
+1,
+3,
+24,
+6
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1573,
+"class_sizes": [
+2,
+1,
+14,
+1,
+4,
+23,
+6
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1574,
+"class_sizes": [
+2,
+1,
+14,
+1,
+5,
+22,
+6
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1575,
+"class_sizes": [
+2,
+1,
+14,
+1,
+6,
+21,
+6
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1576,
+"class_sizes": [
+2,
+1,
+14,
+1,
+7,
+20,
+6
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1577,
+"class_sizes": [
+2,
+1,
+14,
+1,
+8,
+19,
+6
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1578,
+"class_sizes": [
+2,
+1,
+14,
+1,
+9,
+18,
+6
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1579,
+"class_sizes": [
+2,
+1,
+14,
+1,
+10,
+17,
+6
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1580,
+"class_sizes": [
+2,
+1,
+14,
+1,
+11,
+16,
+6
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1581,
+"class_sizes": [
+2,
+1,
+14,
+1,
+12,
+15,
+6
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1582,
+"class_sizes": [
+2,
+1,
+14,
+1,
+13,
+14,
+6
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1583,
+"class_sizes": [
+2,
+1,
+14,
+1,
+14,
+13,
+6
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1584,
+"class_sizes": [
+2,
+1,
+14,
+1,
+15,
+12,
+6
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1585,
+"class_sizes": [
+2,
+1,
+14,
+1,
+16,
+11,
+6
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1586,
+"class_sizes": [
+2,
+1,
+14,
+1,
+17,
+10,
+6
+],
+"n_classes": 7,
+"arrangements": 48,
+"collision_pairs": 6,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1587,
+"class_sizes": [
+2,
+1,
+14,
+1,
+18,
+9,
+6
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1588,
+"class_sizes": [
+2,
+1,
+14,
+1,
+19,
+8,
+6
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1589,
+"class_sizes": [
+2,
+1,
+14,
+1,
+20,
+7,
+6
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1590,
+"class_sizes": [
+2,
+1,
+14,
+1,
+21,
+6,
+6
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1591,
+"class_sizes": [
+2,
+1,
+14,
+1,
+22,
+5,
+6
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1592,
+"class_sizes": [
+2,
+1,
+14,
+1,
+23,
+4,
+6
+],
+"n_classes": 7,
+"arrangements": 72,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1593,
+"class_sizes": [
+2,
+1,
+14,
+1,
+24,
+3,
+6
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1594,
+"class_sizes": [
+2,
+1,
+14,
+1,
+25,
+2,
+6
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1595,
+"class_sizes": [
+2,
+1,
+14,
+1,
+26,
+1,
+6
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 56,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1596,
+"class_sizes": [
+2,
+1,
+15,
+27,
+6
+],
+"n_classes": 5,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V15",
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 6
+},
+{
+"N": 1597,
+"class_sizes": [
+2,
+1,
+15,
+27,
+1,
+5
+],
+"n_classes": 6,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1598,
+"class_sizes": [
+2,
+1,
+15,
+1,
+26,
+1,
+5
+],
+"n_classes": 7,
+"arrangements": 576,
+"collision_pairs": 11,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1599,
+"class_sizes": [
+2,
+1,
+15,
+2,
+25,
+1,
+5
+],
+"n_classes": 7,
+"arrangements": 576,
+"collision_pairs": 11,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1600,
+"class_sizes": [
+2,
+1,
+15,
+3,
+24,
+1,
+5
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1601,
+"class_sizes": [
+2,
+1,
+15,
+1,
+4,
+23,
+5
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1602,
+"class_sizes": [
+2,
+1,
+15,
+1,
+5,
+22,
+5
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1603,
+"class_sizes": [
+2,
+1,
+15,
+1,
+6,
+21,
+5
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1604,
+"class_sizes": [
+2,
+1,
+15,
+1,
+7,
+20,
+5
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1605,
+"class_sizes": [
+2,
+1,
+15,
+1,
+8,
+19,
+5
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1606,
+"class_sizes": [
+2,
+1,
+15,
+1,
+9,
+18,
+5
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1607,
+"class_sizes": [
+2,
+1,
+15,
+1,
+10,
+17,
+5
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1608,
+"class_sizes": [
+2,
+1,
+15,
+1,
+11,
+16,
+5
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1609,
+"class_sizes": [
+2,
+1,
+15,
+1,
+12,
+15,
+5
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1610,
+"class_sizes": [
+2,
+1,
+15,
+1,
+13,
+14,
+5
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1611,
+"class_sizes": [
+2,
+1,
+15,
+1,
+14,
+13,
+5
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1612,
+"class_sizes": [
+2,
+1,
+15,
+1,
+15,
+12,
+5
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1613,
+"class_sizes": [
+2,
+1,
+15,
+1,
+16,
+11,
+5
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1614,
+"class_sizes": [
+2,
+1,
+15,
+1,
+17,
+10,
+5
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1615,
+"class_sizes": [
+2,
+1,
+15,
+1,
+18,
+9,
+5
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1616,
+"class_sizes": [
+2,
+1,
+15,
+1,
+19,
+8,
+5
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1617,
+"class_sizes": [
+2,
+1,
+15,
+1,
+20,
+7,
+5
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1618,
+"class_sizes": [
+2,
+1,
+15,
+1,
+21,
+6,
+5
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1619,
+"class_sizes": [
+2,
+1,
+15,
+1,
+22,
+5,
+5
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1620,
+"class_sizes": [
+2,
+1,
+15,
+1,
+23,
+4,
+5
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1621,
+"class_sizes": [
+2,
+1,
+15,
+1,
+24,
+3,
+5
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1622,
+"class_sizes": [
+2,
+1,
+15,
+1,
+25,
+2,
+5
+],
+"n_classes": 7,
+"arrangements": 144,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1623,
+"class_sizes": [
+2,
+1,
+15,
+1,
+26,
+1,
+5
+],
+"n_classes": 7,
+"arrangements": 576,
+"collision_pairs": 11,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 57,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1624,
+"class_sizes": [
+2,
+1,
+16,
+27,
+5
+],
+"n_classes": 5,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V16",
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 5
+},
+{
+"N": 1625,
+"class_sizes": [
+2,
+1,
+16,
+27,
+1,
+4
+],
+"n_classes": 6,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1626,
+"class_sizes": [
+2,
+1,
+16,
+1,
+26,
+1,
+4
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1627,
+"class_sizes": [
+2,
+1,
+16,
+2,
+25,
+1,
+4
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1628,
+"class_sizes": [
+2,
+1,
+16,
+3,
+24,
+1,
+4
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1629,
+"class_sizes": [
+2,
+1,
+16,
+4,
+23,
+1,
+4
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1630,
+"class_sizes": [
+2,
+1,
+16,
+1,
+5,
+22,
+4
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1631,
+"class_sizes": [
+2,
+1,
+16,
+1,
+6,
+21,
+4
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1632,
+"class_sizes": [
+2,
+1,
+16,
+1,
+7,
+20,
+4
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1633,
+"class_sizes": [
+2,
+1,
+16,
+1,
+8,
+19,
+4
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1634,
+"class_sizes": [
+2,
+1,
+16,
+1,
+9,
+18,
+4
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1635,
+"class_sizes": [
+2,
+1,
+16,
+1,
+10,
+17,
+4
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1636,
+"class_sizes": [
+2,
+1,
+16,
+1,
+11,
+16,
+4
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1637,
+"class_sizes": [
+2,
+1,
+16,
+1,
+12,
+15,
+4
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1638,
+"class_sizes": [
+2,
+1,
+16,
+1,
+13,
+14,
+4
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1639,
+"class_sizes": [
+2,
+1,
+16,
+1,
+14,
+13,
+4
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1640,
+"class_sizes": [
+2,
+1,
+16,
+1,
+15,
+12,
+4
+],
+"n_classes": 7,
+"arrangements": 192,
+"collision_pairs": 8,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1641,
+"class_sizes": [
+2,
+1,
+16,
+1,
+16,
+11,
+4
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1642,
+"class_sizes": [
+2,
+1,
+16,
+1,
+17,
+10,
+4
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1643,
+"class_sizes": [
+2,
+1,
+16,
+1,
+18,
+9,
+4
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1644,
+"class_sizes": [
+2,
+1,
+16,
+1,
+19,
+8,
+4
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1645,
+"class_sizes": [
+2,
+1,
+16,
+1,
+20,
+7,
+4
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1646,
+"class_sizes": [
+2,
+1,
+16,
+1,
+21,
+6,
+4
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1647,
+"class_sizes": [
+2,
+1,
+16,
+1,
+22,
+5,
+4
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1648,
+"class_sizes": [
+2,
+1,
+16,
+1,
+23,
+4,
+4
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1649,
+"class_sizes": [
+2,
+1,
+16,
+1,
+24,
+3,
+4
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1650,
+"class_sizes": [
+2,
+1,
+16,
+1,
+25,
+2,
+4
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1651,
+"class_sizes": [
+2,
+1,
+16,
+1,
+26,
+1,
+4
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 58,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1652,
+"class_sizes": [
+2,
+1,
+17,
+27,
+4
+],
+"n_classes": 5,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V17",
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 4
+},
+{
+"N": 1653,
+"class_sizes": [
+2,
+1,
+17,
+27,
+1,
+3
+],
+"n_classes": 6,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1654,
+"class_sizes": [
+2,
+1,
+17,
+1,
+26,
+1,
+3
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1655,
+"class_sizes": [
+2,
+1,
+17,
+2,
+25,
+1,
+3
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1656,
+"class_sizes": [
+2,
+1,
+17,
+3,
+24,
+1,
+3
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1657,
+"class_sizes": [
+2,
+1,
+17,
+4,
+23,
+1,
+3
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1658,
+"class_sizes": [
+2,
+1,
+17,
+5,
+1,
+22,
+3
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1659,
+"class_sizes": [
+2,
+1,
+17,
+1,
+6,
+21,
+3
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1660,
+"class_sizes": [
+2,
+1,
+17,
+1,
+7,
+20,
+3
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1661,
+"class_sizes": [
+2,
+1,
+17,
+1,
+8,
+19,
+3
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1662,
+"class_sizes": [
+2,
+1,
+17,
+1,
+9,
+18,
+3
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1663,
+"class_sizes": [
+2,
+1,
+17,
+1,
+10,
+17,
+3
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1664,
+"class_sizes": [
+2,
+1,
+17,
+1,
+11,
+16,
+3
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1665,
+"class_sizes": [
+2,
+1,
+17,
+1,
+12,
+15,
+3
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1666,
+"class_sizes": [
+2,
+1,
+17,
+1,
+13,
+14,
+3
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1667,
+"class_sizes": [
+2,
+1,
+17,
+1,
+14,
+13,
+3
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 45,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1668,
+"class_sizes": [
+2,
+1,
+17,
+1,
+15,
+12,
+3
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1669,
+"class_sizes": [
+2,
+1,
+17,
+1,
+16,
+11,
+3
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1670,
+"class_sizes": [
+2,
+1,
+17,
+1,
+17,
+10,
+3
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1671,
+"class_sizes": [
+2,
+1,
+17,
+1,
+18,
+9,
+3
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1672,
+"class_sizes": [
+2,
+1,
+17,
+1,
+19,
+8,
+3
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1673,
+"class_sizes": [
+2,
+1,
+17,
+1,
+20,
+7,
+3
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1674,
+"class_sizes": [
+2,
+1,
+17,
+1,
+21,
+6,
+3
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1675,
+"class_sizes": [
+2,
+1,
+17,
+1,
+22,
+5,
+3
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1676,
+"class_sizes": [
+2,
+1,
+17,
+1,
+23,
+4,
+3
+],
+"n_classes": 7,
+"arrangements": 96,
+"collision_pairs": 7,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1677,
+"class_sizes": [
+2,
+1,
+17,
+1,
+24,
+3,
+3
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1678,
+"class_sizes": [
+2,
+1,
+17,
+1,
+25,
+2,
+3
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1679,
+"class_sizes": [
+2,
+1,
+17,
+1,
+26,
+1,
+3
+],
+"n_classes": 7,
+"arrangements": 288,
+"collision_pairs": 9,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 59,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1680,
+"class_sizes": [
+2,
+1,
+18,
+27,
+3
+],
+"n_classes": 5,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V18",
+"V19",
+"V20"
+],
+"lowest_size": 3
+},
+{
+"N": 1681,
+"class_sizes": [
+2,
+1,
+18,
+27,
+1,
+2
+],
+"n_classes": 6,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1682,
+"class_sizes": [
+2,
+1,
+18,
+1,
+26,
+1,
+2
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1683,
+"class_sizes": [
+2,
+1,
+18,
+2,
+25,
+1,
+2
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1684,
+"class_sizes": [
+2,
+1,
+18,
+3,
+24,
+1,
+2
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1685,
+"class_sizes": [
+2,
+1,
+18,
+4,
+23,
+1,
+2
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1686,
+"class_sizes": [
+2,
+1,
+18,
+5,
+22,
+1,
+2
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1687,
+"class_sizes": [
+2,
+1,
+18,
+6,
+1,
+21,
+2
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1688,
+"class_sizes": [
+2,
+1,
+18,
+1,
+7,
+20,
+2
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1689,
+"class_sizes": [
+2,
+1,
+18,
+1,
+8,
+19,
+2
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1690,
+"class_sizes": [
+2,
+1,
+18,
+1,
+9,
+18,
+2
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1691,
+"class_sizes": [
+2,
+1,
+18,
+1,
+10,
+17,
+2
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1692,
+"class_sizes": [
+2,
+1,
+18,
+1,
+11,
+16,
+2
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1693,
+"class_sizes": [
+2,
+1,
+18,
+1,
+12,
+15,
+2
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1694,
+"class_sizes": [
+2,
+1,
+18,
+1,
+13,
+14,
+2
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1695,
+"class_sizes": [
+2,
+1,
+18,
+1,
+14,
+13,
+2
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1696,
+"class_sizes": [
+2,
+1,
+18,
+1,
+15,
+12,
+2
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1697,
+"class_sizes": [
+2,
+1,
+18,
+1,
+16,
+11,
+2
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1698,
+"class_sizes": [
+2,
+1,
+18,
+1,
+17,
+10,
+2
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1699,
+"class_sizes": [
+2,
+1,
+18,
+1,
+18,
+9,
+2
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1700,
+"class_sizes": [
+2,
+1,
+18,
+1,
+19,
+8,
+2
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1701,
+"class_sizes": [
+2,
+1,
+18,
+1,
+20,
+7,
+2
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1702,
+"class_sizes": [
+2,
+1,
+18,
+1,
+21,
+6,
+2
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1703,
+"class_sizes": [
+2,
+1,
+18,
+1,
+22,
+5,
+2
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1704,
+"class_sizes": [
+2,
+1,
+18,
+1,
+23,
+4,
+2
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1705,
+"class_sizes": [
+2,
+1,
+18,
+1,
+24,
+3,
+2
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1706,
+"class_sizes": [
+2,
+1,
+18,
+1,
+25,
+2,
+2
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1707,
+"class_sizes": [
+2,
+1,
+18,
+1,
+26,
+1,
+2
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 60,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1708,
+"class_sizes": [
+2,
+1,
+19,
+27,
+2
+],
+"n_classes": 5,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V19",
+"V20"
+],
+"lowest_size": 2
+},
+{
+"N": 1709,
+"class_sizes": [
+2,
+1,
+19,
+27,
+1,
+1
+],
+"n_classes": 6,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1710,
+"class_sizes": [
+2,
+1,
+19,
+1,
+26,
+1,
+1
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1711,
+"class_sizes": [
+2,
+1,
+19,
+2,
+25,
+1,
+1
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1712,
+"class_sizes": [
+2,
+1,
+19,
+3,
+24,
+1,
+1
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1713,
+"class_sizes": [
+2,
+1,
+19,
+4,
+23,
+1,
+1
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1714,
+"class_sizes": [
+2,
+1,
+19,
+5,
+22,
+1,
+1
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1715,
+"class_sizes": [
+2,
+1,
+19,
+6,
+21,
+1,
+1
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1716,
+"class_sizes": [
+2,
+1,
+19,
+7,
+1,
+20,
+1
+],
+"n_classes": 7,
+"arrangements": 768,
+"collision_pairs": 11,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1717,
+"class_sizes": [
+2,
+1,
+19,
+1,
+8,
+19,
+1
+],
+"n_classes": 7,
+"arrangements": 768,
+"collision_pairs": 11,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1718,
+"class_sizes": [
+2,
+1,
+19,
+1,
+9,
+18,
+1
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1719,
+"class_sizes": [
+2,
+1,
+19,
+1,
+10,
+17,
+1
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1720,
+"class_sizes": [
+2,
+1,
+19,
+1,
+11,
+16,
+1
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1721,
+"class_sizes": [
+2,
+1,
+19,
+1,
+12,
+15,
+1
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1722,
+"class_sizes": [
+2,
+1,
+19,
+1,
+13,
+14,
+1
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1723,
+"class_sizes": [
+2,
+1,
+19,
+1,
+14,
+13,
+1
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1724,
+"class_sizes": [
+2,
+1,
+19,
+1,
+15,
+12,
+1
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1725,
+"class_sizes": [
+2,
+1,
+19,
+1,
+16,
+11,
+1
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1726,
+"class_sizes": [
+2,
+1,
+19,
+1,
+17,
+10,
+1
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1727,
+"class_sizes": [
+2,
+1,
+19,
+1,
+18,
+9,
+1
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1728,
+"class_sizes": [
+2,
+1,
+19,
+1,
+19,
+8,
+1
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1729,
+"class_sizes": [
+2,
+1,
+19,
+1,
+20,
+7,
+1
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1730,
+"class_sizes": [
+2,
+1,
+19,
+1,
+21,
+6,
+1
+],
+"n_classes": 7,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1731,
+"class_sizes": [
+2,
+1,
+19,
+1,
+22,
+5,
+1
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1732,
+"class_sizes": [
+2,
+1,
+19,
+1,
+23,
+4,
+1
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1733,
+"class_sizes": [
+2,
+1,
+19,
+1,
+24,
+3,
+1
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1734,
+"class_sizes": [
+2,
+1,
+19,
+1,
+25,
+2,
+1
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1735,
+"class_sizes": [
+2,
+1,
+19,
+1,
+26,
+1,
+1
+],
+"n_classes": 7,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 61,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1736,
+"class_sizes": [
+2,
+1,
+20,
+27,
+1
+],
+"n_classes": 5,
+"arrangements": 2304,
+"collision_pairs": 13,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1737,
+"class_sizes": [
+2,
+1,
+20,
+27,
+1
+],
+"n_classes": 5,
+"arrangements": 2304,
+"collision_pairs": 13,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1738,
+"class_sizes": [
+2,
+1,
+20,
+1,
+26,
+1
+],
+"n_classes": 6,
+"arrangements": 2304,
+"collision_pairs": 13,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1739,
+"class_sizes": [
+2,
+1,
+20,
+2,
+25,
+1
+],
+"n_classes": 6,
+"arrangements": 2304,
+"collision_pairs": 13,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1740,
+"class_sizes": [
+2,
+1,
+20,
+3,
+24,
+1
+],
+"n_classes": 6,
+"arrangements": 2304,
+"collision_pairs": 13,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1741,
+"class_sizes": [
+2,
+1,
+20,
+4,
+23,
+1
+],
+"n_classes": 6,
+"arrangements": 2304,
+"collision_pairs": 13,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1742,
+"class_sizes": [
+2,
+1,
+20,
+5,
+22,
+1
+],
+"n_classes": 6,
+"arrangements": 768,
+"collision_pairs": 11,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 62,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1743,
+"class_sizes": [
+2,
+1,
+20,
+6,
+21,
+1
+],
+"n_classes": 6,
+"arrangements": 768,
+"collision_pairs": 11,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 62,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1744,
+"class_sizes": [
+2,
+1,
+20,
+7,
+20,
+1
+],
+"n_classes": 6,
+"arrangements": 768,
+"collision_pairs": 11,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 62,
+"lowest": [
+"V20"
+],
+"lowest_size": 1
+},
+{
+"N": 1745,
+"class_sizes": [
+2,
+1,
+20,
+8,
+1,
+19
+],
+"n_classes": 6,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 62,
+"lowest": [
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 19
+},
+{
+"N": 1746,
+"class_sizes": [
+2,
+1,
+20,
+1,
+9,
+18
+],
+"n_classes": 6,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 62,
+"lowest": [
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 18
+},
+{
+"N": 1747,
+"class_sizes": [
+2,
+1,
+20,
+1,
+10,
+17
+],
+"n_classes": 6,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 62,
+"lowest": [
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 17
+},
+{
+"N": 1748,
+"class_sizes": [
+2,
+1,
+20,
+1,
+11,
+16
+],
+"n_classes": 6,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 41,
+"complete_contexts": 62,
+"lowest": [
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 16
+},
+{
+"N": 1749,
+"class_sizes": [
+2,
+1,
+20,
+1,
+12,
+15
+],
+"n_classes": 6,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 15
+},
+{
+"N": 1750,
+"class_sizes": [
+2,
+1,
+20,
+1,
+13,
+14
+],
+"n_classes": 6,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 14
+},
+{
+"N": 1751,
+"class_sizes": [
+2,
+1,
+20,
+1,
+14,
+13
+],
+"n_classes": 6,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 13
+},
+{
+"N": 1752,
+"class_sizes": [
+2,
+1,
+20,
+1,
+15,
+12
+],
+"n_classes": 6,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 12
+},
+{
+"N": 1753,
+"class_sizes": [
+2,
+1,
+20,
+1,
+16,
+11
+],
+"n_classes": 6,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 11
+},
+{
+"N": 1754,
+"class_sizes": [
+2,
+1,
+20,
+1,
+17,
+10
+],
+"n_classes": 6,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 10
+},
+{
+"N": 1755,
+"class_sizes": [
+2,
+1,
+20,
+1,
+18,
+9
+],
+"n_classes": 6,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 9
+},
+{
+"N": 1756,
+"class_sizes": [
+2,
+1,
+20,
+1,
+19,
+8
+],
+"n_classes": 6,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 8
+},
+{
+"N": 1757,
+"class_sizes": [
+2,
+1,
+20,
+1,
+20,
+7
+],
+"n_classes": 6,
+"arrangements": 384,
+"collision_pairs": 10,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 7
+},
+{
+"N": 1758,
+"class_sizes": [
+2,
+1,
+20,
+1,
+21,
+6
+],
+"n_classes": 6,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 6
+},
+{
+"N": 1759,
+"class_sizes": [
+2,
+1,
+20,
+1,
+22,
+5
+],
+"n_classes": 6,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 5
+},
+{
+"N": 1760,
+"class_sizes": [
+2,
+1,
+20,
+1,
+23,
+4
+],
+"n_classes": 6,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 4
+},
+{
+"N": 1761,
+"class_sizes": [
+2,
+1,
+20,
+1,
+24,
+3
+],
+"n_classes": 6,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 3
+},
+{
+"N": 1762,
+"class_sizes": [
+2,
+1,
+20,
+1,
+25,
+2
+],
+"n_classes": 6,
+"arrangements": 1152,
+"collision_pairs": 12,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"T26",
+"T27"
+],
+"lowest_size": 2
+},
+{
+"N": 1763,
+"class_sizes": [
+2,
+1,
+20,
+1,
+26,
+1
+],
+"n_classes": 6,
+"arrangements": 2304,
+"collision_pairs": 13,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 62,
+"lowest": [
+"T27"
+],
+"lowest_size": 1
+},
+{
+"N": 1764,
+"class_sizes": [
+3,
+21,
+27
+],
+"n_classes": 3,
+"arrangements": 4608,
+"collision_pairs": 14,
+"WPcolor_safe_sector": 23,
+"complete_contexts": 63,
+"lowest": [
+"T1",
+"T2",
+"T3",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8",
+"T9",
+"T10",
+"T11",
+"T12",
+"T13",
+"T14",
+"T15",
+"T16",
+"T17",
+"T18",
+"T19",
+"T20",
+"T21",
+"T22",
+"T23",
+"T24",
+"T25",
+"T26",
+"T27"
+],
+"lowest_size": 27
+}
+]

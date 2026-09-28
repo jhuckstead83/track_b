@@ -1,0 +1,798 @@
+{
+  "site": "https://cerebralgraphix.com/",
+  "updated": "2026-09-20",
+  "boundary": {
+    "market_truth": "NOT_PROVEN_BY_RECEIPT",
+    "trade_permission": "NO"
+  },
+  "root": [
+    {
+      "path": "/",
+      "file": "index.html",
+      "title": "Homepage"
+    },
+    {
+      "path": "/site-index.html",
+      "file": "site-index.html",
+      "title": "Human-readable site index"
+    },
+    {
+      "path": "/site-index.json",
+      "file": "site-index.json",
+      "title": "Machine-readable site manifest"
+    },
+    {
+      "path": "/sitemap.xml",
+      "file": "sitemap.xml",
+      "title": "Sitemap"
+    },
+    {
+      "path": "/atlas/",
+      "file": "atlas/index.html",
+      "title": "Research Atlas: mobile reading paths and typed relationships"
+    },
+    {
+      "path": "/research/postmaster/",
+      "file": "research/postmaster/index.html",
+      "title": "Triangular-n Postmaster: v5.2 web reading route; RH OPEN"
+    },
+    {
+      "path": "/research/line-game/",
+      "file": "research/line-game/index.html",
+      "title": "The Line Game | Surprise Is Not Meaning v7.2 — Invariant interactive supplement"
+    },
+    {
+      "path": "/area-51/",
+      "file": "area-51/index.html",
+      "title": "Area 51 — live HTML-forward card-game research laboratory"
+    },
+    {
+      "path": "/area-51/invariant/",
+      "file": "area-51/invariant/index.html",
+      "title": "Invariant — maintained Area 51 interactive foundation"
+    },
+    {
+      "path": "/area-51/telescope-51/",
+      "file": "area-51/telescope-51/index.html",
+      "title": "Telescope 51 — stable current public-beta laboratory"
+    },
+    {
+      "path": "/area-51/memory-51/",
+      "file": "area-51/memory-51/index.html",
+      "title": "Memory 51 — public Alpha bidirectional learning game"
+    },
+    {
+      "path": "/area-51/blackjack-51/",
+      "file": "area-51/blackjack-51/index.html",
+      "title": "Blackjack 51 — public Alpha contextual-value game"
+    },
+    {
+      "path": "/area-51/research.json",
+      "file": "area-51/research.json",
+      "title": "Area 51 machine-readable object, rule, proof and citation boundaries"
+    },
+    {
+      "path": "/area-51/assets/invariant-y-n-ledger-v7-2.csv",
+      "file": "area-51/assets/invariant-y-n-ledger-v7-2.csv",
+      "title": "Invariant v7.2 joined y_n and published card-count ledger"
+    },
+    {
+      "path": "/research/line-game/Telescope_51_Beta_Draft_v0_1.html",
+      "file": "research/line-game/Telescope_51_Beta_Draft_v0_1.html",
+      "title": "Telescope 51: What a Rule Can See — public-beta rule laboratory"
+    },
+    {
+      "path": "/papers/feed.xml",
+      "file": "papers/feed.xml",
+      "title": "Research catalogue feed"
+    },
+    {
+      "path": "/release-v1.13.6.json",
+      "file": "release-v1.13.6.json",
+      "title": "Cerebral Graphix v1.13.6 release manifest"
+    },
+    {
+      "path": "/release-v1.13.8.json",
+      "file": "release-v1.13.8.json",
+      "title": "Cerebral Graphix v1.13.8 release manifest"
+    },
+    {
+      "path": "/release-v1.13.9.json",
+      "file": "release-v1.13.9.json",
+      "title": "Cerebral Graphix v1.13.9 release manifest"
+    },
+    {
+      "path": "/release-v1.13.10.json",
+      "file": "release-v1.13.10.json",
+      "title": "Cerebral Graphix v1.13.10 release manifest"
+    },
+    {
+      "path": "/citation/",
+      "file": "citation/index.html",
+      "title": "Citation and automated-use guidance"
+    },
+    {
+      "path": "/citation/catalog.json",
+      "file": "citation/catalog.json",
+      "title": "Machine-readable citation catalogue"
+    },
+    {
+      "path": "/CITATION.bib",
+      "file": "CITATION.bib",
+      "title": "BibTeX for indexed research records"
+    },
+    {
+      "path": "/llms.txt",
+      "file": "llms.txt",
+      "title": "AI-readable research and citation guide"
+    }
+  ],
+  "tools": [
+    {
+      "path": "/tools/finite_observer_ledger/",
+      "file": "tools/finite_observer_ledger/index.html",
+      "title": "The Finite-Observer Ledger — Evidence Companion",
+      "status": "public",
+      "type": "interactive_evidence_companion",
+      "zenodo": "https://zenodo.org/records/21444339"
+    },
+    {
+      "path": "/tools/",
+      "file": "tools/index.html",
+      "title": "Tools directory",
+      "status": "public"
+    },
+    {
+      "path": "/tools/01_bridge_ASCII.html",
+      "file": "tools/01_bridge_ASCII.html",
+      "title": "ASCII Bridge",
+      "status": "public"
+    },
+    {
+      "path": "/tools/02_utf8_alpha.html",
+      "file": "tools/02_utf8_alpha.html",
+      "title": "UTF-8 Alpha Bridge",
+      "status": "alpha"
+    },
+    {
+      "path": "/tools/centered_rational_chamber/",
+      "file": "tools/centered_rational_chamber/index.html",
+      "title": "Centered Rational Chamber Geometry",
+      "status": "public",
+      "type": "neutral_math_lab"
+    },
+    {
+      "path": "/tools/centered_rational_chamber/method.html",
+      "file": "tools/centered_rational_chamber/method.html",
+      "title": "Centered Rational Chamber Method & Limitations",
+      "status": "public",
+      "type": "method_limitations"
+    },
+    {
+      "path": "/tools/forge_os_v12.html",
+      "file": "tools/forge_os_v12.html",
+      "title": "Forge OS v12.0 — Unified Prime Observatory",
+      "status": "source_artifact",
+      "type": "documented_before"
+    },
+    {
+      "path": "/tools/forge_os_v16.3.html",
+      "file": "tools/forge_os_v16.3.html",
+      "title": "Forge OS v16.3 — The Rhythm Forge",
+      "status": "public",
+      "type": "offline_audio_tool"
+    },
+    {
+      "path": "/tools/makers-mark.html",
+      "file": "tools/makers-mark.html",
+      "title": "Maker’s Mark Reconstruction Challenge",
+      "status": "public"
+    },
+    {
+      "path": "/tools/rational_address_showpiece/",
+      "file": "tools/rational_address_showpiece/index.html",
+      "title": "Rational Address Showpiece",
+      "status": "public",
+      "type": "classical_showpiece"
+    },
+    {
+      "path": "/tools/rational_address_showpiece/method.html",
+      "file": "tools/rational_address_showpiece/method.html",
+      "title": "Rational Address Showpiece Method",
+      "status": "public",
+      "type": "method_limitations"
+    },
+    {
+      "path": "/tools/rational_address_showpiece_portable.html",
+      "file": "tools/rational_address_showpiece_portable.html",
+      "title": "Rational Address Showpiece Portable HTML",
+      "status": "public",
+      "type": "portable_html"
+    },
+    {
+      "path": "/tools/six_cardinal_picone.html",
+      "file": "tools/six_cardinal_picone.html",
+      "title": "Six Cardinal Picone interactive construction",
+      "status": "beta"
+    },
+    {
+      "path": "/tools/six_cardinal_picone_cdn.html",
+      "file": "tools/six_cardinal_picone_cdn.html",
+      "title": "Six Cardinal Picone CDN build",
+      "status": "beta"
+    },
+    {
+      "path": "/tools/sound_volume_source_note_forge_v12.html",
+      "file": "tools/sound_volume_source_note_forge_v12.html",
+      "title": "Sound Volume Source Note — Forge OS v12",
+      "status": "public",
+      "type": "source_note"
+    },
+    {
+      "path": "/tools/sound_volume_source_note_forge_v12.md",
+      "file": "tools/sound_volume_source_note_forge_v12.md",
+      "title": "Sound Volume Source Note Markdown",
+      "status": "public",
+      "type": "source_note_markdown"
+    },
+    {
+      "path": "/tools/chamber_lift_atlas.html",
+      "file": "tools/chamber_lift_atlas.html",
+      "title": "Chamber-Lift Atlas",
+      "status": "public",
+      "type": "atlas"
+    },
+    {
+      "path": "/tools/polar_shell_renderer.html",
+      "file": "tools/polar_shell_renderer.html",
+      "title": "The Polar Shell Renderer — Equal-Area Denominator Shells",
+      "status": "public",
+      "type": "interactive_representation",
+      "doi": "10.5281/zenodo.21280464"
+    },
+    {
+      "path": "/tools/polar_shell_prime_numerator_legacy.html",
+      "file": "tools/polar_shell_prime_numerator_legacy.html",
+      "title": "Prime-Numerator Shell Renderer — preserved legacy research view",
+      "status": "public",
+      "type": "legacy_research_view"
+    },
+    {
+      "path": "/tools/triangular_addressed_c_geometry/",
+      "file": "tools/triangular_addressed_c_geometry/index.html",
+      "title": "Triangular Addressing C-Geometry live paper",
+      "status": "public",
+      "doi": "10.5281/zenodo.21444929"
+    }
+  ],
+  "finance": [
+    {
+      "path": "/finance/",
+      "file": "finance/index.html",
+      "title": "Φ Finance Weather beta dashboard",
+      "type": "beta_dashboard",
+      "status": "beta"
+    },
+    {
+      "path": "/finance/live.html",
+      "file": "finance/live.html",
+      "title": "Φ Finance Weather live chamber grid",
+      "type": "live_chamber_dashboard",
+      "status": "public"
+    },
+    {
+      "path": "/finance/legacy.html",
+      "file": "finance/legacy.html",
+      "title": "Φ Finance Weather charts over time",
+      "type": "aggregate_history_view",
+      "status": "public"
+    },
+    {
+      "path": "/finance/glossary.html",
+      "file": "finance/glossary.html",
+      "title": "Finance Weather glossary",
+      "status": "public"
+    },
+    {
+      "path": "/finance/receipts/",
+      "file": "finance/receipts/index.html",
+      "title": "Finance receipt archive",
+      "status": "public"
+    },
+    {
+      "path": "/finance/latest/public_manifest.json",
+      "file": "finance/latest/public_manifest.json",
+      "title": "Latest public finance manifest",
+      "status": "machine_readable"
+    }
+  ],
+  "papers": [
+    {
+      "path": "/papers/From_Measure_to_Flux_Jeffery_Huckstead_FIGURE_ENHANCED_FINAL.pdf",
+      "file": "papers/From_Measure_to_Flux_Jeffery_Huckstead_FIGURE_ENHANCED_FINAL.pdf",
+      "title": "From Measure to Flux",
+      "status": "public",
+      "type": "paper",
+      "zenodo": "https://zenodo.org/records/21444339"
+    },
+    {
+      "path": "/papers/The_Finite_Observer_Ledger_Jeffery_Huckstead_FIGURE_ENHANCED_FINAL.pdf",
+      "file": "papers/The_Finite_Observer_Ledger_Jeffery_Huckstead_FIGURE_ENHANCED_FINAL.pdf",
+      "title": "The Finite-Observer Ledger",
+      "status": "public",
+      "type": "paper",
+      "zenodo": "https://zenodo.org/records/21444339"
+    },
+    {
+      "path": "/papers/annular_shell_isolation.pdf",
+      "file": "papers/annular_shell_isolation.pdf",
+      "title": "Annular Shell Isolation Near Zeta Zeros",
+      "status": "public",
+      "doi": "10.5281/zenodo.20564213"
+    },
+    {
+      "path": "/papers/polar_shell_renderer.tex",
+      "file": "papers/polar_shell_renderer.tex",
+      "title": "The Polar Shell Renderer TeX source",
+      "status": "public"
+    },
+    {
+      "path": "/papers/polar_shell_renderer.pdf",
+      "file": "papers/polar_shell_renderer.pdf",
+      "title": "The Polar Shell Renderer",
+      "status": "public",
+      "doi": "10.5281/zenodo.21280464"
+    },
+    {
+      "path": "/papers/03_capstone_paper.pdf",
+      "file": "papers/03_capstone_paper.pdf",
+      "title": "A Message Hidden as an Address"
+    },
+    {
+      "path": "/papers/Addresses_Are_Not_Meanings.pdf",
+      "file": "papers/Addresses_Are_Not_Meanings.pdf",
+      "title": "Addresses Are Not Meanings",
+      "status": "public",
+      "type": "paper",
+      "zenodo": "https://zenodo.org/records/20777416"
+    },
+    {
+      "path": "/papers/Kitchen_Scale_Breath_Figures_Measured_v03.pdf",
+      "file": "papers/Kitchen_Scale_Breath_Figures_Measured_v03.pdf",
+      "title": "Kitchen-Scale Breath Figures and Coalescence Events",
+      "status": "public",
+      "type": "measured_salvage_paper"
+    },
+    {
+      "path": "/papers/Volume_I_Exact_Geometry_and_Symbolic_Foundations.pdf",
+      "file": "papers/Volume_I_Exact_Geometry_and_Symbolic_Foundations.pdf",
+      "title": "Volume I: Exact Geometry and Symbolic Foundations",
+      "status": "public",
+      "type": "paper",
+      "zenodo": "https://zenodo.org/records/20768701"
+    },
+    {
+      "path": "/papers/fable_v09_ladder_infographic.pdf",
+      "file": "papers/fable_v09_ladder_infographic.pdf",
+      "title": "Capstone ladder infographic PDF"
+    },
+    {
+      "path": "/papers/prime_numerators_tfg.pdf",
+      "file": "papers/prime_numerators_tfg.pdf",
+      "title": "Prime Numerators of the Triangular-Fractional Grid",
+      "status": "public",
+      "type": "paper",
+      "zenodo": "https://zenodo.org/records/21200816",
+      "oeis": "https://oeis.org/draft/A394477"
+    },
+    {
+      "path": "/papers/chamber_lift_series.html",
+      "file": "papers/chamber_lift_series.html",
+      "title": "Chamber-Lift Series Index",
+      "status": "public",
+      "type": "zenodo_portfolio_index"
+    },
+    {
+      "path": "/papers/research-index.html",
+      "file": "papers/research-index.html",
+      "title": "Active research index",
+      "status": "public",
+      "count": 61
+    },
+    {
+      "path": "/papers/active-research.json",
+      "file": "papers/active-research.json",
+      "title": "Active research machine manifest",
+      "status": "machine_readable"
+    },
+    {
+      "path": "/area-51/",
+      "file": "area-51/index.html",
+      "title": "Area 51",
+      "date": "2026-09-20",
+      "status": "public Alpha 0.1",
+      "type": "interactive_research_laboratory",
+      "based_on_doi": "10.5281/zenodo.22851517"
+    },
+    {
+      "path": "/area-51/invariant/",
+      "file": "area-51/invariant/index.html",
+      "title": "Invariant — maintained Area 51 edition",
+      "status": "maintained interactive",
+      "version": "7.2",
+      "based_on_doi": "10.5281/zenodo.22851517"
+    },
+    {
+      "path": "/area-51/telescope-51/",
+      "file": "area-51/telescope-51/index.html",
+      "title": "Telescope 51: What a Rule Can See",
+      "status": "public beta",
+      "version": "0.1-public-beta",
+      "paper_version": "0.2 working edition",
+      "based_on_doi": "10.5281/zenodo.22851517"
+    },
+    {
+      "path": "/area-51/memory-51/",
+      "file": "area-51/memory-51/index.html",
+      "title": "Memory 51",
+      "status": "public Alpha",
+      "version": "memory51-alpha-0.1",
+      "based_on_doi": "10.5281/zenodo.22851517"
+    },
+    {
+      "path": "/area-51/blackjack-51/",
+      "file": "area-51/blackjack-51/index.html",
+      "title": "Blackjack 51",
+      "status": "public Alpha",
+      "version": "blackjack51-alpha-0.2",
+      "based_on_doi": "10.5281/zenodo.22851517"
+    },
+    {
+      "path": "/research/line-game/The_Line_Game_Surprise_Is_Not_Meaning_v7_2.pdf",
+      "file": "research/line-game/The_Line_Game_Surprise_Is_Not_Meaning_v7_2.pdf",
+      "title": "The Line Game | Surprise Is Not Meaning v7.2",
+      "date": "2026-09-20",
+      "pages": 9,
+      "status": "final release",
+      "doi": "10.5281/zenodo.22851517"
+    },
+    {
+      "path": "/research/line-game/Telescope_51_Beta_Draft_v0_1.html",
+      "file": "research/line-game/Telescope_51_Beta_Draft_v0_1.html",
+      "title": "Telescope 51: What a Rule Can See — public-beta laboratory",
+      "date": "2026-09-20",
+      "status": "public beta",
+      "based_on_doi": "10.5281/zenodo.22851517"
+    },
+    {
+      "path": "/research/line-game/Telescope_51_What_a_Rule_Can_See_v0_2.pdf",
+      "file": "research/line-game/Telescope_51_What_a_Rule_Can_See_v0_2.pdf",
+      "title": "Telescope 51: What a Rule Can See v0.2",
+      "date": "2026-09-20",
+      "pages": 6,
+      "status": "working edition",
+      "based_on_doi": "10.5281/zenodo.22851517"
+    },
+    {
+      "path": "/research/line-game/Telescope_51_What_a_Rule_Can_See_v0_2.tex",
+      "file": "research/line-game/Telescope_51_What_a_Rule_Can_See_v0_2.tex",
+      "title": "Telescope 51: What a Rule Can See v0.2 TeX source",
+      "status": "public source"
+    },
+    {
+      "path": "/research/line-game/Telescope_51_Archive_Addressing_v0_1.json",
+      "file": "research/line-game/Telescope_51_Archive_Addressing_v0_1.json",
+      "title": "Telescope 51 archive-addressing corollary",
+      "status": "machine-readable exact statement"
+    },
+    {
+      "path": "/research/line-game/Invariant.html",
+      "file": "research/line-game/Invariant.html",
+      "title": "Invariant portable interactive supplement",
+      "status": "public portable HTML"
+    },
+    {
+      "path": "/research/line-game/Invariant_v7_2.html",
+      "file": "research/line-game/Invariant_v7_2.html",
+      "title": "Invariant original v7.2 presentation",
+      "status": "public alternate HTML"
+    },
+    {
+      "path": "/research/line-game/Playing_Cards_Field_Guide.pdf",
+      "file": "research/line-game/Playing_Cards_Field_Guide.pdf",
+      "title": "Invariant playing-card field guide",
+      "status": "public guide"
+    },
+    {
+      "path": "/research/line-game/Playing_Cards_Printable_Set.pdf",
+      "file": "research/line-game/Playing_Cards_Printable_Set.pdf",
+      "title": "Invariant printable card set",
+      "status": "public print asset"
+    },
+    {
+      "path": "/research/line-game/Exact_Card_String.txt",
+      "file": "research/line-game/Exact_Card_String.txt",
+      "title": "Invariant exact card string",
+      "status": "public exact data"
+    },
+    {
+      "path": "/research/line-game/The_Line_Game_v7_2_SOURCE_AND_VERIFICATION.zip",
+      "file": "research/line-game/The_Line_Game_v7_2_SOURCE_AND_VERIFICATION.zip",
+      "title": "The Line Game v7.2 source and verification",
+      "status": "public source package"
+    },
+    {
+      "path": "/papers/Triangular_Addressing_C_Geometry_21444929.pdf",
+      "file": "papers/Triangular_Addressing_C_Geometry_21444929.pdf",
+      "title": "Triangular Addressing C-Geometry",
+      "status": "public",
+      "doi": "10.5281/zenodo.21444929"
+    },
+    {
+      "path": "/papers/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf",
+      "file": "papers/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf",
+      "title": "Triangular-n Postmaster: Reading Volume I v5.2",
+      "date": "2026-09",
+      "pages": 101,
+      "status": "RH OPEN",
+      "concept_doi": "10.5281/zenodo.21968915"
+    },
+    {
+      "path": "/papers/TN_Postmaster_Volume_I_v5_2_TECHNICAL_DOSSIER.pdf",
+      "file": "papers/TN_Postmaster_Volume_I_v5_2_TECHNICAL_DOSSIER.pdf",
+      "title": "Triangular-n Postmaster: Technical Dossier v5.2",
+      "date": "2026-09",
+      "pages": 287,
+      "status": "RH OPEN",
+      "concept_doi": "10.5281/zenodo.21968915"
+    },
+    {
+      "path": "/papers/TN_Postmaster_Volume_I_v5_2_SOURCE.zip",
+      "file": "papers/TN_Postmaster_Volume_I_v5_2_SOURCE.zip",
+      "title": "Triangular-n Postmaster v5.2 source edition (Markdown masters, build scripts, interface check, evidence)",
+      "status": "public source package"
+    },
+    {
+      "path": "/papers/anchors_v5_2.json",
+      "file": "papers/anchors_v5_2.json",
+      "title": "Named page anchors for the v5.2 volumes (22 targets)",
+      "status": "public data"
+    },
+    {
+      "path": "/papers/TN_Postmaster_Volume_I_v5_1_READING_VOLUME.pdf",
+      "file": "papers/TN_Postmaster_Volume_I_v5_1_READING_VOLUME.pdf",
+      "title": "Triangular-n Postmaster: Reading Volume I v5.1",
+      "date": "2026-09",
+      "pages": 101,
+      "status": "previous local edition; RH OPEN",
+      "concept_doi": "10.5281/zenodo.21968915"
+    },
+    {
+      "path": "/papers/TN_Postmaster_Volume_I_v5_1_TECHNICAL_DOSSIER.pdf",
+      "file": "papers/TN_Postmaster_Volume_I_v5_1_TECHNICAL_DOSSIER.pdf",
+      "title": "Triangular-n Postmaster: Technical Dossier v5.1",
+      "date": "2026-09",
+      "pages": 281,
+      "status": "previous local edition; RH OPEN",
+      "concept_doi": "10.5281/zenodo.21968915"
+    },
+    {
+      "path": "/papers/TN_Postmaster_Volume_I_v4_7_READING_VOLUME.pdf",
+      "file": "papers/TN_Postmaster_Volume_I_v4_7_READING_VOLUME.pdf",
+      "title": "Triangular-n Postmaster: Reading Volume I v4.7",
+      "date": "2026-09-15",
+      "status": "archived local edition; RH OPEN",
+      "related_record": "https://zenodo.org/records/22772092"
+    },
+    {
+      "path": "/papers/TN_Postmaster_Volume_I_v5_1_PUBLICATION_PACKAGE_PART_1_OF_2.zip",
+      "file": "papers/TN_Postmaster_Volume_I_v5_1_PUBLICATION_PACKAGE_PART_1_OF_2.zip",
+      "title": "Triangular-n Postmaster v5.1 publication package — part 1 of 2",
+      "status": "public source package"
+    },
+    {
+      "path": "/papers/TN_Postmaster_Volume_I_v5_1_PUBLICATION_PACKAGE_PART_2_OF_2.zip",
+      "file": "papers/TN_Postmaster_Volume_I_v5_1_PUBLICATION_PACKAGE_PART_2_OF_2.zip",
+      "title": "Triangular-n Postmaster v5.1 publication package — part 2 of 2",
+      "status": "public source package"
+    },
+    {
+      "path": "/papers/TN_Postmaster_Volume_I_v5_1_PUBLICATION_PACKAGE_DOWNLOADS.txt",
+      "file": "papers/TN_Postmaster_Volume_I_v5_1_PUBLICATION_PACKAGE_DOWNLOADS.txt",
+      "title": "Triangular-n Postmaster v5.1 publication package download instructions",
+      "status": "public instructions"
+    }
+  ],
+  "notes": [
+    "A fresh public overnight feed with usable coverage automatically drives teal overnight BPS mode; inactive, rejected, error, or data older than 20 minutes fails closed to the regular snapshot.",
+    "Charts over time is a first-class companion to the current 4x4 grid.",
+    "The local Postmaster edition is v5.2: a 101-page Reading Volume, 287-page Technical Dossier, source edition and web reading route; v5.1 stays hosted as the previous edition. This edition does not yet have its own Zenodo deposit. RH remains open.",
+    "The research catalogue lists 61 repository records, not 61 distinct works. The Line Game records 20792999 and 22851517 are linked as editions of the same dual-titled work.",
+    "The sitemap includes stable public pages rather than every data artifact.",
+    "v1.13.6 distinguishes the evolving Line Game live paper from its maintained v7.2 return edition and reconnects C-Geometry as a first-class interactive paper.",
+    "v1.13.8 preserves the live Telescope button placement while adding a self-canonical public-beta page, a six-page referenced paper, archive-addressing boundaries and machine-readable citation paths.",
+    "v1.13.9 promotes Area 51 as the homepage lead laboratory; adds stable current routes for Invariant, Telescope 51, Memory 51 and Blackjack 51; preserves the approved Telescope button placement; and separates card data, declared representations, finite proof value and interpretation.",
+    "v1.13.10 repairs the cache-stale homepage hero, makes Invariant and Blackjack 51 the core pair, restores the archived y_n/card-count running ledger, unifies the card and credit language, and prices exact visible blackjack odds separately from the forecast stake."
+  ],
+  "external_records": [
+    {
+      "url": "https://doi.org/10.5281/zenodo.23004800",
+      "title": "The Line Game | Surprise Is Not Meaning — latest record",
+      "type": "zenodo_record",
+      "group": "meaning and reconstruction"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.23004789",
+      "title": "Project 51: Reading the Record Across Rules — Area 51 games and exhibit research",
+      "type": "zenodo_record",
+      "group": "Area 51"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.23004335",
+      "title": "Triangular-n Postmaster Volume I v5.2",
+      "type": "zenodo_record",
+      "group": "Postmaster version history"
+    },
+    {
+      "url": "https://zenodo.org/records/22851517",
+      "title": "The Line Game | Surprise Is Not Meaning",
+      "type": "zenodo_record",
+      "group": "meaning and reconstruction",
+      "relationship": "updated record for the work previously catalogued as 20792999",
+      "previous_record": "https://zenodo.org/records/20792999"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.20792808",
+      "title": "The Line Game version series",
+      "type": "zenodo_concept_doi",
+      "group": "meaning and reconstruction",
+      "relationship": "concept DOI: resolves to the current version (v7.5 = 10.5281/zenodo.22943070 as of 27 September 2026); cite it for the current paper, and a version DOI only where a specific version is meant"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.21968915",
+      "title": "Triangular-n Postmaster version series",
+      "type": "zenodo_concept_doi",
+      "group": "Postmaster version history"
+    },
+    {
+      "url": "https://zenodo.org/records/22844194",
+      "title": "Triangular n Postmaster: From the Discrete Primitive to the Completed Source Frontier",
+      "type": "zenodo_record",
+      "group": "September repository edition preceding local v5.1"
+    },
+    {
+      "url": "https://zenodo.org/records/21444339",
+      "title": "From Measure to Flux / The Finite-Observer Ledger: Evidence Companion",
+      "type": "zenodo_record",
+      "group": "finite-observer"
+    },
+    {
+      "url": "https://zenodo.org/records/21200816",
+      "title": "Prime Numerators of the Triangular-Fractional Grid: A Shell Stratification and a Lens for Prime-in-Progression Density",
+      "type": "zenodo_record",
+      "group": "current"
+    },
+    {
+      "url": "https://zenodo.org/records/21440877",
+      "title": "Divisor-Band Bijections and Totient Shells in the Triangular-Fractional Grid",
+      "type": "zenodo_record",
+      "group": "foundation"
+    },
+    {
+      "url": "https://zenodo.org/records/20580136",
+      "title": "The Jordan Chamber Lift: Higher-Dimensional Denominator Shells via the GCD Collapse",
+      "type": "zenodo_record",
+      "group": "foundation"
+    },
+    {
+      "url": "https://zenodo.org/records/20575700",
+      "title": "Divisor-Filtered Farey Chambers and Localized Discrepancy",
+      "type": "zenodo_record",
+      "group": "foundation"
+    },
+    {
+      "url": "https://zenodo.org/records/20634306",
+      "title": "The Goldbach Chamber Lift: Midpoint Prime Occupancy via Symmetric Residue Gates",
+      "type": "zenodo_record",
+      "group": "residue-gate"
+    },
+    {
+      "url": "https://zenodo.org/records/20612902",
+      "title": "The Odd Perfect Number Chamber Lift: Abundancy Balance via Euler Prime Form",
+      "type": "zenodo_record",
+      "group": "residue-gate"
+    },
+    {
+      "url": "https://zenodo.org/records/20777503",
+      "title": "The Prime-Square Chamber Lift: Short-Interval Occupancy via Quadratic Boundary Windows",
+      "type": "zenodo_record",
+      "group": "geometry"
+    },
+    {
+      "url": "https://zenodo.org/records/20615213",
+      "title": "N^2+1 Chamber Lift: Quadratic Residue Sieve for Landau's Problem",
+      "type": "zenodo_record",
+      "group": "quadratic sieve"
+    },
+    {
+      "url": "https://zenodo.org/records/20601277",
+      "title": "The Collatz Chamber Lift: Parity-Vector Descent via Affine Residue Geometry",
+      "type": "zenodo_record",
+      "group": "method sibling"
+    },
+    {
+      "url": "https://zenodo.org/records/20602122",
+      "title": "The Congruent Number Chamber Lift: Rational Triangle Areas via Tunnell Lattice Counts",
+      "type": "zenodo_record",
+      "group": "method sibling"
+    },
+    {
+      "url": "https://zenodo.org/records/20607004",
+      "title": "The Erdős–Straus Chamber Lift: Reciprocal Defect Routing via Completing-the-Rectangle Divisor Gates",
+      "type": "zenodo_record",
+      "group": "method sibling"
+    },
+    {
+      "url": "https://zenodo.org/records/20644786",
+      "title": "The Exponent Chamber Lift: Beal, Reciprocal Shells, and the First Hyperbolic Shadow",
+      "type": "zenodo_record",
+      "group": "method sibling"
+    },
+    {
+      "url": "https://zenodo.org/records/20635829",
+      "title": "The Radical Chamber Lift: abc, Valuation Excess, and Additive Closure",
+      "type": "zenodo_record",
+      "group": "method sibling"
+    },
+    {
+      "url": "https://zenodo.org/records/20777470",
+      "title": "The Lehmer Totient Chamber Lift: Product Totient Gates via Korselt Supports",
+      "type": "zenodo_record",
+      "group": "totient gate"
+    },
+    {
+      "url": "https://zenodo.org/records/20634767",
+      "title": "The Zeta-Exponent Chamber Lift: Dimensional Visibility, Jordan Shadows, and Valuation Mirrors",
+      "type": "zenodo_record",
+      "group": "Euler product"
+    },
+    {
+      "url": "https://zenodo.org/records/20644858",
+      "title": "Tolled Dilation Scale and Lattice Visibility: A Discrete Atlas for Primitive Rays, Logarithmic Obstruction Cost, and Square-Free Mirrors",
+      "type": "zenodo_record",
+      "group": "method warning"
+    },
+    {
+      "url": "https://zenodo.org/records/20644917",
+      "title": "One Euler Product, Many Coordinates: Bernoulli, Sine, Zeta Continuation, and Radial Layer-Counting as Shared Analytic Infrastructure",
+      "type": "zenodo_record",
+      "group": "method keystone"
+    },
+    {
+      "url": "https://zenodo.org/records/20581459",
+      "title": "Alternating Interstitial Geometry of Ball–Cube Recursions: A Bridge Note from Jordan Chambers to Boundary-Conditioned Bodies",
+      "type": "zenodo_record",
+      "group": "geometry"
+    },
+    {
+      "url": "https://zenodo.org/records/20671738",
+      "title": "Ledger-Preserving Forms of Explicit Formulae: Typed Bookkeeping and Instrument Calibration",
+      "type": "zenodo_record",
+      "group": "discipline"
+    },
+    {
+      "url": "https://oeis.org/draft/A394477",
+      "title": "OEIS draft A394477 — chamber prime-numerator count",
+      "type": "oeis_draft",
+      "group": "sequence"
+    }
+  ],
+  "plots": [
+    {
+      "path": "/plots/",
+      "file": "plots/index.html",
+      "title": "Plots & Visualizations",
+      "status": "public"
+    }
+  ]
+}

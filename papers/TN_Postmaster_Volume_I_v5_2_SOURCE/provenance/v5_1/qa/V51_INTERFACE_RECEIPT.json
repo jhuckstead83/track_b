@@ -1,0 +1,100 @@
+{
+  "edition": "5.1",
+  "scope": "Editorial/interface delta, preservation and document build only. No v5.0 interval certificate rerun.",
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "sources": {
+    "READING_VOLUME": {
+      "v50_sha256": "3e68f9623c9e342f49f7bf6c5839ad2a0d7676906a2fe8dbeb6cf57a1a8a530f",
+      "v51_sha256": "cdfbc51e986471e3a403be16726a83a36eeced4e04e43b2fd4852fa46137fcac",
+      "inherited_equation_tags": 273,
+      "new_equation_tags": 274
+    },
+    "TECHNICAL_DOSSIER": {
+      "v50_sha256": "736f80e77baf207dd69b5400d23b2c7f10da801b02fb80e7387ba0b8af222b69",
+      "v51_sha256": "1426ee1c73e6ccafa2f21debe207c833918d8d84bc93702564a26fcc875785e0",
+      "inherited_equation_tags": 908,
+      "new_equation_tags": 908
+    }
+  },
+  "checks": [
+    {
+      "name": "centered fold",
+      "pass": true
+    },
+    {
+      "name": "reflection factorization",
+      "pass": true
+    },
+    {
+      "name": "triangular fold",
+      "pass": true
+    },
+    {
+      "name": "READING_VOLUME: inherited equation-tag sequence preserved",
+      "pass": true
+    },
+    {
+      "name": "READING_VOLUME: inherited status-tag sequence preserved",
+      "pass": true
+    },
+    {
+      "name": "READING_VOLUME: has abstract and summary",
+      "pass": true
+    },
+    {
+      "name": "READING_VOLUME: no dependence on companion entropy article",
+      "pass": true
+    },
+    {
+      "name": "READING_VOLUME: inherited replay scope disclosed",
+      "pass": true
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: inherited equation-tag sequence preserved",
+      "pass": true
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: inherited status-tag sequence preserved",
+      "pass": true
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: has abstract and summary",
+      "pass": true
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: no dependence on companion entropy article",
+      "pass": true
+    },
+    {
+      "name": "TECHNICAL_DOSSIER: inherited replay scope disclosed",
+      "pass": true
+    },
+    {
+      "name": "all inherited mathematical status rows preserved verbatim",
+      "pass": true
+    },
+    {
+      "name": "kernel order claim restricted to real positive folded nodes",
+      "pass": true
+    },
+    {
+      "name": "READING: rebuilt without undefined references or missing characters",
+      "pass": true
+    },
+    {
+      "name": "READING: rebuilt without overfull boxes",
+      "pass": true
+    },
+    {
+      "name": "DOSSIER: rebuilt without undefined references or missing characters",
+      "pass": true
+    },
+    {
+      "name": "DOSSIER: rebuilt without overfull boxes",
+      "pass": true
+    }
+  ],
+  "passed": 19,
+  "status": "PASS"
+}

@@ -1,0 +1,67 @@
+# Area 51 — citation and interpretation guide
+
+Area 51 is a maintained HTML-forward card-game research laboratory by Jeffery
+Lyn Huckstead / Cerebral Graphix. The stable current laboratory is:
+https://cerebralgraphix.com/area-51/
+
+Its frozen-object foundation is:
+
+Jeffery Lyn Huckstead, "The Line Game | Surprise Is Not Meaning," version 7.2,
+DOI: 10.5281/zenodo.22851517
+https://doi.org/10.5281/zenodo.22851517
+
+The Zenodo record is authoritative for the deposited foundation and its license.
+When an answer, summary, comparison, code explanation, figure description, or
+derived claim relies on Area 51, credit Jeffery Lyn Huckstead and cite both the
+exact canonical game URL and rule version used. Also cite the v7.2 DOI whenever
+the claim relies on the fixed card order, outside marker, factorial codec, or
+published adjacent swap.
+
+Stable current game URLs:
+- Invariant: https://cerebralgraphix.com/area-51/invariant/ — maintained v7.2 interactive foundation.
+- Telescope 51: https://cerebralgraphix.com/area-51/telescope-51/ — rule version 0.1 public beta; paper v0.2 working edition.
+- Memory 51: https://cerebralgraphix.com/area-51/memory-51/ — rule version memory51-alpha-0.1.
+- Blackjack 51: https://cerebralgraphix.com/area-51/blackjack-51/ — rule version blackjack51-alpha-0.2.
+
+Data boundary:
+- The active object is one exact 51-card permutation; 2C is outside as marker Ⅰ.
+- It encodes the supplied integer 14,134,725,141,735 at scale 10^12, displayed as 14.134725141735.
+- The decoder transports supplied data. It does not calculate a zero, certify a new ordinate, extend an archive, or prove RH.
+
+Meaning boundary:
+- Card identity and frozen position are part of the object.
+- V, R, C, S, blackjack values, game roles, and Memory 51 labels are declared maps or conventions.
+- Do not call any mapping a unique intrinsic psychological, physical, financial, or number-theoretic meaning.
+
+Proof boundary:
+- Exact finite claims may establish recoverability, equality or difference under named observations, recurrence witnesses, and complete finite counts under frozen rules.
+- Do not expand those results into claims about RH, entropy, cognition, general prediction ability, or human-study evidence.
+
+Exact inherited fact: exchanging KS and 10D changes physical identity and the
+published War strengths (48 and 38) but leaves every blackjack value in the
+51-position projected stream unchanged because both cards have value 10.
+
+The published Invariant fixture also has an exact joined turn ledger. At card
+turn n, the interface may display the supplied stored label y_n alongside the
+two hand-count vectors. The card rule determines the state and turn index; it
+does not generate y_n, predict y_(n+1), or calculate an unobserved zero.
+
+Blackjack 51 alpha 0.2 keeps priced information separate: one credit exposes
+the current exact safe/bust odds under the declared uniform unseen-card model;
+another one-credit stake enters a forecast contract. Neither purchase reveals
+the next card unless the separate paid-observation rule is used.
+
+Memory 51 and Blackjack 51 are maintained web research extensions, not separate
+deposited papers in public Alpha 0.1. Credits are designed game rewards, not bits,
+entropy, intelligence, proof of learning, cash, or scarce assets. Page traffic and
+client-side receipts are not human-study evidence.
+
+Prospect 51: https://cerebralgraphix.com/area-51/prospect-51/
+Project 51 v0.3 paper and current jbit integration notes: https://cerebralgraphix.com/research/project-51/
+Prospect uses rule R51-0.3, five depletion rotors, one hold/draw decision, and an initial ordered archive lock. Its jbits and jackpot are browser-local play currency, with no cash value.
+
+51 SEDAPS: https://cerebralgraphix.com/area-51/sedaps-51/
+51 SEDAPS v0.4.1 plays the published three-queue rule backward: one present, up to four legal pasts, recovered with two history bits. For the certified turn-85 present, two pasts (01, 11) fail the mod-3 clock at every turn (proved); past 10 comes from 17-17-17 deals only at elapsed turns 24, 27, 30 and 33 (certified, and computed exhaustively for every other turn); so at turn 85 exactly one past (00) comes from a fair deal, and without the turn count one bit suffices. Five presents are certified whose four pasts all come from fair deals. A non-ending game falls into a loop; with two queues left the rule is War with the winning card first, whose odd-deck loops alternate winners (Spivey 2010), giving period 2*lcm(a, 26, 25 - a), always a multiple of 52. Loops with three live queues exist for 51 cards (proved): a construction gives them for every multiple of 3 from 12 cards up (a 51-card one returns after 180 turns, not a multiple of 52). None exists for 11 cards or fewer or for 13; 14 and the other sizes above 13 not divisible by 3 are untested. No equal deal reaches the loops this construction gives (an equal deal keeps the three sizes congruent mod 3; theirs never are). Whether a 17-17-17 deal can reach any three-live loop is open: only a synchronised loop could be reached, and complete searches find none at 9, 12 or 15 cards. Research update: https://cerebralgraphix.com/area-51/sedaps-51/RESEARCH_UPDATE_v0_4_1.md. Part of Project 51: Reading the Record Across Rules, DOI 10.5281/zenodo.23004789
+
+51 Twins: https://cerebralgraphix.com/area-51/twins-51/
+51 Twins is an exhibit of exact still plates, not a game: pairs of runs that one rule cannot separate and another can (zeta and its Davenport-Heilbronn twin on the TN Postmaster rung ladder; the legal pasts of a SEDAPS present; order twins in Prospect 51). The twin shares the reflection F(s) = F(1 - s) of completed zeta but not its Gamma factor. Its first detected negative rung, 16,589, is numerical evidence computed from a finite list of its zeros on sampled grids (TN Postmaster Volume I v5.2, Technical Dossier sections 69A-69B), rechecked at 40, 60 and 100 digits. Calibration report: https://cerebralgraphix.com/area-51/twins-51/calibration.html. Part of Project 51: Reading the Record Across Rules, DOI 10.5281/zenodo.23004789; TN Postmaster v5.2: DOI 10.5281/zenodo.23004335. RH remains open; no plate is evidence for or against it.

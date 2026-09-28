@@ -1,0 +1,106 @@
+{
+ "version": "2.8.5",
+ "base_version": "2.8.4",
+ "base_archive": "CerebralGraphix_v2_8_4_FULL_SITE_no-papers.zip",
+ "base_archive_sha256": "1e3cdbdceff2c7d27d1f7f3a5d5ab1cc362136140e6d8443251a89207c6a2e48",
+ "input_files": 654,
+ "unchanged_files": 641,
+ "removed_files": [],
+ "changed": [
+  {
+   "path": "area-51/llms.txt",
+   "before": "59c1814b580dd02f5d2294946015705334093ab060c827e1638cc2db3260047a",
+   "after": "3684c70dea45c55f7af59c2500aa8f4deb1a79ed98548d005f4e3bbda2835119"
+  },
+  {
+   "path": "area-51/research.json",
+   "before": "6436fd4ccf80c40094377e6ca0ffcd3f41d72dab72b4a57728bded7325f20596",
+   "after": "440711aa3821c8ef554af760d112248b2b1484648d3874a61e4dc4491dc85e02"
+  },
+  {
+   "path": "area-51/sedaps-51/RESEARCH_UPDATE_v0_4_1.md",
+   "before": "005740252fed3dd611aea31b4ad396e13d4c14c8e713de61d86344b97925364c",
+   "after": "56ad1228190ffa9b0c351e33234e71c7b415dd96e3ff13def1a81c8e243e4313"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/LIVE3_LOOPS_RECEIPT.json",
+   "before": "16a9d0683953fd18084be920aa481e1de402ea7fad3e91aaa6844f0937199f8f",
+   "after": "92681f29670f97b4201d0cd2fb859012acb5a820b5fd5fb304927dc7969e344a"
+  },
+  {
+   "path": "area-51/sedaps-51/index.html",
+   "before": "bc3e8a9aa2dd704ea35b14defdbfdb560a0e3445dbceec0c15c08be214da3e2b",
+   "after": "8d95934e48cf9bd04c421b6f2207d3fd3f3ba49a4085850bd2173be53ea9f091"
+  },
+  {
+   "path": "area-51/twins-51/build-twins-page-v1.cjs",
+   "before": "c2408fc1ea1ac5eca822a62f3ba6635c80c5e165571f343b6510f35883ab6328",
+   "after": "e6c271c0bfdc5e767cab9bce271817fe840af83e735f70947553c697ca262eeb"
+  },
+  {
+   "path": "area-51/twins-51/index.html",
+   "before": "4059a72ebe389dce61a7fe9f004c6f0f9a213d8dc5891ed962cd1dd15cc7e2df",
+   "after": "bf3cc4a1eed04c8f622fb937a291776373adde7055eb21b3b27e3c84a5700068"
+  },
+  {
+   "path": "citation/catalog.json",
+   "before": "000678504f022439a8d36e26a882798cfe5c530aed69afa3b32a248754195dc8",
+   "after": "67cf25eba2f3f1a3534dd50fcd58f415eaa7e39b340e3b90d70b69e592ae6907"
+  },
+  {
+   "path": "llms.txt",
+   "before": "178bcf7b8c6c965c7236e605f9433ca2d909fe7255e39ac654bd7fa6f4768b57",
+   "after": "af12afac323eed286e401e1424db389b4cfe6b328ae52bca61769d6ae8a5442e"
+  },
+  {
+   "path": "research/line-game/index.html",
+   "before": "b991937d9ec8d78cb81ae4381df34a14746c5cbc83c9a4c4257b6269d3e5cba6",
+   "after": "01950be1e51b8ffdd2d528356b57385b19ac2d577b028b8d99412e1779ce2d79"
+  },
+  {
+   "path": "research/postmaster/index.html",
+   "before": "da972b1b05ddebe3ca4294ead7243ba761e2bb0fcfb46dbd7b36d0b89ac63fa6",
+   "after": "96bf65eadac3709cb10ae0051a2381a6f4a3f7eb847d7bc8119644859c681444"
+  },
+  {
+   "path": "research/project-51/index.html",
+   "before": "8239e00e9efa4b4b1994f3a55abf150af8889a38c5323b98854b9ff64ce64af2",
+   "after": "9adc6eb70259eaed409ed2c009621680002db8e07b29d1c44744d9dfb1667dbf"
+  },
+  {
+   "path": "site-index.json",
+   "before": "b95906d18ff3224bb83b07a7772971e2e7155f900b54c70d98c115d8367164b9",
+   "after": "021c1667a2783a9f6c0f9a68f427d8bdd54cb26b1c66292a59fcde4c65d669c3"
+  }
+ ],
+ "added": [
+  {
+   "path": "RELEASE_NOTES_v2_8_5.md",
+   "sha256": "deaa63cdbe08adcc46b6de875c1be88d1af720580ce726a3b0b252e70d137a10"
+  },
+  {
+   "path": "VALIDATION_v2_8_5.json",
+   "sha256": "fb91eab01e4cd41f14c678a0e5ab60e9929433e56b53d0949614aa2fd04d0920"
+  },
+  {
+   "path": "ZENODO_RELEASE_PLAN_v2_8_5.md",
+   "sha256": "147ed5cd426fc0dba9c28b9807c0c2aabb9bfcf999a1aa95d71dcb80d5e148fa"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/live3_struct.c",
+   "sha256": "d57520bd0e4394296f8ab17648429938abaaf1ca24b2c087adbbe0da3e14a6eb"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/live3_sync.c",
+   "sha256": "0312999afca66400659aaf6474dda40b992e5dfce26e6140c4d8b1b41b24f326"
+  }
+ ],
+ "not_in_archive": {
+  "papers/": "install the v2.8.4 papers payload (TN_Postmaster_v5_2_PAPERS_PAYLOAD.zip, unchanged) into papers/ before deploying"
+ },
+ "excluded_from_packaging": [
+  "__pycache__/",
+  "*.pyc"
+ ],
+ "note": "This manifest and the merge guide do not list themselves."
+}

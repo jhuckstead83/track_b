@@ -1,0 +1,129 @@
+{
+ "about": "Named page anchors for TN Postmaster Volume I v5.2 (PP279 section 3). Each target is found by its printed heading. Site links use #page=<page>. The same extractor reproduces all 22 v5.1 anchors from a v5.1 rebuild in the same environment.",
+ "extractor": "extract_anchors.py (PyMuPDF; heading text plus heading-size font)",
+ "reading": {
+  "file": "TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf",
+  "sha256": "80367cd57966232702b69263d0b813e9d8f24ed3f0948c7bb7981ea5b451ec3e",
+  "pages": 101,
+  "targets": {
+   "start_here": {
+    "page": 5,
+    "heading": "Start here",
+    "v5_1_page": 5
+   },
+   "part_I": {
+    "page": 13,
+    "heading": "Part I.",
+    "v5_1_page": 13
+   },
+   "part_II": {
+    "page": 28,
+    "heading": "Part II.",
+    "v5_1_page": 28
+   },
+   "source_note_R6A": {
+    "page": 29,
+    "heading": "R6A.",
+    "v5_1_page": 29
+   },
+   "part_III": {
+    "page": 33,
+    "heading": "Part III.",
+    "v5_1_page": 33
+   },
+   "folded_state_contract": {
+    "page": 34,
+    "heading": "The folded-state contract",
+    "v5_1_page": 34
+   },
+   "part_IV": {
+    "page": 44,
+    "heading": "Part IV.",
+    "v5_1_page": 44
+   },
+   "R12": {
+    "page": 47,
+    "heading": "R12.",
+    "v5_1_page": 47
+   },
+   "part_V": {
+    "page": 61,
+    "heading": "Part V.",
+    "v5_1_page": 61
+   },
+   "part_VI": {
+    "page": 79,
+    "heading": "Part VI.",
+    "v5_1_page": 79
+   },
+   "part_VII": {
+    "page": 88,
+    "heading": "Part VII.",
+    "v5_1_page": 88
+   },
+   "R23": {
+    "page": 89,
+    "heading": "R23.",
+    "v5_1_page": 89
+   },
+   "R24": {
+    "page": 91,
+    "heading": "R24.",
+    "v5_1_page": 91
+   },
+   "part_VIII": {
+    "page": 93,
+    "heading": "Part VIII.",
+    "v5_1_page": 93
+   },
+   "summary": {
+    "page": 94,
+    "heading": "Summary",
+    "v5_1_page": 94
+   },
+   "reference_11": {
+    "page": 95,
+    "heading": "11. (first entry numbered 11 after the References heading)",
+    "v5_1_page": 95
+   }
+  }
+ },
+ "dossier": {
+  "file": "TN_Postmaster_Volume_I_v5_2_TECHNICAL_DOSSIER.pdf",
+  "sha256": "48fbaeccbffad9013625724e6142d06fc8b9dc8d13e284610585b25f8fda890c",
+  "pages": 287,
+  "targets": {
+   "ch_I_discrete_primitives": {
+    "page": 9,
+    "heading": "Technical chapter I.",
+    "v5_1_page": 9
+   },
+   "ch_IV_completion_source": {
+    "page": 69,
+    "heading": "Technical chapter IV.",
+    "v5_1_page": 69
+   },
+   "ch_VI_widder_source_proofs": {
+    "page": 124,
+    "heading": "Technical chapter VI.",
+    "v5_1_page": 124
+   },
+   "ch_XIII_reflection_contours": {
+    "page": 226,
+    "heading": "Technical chapter XIII.",
+    "v5_1_page": 226
+   },
+   "ch_XIV_completed_energy": {
+    "page": 244,
+    "heading": "Technical chapter XIV.",
+    "v5_1_page": 244
+   },
+   "ch_XV_obligations_countermodels": {
+    "page": 266,
+    "heading": "Technical chapter XV.",
+    "v5_1_page": 266
+   }
+  }
+ },
+ "unchanged_pages": true
+}

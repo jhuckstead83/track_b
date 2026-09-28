@@ -1,0 +1,62 @@
+{
+ "version": "2.8.5",
+ "base_version": "2.8.4",
+ "date": "2026-09-28",
+ "status": "PASS",
+ "RH_STATUS": "OPEN",
+ "checks": [
+  {
+   "name": "DOI placeholders",
+   "result": "0 data-doi-pending attributes remain; the reserved DOIs 10.5281/zenodo.23004335, 23004789 and 23004800 are ordinary doi.org links (they resolve once published)"
+  },
+  {
+   "name": "area-51/sedaps-51/independent/live3_struct.c 12 (four shards)",
+   "result": "all 1,145,664 three-live loops: maximum queue 5, win-gaps all 3, rotating winners, exactly one head per turn and it wins"
+  },
+  {
+   "name": "area-51/sedaps-51/independent/live3_sync.c 15 (six shards)",
+   "result": "10,762,752,000 synchronised whole-packet states (global maximum in queue 0): none on or entering a loop; every one loses a queue within 27 turns"
+  },
+  {
+   "name": "live3_sync.c 9 and 12",
+   "result": "4,480 and 5,913,600 states; no loop"
+  },
+  {
+   "name": "Dossier v5.2 against a v5.1 rebuild",
+   "result": "every table-of-contents entry keeps its page through p.266; the additions begin at p.267 (sections 69A-69C)"
+  },
+  {
+   "name": "python3 research/postmaster/check_anchors_v5_2.py",
+   "result": "49 anchors, 22 named targets, 0 unnamed"
+  },
+  {
+   "name": "JSON validity",
+   "result": "site-index.json, citation/catalog.json, atlas/atlas-data.json, area-51/research.json, the Postmaster JSON-LD and LIVE3_LOOPS_RECEIPT.json parse"
+  },
+  {
+   "name": "Local link check",
+   "result": "917 local references in 60 pages; 763 resolve; 147 references to 30 targets under /papers/ reported separately; 7 unresolved references predate v2.8.3"
+  },
+  {
+   "name": "Rendered pages, Chromium 1280x900 and 375x812",
+   "result": "no horizontal overflow and no page errors",
+   "pages": [
+    "/area-51/sedaps-51/",
+    "/area-51/twins-51/",
+    "/area-51/twins-51/calibration.html",
+    "/atlas/",
+    "/research/line-game/",
+    "/research/postmaster/",
+    "/research/project-51/",
+    "/site-index.html"
+   ],
+   "overflow": [],
+   "page_errors": []
+  },
+  {
+   "name": "node area-51/twins-51/build-twins-page-v1.cjs",
+   "result": "index.html matches the data"
+  }
+ ],
+ "scope": "Research pages and citation metadata. The homepage and Finance are unchanged. The reserved DOIs cannot be resolved from this environment (DataCite and Zenodo blocked); open each landing page after publication."
+}

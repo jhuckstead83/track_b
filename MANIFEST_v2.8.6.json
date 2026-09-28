@@ -1,0 +1,165 @@
+{
+ "version": "2.8.6",
+ "base_version": "2.8.5",
+ "base_archive": "CerebralGraphix_v2_8_5_FULL_SITE_no-papers.zip",
+ "base_archive_sha256": "7487b7dcb83a3a361d8c1b4df0b73df14bba1278f5152b0e3fbda3011e1216e5",
+ "input_files": 661,
+ "unchanged_files": 642,
+ "removed_files": [],
+ "changed": [
+  {
+   "path": "area-51/llms.txt",
+   "before": "3684c70dea45c55f7af59c2500aa8f4deb1a79ed98548d005f4e3bbda2835119",
+   "after": "6813c5c15ac1d5fa68490119d3014f96120089c8a3a9639f2c91841fb695fdc7"
+  },
+  {
+   "path": "area-51/research.json",
+   "before": "440711aa3821c8ef554af760d112248b2b1484648d3874a61e4dc4491dc85e02",
+   "after": "265c855e7d88a1ade6adfce55d43ef0d589a93402dda82a3828bea029d8ba4f8"
+  },
+  {
+   "path": "area-51/sedaps-51/RESEARCH_UPDATE_v0_4_1.md",
+   "before": "56ad1228190ffa9b0c351e33234e71c7b415dd96e3ff13def1a81c8e243e4313",
+   "after": "6d22c8c5edec8d5f1f23b229571f46b323a3f28c6931582d6788b9c03364fde2"
+  },
+  {
+   "path": "area-51/sedaps-51/VERIFY_v0_4.json",
+   "before": "48ae4311c64e67803e73ef8e1d8d848065e81de9aae18ea58053e1f4626ebd13",
+   "after": "5a2cd626a377261fc1a4844422d7fc7702dfbcce5483f16942a14e602ee8674e"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/README.md",
+   "before": "3a7fff2e23df1128fd65f4d7bd72d86ad24c43bafbe58683f859618d1e066087",
+   "after": "2b427154d4796f37df1f81b48f684825a21d0d96847cb4808023da3979af4dad"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/live3_loops.c",
+   "before": "786088d0daf47dae0a4c18eec65aec37321c749607c280ca0d3166c5e63999d9",
+   "after": "f181849a7612468a9ee85336fa50700c69c3a95ca6880b81b5047b7a6e450b39"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/live3_struct.c",
+   "before": "d57520bd0e4394296f8ab17648429938abaaf1ca24b2c087adbbe0da3e14a6eb",
+   "after": "b07bf719facea12c0fd2d45b37fc9e34ceeec7b42da03b67a4ad917cc2afccc3"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/live3_sync.c",
+   "before": "0312999afca66400659aaf6474dda40b992e5dfce26e6140c4d8b1b41b24f326",
+   "after": "ef05f926744ddb42a7c28a02fc82c87c930e1308f9be10a943a57eeadb93b44b"
+  },
+  {
+   "path": "area-51/sedaps-51/index.html",
+   "before": "8d95934e48cf9bd04c421b6f2207d3fd3f3ba49a4085850bd2173be53ea9f091",
+   "after": "1c91d56d9126ef09711a4ff0ff5b875e1de91f6109c1ac24ccdca473654b4fe2"
+  },
+  {
+   "path": "area-51/sedaps-51/verify-sedaps-v0-4.cjs",
+   "before": "b84cc2086042f14c455d35b6ccce9a5c313c4b0580c01c0ea39a4ea01ada7f47",
+   "after": "01f39d07d71edd67f0094c836c6918a09ea214a7148c1ab9b08e08e07ee4cd88"
+  },
+  {
+   "path": "area-51/twins-51/build-twins-page-v1.cjs",
+   "before": "e6c271c0bfdc5e767cab9bce271817fe840af83e735f70947553c697ca262eeb",
+   "after": "30e2b962e7e20ce280ed7ff1027687bd765dab409bfa4b00464d923ec4ee1af5"
+  },
+  {
+   "path": "area-51/twins-51/index.html",
+   "before": "bf3cc4a1eed04c8f622fb937a291776373adde7055eb21b3b27e3c84a5700068",
+   "after": "0f04ea0eeb62df857f495b29027f2f18362518759201cf7466335988681c8c05"
+  },
+  {
+   "path": "citation/catalog.json",
+   "before": "67cf25eba2f3f1a3534dd50fcd58f415eaa7e39b340e3b90d70b69e592ae6907",
+   "after": "665983c994637b8ae76b45e29943fc7f90bfc290d29ad3c2e84cc1b3de99f9d6"
+  },
+  {
+   "path": "llms.txt",
+   "before": "af12afac323eed286e401e1424db389b4cfe6b328ae52bca61769d6ae8a5442e",
+   "after": "fe581ed1ce3e7097d049b8521621a3685af6bde5b84548c02e0166def2a95350"
+  },
+  {
+   "path": "research/postmaster/anchors_v5_2.json",
+   "before": "33092cf0c907e5dfc3e6889011ae7a0c98d4829124e3cf03ad8ae6e665d8b700",
+   "after": "70edd71c91d08f195d8d863594e92200e985b709fef8c5b0c5a2c09808ac38f4"
+  },
+  {
+   "path": "research/postmaster/check_anchors_v5_2.py",
+   "before": "739bd5156b2f2d51588f3fb21ca150eff1e84f960b9f74fb7cea128136276c04",
+   "after": "00afca6bc1bd2be5a02f3f6bef64c94b62264dfb7452250187c53698da7f97a1"
+  },
+  {
+   "path": "research/postmaster/index.html",
+   "before": "96bf65eadac3709cb10ae0051a2381a6f4a3f7eb847d7bc8119644859c681444",
+   "after": "601258bace5fdbac3cc234ac58322618c145177bee61c71d43ce63bf27bcef02"
+  },
+  {
+   "path": "site-index.json",
+   "before": "021c1667a2783a9f6c0f9a68f427d8bdd54cb26b1c66292a59fcde4c65d669c3",
+   "after": "a451e217d004ae94149a49bec72bc198d5b80ccde42ddef7c85464a60f88ae60"
+  },
+  {
+   "path": "sitemap.xml",
+   "before": "dda32dc0d1d24bd4bbb8e62db9c5cea7dd1199111383a40603260f3572f671b7",
+   "after": "ee1c8dddc3058847d1ae0ddd18b5abb466d3a5a7c8b505c4f4183a4540e4653b"
+  }
+ ],
+ "added": [
+  {
+   "path": "RELEASE_NOTES_v2_8_6.md",
+   "sha256": "73a52cece04fd7fd2e749d8c831ff76f3092549153e6f8cfe4931aa9a64639ae"
+  },
+  {
+   "path": "VALIDATION_v2_8_6.json",
+   "sha256": "ce67da9decd09770199ad6ea7ea20ea15bdc193ff4a962f0c1050687437606aa"
+  },
+  {
+   "path": "ZENODO_RELEASE_PLAN_v2_8_6.md",
+   "sha256": "f6b15008a876b7726b4c9a6e150e7dbaee681fbcbf426e9c3b0631f571df61c3"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/live3_construct.py",
+   "sha256": "aa1e2f6c5c36aa5602102c106ccbd17be8fed0af5d66bac6973121960571237c"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/live3_construct_check.cjs",
+   "sha256": "786c1f352db22f66090e61a504b54fdaae7eccebcce1358e7999f374c5100e74"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/live3_construct_receipt.json",
+   "sha256": "641b6e599e8a21a42bb28d27b16f42a7340c9152c4f18834c7001726672c6c96"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/live3_probe51.py",
+   "sha256": "bfaa907da7b45570eb4ecb9f1e2ba2f21bd24cb9a8a17db8cf2574f208922628"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/live3_probe51_receipt.json",
+   "sha256": "1594abc49ba89ac764135475944998190f6248769aaeba6c4f921404a757a170"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/live3_rigid12.c",
+   "sha256": "a20b2663e19d55b2f5f88add50899f3eb477541de724d56ec43f7ac5605eade3"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/live3_rigid12_receipt.json",
+   "sha256": "fb0f5e9f4a049be0bdbbe98e19458e43cb479e3ee1a00aca35a01b27bf1136db"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/live3_rigid_period.py",
+   "sha256": "3170410e32cfe148fc6aea1fad72d39a61ac6f21be31486a9d6ef44dbc6172d5"
+  },
+  {
+   "path": "area-51/sedaps-51/independent/live3_rigid_period_receipt.json",
+   "sha256": "05eec7be3ae132b8b74a024032f60db5970ec37caa0836d36f00b47608a5416c"
+  }
+ ],
+ "not_in_archive": {
+  "papers/": "install the v2.8.6 papers payload (TN_Postmaster_v5_2_PAPERS_PAYLOAD_v2_8_6.zip) into papers/ before deploying"
+ },
+ "excluded_from_packaging": [
+  "__pycache__/",
+  "*.pyc",
+  "papers/"
+ ],
+ "note": "This manifest and the merge guide do not list themselves."
+}

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Chamber-Lift Atlas — One Euler Product, Many Coordinates</title>
+<style>
+  :root{
+    --ink:#14151c; --ink-soft:#464a5a; --paper:#f5f3ec; --panel:#fbfaf6;
+    --line:#dcd8cb; --edge:#b8b2a2; --edge-fence:#c9a24a; --edge-dash:#a9a396;
+    /* ledger colors */
+    --finite:#2f6d5b;     /* finite-modulus: teal */
+    --infinite:#3a5a99;   /* infinite-density: blue */
+    --geometry:#b0603a;   /* grid-geometry: clay */
+    --keystone:#7a4b8a;   /* method-keystone: violet */
+    --disc:#8a8578;       /* disciplinary: grey */
+    --gold:#e0a72e;
+    --mono:"IBM Plex Mono",ui-monospace,monospace;
+    --sans:"IBM Plex Sans",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.5;}
+  .wrap{max-width:1280px;margin:0 auto;padding:24px 20px 60px;}
+  header{border-bottom:1.5px solid var(--ink);padding-bottom:14px;margin-bottom:8px;}
+  h1{font-size:24px;font-weight:600;letter-spacing:-0.01em;margin:0 0 4px;}
+  h1 .sub{display:block;font-size:13.5px;font-weight:400;color:var(--ink-soft);margin-top:5px;font-family:var(--mono);}
+  .lede{font-size:14px;color:var(--ink-soft);max-width:82ch;margin:10px 0 0;}
+  .lede code{font-family:var(--mono);font-size:.92em;background:#ece7db;padding:1px 5px;border-radius:3px;}
+
+  .stage{display:grid;grid-template-columns:minmax(0,1fr) 350px;gap:18px;margin-top:18px;align-items:start;}
+  @media(max-width:900px){.stage{grid-template-columns:1fr;}}
+  .map-panel{background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:8px;position:relative;}
+  svg{width:100%;height:auto;display:block;}
+  .node-g{cursor:pointer;}
+  .node-box{stroke-width:1.4;transition:all .15s;}
+  .node-g:hover .node-box{stroke-width:2.6;filter:brightness(1.04);}
+  .node-label{font-family:var(--mono);font-size:10.5px;font-weight:600;fill:#fff;pointer-events:none;}
+  .node-sub{font-family:var(--mono);font-size:8px;fill:rgba(255,255,255,0.82);pointer-events:none;}
+  .edge{stroke:var(--edge);stroke-width:1.3;fill:none;}
+  .edge.fence{stroke:var(--edge-fence);stroke-dasharray:1 0;stroke-width:1.5;}
+  .edge.disc{stroke:var(--edge-dash);stroke-dasharray:4 4;stroke-width:1.1;}
+  .edge.tight{stroke:var(--gold);stroke-width:2.4;}
+  .edge.dim{opacity:0.12;}
+  .node-g.dim{opacity:0.28;}
+  .node-g.focus .node-box{stroke:var(--ink);stroke-width:3;}
+
+  .legend{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px;padding:10px 12px;background:#f0ece1;border-radius:5px;
+    font-family:var(--mono);font-size:11px;color:var(--ink-soft);}
+  .legend .item{display:flex;align-items:center;gap:5px;}
+  .legend .dot{width:11px;height:11px;border-radius:3px;display:inline-block;}
+  .legend .ln{width:18px;height:0;border-top-width:2px;border-top-style:solid;display:inline-block;}
+
+  .reader{background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:16px;position:sticky;top:14px;}
+  .reader-empty{font-family:var(--mono);font-size:12.5px;color:var(--ink-soft);font-style:italic;text-align:center;padding:30px 6px;}
+  .r-eyebrow{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:0.09em;color:var(--ink-soft);}
+  .r-title{font-size:17px;font-weight:600;margin:3px 0 2px;line-height:1.25;}
+  .r-ledger{display:inline-block;font-family:var(--mono);font-size:10px;padding:2px 8px;border-radius:20px;color:#fff;margin:4px 0 10px;}
+  .r-section{margin-top:12px;}
+  .r-section h4{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:0.06em;
+    color:var(--ink-soft);margin:0 0 4px;border-bottom:1px solid var(--line);padding-bottom:3px;}
+  .r-section p{margin:4px 0;font-size:13px;}
+  .r-formula{font-family:var(--mono);font-size:12px;background:#f0ece1;padding:6px 9px;border-radius:4px;margin:5px 0;overflow-x:auto;white-space:nowrap;}
+  .r-links{display:flex;flex-direction:column;gap:4px;margin-top:5px;}
+  .r-link{font-family:var(--mono);font-size:11.5px;padding:5px 8px;background:#f0ece1;border-radius:4px;cursor:pointer;
+    border-left:3px solid var(--edge);transition:all .12s;}
+  .r-link:hover{background:#e8e3d6;}
+  .r-link.tight{border-left-color:var(--gold);}
+  .r-link.fence{border-left-color:var(--edge-fence);}
+  .r-link .lk-why{color:var(--ink-soft);font-size:10.5px;display:block;margin-top:1px;}
+  .r-fence{background:#f7f0dc;border-left:3px solid var(--gold);padding:8px 11px;font-size:12px;color:var(--ink-soft);border-radius:0 4px 4px 0;margin-top:6px;line-height:1.5;}
+
+  .gradient-panel{margin-top:20px;background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:16px 20px;}
+  .gradient-panel h3{font-size:15px;font-weight:600;margin:0 0 8px;}
+  .grad-note{font-size:13px;color:var(--ink-soft);margin:0 0 12px;max-width:88ch;}
+  .grad-note code{font-family:var(--mono);font-size:.9em;background:#ece7db;padding:1px 4px;border-radius:3px;}
+  .grad-table{width:100%;border-collapse:collapse;font-size:12.5px;}
+  .grad-table th{text-align:left;font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:0.05em;
+    color:var(--ink-soft);border-bottom:1.5px solid var(--ink);padding:6px 10px 6px 0;}
+  .grad-table td{padding:7px 10px 7px 0;border-bottom:1px solid var(--line);vertical-align:top;}
+  .grad-table code{font-family:var(--mono);font-size:.92em;}
+  .grad-table .st-thm{color:var(--finite);font-weight:600;}
+  .grad-table .st-open{color:var(--geometry);font-weight:600;}
+  .grad-table .st-lens{color:var(--keystone);font-weight:600;}
+  .principle{margin-top:20px;background:#14151c;color:#f0ece1;border-radius:7px;padding:16px 20px;font-family:var(--mono);font-size:13px;line-height:1.6;}
+  .principle b{color:var(--gold);}
+  footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11px;color:var(--ink-soft);line-height:1.6;}
+</style>
+<meta name="robots" content="noindex,follow"></head>
+<body><div style="padding:12px 18px;background:#fff3cb;color:#17212b;font:14px/1.5 system-ui">July archive: retained for reference, not the current catalogue. <a href="/atlas/" style="color:#184f69;text-decoration:underline">Open the current Atlas</a></div><div style="position:sticky;top:0;z-index:999;padding:.65rem 1rem;background:#12121c;color:#eee;border-bottom:1px solid #3a3a5a;font:600 13px system-ui"><a href="/atlas/" style="color:#77cad6">Open the selective Atlas site</a> · <a href="/papers/research-index.html" style="color:#77cad6">All active records</a> · <a href="/" style="color:#eee">Home</a></div>
+<div class="wrap">
+  <header>
+    <h1>The Chamber-Lift Atlas
+      <span class="sub">one Euler product, many coordinates &mdash; a map of the program and where its pieces genuinely connect</span>
+    </h1>
+    <p class="lede">
+      Each node is a chamber-lift paper. Each edge is drawn only where a <b>shared identity can be written down</b> &mdash;
+      not a shared value or a resemblance (<code>no shared identity, no shared mechanism</code>). Color marks which coordinate
+      of the same Euler-product machine <code>&prod;(1&minus;p<sup>&minus;d</sup>)</code> the paper uses. Gold edges are the
+      tightest links (same construction <code>a(n,k)=n&minus;1+k/n</code>); dashed edges are disciplinary, not mathematical.
+      Click a node to read its mechanism, ledger, and verified links.
+    </p>
+    <p class="lede"><a href="../papers/chamber_lift_series.html">Chamber series index</a> · <a href="https://zenodo.org/records/21200816" rel="noopener" target="_blank">Main Zenodo record</a> · <a href="https://oeis.org/draft/A394477" rel="noopener" target="_blank">OEIS draft A394477</a> · <a href="/tools/polar_shell_renderer.html">Polar shell renderer</a></p>
+  </header>
+
+  <div class="stage">
+    <div class="map-panel">
+      <svg id="atlas" viewBox="0 0 760 620" xmlns="http://www.w3.org/2000/svg"></svg>
+      <div class="legend" id="legend"></div>
+    </div>
+
+    <div class="reader" id="reader">
+      <div class="reader-empty" id="reader-empty">Click a node to open it.<br><br>Start with <b>SHELL</b> (the newest paper) or
+        <b>FAREY</b> (its direct parent), or <b>ONE&nbsp;EULER</b> (the keystone that governs every fence).</div>
+      <div id="reader-body" style="display:none"></div>
+    </div>
+  </div>
+
+  <div class="gradient-panel">
+    <h3>Occupancy gradient &mdash; the residue-gate spine</h3>
+    <p class="grad-note">The same <code>1&minus;&nu;<sub>p</sub>/p</code> gate bookkeeping runs through every row. What changes is
+      arity (one point &rarr; two) and status (theorem &rarr; open &rarr; lens), not the mechanism. <b>One-point occupancy is a
+      theorem; two-point is the open frontier; the shell adds a lens.</b> This table organizes; it does not merge.</p>
+    <table class="grad-table">
+      <thead><tr><th>Paper</th><th>Occupancy</th><th>Local gate</th><th>Survivor factor</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Primitive Ray</td><td>one-point visibility</td><td><code>p|x</code> and <code>p|y</code></td><td><code>1&minus;p<sup>&minus;2</sup></code></td><td class="st-thm">theorem (6/&pi;&sup2;)</td></tr>
+        <tr><td>Twin Prime</td><td>two-point difference</td><td><code>n&equiv;0,&minus;2 (mod p)</code></td><td><code>1&minus;2/p</code></td><td class="st-open">open frontier</td></tr>
+        <tr><td>Goldbach</td><td>two-point midpoint</td><td><code>d&equiv;&plusmn;M (mod &ell;)</code></td><td><code>1&minus;2/&ell;</code>, collapse if <code>&ell;|M</code></td><td class="st-open">open frontier</td></tr>
+        <tr><td>Shell primes ★</td><td>one numerator in a shell</td><td><code>R<sub>s</sub>(m,t) mod s&sup2;</code></td><td><code>s/&phi;(s)</code> baseline</td><td class="st-lens">lens, classical mechanism</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="principle">
+    <b>Principle 1.1 (the program's law).</b> A repeated constant, symbol, or shape is structurally meaningful only when both
+    appearances instantiate a common identity, transformation, product, or theorem. If no shared identity can be written down,
+    equal constants are small-denominator collisions, not a mechanism. &mdash; <i>One Euler Product, Many Coordinates.</i>
+    Every edge in this atlas is drawn to that standard.
+    <br><br><span style="color:var(--gold)">Coordinate first. Count second. Interpret last.</span>
+  </div>
+
+  <footer>
+    verified core: 10 papers read in full, every edge a checked shared identity &nbsp;·&nbsp; outer ring: method siblings, specific
+    links pending full read &nbsp;·&nbsp; disciplinary parents (Ledger series) shown dashed &nbsp;·&nbsp; J. Huckstead, Cerebral Graphix
+  </footer>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+// ---- node data: id, label, sublabel, ledger, x, y ----
+const LED = {
+  finite:{c:'var(--finite)',name:'finite-modulus ∏_{p|n}'},
+  infinite:{c:'var(--infinite)',name:'infinite-density 1/ζ'},
+  geometry:{c:'var(--geometry)',name:'grid geometry'},
+  keystone:{c:'var(--keystone)',name:'method keystone'},
+  disc:{c:'var(--disc)',name:'disciplinary'}
+};
+
+const NODES = {
+  // a(n,k) family — center
+  FAREY:  {label:'FAREY',   sub:'a(n,k) parent', led:'geometry', x:300,y:300},
+  SHELL:  {label:'SHELL',   sub:'prime numerators ★', led:'finite', x:430,y:250},
+  JORDAN: {label:'JORDAN',  sub:'∑J_d=n^d', led:'finite', x:430,y:370},
+  PARENT: {label:'PARENT',  sub:'divisor bands', led:'geometry', x:200,y:390},
+  // euler-product spine
+  PRIMRAY:{label:'PRIM·RAY',sub:'1/ζ(2)', led:'infinite', x:560,y:430},
+  ZETAEXP:{label:'ZETA·EXP',sub:'three-ledger', led:'infinite', x:580,y:330},
+  // residue-gate cousins
+  TWIN:   {label:'TWIN',    sub:'{0,2} gates', led:'finite', x:430,y:130},
+  GOLDBACH:{label:'GOLDBACH',sub:'sum gates', led:'finite', x:560,y:120},
+  // totient gate
+  LEHMER: {label:'LEHMER',  sub:'φ=∏(p−1)', led:'finite', x:310,y:180},
+  // square geometry
+  PRIMESQ:{label:'PRIME·SQ',sub:'2n+1 collar', led:'geometry', x:150,y:280},
+  // keystone / warning
+  ONE_EULER:{label:'ONE EULER',sub:'Principle 1.1', led:'keystone', x:640,y:230},
+  TOLLED: {label:'TOLLED',  sub:'angle≠arithmetic', led:'keystone', x:660,y:400},
+  // disciplinary
+  LEDGER: {label:'LEDGER',  sub:'count/order/seal', led:'disc', x:610,y:530},
+  // outer ring method siblings
+  BEAL:   {label:'BEAL',    sub:'method sibling', led:'disc', x:250,y:90},
+  RADICAL:{label:'abc/RAD', sub:'method sibling', led:'disc', x:140,y:150},
+  COLLATZ:{label:'COLLATZ', sub:'method sibling', led:'disc', x:110,y:400},
+  ERDOS:  {label:'ERDŐS·STR',sub:'method sibling', led:'disc', x:160,y:490},
+  CONGRUENT:{label:'CONGRUENT',sub:'method sibling', led:'disc', x:300,y:500}
+};
+
+// ---- edges: [a,b,type]  type: tight | normal | fence | disc ----
+const EDGES = [
+  ['FAREY','SHELL','tight'], ['FAREY','PARENT','tight'], ['FAREY','JORDAN','normal'],
+  ['JORDAN','SHELL','tight'], ['PARENT','SHELL','normal'], ['PARENT','PRIMESQ','tight'],
+  ['PRIMRAY','ZETAEXP','normal'], ['ZETAEXP','JORDAN','fence'], ['ZETAEXP','SHELL','normal'],
+  ['TWIN','GOLDBACH','normal'], ['TWIN','PRIMRAY','fence'], ['GOLDBACH','SHELL','fence'],
+  ['LEHMER','SHELL','normal'], ['LEHMER','JORDAN','normal'],
+  ['ONE_EULER','SHELL','disc'], ['ONE_EULER','ZETAEXP','normal'], ['ONE_EULER','JORDAN','normal'],
+  ['ONE_EULER','TOLLED','normal'], ['TOLLED','SHELL','disc'],
+  ['LEDGER','ONE_EULER','disc'],
+  // outer ring — method siblings to the keystone (loose)
+  ['BEAL','ONE_EULER','disc'], ['RADICAL','ONE_EULER','disc'], ['COLLATZ','FAREY','disc'],
+  ['ERDOS','FAREY','disc'], ['CONGRUENT','ZETAEXP','disc']
+];
+
+// ---- reader content per node ----
+const INFO = {
+  SHELL:{title:'Prime-Numerator Shell Stratification',ledger:'finite',new:true,
+    mech:'Prime numerators of a(n,k), organized by shell s=n/gcd(k,n). In shell s: R_s(m,t)=s²m−s+t, a union of φ(s) progressions mod s².',
+    formula:['R_s(m,t) = s²m − s + t','R_s ≡ t−s (mod s²),  gcd(t−s,s²)=1','ρ̂(s) = mean of (s/φ(s))·1/ln R_s'],
+    result:'The size-blind climb against 1/φ(s) vanishes under the PNT-in-progressions predictor. Lens, not law.',
+    links:[['FAREY','tight','same construction a(n,k), origin of "shell"'],['JORDAN','tight','totient ladder; d=1 keystone φ(s²)=sφ(s)'],['PARENT','normal','shell numerators = parent reduced numerators'],['ZETAEXP','normal','s/φ(s) is the FINITE d=1 ledger F₁(s), not infinite 1/ζ'],['LEHMER','normal','same totient product machine φ=∏(p−1)'],['GOLDBACH','fence','residue-gate method, but progression-modulus ≠ sum-gate']],
+    fence:'Novelty is the stratification and its clean demonstration, not a new prime law. s² here is a progression modulus — same symbol as the valuation split n=ms² but a different mechanism.'},
+  FAREY:{title:'Divisor-Filtered Farey Chambers',ledger:'geometry',
+    mech:'The direct parent. Same grid a(n,k)=n−1+k/n; after reduction, a divisor-filtered Farey family. Studies divisor-window discrepancy by Möbius inversion. The word "shell" originates here (§13 reciprocal-floor shelling).',
+    formula:['a(n,k) = n−1 + k/n','∑_{q|n} φ(q) = n   (Gauss, chamber form)','Δ_{n,D}(x) = ∑_{q∈D}∑_{d|q} μ(d)(⌊qx/d⌋ − qx/d)'],
+    result:'Full window = the regular grid; exact shell = classical reduced-residue discrepancy; prime-power shell sup = 1−1/p.',
+    links:[['SHELL','tight','same construction; shell paper is the prime-numerator face'],['PARENT','tight','same grid, divisor-band law'],['JORDAN','normal','φ→J_d totient ladder'],['COLLATZ','disc','method sibling'],['ERDOS','disc','method sibling']],
+    fence:'Finite divisor-window object, not global Farey discrepancy. Carries no RH implication.'},
+  JORDAN:{title:'Jordan Chamber Lift',ledger:'finite',
+    mech:'Lifts the 1D chamber to d Cartesian coordinates. Shell with reduced common denominator q has exactly J_d(q) points.',
+    formula:['q = n/gcd(n,k₁,…,k_d)','#{tuples, denom q} = J_d(q)','∑_{q|n} J_d(q) = n^d','J_d(q)/q^d = ∏_{p|q}(1−p^−d)  ≠  1/ζ(d)'],
+    result:'The dimensional ladder φ=J₁, J₂, J₃, … The finite shell density is fenced from the infinite visible-lattice density.',
+    links:[['FAREY','normal','totient ladder from ∑φ=n'],['SHELL','tight','d=1 keystone φ(s²)=sφ(s) makes s/φ(s) exact'],['ZETAEXP','fence','finite J_d/n^d vs infinite 1/ζ(d) — same symbol, different support'],['LEHMER','normal','totient / Carmichael machinery']],
+    fence:'Jordan totients are classical; the chamber packaging is the contribution. RH-relevance is a nonclaim.'},
+  PARENT:{title:'Divisor-Band Bijections & Totient Shells (Zenodo)',ledger:'geometry',
+    mech:'The 1D grid foundation. A reduced r/s occurs in chamber n iff s|n and s(n−1)<r≤sn; each divisor contributes φ(s) entries. Contains the multiplication-grid collar identity.',
+    formula:['a(n,k) = n−1 + k/n','n² − a(n,n−1)² = 2 − 1/n²   (collar)','∑(2 − collar) = ∑1/n² = ζ(2) = π²/6'],
+    result:'Divisor bands, totient shells, the composite collar, the floor-shell density 3/π²=1/(2ζ(2)).',
+    links:[['FAREY','tight','same grid'],['SHELL','normal','shell numerators = this grid’s reduced numerators'],['PRIMESQ','tight','SAME collar: 2n+1 = the multiplication-grid square growth']],
+    fence:'Elementary and structural. The zeta-zero calibration is explicitly not a resonance claim.'},
+  PRIMESQ:{title:'Prime-Square Chamber Lift',ledger:'geometry',
+    mech:'Legendre / Oppermann / Brocard over the multiplication-grid square diagonal (n,n)↦n² and pronic seam n(n+1). The interval (n²,(n+1)²) has length 2n+1.',
+    formula:['(n+1)² − n² = 2n+1   (square-growth collar)','n(n+1) − n² = n   (pronic seam split)','Lₙ = π((n+1)²) − π(n²) ≥ 1  (Legendre)'],
+    result:'A faithful coordinate atlas for the prime-between-squares family. The 2n+1 collar is the parent grid’s collar.',
+    links:[['PARENT','tight','same multiplication-grid geometry, same 2n+1 collar']],
+    fence:'Explicitly: "do not overprint primes on the grid" — keep the scaffold (geometry) separate from occupancy (primes). Proves nothing; draws where the prime is conjectured.'},
+  ZETAEXP:{title:'Zeta-Exponent Chamber Lift',ledger:'infinite',
+    mech:'Lifts the primitive ray to dimension d. The keystone THREE-LEDGER distinction: finite Jordan density, infinite 1/ζ(d), and averaged 1/ζ(d+1) are three distinct objects.',
+    formula:['primitive density in Z^d = 1/ζ(d)','finite: J_d(n)/n^d = ∑_{r|n} μ(r)/r^d','averaged: (1/x)∑ J_d(n)/n^d → 1/ζ(d+1)'],
+    result:'d = coordinate breadth, k = valuation depth, +1 = averaging frequency. Same Euler product, exponent-meaning depends on the chamber.',
+    links:[['PRIMRAY','normal','the d=2 case lifted'],['JORDAN','fence','finite vs infinite support of the same Möbius sum'],['SHELL','normal','s/φ(s) sits in the FINITE ledger column'],['ONE_EULER','normal','one of the coordinates of the one product']],
+    fence:'All classical inclusion-exclusion / Euler product. The exponent records local obstruction; its meaning (breadth/depth/frequency) is chamber-dependent.'},
+  PRIMRAY:{title:'Primitive Ray Chamber Lift',ledger:'infinite',
+    mech:'The d=2 foundation. Every lattice point p=gq with q primitive; visible-point density 1/ζ(2)=6/π².',
+    formula:['p = gq,  gcd(q₁,q₂)=1','∏_p(1−p^−²) = 1/ζ(2) = 6/π²','exact gcd-G layer density = 1/(ζ(2)G²)'],
+    result:'The planar instance of the broader visibility law Z^d → 1/ζ(d).',
+    links:[['ZETAEXP','normal','lifted to all d'],['TWIN','fence','one-point (1−1/p) vs two-point (1−2/p) obstruction']],
+    fence:'The dilation story is the picture; the sieve is the proof. Density value is a classical sieve theorem.'},
+  TWIN:{title:'Twin Prime Chamber Lift',ledger:'finite',
+    mech:'Two-point pattern {0,2}. Each odd prime forbids two residue classes (0, −2), leaving p−2. Finite CRT survivor count, Hardy-Littlewood singular series. (Survivor count ∏(p−2) code-verified against brute-force CRT.)',
+    formula:['p | n(n+2) ⟺ n ≡ 0, −2 (mod p)','A_y = ∏_{3≤p≤y}(p−2)','S({0,2}) = 2∏_{p≥3}(1 − 1/(p−1)²)'],
+    result:'Twin candidates survive by avoiding two classes mod every odd prime. Local structure explicit; global passage is analytic.',
+    links:[['GOLDBACH','normal','difference-gate vs sum-gate, both CRT+singular series'],['PRIMRAY','fence','two-point vs one-point obstruction arity']],
+    fence:'CORRECTED (audit): the exceptional pairs (3,5) and (5,7) are WHEEL-PRIME exceptions, not a parity exception. All twins with lower member ≥3 have odd lower member; (3,5) is removed by 3≡0 mod 3, (5,7) by 5≡0 mod 5. The parity gate excludes no genuine twin. — Admissibility and singular-series positivity do not prove infinitely many occurrences. Atlas, not proof.'},
+  GOLDBACH:{title:'Goldbach Chamber Lift',ledger:'finite',
+    mech:'Midpoint N=2M. Each odd prime ℓ imposes gates d ≡ ±M (mod ℓ). When ℓ|M the two gates collapse to one — the (ℓ−1)/(ℓ−2) singular-series factor.',
+    formula:['N = (M−d)+(M+d)','ℓ∤M: 2 forbidden classes; ℓ|M: 1 (collapse)','gate-collapse factor (ℓ−1)/(ℓ−2)'],
+    result:'Goldbach as prime-pair occupancy on a displacement grid; gate-collapse IS the Hardy-Littlewood singular series.',
+    links:[['TWIN','normal','sum-gate cousin of the difference-gate'],['SHELL','fence','residue-gate method shared; sum-gate ≠ progression modulus']],
+    fence:'Finite-wheel survival is necessary, not sufficient. The sieve parity problem is the obstruction.'},
+  LEHMER:{title:'Lehmer Totient Chamber Lift',ledger:'finite',
+    mech:'Lehmer’s problem: composite n with φ(n)|n−1. For square-free n=∏pᵢ, the full product gate φ(n)=∏(pᵢ−1) vs the Carmichael λ(n)=lcm(pᵢ−1) gate.',
+    formula:['φ(n) = ∏(pᵢ − 1)   (product gate)','λ(n) = lcm(pᵢ − 1)   (Carmichael gate)','M = (n−1)/φ(n)   (Lehmer index)'],
+    result:'A composite solution would imitate a prime through a totient-divisibility gate. The obstruction is the φ/λ gap.',
+    links:[['SHELL','normal','same Euler totient product machine φ=∏(p−1)'],['JORDAN','normal','totient / Carmichael structure']],
+    fence:'Classical (Korselt, Carmichael, Pomerance…). Navigational atlas; no proof, no new reduction.'},
+  ONE_EULER:{title:'One Euler Product, Many Coordinates',ledger:'keystone',
+    mech:'The methodological keystone. Separates GENUINE shared infrastructure (same identity writable) from small-denominator collisions (equal numbers, different mechanisms).',
+    formula:['ζ(s) = ∏_p(1−p^−s)^{−1}','log ζ(s) = ∑_k P(ks)/k   (prime zeta)','u/(e^u−1) = ∑ Bₙ u^n/n!   (Bernoulli)'],
+    result:'One product read in many coordinates: breadth d, depth k, averaging +1, progression modulus s². The shared source is explicit identities, not resonance.',
+    links:[['ZETAEXP','normal','the dimensional coordinate'],['JORDAN','normal','the finite-modulus coordinate'],['TOLLED','normal','the dilation/Bernoulli coordinate'],['SHELL','disc','Principle 1.1 governs the shell paper’s fences']],
+    fence:'THE LAW: no shared identity, no shared mechanism. The two 1/12’s, the two 84’s — equal constants, quarantined.'},
+  TOLLED:{title:'Tolled Dilation Scale & Lattice Visibility',ledger:'keystone',
+    mech:'Radial dilation D_g(z)=gz, additive scale u=log g, tolled length r(q)+λ log g, Bernoulli break-even envelope. Contains the ANGULAR-EXCLUSION warning.',
+    formula:['p = gq,  u = log g','r*(u) = λu/(e^u−1)   (Bernoulli envelope)','arg(gz) = arg(z) → angle carries no g'],
+    result:'§8: dilation preserves argument, so ANGLE CANNOT ENCODE the radial multiplier. The obstruction is radial, not angular.',
+    links:[['ONE_EULER','normal','the dilation/Bernoulli coordinate'],['SHELL','disc','§8 is why the polar renderer’s angle is rendering, not arithmetic']],
+    fence:'The warning about implicit formulas: a polar/spiral coordinate must not IMPLY a relationship the radial arithmetic lacks. Geometry draws; arithmetic determines.'},
+  LEDGER:{title:'The Ledger (+ One Ledger, Preserving Forms)',ledger:'disc',
+    mech:'The disciplinary parents. Count / order / sequence / seal / channel vocabulary for trace-bearing records. States the firewall as a working rule.',
+    formula:['count = total tracked by a rule','order = recoverable arrangement','seal = recovery becomes unavailable/aliased'],
+    result:'A shared value is not a shared mechanism. The same address may be reached by different engines.',
+    links:[['ONE_EULER','disc','the number-theory instance of the same discipline']],
+    fence:'Disciplinary, not mathematical mechanism. The shell paper INSTANCES this (size-blind view = a seal; PNT correction = the channel that recovers) — shared rule, not shared object.'},
+  BEAL:{title:'Beal Exponent Chamber Lift',ledger:'disc',outer:true,
+    mech:'Method sibling (full read pending). Lifts the Beal conjecture onto reciprocal-exponent shells; first-shell defect χ(3,3,4)=−1/12.',
+    result:'Shares the chamber METHOD (recoordinatize + fence). Specific edge to the shell paper is method-level, not construction-level.',
+    links:[['ONE_EULER','disc','the −1/12 is fenced as small-denominator, NOT ζ(−1)']],
+    fence:'Outer ring: method sibling. χ(3,3,4)=−1/12 shares a value with ζ(−1) but NOT a mechanism (Principle 1.1).'},
+  RADICAL:{title:'Radical / abc Chamber Lift',ledger:'disc',outer:true,
+    mech:'Method sibling (full read pending). Lifts the abc / radical structure onto the chamber method.',
+    result:'Shares the chamber method. Edge to shell paper pending full read.',
+    links:[['ONE_EULER','disc','governed by the same shared-identity discipline']],
+    fence:'Outer ring: method sibling, specific link to be verified on full read.'},
+  COLLATZ:{title:'Collatz Chamber Lift',ledger:'disc',outer:true,
+    mech:'Method sibling (full read pending). Chamber coordinatization of the Collatz map.',
+    result:'Shares the chamber method. Edge pending full read.',
+    links:[['FAREY','disc','method sibling of the a(n,k) program']],
+    fence:'Outer ring: method sibling.'},
+  ERDOS:{title:'Erdős–Straus Chamber Lift',ledger:'disc',outer:true,
+    mech:'Method sibling (full read pending). Chamber view of the Erdős–Straus 4/n = 1/x+1/y+1/z problem.',
+    result:'Shares the chamber method. Edge pending full read.',
+    links:[['FAREY','disc','method sibling of the a(n,k) program']],
+    fence:'Outer ring: method sibling.'},
+  CONGRUENT:{title:'Congruent Number Chamber Lift',ledger:'disc',outer:true,
+    mech:'Method sibling (full read pending). Chamber view of the congruent-number / elliptic-curve problem.',
+    result:'Shares the chamber method. Edge pending full read.',
+    links:[['ZETAEXP','disc','method sibling; elliptic L-function neighborhood']],
+    fence:'Outer ring: method sibling.'}
+};
+
+const svg = document.getElementById('atlas');
+const SVGNS='http://www.w3.org/2000/svg';
+function el(tag,attrs){const e=document.createElementNS(SVGNS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);return e;}
+
+// draw edges first
+const edgeEls={};
+EDGES.forEach(([a,b,type],i)=>{
+  const na=NODES[a], nb=NODES[b];
+  const line=el('line',{x1:na.x,y1:na.y,x2:nb.x,y2:nb.y,class:'edge '+type});
+  line.dataset.a=a; line.dataset.b=b;
+  svg.appendChild(line);
+  edgeEls[a+'|'+b]=line; edgeEls[b+'|'+a]=line;
+});
+
+// draw nodes
+const nodeEls={};
+for(const id in NODES){
+  const n=NODES[id];
+  const g=el('g',{class:'node-g'}); g.dataset.id=id;
+  const w = n.label.length*6.4+16, h=30;
+  const box=el('rect',{x:n.x-w/2,y:n.y-h/2,width:w,height:h,rx:5,class:'node-box',
+    fill:LED[n.led].c, stroke:LED[n.led].c, 'fill-opacity':(INFO[id]&&INFO[id].outer)?0.55:0.92});
+  const lbl=el('text',{x:n.x,y:n.y-1,'text-anchor':'middle',class:'node-label'}); lbl.textContent=n.label;
+  const sub=el('text',{x:n.x,y:n.y+9,'text-anchor':'middle',class:'node-sub'}); sub.textContent=n.sub;
+  g.appendChild(box); g.appendChild(lbl); g.appendChild(sub);
+  svg.appendChild(g); nodeEls[id]=g;
+  g.addEventListener('click',()=>select(id));
+  g.addEventListener('mouseenter',()=>hover(id));
+  g.addEventListener('mouseleave',()=>unhover());
+}
+
+function hover(id){
+  const connected=new Set([id]);
+  EDGES.forEach(([a,b])=>{ if(a===id)connected.add(b); if(b===id)connected.add(a); });
+  for(const nid in nodeEls) nodeEls[nid].classList.toggle('dim',!connected.has(nid));
+  document.querySelectorAll('.edge').forEach(e=>{
+    const on = e.dataset.a===id||e.dataset.b===id;
+    e.classList.toggle('dim',!on);
+  });
+}
+function unhover(){
+  if(selectedId){ hover(selectedId); return; }
+  for(const nid in nodeEls) nodeEls[nid].classList.remove('dim');
+  document.querySelectorAll('.edge').forEach(e=>e.classList.remove('dim'));
+}
+
+let selectedId=null;
+function select(id){
+  selectedId=id;
+  for(const nid in nodeEls) nodeEls[nid].classList.toggle('focus',nid===id);
+  hover(id);
+  renderReader(id);
+}
+
+function renderReader(id){
+  const info=INFO[id]; if(!info) return;
+  document.getElementById('reader-empty').style.display='none';
+  const body=document.getElementById('reader-body');
+  body.style.display='block';
+  const led=LED[NODES[id].led];
+  let h='';
+  h+=`<div class="r-eyebrow">${info.outer?'method sibling (outer ring)':'verified core'}${info.new?' · newest paper ★':''}</div>`;
+  h+=`<div class="r-title">${info.title}</div>`;
+  h+=`<span class="r-ledger" style="background:${led.c}">${led.name}</span>`;
+  h+=`<div class="r-section"><h4>mechanism</h4><p>${info.mech}</p></div>`;
+  if(info.formula){ h+=`<div class="r-section"><h4>load-bearing formulas</h4>`;
+    info.formula.forEach(f=>h+=`<div class="r-formula">${f}</div>`); h+=`</div>`; }
+  if(info.result){ h+=`<div class="r-section"><h4>what it establishes</h4><p>${info.result}</p></div>`; }
+  if(info.links&&info.links.length){ h+=`<div class="r-section"><h4>verified links</h4><div class="r-links">`;
+    info.links.forEach(([to,type,why])=>{
+      h+=`<div class="r-link ${type}" data-to="${to}"><b>${type==='tight'?'━ ':type==='fence'?'⚠ ':'– '}${NODES[to]?NODES[to].label:to}</b><span class="lk-why">${why}</span></div>`;
+    });
+    h+=`</div></div>`; }
+  if(info.fence){ h+=`<div class="r-fence"><b>fence:</b> ${info.fence}</div>`; }
+  body.innerHTML=h;
+  body.querySelectorAll('.r-link').forEach(l=>l.addEventListener('click',()=>select(l.dataset.to)));
+}
+
+// legend
+const legend=document.getElementById('legend');
+Object.keys(LED).forEach(k=>{
+  const i=document.createElement('div'); i.className='item';
+  i.innerHTML=`<span class="dot" style="background:${LED[k].c}"></span>${LED[k].name}`;
+  legend.appendChild(i);
+});
+['tight|gold: same construction a(n,k)','fence|#c9a24a: shared symbol, fenced','disc|#a9a396: disciplinary (dashed)'].forEach(s=>{
+  const [t,rest]=s.split('|'); const [col,txt]=rest.split(': ');
+  const i=document.createElement('div'); i.className='item';
+  i.innerHTML=`<span class="ln" style="border-top-color:${col}${t==='disc'?';border-top-style:dashed':''}"></span>${txt}`;
+  legend.appendChild(i);
+});
+
+})();
+</script>
+</body>
+</html>

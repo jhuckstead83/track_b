@@ -1,0 +1,981 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Telescope 51 — What a Rule Can See</title>
+  <meta name="description" content="A public-beta card laboratory for nested value, rank, color, and suit observations on the unchanged 51-card Line Game record, with an exact archive-addressing corollary.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="citation_title" content="Telescope 51: What a Rule Can See">
+  <meta name="citation_author" content="Jeffery Lyn Huckstead">
+  <meta name="citation_publication_date" content="2026/09/20">
+  <meta name="citation_pdf_url" content="https://cerebralgraphix.com/research/line-game/Telescope_51_What_a_Rule_Can_See_v0_2.pdf">
+  <meta name="citation_public_url" content="https://cerebralgraphix.com/research/line-game/Telescope_51_Beta_Draft_v0_1.html">
+  <meta name="citation_reference" content="Huckstead, Jeffery Lyn. The Line Game | Surprise Is Not Meaning, v7.2. https://doi.org/10.5281/zenodo.22851517">
+  <meta name="DC.creator" content="Jeffery Lyn Huckstead">
+  <meta name="DC.identifier" content="https://cerebralgraphix.com/research/line-game/Telescope_51_Beta_Draft_v0_1.html">
+  <meta name="DC.source" content="https://doi.org/10.5281/zenodo.22851517">
+  <meta name="DC.relation" content="The Line Game | Surprise Is Not Meaning, v7.2">
+  <meta name="DC.rights" content="Prototype derived from CC BY 4.0 source — attribution required">
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+  <link rel="canonical" href="https://cerebralgraphix.com/research/line-game/Telescope_51_Beta_Draft_v0_1.html">
+  <link rel="alternate" type="application/pdf" href="Telescope_51_What_a_Rule_Can_See_v0_2.pdf" title="Telescope 51: What a Rule Can See, v0.2 working paper">
+  <link rel="alternate" type="application/json" href="Telescope_51_Archive_Addressing_v0_1.json" title="Telescope 51 archive-addressing corollary">
+  <link rel="alternate" type="application/x-bibtex" href="/CITATION.bib">
+  <link rel="describedby" type="application/json" href="/citation/catalog.json">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23091727'/%3E%3Ctext x='16' y='25' text-anchor='middle' fill='%23f6c85f' font-family='Georgia' font-size='27'%3E%E2%85%A0%3C/text%3E%3C/svg%3E">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"SoftwareApplication",
+    "name":"Telescope 51: What a Rule Can See",
+    "url":"https://cerebralgraphix.com/research/line-game/Telescope_51_Beta_Draft_v0_1.html",
+    "applicationCategory":"EducationalApplication",
+    "softwareVersion":"0.1-beta-draft",
+    "author":{"@type":"Person","name":"Jeffery Lyn Huckstead","sameAs":"https://orcid.org/0009-0007-0234-2177"},
+    "isBasedOn":"https://doi.org/10.5281/zenodo.22851517",
+    "citation":{
+      "@type":"ScholarlyArticle",
+      "name":"The Line Game | Surprise Is Not Meaning",
+      "version":"7.2",
+      "author":{"@type":"Person","name":"Jeffery Lyn Huckstead","sameAs":"https://orcid.org/0009-0007-0234-2177"},
+      "identifier":"https://doi.org/10.5281/zenodo.22851517"
+    },
+    "license":"https://creativecommons.org/licenses/by/4.0/",
+    "subjectOf":{
+      "@type":"ScholarlyArticle",
+      "name":"Telescope 51: What a Rule Can See",
+      "version":"0.2 working edition",
+      "url":"https://cerebralgraphix.com/research/line-game/Telescope_51_What_a_Rule_Can_See_v0_2.pdf",
+      "author":{"@type":"Person","name":"Jeffery Lyn Huckstead","sameAs":"https://orcid.org/0009-0007-0234-2177"}
+    },
+    "operatingSystem":"Any modern web browser",
+    "isAccessibleForFree":true
+  }
+  </script>
+  <style>
+    :root{
+      color-scheme:dark;
+      --bg:#071523;
+      --bg2:#091a2a;
+      --panel:#10263a;
+      --panel2:#142e45;
+      --line:#345069;
+      --softline:#213a51;
+      --ink:#f3f6fa;
+      --muted:#afbed0;
+      --gold:#f3c96b;
+      --green:#76d8b7;
+      --blue:#91c8ff;
+      --red:#ff9b9b;
+      --paper:#f7f4ed;
+      --cardink:#13263a;
+      --shadow:0 18px 55px #0006;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      font-size:16px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);line-height:1.5}
+    body:before{
+      content:"";position:fixed;inset:0;z-index:-1;
+      background:
+        radial-gradient(circle at 18% -10%,#17425fbb 0,transparent 34rem),
+        radial-gradient(circle at 85% 8%,#173b3c66 0,transparent 30rem),
+        linear-gradient(180deg,#071523 0,#091827 48%,#06121e 100%);
+    }
+    button,select{font:inherit}
+    button{cursor:pointer}
+    button:disabled{cursor:default;opacity:.45}
+    button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible{
+      outline:3px solid var(--gold);outline-offset:3px
+    }
+    a{color:var(--green);text-underline-offset:.22em}
+    .shell{width:min(1180px,calc(100% - 2rem));margin-inline:auto}
+    .topbar{
+      display:flex;justify-content:space-between;align-items:center;gap:1rem;
+      padding:1rem 0;border-bottom:1px solid var(--softline)
+    }
+    .brand{display:flex;align-items:center;gap:.7rem;color:var(--ink);text-decoration:none;font-weight:750}
+    .mark{
+      display:grid;place-items:center;width:2.2rem;height:2.7rem;border:1px solid var(--gold);
+      border-radius:.38rem;color:var(--gold);font:1.75rem Georgia,serif
+    }
+    .draft{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--green)}
+    .hero{padding:clamp(3rem,8vw,6.5rem) 0 3rem}
+    .eyebrow{color:var(--green);font-size:.78rem;font-weight:750;letter-spacing:.14em;text-transform:uppercase}
+    h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:500}
+    h1{font-size:clamp(2.7rem,8vw,5.6rem);line-height:.94;letter-spacing:-.045em;margin:.55rem 0 1rem;max-width:12ch}
+    h1 span{display:block;color:var(--gold)}
+    h2{font-size:clamp(1.8rem,4vw,3rem);line-height:1.05;margin:0 0 .8rem}
+    h3{font-size:1.25rem;margin:.25rem 0 .65rem}
+    p{margin:.5rem 0 1rem}
+    .dek{max-width:52rem;font-size:clamp(1.1rem,2.2vw,1.45rem);color:#dce6ef}
+    .chain{display:flex;align-items:center;gap:.45rem;flex-wrap:wrap;margin-top:1.6rem}
+    .chain-step{
+      display:flex;align-items:center;gap:.55rem;padding:.62rem .78rem;border:1px solid var(--line);
+      border-radius:.55rem;background:#0c2133
+    }
+    .chain-step b{display:grid;place-items:center;width:1.55rem;height:1.55rem;border-radius:50%;background:var(--gold);color:#14243a}
+    .arrow{color:var(--muted)}
+    .boundary{
+      margin-top:1.35rem;padding:.9rem 1rem;border-left:3px solid var(--green);
+      background:#0b1d2e;color:#dce6ef;border-radius:.35rem
+    }
+    .game{
+      margin:0 0 4rem;background:#0c2033e8;border:1px solid var(--line);border-radius:1rem;
+      box-shadow:var(--shadow);overflow:hidden
+    }
+    .game-head{
+      display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:center;
+      padding:1.1rem 1.2rem;background:#10283d;border-bottom:1px solid var(--line)
+    }
+    .game-head h2{font-size:1.7rem;margin:0}
+    .statusline{color:var(--muted);font-size:.9rem;margin-top:.2rem}
+    .metrics{display:flex;gap:.55rem;flex-wrap:wrap;justify-content:flex-end}
+    .metric{min-width:6rem;padding:.55rem .7rem;background:#071827;border-radius:.5rem;text-align:center}
+    .metric span{display:block;color:var(--muted);font-size:.7rem;text-transform:uppercase;letter-spacing:.08em}
+    .metric b{color:var(--gold);font-size:1.15rem}
+    .game-body{padding:1.2rem}
+    .toolbar{display:flex;justify-content:space-between;gap:1rem;align-items:end;flex-wrap:wrap}
+    .branch-group{display:flex;gap:.45rem;flex-wrap:wrap}
+    .branch-group button,.quiet,.primary,.depth-button,.choose-player,.peek,.next-button{
+      border:1px solid var(--line);border-radius:.5rem;background:#173149;color:var(--ink);
+      min-height:42px;padding:.58rem .78rem
+    }
+    .branch-group button[aria-pressed="true"],.depth-button[aria-pressed="true"],.choose-player[aria-pressed="true"]{
+      background:var(--gold);border-color:var(--gold);color:#13243a;font-weight:750
+    }
+    .quiet{background:transparent}
+    .primary{background:var(--gold);border-color:var(--gold);color:#13243a;font-weight:800}
+    .primary:hover:not(:disabled){background:#ffe29d}
+    .quiet:hover:not(:disabled),.branch-group button:hover:not(:disabled),.depth-button:hover:not(:disabled),.choose-player:hover:not(:disabled),.peek:hover:not(:disabled),.next-button:hover:not(:disabled){background:#24465f}
+    .word-wrap{margin:1.15rem 0;padding:1rem;background:#081a2a;border-radius:.65rem;border:1px solid var(--softline)}
+    .word-head{display:flex;justify-content:space-between;gap:1rem;align-items:center;margin-bottom:.65rem}
+    .word-head strong{letter-spacing:.08em;text-transform:uppercase;font-size:.78rem;color:var(--green)}
+    .word-head span{font-size:.82rem;color:var(--muted)}
+    .word{display:flex;gap:.42rem;align-items:center;flex-wrap:wrap}
+    .word-group{display:flex;gap:.25rem;padding-right:.42rem;border-right:1px solid var(--line)}
+    .word-group:last-child{border-right:0;padding-right:0}
+    .letter{
+      display:grid;place-items:center;width:2rem;height:2rem;border-radius:.38rem;background:#122a40;
+      border:1px solid var(--line);color:#6f8499;font:1rem ui-monospace,SFMono-Regular,Consolas,monospace
+    }
+    .letter.filled{background:#213c50;color:var(--gold);border-color:#8b7440}
+    .letter.current{box-shadow:0 0 0 2px var(--blue);color:var(--blue)}
+    .ticket{display:grid;grid-template-columns:1.2fr .8fr;gap:1rem;margin-bottom:1rem}
+    .ticket-panel{padding:1rem;background:#0a1b2c;border:1px solid var(--line);border-radius:.7rem}
+    .ticket-panel p{color:var(--muted);font-size:.88rem;margin:.2rem 0 .75rem}
+    .depth-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.45rem}
+    .depth-button{text-align:left;padding:.65rem;min-width:0}
+    .depth-button strong{display:block}
+    .depth-button span{display:block;color:var(--muted);font-size:.72rem;margin-top:.15rem}
+    .depth-button[aria-pressed="true"] span{color:#283a4e}
+    .ticket-note{display:flex;flex-direction:column;justify-content:space-between}
+    .ticket-note .formula{font:1.05rem ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--gold);background:#071523;padding:.7rem;border-radius:.45rem}
+    .table{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem}
+    .player{
+      position:relative;min-width:0;padding:.85rem;background:#122a40;border:1px solid var(--line);
+      border-radius:.75rem;transition:border-color .2s,transform .2s
+    }
+    .player.selected{border-color:var(--gold)}
+    .player.leader{box-shadow:inset 0 0 0 2px var(--blue)}
+    .player.eliminated{opacity:.58}
+    .player.winner{border-color:var(--green);box-shadow:inset 0 0 0 2px var(--green)}
+    .player-head{display:flex;justify-content:space-between;gap:.45rem;align-items:center;margin-bottom:.6rem}
+    .player-head b{font-size:.78rem;text-transform:uppercase;letter-spacing:.09em}
+    .choose-player{padding:.38rem .52rem;min-height:34px;font-size:.78rem}
+    .card{
+      min-height:12.5rem;border-radius:.65rem;background:
+        linear-gradient(135deg,#e9eef3 0,#f8f6ef 55%,#dde6ed 100%);
+      color:var(--cardink);display:flex;flex-direction:column;align-items:center;justify-content:center;
+      padding:.7rem;text-align:center;position:relative;overflow:hidden;border:2px solid transparent
+    }
+    .card:before{
+      content:"Ⅰ";position:absolute;font:7rem Georgia,serif;color:#18395510;transform:rotate(-12deg)
+    }
+    .card.red{color:#9c2032}
+    .card .stage{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;opacity:.68;z-index:1}
+    .card .main{font:clamp(2.3rem,7vw,4.2rem) Georgia,serif;line-height:1;z-index:1;margin:.35rem 0}
+    .card .sub{font-size:.78rem;z-index:1}
+    .lucky{
+      position:absolute;top:.45rem;right:.45rem;background:var(--gold);color:#14243a;border-radius:999px;
+      padding:.2rem .42rem;font-size:.68rem;font-weight:800;z-index:2
+    }
+    .peek{width:100%;margin-top:.55rem;font-size:.8rem}
+    .action-slot{min-height:3rem;margin-top:.55rem}
+    .action-slot .primary{width:100%}
+    .player-account{display:flex;justify-content:space-between;gap:.4rem;margin-top:.5rem;color:var(--muted);font-size:.72rem}
+    .result{
+      margin-top:1rem;padding:1rem;border:1px solid var(--line);border-left:3px solid var(--blue);
+      border-radius:.6rem;background:#0a1c2d;min-height:5rem
+    }
+    .result strong{display:block;font-size:1.05rem;color:var(--gold)}
+    .result p{margin:.25rem 0 0;color:#dce6ef}
+    .after-actions{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:.75rem}
+    .ledger-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:1rem;margin-top:1rem}
+    .ledger,.fiber{padding:1rem;background:#081a2a;border:1px solid var(--softline);border-radius:.65rem}
+    .ledger h3,.fiber h3{font-family:inherit;font-size:.86rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin:0 0 .7rem}
+    .ledger-rows{display:grid;gap:.35rem}
+    .ledger-row{
+      display:grid;grid-template-columns:4.2rem 1fr 1fr;gap:.5rem;padding:.45rem .5rem;
+      background:#10283c;border-radius:.38rem;font-size:.8rem
+    }
+    .ledger-row b{color:var(--gold)}
+    .fiber-rail{display:flex;align-items:center;gap:.3rem;flex-wrap:wrap;margin:.5rem 0}
+    .fiber-node{padding:.38rem .48rem;background:#173149;border-radius:.35rem;color:var(--gold);font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+    .fiber-arrow{color:var(--muted)}
+    .micro{color:var(--muted);font-size:.76rem;margin:.5rem 0 0}
+    .twin{margin-top:1rem;padding:1rem;border:1px solid var(--gold);border-radius:.65rem;background:#211f19}
+    .twin[hidden]{display:none}
+    .twin-cards{display:flex;gap:.45rem;flex-wrap:wrap;margin:.55rem 0}
+    .twin-card{padding:.45rem .6rem;border-radius:.38rem;background:var(--paper);color:var(--cardink);font-weight:800}
+    .section{padding:4rem 0;border-top:1px solid var(--softline)}
+    .two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+    .panel{padding:1.15rem;background:#0d2133;border:1px solid var(--line);border-radius:.75rem}
+    .panel p,.panel li{color:#c9d6e2}
+    .panel ul{padding-left:1.1rem}
+    details{border-top:1px solid var(--softline);padding:1rem 0}
+    summary{cursor:pointer;font-weight:750}
+    .rule-table{width:100%;border-collapse:collapse;margin-top:.8rem;font-size:.86rem}
+    .rule-table th,.rule-table td{padding:.62rem .5rem;text-align:left;border-bottom:1px solid var(--softline);vertical-align:top}
+    .rule-table th{color:var(--green)}
+    code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--gold);overflow-wrap:anywhere;word-break:break-word}
+    footer{padding:2rem 0 3rem;border-top:1px solid var(--softline);color:var(--muted);font-size:.86rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    [hidden]{display:none!important}
+    @media(max-width:820px){
+      .game-head,.ticket,.ledger-grid,.two-col{grid-template-columns:1fr}
+      .metrics{justify-content:flex-start}
+      .depth-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    @media(max-width:560px){
+      .shell{width:min(100% - 1rem,1180px)}
+      .hero{padding-top:2.5rem}
+      .game-body{padding:.7rem}
+      .table{gap:.35rem}
+      .player{padding:.45rem}
+      .player-head{align-items:stretch;flex-direction:column}
+      .choose-player{width:100%}
+      .card{min-height:9.5rem;padding:.3rem}
+      .card .main{font-size:2.2rem}
+      .card .sub{font-size:.66rem}
+      .peek{padding:.45rem .2rem}
+      .ledger-row{grid-template-columns:3.6rem 1fr}
+      .ledger-row span:last-child{grid-column:2}
+      .word-group{gap:.15rem;padding-right:.25rem}
+      .letter{width:1.55rem;height:1.75rem;font-size:.85rem}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*:before,*:after{transition:none!important;animation:none!important}
+    }
+    @media print{
+      :root{color-scheme:light}
+      body{background:white;color:#111}
+      body:before,.interactive-only{display:none!important}
+      .game,.panel,.ledger,.fiber{box-shadow:none;background:white;color:#111;border-color:#777}
+      a{color:#111}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar shell">
+    <a class="brand" href="https://cerebralgraphix.com/research/line-game/"><span class="mark" aria-hidden="true">Ⅰ</span><span>Cerebral Graphix</span></a>
+  </header>
+
+  <main>
+    <section class="hero shell">
+      <p class="eyebrow">Post-publication rule laboratory · v0.1</p>
+      <h1>Rules first.<span>Let the deck answer.</span></h1>
+      <p class="dek">Three hidden cards. Four nested rules. Each rule touches only the tie left by the rule before it. Predict where the round resolves—and who is still standing when it does.</p>
+      <div class="chain" aria-label="Telescoping rule chain">
+        <span class="chain-step"><b>V</b>10-value</span><span class="arrow" aria-hidden="true">→</span>
+        <span class="chain-step"><b>R</b>natural rank</span><span class="arrow" aria-hidden="true">→</span>
+        <span class="chain-step"><b>C</b>color ±1</span><span class="arrow" aria-hidden="true">→</span>
+        <span class="chain-step"><b>S</b>suit identity</span>
+      </div>
+      <p class="boundary"><strong>Known cake, declared recipe.</strong> This game was designed with knowledge of the v7.2 card object. The generated rule word is a finite output of the declared maps—not a blind anomaly, a new zero, or an RH result.</p>
+    </section>
+
+    <section class="game shell interactive-only" aria-labelledby="game-title">
+      <div class="game-head">
+        <div>
+          <h2 id="game-title">Telescope 51</h2>
+          <div class="statusline" id="statusline">Round 1 of 17 · choose a rule depth and a player</div>
+        </div>
+        <div class="metrics" aria-label="Game status">
+          <div class="metric"><span>Round</span><b id="roundMetric">1 / 17</b></div>
+          <div class="metric"><span>Credits</span><b id="balanceMetric">17</b></div>
+          <div class="metric"><span>Marker</span><b>Ⅰ · 2♣</b></div>
+        </div>
+      </div>
+
+      <div class="game-body">
+        <div class="toolbar">
+          <div>
+            <span class="sr-only" id="branchLabel">Select record branch</span>
+            <div class="branch-group" role="group" aria-labelledby="branchLabel">
+              <button type="button" id="branchA" aria-pressed="true">Recorded branch A</button>
+              <button type="button" id="branchB" aria-pressed="false">Adjacent-swap branch B</button>
+            </div>
+          </div>
+          <div class="branch-group">
+            <button type="button" class="quiet" id="restartButton">Restart walk</button>
+            <button type="button" class="quiet" id="receiptButton">Save local receipt</button>
+          </div>
+        </div>
+
+        <div class="word-wrap">
+          <div class="word-head">
+            <strong>Resolution word</strong>
+            <span id="wordNote">The unread tail stays hidden.</span>
+          </div>
+          <div class="word" id="ruleWord" aria-label="Seventeen-round resolution word"></div>
+        </div>
+
+        <div class="ticket">
+          <div class="ticket-panel">
+            <h3>1. Predict the first rule that resolves the round</h3>
+            <p>Reference rewards come from all 20,825 three-card subsets. They are not fresh odds for a record you have learned.</p>
+            <div class="depth-grid" id="depthGrid"></div>
+          </div>
+          <div class="ticket-panel ticket-note">
+            <div>
+              <h3>2. Choose the winner</h3>
+              <p>Select P1, P2, or P3 below. The ticket button will move under that player.</p>
+            </div>
+            <div class="formula">1/m₀ → 1/m₁ → … → 1</div>
+          </div>
+        </div>
+
+        <div class="table" id="playerTable" aria-label="Three hidden player cards"></div>
+
+        <div class="result" id="resultBox" aria-live="polite">
+          <strong>No ticket yet.</strong>
+          <p>Peeks cost 2 credits and reveal one full identity for 1.6 seconds. A funded ticket costs 1 credit.</p>
+        </div>
+
+        <div class="ledger-grid">
+          <div class="ledger">
+            <h3>Reciprocal candidate ledger</h3>
+            <div class="ledger-rows" id="ledgerRows"><p class="micro">The ledger begins at three candidates: 1/3. Rule contributions telescope to 1, for total change 2/3.</p></div>
+          </div>
+          <div class="fiber">
+            <h3>Winner identity fiber</h3>
+            <div id="fiberRail"><p class="micro">Revealed after settlement. This is reciprocal fiber size under the uniform active-card convention, not entropy.</p></div>
+          </div>
+        </div>
+
+        <div class="twin" id="twinPanel" hidden aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section shell">
+      <div class="two-col">
+        <div class="panel">
+          <h2>The telescope</h2>
+          <p>The object stays fixed. Value collapses face cards to 10. Rank separates them. Color introduces the signed <code>−1/+1</code> coordinate. Suit finishes the identity.</p>
+          <p>For candidate counts <code>m</code>, the increments <code>Δ=(1/m_after)−(1/m_before)</code> always sum from <code>1/3</code> to <code>1</code>. That is the telescoping ledger; it is not automatically a probability model.</p>
+        </div>
+        <div class="panel">
+          <h2>The invariant marker</h2>
+          <p>The 51 active cards contain 25 black and 26 red identities. With black <code>−1</code> and red <code>+1</code>, their signed total is <code>+1</code>. Outside marker <code>Ⅰ=2♣</code> contributes <code>−1</code> and restores zero.</p>
+          <p>The marker balances the physical pack but never enters a round.</p>
+        </div>
+      </div>
+
+      <div class="panel" id="archive-address" style="margin-top:1rem">
+        <p class="eyebrow">Archive-addressing corollary</p>
+        <h2>One equal-weight fiber can address the verified archive.</h2>
+        <p>The v7.2 contribution profile contains a class of 18 distinct cards with exactly equal component weight. Hold its 18 occupied positions—and every card outside that class—fixed. Permuting only those 18 identities gives <code>18! = 6,402,373,705,728,000</code> arrangements with the same complete position-by-position weight profile.</p>
+        <p><code>14! = 87,178,291,200 &lt; 103,800,788,359 &lt; 15! = 1,307,674,368,000 ≤ 18!</code></p>
+        <p>Therefore every one-based index in the verified LMFDB archive can be injected into this single observational fiber. The cards carry an <em>address</em>; recovering an ordinate still requires the declared factorial ordering, the index convention, and the external archive. This does not compute a zero, extend the verified height, or imply RH.</p>
+        <p class="micro">Data boundary: <a href="https://www.lmfdb.org/zeros/zeta/Completeness">LMFDB reports 103,800,788,359 zeros through height 30,610,046,000</a>. The twelve-decimal terminal ordinate, treated as an integer under the current codec, is larger than <code>18!</code> and does not remain inside this equal-weight fiber. <a href="Telescope_51_Archive_Addressing_v0_1.json">Open the machine-readable statement →</a></p>
+      </div>
+    </section>
+
+    <section class="section shell">
+      <h2>Rules, odds, and provenance</h2>
+      <details open>
+        <summary>Frozen v0.1 rules</summary>
+        <table class="rule-table">
+          <thead><tr><th>Letter</th><th>Rule</th><th>Acts only on</th><th>Draft reward</th></tr></thead>
+          <tbody>
+            <tr><td><code>V</code></td><td>A=1; 2–9 face value; 10/J/Q/K=10</td><td>All three players</td><td>4</td></tr>
+            <tr><td><code>R</code></td><td>A=1 through K=13</td><td>Value-tied leaders</td><td>17</td></tr>
+            <tr><td><code>C</code></td><td>Black=−1; red=+1</td><td>Rank-tied leaders</td><td>51</td></tr>
+            <tr><td><code>S</code></td><td>♣&gt;♠ within black; ♦&gt;♥ within red</td><td>Color-tied leaders</td><td>100</td></tr>
+          </tbody>
+        </table>
+      </details>
+      <details>
+        <summary>Uniform three-card reference counts</summary>
+        <p>Among <code>C(51,3)=20,825</code> unordered triples, Value resolves 15,222; Rank 3,760; Color 1,220; Suit 623. Player labels are symmetric. Rounded joint depth-and-player gross odds give the displayed 4, 17, 51, and 100-credit schedule.</p>
+      </details>
+      <details>
+        <summary>Source and claim boundary</summary>
+        <p>The exact card order is the v7.2 factorial encoding of the supplied first stored ordinate at twelve decimal places. Telescope 51 is a knowingly designed post-publication rule system applied to that order. It does not derive the ordinate, an uncomputed decimal tail, a zero theorem, or RH.</p>
+        <p>Underlying work: Jeffery Lyn Huckstead, <em>The Line Game | Surprise Is Not Meaning</em>, v7.2, DOI <a href="https://doi.org/10.5281/zenodo.22851517">10.5281/zenodo.22851517</a>.</p>
+        <p>Current finite-observation paper: Jeffery Lyn Huckstead, <a href="Telescope_51_What_a_Rule_Can_See_v0_2.pdf"><em>Telescope 51: What a Rule Can See</em>, v0.2 working edition</a>, Cerebral Graphix, 20 September 2026.</p>
+        <p><strong>Attribution:</strong> cite Telescope 51 for its recoverability theorem, declared game, census, or archive-addressing corollary. When describing the card order, invariant marker, or published decoder, also cite the underlying v7.2 work above. This page carries machine-readable author, source, license, and citation metadata.</p>
+      </details>
+      <details>
+        <summary>The 3♥ lucky sentinel</summary>
+        <p>The 3♥ is marked only because it is the author’s lucky card. It was selected after the object was known, carries no inferential weight, and remains unchanged at position 9: round 3, Player 3.</p>
+      </details>
+      <details>
+        <summary>Privacy and local receipt</summary>
+        <p>This draft sends nothing. The optional JSON receipt is generated in the browser and records the exact branch, tickets, peeks, rule traces, balance, and whether the adjacent twin was opened. It states <code>collected: false</code>.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="shell">
+    <span>Telescope 51 v0.1 Beta draft · rules first → game → discover</span>
+    <span>Jeffery Lyn Huckstead · Cerebral Graphix · based on DOI 10.5281/zenodo.22851517</span>
+  </footer>
+
+  <script>
+  (function(){
+    'use strict';
+
+    var VERSION='0.1-beta-draft';
+    var RANKS=['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
+    var SUITS=['S','H','D','C'];
+    var SUIT_GLYPH={S:'♠',H:'♥',D:'♦',C:'♣'};
+    var DECK_A=('AS AH AD AC 2S 2H 2D 3S 3H 3D 3C 4S 4H 4D 4C 5S 5H 5D 5C 6S 6H 6D 6C 7S 7H 7D 7C 8S 8H 8D 8C 9S 9H 9D 9C QD KH 10H KD QH QS JS 10C JC QC KC 10S JD JH KS 10D').split(' ');
+    var DECK_B=DECK_A.slice();
+    DECK_B[49]=DECK_A[50];
+    DECK_B[50]=DECK_A[49];
+    var DEPTHS=[
+      {id:'value',letter:'V',label:'Value',reward:4,count:15222,fn:blackjackValue},
+      {id:'rank',letter:'R',label:'Rank',reward:17,count:3760,fn:naturalRank},
+      {id:'color',letter:'C',label:'Color',reward:51,count:1220,fn:colorSign},
+      {id:'suit',letter:'S',label:'Suit',reward:100,count:623,fn:suitBit}
+    ];
+    var state;
+    var peekTimeouts=[null,null,null];
+
+    var els={
+      statusline:document.getElementById('statusline'),
+      roundMetric:document.getElementById('roundMetric'),
+      balanceMetric:document.getElementById('balanceMetric'),
+      branchA:document.getElementById('branchA'),
+      branchB:document.getElementById('branchB'),
+      restartButton:document.getElementById('restartButton'),
+      receiptButton:document.getElementById('receiptButton'),
+      ruleWord:document.getElementById('ruleWord'),
+      wordNote:document.getElementById('wordNote'),
+      depthGrid:document.getElementById('depthGrid'),
+      playerTable:document.getElementById('playerTable'),
+      resultBox:document.getElementById('resultBox'),
+      ledgerRows:document.getElementById('ledgerRows'),
+      fiberRail:document.getElementById('fiberRail'),
+      twinPanel:document.getElementById('twinPanel')
+    };
+
+    function rankName(card){return card.slice(0,-1)}
+    function suitName(card){return card.slice(-1)}
+    function naturalRank(card){return RANKS.indexOf(rankName(card))+1}
+    function blackjackValue(card){
+      var r=rankName(card);
+      return (r==='10'||r==='J'||r==='Q'||r==='K')?10:naturalRank(card);
+    }
+    function colorSign(card){return (suitName(card)==='H'||suitName(card)==='D')?1:-1}
+    function suitBit(card){return (suitName(card)==='D'||suitName(card)==='C')?1:0}
+    function isRed(card){return colorSign(card)===1}
+    function displayCard(card){return rankName(card)+SUIT_GLYPH[suitName(card)]}
+    function activeDeck(){return state.branch==='A'?DECK_A:DECK_B}
+    function otherDeck(){return state.branch==='A'?DECK_B:DECK_A}
+    function roundCards(deck,round){return deck.slice(round*3,round*3+3)}
+    function gcd(a,b){while(b){var t=a%b;a=b;b=t}return a}
+    function fraction(n,d){
+      if(n===0)return '0';
+      var g=gcd(Math.abs(n),Math.abs(d));
+      return (n/g)+'/'+(d/g);
+    }
+    function reciprocal(n){return '1/'+n}
+    function escapeText(s){
+      return String(s).replace(/[&<>"']/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]});
+    }
+
+    function evaluate(cards){
+      var leaders=[0,1,2];
+      var trace=[];
+      for(var d=0;d<DEPTHS.length;d++){
+        var before=leaders.slice();
+        var values=cards.map(DEPTHS[d].fn);
+        var max=Math.max.apply(null,before.map(function(i){return values[i]}));
+        leaders=before.filter(function(i){return values[i]===max});
+        var numerator=before.length-leaders.length;
+        var denominator=before.length*leaders.length;
+        trace.push({
+          depth:d,
+          id:DEPTHS[d].id,
+          letter:DEPTHS[d].letter,
+          label:DEPTHS[d].label,
+          values:values,
+          before:before,
+          after:leaders.slice(),
+          reciprocalBefore:reciprocal(before.length),
+          reciprocalAfter:reciprocal(leaders.length),
+          delta:fraction(numerator,denominator)
+        });
+        if(leaders.length===1){
+          return {depth:d,letter:DEPTHS[d].letter,winner:leaders[0],trace:trace,cards:cards.slice()};
+        }
+      }
+      throw new Error('Suit identity did not resolve distinct cards.');
+    }
+
+    function newState(branch){
+      return {
+        branch:branch||'A',
+        round:0,
+        balance:17,
+        selectedDepth:null,
+        selectedPlayer:null,
+        peeked:[false,false,false],
+        peeking:[false,false,false],
+        resolving:false,
+        settled:false,
+        started:false,
+        funded:false,
+        word:[],
+        ledger:[],
+        stage:-1,
+        candidates:[0,1,2],
+        result:null,
+        twinOpened:false,
+        rounds:[]
+      };
+    }
+
+    function clearPeekTimers(){
+      peekTimeouts.forEach(function(id,i){if(id){clearTimeout(id);peekTimeouts[i]=null}});
+    }
+
+    function reset(branch){
+      clearPeekTimers();
+      state=newState(branch||state&&state.branch||'A');
+      els.twinPanel.hidden=true;
+      els.twinPanel.innerHTML='';
+      renderAll();
+    }
+
+    function renderAll(){
+      renderHeader();
+      renderDepths();
+      renderWord();
+      renderPlayers();
+      renderLedger();
+      renderFiber();
+      renderResult();
+    }
+
+    function renderHeader(){
+      els.roundMetric.textContent=(state.round+1)+' / 17';
+      els.balanceMetric.textContent=String(state.balance);
+      els.branchA.setAttribute('aria-pressed',String(state.branch==='A'));
+      els.branchB.setAttribute('aria-pressed',String(state.branch==='B'));
+      els.branchA.disabled=state.started;
+      els.branchB.disabled=state.started;
+      if(state.resolving)els.statusline.textContent='Round '+(state.round+1)+' · opening the rule chain';
+      else if(state.settled)els.statusline.textContent='Round '+(state.round+1)+' settled · '+state.result.letter+' resolves for P'+(state.result.winner+1);
+      else els.statusline.textContent='Round '+(state.round+1)+' of 17 · choose a rule depth and a player';
+    }
+
+    function renderDepths(){
+      els.depthGrid.innerHTML='';
+      DEPTHS.forEach(function(depth,index){
+        var button=document.createElement('button');
+        button.type='button';
+        button.className='depth-button';
+        button.setAttribute('aria-pressed',String(state.selectedDepth===index));
+        button.disabled=state.resolving||state.settled;
+        button.innerHTML='<strong>'+depth.letter+' · '+depth.label+'</strong><span>'+depth.count.toLocaleString()+' triples · pays '+depth.reward+'</span>';
+        button.addEventListener('click',function(){
+          state.selectedDepth=index;
+          renderDepths();
+          renderPlayers();
+          renderResult();
+        });
+        els.depthGrid.appendChild(button);
+      });
+    }
+
+    function renderWord(){
+      els.ruleWord.innerHTML='';
+      var groups=[4,4,4,5];
+      var cursor=0;
+      groups.forEach(function(size){
+        var group=document.createElement('div');
+        group.className='word-group';
+        for(var j=0;j<size;j++){
+          var index=cursor+j;
+          var cell=document.createElement('span');
+          cell.className='letter';
+          if(index<state.word.length){cell.classList.add('filled');cell.textContent=state.word[index]}
+          else{cell.textContent='·'}
+          if(index===state.round&&!state.settled)cell.classList.add('current');
+          cell.setAttribute('aria-label','Round '+(index+1)+(index<state.word.length?': '+state.word[index]:': unread'));
+          group.appendChild(cell);
+        }
+        cursor+=size;
+        els.ruleWord.appendChild(group);
+      });
+      if(state.word.length===17)els.wordNote.textContent='Complete finite word · middle echo SSCV × 2 · no periodic-tail claim.';
+      else if(state.word.length>=12&&state.word.slice(4,8).join('')===state.word.slice(8,12).join(''))els.wordNote.textContent='Finite echo found: rounds 5–8 repeat at 9–12. No periodic-tail claim.';
+      else els.wordNote.textContent='The unread tail stays hidden.';
+    }
+
+    function cardStageContent(card,player){
+      if(state.peeking[player]||state.settled){
+        return {stage:state.peeking[player]?'Paid peek':'Full identity',main:displayCard(card),sub:card==='3H'?'Lucky sentinel · unchanged':'One of 51 active identities',red:isRed(card)};
+      }
+      if(state.resolving&&state.stage>=0){
+        if(state.stage===0)return {stage:'Value',main:String(blackjackValue(card)),sub:'10/J/Q/K share 10',red:false};
+        if(state.stage===1)return {stage:'Natural rank',main:rankName(card),sub:'A=1 through K=13',red:false};
+        if(state.stage===2)return {stage:'Color sign',main:colorSign(card)>0?'+1':'−1',sub:colorSign(card)>0?'Red':'Black',red:isRed(card)};
+        return {stage:'Suit identity',main:SUIT_GLYPH[suitName(card)],sub:suitName(card)==='D'||suitName(card)==='C'?'High within color':'Low within color',red:isRed(card)};
+      }
+      return {stage:'Hidden identity',main:'?',sub:'one of 51 · identity hidden',red:false};
+    }
+
+    function renderPlayers(){
+      var cards=roundCards(activeDeck(),state.round);
+      els.playerTable.innerHTML='';
+      cards.forEach(function(card,player){
+        var panel=document.createElement('section');
+        panel.className='player';
+        if(state.selectedPlayer===player)panel.classList.add('selected');
+        if(state.resolving){
+          if(state.candidates.indexOf(player)>=0)panel.classList.add('leader');
+          else panel.classList.add('eliminated');
+        }
+        if(state.settled&&state.result.winner===player)panel.classList.add('winner');
+
+        var head=document.createElement('div');
+        head.className='player-head';
+        head.innerHTML='<b>Player '+(player+1)+'</b>';
+        var choose=document.createElement('button');
+        choose.type='button';
+        choose.className='choose-player';
+        choose.textContent=state.selectedPlayer===player?'Winner selected':'Choose winner';
+        choose.setAttribute('aria-pressed',String(state.selectedPlayer===player));
+        choose.disabled=state.resolving||state.settled;
+        choose.addEventListener('click',function(){
+          state.selectedPlayer=player;
+          renderPlayers();
+          renderResult();
+        });
+        head.appendChild(choose);
+        panel.appendChild(head);
+
+        var content=cardStageContent(card,player);
+        var visual=document.createElement('div');
+        visual.className='card'+(content.red?' red':'');
+        visual.setAttribute('aria-label','Player '+(player+1)+' card: '+(state.peeking[player]||state.settled?displayCard(card):content.stage+' '+content.main));
+        visual.innerHTML='<span class="stage">'+escapeText(content.stage)+'</span><span class="main">'+escapeText(content.main)+'</span><span class="sub">'+escapeText(content.sub)+'</span>';
+        if((state.peeking[player]||state.settled)&&card==='3H'){
+          var lucky=document.createElement('span');lucky.className='lucky';lucky.textContent='lucky 3♥';visual.appendChild(lucky);
+        }
+        panel.appendChild(visual);
+
+        var peek=document.createElement('button');
+        peek.type='button';
+        peek.className='peek';
+        peek.textContent=state.peeked[player]?'Peek spent':(state.peeking[player]?'Remember it…':'Peek 1.6s · 2 credits');
+        peek.disabled=state.peeked[player]||state.resolving||state.settled||state.balance<2;
+        peek.addEventListener('click',function(){peekCard(player)});
+        panel.appendChild(peek);
+
+        var account=document.createElement('div');
+        account.className='player-account';
+        account.innerHTML='<span>'+((state.resolving||state.settled)?(state.candidates.indexOf(player)>=0||state.result&&state.result.winner===player?'leader':'released'):'candidate')+'</span><span>'+(state.peeked[player]?'peek used':'unseen')+'</span>';
+        panel.appendChild(account);
+
+        var slot=document.createElement('div');
+        slot.className='action-slot';
+        if(state.selectedPlayer===player&&!state.resolving&&!state.settled){
+          var lock=document.createElement('button');
+          lock.type='button';lock.className='primary';
+          if(state.selectedDepth===null){lock.textContent='Choose a rule depth';lock.disabled=true}
+          else{
+            var funded=state.balance>0;
+            lock.textContent=(funded?'Lock 1 credit':'Lock study ticket')+' · P'+(player+1)+' / '+DEPTHS[state.selectedDepth].letter;
+            lock.disabled=false;
+          }
+          lock.addEventListener('click',function(){settleRound(false)});
+          slot.appendChild(lock);
+        }
+        panel.appendChild(slot);
+        els.playerTable.appendChild(panel);
+      });
+    }
+
+    function peekCard(player){
+      if(state.peeked[player]||state.balance<2||state.resolving||state.settled)return;
+      state.balance-=2;
+      state.peeked[player]=true;
+      state.peeking[player]=true;
+      renderAll();
+      peekTimeouts[player]=setTimeout(function(){
+        state.peeking[player]=false;
+        peekTimeouts[player]=null;
+        renderPlayers();
+        renderHeader();
+      },1600);
+    }
+
+    function renderLedger(){
+      if(!state.ledger.length){
+        els.ledgerRows.innerHTML='<p class="micro">The ledger begins at three candidates: 1/3. Rule contributions telescope to 1, for total change 2/3.</p>';
+        return;
+      }
+      els.ledgerRows.innerHTML='';
+      state.ledger.forEach(function(row){
+        var div=document.createElement('div');
+        div.className='ledger-row';
+        div.innerHTML='<b>'+row.letter+' · '+row.label+'</b><span>'+row.before.length+' → '+row.after.length+' candidates</span><span>'+row.reciprocalBefore+' → '+row.reciprocalAfter+' · Δ '+row.delta+'</span>';
+        els.ledgerRows.appendChild(div);
+      });
+      if(state.settled){
+        var total=document.createElement('p');
+        total.className='micro';
+        total.innerHTML='<strong>Telescoped total:</strong> 1 − 1/3 = 2/3. This is reciprocal ambiguity accounting, not an empirical probability.';
+        els.ledgerRows.appendChild(total);
+      }
+    }
+
+    function fiberSizes(card){
+      return [
+        51,
+        DECK_A.filter(function(c){return blackjackValue(c)===blackjackValue(card)}).length,
+        DECK_A.filter(function(c){return naturalRank(c)===naturalRank(card)}).length,
+        DECK_A.filter(function(c){return naturalRank(c)===naturalRank(card)&&colorSign(c)===colorSign(card)}).length,
+        1
+      ];
+    }
+
+    function renderFiber(){
+      if(!state.settled||!state.result){
+        els.fiberRail.innerHTML='<p class="micro">Revealed after settlement. This is reciprocal fiber size under the uniform active-card convention, not entropy.</p>';
+        return;
+      }
+      var card=state.result.cards[state.result.winner];
+      var sizes=fiberSizes(card);
+      var labels=['active','value','rank','color','identity'];
+      var html='<p><strong>'+escapeText(displayCard(card))+'</strong> · winning identity</p><div class="fiber-rail">';
+      sizes.forEach(function(n,i){
+        if(i)html+='<span class="fiber-arrow" aria-hidden="true">→</span>';
+        html+='<span class="fiber-node">'+reciprocal(n)+'</span>';
+      });
+      html+='</div><p class="micro">'+labels.map(function(label,i){return label+' '+reciprocal(sizes[i])}).join(' · ')+'</p>';
+      els.fiberRail.innerHTML=html;
+    }
+
+    function renderResult(){
+      if(state.resolving){
+        var depth=state.stage>=0?DEPTHS[state.stage].label:'first rule';
+        els.resultBox.innerHTML='<strong>Opening '+escapeText(depth)+'…</strong><p>Only tied leaders continue to the next rule.</p>';
+        return;
+      }
+      if(state.settled&&state.result){
+        var rec=state.rounds[state.round];
+        var correct=rec.correct;
+        var funding=rec.funded?'Funded ticket':'Study ticket';
+        var headline=state.result.letter+' · '+DEPTHS[state.result.depth].label+' resolves for P'+(state.result.winner+1);
+        var body=funding+'. Prediction: P'+(rec.predictedPlayer+1)+' / '+DEPTHS[rec.predictedDepth].letter+'. '+(correct?(rec.funded?'Correct · +'+rec.payout+' gross credits.':'Correct · no payout on a study ticket.'):'No payout.')+' Balance '+state.balance+'.';
+        var buttons='<div class="after-actions"><button type="button" class="quiet" id="twinButton">'+(state.twinOpened?'Twin opened':'Open adjacent twin')+'</button>';
+        if(state.round<16)buttons+='<button type="button" class="next-button" id="nextButton">Next round →</button>';
+        else buttons+='<button type="button" class="next-button" id="completeButton">Read the complete word</button>';
+        buttons+='</div>';
+        els.resultBox.innerHTML='<strong>'+escapeText(headline)+'</strong><p>'+escapeText(body)+'</p>'+buttons;
+        var twinButton=document.getElementById('twinButton');
+        twinButton.disabled=state.twinOpened;
+        twinButton.addEventListener('click',openTwin);
+        var next=document.getElementById('nextButton');
+        if(next)next.addEventListener('click',nextRound);
+        var complete=document.getElementById('completeButton');
+        if(complete)complete.addEventListener('click',function(){
+          els.wordNote.textContent='Complete finite word · middle echo SSCV × 2 · no periodic-tail claim.';
+          els.ruleWord.scrollIntoView({behavior:'smooth',block:'center'});
+        });
+        return;
+      }
+      var selectedDepth=state.selectedDepth===null?'no depth':DEPTHS[state.selectedDepth].label;
+      var selectedPlayer=state.selectedPlayer===null?'no player':'P'+(state.selectedPlayer+1);
+      els.resultBox.innerHTML='<strong>Ticket: '+escapeText(selectedDepth)+' / '+escapeText(selectedPlayer)+'</strong><p>Peeks cost 2 credits. Select both fields; the lock button moves under your predicted winner.</p>';
+    }
+
+    function wait(ms){return new Promise(function(resolve){setTimeout(resolve,ms)})}
+    function motionDelay(){
+      return window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches?20:520;
+    }
+
+    async function settleRound(instant){
+      if(state.resolving||state.settled||state.selectedDepth===null||state.selectedPlayer===null)return;
+      clearPeekTimers();
+      state.peeking=[false,false,false];
+      state.started=true;
+      state.funded=state.balance>0;
+      if(state.funded)state.balance-=1;
+      state.resolving=true;
+      state.stage=-1;
+      state.ledger=[];
+      state.candidates=[0,1,2];
+      var cards=roundCards(activeDeck(),state.round);
+      var result=evaluate(cards);
+      renderAll();
+      for(var i=0;i<result.trace.length;i++){
+        state.stage=i;
+        state.ledger.push(result.trace[i]);
+        state.candidates=result.trace[i].after.slice();
+        renderAll();
+        if(!instant)await wait(motionDelay());
+      }
+      state.resolving=false;
+      state.settled=true;
+      state.result=result;
+      var correct=state.selectedDepth===result.depth&&state.selectedPlayer===result.winner;
+      var payout=correct&&state.funded?DEPTHS[result.depth].reward:0;
+      state.balance+=payout;
+      state.word.push(result.letter);
+      state.rounds[state.round]={
+        round:state.round+1,
+        branch:state.branch,
+        cards:cards.slice(),
+        predictedDepth:state.selectedDepth,
+        predictedDepthLetter:DEPTHS[state.selectedDepth].letter,
+        predictedPlayer:state.selectedPlayer,
+        peekedPlayers:state.peeked.map(function(v,i){return v?i+1:null}).filter(Boolean),
+        funded:state.funded,
+        stake:state.funded?1:0,
+        actualDepth:result.depth,
+        actualDepthLetter:result.letter,
+        actualPlayer:result.winner,
+        trace:result.trace,
+        correct:correct,
+        payout:payout,
+        endingBalance:state.balance,
+        twinOpened:false
+      };
+      renderAll();
+    }
+
+    function openTwin(){
+      if(!state.settled||state.twinOpened)return;
+      state.twinOpened=true;
+      var cards=roundCards(otherDeck(),state.round);
+      var twin=evaluate(cards);
+      var sameDepth=twin.depth===state.result.depth;
+      var sameWinner=twin.winner===state.result.winner;
+      state.rounds[state.round].twinOpened=true;
+      state.rounds[state.round].twin={
+        branch:state.branch==='A'?'B':'A',
+        cards:cards.slice(),
+        depth:twin.depth,
+        depthLetter:twin.letter,
+        winner:twin.winner,
+        sameDepth:sameDepth,
+        sameWinner:sameWinner
+      };
+      var currentBranch=state.branch;
+      var otherBranch=currentBranch==='A'?'B':'A';
+      var note=sameDepth&&sameWinner?'Same depth and winner.':(sameDepth?'Same '+twin.letter+' depth; winner moves from P'+(state.result.winner+1)+' to P'+(twin.winner+1)+'.':'Resolution depth changes from '+state.result.letter+' to '+twin.letter+'.');
+      els.twinPanel.innerHTML='<strong>Adjacent twin · branch '+otherBranch+'</strong><div class="twin-cards">'+cards.map(function(c,i){return '<span class="twin-card">P'+(i+1)+' '+escapeText(displayCard(c))+'</span>'}).join('')+'</div><p>'+escapeText(note)+'</p>';
+      els.twinPanel.hidden=false;
+      renderResult();
+    }
+
+    function nextRound(){
+      if(!state.settled||state.round>=16)return;
+      state.round+=1;
+      state.selectedDepth=null;
+      state.selectedPlayer=null;
+      state.peeked=[false,false,false];
+      state.peeking=[false,false,false];
+      state.resolving=false;
+      state.settled=false;
+      state.funded=false;
+      state.ledger=[];
+      state.stage=-1;
+      state.candidates=[0,1,2];
+      state.result=null;
+      state.twinOpened=false;
+      els.twinPanel.hidden=true;
+      els.twinPanel.innerHTML='';
+      renderAll();
+      document.getElementById('game-title').scrollIntoView({behavior:'smooth',block:'start'});
+    }
+
+    function saveReceipt(){
+      var receipt={
+        schema:'cerebral-graphix.telescope-51.local-receipt.v1',
+        version:VERSION,
+        title:'Telescope 51',
+        author:'Jeffery Lyn Huckstead',
+        based_on:{title:'The Line Game | Surprise Is Not Meaning',version:'7.2',doi:'10.5281/zenodo.22851517'},
+        collected:false,
+        collection_statement:'Generated locally. Nothing was transmitted by this page.',
+        design_status:'Post-publication informed design; not a blind test.',
+        branch:state.branch,
+        active_deck_disclosure:state.word.length===17?'complete_after_walk':'withheld_until_walk_complete',
+        exact_active_deck:state.word.length===17?activeDeck().slice():null,
+        marker:'2C',
+        rules:DEPTHS.map(function(d){return {letter:d.letter,label:d.label,reference_triples:d.count,draft_reward:d.reward}}),
+        starting_credits:17,
+        rounds:state.rounds.filter(Boolean),
+        resolution_word:state.word.join(''),
+        current_balance:state.balance
+      };
+      var blob=new Blob([JSON.stringify(receipt,null,2)+'\n'],{type:'application/json'});
+      var url=URL.createObjectURL(blob);
+      var a=document.createElement('a');
+      a.href=url;a.download='Telescope_51_Local_Receipt.json';document.body.appendChild(a);a.click();a.remove();
+      setTimeout(function(){URL.revokeObjectURL(url)},1000);
+    }
+
+    function init(){
+      if(DECK_A.length!==51||new Set(DECK_A).size!==51)throw new Error('Invalid active deck.');
+      if(DECK_A[49]!=='KS'||DECK_A[50]!=='10D'||DECK_B[49]!=='10D'||DECK_B[50]!=='KS')throw new Error('Adjacent pair mismatch.');
+      els.branchA.addEventListener('click',function(){if(!state.started)reset('A')});
+      els.branchB.addEventListener('click',function(){if(!state.started)reset('B')});
+      els.restartButton.addEventListener('click',function(){reset(state.branch)});
+      els.receiptButton.addEventListener('click',saveReceipt);
+      reset('A');
+    }
+
+    window.__telescope51={
+      version:VERSION,
+      decks:{A:DECK_A.slice(),B:DECK_B.slice()},
+      depths:DEPTHS.map(function(d){return {id:d.id,letter:d.letter,label:d.label,reward:d.reward,count:d.count}}),
+      evaluate:function(cards){return evaluate(cards.slice())},
+      exactWord:function(branch){
+        var deck=branch==='B'?DECK_B:DECK_A;
+        var out=[];
+        for(var i=0;i<17;i++)out.push(evaluate(roundCards(deck,i)).letter);
+        return out.join('');
+      },
+      exactWinners:function(branch){
+        var deck=branch==='B'?DECK_B:DECK_A;
+        var out=[];
+        for(var i=0;i<17;i++)out.push(evaluate(roundCards(deck,i)).winner+1);
+        return out;
+      },
+      fiberSizes:fiberSizes,
+      getState:function(){return JSON.parse(JSON.stringify(state))},
+      select:function(depth,player){state.selectedDepth=depth;state.selectedPlayer=player;renderAll()},
+      settleInstant:function(){return settleRound(true)},
+      next:nextRound,
+      openTwin:openTwin,
+      reset:reset
+    };
+
+    init();
+  }());
+  </script>
+</body>
+</html>

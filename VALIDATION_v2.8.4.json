@@ -1,0 +1,78 @@
+{
+ "version": "2.8.4",
+ "base_version": "2.8.3",
+ "date": "2026-09-28",
+ "status": "PASS",
+ "RH_STATUS": "OPEN",
+ "checks": [
+  {
+   "name": "v5.2 PDF build (qa/build_release.py both; pandoc 3.1.3, TeX Live 2023)",
+   "result": "Reading Volume 101 pages, Technical Dossier 287 pages (284 body); 0 undefined references, 0 missing characters, no overfull box over 30pt"
+  },
+  {
+   "name": "v5.1 Reader baseline in the same environment (qa/build_baseline_v51.py reading)",
+   "result": "101 pages, equal to the recorded v5.1 count"
+  },
+  {
+   "name": "python3 qa/check_v52_interface.py with build receipts",
+   "result": "74/74 checks passed; Reader page ceiling 101 met"
+  },
+  {
+   "name": "qa/BUILD_BINDING.json",
+   "result": "PDF SHA-256 equal to the shipped PDFs (78a281a3e0d27229..., f8c1b42c3a985efc...)"
+  },
+  {
+   "name": "anchors_v5_2.json extractor on a v5.1 rebuild",
+   "result": "reproduces all 22 v5.1 site anchors (Reader 16, Dossier 6)"
+  },
+  {
+   "name": "v5.1 to v5.2 anchor pages",
+   "result": "all 22 named targets keep their pages; R12, R23, R24 pages differ only in the running header; reference 11 unchanged"
+  },
+  {
+   "name": "python3 research/postmaster/check_anchors_v5_2.py",
+   "result": "49 anchors checked, 22 named targets, 0 unnamed"
+  },
+  {
+   "name": "retarget_v52.py guard",
+   "result": "no MANIFEST, SHA256, VALIDATION, release-v, RELEASE_NOTES, RELEASE_CARD or docs/v2.0 path touched; homepage untouched"
+  },
+  {
+   "name": "JSON validity",
+   "result": "site-index.json, atlas/atlas-data.json and the atlas embedded JSON parse"
+  },
+  {
+   "name": "Local link check",
+   "result": "917 local references in 60 pages; 763 resolve; 147 references to 30 targets under /papers/ reported separately; the v5.2 targets are in the papers payload; 7 unresolved references predate v2.8.3"
+  },
+  {
+   "name": "Rendered pages, Chromium 1280x900 and 375x812",
+   "result": "no horizontal overflow and no page errors",
+   "pages": [
+    "/area-51/sedaps-51/",
+    "/area-51/twins-51/",
+    "/area-51/twins-51/calibration.html",
+    "/atlas/",
+    "/research/line-game/",
+    "/research/postmaster/",
+    "/research/project-51/",
+    "/site-index.html"
+   ],
+   "overflow": [],
+   "page_errors": []
+  },
+  {
+   "name": "node area-51/twins-51/build-twins-page-v1.cjs",
+   "result": "index.html matches the data"
+  },
+  {
+   "name": "area-51/sedaps-51/independent/live3_loops.c at n = 13 (four shards)",
+   "result": "12,454,041,600 packet-form states; no three-live loop; every state loses a queue within 26 turns"
+  },
+  {
+   "name": "TN Postmaster v5.1 and v5.0 provenance",
+   "result": "byte-identical to the supplied v5.2 source"
+  }
+ ],
+ "scope": "Research and edition pages only; the homepage and Finance are unchanged. The Finance feed and a Google Sheet were blocked by the network policy during rendering. No deployment or DOI minting is claimed."
+}

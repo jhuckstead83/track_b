@@ -1,0 +1,444 @@
+\documentclass[9pt]{extarticle}
+\usepackage[letterpaper,margin=0.69in,headheight=20pt,headsep=8pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,tabularx,array}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{setspace}
+
+\definecolor{cgblue}{HTML}{11263B}
+\definecolor{cggold}{HTML}{B88920}
+\definecolor{cggreen}{HTML}{1B7F6E}
+\definecolor{cggray}{HTML}{5F6B76}
+\definecolor{cglight}{HTML}{EEF2F5}
+
+\hypersetup{colorlinks=true,linkcolor=cgblue,urlcolor=cggreen,pdfauthor={Jeffery Lyn Huckstead},pdftitle={Telescope 51: What a Rule Can See}}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small\textcolor{cggray}{Telescope 51 - v0.2 working paper}}
+\rhead{\small\textcolor{cggray}{Jeffery Lyn Huckstead}}
+\cfoot{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{cggold}\leaders\hrule height \headrulewidth\hfill}}
+
+\titleformat{\section}{\Large\bfseries\color{cgblue}}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries\color{cgblue}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{0.8em}{0.35em}
+\titlespacing*{\subsection}{0pt}{0.55em}{0.25em}
+\setlist{nosep,leftmargin=1.25em}
+\setstretch{1.0}
+\setlength{\parskip}{0.36em}
+\setlength{\parindent}{0pt}
+
+\newtheoremstyle{cgplain}%
+  {5pt}{5pt}{\itshape}{}% space, body
+  {\bfseries\color{cgblue}}{.}{0.5em}{}
+\theoremstyle{cgplain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\newcommand{\rulebox}[1]{\begin{center}\fcolorbox{cggold}{cglight}{\parbox{0.92\linewidth}{#1}}\end{center}}
+\newcommand{\A}{\mathcal A_{51}}
+\newcommand{\Om}{\Omega}
+\newcommand{\sgncol}{\sigma}
+\newcommand{\ArchiveN}{103{,}800{,}788{,}359}
+
+\begin{document}
+\fontsize{9.1}{10.65}\selectfont
+
+\begin{center}
+{\Large\bfseries\color{cgblue} Telescope 51: What a Rule Can See}\\[0.35em]
+{\large Nested observation, finite fibers, and recoverability on a fixed 51-symbol record}\\[0.7em]
+{\normalsize Jeffery Lyn Huckstead - Cerebral Graphix}\\[-0.1em]
+{\small Version 0.2 working edition, 20 September 2026}
+\end{center}
+\vspace{0.25em}
+\hrule height 0.6pt \vspace{0.55em}
+
+\textbf{Abstract.}
+This paper studies a fixed ordered alphabet of 51 distinguishable symbols. Playing cards provide the concrete realization, but the mathematics begins one level above the game: a declared rule is an observation map, and the distinctions that survive are exactly those not collapsed by its fibers. We prove a recovery-threshold theorem for a finite refinement chain: a target becomes recoverable at the first level whose fibers are monochromatic for that target. The card realization supplies exact finite witnesses. An adjacent transposition is invisible under blackjack denomination and visible under natural rank; two branches have the same 17-symbol resolution word and candidate-size ledger but different labeled winners; and a signed-color map sends the active symbols to $+1$, while the outside black marker restores zero. A further corollary shows that every index in the verified zeta-zero archive fits inside one 18-card equal-weight permutation fiber without changing the complete weight profile. The cards carry an address, not the archive or its meaning.
+
+\section*{1. The object before the game}
+Let
+\[
+\A=\{a_1,\ldots,a_{51}\}
+\]
+be a finite alphabet of 51 distinct symbols, and let
+\[
+\mathbf{x}=(x_1,\ldots,x_{51})
+\]
+be one fixed ordering of them. A rule at the symbol level is simply a map
+\[
+f:\A\longrightarrow Y.
+\]
+It extends coordinatewise to the record $f^{51}(\mathbf{x})$. A game, score, decoder, color assignment, special-card convention, or trump declaration may motivate a particular $f$, but that motivation is external to the map itself.
+
+This separation matters. A culture may attach a special role to a named king, a trump, an ace, or a lucky card. Mathematically that role is another declared function on the alphabet. The theorem below does not have to explain why a person chose the convention; it asks only what the convention preserves once chosen.
+
+\rulebox{\textbf{Working principle.} The symbols are fixed. The rule is a map. Recoverability depends on the fibers of that map.}
+
+The card realization uses the 51 active faces of an ordinary deck with $2\clubsuit$ held outside as marker $I$. The source HTML fixes both the order and its decoder; Telescope 51 then applies new observation rules without changing the underlying record.
+
+\section*{2. Fibers, refinement, and first recoverability}
+For any map $K:X\to Y$, define its fiber relation
+\[
+\ker K=\{(x,y)\in X^2:K(x)=K(y)\}.
+\]
+The notation is set-theoretic: no linear structure is assumed. If $(x,y)\in\ker K$, then $K$ cannot distinguish $x$ from $y$.
+
+\begin{definition}[Refinement chain]
+A finite family of observations
+\[
+K_j:X\to Y_j,\qquad j=0,\ldots,m,
+\]
+is a refinement chain if for each $j<m$ there is a map $\pi_j$ with
+\[
+K_j=\pi_j\circ K_{j+1}.
+\]
+Equivalently,
+\[
+\ker K_m\subseteq\ker K_{m-1}\subseteq\cdots\subseteq\ker K_0.
+\]
+\end{definition}
+
+Let $P:X\to Z$ be a target property. We say that $P$ is recoverable from $K_j$ when there is a function $F_j$ on $K_j(X)$ such that
+\[
+P=F_j\circ K_j.
+\]
+Thus recovery means that the observation contains enough information to determine the target, not necessarily to reconstruct the entire state.
+
+\begin{theorem}[Recovery threshold]
+Assume $K_0,\ldots,K_m$ form a finite refinement chain and $P$ is recoverable from the finest level $K_m$. Then
+\[
+P\text{ is recoverable from }K_j
+\quad\Longleftrightarrow\quad
+\ker K_j\subseteq\ker P.
+\tag{1}
+\]
+Consequently the recoverable levels form a terminal interval
+\[
+\{j_*,j_*+1,\ldots,m\},
+\]
+where
+\[
+\boxed{j_*(P)=\min\{j:\ker K_j\subseteq\ker P\}.}
+\tag{2}
+\]
+If $P$ is nonconstant and
+\[
+d(x,y)=\min\{j:K_j(x)\neq K_j(y)\}
+\qquad(P(x)\neq P(y)),
+\]
+then equivalently
+\[
+\boxed{j_*(P)=\max_{P(x)\neq P(y)}d(x,y).}
+\tag{3}
+\]
+\end{theorem}
+
+The theorem says that recoverability begins exactly when every observation fiber becomes $P$-monochromatic. It also gives a useful failure certificate: any pair in one $K_j$-fiber with different $P$-values proves that $K_j$ is insufficient.
+
+\subsection*{Raw coordinates are not automatically a chain}
+The Telescope labels $V,R,C,S$ denote blackjack value, natural rank, signed color, and suit identity. As raw coordinates, color does not determine rank and suit alone does not determine rank. The cumulative observations are the actual refinement chain:
+\[
+\boxed{
+K_0=V,\qquad
+K_1=R,\qquad
+K_2=(R,C),\qquad
+K_3=(R,S),
+}
+\tag{4}
+\]
+where suit determines color. Equivalently one may write the last level as $(R,C,S)$.
+
+\section*{3. Proof and obstruction certificates}
+\begin{proof}[Proof of the Recovery Threshold Theorem]
+First suppose $P=F_j\circ K_j$. If $K_j(x)=K_j(y)$, then
+\[
+P(x)=F_j(K_j(x))=F_j(K_j(y))=P(y),
+\]
+so $\ker K_j\subseteq\ker P$.
+
+Conversely, suppose $\ker K_j\subseteq\ker P$. For $u\in K_j(X)$ choose any $x$ with $K_j(x)=u$ and define
+\[
+F_j(u):=P(x).
+\]
+This is well-defined: if $K_j(x)=K_j(y)$, then $(x,y)\in\ker K_j\subseteq\ker P$, hence $P(x)=P(y)$. Therefore $P=F_j\circ K_j$, proving (1).
+
+Because $K_j=\pi_j\circ K_{j+1}$, we have $\ker K_{j+1}\subseteq\ker K_j$. Hence once $\ker K_j\subseteq\ker P$ holds, it continues to hold at every finer level. Recoverability therefore forms a terminal interval, and (2) follows.
+
+For a pair with $P(x)\neq P(y)$, refinement implies that once some $K_j$ separates the pair, every finer level also separates it. Thus the levels that separate $(x,y)$ are exactly
+\[
+d(x,y),d(x,y)+1,\ldots,m.
+\]
+The property $P$ is recoverable at level $j$ exactly when every $P$-distinct pair has already been separated, which is equivalent to
+\[
+j\ge d(x,y)\quad\text{for all }P(x)\neq P(y).
+\]
+The least such $j$ is the maximum in (3).
+\end{proof}
+
+\begin{corollary}[Persistent witness]
+If $j_*>0$, then there exist $x,y$ such that
+\[
+K_{j_*-1}(x)=K_{j_*-1}(y),\qquad P(x)\neq P(y).
+\]
+The same pair defeats every coarser level $K_i$ with $i<j_*$.
+\end{corollary}
+
+This corollary is the operational form of the theorem: a single obstruction pair can certify that a whole range of coarse observations is insufficient.
+
+\subsection*{A separate decision rule is needed}
+Fiber refinement concerns distinguishability. It does \emph{not} by itself imply that a finer scoring rule cannot reverse a winner chosen by a coarser rule. Telescope 51 imposes an additional protocol: later coordinates are consulted only among players still tied by earlier coordinates. In candidate-set form,
+\[
+L_j=\operatorname*{arg\,max}_{p\in L_{j-1}} f_j(p),
+\qquad L_j\subseteq L_{j-1}.
+\tag{5}
+\]
+Once $|L_j|=1$, the round stops. No later stage is permitted to overturn the decision. This tie-only convention is equivalent to a lexicographic comparison of the cumulative keys. It is a game-rule hypothesis, not a consequence of the fiber theorem.
+
+\rulebox{\textbf{Two mechanisms, kept separate:} partition refinement says what can be distinguished; the tie-only protocol says how a winner is selected from those distinctions.}
+
+\section*{4. The fixed 51-symbol realization}
+The published decoder uses a reference alphabet ordered by rank $A,2,\ldots,K$, with suits in the fixed order spades, hearts, diamonds, clubs, and with $2\clubsuit$ omitted from the active alphabet. The marker $I=2\clubsuit$ remains outside the 51 active positions.
+
+One frozen active record is
+\begin{quote}\small\ttfamily
+AS AH AD AC 2S 2H 2D 3S 3H 3D 3C 4S 4H\\
+4D 4C 5S 5H 5D 5C 6S 6H 6D 6C 7S 7H 7D\\
+7C 8S 8H 8D 8C 9S 9H 9D 9C QD KH 10H KD\\
+QH QS JS 10C JC QC KC 10S JD JH KS 10D
+\end{quote}
+The outside marker is $2\clubsuit$. Positions 50 and 51 are therefore $K\spadesuit,10\diamondsuit$. Branch $A$ is the recorded order; branch $B$ exchanges only those two positions.
+
+The decoder interprets an active order by its factorial (Lehmer) rank
+\[
+R=\sum_{i=1}^{51}d_i(51-i)!,
+\tag{6}
+\]
+where $d_i$ counts unused reference symbols preceding the symbol at position $i$. In the source object, Branch $A$ gives
+\[
+R=14{,}134{,}725{,}141{,}735,
+\]
+and exchanging positions 50 and 51 subtracts one. With the declared scale $10^{12}$, the two strings differ in the last displayed decimal place. This transport is provenance for the fixed record; it is not used to prove the recovery theorem.
+
+\subsection*{Archive addressing inside an equal-weight fiber}
+The v7.2 component profile has exact class sizes
+\[
+2,1,9,1,9,11,18.
+\]
+Let $E$ be the final class of 18 distinct tokens with equal component weight, and let $\mathcal F_E$ contain the records obtained by permuting only those tokens among their 18 occupied positions while every other token and position is held fixed. Every member of $\mathcal F_E$ has the same complete positionwise weight profile, and
+\[
+|\mathcal F_E|=18!=6{,}402{,}373{,}705{,}728{,}000.
+\]
+
+\begin{corollary}[Verified-archive addressing]
+Let $N=\ArchiveN$, the number of zeta zeros in the verified LMFDB archive through height $30{,}610{,}046{,}000$ \cite{LMFDBCompleteness}. Then
+\[
+14!=87{,}178{,}291{,}200<N<15!=1{,}307{,}674{,}368{,}000\le 18!,
+\tag{7}
+\]
+so there is an injection from the one-based index set $\{1,\ldots,N\}$ into $\mathcal F_E$.
+\end{corollary}
+
+The statement is capacity plus a declared code. Decoding an ordinate requires the index convention, an ordering/unranking rule for $\mathcal F_E$, and the external archive. The cards do not compute a zero or extend the certified height. This distinction is visible in the current codec: the terminal ordinate at twelve decimal places corresponds to the integer
+\[
+30{,}610{,}045{,}999{,}955{,}213{,}065{,}709>18!,
+\tag{8}
+\]
+and therefore does not fit inside this one equal-weight fiber.
+
+\subsection*{The Telescope rule}
+For each consecutive triple of cards, apply four stages in order:
+\begin{center}
+\begin{tabularx}{0.94\linewidth}{>{\bfseries}c X X}
+\toprule
+Stage & Raw rule & Acts only on \\
+\midrule
+$V$ & $A=1$, $2$--$9$ face value, $10=J=Q=K=10$ & all current leaders \\
+$R$ & natural rank $A=1,\ldots,K=13$ & value-tied leaders \\
+$C$ & black $=-1$, red $=+1$ & rank-tied leaders \\
+$S$ & $\clubsuit>\spadesuit$ within black, $\diamondsuit>\heartsuit$ within red & color-tied leaders \\
+\bottomrule
+\end{tabularx}
+\end{center}
+The resolution letter of a round is the first stage leaving one leader. The design principle is ``rules first, game second'': the maps are declared, their finite output is computed, and only afterward are partial correspondences to familiar games used as interpretation.
+
+A rule need not be a complete historical game. Blackjack supplies a natural noninjective value map; high-card or War-like play supplies natural rank comparison; red/black gives a signed coordinate. The mathematics does not require all of these rules to have arisen together in one pre-existing game.
+
+\section*{5. The finite obstruction in the record}
+The focal pair already shows the theorem at symbol level. Under blackjack denomination,
+\[
+V(K\spadesuit)=V(10\diamondsuit)=10,
+\tag{9}
+\]
+so the two cards lie in one $V$-fiber. Under natural rank,
+\[
+R(K\spadesuit)=13,\qquad R(10\diamondsuit)=10,
+\tag{10}
+\]
+so the refinement separates them. The physical difference belongs to the state; the observation determines whether that difference remains visible.
+
+Applying the sequential rule to the 17 triples of Branches $A$ and $B$ gives the same depth word:
+\[
+\boxed{D(A)=D(B)=\texttt{SCCV\,SSCV\,SSCV\,SCRRR}.}
+\tag{11}
+\]
+The repeated middle block \texttt{SSCV SSCV} is a finite echo only. No periodic continuation is inferred.
+
+The labeled winner histories are
+\[
+\boxed{W(A)=3333\,2333\,2333\,31312,}
+\qquad
+\boxed{W(B)=3333\,2333\,2333\,31313.}
+\tag{12}
+\]
+Only round 17 changes. Its final triples are
+\[
+A:(J\heartsuit,K\spadesuit,10\diamondsuit),\qquad
+B:(J\heartsuit,10\diamondsuit,K\spadesuit).
+\tag{13}
+\]
+All three cards have blackjack value 10. Rank therefore resolves the round. Branch $A$ gives P2; Branch $B$ gives P3. In both cases the candidate-count trajectory is
+\[
+(3,3,1,1,1).
+\tag{14}
+\]
+Because every earlier round is identical, the complete candidate-size ledger $M$ is identical between branches as well.
+
+\begin{proposition}[Coarse summaries do not determine the labeled winner]
+On any state domain containing $A$ and $B$,
+\[
+\boxed{D(A)=D(B),\qquad M(A)=M(B),\qquad W(A)\neq W(B).}
+\tag{15}
+\]
+Hence there is no function $F$ with $W=F\circ D$, and no function $G$ with $W=G\circ M$ on that domain.
+\end{proposition}
+
+\begin{proof}
+If $W=F\circ D$, then $D(A)=D(B)$ would force $W(A)=W(B)$, contrary to (13). The same argument applies to $M$.
+\end{proof}
+
+The certificate is stronger than saying that one letter sequence ``misses detail.'' It identifies exactly what is lost: two different labeled outcomes occupy the same coarse fiber. More precision applied to $D$ or $M$ cannot recover a distinction those maps have already identified.
+
+\section*{6. A $+1$ map, a changing path, and a telescoping potential}
+The 51-symbol restriction supplies a second exact laboratory. Define signed color by
+\[
+\sgncol(c)=\begin{cases}
++1,&c\text{ red},\\
+-1,&c\text{ black}.
+\end{cases}
+\tag{16}
+\]
+An ordinary deck contains 26 red and 26 black cards. The active alphabet omits the black marker $2\clubsuit$, so among the 51 active symbols there are 26 red and 25 black. Therefore
+\[
+\boxed{\sum_{c\in\A}\sgncol(c)=26-25=+1.}
+\tag{17}
+\]
+The outside marker satisfies $\sgncol(2\clubsuit)=-1$, so restoring it gives
+\[
+\boxed{\sum_{c\in\A\cup\{2\clubsuit\}}\sgncol(c)=0.}
+\tag{18}
+\]
+The $+1$ is produced by the 51-symbol restriction under a declared additive map. No semantic interpretation is required.
+
+\begin{lemma}[Within-block transposition]
+Let $f$ take values in an abelian group, and let a finite ordered sequence be partitioned into blocks. Exchanging two positions inside one block preserves every block sum. If adjacent positions $k,k+1$ containing $x,y$ are exchanged and
+\[
+Q_n=\sum_{i=1}^n f(x_i),
+\]
+then the prefix sums are unchanged except at $n=k$, where
+\[
+Q'_k-Q_k=f(y)-f(x).
+\tag{19}
+\]
+\end{lemma}
+\begin{proof}
+All prefixes ending before $k$ contain neither exchanged entry. The prefix ending at $k$ contains $x$ before the swap and $y$ after it. Every prefix ending at or after $k+1$ contains both entries, so commutativity restores equality. A block containing both entries has the same total for the same reason.
+\end{proof}
+
+For signed color, $f(K\spadesuit)=-1$ and $f(10\diamondsuit)=+1$. Thus Branch $B$ differs from Branch $A$ by $+2$ at prefix 50 and rejoins at prefix 51:
+\[
+(S_{49},S_{50},S_{51})_A=(1,0,1),\qquad
+(S_{49},S_{50},S_{51})_B=(1,2,1).
+\tag{20}
+\]
+The fine path changes; the endpoint does not.
+
+\subsection*{Resolution potential}
+For a nonempty candidate set $L$, define
+\[
+\Phi(L)=\frac1{|L|}.
+\tag{21}
+\]
+Along any survivor chain $L_0\supseteq\cdots\supseteq L_r$,
+\[
+\sum_{j=1}^r\bigl(\Phi(L_j)-\Phi(L_{j-1})\bigr)
+=\Phi(L_r)-\Phi(L_0).
+\tag{22}
+\]
+For three initial candidates and one final winner this is
+\[
+1-\frac13=\frac23.
+\tag{23}
+\]
+This is a reciprocal-cardinality or resolution potential. It is not Shannon information, entropy, evidence, or probability without an additional model. Equal candidate counts can preserve different distinctions; cardinality alone does not determine recoverability.
+
+\section*{7. Rule first, game second}
+The source HTML provides two layers that are deliberately kept apart. The v7.2 Invariant page fixes a reversible card-string transport and a finite deterministic card process. The Telescope 51 beta then applies a new nested observation system to the same underlying 51-card record. This paper extracts the common mathematics from those interfaces.
+
+The symbol-level abstraction makes the boundary explicit. A special-card convention can always be written as a map. For a designated symbol $c_0$, for example,
+\[
+h(c)=\begin{cases}1,&c=c_0,\\0,&c\neq c_0.\end{cases}
+\tag{24}
+\]
+Whether a human culture calls $c_0$ lucky, trump, royal, wild, or something else is not a theorem about the alphabet. It is a reason someone may choose $h$. Once $h$ is declared, its fibers and consequences are ordinary finite mathematics.
+
+Likewise, familiar games enter here as sources of maps, not as hidden explanations of the deck. Blackjack contributes a natural quotient because several printed ranks share value 10. Natural high-card comparison separates those ranks. Color and suit provide further coordinates. The fixed Telescope rule is custom because it combines these ingredients in a declared tie-only order.
+
+\subsection*{What this paper establishes}
+The formal results are finite and exact:
+\begin{enumerate}
+\item Recoverability from an observation is equivalent to constancy of the target on every observation fiber.
+\item A finite refinement chain therefore has a first recoverable level for any target recoverable at the finest level.
+\item The focal transposition lies inside a blackjack-value fiber and outside a natural-rank fiber.
+\item The two branches have the same depth word and candidate-size ledger but different labeled winners.
+\item The signed-color map sends the active 51-symbol alphabet to $+1$, while the outside black marker restores zero.
+\item The focal swap changes the signed-color path by two at one prefix while preserving the endpoint.
+\item Every verified archive index fits inside one 18-card equal-weight permutation fiber; decoding its ordinate still requires the external archive.
+\end{enumerate}
+
+The claims are not probabilistic statements about zeta zeros, human behavior, or the uniqueness of the card ordering. The repeated depth block is not promoted to a law. The decoder transports a supplied record; it does not calculate a new zero. Archive addressing is an injective coding statement, not a source of zero values. The game provides a laboratory for a question independent of the source semantics: what can a declared observation recover from a fixed state?
+
+\newpage
+\section*{Conclusion}
+A fixed object does not arrive with one privileged notion of visibility. Visibility belongs to a pair: state and observation. The state determines what differs. The observation determines which of those differences survive quotienting. Refinement becomes useful precisely when it splits a fiber that was too coarse for the target of interest.
+
+Telescope 51 makes that relation inspectable card by card, but the theorem is not about cards. It is about finite observation. The same pattern applies whenever a fixed alphabet is subjected to a hierarchy of declared maps and the question is not merely what was measured, but what can still be recovered from the measurement.
+
+\rulebox{\centering\textbf{The object fixes what differs; the observation fixes which differences remain visible.}}
+
+\begin{thebibliography}{9}\small
+\bibitem{LineGame}
+J. L. Huckstead, \emph{The Line Game $|$ Surprise Is Not Meaning}, version 7.2, Cerebral Graphix/Zenodo (2026), \href{https://doi.org/10.5281/zenodo.22851517}{doi:10.5281/zenodo.22851517}.
+
+\bibitem{LMFDBCompleteness}
+The LMFDB Collaboration, ``Completeness of Riemann zeta zeros data,'' accessed 20 September 2026, \url{https://www.lmfdb.org/zeros/zeta/Completeness}.
+
+\bibitem{LMFDBSource}
+The LMFDB Collaboration, ``Source of Riemann zeta zeros data,'' crediting computations by David Platt and stored absolute precision $\pm2^{-102}$, accessed 20 September 2026, \url{https://www.lmfdb.org/zeros/zeta/Source}.
+\end{thebibliography}
+
+\end{document}

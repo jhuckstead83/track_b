@@ -1,0 +1,25 @@
+{
+  "version": "v4.8",
+  "date": "2026-09-17",
+  "zenodo_concept_doi": "10.5281/zenodo.21968915",
+  "zenodo_version_doi": "assigned at publication of v4.8; this edition supersedes it in the same version chain",
+  "publication_package": {
+    "filename": "TN_Postmaster_Volume_I_v4_8_PUBLICATION_PACKAGE.zip",
+    "bytes": 18413656,
+    "members": 173,
+    "sha256": "413a3a02cb746d85a70665779b74802c5258abb33c43454472b1f4d2ea166321"
+  },
+  "reading_pdf": {
+    "filename": "TN_Postmaster_Volume_I_v4_8_READING_VOLUME.pdf",
+    "pages": 97,
+    "bytes": 4948855,
+    "sha256": "b387876d43a0b1e5e981fba8a9a81e638281f89ace7f989b054384318039b5a5"
+  },
+  "dossier_pdf": {
+    "filename": "TN_Postmaster_Volume_I_v4_8_TECHNICAL_DOSSIER.pdf",
+    "pages": 278,
+    "bytes": 12462138,
+    "sha256": "14c9815072a94adc8407e9d9b6076c2724de1ab4d5f3cbdc0ca408721ce5e97f"
+  },
+  "note": "The v4.8 package is not nested in v5.0; it remains preserved in the Zenodo version chain. PRUNED.json lists every v4.8 member omitted from v5.0. The W5-W6 certificate receipts that v4.8 referred to remain in the 4.5 and 4.6 packages of the same chain; qa/source_rungs/LEGACY_COMPARISON.json records their SHA-256 values and the checks made against them."
+}

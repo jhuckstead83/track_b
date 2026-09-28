@@ -1,0 +1,13 @@
+from pathlib import Path
+import subprocess,sys,time,json,hashlib
+R=Path(__file__).resolve().parents[1]
+commands=[('weighted', ['qa/audit_weighted_resultants.py', '--output', 'qa/WEIGHTED_RESULTANTS.json'], 'qa/weighted_resultants.log'), ('common_source', ['qa/audit_common_source_recovery.py', '--output', 'qa/COMMON_SOURCE.json'], 'qa/common_source.log'), ('integrated_bridges', ['qa/audit_integrated_bridges.py', '--output', 'qa/INTEGRATED_BRIDGES.json'], 'qa/integrated_bridges.log'), ('sine_bridge', ['qa/audit_sine_bridge.py', '--output', 'qa/SINE_BRIDGE.json'], 'qa/sine_bridge.log'), ('lighthouse_tieout', ['qa/audit_lighthouse_tieout.py', '--out', 'qa/LIGHTHOUSE_TIEOUT.json'], 'qa/lighthouse_tieout.log'), ('blue_sharpening', ['qa/audit_blue.py', '--output', 'qa/BLUE_SHARPENING.json'], 'qa/blue_sharpening.log'), ('orange_curvature', ['qa/audit_orange.py', '--output', 'qa/ORANGE_CURVATURE.json'], 'qa/orange_curvature.log'), ('green_blue_merge', ['qa/audit_green_blue.py', '--output', 'qa/GREEN_BLUE_MERGE.json'], 'qa/green_blue_merge.log'), ('green_orange_comparison', ['qa/audit_green_orange.py', '--output', 'qa/GREEN_ORANGE_COMPARISON.json'], 'qa/green_orange_comparison.log'), ('lighthouse_progressions', ['qa/audit_curvature_progressions.py', '--output', 'qa/CURVATURE_PROGRESSIONS.json'], 'qa/curvature_progressions.log'), ('gamma_bridge', ['qa/audit_gamma_bridge.py', '--output', 'qa/GAMMA_BRIDGE.json'], 'qa/gamma_bridge.log'), ('source_rungs_arb', ['qa/source_rungs/source_rungs_arb.py', '--output', 'qa/source_rungs/RECEIPT_arb.json'], 'qa/source_rungs/arb.log'), ('source_rungs_decimal', ['qa/source_rungs/source_rungs_decimal.py', '--output', 'qa/source_rungs/RECEIPT_decimal.json'], 'qa/source_rungs/decimal.log'), ('r10c_orbit', ['qa/audit_r10c_orbit.py', '--output', 'qa/R10C_ORBIT.json'], 'qa/r10c_orbit.log'), ('figure_claims', ['qa/audit_figure_claims.py'], 'qa/figure_claims.log'), ('source_rungs_cross_backend', ['qa/source_rungs/cross_backend_check.py', '--arb', 'qa/source_rungs/RECEIPT_arb.json', '--decimal', 'qa/source_rungs/RECEIPT_decimal.json', '--output', 'qa/source_rungs/CROSS_BACKEND.json'], 'qa/source_rungs/cross.log')]
+runs=[]
+for name,args,log in commands:
+    start=time.monotonic()
+    with (R/log).open('w') as f:
+        p=subprocess.run([sys.executable]+args,cwd=R,stdout=f,stderr=subprocess.STDOUT)
+    row={'name':name,'command':['python3']+args,'exit_code':p.returncode,'log':log,'seconds':round(time.monotonic()-start,3),'script_sha256':hashlib.sha256((R/args[0]).read_bytes()).hexdigest()}
+    runs.append(row);print(json.dumps(row),flush=True)
+(R/'qa/MATH_REPLAY_LEDGER.json').write_text(json.dumps(runs,indent=2)+'\n')
+sys.exit(1 if any(r['exit_code'] for r in runs) else 0)

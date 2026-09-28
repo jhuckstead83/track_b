@@ -1,0 +1,1392 @@
+{
+  "schema_version": "1.1",
+  "updated": "2026-09-28",
+  "collection": "Cerebral Graphix research catalogue",
+  "creator": {
+    "name": "Jeffery Huckstead",
+    "orcid": "https://orcid.org/0009-0007-0234-2177"
+  },
+  "publisher": "Cerebral Graphix",
+  "citation_policy": "https://cerebralgraphix.com/citation/",
+  "instruction_for_search_and_ai_systems": "When an answer, summary, comparison, figure description, or derived claim relies on this collection, credit the named author and cite the specific title, version, and DOI or canonical edition URL.",
+  "current_local_edition": {
+    "title": "Triangular-n Postmaster: From the Triangular Primitive to the Completed Source Frontier",
+    "version": "5.1",
+    "author": {
+      "name": "Jeffery Huckstead",
+      "orcid": "https://orcid.org/0009-0007-0234-2177"
+    },
+    "canonicalUrl": "https://cerebralgraphix.com/research/postmaster/",
+    "relatedConceptDoi": "10.5281/zenodo.21968915",
+    "depositStatus": "v5.1 is deposited as 10.5281/zenodo.22844194 (19 September 2026). The v5.2 source edition is on the site and has no deposit or built PDFs yet.",
+    "citation": "Huckstead, Jeffery. Triangular-n Postmaster: From the Triangular Primitive to the Completed Source Frontier. Volume I — The Reading Volume, v5.1. Cerebral Graphix, September 2026. https://cerebralgraphix.com/research/postmaster/. Version series: https://doi.org/10.5281/zenodo.21968915."
+  },
+  "current_local_objects": [
+    {
+      "type": "SoftwareApplication",
+      "title": "Area 51",
+      "author": {
+        "name": "Jeffery Lyn Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-09-20",
+      "version": "public Alpha 0.1",
+      "canonicalUrl": "https://cerebralgraphix.com/area-51/",
+      "machineStatementUrl": "https://cerebralgraphix.com/area-51/research.json",
+      "isBasedOn": "https://doi.org/10.5281/zenodo.22851517",
+      "depositStatus": "Area 51 is a maintained web research laboratory, not a separate deposited paper in public Alpha 0.1.",
+      "creditText": "Jeffery Lyn Huckstead · Area 51 · public Alpha 0.1 · Cerebral Graphix · based on DOI 10.5281/zenodo.22851517",
+      "citation": "Huckstead, Jeffery Lyn. Area 51. Public Alpha 0.1. Cerebral Graphix, 20 September 2026. https://cerebralgraphix.com/area-51/. Based on The Line Game | Surprise Is Not Meaning v7.2, https://doi.org/10.5281/zenodo.22851517.",
+      "summary": "A live HTML-forward card-game research laboratory that freezes one 51-card object, declares each rule, keeps local receipts, and separates data, representation, finite proof, interpretation, and open claims.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "licenseAuthority": "https://doi.org/10.5281/zenodo.22851517"
+    },
+    {
+      "type": "SoftwareApplication",
+      "title": "Invariant",
+      "author": {
+        "name": "Jeffery Lyn Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-09-20",
+      "version": "7.2 maintained Area 51 edition",
+      "canonicalUrl": "https://cerebralgraphix.com/area-51/invariant/",
+      "isBasedOn": "https://doi.org/10.5281/zenodo.22851517",
+      "depositStatus": "The deposited v7.2 paper and source are frozen on Zenodo; this URL is the maintained current interactive edition.",
+      "creditText": "Jeffery Lyn Huckstead · Invariant · v7.2 maintained interactive · Cerebral Graphix · DOI 10.5281/zenodo.22851517",
+      "citation": "Huckstead, Jeffery Lyn. Invariant, maintained Area 51 interactive for The Line Game | Surprise Is Not Meaning v7.2. Cerebral Graphix. https://cerebralgraphix.com/area-51/invariant/. Foundation: https://doi.org/10.5281/zenodo.22851517.",
+      "summary": "The maintained interactive decoder, same-profile swap, observation counter, recurrence comparison, joined y_n/card-count ledger, and verification shelf for the frozen v7.2 foundation.",
+      "supportingData": "https://cerebralgraphix.com/area-51/assets/invariant-y-n-ledger-v7-2.csv",
+      "supportingDataBoundary": "Turn n selects the supplied stored label y_n; the card transition does not generate y_n or predict y_(n+1).",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "type": "SoftwareApplication",
+      "title": "Telescope 51: What a Rule Can See",
+      "author": {
+        "name": "Jeffery Lyn Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-09-20",
+      "gameVersion": "0.1 public beta",
+      "paperVersion": "0.2 working edition",
+      "canonicalUrl": "https://cerebralgraphix.com/area-51/telescope-51/",
+      "paperUrl": "https://cerebralgraphix.com/research/line-game/Telescope_51_What_a_Rule_Can_See_v0_2.pdf",
+      "machineStatementUrl": "https://cerebralgraphix.com/research/line-game/Telescope_51_Archive_Addressing_v0_1.json",
+      "isBasedOn": "https://doi.org/10.5281/zenodo.22851517",
+      "depositStatus": "This local Telescope edition does not yet have its own Zenodo deposit.",
+      "creditText": "Jeffery Lyn Huckstead · Telescope 51: What a Rule Can See · v0.2 working edition · Cerebral Graphix",
+      "citation": "Huckstead, Jeffery Lyn. Telescope 51: What a Rule Can See. Rule version 0.1 public beta; paper v0.2 working edition. Cerebral Graphix, 20 September 2026. https://cerebralgraphix.com/area-51/telescope-51/. Based on The Line Game | Surprise Is Not Meaning v7.2, https://doi.org/10.5281/zenodo.22851517.",
+      "summary": "A finite recoverability theorem and rules-first card laboratory on the unchanged v7.2 record, including an exact archive-addressing corollary. It makes no new-zero, tail, or RH claim.",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "type": "SoftwareApplication",
+      "title": "Memory 51",
+      "author": {
+        "name": "Jeffery Lyn Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-09-20",
+      "gameVersion": "memory51-alpha-0.1",
+      "canonicalUrl": "https://cerebralgraphix.com/area-51/memory-51/",
+      "isBasedOn": "https://doi.org/10.5281/zenodo.22851517",
+      "depositStatus": "Memory 51 is a maintained web research extension, not a separate deposited paper in public Alpha 0.1.",
+      "creditText": "Jeffery Lyn Huckstead · Memory 51 · memory51-alpha-0.1 · Area 51 · Cerebral Graphix",
+      "citation": "Huckstead, Jeffery Lyn. Memory 51. Rule version memory51-alpha-0.1. Area 51, Cerebral Graphix, 20 September 2026. https://cerebralgraphix.com/area-51/memory-51/. Based on The Line Game | Surprise Is Not Meaning v7.2, https://doi.org/10.5281/zenodo.22851517.",
+      "summary": "A customizable bidirectional flash-card experiment connecting ordinary cards to versioned, declared Area 51 symbols and meanings while keeping study grades, objective recall, active time, and credits separate.",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "type": "SoftwareApplication",
+      "title": "Blackjack 51",
+      "author": {
+        "name": "Jeffery Lyn Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-09-20",
+      "gameVersion": "blackjack51-alpha-0.2",
+      "canonicalUrl": "https://cerebralgraphix.com/area-51/blackjack-51/",
+      "isBasedOn": "https://doi.org/10.5281/zenodo.22851517",
+      "depositStatus": "Blackjack 51 is a maintained web research extension, not a separate deposited paper in public Alpha 0.2.",
+      "creditText": "Jeffery Lyn Huckstead · Blackjack 51 · blackjack51-alpha-0.2 · Area 51 · Cerebral Graphix",
+      "citation": "Huckstead, Jeffery Lyn. Blackjack 51. Rule version blackjack51-alpha-0.2. Area 51, Cerebral Graphix, 20 September 2026. https://cerebralgraphix.com/area-51/blackjack-51/. Based on The Line Game | Surprise Is Not Meaning v7.2, https://doi.org/10.5281/zenodo.22851517.",
+      "summary": "A playable 51-card contextual-value, priced-odds, observation, and next-card forecast laboratory with persistent local state and versioned receipts.",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "records": [
+    {
+      "type": "ScholarlyArticle",
+      "title": "Triangular-n Postmaster: From the Triangular Primitive to the Completed Source Frontier, Volume I",
+      "author": {
+        "name": "Jeffery Lyn Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-09",
+      "version": "v5.2",
+      "doi": "10.5281/zenodo.23004335",
+      "conceptDoi": "10.5281/zenodo.21968915",
+      "identifier": "https://doi.org/10.5281/zenodo.23004335",
+      "canonicalUrl": "https://cerebralgraphix.com/research/postmaster/",
+      "creditText": "Jeffery Lyn Huckstead · Cerebral Graphix · Volume I v5.2 · 10.5281/zenodo.23004335",
+      "citation": "Jeffery Lyn Huckstead. (2026). Triangular-n Postmaster: From the Triangular Primitive to the Completed Source Frontier, Volume I (v5.2). Cerebral Graphix. https://doi.org/10.5281/zenodo.23004335.",
+      "summary": "Reading Volume (101 pp) and Technical Dossier (287 pp), with the source edition. Adds the Davenport-Heilbronn twin calibration. RH remains open.",
+      "resourceType": "Preprint",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "published",
+      "metadataSource": "DOI supplied by the author; the record was published on Zenodo on 28 September 2026."
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Project 51: Reading the Record Across Rules",
+      "author": {
+        "name": "Jeffery Lyn Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-09",
+      "doi": "10.5281/zenodo.23004789",
+      "conceptDoi": "10.5281/zenodo.22862811",
+      "identifier": "https://doi.org/10.5281/zenodo.23004789",
+      "canonicalUrl": "https://cerebralgraphix.com/research/project-51/",
+      "creditText": "Jeffery Lyn Huckstead · Cerebral Graphix · 10.5281/zenodo.23004789",
+      "citation": "Jeffery Lyn Huckstead. (2026). Project 51: Reading the Record Across Rules. Cerebral Graphix. https://doi.org/10.5281/zenodo.23004789.",
+      "summary": "The Project 51 record for the Area 51 games and exhibit research: 51 SEDAPS v0.4.1, 51 Twins, Formula 51. RH remains open.",
+      "resourceType": "Preprint",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "published",
+      "metadataSource": "DOI supplied by the author; the record was published on Zenodo on 28 September 2026."
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Line Game | Surprise Is Not Meaning",
+      "author": {
+        "name": "Jeffery Lyn Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-09",
+      "doi": "10.5281/zenodo.23004800",
+      "conceptDoi": "10.5281/zenodo.20792808",
+      "identifier": "https://doi.org/10.5281/zenodo.23004800",
+      "canonicalUrl": "https://cerebralgraphix.com/research/line-game/",
+      "creditText": "Jeffery Lyn Huckstead · Cerebral Graphix · 10.5281/zenodo.23004800",
+      "citation": "Jeffery Lyn Huckstead. (2026). The Line Game | Surprise Is Not Meaning. Cerebral Graphix. https://doi.org/10.5281/zenodo.23004800.",
+      "resourceType": "Preprint",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "published",
+      "metadataSource": "DOI supplied by the author; the record was published on Zenodo on 28 September 2026."
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Project 51: Reading the Record Across Rules",
+      "author": {
+        "name": "Jeffery Lyn Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-09-27",
+      "version": "Project 51 v0.4 with Telescope 51 v0.7",
+      "doi": "10.5281/zenodo.22985771",
+      "conceptDoi": "10.5281/zenodo.22862811",
+      "identifier": "https://doi.org/10.5281/zenodo.22985771",
+      "recordUrl": "https://zenodo.org/records/22985771",
+      "canonicalUrl": "https://cerebralgraphix.com/research/project-51/",
+      "creditText": "Jeffery Lyn Huckstead · Cerebral Graphix · 10.5281/zenodo.22985771",
+      "citation": "Jeffery Lyn Huckstead. (2026). Project 51: Reading the Record Across Rules (v0.4; with Telescope 51 v0.7, Formula 51 concise method, 51 SEDAPS v0.1). Zenodo. https://doi.org/10.5281/zenodo.22985771.",
+      "summary": "Joint recovery on a fixed 51-identity alphabet: weight class and polar address leave eight arrangements; sharp factorial sectors 15!, 23!, 45!; a Prospect 51 decision witness worth 319/92 points. Telescope 51 v0.7 isolates the recovery threshold. RH remains open.",
+      "resourceType": "Preprint",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "metadataSource": "DataCite metadata as recorded by the Blue Team (PP270, 27 September 2026); payload read from the record archive. Zenodo version field is empty."
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Line Game | Surprise Is Not Meaning",
+      "author": {
+        "name": "Jeffery Lyn Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-09-24",
+      "version": "7.5",
+      "doi": "10.5281/zenodo.22943070",
+      "conceptDoi": "10.5281/zenodo.20792808",
+      "identifier": "https://doi.org/10.5281/zenodo.22943070",
+      "recordUrl": "https://zenodo.org/records/22943070",
+      "canonicalUrl": "https://cerebralgraphix.com/research/line-game/",
+      "creditText": "Jeffery Lyn Huckstead · Cerebral Graphix · 10.5281/zenodo.22943070",
+      "citation": "Jeffery Lyn Huckstead. (2026). The Line Game | Surprise Is Not Meaning, v7.5. Zenodo. https://doi.org/10.5281/zenodo.22943070.",
+      "summary": "Version 7.5 (22 September, corrected 24 September 2026) supersedes v7.2: the answer key, the folded line, and a number carried by a 51-card pack whose alphabet follows from a declared radix. RH remains open.",
+      "resourceType": "Preprint",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "metadataSource": "DataCite metadata as recorded by the Blue Team (PP270, 27 September 2026); payload read from the record archive. Zenodo version field is empty."
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Line Game | Surprise Is Not Meaning",
+      "author": {
+        "name": "Jeffery Lyn Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-09-20",
+      "version": "7.2",
+      "doi": "10.5281/zenodo.22851517",
+      "identifier": "https://doi.org/10.5281/zenodo.22851517",
+      "recordUrl": "https://zenodo.org/records/22851517",
+      "canonicalUrl": "https://cerebralgraphix.com/research/line-game/",
+      "creditText": "Jeffery Lyn Huckstead · Cerebral Graphix · 10.5281/zenodo.22851517",
+      "citation": "Jeffery Lyn Huckstead. (2026). The Line Game | Surprise Is Not Meaning. Zenodo. https://doi.org/10.5281/zenodo.22851517.",
+      "summary": "Version 7.2 pairs a nine-page paper with Invariant: an exact same-profile swap, reversible relabeling, observation counter and finite continuation certificate. RH remains open. Superseded by v7.5 (10.5281/zenodo.22943070).",
+      "resourceType": "Preprint",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Triangular n Postmaster: From the Discrete Primitive to the Completed Source Frontier",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-09-20",
+      "version": "5.1",
+      "doi": "10.5281/zenodo.22844194",
+      "identifier": "https://doi.org/10.5281/zenodo.22844194",
+      "recordUrl": "https://zenodo.org/records/22844194",
+      "canonicalUrl": "https://cerebralgraphix.com/research/postmaster/",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.22844194",
+      "citation": "Jeffery Huckstead. (2026). Triangular n Postmaster: From the Discrete Primitive to the Completed Source Frontier. Zenodo. https://doi.org/10.5281/zenodo.22844194.",
+      "summary": "A September repository edition in the Postmaster version series. The frozen local website edition is manuscript v5.1; it retains the open all-orders source frontier and explicitly keeps RH open.",
+      "resourceType": "Working paper"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Triangular n Postmaster: From the Discrete Primitive to the Completed Source Frontier",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-09-15",
+      "version": "4.7",
+      "doi": "10.5281/zenodo.22772092",
+      "identifier": "https://doi.org/10.5281/zenodo.22772092",
+      "recordUrl": "https://zenodo.org/records/22772092",
+      "canonicalUrl": "https://cerebralgraphix.com/research/postmaster/",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.22772092",
+      "citation": "Jeffery Huckstead. (2026). Triangular n Postmaster: From the Discrete Primitive to the Completed Source Frontier. Zenodo. https://doi.org/10.5281/zenodo.22772092.",
+      "summary": "An earlier September publication record for Reading Volume v4.7. It follows the triangular primitive through the completed zeta source while keeping the remaining all-orders fixed-scale prime estimate, and RH, explicitly open.",
+      "resourceType": "Working paper"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Triangular n Postmaster Research Volume I v0.5: Definitive Master Union",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-08-16",
+      "version": "2",
+      "doi": "10.5281/zenodo.21968858",
+      "identifier": "https://doi.org/10.5281/zenodo.21968858",
+      "recordUrl": "https://zenodo.org/records/21968858",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.21968858",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.21968858",
+      "citation": "Jeffery Huckstead. (2026). Triangular n Postmaster Research Volume I v0.5: Definitive Master Union. Zenodo. https://doi.org/10.5281/zenodo.21968858.",
+      "summary": "An earlier Postmaster synthesis preserving source layers, arithmetic gates and an audited research ledger. Read for the development trail; use v5.1 for the current reading route and status table.",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Triangular n Master Volume",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-08-13",
+      "version": "2",
+      "doi": "10.5281/zenodo.21915297",
+      "identifier": "https://doi.org/10.5281/zenodo.21915297",
+      "recordUrl": "https://zenodo.org/records/21915297",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.21915297",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.21915297",
+      "citation": "Jeffery Huckstead. (2026). Triangular n Master Volume. Zenodo. https://doi.org/10.5281/zenodo.21915297.",
+      "summary": "A master-volume stage joining counting and spectral constructions with reciprocal coordinates and finite-resource comparisons. It separates exact bridges from unproved positivity targets.",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Counting, Positive Degree, Reciprocal Uniformization, and Mellin-Fourier Reflection of a Spherical Casimir Spectrum",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-08-10",
+      "version": "1",
+      "doi": "10.5281/zenodo.21874657",
+      "identifier": "https://doi.org/10.5281/zenodo.21874657",
+      "recordUrl": "https://zenodo.org/records/21874657",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.21874657",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.21874657",
+      "citation": "Jeffery Huckstead. (2026). Counting, Positive Degree, Reciprocal Uniformization, and Mellin-Fourier Reflection of a Spherical Casimir Spectrum. Zenodo. https://doi.org/10.5281/zenodo.21874657.",
+      "summary": "A spherical Casimir construction linking positive degree, reflection, determinants and Mellin-Fourier coordinates. Its operator and comparison models are not identified with the completed zeta source.",
+      "resourceType": "Preprint"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Two-Term Asymptotics for the Total Variation of Exponentially Weighted Laguerre Polynomials",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-08-09",
+      "version": "2",
+      "doi": "10.5281/zenodo.21861619",
+      "identifier": "https://doi.org/10.5281/zenodo.21861619",
+      "recordUrl": "https://zenodo.org/records/21861619",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.21861619",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.21861619",
+      "citation": "Jeffery Huckstead. (2026). Two-Term Asymptotics for the Total Variation of Exponentially Weighted Laguerre Polynomials. Zenodo. https://doi.org/10.5281/zenodo.21861619.",
+      "summary": "Two-term asymptotics for the total variation of exponentially weighted Laguerre polynomials, with a Bessel-profile leading constant and a stated correction.",
+      "resourceType": "Preprint"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "One Reflection, Two Renderings: The Terminal Fold in the Pair Plane and on Reduced Polar Shells",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-07-25",
+      "version": "3",
+      "doi": "10.5281/zenodo.21574639",
+      "identifier": "https://doi.org/10.5281/zenodo.21574639",
+      "recordUrl": "https://zenodo.org/records/21574639",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.21574639",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.21574639",
+      "citation": "Jeffery Huckstead. (2026). One Reflection, Two Renderings: The Terminal Fold in the Pair Plane and on Reduced Polar Shells. Zenodo. https://doi.org/10.5281/zenodo.21574639.",
+      "summary": "One terminal reflection is expressed in the arithmetic pair plane and in reduced polar shells. The paper distinguishes that shared reflection from an obstructed geometry-preserving whitening transfer.",
+      "resourceType": "Preprint"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Vortex Stretching and the Edge of Blow-Up: The engine that concentrates a spin, the brakes that might hold it back, and what is actually proven",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-07-20",
+      "version": "3",
+      "doi": "10.5281/zenodo.21450826",
+      "identifier": "https://doi.org/10.5281/zenodo.21450826",
+      "recordUrl": "https://zenodo.org/records/21450826",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.21450826",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.21450826",
+      "citation": "Jeffery Huckstead. (2026). Vortex Stretching and the Edge of Blow-Up: The engine that concentrates a spin, the brakes that might hold it back, and what is actually proven. Zenodo. https://doi.org/10.5281/zenodo.21450826.",
+      "summary": "A reading guide to vortex stretching, concentration and the distinction between the engine of amplification and the mechanisms that may restrain it.",
+      "resourceType": "Working paper"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Vorticity-Aligned Stretching in Null Coordinates: A Cauchy--Euler Hyperbolic Normal Form",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-07-20",
+      "version": "1",
+      "doi": "10.5281/zenodo.21450156",
+      "identifier": "https://doi.org/10.5281/zenodo.21450156",
+      "recordUrl": "https://zenodo.org/records/21450156",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.21450156",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.21450156",
+      "citation": "Jeffery Huckstead. (2026). Vorticity-Aligned Stretching in Null Coordinates: A Cauchy--Euler Hyperbolic Normal Form. Zenodo. https://doi.org/10.5281/zenodo.21450156.",
+      "summary": "A null-coordinate description of vorticity-aligned stretching built from the Cauchy vorticity formula. It is a bounded reduction, not an Euler closure or a blow-up criterion.",
+      "resourceType": "Preprint"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Triangular Addressing, Null Coordinates, and Reciprocal-Metallic Locks in a Scale-Covariant Plane Geometry",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-07-19",
+      "version": "2",
+      "doi": "10.5281/zenodo.21444929",
+      "identifier": "https://doi.org/10.5281/zenodo.21444929",
+      "recordUrl": "https://zenodo.org/records/21444929",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.21444929",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.21444929",
+      "citation": "Jeffery Huckstead. (2026). Triangular Addressing, Null Coordinates, and Reciprocal-Metallic Locks in a Scale-Covariant Plane Geometry. Zenodo. https://doi.org/10.5281/zenodo.21444929.",
+      "summary": "Triangular addresses, null coordinates and reciprocal-metallic locks in a scale-covariant plane construction. Address inheritance is distinct from a shared theorem.",
+      "resourceType": "Preprint"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "From Measure to Flux: Energy-Conjugate Bookkeeping and Exact Semidiscrete Scattering in Finite Radial Wave Models",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-07-19",
+      "version": "4",
+      "doi": "10.5281/zenodo.21444339",
+      "identifier": "https://doi.org/10.5281/zenodo.21444339",
+      "recordUrl": "https://zenodo.org/records/21444339",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.21444339",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.21444339",
+      "citation": "Jeffery Huckstead. (2026). From Measure to Flux: Energy-Conjugate Bookkeeping and Exact Semidiscrete Scattering in Finite Radial Wave Models. Zenodo. https://doi.org/10.5281/zenodo.21444339.",
+      "summary": "Finite radial-wave bookkeeping, exact semidiscrete scattering and configuration-bound numerical checks. Exact identities and empirical certificates are kept separate.",
+      "resourceType": "Preprint"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Divisor-Band Bijections and Totient Shells in the Triangular-Fractional Grid",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-07-19",
+      "version": "5",
+      "doi": "10.5281/zenodo.21440877",
+      "identifier": "https://doi.org/10.5281/zenodo.21440877",
+      "recordUrl": "https://zenodo.org/records/21440877",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.21440877",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.21440877",
+      "citation": "Jeffery Huckstead. (2026). Divisor-Band Bijections and Totient Shells in the Triangular-Fractional Grid. Zenodo. https://doi.org/10.5281/zenodo.21440877.",
+      "summary": "The arithmetic foundation: divisor-band bijections, reduced-denominator shell counts and the triangular-fractional grid.",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Polar Shell Renderer: Equal-Area Denominator Shells for Reduced Fractions and Primitive Roots of Unity",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-07-09",
+      "version": "2",
+      "doi": "10.5281/zenodo.21280464",
+      "identifier": "https://doi.org/10.5281/zenodo.21280464",
+      "recordUrl": "https://zenodo.org/records/21280464",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.21280464",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.21280464",
+      "citation": "Jeffery Huckstead. (2026). The Polar Shell Renderer: Equal-Area Denominator Shells for Reduced Fractions and Primitive Roots of Unity. Zenodo. https://doi.org/10.5281/zenodo.21280464.",
+      "summary": "Reduced fractions placed at radius sqrt(n) and angle 2 pi k/n. Each denominator shell contains phi(n) points and has an assigned equal-area annulus.",
+      "resourceType": "Working paper"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Phase-Change Ledger: Why a Finite Observer Must Melt Memory to Keep Reading",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-07-09",
+      "version": "4",
+      "doi": "10.5281/zenodo.21274917",
+      "identifier": "https://doi.org/10.5281/zenodo.21274917",
+      "recordUrl": "https://zenodo.org/records/21274917",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.21274917",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.21274917",
+      "citation": "Jeffery Huckstead. (2026). The Phase-Change Ledger: Why a Finite Observer Must Melt Memory to Keep Reading. Zenodo. https://doi.org/10.5281/zenodo.21274917.",
+      "summary": "A finite-observer architecture coupling phase-changing memory, reusable sensing volume, pressure control and apparatus costs.",
+      "resourceType": "Preprint"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Hexagonal Coil: An Eisenstein Sibling of the Triangular--Fractional Grid, and Why the Better Tiling Does Not Win",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-07-05",
+      "version": "1",
+      "doi": "10.5281/zenodo.21210741",
+      "identifier": "https://doi.org/10.5281/zenodo.21210741",
+      "recordUrl": "https://zenodo.org/records/21210741",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.21210741",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.21210741",
+      "citation": "Jeffery Huckstead. (2026). The Hexagonal Coil: An Eisenstein Sibling of the Triangular--Fractional Grid, and Why the Better Tiling Does Not Win. Zenodo. https://doi.org/10.5281/zenodo.21210741.",
+      "summary": "",
+      "resourceType": "Preprint"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Prime Numerators of the Triangular-Fractional Grid: A shell stratification and a lens for prime-in-progression density",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-07-05",
+      "version": "5",
+      "doi": "10.5281/zenodo.21200816",
+      "identifier": "https://doi.org/10.5281/zenodo.21200816",
+      "recordUrl": "https://zenodo.org/records/21200816",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.21200816",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.21200816",
+      "citation": "Jeffery Huckstead. (2026). Prime Numerators of the Triangular-Fractional Grid: A shell stratification and a lens for prime-in-progression density. Zenodo. https://doi.org/10.5281/zenodo.21200816.",
+      "summary": "",
+      "resourceType": "Preprint"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Prime-Numerator Distribution of the Triangular-Fractional Grid: A supplement on divisor-driven prime structure and a Ulam-family comparison",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-07-04",
+      "version": "4",
+      "doi": "10.5281/zenodo.21197569",
+      "identifier": "https://doi.org/10.5281/zenodo.21197569",
+      "recordUrl": "https://zenodo.org/records/21197569",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.21197569",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.21197569",
+      "citation": "Jeffery Huckstead. (2026). The Prime-Numerator Distribution of the Triangular-Fractional Grid: A supplement on divisor-driven prime structure and a Ulam-family comparison. Zenodo. https://doi.org/10.5281/zenodo.21197569.",
+      "summary": "",
+      "resourceType": "Preprint"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "A Radial Coordinatization of the Triangular-Fractional Grid: Integer Boundaries, a Phase-Pole Center, and a Tiling–Phase Obstruction",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-07-04",
+      "version": "4",
+      "doi": "10.5281/zenodo.21186245",
+      "identifier": "https://doi.org/10.5281/zenodo.21186245",
+      "recordUrl": "https://zenodo.org/records/21186245",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.21186245",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.21186245",
+      "citation": "Jeffery Huckstead. (2026). A Radial Coordinatization of the Triangular-Fractional Grid: Integer Boundaries, a Phase-Pole Center, and a Tiling–Phase Obstruction. Zenodo. https://doi.org/10.5281/zenodo.21186245.",
+      "summary": "",
+      "resourceType": "Preprint"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "One Ledger, and the Withholding of the Second: Count, Order, and Why a Black Hole Is Black: a staging of established results at the extreme",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-29",
+      "version": "3",
+      "doi": "10.5281/zenodo.21017413",
+      "identifier": "https://doi.org/10.5281/zenodo.21017413",
+      "recordUrl": "https://zenodo.org/records/21017413",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.21017413",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.21017413",
+      "citation": "Jeffery Huckstead. (2026). One Ledger, and the Withholding of the Second: Count, Order, and Why a Black Hole Is Black: a staging of established results at the extreme. Zenodo. https://doi.org/10.5281/zenodo.21017413.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Vortex Stretching and the Edge of Blow-Up: The engine that concentrates a spin, the brakes that might hold it back, and what is actually proven",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-29",
+      "version": "2",
+      "doi": "10.5281/zenodo.21016706",
+      "identifier": "https://doi.org/10.5281/zenodo.21016706",
+      "recordUrl": "https://zenodo.org/records/21016706",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.21016706",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.21016706",
+      "citation": "Jeffery Huckstead. (2026). Vortex Stretching and the Edge of Blow-Up: The engine that concentrates a spin, the brakes that might hold it back, and what is actually proven. Zenodo. https://doi.org/10.5281/zenodo.21016706.",
+      "summary": "",
+      "resourceType": "Working paper"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Ledger: Records, Seals, Winding, and the Cost of Recovery",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-28",
+      "version": "4",
+      "doi": "10.5281/zenodo.21016026",
+      "identifier": "https://doi.org/10.5281/zenodo.21016026",
+      "recordUrl": "https://zenodo.org/records/21016026",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.21016026",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.21016026",
+      "citation": "Jeffery Huckstead. (2026). The Ledger: Records, Seals, Winding, and the Cost of Recovery. Zenodo. https://doi.org/10.5281/zenodo.21016026.",
+      "summary": "",
+      "resourceType": "Working paper"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Transient Phase Atlas: Short-Orbit Modular Fingerprints of Constants",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-25",
+      "version": "2",
+      "doi": "10.5281/zenodo.20840022",
+      "identifier": "https://doi.org/10.5281/zenodo.20840022",
+      "recordUrl": "https://zenodo.org/records/20840022",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20840022",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20840022",
+      "citation": "Jeffery Huckstead. (2026). Transient Phase Atlas: Short-Orbit Modular Fingerprints of Constants. Zenodo. https://doi.org/10.5281/zenodo.20840022.",
+      "summary": "A computational atlas of short modular orbits with diagnostics and explicit limits on what transient patterns establish.",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Moments of Memory: An address is not the past",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-24",
+      "version": "2",
+      "doi": "10.5281/zenodo.20832903",
+      "identifier": "https://doi.org/10.5281/zenodo.20832903",
+      "recordUrl": "https://zenodo.org/records/20832903",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20832903",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20832903",
+      "citation": "Jeffery Huckstead. (2026). Moments of Memory: An address is not the past. Zenodo. https://doi.org/10.5281/zenodo.20832903.",
+      "summary": "",
+      "resourceType": "Working paper"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Price of Construction: Cancer, entropy, and the cost of carrying convention",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-24",
+      "version": "2",
+      "doi": "10.5281/zenodo.20822709",
+      "identifier": "https://doi.org/10.5281/zenodo.20822709",
+      "recordUrl": "https://zenodo.org/records/20822709",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20822709",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20822709",
+      "citation": "Jeffery Huckstead. (2026). The Price of Construction: Cancer, entropy, and the cost of carrying convention. Zenodo. https://doi.org/10.5281/zenodo.20822709.",
+      "summary": "",
+      "resourceType": "Working paper"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Cost of Surprise: Entropy, recognition memory, and the loop that neither side controls",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-24",
+      "version": "2",
+      "doi": "10.5281/zenodo.20822367",
+      "identifier": "https://doi.org/10.5281/zenodo.20822367",
+      "recordUrl": "https://zenodo.org/records/20822367",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20822367",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20822367",
+      "citation": "Jeffery Huckstead. (2026). The Cost of Surprise: Entropy, recognition memory, and the loop that neither side controls. Zenodo. https://doi.org/10.5281/zenodo.20822367.",
+      "summary": "",
+      "resourceType": "Working paper"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Line Game | Surprise Is Not Meaning",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-22",
+      "version": "2",
+      "doi": "10.5281/zenodo.20792999",
+      "identifier": "https://doi.org/10.5281/zenodo.20792999",
+      "recordUrl": "https://zenodo.org/records/20792999",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20792999",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20792999",
+      "citation": "Jeffery Huckstead. (2026). The Line Game | Surprise Is Not Meaning. Zenodo. https://doi.org/10.5281/zenodo.20792999.",
+      "summary": "Earlier record for The Line Game | Surprise Is Not Meaning. The updated September 20, 2026 record is 22851517.",
+      "resourceType": "Working paper"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Sense of Things: A working paper on the senses through which structure is read, and the discipline of not mistaking the reading for the knowing",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-22",
+      "version": "1",
+      "doi": "10.5281/zenodo.20791976",
+      "identifier": "https://doi.org/10.5281/zenodo.20791976",
+      "recordUrl": "https://zenodo.org/records/20791976",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20791976",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20791976",
+      "citation": "Jeffery Huckstead. (2026). The Sense of Things: A working paper on the senses through which structure is read, and the discipline of not mistaking the reading for the knowing. Zenodo. https://doi.org/10.5281/zenodo.20791976.",
+      "summary": "",
+      "resourceType": "Working paper"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Prime-Square Chamber Lift: Short-Interval Occupancy via Quadratic Boundary Windows",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-20",
+      "version": "2",
+      "doi": "10.5281/zenodo.20777503",
+      "identifier": "https://doi.org/10.5281/zenodo.20777503",
+      "recordUrl": "https://zenodo.org/records/20777503",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20777503",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20777503",
+      "citation": "Jeffery Huckstead. (2026). The Prime-Square Chamber Lift: Short-Interval Occupancy via Quadratic Boundary Windows. Zenodo. https://doi.org/10.5281/zenodo.20777503.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Lehmer Totient Chamber Lift: Product Totient Gates via Korselt Supports",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-20",
+      "version": "2",
+      "doi": "10.5281/zenodo.20777470",
+      "identifier": "https://doi.org/10.5281/zenodo.20777470",
+      "recordUrl": "https://zenodo.org/records/20777470",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20777470",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20777470",
+      "citation": "Jeffery Huckstead. (2026). The Lehmer Totient Chamber Lift: Product Totient Gates via Korselt Supports. Zenodo. https://doi.org/10.5281/zenodo.20777470.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Addresses Are Not Meanings: A Dialogue on One Structure, Three Vocabularies, and the Discipline of Comprehension",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-20",
+      "version": "2",
+      "doi": "10.5281/zenodo.20777416",
+      "identifier": "https://doi.org/10.5281/zenodo.20777416",
+      "recordUrl": "https://zenodo.org/records/20777416",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20777416",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20777416",
+      "citation": "Jeffery Huckstead. (2026). Addresses Are Not Meanings: A Dialogue on One Structure, Three Vocabularies, and the Discipline of Comprehension. Zenodo. https://doi.org/10.5281/zenodo.20777416.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Volume I: Exact Geometry and Symbolic Foundations",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-19",
+      "version": "7",
+      "doi": "10.5281/zenodo.20768701",
+      "identifier": "https://doi.org/10.5281/zenodo.20768701",
+      "recordUrl": "https://zenodo.org/records/20768701",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20768701",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20768701",
+      "citation": "Jeffery Huckstead. (2026). Volume I: Exact Geometry and Symbolic Foundations. Zenodo. https://doi.org/10.5281/zenodo.20768701.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Kitchen-Scale Breath Figures and Coalescence Events: Preliminary Measured Outputs from a Phone-Camera Condensation Run",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-17",
+      "version": "2",
+      "doi": "10.5281/zenodo.20727723",
+      "identifier": "https://doi.org/10.5281/zenodo.20727723",
+      "recordUrl": "https://zenodo.org/records/20727723",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20727723",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20727723",
+      "citation": "Jeffery Huckstead. (2026). Kitchen-Scale Breath Figures and Coalescence Events: Preliminary Measured Outputs from a Phone-Camera Condensation Run. Zenodo. https://doi.org/10.5281/zenodo.20727723.",
+      "summary": "",
+      "resourceType": "Preprint"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Scalarstack Geometry in a 45◦ Cone: Exact Cone/Sphere Operators, Rational Void, Silver Gears, and a Heuristic Near-7/8 Note",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-17",
+      "version": "4",
+      "doi": "10.5281/zenodo.20725500",
+      "identifier": "https://doi.org/10.5281/zenodo.20725500",
+      "recordUrl": "https://zenodo.org/records/20725500",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20725500",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20725500",
+      "citation": "Jeffery Huckstead. (2026). Scalarstack Geometry in a 45◦ Cone: Exact Cone/Sphere Operators, Rational Void, Silver Gears, and a Heuristic Near-7/8 Note. Zenodo. https://doi.org/10.5281/zenodo.20725500.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Toll, the Rule, and the Iota: A compression of one night's thinking on memory, transmission, and meaning",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-14",
+      "version": "2",
+      "doi": "10.5281/zenodo.20694174",
+      "identifier": "https://doi.org/10.5281/zenodo.20694174",
+      "recordUrl": "https://zenodo.org/records/20694174",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20694174",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20694174",
+      "citation": "Jeffery Huckstead. (2026). The Toll, the Rule, and the Iota: A compression of one night's thinking on memory, transmission, and meaning. Zenodo. https://doi.org/10.5281/zenodo.20694174.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Two Readings, One Construction: A short map to a three-paper set, and where the readings meet",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-14",
+      "version": "3",
+      "doi": "10.5281/zenodo.20694051",
+      "identifier": "https://doi.org/10.5281/zenodo.20694051",
+      "recordUrl": "https://zenodo.org/records/20694051",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20694051",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20694051",
+      "citation": "Jeffery Huckstead. (2026). Two Readings, One Construction: A short map to a three-paper set, and where the readings meet. Zenodo. https://doi.org/10.5281/zenodo.20694051.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "A Message Hidden as an Address: Where a Theorem Recovers a Number, and Only You Recover the Letter: A hand-computable demonstration, built to be climbed",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-13",
+      "version": "8",
+      "doi": "10.5281/zenodo.20683063",
+      "identifier": "https://doi.org/10.5281/zenodo.20683063",
+      "recordUrl": "https://zenodo.org/records/20683063",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20683063",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20683063",
+      "citation": "Jeffery Huckstead. (2026). A Message Hidden as an Address: Where a Theorem Recovers a Number, and Only You Recover the Letter: A hand-computable demonstration, built to be climbed. Zenodo. https://doi.org/10.5281/zenodo.20683063.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Ledger-Preserving Forms of Explicit Formulae: Typed Bookkeeping and Instrument Calibration",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-12",
+      "version": "1",
+      "doi": "10.5281/zenodo.20671738",
+      "identifier": "https://doi.org/10.5281/zenodo.20671738",
+      "recordUrl": "https://zenodo.org/records/20671738",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20671738",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20671738",
+      "citation": "Jeffery Huckstead. (2026). Ledger-Preserving Forms of Explicit Formulae: Typed Bookkeeping and Instrument Calibration. Zenodo. https://doi.org/10.5281/zenodo.20671738.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "One Euler Product, Many Coordinates: Bernoulli, Sine, Zeta Continuation, and Radial Layer-Counting as Shared Analytic Infrastructure",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-11",
+      "version": "1",
+      "doi": "10.5281/zenodo.20644917",
+      "identifier": "https://doi.org/10.5281/zenodo.20644917",
+      "recordUrl": "https://zenodo.org/records/20644917",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20644917",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20644917",
+      "citation": "Jeffery Huckstead. (2026). One Euler Product, Many Coordinates: Bernoulli, Sine, Zeta Continuation, and Radial Layer-Counting as Shared Analytic Infrastructure. Zenodo. https://doi.org/10.5281/zenodo.20644917.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Tolled Dilation Scale and Lattice Visibility: A Discrete Atlas for Primitive Rays, Logarithmic Obstruction Cost, and Square-Free Mirrors",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-11",
+      "version": "2",
+      "doi": "10.5281/zenodo.20644858",
+      "identifier": "https://doi.org/10.5281/zenodo.20644858",
+      "recordUrl": "https://zenodo.org/records/20644858",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20644858",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20644858",
+      "citation": "Jeffery Huckstead. (2026). Tolled Dilation Scale and Lattice Visibility: A Discrete Atlas for Primitive Rays, Logarithmic Obstruction Cost, and Square-Free Mirrors. Zenodo. https://doi.org/10.5281/zenodo.20644858.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Exponent Chamber Lift: Beal, Reciprocal Shells, and the First Hyperbolic Shadow",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-11",
+      "version": "2",
+      "doi": "10.5281/zenodo.20644786",
+      "identifier": "https://doi.org/10.5281/zenodo.20644786",
+      "recordUrl": "https://zenodo.org/records/20644786",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20644786",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20644786",
+      "citation": "Jeffery Huckstead. (2026). The Exponent Chamber Lift: Beal, Reciprocal Shells, and the First Hyperbolic Shadow. Zenodo. https://doi.org/10.5281/zenodo.20644786.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Radical Chamber Lift: abc, Valuation Excess, and Additive Closure",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-11",
+      "version": "1",
+      "doi": "10.5281/zenodo.20635829",
+      "identifier": "https://doi.org/10.5281/zenodo.20635829",
+      "recordUrl": "https://zenodo.org/records/20635829",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20635829",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20635829",
+      "citation": "Jeffery Huckstead. (2026). The Radical Chamber Lift: abc, Valuation Excess, and Additive Closure. Zenodo. https://doi.org/10.5281/zenodo.20635829.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Zeta-Exponent Chamber Lift: Dimensional Visibility, Jordan Shadows, and Valuation Mirrors",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-11",
+      "version": "1",
+      "doi": "10.5281/zenodo.20634767",
+      "identifier": "https://doi.org/10.5281/zenodo.20634767",
+      "recordUrl": "https://zenodo.org/records/20634767",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20634767",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20634767",
+      "citation": "Jeffery Huckstead. (2026). The Zeta-Exponent Chamber Lift: Dimensional Visibility, Jordan Shadows, and Valuation Mirrors. Zenodo. https://doi.org/10.5281/zenodo.20634767.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Goldbach Chamber Lift: Midpoint Prime Occupancy via Symmetric Residue Gates",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-11",
+      "version": "1",
+      "doi": "10.5281/zenodo.20634306",
+      "identifier": "https://doi.org/10.5281/zenodo.20634306",
+      "recordUrl": "https://zenodo.org/records/20634306",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20634306",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20634306",
+      "citation": "Jeffery Huckstead. (2026). The Goldbach Chamber Lift: Midpoint Prime Occupancy via Symmetric Residue Gates. Zenodo. https://doi.org/10.5281/zenodo.20634306.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Twin Prime Chamber Lift: Residue-Pair Survival via Two-Point Sieve Gates",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-11",
+      "version": "1",
+      "doi": "10.5281/zenodo.20634300",
+      "identifier": "https://doi.org/10.5281/zenodo.20634300",
+      "recordUrl": "https://zenodo.org/records/20634300",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20634300",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20634300",
+      "citation": "Jeffery Huckstead. (2026). The Twin Prime Chamber Lift: Residue-Pair Survival via Two-Point Sieve Gates. Zenodo. https://doi.org/10.5281/zenodo.20634300.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Primitive Ray Chamber Lift: Lattice Visibility via Tolled Conformal Scale",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-11",
+      "version": "1",
+      "doi": "10.5281/zenodo.20634252",
+      "identifier": "https://doi.org/10.5281/zenodo.20634252",
+      "recordUrl": "https://zenodo.org/records/20634252",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20634252",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20634252",
+      "citation": "Jeffery Huckstead. (2026). The Primitive Ray Chamber Lift: Lattice Visibility via Tolled Conformal Scale. Zenodo. https://doi.org/10.5281/zenodo.20634252.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "N^2+1 Chamber Lift: Quadratic Residue Sieve for Landau's Problem",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-09",
+      "version": "1",
+      "doi": "10.5281/zenodo.20615213",
+      "identifier": "https://doi.org/10.5281/zenodo.20615213",
+      "recordUrl": "https://zenodo.org/records/20615213",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20615213",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20615213",
+      "citation": "Jeffery Huckstead. (2026). N^2+1 Chamber Lift: Quadratic Residue Sieve for Landau's Problem. Zenodo. https://doi.org/10.5281/zenodo.20615213.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Odd Perfect Number Chamber Lift: Abundancy Balance via Euler Prime Form",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-09",
+      "version": "1",
+      "doi": "10.5281/zenodo.20612902",
+      "identifier": "https://doi.org/10.5281/zenodo.20612902",
+      "recordUrl": "https://zenodo.org/records/20612902",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20612902",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20612902",
+      "citation": "Jeffery Huckstead. (2026). The Odd Perfect Number Chamber Lift: Abundancy Balance via Euler Prime Form. Zenodo. https://doi.org/10.5281/zenodo.20612902.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Erdős–Straus Chamber Lift: Reciprocal Defect Routing via Completing-the-Rectangle Divisor Gates",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-09",
+      "version": "1",
+      "doi": "10.5281/zenodo.20607004",
+      "identifier": "https://doi.org/10.5281/zenodo.20607004",
+      "recordUrl": "https://zenodo.org/records/20607004",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20607004",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20607004",
+      "citation": "Jeffery Huckstead. (2026). The Erdős–Straus Chamber Lift: Reciprocal Defect Routing via Completing-the-Rectangle Divisor Gates. Zenodo. https://doi.org/10.5281/zenodo.20607004.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Congruent Number Chamber Lift: Rational Triangle Areas via Tunnell Lattice Counts",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-09",
+      "version": "1",
+      "doi": "10.5281/zenodo.20602122",
+      "identifier": "https://doi.org/10.5281/zenodo.20602122",
+      "recordUrl": "https://zenodo.org/records/20602122",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20602122",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20602122",
+      "citation": "Jeffery Huckstead. (2026). The Congruent Number Chamber Lift: Rational Triangle Areas via Tunnell Lattice Counts. Zenodo. https://doi.org/10.5281/zenodo.20602122.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Collatz Chamber Lift: Parity-Vector Descent via Affine Residue Geometry",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-09",
+      "version": "1",
+      "doi": "10.5281/zenodo.20601277",
+      "identifier": "https://doi.org/10.5281/zenodo.20601277",
+      "recordUrl": "https://zenodo.org/records/20601277",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20601277",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20601277",
+      "citation": "Jeffery Huckstead. (2026). The Collatz Chamber Lift: Parity-Vector Descent via Affine Residue Geometry. Zenodo. https://doi.org/10.5281/zenodo.20601277.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Alternating Interstitial Geometry of Ball–Cube Recursions: A Bridge Note from Jordan Chambers to Boundary-Conditioned Bodies",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-07",
+      "version": "2",
+      "doi": "10.5281/zenodo.20581459",
+      "identifier": "https://doi.org/10.5281/zenodo.20581459",
+      "recordUrl": "https://zenodo.org/records/20581459",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20581459",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20581459",
+      "citation": "Jeffery Huckstead. (2026). Alternating Interstitial Geometry of Ball–Cube Recursions: A Bridge Note from Jordan Chambers to Boundary-Conditioned Bodies. Zenodo. https://doi.org/10.5281/zenodo.20581459.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "The Jordan Chamber Lift: Higher-Dimensional Denominator Shells via the GCD Collapse",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-07",
+      "version": "4",
+      "doi": "10.5281/zenodo.20580136",
+      "identifier": "https://doi.org/10.5281/zenodo.20580136",
+      "recordUrl": "https://zenodo.org/records/20580136",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20580136",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20580136",
+      "citation": "Jeffery Huckstead. (2026). The Jordan Chamber Lift: Higher-Dimensional Denominator Shells via the GCD Collapse. Zenodo. https://doi.org/10.5281/zenodo.20580136.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Divisor-Filtered Farey Chambers and Localized Discrepancy",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-07",
+      "version": "2",
+      "doi": "10.5281/zenodo.20575700",
+      "identifier": "https://doi.org/10.5281/zenodo.20575700",
+      "recordUrl": "https://zenodo.org/records/20575700",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20575700",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20575700",
+      "citation": "Jeffery Huckstead. (2026). Divisor-Filtered Farey Chambers and Localized Discrepancy. Zenodo. https://doi.org/10.5281/zenodo.20575700.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Annular Shell Isolation Near Zeta Zeros",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-06-05",
+      "version": "1",
+      "doi": "10.5281/zenodo.20564213",
+      "identifier": "https://doi.org/10.5281/zenodo.20564213",
+      "recordUrl": "https://zenodo.org/records/20564213",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20564213",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20564213",
+      "citation": "Jeffery Huckstead. (2026). Annular Shell Isolation Near Zeta Zeros. Zenodo. https://doi.org/10.5281/zenodo.20564213.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "A Finite-Count Search for a Morphology-Structured Projection Ridge Near 2.75 in Riemann-Zero Gap Coordinates",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-05-23",
+      "version": "4",
+      "doi": "10.5281/zenodo.20355082",
+      "identifier": "https://doi.org/10.5281/zenodo.20355082",
+      "recordUrl": "https://zenodo.org/records/20355082",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20355082",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20355082",
+      "citation": "Jeffery Huckstead. (2026). A Finite-Count Search for a Morphology-Structured Projection Ridge Near 2.75 in Riemann-Zero Gap Coordinates. Zenodo. https://doi.org/10.5281/zenodo.20355082.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Terminal Altitude Architecture and Post-Selection Artifacts in Adjacent Zeta-Zero Spacing",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-05-04",
+      "version": "20",
+      "doi": "10.5281/zenodo.20027771",
+      "identifier": "https://doi.org/10.5281/zenodo.20027771",
+      "recordUrl": "https://zenodo.org/records/20027771",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20027771",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20027771",
+      "citation": "Jeffery Huckstead. (2026). Terminal Altitude Architecture and Post-Selection Artifacts in Adjacent Zeta-Zero Spacing. Zenodo. https://doi.org/10.5281/zenodo.20027771.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "A Search-Adjusted Audit of Row-Sector Modulus Signals in Terminal Zeta-Zero Spacing Residuals",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-05-04",
+      "version": "5",
+      "doi": "10.5281/zenodo.20025318",
+      "identifier": "https://doi.org/10.5281/zenodo.20025318",
+      "recordUrl": "https://zenodo.org/records/20025318",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.20025318",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.20025318",
+      "citation": "Jeffery Huckstead. (2026). A Search-Adjusted Audit of Row-Sector Modulus Signals in Terminal Zeta-Zero Spacing Residuals. Zenodo. https://doi.org/10.5281/zenodo.20025318.",
+      "summary": "",
+      "resourceType": "Peer review"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Part II: Taxonomy and Structural Symmetries of Transient Rational Locking",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-03-18",
+      "version": "2",
+      "doi": "10.5281/zenodo.19080584",
+      "identifier": "https://doi.org/10.5281/zenodo.19080584",
+      "recordUrl": "https://zenodo.org/records/19080584",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.19080584",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.19080584",
+      "citation": "Jeffery Huckstead. (2026). Part II: Taxonomy and Structural Symmetries of Transient Rational Locking. Zenodo. https://doi.org/10.5281/zenodo.19080584.",
+      "summary": "",
+      "resourceType": "Preprint"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Transient Rational Locking in Modular Logarithmic Orbits",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-03-18",
+      "version": "1",
+      "doi": "10.5281/zenodo.19078260",
+      "identifier": "https://doi.org/10.5281/zenodo.19078260",
+      "recordUrl": "https://zenodo.org/records/19078260",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.19078260",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.19078260",
+      "citation": "Jeffery Huckstead. (2026). Transient Rational Locking in Modular Logarithmic Orbits. Zenodo. https://doi.org/10.5281/zenodo.19078260.",
+      "summary": "",
+      "resourceType": "Preprint"
+    },
+    {
+      "type": "ScholarlyArticle",
+      "title": "Scalarstack Geometry in a 45◦ Cone: Rational Void, Silver Gears, Concentric Compression, and a Near 7/8 Resonance",
+      "author": {
+        "name": "Jeffery Huckstead",
+        "orcid": "https://orcid.org/0009-0007-0234-2177"
+      },
+      "publisher": "Cerebral Graphix",
+      "datePublished": "2026-03-17",
+      "version": "1",
+      "doi": "10.5281/zenodo.19058873",
+      "identifier": "https://doi.org/10.5281/zenodo.19058873",
+      "recordUrl": "https://zenodo.org/records/19058873",
+      "canonicalUrl": "https://doi.org/10.5281/zenodo.19058873",
+      "creditText": "Jeffery Huckstead · Cerebral Graphix · 10.5281/zenodo.19058873",
+      "citation": "Jeffery Huckstead. (2026). Scalarstack Geometry in a 45◦ Cone: Rational Void, Silver Gears, Concentric Compression, and a Near 7/8 Resonance. Zenodo. https://doi.org/10.5281/zenodo.19058873.",
+      "summary": "",
+      "resourceType": "Peer review"
+    }
+  ]
+}

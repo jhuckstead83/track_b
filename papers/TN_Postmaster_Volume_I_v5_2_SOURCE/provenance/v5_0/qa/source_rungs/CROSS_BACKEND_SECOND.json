@@ -1,0 +1,112 @@
+{
+ "arb_receipt": {
+  "file": "RECEIPT_arb_second.json",
+  "backend": "python-flint 0.9.0 (FLINT/Arb ball arithmetic), SymPy 1.14.0",
+  "parameters": {
+   "precision_bits": 384,
+   "taylor_degree": 22,
+   "initial_step": "1/128"
+  },
+  "sha256_script": "1247b80a33795b916142baa141184d5a2a7ed395385f7c74cc2254e1b76f0371",
+  "sha256_receipt": "362d78e486af47cb6129fea46a1fadd3fa16293bf516dd45649ffaf4d2a8fd0c"
+ },
+ "decimal_receipt": {
+  "file": "RECEIPT_decimal_second.json",
+  "backend": "CPython decimal (libmpdec 2.5.1), ROUND_FLOOR directed rounding",
+  "parameters": {
+   "digits": 100,
+   "taylor_degree": 24,
+   "initial_step": "1/128",
+   "euler_maclaurin_N": 40,
+   "euler_maclaurin_M": 26,
+   "stirling_shift_target": 40,
+   "stirling_terms": 34,
+   "remainder_target": "1e-50",
+   "cauchy_radius": "1"
+  },
+  "sha256_script": "d4a82cad93f7602c21361bb7fe64712ba3cdfc075536732928fb066ad71af1c0",
+  "sha256_receipt": "2830376945efe42e66db637e2aab0c9741268585ec7e57f5e88d992d26446e79"
+ },
+ "checks": [
+  {
+   "check": "both runs report PASS",
+   "result": true
+  },
+  {
+   "check": "exact tail data identical (SymPy vs Fraction)",
+   "k": 2,
+   "alpha": "7",
+   "ratio": "49774961601359022036770887191/26406204443868436309318243015873820577459296074796713902080000",
+   "source_polynomials_identical": true,
+   "result": true
+  },
+  {
+   "check": "exact tail data identical (SymPy vs Fraction)",
+   "k": 3,
+   "alpha": "396",
+   "ratio": "1309798797933204013131025663797240000212333/1096548910513402230857244287592346740568005684731753778332380954624000000",
+   "source_polynomials_identical": true,
+   "result": true
+  },
+  {
+   "check": "exact tail data identical (SymPy vs Fraction)",
+   "k": 4,
+   "alpha": "54000",
+   "ratio": "966379193791050537149858650554677964697405812252642811883/2963570248592960814237666918980750339864990686512334852030962069023175475200000000000",
+   "source_polynomials_identical": true,
+   "result": true
+  },
+  {
+   "check": "exact tail data identical (SymPy vs Fraction)",
+   "k": 5,
+   "alpha": "13406400",
+   "ratio": "11730569506017283891775089279753807726374393500460534356744737902708441/231463083622797950662433208726686905023192681170961865629811871256104433267274416128000000000000",
+   "source_polynomials_identical": true,
+   "result": true
+  },
+  {
+   "check": "exact tail data identical (SymPy vs Fraction)",
+   "k": 6,
+   "alpha": "5258131200",
+   "ratio": "1030929331646771542433415573837084207795912183863937874728672694102290900469950612899/199915798100468932936676252732469657564209188442379462849292339910988760677386493076698247987200000000000000",
+   "source_polynomials_identical": true,
+   "result": true
+  },
+  {
+   "check": "sampled g_k enclosures overlap in both backends",
+   "points": 45,
+   "widest_enclosure_at": [
+    2,
+    "10"
+   ],
+   "widest_enclosure": "8.0000000000000000000003271134768434E-36",
+   "result": true
+  },
+  {
+   "check": "both partitions cover [1,128] exactly and every cell clears theta_k",
+   "arb_cells": {
+    "2": 1027,
+    "3": 1032,
+    "4": 1423,
+    "5": 1646,
+    "6": 2269
+   },
+   "decimal_cells": {
+    "2": 896,
+    "3": 896,
+    "4": 896,
+    "5": 896,
+    "6": 896
+   },
+   "thresholds": {
+    "2": "1/100000",
+    "3": "1/100000000",
+    "4": "1/10000000000",
+    "5": "1/1000000000000",
+    "6": "1/1000000000000000"
+   },
+   "result": true
+  }
+ ],
+ "status": "PASS"
+}

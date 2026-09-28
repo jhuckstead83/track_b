@@ -1,0 +1,81 @@
+{
+  "status": "HARD_GATES_PASS_WITH_RETAINED_ADVISORIES",
+  "runs": [
+    {
+      "name": "ten_inherited_mathematical_audits",
+      "command": [
+        "python3",
+        "qa/replay_math.py"
+      ],
+      "exit_code": 0,
+      "log": "qa/math_replay_execution.log",
+      "seconds": 17.787,
+      "script_sha256": "100e6efb73101b60d1f3a20f10f9bc163ab826714113b93caa626c258060fc92"
+    },
+    {
+      "name": "eight_accepted_return_audits",
+      "command": [
+        "python3",
+        "provenance/v43/accepted_returns/scripts/replay_bundle.py",
+        "--output-dir",
+        "qa/new_returns_replay",
+        "--timeout",
+        "120"
+      ],
+      "exit_code": 0,
+      "log": "qa/new_returns_replay_execution.log",
+      "seconds": 8.092,
+      "script_sha256": "f9b96c53d0a4487e10b994e9e0fb8ad9295a22e331e93f5c2f54aca03cce1909"
+    },
+    {
+      "name": "preserved_inputs_and_receipt_comparison",
+      "command": [
+        "python3",
+        "qa/audit_inputs_v43.py"
+      ],
+      "exit_code": 0,
+      "log": "qa/input_integrity_execution.log",
+      "seconds": 0.699,
+      "script_sha256": "6e4b36b1bc3a62012d5e36d44f9d2dc68ff5074057947fdc53f8aa70413d20f2"
+    },
+    {
+      "name": "source_and_figure_preservation",
+      "command": [
+        "python3",
+        "qa/check_preservation.py"
+      ],
+      "exit_code": 0,
+      "log": "qa/preservation_execution.log",
+      "seconds": 0.637,
+      "script_sha256": "8d3457e529fc7e92bf0e9d4babcc6133ae36b68dae0996a3164e181d7426957e"
+    },
+    {
+      "name": "legacy_regression",
+      "command": [
+        "python3",
+        "qa/verify_legacy_adapted.py"
+      ],
+      "exit_code": 1,
+      "log": "qa/legacy_verify_execution.log",
+      "seconds": 16.631,
+      "script_sha256": "b7a6ccf00fc2cbad7f5e99a8b53e5b61ce31be271ef829f94037d7c722a55bc9"
+    },
+    {
+      "name": "hard_publishing_guard",
+      "command": [
+        "python3",
+        "qa/publishing_guard_release.py"
+      ],
+      "exit_code": 0,
+      "log": "qa/publishing_guard.log",
+      "seconds": 3.262,
+      "script_sha256": "fd620751c94a9e53f2c3f8018684fae433fae8ed76586995913494a77b5c6ca3"
+    }
+  ],
+  "legacy_advisory": [
+    "Reading Volume at or under the standing target of 90 (advisory)",
+    "Technical Dossier at or under the standing target of 275"
+  ],
+  "aggregate_exit_code": 1,
+  "scope": "Finite audit and publication replay. No RH source upper bound or historical interval certificate is proved by this runner."
+}

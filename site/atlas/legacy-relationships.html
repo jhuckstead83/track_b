@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cerebral Graphix Atlas · Earned Relationships</title>
+<meta name="description" content="A selective relationship map of Cerebral Graphix papers and tools. Solid edges require an earned written identity.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<meta name="robots" content="noindex,follow"></head>
+<body><div style="padding:12px 18px;background:#fff3cb;color:#17212b;font:14px/1.5 system-ui">July archive: retained for reference, not the current catalogue. <a href="/atlas/" style="color:#184f69;text-decoration:underline">Open the current Atlas</a></div>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #12121c; }
+  a { color: var(--a2, #6fc7d6); text-decoration: none; }
+  a:hover { color: #f5f5fb; }
+  @keyframes cg-march { to { stroke-dashoffset: -28; } }
+</style>
+</helmet>
+<div ref="{{ rootRef }}" style="--bg-0:#12121c;--bg-1:#1b1b2f;--bg-2:#232338;--bg-3:#2d2d46;--line:#3a3a5a;--line-soft:#2a2a42;--tx-0:#f5f5fb;--tx-1:#c2c2d4;--tx-2:#8a8aa4;--a1:oklch(0.82 0.11 84);--a2:oklch(0.82 0.11 210);--a3:oklch(0.74 0.11 300);--analytic:oklch(0.80 0.11 155);--measure:oklch(0.82 0.13 70);--ok:oklch(0.80 0.12 155);--stop:oklch(0.66 0.16 25);--sans:'IBM Plex Sans',system-ui,sans-serif;--serif:'IBM Plex Serif',Georgia,serif;--mono:'IBM Plex Mono',ui-monospace,monospace;background:var(--bg-0);color:var(--tx-1);font-family:var(--sans);min-height:100vh;"><nav style="display:flex;gap:8px;flex-wrap:wrap;padding:10px 28px;border-bottom:1px solid var(--line-soft);background:var(--bg-1);font-size:12px"><a href="/">Φ Home</a><a href="/papers/research-index.html">All 51 active records</a><a href="/tools/chamber_lift_atlas.html">Detailed Chamber-Lift Atlas</a><a href="/finance/live.html">Finance Weather</a><a href="/tools/triangular_addressed_c_geometry/">C-Geometry live paper</a></nav>
+
+  <!-- HEADER -->
+  <header style="border-bottom:1px solid var(--line-soft);background:linear-gradient(180deg,var(--bg-1),var(--bg-0));padding:22px 28px;">
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+      <div style="width:38px;height:38px;border:1px solid var(--line);border-radius:9px;display:grid;place-items:center;background:var(--bg-2);color:var(--a1);font-family:var(--serif);font-size:22px;">Φ</div>
+      <div>
+        <div style="font-family:var(--serif);font-size:20px;font-weight:600;color:var(--tx-0);">Chamber-Lift Atlas</div>
+        <div style="font-family:var(--mono);font-size:11px;letter-spacing:1px;color:var(--tx-2);text-transform:uppercase;">where the math crosses domains · drag to explore</div>
+      </div>
+    </div>
+    <p style="margin:14px 0 0;max-width:82ch;font-size:14px;color:var(--tx-1);text-wrap:pretty;">Every node is a paper or a tool. Every <b style="color:var(--tx-0);">solid edge is a shared identity you can write down</b> — reduction, an address law, a totient count. A shared visual shape is <b style="color:var(--tx-0);">not</b> an earned edge, and some objects earn none at all. Drag nodes to lay out your own reading; click one to open its notebook entry.</p>
+  </header>
+
+  <div style="display:flex;align-items:stretch;min-height:640px;">
+
+    <!-- RAIL -->
+    <aside style="width:236px;flex:none;border-right:1px solid var(--line-soft);background:var(--bg-1);padding:18px 16px;display:flex;flex-direction:column;gap:22px;">
+      <div>
+        <div style="font-family:var(--mono);font-size:10.5px;letter-spacing:1.3px;text-transform:uppercase;color:var(--tx-2);margin-bottom:10px;">Compartments</div>
+        <div style="display:flex;flex-direction:column;gap:2px;">
+          <sc-for list="{{ domainList }}" as="d" hint-placeholder-count="6">
+            <button onClick="{{ d.onToggle }}" style="{{ d.btnStyle }}">
+              <span style="{{ d.dotStyle }}"></span>
+              <span style="flex:1;text-align:left;">{{ d.label }}</span>
+              <span style="font-family:var(--mono);font-size:10px;color:var(--tx-2);">{{ d.count }}</span>
+            </button>
+          </sc-for>
+        </div>
+      </div>
+
+      <div>
+        <div style="font-family:var(--mono);font-size:10.5px;letter-spacing:1.3px;text-transform:uppercase;color:var(--tx-2);margin-bottom:10px;">Edge grammar</div>
+        <div style="display:flex;flex-direction:column;gap:2px;">
+          <sc-for list="{{ edgeTypeList }}" as="t" hint-placeholder-count="5">
+            <button onClick="{{ t.onToggle }}" style="{{ t.btnStyle }}">
+              <svg width="26" height="10" style="flex:none;overflow:visible;"><line x1="1" y1="5" x2="25" y2="5" style="{{ t.lineStyle }}"></line></svg>
+              <span style="flex:1;text-align:left;">{{ t.label }}</span>
+              <span style="font-family:var(--mono);font-size:10px;color:var(--tx-2);">{{ t.count }}</span>
+            </button>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="margin-top:auto;border-top:1px solid var(--line-soft);padding-top:16px;">
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--tx-2);margin-bottom:5px;"><span>earned edges</span><span style="font-family:var(--mono);color:var(--ok);">{{ earnedCount }}</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--tx-2);margin-bottom:14px;"><span>shape-only / islands</span><span style="font-family:var(--mono);color:var(--stop);">{{ unearnedCount }}</span></div>
+        <button onClick="{{ reset }}" style="width:100%;font-family:var(--mono);font-size:11px;color:var(--tx-0);background:var(--bg-3);border:1px solid var(--line);border-radius:7px;padding:9px 0;cursor:pointer;">reset layout</button>
+      </div>
+    </aside>
+
+    <!-- GRAPH -->
+    <div style="flex:1;min-width:0;overflow:auto;background:radial-gradient(circle at 1px 1px, var(--line-soft) 1px, transparent 0) 0 0/26px 26px;">
+      <div ref="{{ graphRef }}" style="position:relative;width:1280px;height:760px;">
+        <svg viewBox="0 0 1280 760" style="position:absolute;inset:0;width:1280px;height:760px;overflow:visible;pointer-events:none;">
+          <sc-for list="{{ edges }}" as="e" hint-placeholder-count="12">
+            <line x1="{{ e.x1 }}" y1="{{ e.y1 }}" x2="{{ e.x2 }}" y2="{{ e.y2 }}" style="{{ e.style }}"></line>
+          </sc-for>
+          <sc-for list="{{ edges }}" as="e" hint-placeholder-count="12">
+            <text x="{{ e.mx }}" y="{{ e.my }}" text-anchor="middle" style="{{ e.labelStyle }}">{{ e.label }}</text>
+          </sc-for>
+        </svg>
+
+        <sc-for list="{{ nodes }}" as="n" hint-placeholder-count="16">
+          <div style="{{ n.wrapStyle }}" onPointerDown="{{ n.onDown }}" onPointerEnter="{{ n.onEnter }}" onPointerLeave="{{ onLeave }}">
+            <div style="{{ n.cardStyle }}">
+              <div style="display:flex;align-items:center;gap:7px;margin-bottom:5px;">
+                <span style="{{ n.dotStyle }}"></span>
+                <span style="font-family:var(--mono);font-size:9.5px;letter-spacing:0.8px;text-transform:uppercase;color:var(--tx-2);">{{ n.kind }}</span>
+                <sc-if value="{{ n.isIsland }}" hint-placeholder-val="{{ true }}"><span style="font-family:var(--mono);font-size:9px;letter-spacing:0.5px;color:var(--stop);border:1px solid color-mix(in oklch,var(--stop) 45%,transparent);border-radius:4px;padding:0 5px;">no earned edge</span></sc-if>
+              </div>
+              <div style="font-size:12.5px;font-weight:600;color:var(--tx-0);line-height:1.28;">{{ n.label }}</div>
+              <sc-if value="{{ n.doi }}" hint-placeholder-val="21187177"><div style="font-family:var(--mono);font-size:10px;color:var(--tx-2);margin-top:4px;">DOI {{ n.doi }}</div></sc-if>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- DETAIL -->
+    <aside style="width:300px;flex:none;border-left:1px solid var(--line-soft);background:var(--bg-1);padding:20px 18px;">
+      <sc-if value="{{ hasSelection }}" hint-placeholder-val="{{ true }}">
+      <div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+          <span style="{{ sel.dotStyle }}"></span>
+          <span style="font-family:var(--mono);font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:var(--tx-1);">{{ sel.domainLabel }}</span>
+          <span style="font-family:var(--mono);font-size:10px;color:var(--tx-2);margin-left:auto;">{{ sel.kind }}</span>
+        </div>
+        <h3 style="font-family:var(--serif);font-size:19px;font-weight:600;color:var(--tx-0);margin:0 0 8px;line-height:1.2;">{{ sel.label }}</h3>
+        <sc-if value="{{ sel.doi }}" hint-placeholder-val="21187177"><a href="{{ sel.doiUrl }}" target="_blank" style="font-family:var(--mono);font-size:11px;display:inline-block;margin-bottom:12px;">doi.org/{{ sel.doi }} ↗</a></sc-if>
+        <p style="font-size:13px;color:var(--tx-1);line-height:1.55;margin:0 0 14px;">{{ sel.desc }}</p>
+        <sc-if value="{{ sel.hasUrl }}" hint-placeholder-val="{{ true }}">
+          <a href="{{ sel.url }}" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:7px;font-family:var(--sans);font-size:13px;font-weight:600;color:#12121c;background:var(--a1);border-radius:8px;padding:10px 0;margin-bottom:16px;" style-hover="filter:brightness(1.08)">{{ sel.openLabel }} \u2197</a>
+        </sc-if>
+        <sc-if value="{{ sel.hasFence }}" hint-placeholder-val="{{ true }}">
+          <div style="font-family:var(--mono);font-size:11px;color:var(--stop);border:1px solid color-mix(in oklch,var(--stop) 35%,transparent);border-radius:8px;padding:9px 11px;margin-bottom:16px;line-height:1.7;">{{ sel.fence }}</div>
+        </sc-if>
+
+        <div style="font-family:var(--mono);font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--tx-2);margin-bottom:10px;">Connections</div>
+        <sc-if value="{{ sel.isIsland }}" hint-placeholder-val="{{ true }}">
+          <div style="font-size:12.5px;color:var(--tx-1);line-height:1.6;background:color-mix(in oklch,var(--stop) 8%,var(--bg-2));border:1px solid color-mix(in oklch,var(--stop) 30%,var(--line-soft));border-radius:8px;padding:12px;">{{ sel.islandWhy }}</div>
+        </sc-if>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <sc-for list="{{ sel.links }}" as="l" hint-placeholder-count="3">
+            <div style="border:1px solid var(--line-soft);border-radius:9px;background:var(--bg-2);padding:11px 12px;">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+                <svg width="22" height="8" style="flex:none;overflow:visible;"><line x1="1" y1="4" x2="21" y2="4" style="{{ l.lineStyle }}"></line></svg>
+                <span style="font-family:var(--mono);font-size:9.5px;letter-spacing:0.6px;text-transform:uppercase;color:var(--tx-2);">{{ l.typeLabel }}</span>
+              </div>
+              <div style="font-size:12.5px;font-weight:600;color:var(--tx-0);margin-bottom:5px;">{{ l.other }}</div>
+              <div style="font-size:12px;color:var(--tx-1);line-height:1.5;">{{ l.why }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      </sc-if>
+      <sc-if value="{{ noSelection }}" hint-placeholder-val="{{ true }}">
+        <div style="height:100%;display:flex;flex-direction:column;justify-content:center;text-align:center;color:var(--tx-2);padding:30px 8px;">
+          <div style="font-family:var(--serif);font-size:34px;color:var(--line);margin-bottom:14px;">◎ Φ ◇</div>
+          <div style="font-size:13px;line-height:1.6;">Select a node to open its notebook entry — DOI, claim-fence status, and the written identity behind each edge.</div>
+        </div>
+      </sc-if>
+    </aside>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:760},&quot;showEdgeLabels&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Atlas&quot;},&quot;highlightUnearned&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Atlas&quot;},&quot;accentDirection&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Phi Gold / Cyan / Violet&quot;,&quot;Amber / Coral / Gold&quot;,&quot;Cyan / Teal / Indigo&quot;],&quot;default&quot;:&quot;Amber / Coral / Gold&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Atlas&quot;}}">
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.rootRef = React.createRef();
+    this.graphRef = React.createRef();
+
+    this.domains = {
+      number:   { label: "Number theory",  color: "var(--a1)" },
+      analytic: { label: "Analytic (zeta)", color: "var(--analytic)" },
+      geometry: { label: "3D geometry",    color: "var(--a3)" },
+      measure:  { label: "Measure & flux", color: "var(--measure)" },
+      markets:  { label: "Live markets",   color: "var(--a2)" },
+      origin:   { label: "Origins & encoding", color: "var(--tx-2)" }
+    };
+
+    this.edgeStyles = {
+      exact:     { stroke: "var(--a1)",   w: 2.6, dash: "0",   label: "exact identity" },
+      inherits:  { stroke: "var(--a3)",   w: 2.2, dash: "0",   label: "inherits address only" },
+      companion: { stroke: "var(--a2)",   w: 1.6, dash: "0",   label: "paper \u2194 object" },
+      origin:    { stroke: "var(--tx-2)", w: 1.6, dash: "2 7", label: "origin lineage" },
+      metaphor:  { stroke: "var(--stop)", w: 2.2, dash: "8 6", label: "shape only \u2014 not earned" }
+    };
+
+    this.NODES = [
+      { id:"message", label:"A Message Hidden as an Address", kind:"paper", domain:"origin", doi:"20683063", x:330, y:350,
+        desc:"A hand-computable demonstration: the theorem recovers the address, ASCII supplies a public convention, and only the reader supplies meaning." },
+      { id:"phase", label:"The Phase-Change Ledger", kind:"paper", domain:"measure", doi:"21274917", x:1110, y:630,
+        desc:"A finite physical observer architecture coupling phase change, memory, reusable reservoir, pressure control, and apparatus cost. It is shown without an earned mathematical edge here." },
+      { id:"tfg", label:"Divisor-Band Bijections & Totient Shells", kind:"paper", domain:"number", doi:"21440877", x:500, y:400,
+        desc:"The arithmetic parent. Reduction supplies the denominator shell; the inverse address law recovers location; the totient counts shell population." },
+      { id:"polarPaper", label:"The Polar Shell Renderer", kind:"paper", domain:"number", doi:"21280464", x:660, y:242,
+        desc:"Equal-area denominator shells for reduced fractions and primitive roots of unity. Each reduced k/n sits at radius \u221an, angle 2\u03c0k/n." },
+      { id:"polarTool", label:"Polar Shell Renderer", kind:"tool", domain:"number", x:822, y:150,
+        desc:"The interactive live edition of the paper: place, count, and inspect the equal-area annuli." },
+      { id:"zeta", label:"Annular Shell Isolation Near Zeta Zeros", kind:"paper", domain:"analytic", doi:"20564213", x:628, y:582,
+        desc:"A different shell law: local zero-centered level sets contract as m increases. Same metaphor, different generator and theorem family." },
+      { id:"cgeom", label:"C-Geometry: Triangular Addressing", kind:"paper", domain:"geometry", doi:"21444929", x:770, y:432,
+        desc:"Null coordinates, rectangle similarity, reciprocal-metallic locks, Pell and tangent-wing results in a scale-covariant plane." },
+      { id:"showpiece", label:"Rational Address Showpiece", kind:"tool", domain:"geometry", x:948, y:300,
+        desc:"A centered rational chamber inside the 1:2:3 sphere frame, with ray-snap address readout and live divisor-band accounting." },
+      { id:"chamber", label:"Centered Rational Chamber", kind:"tool", domain:"geometry", x:972, y:486,
+        desc:"GCD shell partition, Jordan-totient conservation, convention toggles, six-cardinal projection, and a null baseline." },
+      { id:"picone", label:"Six Cardinal Picone", kind:"tool", domain:"geometry", x:1132, y:404,
+        desc:"The \u221a2/Pell cone-tip cascade and \u221a3 sphere\u2013cube\u2013sphere recursion share a center but stay distinct mechanisms." },
+      { id:"ledgerA", label:"From Measure to Flux", kind:"paper", domain:"measure", doi:"21444339", x:884, y:118,
+        desc:"Exact boundary scattering and named energy channels \u2014 the measure-to-flux half of the pair." },
+      { id:"ledgerB", label:"The Finite-Observer Ledger", kind:"paper", domain:"measure", x:1058, y:132,
+        desc:"Matched-pair falsification, claim manifests, receipt-bound figures, and a certification wall." },
+      { id:"ledgerTool", label:"Finite-Observer Ledger", kind:"tool", domain:"measure", x:1168, y:274,
+        desc:"Interactive evidence companion. Visualization exposes evidence without creating evidentiary status." },
+      { id:"finance", label:"\u03a6 Finance Weather", kind:"tool", domain:"markets", fence:"market_truth: NOT_PROVEN_BY_RECEIPT\ntrade_permission: NO", x:172, y:130,
+        desc:"A live 4\u00d74 chamber grid weighting delayed public market data. Read as weather, not trade instruction." },
+      { id:"ascii", label:"ASCII Bridge", kind:"tool", domain:"origin", x:150, y:302,
+        desc:"The theorem recovers an address; ASCII supplies a public readout convention." },
+      { id:"utf8", label:"UTF-8 Alpha", kind:"tool", domain:"origin", x:150, y:432,
+        desc:"A wider byte-kernel bridge, including the early \u201cGraphix \u2014 the data, drawn\u201d mini-plot." },
+      { id:"makers", label:"Maker's Mark", kind:"tool", domain:"origin", x:314, y:560,
+        desc:"A public 337-fraction reconstruction challenge, preserved from the site's origin story." },
+      { id:"forge", label:"Forge OS v16.3", kind:"tool", domain:"origin", x:492, y:632,
+        desc:"An offline just-intonation sequencer and synth built from rational harmonic ratios." }
+    ];
+
+    this.EDGES = [
+      { a:"tfg", b:"polarPaper", type:"exact", why:"Reduction supplies the denominator shell; the inverse address law recovers location; the totient counts shell population. Same exact identity." },
+      { a:"polarPaper", b:"polarTool", type:"companion", why:"The interactive page is the live edition of the paper." },
+      { a:"tfg", b:"cgeom", type:"inherits", why:"C-Geometry inherits ONLY the flattened TFG address m = \u03c1(n,k), t = qm. Its null-coordinate, reciprocal-metallic, and Pell results are a separate theorem line \u2014 they do NOT inherit the divisor-band or totient-shell theorems." },
+      { a:"tfg", b:"zeta", type:"metaphor", why:"Same organizational metaphor (shells), but a different generator, geometry, and theorem family. A shared shape is not a shared mechanism \u2014 this is not an earned edge." },
+      { a:"cgeom", b:"showpiece", type:"exact", why:"The showpiece realizes the centered rational chamber inside the 1:2:3 sphere frame from C-Geometry." },
+      { a:"showpiece", b:"chamber", type:"exact", why:"Same construction: GCD shell partition, ray-snap address, and divisor-band accounting." },
+      { a:"chamber", b:"picone", type:"exact", why:"The six-cardinal projection continues into the \u221a2 cone-tip cascade and \u221a3 sphere\u2013cube recursion." },
+      { a:"ledgerA", b:"ledgerB", type:"companion", why:"Two linked papers: exact boundary scattering and the named energy channels it feeds." },
+      { a:"ledgerB", b:"ledgerTool", type:"companion", why:"The companion exposes the receipt-bound figures and certification wall of the paper." },
+      { a:"ascii", b:"message", type:"companion", why:"ASCII supplies the public readout convention used by the worked address demonstration." },
+      { a:"message", b:"tfg", type:"companion", why:"The demonstration climbs the TFG inverse address theorem without altering the arithmetic parent." },
+      { a:"utf8", b:"ascii", type:"origin", why:"A wider byte-kernel bridge \u2014 origin lineage, not a shared theorem." },
+      { a:"makers", b:"tfg", type:"origin", why:"A 337-fraction reconstruction challenge \u2014 an origin gesture toward the address idea." }
+    ];
+
+    this.islandWhy = {
+      forge: "Instrument, not measurement \u2014 a just-intonation synth from rational ratios. It earns no edge to the theorem line, and that is the point.",
+      finance: "Descriptive, not signals. The receipt-truth fence stays up: market_truth is NOT_PROVEN_BY_RECEIPT. No earned edge to the math.",
+      phase: "A physical observer architecture is preserved as an honest island until a specific written identity earns a connection in this Atlas."
+    };
+
+    this.urls = {
+      tfg: "https://doi.org/10.5281/zenodo.21440877",
+      polarPaper: "https://cerebralgraphix.com/papers/polar_shell_renderer.pdf",
+      polarTool: "https://cerebralgraphix.com/tools/polar_shell_renderer.html",
+      zeta: "https://cerebralgraphix.com/papers/annular_shell_isolation.pdf",
+      cgeom: "https://cerebralgraphix.com/tools/triangular_addressed_c_geometry/",
+      showpiece: "https://cerebralgraphix.com/tools/rational_address_showpiece/",
+      chamber: "https://cerebralgraphix.com/tools/centered_rational_chamber/",
+      picone: "https://cerebralgraphix.com/tools/six_cardinal_picone.html",
+      ledgerA: "https://doi.org/10.5281/zenodo.21444339",
+      ledgerB: "https://cerebralgraphix.com/tools/finite_observer_ledger/",
+      ledgerTool: "https://cerebralgraphix.com/tools/finite_observer_ledger/",
+      finance: "https://cerebralgraphix.com/finance/live.html",
+      message: "https://doi.org/10.5281/zenodo.20683063",
+      phase: "https://doi.org/10.5281/zenodo.21274917",
+      ascii: "https://cerebralgraphix.com/tools/01_bridge_ASCII.html",
+      utf8: "https://cerebralgraphix.com/tools/02_utf8_alpha.html",
+      makers: "https://cerebralgraphix.com/tools/makers-mark.html",
+      forge: "https://cerebralgraphix.com/tools/forge_os_v16.3.html"
+    };
+
+    this.adj = {};
+    this.NODES.forEach(n => this.adj[n.id] = new Set([n.id]));
+    this.EDGES.forEach(e => { this.adj[e.a].add(e.b); this.adj[e.b].add(e.a); });
+    const degree = {};
+    this.NODES.forEach(n => degree[n.id] = 0);
+    this.EDGES.forEach(e => { degree[e.a]++; degree[e.b]++; });
+    this.islands = new Set(this.NODES.filter(n => degree[n.id] === 0).map(n => n.id));
+
+    const pos = {};
+    this.NODES.forEach(n => pos[n.id] = { x: n.x, y: n.y });
+    this.initialPos = JSON.parse(JSON.stringify(pos));
+    this.state = { pos, hiddenDomains: {}, hiddenEdges: {}, selectedId: null, hoverId: null };
+    this.dragId = null;
+  }
+
+  componentDidMount() { this.apply(); this._attach(); }
+  componentDidUpdate() { this.apply(); }
+  componentWillUnmount() {
+    window.removeEventListener("pointermove", this._mm);
+    window.removeEventListener("pointerup", this._mu);
+  }
+  _attach() {
+    this._mm = (e) => {
+      if (!this.dragId) return;
+      const el = this.graphRef.current; if (!el) return;
+      const r = el.getBoundingClientRect();
+      const x = Math.max(90, Math.min(1200, e.clientX - r.left));
+      const y = Math.max(50, Math.min(720, e.clientY - r.top));
+      this.setState(s => ({ pos: { ...s.pos, [this.dragId]: { x, y } } }));
+    };
+    this._mu = () => { this.dragId = null; };
+    window.addEventListener("pointermove", this._mm);
+    window.addEventListener("pointerup", this._mu);
+  }
+  apply() {
+    const el = this.rootRef.current; if (!el) return;
+    const dir = this.props.accentDirection || "Phi Gold / Cyan / Violet";
+    const sets = {
+      "Phi Gold / Cyan / Violet": ["oklch(0.82 0.11 84)","oklch(0.82 0.11 210)","oklch(0.74 0.11 300)"],
+      "Amber / Coral / Gold":     ["oklch(0.80 0.13 70)","oklch(0.70 0.15 30)","oklch(0.83 0.12 95)"],
+      "Cyan / Teal / Indigo":     ["oklch(0.82 0.11 205)","oklch(0.80 0.10 175)","oklch(0.66 0.13 275)"]
+    };
+    const s = sets[dir] || sets["Phi Gold / Cyan / Violet"];
+    el.style.setProperty("--a1", s[0]);
+    el.style.setProperty("--a2", s[1]);
+    el.style.setProperty("--a3", s[2]);
+  }
+
+  renderVals() {
+    const { pos, hiddenDomains, hiddenEdges, selectedId, hoverId } = this.state;
+    const showLabels = this.props.showEdgeLabels === true;
+    const highlight = this.props.highlightUnearned !== false;
+    const domVisible = (id) => !hiddenDomains[this.NODES.find(n => n.id === id).domain];
+    const nborSet = hoverId ? this.adj[hoverId] : null;
+
+    const nodes = this.NODES.map(n => {
+      const p = pos[n.id] || { x: n.x, y: n.y };
+      const hidden = hiddenDomains[n.domain];
+      const dim = nborSet ? !nborSet.has(n.id) : false;
+      const selected = selectedId === n.id;
+      const isIsland = this.islands.has(n.id);
+      const color = this.domains[n.domain].color;
+      const op = hidden ? 0 : (dim ? 0.22 : 1);
+      const pe = hidden ? "none" : "auto";
+      const ring = selected ? `0 0 0 2px ${color}, 0 10px 26px rgba(0,0,0,.5)` : "0 4px 14px rgba(0,0,0,.35)";
+      const border = isIsland
+        ? `1px dashed color-mix(in oklch, var(--stop) 55%, var(--line))`
+        : `1px solid ${selected ? "var(--tx-0)" : "var(--line)"}`;
+      return {
+        ...n,
+        wrapStyle: `position:absolute;left:${p.x}px;top:${p.y}px;transform:translate(-50%,-50%);width:168px;cursor:grab;user-select:none;touch-action:none;transition:opacity .18s;opacity:${op};pointer-events:${pe};z-index:${selected?6:(dim?1:3)}`,
+        cardStyle: `background:var(--bg-2);${border};border-left:3px solid ${color};border-radius:10px;padding:9px 11px;box-shadow:${ring}`,
+        dotStyle: `width:9px;height:9px;border-radius:50%;background:${color};flex:none`,
+        isIsland,
+        onDown: () => { this.dragId = n.id; this.setState({ selectedId: n.id }); },
+        onEnter: () => this.setState({ hoverId: n.id })
+      };
+    });
+
+    const edges = this.EDGES.map(e => {
+      const st = this.edgeStyles[e.type];
+      const a = pos[e.a] || {}; const b = pos[e.b] || {};
+      const hidden = hiddenEdges[e.type] || !domVisible(e.a) || !domVisible(e.b);
+      const active = nborSet ? (nborSet.has(e.a) && nborSet.has(e.b)) : true;
+      const op = hidden ? 0 : (active ? 0.95 : 0.14);
+      const anim = (highlight && e.type === "metaphor" && !hidden) ? "animation:cg-march 1s linear infinite;" : "";
+      return {
+        x1: a.x, y1: a.y, x2: b.x, y2: b.y,
+        mx: (a.x + b.x) / 2, my: (a.y + b.y) / 2 - 6,
+        label: st.label,
+        style: `stroke:${st.stroke};stroke-width:${st.w};stroke-dasharray:${st.dash};opacity:${op};transition:opacity .18s;${anim}`,
+        labelStyle: `font-family:var(--mono);font-size:9px;letter-spacing:.4px;fill:var(--tx-2);opacity:${(showLabels && !hidden) ? (active ? 0.9 : 0.12) : 0};transition:opacity .18s`
+      };
+    });
+
+    const domainList = Object.keys(this.domains).map(id => {
+      const d = this.domains[id];
+      const off = hiddenDomains[id];
+      const count = this.NODES.filter(n => n.domain === id).length;
+      return {
+        label: d.label, count,
+        dotStyle: `width:11px;height:11px;border-radius:3px;background:${d.color};flex:none;opacity:${off?0.3:1}`,
+        btnStyle: `display:flex;align-items:center;gap:9px;width:100%;font-family:var(--sans);font-size:12.5px;color:${off?"var(--tx-2)":"var(--tx-1)"};background:transparent;border:none;border-radius:6px;padding:6px 6px;cursor:pointer;text-decoration:${off?"line-through":"none"}`,
+        onToggle: () => this.setState(s => ({ hiddenDomains: { ...s.hiddenDomains, [id]: !s.hiddenDomains[id] } }))
+      };
+    });
+
+    const edgeTypeList = Object.keys(this.edgeStyles).map(t => {
+      const st = this.edgeStyles[t];
+      const off = hiddenEdges[t];
+      const count = this.EDGES.filter(e => e.type === t).length;
+      return {
+        label: st.label, count,
+        lineStyle: `stroke:${st.stroke};stroke-width:${st.w};stroke-dasharray:${st.dash};opacity:${off?0.3:1}`,
+        btnStyle: `display:flex;align-items:center;gap:9px;width:100%;font-family:var(--sans);font-size:12px;color:${off?"var(--tx-2)":"var(--tx-1)"};background:transparent;border:none;border-radius:6px;padding:6px 6px;cursor:pointer;text-decoration:${off?"line-through":"none"}`,
+        onToggle: () => this.setState(s => ({ hiddenEdges: { ...s.hiddenEdges, [t]: !s.hiddenEdges[t] } }))
+      };
+    });
+
+    let sel = null;
+    if (selectedId) {
+      const n = this.NODES.find(x => x.id === selectedId);
+      const links = this.EDGES.filter(e => e.a === selectedId || e.b === selectedId).map(e => {
+        const otherId = e.a === selectedId ? e.b : e.a;
+        const st = this.edgeStyles[e.type];
+        return {
+          other: this.NODES.find(x => x.id === otherId).label,
+          typeLabel: st.label,
+          why: e.why,
+          lineStyle: `stroke:${st.stroke};stroke-width:${st.w};stroke-dasharray:${st.dash}`
+        };
+      });
+      sel = {
+        ...n,
+        domainLabel: this.domains[n.domain].label,
+        dotStyle: `width:11px;height:11px;border-radius:3px;background:${this.domains[n.domain].color};flex:none`,
+        doiUrl: n.doi ? `https://doi.org/10.5281/zenodo.${n.doi}` : "",
+        url: this.urls[n.id] || "",
+        hasUrl: !!this.urls[n.id],
+        openLabel: n.kind === "paper" ? "Open paper" : "Open tool",
+        hasFence: !!n.fence,
+        fence: n.fence || "",
+        isIsland: this.islands.has(n.id),
+        islandWhy: this.islandWhy[n.id] || "",
+        links
+      };
+    }
+
+    const earnedCount = this.EDGES.filter(e => e.type !== "metaphor" && !hiddenEdges[e.type]).length;
+    const unearnedCount = this.EDGES.filter(e => e.type === "metaphor" && !hiddenEdges[e.type]).length + this.islands.size;
+
+    return {
+      rootRef: this.rootRef, graphRef: this.graphRef,
+      nodes, edges, domainList, edgeTypeList,
+      sel, hasSelection: !!sel, noSelection: !sel,
+      earnedCount, unearnedCount,
+      onLeave: () => this.setState({ hoverId: null }),
+      reset: () => this.setState({ pos: JSON.parse(JSON.stringify(this.initialPos)), selectedId: null })
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.house-card{--house-width:76px;display:inline-flex;position:relative;align-items:center;justify-content:center;flex:none;width:var(--house-width);height:calc(var(--house-width)*1.4);border:2px solid #e5dcc2;border-radius:8px;vertical-align:middle;box-shadow:0 3px 8px #0004;isolation:isolate;overflow:hidden}
+.house-back{background:repeating-linear-gradient(45deg,transparent 0 7px,#d3bb721c 7px 8px),repeating-linear-gradient(-45deg,transparent 0 7px,#d3bb721c 7px 8px),#143629;color:#d7bf79}
+.house-back::before{content:'';position:absolute;inset:5px;border:1px solid #cdb26c88;border-radius:4px;z-index:-1}
+.house-monogram{font:42px Georgia;color:#d9bf74;border:1px solid #c3ae7466;border-radius:50%;width:48px;height:58px;display:grid;place-items:center;background:#173526}
+.house-front{background:#fff9eb;color:#19392c;font-family:Georgia,serif}
+.house-front.red{color:#b2373f}.house-corner{position:absolute;font:700 16px/1 system-ui}.house-corner.top{left:6px;top:7px}.house-corner.bottom{right:6px;bottom:7px;transform:rotate(180deg)}.house-pip{font-size:42px}
+.house-stamp{display:grid;place-items:center;width:55px;height:55px;background:#e8dbb7;border:2px double #be9961;transform:rotate(-5deg);border-radius:6px;box-shadow:0 1px 2px #0007}
+.house-stamp p51-token{--p51-size:42px;pointer-events:none}.house-card.learned .house-stamp{border-color:#f8d580;box-shadow:0 0 0 2px #e4c27788,0 2px 9px #c9a74e77}
+.stamp-lab{min-width:0}.stamp-lab h3{font:23px Georgia;margin:8px 0}.stamp-lab p{font-size:12px;color:#c0cdbf}.stamp-lab-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}.stamp-collection{display:grid;grid-template-columns:repeat(auto-fill,minmax(38px,1fr));gap:5px;max-height:240px;overflow-y:auto;padding:5px 3px}
+body[data-game] .stamp-slot{min-width:0;min-height:58px;padding:3px;background:none;border:0;display:grid;place-items:center}.stamp-slot .house-card{--house-width:32px;border-width:1px;border-radius:4px}.stamp-slot .house-stamp{width:25px;height:25px;border-width:1px;transform:none}.stamp-slot .house-stamp p51-token{--p51-size:20px}.stamp-slot .house-monogram{font-size:18px;width:22px;height:26px}.stamp-slot .house-back::before{inset:3px}.stamp-slot:disabled{opacity:.32!important}
+.stamp-inspector{display:grid;gap:10px;align-content:start}.stamp-inspector select{width:100%;min-width:0;min-height:44px}.stamp-preview{display:flex;justify-content:center;min-height:112px}.stamp-inspector .a51-actions{display:grid;grid-template-columns:1fr 1fr}.stamp-inspector .a51-actions>*{min-width:0;padding:9px!important}.stamp-inspector p{margin:0}
+body[data-game=memory] #prompt-object>.house-card{--house-width:108px}
+body[data-game=memory] #prompt-object .house-pip{font-size:54px}
+body[data-game=memory] #prompt-object .house-corner{font-size:20px}
+body[data-game=memory] #prompt-object .house-stamp{width:67px;height:67px}
+body[data-game=memory] #prompt-object .house-stamp p51-token{--p51-size:54px}.memory-choice{display:flex;align-items:center;justify-content:center;gap:8px}.memory-choice .house-card{--house-width:32px;border-width:1px;border-radius:5px}.memory-choice .house-stamp{width:26px;height:26px;transform:none}.memory-choice .house-stamp p51-token{--p51-size:22px}.memory-choice .house-pip{font-size:18px}.memory-choice .house-corner{font-size:8px}.memory-choice .house-corner.top{top:4px;left:3px}.memory-choice .house-corner.bottom{right:3px;bottom:4px}.memory-choice-label{font:12px system-ui}
+body[data-game=telescope] .player .card{background:none!important;padding:0!important;border:0;box-shadow:none;height:auto!important;display:grid;place-items:center;min-height:126px}
+body[data-game=telescope] .player .house-card{--house-width:clamp(62px,18vw,90px)}
+body[data-game=telescope] .player .card.card-target::after{right:calc(50% - 25px);bottom:4px}
+.telescope-window{position:relative;padding:7px 0;border:1px solid #879168;border-radius:12px;background:linear-gradient(#244633,#102e21 45%,#284732);overflow:hidden;box-shadow:inset 0 8px 12px #0004}
+.telescope-window.arriving .house-card{animation:telescope-arrive .42s cubic-bezier(.18,.7,.22,1) both}
+@keyframes telescope-arrive{from{transform:translateY(-155px)}to{transform:translateY(0)}}
+.rule-stage{display:grid;gap:4px;text-align:center;color:#e8d59c}.rule-stage strong{font:34px Georgia}.rule-stage small{font:10px system-ui}
+.telescope-demo{display:grid;gap:12px}.telescope-demo-selects,.telescope-demo-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.telescope-demo-selects select{width:100%;min-width:0}.telescope-demo-card{display:grid;justify-items:center;gap:6px;padding:8px 0;border:1px solid #46624e;border-radius:9px;min-width:0}.telescope-demo-card.released{opacity:.4}.telescope-demo-card .house-card{--house-width:65px}.telescope-demo-card small{font-size:10px}.telescope-demo input[type=range]{width:100%;accent-color:#e5c389}
+@media(max-width:620px){.stamp-lab-grid{grid-template-columns:1fr}.stamp-collection{max-height:176px;grid-template-columns:repeat(auto-fill,minmax(35px,1fr))}.telescope-demo-card .house-card{--house-width:57px}.house-monogram{font-size:33px;width:39px;height:49px}.house-stamp{width:47px;height:47px}.house-stamp p51-token{--p51-size:37px}}
+@media(prefers-reduced-motion:reduce){.telescope-window.arriving .house-card{animation:none}}
+
+body[data-game=memory] .memory-choice .house-stamp{width:26px;height:26px}
+body[data-game=memory] .memory-choice .house-stamp p51-token{--p51-size:22px}

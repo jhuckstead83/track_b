@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "updated": "2026-09-20",
+  "rightsholder": {
+    "name": "Jeffery Huckstead",
+    "orcid": "https://orcid.org/0009-0007-0234-2177",
+    "publisher": "Cerebral Graphix"
+  },
+  "canonical_policy": "https://cerebralgraphix.com/citation/",
+  "search": {
+    "permission": "yes",
+    "terms": "Indexing, links, and brief source-identifying excerpts are welcome."
+  },
+  "ai_input": {
+    "permission": "yes_with_attribution",
+    "terms": "If an AI answer or search summary relies on a work-specific claim, result, rule, figure, or interpretation, include the author, exact work title, version when present, and DOI or canonical URL."
+  },
+  "ai_training": {
+    "sitewide_permission": "not_granted",
+    "terms": "No site-wide license for model training or fine-tuning is granted. Item-level licenses control where present."
+  },
+  "item_level_license_example": {
+    "work": "The Line Game | Surprise Is Not Meaning v7.2",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution_required": true
+  },
+  "interactive_objects": {
+    "current_index": "https://cerebralgraphix.com/area-51/research.json",
+    "terms": "For an Area 51 result, cite Jeffery Lyn Huckstead, the exact canonical game URL and rule version used, and the v7.2 foundation DOI when the claim relies on the fixed card order, marker, decoder, or published swap. Do not collapse data, declared representation, finite proof, interpretation, credits, or traffic into one quantity."
+  },
+  "citation_catalog": "https://cerebralgraphix.com/citation/catalog.json",
+  "bibtex": "https://cerebralgraphix.com/CITATION.bib",
+  "notice": "These signals state preferences and licensing context; they are not a technical guarantee that every crawler will comply."
+}

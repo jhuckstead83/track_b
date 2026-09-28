@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "passed": 8,
+  "scope": "Exact model and in-memory DOM/timers. No rendered or physical-device check.",
+  "checks": [
+    "Fresh measurements, including genuine zero, take priority over Google; zero does not light activity",
+    "Expiry is continuous, the original support clock fades into dated Google, and missing reference sectors retain original decay",
+    "Offline Finance boots with all 16 dated Google tiles and one request per source; fallback creates no measured movement",
+    "Finance resumes live, fades, reaches Google, and preserves measured median, movement index and payout eligibility",
+    "Mixed coverage falls back per sector without replacing fresh sectors or changing their colors",
+    "Hero uses the same downtime baseline and remains a single read-only link to Finance",
+    "Untouched hero rotates every six seconds; hover or arrows reveal Play; explicit Play resumes and manual pause persists",
+    "Swipe selection, hidden-tab suspension, inactive-card focusability and reduced motion are preserved"
+  ]
+}

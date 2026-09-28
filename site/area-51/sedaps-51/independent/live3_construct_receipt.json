@@ -1,0 +1,255 @@
+{
+ "program": "live3_construct.py",
+ "rule": "three queues; highest front card wins; winner appends the played cards in seat order starting from itself",
+ "cards": "ranks 0..n-1; live3_construct_check.cjs maps rank r to the r-th card of the shipped 51-card deck",
+ "theorem": "every top-headed state lies on a three-live loop, for every n = 3K + 3 with K >= 3 (RESEARCH_UPDATE_v0_4_1.md section 2)",
+ "checkedEveryTurn": [
+  "the head wins",
+  "the next state is top-headed",
+  "whole-packet counts are fixed",
+  "undo() recovers the previous state"
+ ],
+ "results": [
+  {
+   "n": 12,
+   "K": 3,
+   "topHeadedStates": "13063680",
+   "trials": 200,
+   "allLooped": true,
+   "winnersRotate": true,
+   "loopLengths": {
+    "9": 92,
+    "60": 108
+   }
+  },
+  {
+   "n": 15,
+   "K": 4,
+   "topHeadedStates": "17244057600",
+   "trials": 200,
+   "allLooped": true,
+   "winnersRotate": true,
+   "loopLengths": {
+    "36": 92,
+    "90": 108
+   }
+  },
+  {
+   "n": 18,
+   "K": 5,
+   "topHeadedStates": "26900729856000",
+   "trials": 200,
+   "allLooped": true,
+   "winnersRotate": true,
+   "loopLengths": {
+    "45": 50,
+    "60": 51,
+    "126": 99
+   }
+  },
+  {
+   "n": 21,
+   "K": 6,
+   "topHeadedStates": "56491532697600000",
+   "trials": 200,
+   "allLooped": true,
+   "winnersRotate": true,
+   "loopLengths": {
+    "30": 9,
+    "36": 33,
+    "168": 38,
+    "180": 75,
+    "504": 45
+   }
+  },
+  {
+   "n": 24,
+   "K": 7,
+   "topHeadedStates": "161339817384345600000",
+   "trials": 100,
+   "allLooped": true,
+   "winnersRotate": true,
+   "loopLengths": {
+    "90": 10,
+    "216": 42,
+    "252": 15,
+    "315": 27,
+    "1080": 6
+   }
+  },
+  {
+   "n": 30,
+   "K": 9,
+   "topHeadedStates": "3114700024005346826649600000",
+   "trials": 60,
+   "allLooped": true,
+   "winnersRotate": true,
+   "loopLengths": {
+    "63": 2,
+    "108": 4,
+    "120": 2,
+    "189": 2,
+    "216": 8,
+    "330": 4,
+    "504": 9,
+    "660": 3,
+    "945": 5,
+    "990": 13,
+    "1980": 3,
+    "2310": 5
+   }
+  },
+  {
+   "n": 51,
+   "K": 16,
+   "topHeadedStates": "136204918782856432133771086803797812873003008000000000000",
+   "trials": 24,
+   "allLooped": true,
+   "winnersRotate": true,
+   "loopLengths": {
+    "180": 1,
+    "1008": 2,
+    "1080": 2,
+    "1836": 1,
+    "3672": 1,
+    "4590": 2,
+    "4752": 2,
+    "5040": 1,
+    "6426": 1,
+    "9360": 2,
+    "10098": 1,
+    "11880": 1,
+    "11934": 1,
+    "15120": 1,
+    "16380": 2,
+    "20196": 1,
+    "20592": 1,
+    "25704": 1
+   }
+  }
+ ],
+ "witnesses": [
+  {
+   "n": 15,
+   "wholePackets": [
+    2,
+    1,
+    1
+   ],
+   "period": 36,
+   "state": [
+    [
+     2,
+     12,
+     8,
+     10,
+     13,
+     0,
+     9
+    ],
+    [
+     6,
+     3,
+     14,
+     4,
+     7
+    ],
+    [
+     11,
+     5,
+     1
+    ]
+   ],
+   "winnersFirst9": [
+    2,
+    0,
+    1,
+    2,
+    0,
+    1,
+    2,
+    0,
+    1
+   ]
+  },
+  {
+   "n": 51,
+   "wholePackets": [
+    2,
+    2,
+    12
+   ],
+   "period": 180,
+   "state": [
+    [
+     1,
+     7,
+     35,
+     20,
+     25,
+     42,
+     14,
+     12
+    ],
+    [
+     48,
+     32,
+     26,
+     45,
+     17,
+     24
+    ],
+    [
+     21,
+     38,
+     30,
+     2,
+     36,
+     3,
+     4,
+     46,
+     33,
+     10,
+     39,
+     16,
+     6,
+     41,
+     9,
+     27,
+     47,
+     0,
+     29,
+     40,
+     18,
+     31,
+     37,
+     11,
+     15,
+     43,
+     28,
+     5,
+     44,
+     23,
+     22,
+     50,
+     8,
+     34,
+     49,
+     19,
+     13
+    ]
+   ],
+   "winnersFirst9": [
+    1,
+    2,
+    0,
+    1,
+    2,
+    0,
+    1,
+    2,
+    0
+   ]
+  }
+ ]
+}

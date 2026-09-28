@@ -1,0 +1,1546 @@
+{
+  "total": 300,
+  "passed": 300,
+  "failed": [],
+  "checks": [
+    {
+      "name": "single statuslegend across active documents",
+      "passed": true,
+      "detail": [
+        1,
+        0
+      ]
+    },
+    {
+      "name": "master status heading",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "one source-rung row in the master key",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "W7 F14 open in master key",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Dossier points to master key",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stale absent: W_5\\rightsquigarrow F^{(10)}\\ \text{by an indepen",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stale absent: first four of those need no zero data at all",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stale absent: through the fourth, global matrix order eight",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stale absent: $W_1,\\ldots,W_4>0$ from the source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stale absent: source-side $F^{(10)}$ inequality",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stale absent: only its independent Gamma--prime proof remains ",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stale absent: independent fifth-rung source certificate is a s",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stale absent: first five differential rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Part IV states the position once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R13 F14 frontier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Dossier first six differential rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Dossier seventh rung frontier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "front says one line per route",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R23 plural frontier title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R23 no proved universal reduction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "implication lattice present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "implication lattice status equivalent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "implication lattice status sufficient",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "implication lattice W7 necessary not sufficient",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct row-energy equivalence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct Loewner to Widder arrow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R13A names zeta boundary nonvanishing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R13A names finite zero count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R13A unbounded height conclusion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R13A degrading factor tends one",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Part VIII exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R25 no-go ledger exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R25 pointer Theorem 22A.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R25 pointer §48C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R25 pointer §49 and §69",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R25 pointer §161",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R25 pointer Theorems 107.1 and 112.1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R25 pointer §§155F–155G and (H07)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R25 scope firewall",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R22 has one NO-GO ledger row",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R22 old realization row removed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R22 old rung-test row removed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no k-star detection theorem promoted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no claimed c1 gamma detection law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RH open reader",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RH open dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "W7 remains open text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stale global W4-open sentence absent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reading: equation tags unique",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "reading: heading ids unique",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "reading: no control chars",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dossier: equation tags unique",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "dossier: heading ids unique",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "dossier: no control chars",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "global equation tags unique across both documents",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R.2 tag occurs once",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "R25 section occurs once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "v5.0 in both YAML subtitles",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "v5.0 date in both YAML blocks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no active v4.7 or v4.8 version label",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reading preamble footer and subject say v5.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dossier preamble footer and subject say v5.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R4A heading present once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R4A sits between R4 and R5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(GA.1) tagged once in the Reader",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(GA.2) tagged once in the Reader",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(GA.3) tagged once in the Reader",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(GA.4) tagged once in the Reader",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(GA.5) tagged once in the Reader",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(GA.6) tagged once in the Reader",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(GA.7) tagged once in the Reader",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(GA.8) tagged once in the Reader",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R4A figure label and file",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R4A figure source script present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R4A third reason for the mirror stated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R4A no-priority statement",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R4A zero firewall",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R4A warns the zeta-value pattern stops",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R4A names the replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R1 points to the third role of the mirror",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R9 points to (GA.8)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R17I points to (GA.3) and (GA.6)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R22 row for the bridge",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R24 row for the bridge",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "96A heading present once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "96A sits between 96 and 97",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(96A.1) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(96A.1a) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(96A.2) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(96A.2a) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(96A.3) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(96A.4) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(96A.5) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(96A.6) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(96A.7) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(96A.8) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(96A.9) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "96A proves (96A.2) three ways",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "96A sanity check is not a certificate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "155G points to Theorem 96A.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "96A.5 states the recomputation without a run note",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Ramanujan coefficients do not reuse the Jacobian letter R",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gamma-bridge replay passes",
+      "passed": true,
+      "detail": [
+        60,
+        60
+      ]
+    },
+    {
+      "name": "96A.5 printed lambda_1 matches the Arb receipt (digits equal, printed radius >= Arb radius)",
+      "passed": true,
+      "detail": [
+        "0.0230957089661210338143102479065",
+        4.72e-33
+      ]
+    },
+    {
+      "name": "96A.5 printed q_1 matches the Arb receipt (digits equal, printed radius >= Arb radius)",
+      "passed": true,
+      "detail": [
+        "200.040454832386859463365185961",
+        4.02e-28
+      ]
+    },
+    {
+      "name": "96A.5 printed q_2 matches the Arb receipt (digits equal, printed radius >= Arb radius)",
+      "passed": true,
+      "detail": [
+        "442.176150574082490320460688768",
+        2.01e-28
+      ]
+    },
+    {
+      "name": "96A.5 printed q1_over_q2 matches the Arb receipt (digits equal, printed radius >= Arb radius)",
+      "passed": true,
+      "detail": [
+        "0.45239991929160355477",
+        2.61e-21
+      ]
+    },
+    {
+      "name": "96A.5 printed C0 matches the Arb receipt (digits equal, printed radius >= Arb radius)",
+      "passed": true,
+      "detail": [
+        "8.001938046160201229441097",
+        9.66e-26
+      ]
+    },
+    {
+      "name": "R12 prints the recomputed C bounds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R12 carried-enclosure caveat removed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R12 stale tail figures removed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R12 tail bound printed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no certificate-provenance block survives in either document",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run note absent: no later than 23 August 2026",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run note absent: a replay on a second backend is still owed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run note absent: second backend is still owed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run note absent: not rerun for v4.8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run note absent: receipts not bundled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run note absent: receipt not bundled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run note absent: last executed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run note absent: python-flint 0.9.0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run note absent: GNU MPFR, 256-bit standard run",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run note absent: not retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run note absent: last-run date",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run note absent: edition-1.2 certificate record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run note absent: The standard run used 256-bit Arb arithmetic",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "run note absent: not the second-backend replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "W5-W6 unsupported hash-verification claim removed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R12 states the position once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R12 keeps the two proof channels apart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R12 rung table is consolidated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "R12 keeps W7 open and the all-rung statement equal to RH",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "front matter points at the bundled certificate, not at run data",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "glossary defines the certificate of record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "74A heading present once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "74A theorem covers all five rungs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "74A classification unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "74A firewall: no zero data",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(74A.1) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(74A.2) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(74A.3) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(74A.4) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(74A.5) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(74A.6) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(74A.7) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(74A.8) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(74A.9) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(74A.10) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(74A.11) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(74A.12) tagged once in the Dossier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "74A prints the thresholds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "74A prints the tail constants",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "74A prints the Taylor cell bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "74A names both programs and the comparison",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "74A states the independence of the second backend",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "74A keeps W7 open",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "74 points to the consolidated certificate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "36 and 37 point to the consolidated certificate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certificate file bundled: source_rungs_arb.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certificate file bundled: source_rungs_decimal.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certificate file bundled: cross_backend_check.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "certificate file bundled: README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb.json: PASS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb.json: produced by the bundled script",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb.json: all five rungs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb.json: k=2 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb.json: k=2 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 651
+    },
+    {
+      "name": "RECEIPT_arb.json: k=3 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb.json: k=3 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 709
+    },
+    {
+      "name": "RECEIPT_arb.json: k=4 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb.json: k=4 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 1097
+    },
+    {
+      "name": "RECEIPT_arb.json: k=5 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb.json: k=5 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 1459
+    },
+    {
+      "name": "RECEIPT_arb.json: k=6 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb.json: k=6 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 2101
+    },
+    {
+      "name": "RECEIPT_arb.json: k=2 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb.json: k=3 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb.json: k=4 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb.json: k=5 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb.json: k=6 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb_second.json: PASS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb_second.json: produced by the bundled script",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb_second.json: all five rungs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb_second.json: k=2 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb_second.json: k=2 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 1027
+    },
+    {
+      "name": "RECEIPT_arb_second.json: k=3 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb_second.json: k=3 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 1032
+    },
+    {
+      "name": "RECEIPT_arb_second.json: k=4 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb_second.json: k=4 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 1423
+    },
+    {
+      "name": "RECEIPT_arb_second.json: k=5 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb_second.json: k=5 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 1646
+    },
+    {
+      "name": "RECEIPT_arb_second.json: k=6 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb_second.json: k=6 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 2269
+    },
+    {
+      "name": "RECEIPT_arb_second.json: k=2 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb_second.json: k=3 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb_second.json: k=4 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb_second.json: k=5 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_arb_second.json: k=6 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal.json: PASS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal.json: produced by the bundled script",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal.json: all five rungs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal.json: k=2 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal.json: k=2 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 448
+    },
+    {
+      "name": "RECEIPT_decimal.json: k=3 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal.json: k=3 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 448
+    },
+    {
+      "name": "RECEIPT_decimal.json: k=4 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal.json: k=4 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 448
+    },
+    {
+      "name": "RECEIPT_decimal.json: k=5 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal.json: k=5 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 448
+    },
+    {
+      "name": "RECEIPT_decimal.json: k=6 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal.json: k=6 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 448
+    },
+    {
+      "name": "RECEIPT_decimal.json: k=2 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal.json: k=3 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal.json: k=4 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal.json: k=5 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal.json: k=6 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal_second.json: PASS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal_second.json: produced by the bundled script",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal_second.json: all five rungs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal_second.json: k=2 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal_second.json: k=2 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 896
+    },
+    {
+      "name": "RECEIPT_decimal_second.json: k=3 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal_second.json: k=3 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 896
+    },
+    {
+      "name": "RECEIPT_decimal_second.json: k=4 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal_second.json: k=4 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 896
+    },
+    {
+      "name": "RECEIPT_decimal_second.json: k=5 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal_second.json: k=5 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 896
+    },
+    {
+      "name": "RECEIPT_decimal_second.json: k=6 partition tiles [1,128] exactly",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal_second.json: k=6 every cell clears the printed threshold",
+      "passed": true,
+      "detail": 896
+    },
+    {
+      "name": "RECEIPT_decimal_second.json: k=2 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal_second.json: k=3 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal_second.json: k=4 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal_second.json: k=5 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RECEIPT_decimal_second.json: k=6 tail constant and handoff match the text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "comparison against the previously published receipts is bundled",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "previously published receipts: same statement, same tail constants, centres re-verified",
+      "passed": true,
+      "detail": [
+        "receipt_standard.json",
+        "receipt_second_run.json"
+      ]
+    },
+    {
+      "name": "CROSS_BACKEND.json: PASS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "CROSS_BACKEND.json: the two backends are different libraries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "CROSS_BACKEND.json: exact tail data agree for all five rungs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "CROSS_BACKEND_SECOND.json: PASS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "CROSS_BACKEND_SECOND.json: the two backends are different libraries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "CROSS_BACKEND_SECOND.json: exact tail data agree for all five rungs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "the two runs of each backend changed every material parameter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: user-supplied",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: Orthogonal_Followup",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: Zeta_Zeros_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: Orange source note",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: supplied Green",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: Green run",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: hostile",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: v4.5 provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: v4.5 source provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: provenance/v46",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: v4.6 reconciliation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: v4.6 pole audit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: v4.6 hostile audit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: v4.6 Gamma-pole audit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: In v4.6 those columns",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: frozen",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: source-certified A-CAT",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: source A-CAT through",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: Heat, Stieltjes, and complete Bernstein owners",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: global matrix owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: the Gamma owner and the prime owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: the $F^{(14)}$ owner",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: supplied historical report",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "internal wording absent: transcribed as supplied",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Reader uses \"owner\" only inside the glossary",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "Dossier explains working-paper labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Reader glossary present once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Reader lineage table present once, before the status key",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lineage no-priority disclaimer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "what-changed and how-to-cite paragraphs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reading: every Reader section reference resolves",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "reading: every Dossier section reference resolves",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "dossier: every Reader section reference resolves",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "dossier: every Dossier section reference resolves",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "reading: cited equation tags in the new material exist",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "dossier: cited equation tags in the new material exist",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "reading: references 83-120 each listed once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reading: DOIs added to Li, Bombieri-Lagarias and Keiper",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reading: Elaissaoui-Guennoun journal record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reading: Montgomery 1973 venue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dossier: references 83-120 each listed once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dossier: DOIs added to Li, Bombieri-Lagarias and Keiper",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dossier: Elaissaoui-Guennoun journal record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "dossier: Montgomery 1973 venue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "every new reference 83-120 is cited in the Reading Volume body",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Ramanujan primary source cited (Berndt, Entry 9 of Chapter 38)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "denominator sign statement corrected: b_1 = gamma_E - 1 < 0 in both documents",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Derby misprint recorded in text and reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "(TR.4) consecutive-squares identity present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Faulhaber classical forms (2.5)-(2.6) present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Witula case r=1 recorded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "figures added match the declared v5.0 delta",
+      "passed": true,
+      "detail": [
+        "figure74_safe_axis_and_self_dual.png",
+        "figure75A_r10c_one_orbit_four_coordinates.png"
+      ]
+    },
+    {
+      "name": "figures removed match the declared v5.0 delta",
+      "passed": true,
+      "detail": [
+        "figure74_s_sigma_it_fold_atlas.png",
+        "pringsheim_no_dominance.png",
+        "v26c_reciprocal_window.png",
+        "v27_bernstein_route.png",
+        "v27b_energy_spectral_cases.png",
+        "v29_even_triangle_geometry.png",
+        "v29_prime_energy_cases.png"
+      ]
+    },
+    {
+      "name": "figures redrawn match the declared v5.0 delta",
+      "passed": true,
+      "detail": [
+        "figure75_li_pp97_loewner_study_atlas.png",
+        "v26c_source_depth.png",
+        "v30_rh_equivalence_map.png"
+      ]
+    },
+    {
+      "name": "every redrawn or added figure has a generator in qa/figsrc",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "every retired figure is archived under provenance/v50",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "every referenced figure exists",
+      "passed": true,
+      "detail": []
+    }
+  ]
+}

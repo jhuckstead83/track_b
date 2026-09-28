@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the software release and associated manuscript."
+title: "Transient Rational Locking in Modular Logarithmic Orbits"
+type: software
+authors:
+  - family-names: "Huckstead"
+    given-names: "J."
+    orcid: "https://orcid.org/0009-0007-0234-2177"
+repository-code: "https://github.com/jhuckstead83/transient-rational-locking"
+url: "https://github.com/jhuckstead83/transient-rational-locking"
+license: "MIT"
+version: "v1.0.0"
+date-released: 2026-03-17
+abstract: >-
+  A reproducible research repository containing the Track A manuscript and the
+  Track B survey engine for studying transient rational locking in modular
+  logarithmic orbits, including the torus-sawtooth dephasing law, modulus-as-lens
+  diagnostics, and automated atlas generation.
+keywords:
+  - arithmetic dynamics
+  - irrational rotations
+  - Diophantine approximation
+  - modular geometry
+  - continued fractions
+  - experimental mathematics
+preferred-citation:
+  type: article
+  title: "Transient Rational Locking in Modular Logarithmic Orbits"
+  authors:
+    - family-names: "Huckstead"
+      given-names: "J."
+      orcid: "https://orcid.org/0009-0007-0234-2177"
+  year: 2026
+  publisher: "Zenodo"
+  repository-code: "https://github.com/jhuckstead83/transient-rational-locking"

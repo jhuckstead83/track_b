@@ -1,0 +1,43 @@
+{
+  "schema": "cerebral-graphix.telescope-51.archive-addressing.v1",
+  "title": "Telescope 51 archive-addressing corollary",
+  "version": "0.1",
+  "date": "2026-09-20",
+  "author": {
+    "name": "Jeffery Lyn Huckstead",
+    "orcid": "https://orcid.org/0009-0007-0234-2177"
+  },
+  "canonical_page": "https://cerebralgraphix.com/research/line-game/Telescope_51_Beta_Draft_v0_1.html",
+  "paper": "https://cerebralgraphix.com/research/line-game/Telescope_51_What_a_Rule_Can_See_v0_2.pdf",
+  "based_on": {
+    "title": "The Line Game | Surprise Is Not Meaning",
+    "version": "7.2",
+    "doi": "10.5281/zenodo.22851517"
+  },
+  "archive": {
+    "index_convention": "one-based",
+    "first_index": 1,
+    "last_index": 103800788359,
+    "verified_height": 30610046000,
+    "source": "https://www.lmfdb.org/zeros/zeta/Completeness"
+  },
+  "equal_weight_fiber": {
+    "class_size": 18,
+    "capacity": "18! = 6402373705728000",
+    "minimum_sufficient_class_size": 15,
+    "sharp_capacity_inequality": "14! = 87178291200 < 103800788359 < 15! = 1307674368000 <= 18!"
+  },
+  "exact_statement": "Holding every card outside the 18-card equal-weight class fixed, and holding fixed the set of positions occupied by that class, all 18! internal permutations preserve the complete positionwise weight profile. Therefore every declared one-based index in the verified archive admits an injective code inside this fiber.",
+  "decoding_requirements": [
+    "the one-based archive index convention",
+    "a declared ordering and factorial unranking rule for the 18-card class",
+    "the external archive that maps an index to an ordinate"
+  ],
+  "not_claimed": [
+    "the cards compute a Riemann zeta zero",
+    "the encoding extends the verified archive height",
+    "the archive address determines an uncomputed decimal tail",
+    "the corollary proves the Riemann Hypothesis"
+  ],
+  "citation": "Huckstead, Jeffery Lyn. Telescope 51: What a Rule Can See. v0.2 working edition. Cerebral Graphix, 20 September 2026. https://cerebralgraphix.com/research/line-game/Telescope_51_Beta_Draft_v0_1.html. Based on The Line Game | Surprise Is Not Meaning v7.2, https://doi.org/10.5281/zenodo.22851517."
+}

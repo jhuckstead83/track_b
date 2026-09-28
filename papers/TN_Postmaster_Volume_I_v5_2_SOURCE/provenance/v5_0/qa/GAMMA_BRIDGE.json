@@ -1,0 +1,414 @@
+{
+  "script": "qa/audit_gamma_bridge.py",
+  "rh_status": "OPEN",
+  "seconds": 56.57,
+  "total": 60,
+  "passed": 60,
+  "failed": [],
+  "certified_enclosures": {
+    "python_flint": "0.9.0",
+    "prec_bits": 256,
+    "lambda_1": "[0.0230957089661210338143102479065 +/- 4.72e-33]",
+    "q_1": "[200.040454832386859463365185961 +/- 4.02e-28]",
+    "q_2": "[442.176150574082490320460688768 +/- 2.01e-28]",
+    "q1_over_q2": "[0.45239991929160355477 +/- 2.61e-21]",
+    "C0": "[8.001938046160201229441097 +/- 9.66e-26]",
+    "C_upper_with_H": "[8.001938046160201229441098 +/- 3.37e-25]",
+    "C_times_ratio_cubed_upper": "[0.740905367282833 +/- 3.46e-16]",
+    "log2pi_minus_gamma": "[1.26066140150781262295414738273 +/- 1.17e-30]",
+    "zero_real_parts_are_one_half": [
+      "0.5000000000",
+      "0.5000000000"
+    ]
+  },
+  "checks": [
+    {
+      "tag": "96A.2",
+      "name": "sum_{k>=2} zeta(k)/T_k = log(2 pi) - gamma",
+      "passed": true,
+      "detail": "0.0"
+    },
+    {
+      "tag": "Thm 96A.3",
+      "name": "sum_{k>=2} (zeta(k)-1)/T_k = log(2 pi) - 1 - gamma",
+      "passed": true,
+      "detail": "0.2606614015078126229541474"
+    },
+    {
+      "tag": "4.1",
+      "name": "Mengoli: sum_{k>=2} 1/T_k = 1 (exact telescope)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "96A.3",
+      "name": "truncated identity sum_{k>=2} zeta_M(k)/T_k = 2M - H_M - 2 log(M^M/M!) (M<=30)",
+      "passed": true,
+      "detail": "1.5091e-59"
+    },
+    {
+      "tag": "96A.3",
+      "name": "Stirling limit: S_M = log(2 pi) - gamma - 1/(3M) + 1/(12M^2) + O(M^-3) at M=10^6",
+      "passed": true,
+      "detail": "-5.5556e-21"
+    },
+    {
+      "tag": "96A.4",
+      "name": "sum_{k>=2} m^{-k}/T_k = int_{m-1}^{m} ({x}/x)^2 dx, closed form, m=1..20",
+      "passed": true,
+      "detail": "8.9481e-41"
+    },
+    {
+      "tag": "96A.5",
+      "name": "int_0^inf ({x}/x)^2 dx = 1 + sum_m(interval masses) = log(2 pi) - gamma",
+      "passed": true,
+      "detail": "1.260661401507812622954147"
+    },
+    {
+      "tag": "96A.5",
+      "name": "Plancherel form (1/2pi) int |zeta(1/2+it)|^2/(1/4+t^2) dt ~ log(2 pi) - gamma (numerical sanity check, tol 1e-4 as printed)",
+      "passed": true,
+      "detail": {
+        "value": "1.260741644",
+        "target": "1.260661402"
+      }
+    },
+    {
+      "tag": "Thm 96A.3 proof 1",
+      "name": "Raabe: int_0^1 log Gamma = log(2 pi)/2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "Thm 96A.3 proof 1",
+      "name": "log Gamma(1-w) = gamma w + sum zeta(k) w^k/k at w=0.3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "Thm 96A.3 proof 1",
+      "name": "log Gamma(1-w) = gamma w + sum zeta(k) w^k/k at w=0.7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "Thm 96A.3 proof 2",
+      "name": "digamma moment: sum zeta(k)/T_k = -gamma - 2 int_0^1 v psi(v) dv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "4.5",
+      "name": "Hausdorff moment (4.5): 1/T_k = int_0^1 u^{k-1} 2(1-u) du (k=1..12, exact)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "96A.1",
+      "name": "F(n)=psi(n+1)-(1/2)log(n(n+1)) is formally invariant under n -> -1-n (order 20)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "96A.1a",
+      "name": "Ramanujan coefficients varrho_1..varrho_10 (overdetermined system consistent)",
+      "passed": true,
+      "detail": [
+        "1/12",
+        "-1/120",
+        "1/630",
+        "-1/1680",
+        "1/2310",
+        "-191/360360",
+        "29/30030",
+        "-2833/1166880",
+        "140051/17459442",
+        "-6525613/193993800"
+      ]
+    },
+    {
+      "tag": "96A.1",
+      "name": "centered coefficients c_m = [(1-2^{1-2m})B_{2m} + 2^{-2m}]/(2m) (m<=10)",
+      "passed": true,
+      "detail": [
+        "1/6",
+        "1/120",
+        "13/2016",
+        "-7/1920"
+      ]
+    },
+    {
+      "tag": "96A.1",
+      "name": "odd Bernoulli polynomials vanish at 1/2 (k<=21)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "96A.1a",
+      "name": "numerical Ramanujan check n=5: |error| <= |varrho_7|/T_n^7",
+      "passed": true,
+      "detail": "4.8695e-12"
+    },
+    {
+      "tag": "96A.1a",
+      "name": "numerical Ramanujan check n=10: |error| <= |varrho_7|/T_n^7",
+      "passed": true,
+      "detail": "6.0694e-16"
+    },
+    {
+      "tag": "96A.1a",
+      "name": "numerical Ramanujan check n=40: |error| <= |varrho_7|/T_n^7",
+      "passed": true,
+      "detail": "3.862e-24"
+    },
+    {
+      "tag": "Cor 96A.2",
+      "name": "coefficient trap: varrho_1=-zeta(-1), varrho_2=-zeta(-3), varrho_3!=-zeta(-5)",
+      "passed": true,
+      "detail": [
+        "1/252"
+      ]
+    },
+    {
+      "tag": "96A.6-96A.8",
+      "name": "simplex rung d=2: series, quadrature and (96A.7) agree to 1e-35",
+      "passed": true,
+      "detail": "1.260661401507812622954147"
+    },
+    {
+      "tag": "96A.6-96A.8",
+      "name": "simplex rung d=3: series, quadrature and (96A.7) agree to 1e-35",
+      "passed": true,
+      "detail": "0.6870730725097797894509592"
+    },
+    {
+      "tag": "96A.6-96A.8",
+      "name": "simplex rung d=4: series, quadrature and (96A.7) agree to 1e-35",
+      "passed": true,
+      "detail": "0.4788662282124662053107893"
+    },
+    {
+      "tag": "96A.6-96A.8",
+      "name": "simplex rung d=5: series, quadrature and (96A.7) agree to 1e-35",
+      "passed": true,
+      "detail": "0.3689682549089852992015177"
+    },
+    {
+      "tag": "96A.6-96A.8",
+      "name": "simplex rung d=6: series, quadrature and (96A.7) agree to 1e-35",
+      "passed": true,
+      "detail": "0.3005555514416379673837533"
+    },
+    {
+      "tag": "96A.6-96A.8",
+      "name": "simplex rung d=7: series, quadrature and (96A.7) agree to 1e-35",
+      "passed": true,
+      "detail": "0.2537224332187180022665186"
+    },
+    {
+      "tag": "96A.6-96A.8",
+      "name": "simplex rung d=8: series, quadrature and (96A.7) agree to 1e-35",
+      "passed": true,
+      "detail": "0.2195972696746667222662419"
+    },
+    {
+      "tag": "96A.6-96A.8",
+      "name": "simplex rung d=9: series, quadrature and (96A.7) agree to 1e-35",
+      "passed": true,
+      "detail": "0.1936038102370885863266958"
+    },
+    {
+      "tag": "Thm 96A.5",
+      "name": "Beta form 1/C(k+d-1,d) = d*B(k,d) (exact, k,d<=12)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "76.8",
+      "name": "reciprocal simplex telescope: sum_{k<=K} 1/C(k+d-1,d) = (d/(d-1))(1 - 1/C(K+d-1,d-1)) (exact, K=399, d=2..8)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "96A.8",
+      "name": "in the constants log(2pi), gamma, zeta'(-j): gamma-coefficient -1, log(2pi)-coefficient d/2, rung d adds zeta'(2-d) (d<=19)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "96A.8",
+      "name": "zeta'(-2) = -zeta(3)/(4 pi^2) and zeta'(-4) = 3 zeta(5)/(4 pi^4)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "96A.7",
+      "name": "moment int_0^1 u logGamma = log(2pi)/4 - log A",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "155G",
+      "name": "b_1^den = gamma - 1 < 0 (exact from the Laurent expansion at s=1)",
+      "passed": true,
+      "detail": "-0.422784335098"
+    },
+    {
+      "tag": "155G",
+      "name": "Stieltjes-constant and Cauchy-integral coefficients agree (N<=23, 1e-12)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "155G",
+      "name": "numerically b_2..b_16 > 0 > b_17 (sign pattern printed in 155G and R17I; b_17 itself is directed elsewhere)",
+      "passed": true,
+      "detail": [
+        "0.0728158",
+        "0.00210464",
+        "-0.00127046"
+      ]
+    },
+    {
+      "tag": "96A.9",
+      "name": "xi'/xi(1) = lambda_1 = 1 + gamma/2 - log(4 pi)/2 (Davenport's -B)",
+      "passed": true,
+      "detail": "0.023095708966121033814"
+    },
+    {
+      "tag": "96A.9",
+      "name": "balanced identity (log 2pi - gamma) + 2 lambda_1 = 2 - log 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "96A.9",
+      "name": "first 100 zeros + smooth tail reproduce lambda_1 to 1e-5 (numerical)",
+      "passed": true,
+      "detail": "0.02309269331"
+    },
+    {
+      "tag": "CERT",
+      "name": "lambda_1 enclosure inside the printed decimal 0.0230957089661...",
+      "passed": true,
+      "detail": "[0.0230957089661210338143102479065 +/- 4.72e-33]"
+    },
+    {
+      "tag": "CERT",
+      "name": "q_1 enclosure consistent with printed 200.0404548323868594...",
+      "passed": true,
+      "detail": "[200.040454832386859463365185961 +/- 4.02e-28]"
+    },
+    {
+      "tag": "CERT",
+      "name": "q_2 enclosure consistent with printed 442.1761...",
+      "passed": true,
+      "detail": "[442.176150574082490320460688768 +/- 2.01e-28]"
+    },
+    {
+      "tag": "CERT",
+      "name": "q_1/q_2 consistent with printed 0.4523999...",
+      "passed": true,
+      "detail": "[0.45239991929160355477 +/- 2.61e-21]"
+    },
+    {
+      "tag": "CERT",
+      "name": "printed bounds 8.00193804616020 <= C <= 8.00193804616021 hold via C0 <= C <= C0 + q2*lambda1/(2H^2), (12.7a)",
+      "passed": true,
+      "detail": "[8.001938046160201229441097 +/- 9.66e-26] / [8.001938046160201229441098 +/- 3.37e-25]"
+    },
+    {
+      "tag": "CERT",
+      "name": "tail term q2*lambda1/(2H^2) < 6e-25 (printed)",
+      "passed": true,
+      "detail": "[5.6729e-25 +/- 2.33e-30]"
+    },
+    {
+      "tag": "CERT",
+      "name": "C (q1/q2)^3 lies in (0.740, 0.742) (printed 0.741)",
+      "passed": true,
+      "detail": "[0.740905367282833 +/- 3.46e-16]"
+    },
+    {
+      "tag": "CERT",
+      "name": "C (q1/q2)^2 lies in (1.63, 1.65) (printed 1.64)",
+      "passed": true,
+      "detail": "[1.637722147 +/- 3.50e-10]"
+    },
+    {
+      "tag": "CERT",
+      "name": "Arb returns the two lowest zeros with real part 1/2 (to 1e-50)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "CERT",
+      "name": "mpmath cross-check of q_1, q_2 (40 digits)",
+      "passed": true,
+      "detail": [
+        "200.0404548323868594633652",
+        "442.1761505740824903204607"
+      ]
+    },
+    {
+      "tag": "R2.F1",
+      "name": "inverse Faulhaber: 2^{m-1} T_n^m = sum_j C(m,2j-1) S_{2m-2j+1} (m<=8)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "R2.F2",
+      "name": "Faulhaber's derivative rule S_{2m} = (n+1/2)/(2m+1) * dP_m/da (m<=7)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "R2.F3",
+      "name": "inverse of the Faulhaber coefficient matrix = signed Pascal rows (-1)^{p-j} C(p+1,j) (12x12)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "R2.F6",
+      "name": "n^{p+1} = sum_{j=0}^{p} (-1)^{p-j} C(p+1,j) S_j(n) as polynomials, p=0..12 (S_0(n)=n)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "R2.F4",
+      "name": "(2.2a) 3 S_2 = (2n+1) T_n is the r=1 case of the product decomposition (13) of Witula et al.",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "R2.F5",
+      "name": "B_k = -k zeta(1-k) for k=2..16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "R5C.D1",
+      "name": "sum_{j=0}^{n} (n^2+j) = sum_{j=n+1}^{2n} (n^2+j) for n=1..60",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "R5C.D2",
+      "name": "sum_{j=0}^{n} (T_{2n}+j)^2 = sum_{j=n+1}^{2n} (T_{2n}+j)^2 for n=1..60, T_{2n}=n(2n+1)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "R5C.D3",
+      "name": "(TR.4) start is forced: LHS - RHS = p^2 - 2n^2 p - n^2(2n+1) = (p - n(2n+1))(p + n)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "tag": "R5C.D4",
+      "name": "misprint check: the printed sign (+2n^2 p) does not have p = n(2n+1) as a root",
+      "passed": true,
+      "detail": "4*n**3*(2*n + 1)"
+    }
+  ]
+}
