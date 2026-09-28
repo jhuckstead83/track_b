@@ -3,7 +3,7 @@
  "extractor": "extract_anchors.py (PyMuPDF; heading text plus heading-size font)",
  "reading": {
   "file": "TN_Postmaster_Volume_I_v5_2_READING_VOLUME.pdf",
-  "sha256": "78a281a3e0d272291a59a668dc873cf1f78c11e61f7d1851bcde01656b306647",
+  "sha256": "80367cd57966232702b69263d0b813e9d8f24ed3f0948c7bb7981ea5b451ec3e",
   "pages": 101,
   "targets": {
    "start_here": {
@@ -90,7 +90,7 @@
  },
  "dossier": {
   "file": "TN_Postmaster_Volume_I_v5_2_TECHNICAL_DOSSIER.pdf",
-  "sha256": "f8c1b42c3a985efcdaf3fa682adbd1c9523d244c7cd8aa803ee5985b8cb02c41",
+  "sha256": "48fbaeccbffad9013625724e6142d06fc8b9dc8d13e284610585b25f8fda890c",
   "pages": 287,
   "targets": {
    "ch_I_discrete_primitives": {

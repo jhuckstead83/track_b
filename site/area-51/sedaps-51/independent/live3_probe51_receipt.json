@@ -1,0 +1,22 @@
+{
+ "program": "live3_probe51.py",
+ "n": 51,
+ "status": "C (a sample, not a search)",
+ "exclusion": "a loop-entering density above about 0.1% at about 95% confidence",
+ "results": {
+  "synchronised": {
+   "samples": 3000,
+   "medianTurnsThreeLive": 18,
+   "maxTurnsThreeLive": 222,
+   "stillThreeLiveAtCap": 0,
+   "cap": 100000
+  },
+  "17-17-17 deal": {
+   "samples": 3000,
+   "medianTurnsThreeLive": 53,
+   "maxTurnsThreeLive": 197,
+   "stillThreeLiveAtCap": 0,
+   "cap": 100000
+  }
+ }
+}

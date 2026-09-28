@@ -103,6 +103,10 @@ with anything other than pandoc 3.1 and TeX Live 2023–2025.
 
 ## Publication status
 
-This is an assembled v5.2 source package. It has not been built into PDFs here, uploaded to
-Zenodo, or assigned a deposit DOI. The concept DOI printed in the work identifies the
-existing version series.
+`qa/build_release.py both` builds the two volumes: the Reading Volume at 101 pages and the
+Technical Dossier at 287. `qa/BUILD_BINDING.json` binds both PDFs by SHA-256.
+
+The author has reserved the version DOI **10.5281/zenodo.23004335** for this edition. It is
+printed on both title pages as a link, and it resolves once the Zenodo record is published.
+Until then DataCite returns 404, as it should for a reserved DOI. The concept DOI
+10.5281/zenodo.21968915, cited in the Reader's version note, names the whole version series.

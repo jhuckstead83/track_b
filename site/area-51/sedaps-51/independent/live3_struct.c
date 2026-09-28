@@ -1,4 +1,4 @@
-/* Three-live loops of the SEDAPS three-queue rule, by packet-form enumeration.
+/* live3_struct.c: the structure of every three-live loop (v0.4.1 section 2).
  *
  * Rule: every live queue plays its front card; the highest card wins; the winner appends the
  * played cards to its own tail in seat order starting from itself (winner's card first).
@@ -11,7 +11,10 @@
  * every packet-form state of n cards forward until a queue empties, and reports any walk that
  * returns to its start or exceeds the step cap.
  *
- * Usage: live3_packet n [shard nshards]      prints one JSON line.
+ * This variant is live3_loops.c plus, for each loop found, a structural classification: largest
+ * queue, whether every win gap is 3, whether the winner always plays a packet head, and whether
+ * exactly one queue plays a head on each turn.
+ * Usage: live3_struct n [shard nshards]    prints one JSON line; n = 12 in four shards.
  */
 #include <stdio.h>
 #include <stdlib.h>

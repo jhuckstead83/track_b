@@ -56,7 +56,7 @@ ok('turn-85 present: loop from turn 356, period 3,744', { fourForFour: fates });
 const gcd = (a, b) => b ? gcd(b, a % b) : a; let g = 0, ends = 0, cycles = 0; const periods = new Map();
 for (let seed = 1; seed <= 2000; seed++) { const f = fate(deal(seed), 0); if (f.kind === 'end') ends++; else { cycles++; g = gcd(g, f.period); periods.set(f.period, (periods.get(f.period) || 0) + 1); } }
 assert.equal(g, 52); assert.equal(cycles, 1652);
-ok('periodic remnant: every observed loop length is a multiple of 52 (EVID)', { deals: 2000, ends, cycles, gcd: g, periods: [...periods].sort((a, b) => a[0] - b[0]) });
+ok('periodic remnant: every loop these deals reach is a multiple of 52 (EVID; two-queue loops, where it is proved; three-live loops obey no such law)', { deals: 2000, ends, cycles, gcd: g, periods: [...periods].sort((a, b) => a[0] - b[0]) });
 
 // 7. Optional deck-size sweep: loop lengths versus n + 1.
 if (process.argv.includes('--decks')) {

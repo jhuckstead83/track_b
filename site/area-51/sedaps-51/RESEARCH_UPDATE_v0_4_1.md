@@ -1,6 +1,6 @@
 # 51 SEDAPS v0.4.1 research update
 
-27–28 September 2026. Team B (Track B), continuing the v0.4 pass. The rule is unchanged (`sedaps-core-v0-2.js`). **RH STATUS: OPEN.** There is no zero-data test and no RH inference.
+27–28 September 2026 (§2 extended 28 September for v2.8.6). Team B (Track B), continuing the v0.4 pass. The rule is unchanged (`sedaps-core-v0-2.js`). **RH STATUS: OPEN.** There is no zero-data test and no RH inference.
 
 Status labels are those of v0.4: **PROVED** (short argument given), **CERT** (explicit states or deals replayed with the shipped rule), **COMPUTED** (exhaustive search, relying on a proved lemma), **EVID** (sampled regularity).
 
@@ -94,7 +94,7 @@ For past 10 of the turn-85 present, the deals at turns 24, 27, 30 and 33 number 
 - A deal-by-deal enumeration, with no formula, reproduces five of these counts exactly (`--brute`): past 10 of the turn-85 present at turns 24–33, and all 24,504,480 deals behind past 10 of the turn-32 present.
 - "Four certified pasts" and "hundreds of millions of histories" are both true of the turn-32 present. The first counts one-step predecessors, the second counts complete histories.
 
-## 2. Loops: the period theorem for two live queues
+## 2. Loops: period theorems for two live queues and for rigid three-live loops
 
 With the third queue empty, the rule is two-player War: the higher card wins, and the winner puts its own card on the bottom and then the loser's. Spivey studies exactly this game (M. Z. Spivey, *Cycles in War*, INTEGERS 10, 2010, #G02). For an odd deck his Theorem 6 characterizes the cycles. In them the players win alternately, and each pile alternates between cards that never lose and cards that always lose. That summary is taken from OEIS A400411 and its companion code; the paper itself could not be opened from this environment.
 
@@ -138,6 +138,7 @@ The cards are distinct and fill all n positions, so the state recurs after 2k tu
 | 22 or 28 | 11 | 4,004 | 231 |
 | 24 or 26 | 12 | 312 | 238 |
 
+- These are laws of two-queue loops. Loops that keep three queues live follow their own formula (below), and at 51 cards 23 of their 29 rigid periods are not multiples of 52.
 - The twelve lengths are 52 × 6, 10, 12, 15, 23, 33, 42, 57, 63, 68, 72 and 77. These multipliers have gcd 1, so the observed gcd 52 is exact, not merely a common factor (PP276).
 - The turn-85 present's period 3,744 is a = 9.
 - The four-for-four presents' periods 780, 4,004 and 3,276 are a = 10, 11 and 7.
@@ -158,7 +159,7 @@ The cards are distinct and fill all n positions, so the state recurs after 2k tu
 - **Cross-check.** The same program counts the never-ending alternate deals of two-player War as 30, 2,304, 218,680, 395,940 and 28,223,770 for n = 5, 7, 9, 10 and 11. This is OEIS A400411.
 - **Even decks.** The absence of loops at 3, 4, 6, 8 and 12 fits the published pattern: cycles are constructed for every n that is not 2ᵏ or 3·2ᵏ.
 
-**What stays open.** With two live queues, the period theorem settles the n + 1 divisibility. For the three-queue rule as a whole it would follow from one more fact: that no loop keeps all three queues live. **That fact is false in general.** It holds for every n ≤ 11, over the whole state graph, and fails at n = 12 (CERT):
+**What stays open.** With two live queues, the period theorem settles the n + 1 divisibility. For the three-queue rule as a whole it would follow from one more fact: that no loop keeps all three queues live. **That fact is false in general.** It holds for every n ≤ 11, over the whole state graph, and fails at n = 12 (CERT) and at every multiple of 3 above it, 51 included (PROVED, construction below). The first failure:
 
   A = 6 0 1, B = 2 10 7 3, C = 4 8 11 5 9 (front card first)
 
@@ -175,9 +176,9 @@ returns to itself after 9 turns.
   - `live3_loops.c 12 0 1 cong` plays every packet-form state with congruent sizes, and all 514,483,200 of them lose a queue within 20 turns;
   - PP282 walks every congruent-size three-live state at n = 12 (3.03 × 10⁹ after its one-third reduction), with no shape assumption, and all of them lose a queue within 25 turns.
 
-So the ledger carries **two claims**, and n = 12 separates them. "No three-live loop in the state graph" is false at 12. "No three-live loop reachable from an equal deal" holds through n = 12 and is OPEN at 51, where none was seen in 2,000 seeded deals (EVID). PP282 found the same loops independently: its witness, a 3-turn transient into a period-9 loop, belongs to the length-9 family above.
+So the ledger carries **two claims**, and n = 12 separates them. "No three-live loop in the state graph" is false at 12, and at every multiple of 3 from there up, 51 included. "No three-live loop reachable from an equal deal" holds at 9, 12 and 15 cards (complete searches) and is OPEN at 51, where none was seen in 2,000 seeded deals (EVID). PP282 found the same loops independently: its witness, a 3-turn transient into a period-9 loop, belongs to the length-9 family above.
 
-A census of 1.8 × 10⁹ states (PP281, n = 11) predicted no loop at the next size and was wrong. That is a small, checkable example of the firewall: a finite search, however large, is not an all-n theorem.
+A census of 1.8 × 10⁹ states (PP281, n = 11) predicted no loop at the next size and was wrong. That is a small, checkable example of the firewall: a finite search, however large, is not an all-n theorem. A second example: every loop the 2,000 seeded deals reach has a length divisible by 52. That is true of everything those samples can reach, which are two-queue loops, where it is proved. It is false of three-live loops at 51 cards, and 3 of the first 19 three-live periods found happened to be multiples of 52 anyway (PP287). A pattern confirmed by sampling is a fact about the sample.
 
 **Packet form on a loop (PROVED).** Call a three-live state *packet form* when each queue is the tail of one packet (0, 1 or 2 cards) followed by whole 3-card packets, each led by its largest card.
 
@@ -206,46 +207,134 @@ The census at n = 13 is also complete: all 12,454,041,600 packet-form states los
 
 *Phase lemma.* In packet form, a queue plays a packet head exactly when its size is divisible by 3. On a three-live turn every size changes by −1 (mod 3), so the pattern of residues only shifts. The sizes are pairwise congruent exactly when all three queues play heads on the same turns ("synchronised"), and pairwise distinct exactly when one queue plays a head on each turn.
 
-*Every loop at n = 12 is rigid* (checked on all 1,145,664 by `live3_struct.c`):
-- on every turn exactly one queue plays a packet head, and that head wins;
-- so the winners rotate, each queue winning every third turn;
-- the sizes run through the rotations of (5, 4, 3), and no queue ever holds more than 5 cards.
+Call a loop *rigid* when the winning card is always a packet head.
 
-PP283 §1 found the same thing from its own enumeration.
+*Every loop at n = 12 is rigid.* Two methods agree.
+- `live3_struct.c` checks all 1,145,664 loops. On every turn exactly one queue plays a packet head, and that head wins. So the winners rotate, each queue winning every third turn, and the sizes run through the rotations of (5, 4, 3).
+- `live3_rigid12.c` works from the other end. It enumerates every state of rigid shape: tails 0, 1 and 2, one whole packet per queue, and any head set containing the top card 11. That is 718,502,400 states. It plays each one while the head wins. It finds 15,863,040 states on rigid loops, in 1,036,800 loops of length 9 and 108,864 of length 60. These are exactly the census totals, so every loop at 12 cards is rigid.
+- PP283 §1 reported the same split from a third enumerator.
+- By head set, {9, 10, 11} carries 725,760 loops of length 9 and all 108,864 of length 60. The head sets {8, 10, 11}, {7, 10, 11} and {6, 10, 11} carry 241,920, 60,480 and 8,640 loops of length 9. So the length-60 loops occur only when the heads are the three top cards (PP287 §3).
 
-**Theorem (PROVED).** On a three-live loop where the winning card is always a packet head, the three sizes are never pairwise congruent mod 3. So no equal deal reaches such a loop, for any n.
+**Theorem (PROVED).** On a rigid three-live loop the three sizes are never pairwise congruent mod 3. So no equal deal reaches such a loop, for any n.
 
 *Proof.* Over one period of length L, each queue plays one packet head every three turns, so there are L head plays in all. There are also L wins, and each is by a head, so every head that is played wins. Two heads played on the same turn cannot both win, so exactly one head is played on each turn. By the phase lemma the residues are then pairwise distinct. An equal deal starts with congruent sizes, and congruence is invariant (the mod-3 clock). ∎
 
-- The winners of such a loop rotate. The queue playing the head has size ≡ 0 before its win and ≡ 2 after it, while the other two step down to ≡ 0 and ≡ 1. So queue i wins every third turn, and its sizes cycle xᵢ + 2, xᵢ + 1, xᵢ, where each xᵢ ≡ 0 (mod 3) and xᵢ ≥ 3. So n = x_A + x_B + x_C + 3 is divisible by 3, and n ≥ 12.
-- PP284 proves a companion statement. It does not ask that heads win: uniform gaps and equal post-win sizes a give sizes a, a − 1, a − 2, three consecutive integers, so again never congruent. At n = 12 the two hypotheses coincide, with a = 5. At n = 51 they differ. Equal post-win sizes would be (18, 17, 16), which is not rigid, since the winner at 16 cards plays a member. A rigid loop there would need unequal sizes, for example xᵢ = 15, 15, 18.
+- The winners of a rigid loop rotate. The queue playing the head has size ≡ 0 before its win and ≡ 2 after it, while the other two step down to ≡ 0 and ≡ 1. So queue i wins every third turn, and its sizes cycle xᵢ + 2, xᵢ + 1, xᵢ, where each xᵢ ≡ 0 (mod 3) and xᵢ ≥ 3. Hence n = x_A + x_B + x_C + 3 is divisible by 3, and n ≥ 12.
 - PP283 §3 derived 3 | n for every loop in which each queue wins every third turn. That assumed equal post-win sizes, and PP284 withdrew it. In general Σ(post-win size) = n + 3, which constrains nothing mod 3. So n = 13 was a genuine candidate, and the complete census above excludes it.
 
-**What the game needs, stated exactly.** A fair deal can enter a three-live loop only if the loop is synchronised: all three queues play heads on the same turns. On such a loop the other two turns of every three are member turns, and a member wins each of them. Synchronised loops are searched directly as follows. Every third turn such a loop passes through a state in which each queue is whole packets. With seat rotation fixing the global maximum in the first queue, `independent/live3_sync.c` walks every such state:
+**Two theorems, one union (PP285 §1).** PP284 proves a companion statement that does not ask heads to win. If the gaps are uniform and the post-win sizes are equal to a, the sizes are a, a − 1 and a − 2: three consecutive integers, never congruent.
+
+| | hypothesis | conclusion |
+| --- | --- | --- |
+| rigidity theorem | the winning card is always a packet head | sizes never congruent, so no equal deal reaches the loop, at any n |
+| PP284 | uniform gaps and equal post-win sizes | the same |
+
+Neither contains the other.
+- At n = 12 every loop satisfies both, with a = 5.
+- At n = 51 they part. Equal post-win sizes would give (18, 17, 16), which is not rigid, because the queue that wins at 16 cards plays a member. Rigid loops there have unequal post-win sizes 3kᵢ + 2.
+- The case neither theorem reaches is a loop that is not rigid and does not have uniform gaps with equal post-win sizes.
+
+**Theorem (rigid loops exist exactly when 3 | n and n ≥ 12; PROVED).** Write n = 3K + 3. Call a state *top-headed* when:
+- it is in packet form;
+- its three partial tails have lengths 0, 1 and 2;
+- each queue holds at least one whole packet;
+- the packet heads are exactly the K largest cards.
+
+Then every top-headed state lies on a loop that keeps three queues live, and every state of that loop is top-headed.
+
+*Proof.*
+1. *The turn keeps the set.* The queue with tail 0 plays a head, and the other two play members. Heads beat members, so the head wins. The winner appends its head and the two members, which is a packet led by its largest card. The winner's tail becomes 2, and its packet count is unchanged: one packet opened, one appended. The other tails go 1 → 0 and 2 → 1. So the next state is top-headed, and all three queues stay live.
+2. *The turn can be undone inside the set.* In the next state the winner is the one queue with tail 2. Its last three cards are the packet just appended: its own head, then the fronts of the next two seats in order. Remove that packet and put the three cards back at the three fronts, and the state is recovered. So a top-headed state has at most one top-headed predecessor.
+3. The set is finite, and the turn maps it into itself one-to-one, so the turn permutes it. Every orbit of a permutation of a finite set is a cycle. ∎
+
+- **Existence.** Top-headed states exist exactly when K ≥ 3. Together with the rigidity theorem this is an exact answer: *a rigid three-live loop exists if and only if n ≡ 0 (mod 3) and n ≥ 12.* So 3, 6 and 9 cards have none, and 12, 15, 18, …, 51 all have them.
+- **Other sizes.** For n not divisible by 3, a three-live loop would have to be non-rigid. The complete census finds none at 13. Sizes 14, 16, 17 and the other non-multiples of 3 above 13 are untested.
+- **Count.** There are 3!·C(K − 1, 2)·K!·(2K + 3)! top-headed states. At n = 12 that is 13,063,680 of the 15,863,040 loop states, the head set {9, 10, 11} above.
+- **Checks.** `independent/live3_construct.py` plays random top-headed states for n = 12 to 51. On every turn it checks the four properties and the undo step, and every state returns.
+- **Replay with the site's engine.** `live3_construct_check.cjs` replays two witnesses with the site's own engine, `sedaps-core-v0-2.js`. One is a 15-card state with period 36. The other is a 51-card state on the shipped deck, with whole-packet counts 2, 2 and 12. It returns after 180 turns with three queues live throughout.
+
+**Theorem (the period of a rigid loop; PROVED).** Let a rigid loop have whole-packet counts k_A, k_B, k_C in the queues whose tails are 0, 1, 2, and K = k_A + k_B + k_C. Suppose the tail-1 queue sits one seat after the tail-0 queue (o = +1). Then
+
+  **L = 3 · lcm(k_A, k_B, k_C, k_A + k_B + 1, k_B + k_C + 1, k_C + k_A + 1).**
+
+If it sits one seat before (o = −1), then
+
+  **L = 3 · lcm(k_A, k_B, k_C, K + 1, K + 2).**
+
+*Proof.* On a rigid loop the winner of every turn is the queue with tail 0, whatever the card values. The counts and the orientation never change. So every card moves by one fixed permutation of positions, and the period is 3·ord(σ) for the three-turn map σ, since the phases return only every third turn.
+- *Where σ sends a card.* Over three turns the queue with tail t wins on turn t + 1. Each queue plays its first three cards and appends one packet. So a card at position j ≥ 3 moves to j − 3. The card at position t ∈ {0, 1, 2} of queue i goes to the winner w of turn t + 1, at position size(w) − 3 + d, where d is i's seat distance after w.
+- *Front slots.* Follow each card from front slot to front slot, writing (a, r) for position r of the queue with tail a. The card there reaches the front slot (r, a) when o = +1, and (r, 2r − a) when o = −1. The trip takes k_r or k_r + 1 applications of σ.
+- *o = +1.* The nine slots form three fixed points and three pairs. So σ has cycles of lengths k_A, k_B and k_C, and k_A + k_B + 1, k_B + k_C + 1 and k_C + k_A + 1.
+- *o = −1.* The slots form three fixed points and two 3-cycles, giving cycles of lengths k_A, k_B, k_C, K + 1 and K + 2.
+- In both cases the cycle lengths sum to n. Distinct cards fill all n positions, so the state recurs after 3m turns exactly when σᵐ is the identity. ∎
+
+**Checks.** `independent/live3_rigid_period.py` builds σ position by position for every composition of K at every n from 12 to 51, and compares its order with the formula. It then plays a top-headed game of each shape wherever the period is short enough: every shape up to n = 30, and 204 at n = 51. All agree. The formula reproduces 9 and 60 at n = 12, 36 and 90 at 15, and 45, 60 and 126 at 18. It applies to every rigid loop, whatever its head set, because the proof never used the card values.
+
+**At 51 cards.** Here K = 16, so the two formulas read 3·lcm(kᵢ, 17 − kᵢ over the three queues) and 3·lcm(k_A, k_B, k_C, 17, 18). They are the three-queue analogues of 2·lcm(a, 26, 25 − a). They give exactly 29 periods:
+
+  180, 630, 918, 1,008, 1,080, 1,836, 1,980, 2,808, 3,672, 4,590, 4,752, 5,040, 5,148, 6,426, 6,930, 7,560, 9,180, 9,360, 10,098, 11,880, 11,934, 15,120, 16,380, 18,360, 19,656, 20,196, 20,592, 25,704, 64,260.
+
+- **Only 6 are multiples of 52:** 2,808, 5,148, 9,360, 16,380, 19,656 and 20,592.
+  - The multiple-of-52 law is a law of two-queue loops. It fails for 23 of the 29 rigid periods, starting with 180 (counts 2, 2, 12) and 1,008 (counts 1, 1, 14) (PP287).
+  - All 19 periods PP287 collected from sampling are on this list, and the formula adds the 10 it had not met.
+- **All 29 are multiples of 18, and this is proved.**
+  - With o = −1, 18 divides 3·lcm(17, 18).
+  - With o = +1, one of kᵢ and 17 − kᵢ is even, because they sum to 17.
+  - Not every kᵢ is ≡ 1 (mod 3), because the three sum to 16 ≡ 1. So some kᵢ or 17 − kᵢ is divisible by 3.
+- **18 is a fact about 51, not a law.** The gcd is 3 at n = 12 (periods 9 and 60), so 18 must not become the new 52 (PP287 §4). For loops that are not rigid, only 3 | L is known.
+
+**Two questions, kept apart (PP285 §3).**
+- **Q2, existence: does a three-live loop exist at n cards?**
+  - Yes for every n ≡ 0 (mod 3) with n ≥ 12, including 15 and 51, by the construction.
+  - No for n ≤ 11 and for n = 13, by complete censuses.
+  - Untested for 14, 16, 17 and the other non-multiples of 3 above 13, where any loop would have to be non-rigid.
+- **Q1, what the game needs: can a fair deal reach a three-live loop?**
+  - Never a rigid loop, and never a PP284 loop.
+  - An equal deal keeps the three sizes congruent, so the only loops it could reach are synchronised ones, on which all three queues play heads on the same turns. On such a loop the other two turns of every three are member turns, and a member wins each of them.
+
+*Why the whole-packet search is complete for Q1 (PP285 §2).*
+1. Every loop state is in packet form (lemma above).
+2. On a congruent-size loop the common residue runs through 0, 1 and 2. So the loop passes through a state with all three sizes ≡ 0 (mod 3).
+3. In packet form such a state has no partial tails: it is whole packets only.
+
+So walking every whole-packet state is a complete search for the loops an equal deal could reach. With seat rotation fixing the global maximum in the first queue, `independent/live3_sync.c` does that:
 - n = 9: 4,480 states;
 - n = 12: 5,913,600 states;
 - n = 15 (5–5–5): 10,762,752,000 states, every one of which loses a queue within 27 turns.
 
-So no synchronised loop exists at 9, 12 or 15 cards, and no equal deal of those sizes ever reaches a loop that keeps three queues live. Loops of other kinds at n = 15, such as rigid ones with sizes like (6, 5, 4), were not searched; no equal deal can reach them anyway.
+**No equal deal of 9, 12 or 15 cards ever reaches a loop that keeps three queues live.** This is PROVED by exhaustive computation. It does not say that no three-live loop exists at 15: the construction gives rigid ones there, of periods 36 and 90.
 
-It is OPEN whether a synchronised loop exists for larger n, and in particular at 51. The stronger conjecture is that every three-live loop is rigid, with no member ever winning. It would settle this for every n, and every loop known is rigid.
+PP285 §4 rebuilt the enumeration independently and reproduced 4,480 and 5,913,600. Its first 15-card pattern (3–3–9) returned 1,076,275,200 states with no survivor, matching ours. The six patterns weigh 10 times that, which is 10,762,752,000.
 
-At n = 12, the 15,863,040 packet-form states that lie on loops are exactly 9 × 1,036,800 + 60 × 108,864, so the loop count balances. Each loop is counted once, at its lexicographically smallest state. The program classifies every state as losing a queue, lying on a loop, or entering one, using Brent's cycle detection (`independent/live3_loops.c`).
-- **Independent returns.** PP281 ran an unrestricted census of every three-live state with the global maximum in queue 0. That is an exact one-third reduction by seat rotation, and it uses no shape assumption. It covers n ≤ 11 (1,796,256,000 states at n = 11), finds no loop, and gives worst exit times 2, 4, 5, 10, 11, 15 and 19 for n = 5–11. It also reproduces the packet-form counts above for n ≤ 8 from its own shape predicate. The complete census of `census2.c` (every state, three queues, n ≤ 11) is a third method.
+- **Toward the conjecture (PP285 §5).** The global maximum M always leads its packet, and a partial tail holds only members of an opened packet. So whenever M reaches the front, its queue has no tail: every turn on which M is played is rigid. M's queue wins L/3 turns per period, so up to a third of any loop's turns are rigid for free.
+  - The conjecture is that every three-live loop is rigid. It would settle Q1 at every n, and it is OPEN.
+- **Sampling at 51 (C).** `independent/live3_probe51.py` plays 3,000 random synchronised states and 3,000 random 17–17–17 deals. All of them lose a queue:
+  - the synchronised states after a median of 18 turns, at most 222;
+  - the deals after a median of 53 turns, at most 197.
+  - If loop-entering states made up a fraction f of the sampled space, 3,000 draws would all miss them with probability (1 − f)³⁰⁰⁰, which is 5% at f ≈ 0.1%. So the probe excludes a density above about 0.1% at about 95% confidence, and nothing smaller (PP285 §6).
+  - At n = 12, loop-entering states were 1.25% of the three-live space. The probe stays C.
+
+It is OPEN at 51 whether a synchronised loop exists, and so whether any fair deal reaches a three-live loop.
+
+**Census bookkeeping.** At n = 12, the 15,863,040 packet-form states that lie on loops are exactly 9 × 1,036,800 + 60 × 108,864, so the loop count balances. Each loop is counted once, at its lexicographically smallest state. The program classifies every state as losing a queue, lying on a loop, or entering one, using Brent's cycle detection (`independent/live3_loops.c`).
+- **Independent returns.** PP281 ran an unrestricted census of every three-live state with the global maximum in queue 0. That is an exact one-third reduction by seat rotation, and it uses no shape assumption.
+  - It covers n ≤ 11 (1,796,256,000 states at n = 11) and finds no loop.
+  - Its worst exit times are 2, 4, 5, 10, 11, 15 and 19 for n = 5 to 11.
+  - It also reproduces the packet-form counts above for n ≤ 8 from its own shape predicate.
+  - The complete census of `census2.c` (every state, three queues, n ≤ 11) is a third method.
 - PP281 §3 read the lemma as needing reachability from a fair deal. The distinct-card argument in step 1 shows it does not: the census result holds on the whole state graph.
-- A census that finds nothing constrains nothing beyond its range, and n = 12 shows why that matters: the pattern of n ≤ 11 does not continue. For odd n ≥ 13, and at 51, three-live loops are OPEN.
+- **A finite search is not an all-n theorem.** A census that finds nothing constrains nothing beyond its range, and n = 12 shows why that matters: the pattern of n ≤ 11 does not continue. Three-live loops exist at 12 and at every multiple of 3 above it.
 
+Three exact facts narrow any three-live loop.
 
-Three exact facts narrow any three-live loop. None of them is a proof that such a loop cannot exist.
-
-1. **Balanced winners** (PP273). On a three-live turn each length changes by −1, +2 for the winner. Closing a loop of length L forces each queue to win exactly L/3 turns, so 3 | L. PROVED.
+1. **Balanced winners** (PP273). On a three-live turn each length changes by −1, and by +2 for the winner. Closing a loop of length L forces each queue to win exactly L/3 turns, so 3 | L. PROVED.
 2. **Queue maxima never lose** (Team B; this strengthens PP273's "the top card never changes queue").
    - A queue receives cards only on turns it wins. Every card in that pot is below the winning card, which was already in the queue. So a queue's maximum card can never increase, and it drops only when that card loses.
    - On a loop the maximum is periodic and non-increasing, hence constant. So **in every loop, each live queue's maximum card wins whenever it is played**. PROVED.
    - In a three-live loop, the three queue maxima are therefore never played on the same turn. In two-queue War this is the "cards that never lose" half of Spivey's description.
-3. **Fair-deal loops** (PP273, via the clock). A three-live loop reachable from a 17–17–17 deal has three lengths congruent mod 3. Its queues are then packet-synchronised: all three play packet heads on the same turns. PROVED; this cuts the candidates by about two thirds.
+3. **Fair-deal loops** (PP273, via the clock). A three-live loop reachable from a 17–17–17 deal has three lengths congruent mod 3. Its queues are then synchronised: all three play packet heads on the same turns. PROVED.
 
-"No three-live loop exists" and "no three-live loop is reachable from a fair deal" are different claims; the second is the one the game needs.
+"No three-live loop exists" and "no three-live loop is reachable from a fair deal" are different claims. The first is false at 51; the second is the one the game needs, and it is open.
 
 ## 3. Independent replays
 
@@ -265,6 +354,10 @@ Three exact facts narrow any three-live loop. None of them is a proof that such 
 | `verify-past10-v0-4-1.cjs` | shipped-rule replay, full turn scan and the lemma-scope sweep (§1.1); writes `VERIFY_v0_4_1.json` |
 | `count-histories-v0-4-1.cjs`, `HISTORY_COUNTS_v0_4_1.json` | exact history counts (§1.2) |
 | `independent/` | Python replay, census programs, receipts (see its README) |
+| `independent/live3_construct.py`, `live3_construct_check.cjs` | the construction of rigid loops for every n = 3K + 3, K ≥ 3; witnesses at 15 and 51 replayed with the site's engine (§2) |
+| `independent/live3_rigid_period.py` | the rigid-loop period formula, checked against σ and against play; complete spectra for n = 12 to 51 (§2) |
+| `independent/live3_rigid12.c` | every rigid loop at n = 12, by head set; reproduces the census totals (§2) |
+| `independent/live3_probe51.py` | the sampling probe at 51 cards (§2, status C) |
 
 ## 5. Status ledger
 
@@ -281,9 +374,18 @@ Three exact facts narrow any three-live loop. None of them is a proof that such 
 | Odd-deck War cycles alternate winners | published (Spivey 2010, Thm 6); COMPUTED for n ≤ 11 |
 | In every loop each live queue's maximum card never loses; three-live loops have balanced winners | PROVED |
 | Every state on a three-live loop is in packet form; packet form is preserved while three queues live | PROVED (§2) |
-| No loop in the state graph keeps three queues live | COMPUTED for n ≤ 11 (two methods; PP281 second seat) and for n = 13; **false at n = 12** (CERT: 1,145,664 loops, of lengths 9 and 60; PP282 witness); OPEN for n ≥ 14 |
+| No loop in the state graph keeps three queues live | COMPUTED for n ≤ 11 (two methods; PP281 second seat) and for n = 13; **false at n = 12** (CERT: 1,145,664 loops, of lengths 9 and 60; PP282 witness); **false at every n ≡ 0 (mod 3) with n ≥ 12, 51 included** (PROVED, construction; 180-turn witness at 51 replayed with the shipped engine); untested for 14, 16, 17 and the other non-multiples of 3 above 13 |
+| A rigid three-live loop exists if and only if 3 \| n and n ≥ 12 | PROVED (§2) |
+| A rigid loop's period is 3·lcm(k_A, k_B, k_C, k_A+k_B+1, k_B+k_C+1, k_C+k_A+1) or 3·lcm(k_A, k_B, k_C, K+1, K+2), by orientation | PROVED (§2); checked for every shape, n = 12 to 51 |
+| At 51 cards the rigid periods are exactly 29 values, all multiples of 18, and 6 of them multiples of 52 | PROVED (§2) |
+| Every loop length is a multiple of 52 | **false** for three-live loops at 51 (PP287); PROVED for two-queue loops |
+| Every three-live loop length is a multiple of 18 | false in general (9 and 60 at n = 12); PROVED for rigid loops at 51; OPEN for non-rigid loops |
 | Pairwise congruence of the three sizes mod 3 is invariant while three are live | PROVED |
-| No three-live loop is reachable from an equal deal | COMPUTED for n = 9, 12, 15 (synchronised-loop search; two methods at 12); OPEN at 51 |
+| No three-live loop is reachable from an equal deal | COMPUTED for n = 9, 12, 15 (whole-packet search, complete by PP285 §2; second seat at 9 and 12, and on the first 15-card pattern); OPEN at 51 |
+| A 51-card sample finds no loop-entering state | C: 3,000 synchronised states and 3,000 deals; excludes a density above about 0.1% at about 95% |
+| Every turn on which the global maximum is played is rigid | PROVED (PP285 §5) |
+| Every three-live loop is rigid | OPEN; true at n = 12; it would settle the fair-deal question at every n |
 | A three-live loop on which the winning card is always a packet head is never reachable from an equal deal, for any n | PROVED |
-| Every loop at n = 12 is rigid (one head per turn, and it wins) | COMPUTED (all 1,145,664) |
+| Every loop at n = 12 is rigid (one head per turn, and it wins) | COMPUTED (all 1,145,664; confirmed by the rigid enumeration `live3_rigid12.c`) |
+| At n = 12 the length-60 loops occur only with heads {9, 10, 11} | COMPUTED (`live3_rigid12.c`) |
 | Four-player rules; the count \|H_t(x)\| | OPEN |

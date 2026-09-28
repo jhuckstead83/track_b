@@ -92,7 +92,7 @@
    }
   },
   {
-   "name": "periodic remnant: every observed loop length is a multiple of 52 (EVID)",
+   "name": "periodic remnant: every loop these deals reach is a multiple of 52 (EVID; two-queue loops, where it is proved; three-live loops obey no such law)",
    "pass": true,
    "detail": {
     "deals": 2000,

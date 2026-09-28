@@ -1,0 +1,82 @@
+{
+ "version": "2.8.6",
+ "base_version": "2.8.5",
+ "date": "2026-09-28",
+ "status": "PASS",
+ "RH_STATUS": "OPEN",
+ "checks": [
+  {
+   "name": "TN Postmaster v5.2 rebuild with the title-page DOI (python3 qa/build_release.py both)",
+   "result": "Reading Volume 101 pages (ceiling 101); Technical Dossier 287 pages (284 body + 3 facsimile); 0 undefined references, 0 missing characters, no overfull box over 30pt; both title pages print DOI 10.5281/zenodo.23004335 as a link"
+  },
+  {
+   "name": "python3 qa/check_v52_interface.py (in the v5.2 source)",
+   "result": "74/74 checks passed"
+  },
+  {
+   "name": "provenance/v5_1, v5_0, v50",
+   "result": "byte-identical to the v2.8.4 source package"
+  },
+  {
+   "name": "Named anchors re-extracted from the new PDFs",
+   "result": "all 22 targets on the same pages as in v2.8.4"
+  },
+  {
+   "name": "python3 research/postmaster/check_anchors_v5_2.py --require-pdfs (v2.8.6 payload installed)",
+   "result": "PASS (links, binding, pages): 49 links, 22 targets; installed PDFs, map and BUILD_BINDING.json agree; every heading on its mapped page"
+  },
+  {
+   "name": "check_anchors_v5_2.py negative controls",
+   "result": "no papers: links only, --require-pdfs exits 1; v2.8.4 PDFs: binding fails; one blank page inserted into the Reading Volume: binding and pages fail, naming 10 moved targets and the page count"
+  },
+  {
+   "name": "area-51/sedaps-51/independent/live3_rigid12.c",
+   "result": "718,502,400 rigid-shape states over 55 head sets; 15,863,040 on rigid loops: 1,036,800 of length 9 and 108,864 of length 60, equal to the live3_loops.c census; length-60 loops only with heads {9, 10, 11}"
+  },
+  {
+   "name": "python3 area-51/sedaps-51/independent/live3_construct.py",
+   "result": "every top-headed trial returns (n = 12, 15, 18, 21, 24, 30, 51); the head wins, the form is kept, packet counts are fixed and the undo step recovers the previous state on every turn"
+  },
+  {
+   "name": "node area-51/sedaps-51/independent/live3_construct_check.cjs",
+   "result": "with the shipped engine sedaps-core-v0-2.js: the 15-card witness returns after 36 turns and the 51-card witness after 180, three queues live on every turn"
+  },
+  {
+   "name": "python3 area-51/sedaps-51/independent/live3_rigid_period.py",
+   "result": "the period formula equals 3*ord(sigma) for every composition at every n from 12 to 51, and equals the played period wherever played out; 29 periods at n = 51, gcd 18, 6 multiples of 52"
+  },
+  {
+   "name": "python3 area-51/sedaps-51/independent/live3_probe51.py",
+   "result": "3,000 synchronised states (median 18, max 222 turns) and 3,000 17-17-17 deals (median 53, max 197 turns) all lose a queue; status C"
+  },
+  {
+   "name": "node area-51/sedaps-51/verify-sedaps-v0-4.cjs --decks",
+   "result": "VERIFY_v0_4.json regenerated; the only change is the scoped check name"
+  },
+  {
+   "name": "node area-51/twins-51/verify-twins-v1.cjs; node area-51/twins-51/build-twins-page-v1.cjs",
+   "result": "pass; index.html matches the data"
+  },
+  {
+   "name": "Project51_Area51_Research_v2_8_6.zip, extracted",
+   "result": "verify-twins, build-twins, live3_construct_check, live3_rigid_period and f51_independent (with f51_band.json) all pass in place"
+  },
+  {
+   "name": "JSON validity",
+   "result": "site-index.json, citation/catalog.json, atlas/atlas-data.json, area-51/research.json, the Postmaster JSON-LD, anchors_v5_2.json, VERIFY_v0_4.json and the four new receipts parse"
+  },
+  {
+   "name": "Local link check",
+   "result": "917 local references in 60 pages; 763 resolve; 147 references to 30 targets under /papers/ reported separately; 7 unresolved references predate v2.8.3"
+  },
+  {
+   "name": "Rendered pages, Chromium 1280x900 and 375x812",
+   "result": "16 page views, no horizontal overflow and no page errors"
+  },
+  {
+   "name": "DOI placeholders",
+   "result": "no data-doi-pending attribute in any page source"
+  }
+ ],
+ "scope": "Research pages, citation metadata and the v5.2 papers payload. The homepage and Finance are unchanged. zenodo.org and doi.org cannot be reached from this environment, so the published records were not inspected; compare the MD5 values in ZENODO_RELEASE_PLAN_v2_8_6.md after the swap."
+}

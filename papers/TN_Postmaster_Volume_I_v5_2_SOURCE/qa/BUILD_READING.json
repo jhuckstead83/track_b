@@ -3,35 +3,35 @@
   "stem": "TN_Postmaster_Volume_I_v5_2_READING_VOLUME",
   "source": "src/TN_Postmaster_Volume_I_v5_2_READING_VOLUME.md",
   "src_sha256": "26cd4f4a382466b54a700fa93fba695d21bcb49dae080a9907f3d3fe0870525a",
-  "preamble_sha256": "9bbb480763528969609ca022b06bf07e9d5ac15214ed53b643cf1f229a25ec26",
-  "tex_sha256": "3ae87cf7a8c1534f5b84547167257626906c28dfab2474fa687dff9113b7a915",
+  "preamble_sha256": "a21a4523a655bdad035d4cacbeaf14847949d4f2b03b09eca4f295d0b4c11343",
+  "tex_sha256": "933ee52792f273bf98c8ddd671e5602f48e22e6463df7085058c840b2bdce027",
   "body_pages": 101,
   "pages": 101,
-  "body_pdf_sha256": "78a281a3e0d272291a59a668dc873cf1f78c11e61f7d1851bcde01656b306647",
-  "pdf_sha256": "78a281a3e0d272291a59a668dc873cf1f78c11e61f7d1851bcde01656b306647",
+  "body_pdf_sha256": "80367cd57966232702b69263d0b813e9d8f24ed3f0948c7bb7981ea5b451ec3e",
+  "pdf_sha256": "80367cd57966232702b69263d0b813e9d8f24ed3f0948c7bb7981ea5b451ec3e",
   "passes": [
     {
       "kind": "draft",
       "log": "tmp/reading/draft0.log",
-      "seconds": 2.02,
-      "state": "3bc271067980f46b4e5b6f237027886181c1c9767488c2fbc2953a9a2e247b7c"
+      "seconds": 2.13,
+      "state": "7b926a84963cb5604ee478f987dca3162f6396f600eb1512c319553907ffcf00"
     },
     {
       "kind": "draft",
       "log": "tmp/reading/draft1.log",
-      "seconds": 2.01,
-      "state": "28067515a32832253e3f7a12639d5cf06ce8802a92d7c0c01cecc76bf35e5ae1"
+      "seconds": 2.06,
+      "state": "b6dc7c881cf1eabb0332999197a95d599d4c3a78e90d8273d05eefc506b99fbf"
     },
     {
       "kind": "draft",
       "log": "tmp/reading/draft2.log",
-      "seconds": 2.13,
-      "state": "28067515a32832253e3f7a12639d5cf06ce8802a92d7c0c01cecc76bf35e5ae1"
+      "seconds": 2.03,
+      "state": "b6dc7c881cf1eabb0332999197a95d599d4c3a78e90d8273d05eefc506b99fbf"
     },
     {
       "kind": "final",
       "log": "tmp/reading/final.log",
-      "seconds": 8.19
+      "seconds": 7.96
     }
   ],
   "undefined_refs": 0,

@@ -113,3 +113,16 @@ mark or reference. `qa/check_v52_interface.py` still passes 67/67 unchanged.
    "detect the twin": ζ's own Löwner sections at N ≈ 105 were not computed.
 4. **Rung scope.** The rung values are computations on the finite zero list, now also replayed at
    60 and 100 digits.
+
+## 6. Title-page DOI (28 September 2026)
+
+At the author's request, both title pages now print the reserved version DOI
+10.5281/zenodo.23004335, as a link, under `RH STATUS: OPEN`. The change is one line in each
+title block (`src/preamble_v52_reading.tex`, `src/preamble_v52_dossier.tex`). Neither master
+changed.
+
+- Page counts are unchanged: the Reading Volume is 101 pages and the Technical Dossier 287.
+- Every named anchor keeps its page: 16 Reader targets and 6 Dossier chapters.
+- `qa/check_v52_interface.py` passes 74/74.
+- The Reader's version note still cites the concept DOI 10.5281/zenodo.21968915, because
+  it means the series. The title page names this edition.

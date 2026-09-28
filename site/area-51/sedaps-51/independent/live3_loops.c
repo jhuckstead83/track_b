@@ -11,7 +11,7 @@
  * every packet-form state of n cards forward until a queue empties, and reports any walk that
  * returns to its start or exceeds the step cap.
  *
- * Usage: live3_packet n [shard nshards]      prints one JSON line.
+ * Usage: live3_loops n [shard nshards [cong]]   prints one JSON line; `cong` keeps sizes congruent mod 3.
  */
 #include <stdio.h>
 #include <stdlib.h>

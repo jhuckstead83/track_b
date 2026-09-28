@@ -5,7 +5,7 @@ exhibits and games, and the programs that check them. Author: Jeffery Lyn Huckst
 ([ORCID 0009-0007-0234-2177](https://orcid.org/0009-0007-0234-2177)). **RH STATUS: OPEN.**
 Nothing here is evidence for or against the Riemann hypothesis.
 
-This release is **v2.8.5** (28 September 2026). It adds the author's reserved DOIs as links and new results on three-live loops. Before it, v2.8.3 placed the Track B research pass
+This release is **v2.8.6** (28 September 2026). The three Zenodo records it cites are published. The TN Postmaster v5.2 title pages print their DOI, and the page-anchor check now opens the PDFs. Loops that keep three queues live are proved to exist at 51 cards, with an exact period formula. v2.8.5 added the DOIs as links. Before it, v2.8.3 placed the Track B research pass
 (corrections, independent replays, and new results) on the Fork-A v2.8.2 site, which carries
 the Finance and homepage work. v2.8.4 built the TN Postmaster v5.2 PDFs and pointed the site's
 research pages at them. The live site is published from the full site package. This
@@ -24,12 +24,13 @@ replayed by the shipped rule), **COMPUTED** (exhaustive search resting on a prov
 | `site/area-51/` | the Area 51 lab: Invariant, Blackjack 51, Telescope 51, Memory 51, Prospect 51, **51 SEDAPS**, the **51 Twins** exhibit and its calibration report |
 | `site/research/` | research pages: Project 51 and Formula 51, the Line Game, TN Postmaster |
 | `site/atlas/`, `site/citation/`, `site/llms.txt`, `site/sitemap.xml`, `site/site-index.*`, `site/_headers`, `site/assets/postmaster-v5-2-cover.webp` | the research atlas, the citation catalog, and the index and header files these pages feed |
-| `papers/TN_Postmaster_Volume_I_v5_2_SOURCE/` | TN Postmaster Volume I v5.2, source edition: Markdown masters, build scripts, interface check (67/67), twin evidence, v5.1 and v5.0 provenance |
+| `papers/TN_Postmaster_Volume_I_v5_2_SOURCE/` | TN Postmaster Volume I v5.2, source edition: Markdown masters, build scripts, interface check (74/74), title-page DOI, twin evidence, v5.1 and v5.0 provenance |
 | `verification/` | independent replays and audits (see below) |
-| `dist/v2.8.5/` | full site (without `papers/`) and cumulative research delta |
-| `dist/v2.8.4/` | the papers payload (v5.2 PDFs, source zip, page anchors), unchanged in v2.8.5: install it into `papers/` first; plus the v2.8.4 site archives |
+| `dist/v2.8.6/` | full site (without `papers/`), cumulative research delta, the **v2.8.6 papers payload** (v5.2 PDFs with the DOI on the title page, source zip, page anchors: install it into `papers/` first), and `Project51_Area51_Research_v2_8_6.zip`, the upload for Zenodo record 23004789 |
+| `dist/v2.8.5/` | the v2.8.5 site archives |
+| `dist/v2.8.4/` | the v2.8.4 site archives and the earlier papers payload, superseded by v2.8.6's |
 | `dist/v2.8.3/` | the v2.8.3 archives |
-| `RELEASE_NOTES_v2.8.4.md`, `MERGE_GUIDE_v2.8.4.md` (cumulative from Fork-A v2.8.2), `MANIFEST_v2.8.4.json`, `VALIDATION_v2.8.4.json`, and the v2.8.3 counterparts | what changed, how to merge it with later UI work, file hashes, and the checks run |
+| `RELEASE_NOTES_v2.8.6.md`, `MERGE_GUIDE_v2.8.6.md` (cumulative from Fork-A v2.8.2), `MANIFEST_v2.8.6.json`, `VALIDATION_v2.8.6.json`, `ZENODO_RELEASE_PLAN_v2.8.6.md` (the files to swap into each record, with MD5 and SHA-256), and the earlier counterparts | what changed, how to merge it with later UI work, file hashes, and the checks run |
 | `legacy/transient-rational-locking-v1.0.0/` | the earlier Track B release (Transient Rational Locking), kept as it was |
 
 The game pages use root-relative paths (`/area-51/...`, `/assets/...`). To play them, unpack
@@ -60,7 +61,10 @@ the full site package at a web root and serve it over HTTP.
 - Every one of them is rigid: on each turn exactly one queue plays a packet head, and that head wins. A proved theorem says no equal deal ever reaches a rigid loop, at any n.
 - An exhaustive search of synchronised states (the only kind an equal deal reaches) finds no loop at 9, 12 or 15 cards.
 - None exists at 13 cards either: all 12,454,041,600 packet-form states lose a queue within 26 turns.
-- For the 51-card game the open question is: can a fair deal reach a loop that keeps three queues live?
+- **At 51 cards they exist too (PROVED).** Take a packet-form state whose partial tails have lengths 0, 1 and 2, with a whole packet in every queue, and whose packet heads are the n/3 − 1 largest cards. Every such state lies on a three-live loop, so rigid loops exist exactly when 3 divides n and n ≥ 12. The site's own engine replays a 51-card one that returns after 180 turns.
+- **Their periods (PROVED).** A rigid loop's period is 3·lcm(k_A, k_B, k_C, k_A+k_B+1, k_B+k_C+1, k_C+k_A+1) or 3·lcm(k_A, k_B, k_C, K+1, K+2), where the k are whole-packet counts. At 51 cards that gives exactly 29 periods, all multiples of 18. Only 6 are multiples of 52, so the multiple-of-52 law belongs to two-queue loops only.
+- A second enumeration at 12 cards reproduces the census exactly and shows that every loop there is rigid.
+- For the 51-card game the open question is still: can a fair deal reach a loop that keeps three queues live? Only a synchronised loop could be reached, and complete searches find none at 9, 12 or 15 cards.
 
 **Formula 51.**
 - The self-description proof had a false ceiling step; it is repaired, and the conclusion stands.
@@ -109,8 +113,8 @@ material keeps its own terms (see `site/area-51/prospect-51/THIRD_PARTY_NOTICES.
 
 See `CITATION.cff`. Paper DOIs: TN Postmaster Volume I concept
 [10.5281/zenodo.21968915](https://doi.org/10.5281/zenodo.21968915) (v5.2 =
-[10.5281/zenodo.23004335](https://doi.org/10.5281/zenodo.23004335), reserved; v5.1 =
+[10.5281/zenodo.23004335](https://doi.org/10.5281/zenodo.23004335), published 28 September 2026; v5.1 =
 10.5281/zenodo.22844194); the Area 51 games and exhibit research are in *Project 51: Reading the
-Record Across Rules*, [10.5281/zenodo.23004789](https://doi.org/10.5281/zenodo.23004789) (reserved); The Line Game concept 10.5281/zenodo.20792808 (latest record
-[10.5281/zenodo.23004800](https://doi.org/10.5281/zenodo.23004800), reserved; v7.5 = 10.5281/zenodo.22943070); Project 51 concept 10.5281/zenodo.22862811 (v0.4 =
+Record Across Rules*, [10.5281/zenodo.23004789](https://doi.org/10.5281/zenodo.23004789) (published); The Line Game concept 10.5281/zenodo.20792808 (latest record
+[10.5281/zenodo.23004800](https://doi.org/10.5281/zenodo.23004800), published; v7.5 = 10.5281/zenodo.22943070); Project 51 concept 10.5281/zenodo.22862811 (v0.4 =
 10.5281/zenodo.22985771).

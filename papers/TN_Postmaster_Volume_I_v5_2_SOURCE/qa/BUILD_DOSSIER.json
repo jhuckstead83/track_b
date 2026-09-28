@@ -3,35 +3,35 @@
   "stem": "TN_Postmaster_Volume_I_v5_2_TECHNICAL_DOSSIER",
   "source": "src/TN_Postmaster_Volume_I_v5_2_TECHNICAL_DOSSIER.md",
   "src_sha256": "dd417563dac47bcf2650160af582abad1e0969c2cbeeaff17a3b1ff0d2208845",
-  "preamble_sha256": "63ad682199947cbe7a262ae20a49afe44c2e7eb15a1705b86a2468bbbe411bc2",
-  "tex_sha256": "a578609db084065d0bb97e5acb18ee48275214962ce6bf2d2f248831c5fb51aa",
+  "preamble_sha256": "66b129a52baa5a66ec29f4e7d695904ef98e2614d69be4fcef15d90d6412753e",
+  "tex_sha256": "576ffab8e9a84ab2b05e0e82af5b2dd5ad6797983e95d3aac7041c8bd59fb597",
   "body_pages": 284,
   "pages": 287,
-  "body_pdf_sha256": "a7278a4b0bc4f3f8d4ddec95deef5e0661ce26a739deb6cf68181ac8a63ac029",
-  "pdf_sha256": "f8c1b42c3a985efcdaf3fa682adbd1c9523d244c7cd8aa803ee5985b8cb02c41",
+  "body_pdf_sha256": "7a12e2cfb2271fe72394962872b0ecd6831f69d2ecda0e8cfb3f36b9dcc48bd4",
+  "pdf_sha256": "48fbaeccbffad9013625724e6142d06fc8b9dc8d13e284610585b25f8fda890c",
   "passes": [
     {
       "kind": "draft",
       "log": "tmp/dossier/draft0.log",
-      "seconds": 3.54,
-      "state": "da59dfaaf90a3b9c40032f5f4a3289abaa7ac9997250d23815b9324eb11792fa"
+      "seconds": 3.65,
+      "state": "a30ac49ff85efc692e9f39d8262f36162474c830231dc328ceaa7ce9e2dff7af"
     },
     {
       "kind": "draft",
       "log": "tmp/dossier/draft1.log",
       "seconds": 3.64,
-      "state": "5ce3676aa27926dfd723227b615252c2d27860f9fd84e25b1a419e8b0dac31df"
+      "state": "015a70dad806362137b5f0dd95721a8fcafc6f461160d75324b12bdc886f0e29"
     },
     {
       "kind": "draft",
       "log": "tmp/dossier/draft2.log",
-      "seconds": 3.43,
-      "state": "5ce3676aa27926dfd723227b615252c2d27860f9fd84e25b1a419e8b0dac31df"
+      "seconds": 3.72,
+      "state": "015a70dad806362137b5f0dd95721a8fcafc6f461160d75324b12bdc886f0e29"
     },
     {
       "kind": "final",
       "log": "tmp/dossier/final.log",
-      "seconds": 19.31
+      "seconds": 19.59
     }
   ],
   "undefined_refs": 0,

@@ -1,4 +1,4 @@
-/* Three-live loops of the SEDAPS three-queue rule, by packet-form enumeration.
+/* live3_sync.c: synchronised three-live loops, the only kind an equal deal can reach (v0.4.1 section 2).
  *
  * Rule: every live queue plays its front card; the highest card wins; the winner appends the
  * played cards to its own tail in seat order starting from itself (winner's card first).
@@ -11,7 +11,10 @@
  * every packet-form state of n cards forward until a queue empties, and reports any walk that
  * returns to its start or exceeds the step cap.
  *
- * Usage: live3_packet n [shard nshards]      prints one JSON line.
+ * This variant walks only the whole-packet states (no partial tails), with seat rotation fixing the
+ * global maximum in queue 0. Every congruent-size loop passes through such a state (PP285 section 2),
+ * so finding none is a complete search for loops an equal deal could reach.
+ * Usage: live3_sync n [shard nshards]      prints one JSON line; n = 15 in shards, many hours each.
  */
 #include <stdio.h>
 #include <stdlib.h>

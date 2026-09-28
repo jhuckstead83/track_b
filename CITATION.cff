@@ -10,14 +10,14 @@ authors:
 repository-code: "https://github.com/jhuckstead83/track_b"
 url: "https://cerebralgraphix.com/area-51/"
 license: CC-BY-4.0
-version: "2.8.5"
+version: "2.8.6"
 date-released: 2026-09-28
 abstract: >-
   The Area 51 research line of Cerebral Graphix: the 51 SEDAPS reversible card rule and its
   turn-indexed reachability certificates, the 51 Twins exhibit and its Davenport-Heilbronn
   calibration, the Formula 51 deduction, and the TN Postmaster Volume I v5.2 source edition,
   with independent replays, complete state censuses, a proof that the reachability search is
-  complete, exact first failing Loewner sizes for the twin, and a re-execution of the inherited
+  complete, the existence and exact periods of rigid three-live loops, exact first failing Loewner sizes for the twin, and a re-execution of the inherited
   v5.0 source-rung certificates. RH status: open.
 keywords:
   - card games
@@ -34,7 +34,7 @@ references:
       - family-names: "Huckstead"
         given-names: "Jeffery"
     doi: "10.5281/zenodo.23004335"
-    notes: "Volume I v5.2 (reserved DOI); version series 10.5281/zenodo.21968915"
+    notes: "Volume I v5.2; version series 10.5281/zenodo.21968915"
   - type: article
     title: "The Line Game | Surprise Is Not Meaning"
     authors:
@@ -47,7 +47,7 @@ references:
       - family-names: "Huckstead"
         given-names: "Jeffery Lyn"
     doi: "10.5281/zenodo.23004789"
-    notes: "Area 51 games and exhibit research (reserved DOI); concept 10.5281/zenodo.22862811"
+    notes: "Area 51 games and exhibit research; concept 10.5281/zenodo.22862811"
   - type: article
     title: "Cycles in War"
     authors:

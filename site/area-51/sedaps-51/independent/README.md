@@ -10,6 +10,13 @@ rule from its text and read only the certificate JSON files in the parent folder
 | `census_alt.c` | the same, recording winner alternation and α on every loop (2-queue mode) | `./census_alt 11 2` |
 | `census_deals.c` | never-ending alternate deals; reproduces OEIS A400411 | `./census_deals 11 2 deals` |
 | `live3_packet.c`, `live3_loops.c` | every packet-form state of n cards, played until a queue empties; `live3_loops.c` also catalogues the three-live loops, and with a fourth argument `cong` keeps only sizes congruent mod 3, the states an equal deal can reach (v0.4.1 §2); receipt `LIVE3_LOOPS_RECEIPT.json` | `gcc -O3 -o live3_loops live3_loops.c && ./live3_loops 11` (about 10 s); n = 12 in four shards: `./live3_loops 12 s 4` for s = 0…3, a few minutes each |
+| `live3_struct.c` | `live3_loops.c` plus a structural classification of every loop found: largest queue, win gaps, whether the winner always plays a packet head, one head per turn | `./live3_struct 12 s 4` for s = 0…3 |
+| `live3_sync.c` | every whole-packet state, with the global maximum in queue 0: a complete search for the loops an equal deal could reach (v0.4.1 §2) | `./live3_sync 12`; n = 15 in shards, hours each |
+| `live3_rigid12.c` | every rigid-shape state at n = 12 for each of the 55 head sets containing 11, played while the head wins; its totals equal the census, so every loop at 12 cards is rigid; receipt `live3_rigid12_receipt.json` | `cc -O2 -fopenmp -o live3_rigid12 live3_rigid12.c && ./live3_rigid12` (about 30 s on 4 cores) |
+| `live3_construct.py` | top-headed states for n = 12 to 51, played until they return, with the four invariants and the undo step checked every turn; receipt `live3_construct_receipt.json` | `python3 live3_construct.py` (a few seconds) |
+| `live3_construct_check.cjs` | replays the 15- and 51-card witnesses with the site's engine `sedaps-core-v0-2.js` | `node live3_construct_check.cjs` |
+| `live3_rigid_period.py` | the rigid-loop period formula against the order of σ and against play, for every shape at every n from 12 to 51; complete spectra; receipt `live3_rigid_period_receipt.json` | `python3 live3_rigid_period.py` (about 10 s) |
+| `live3_probe51.py` | 3,000 synchronised states and 3,000 deals at 51 cards (status C); receipt `live3_probe51_receipt.json` | `python3 live3_probe51.py` (under a minute) |
 | `war_period_sigma.py` | brute-force alternation for n ≤ 9 and the period 2·ord(σ) for every α | `python3 war_period_sigma.py` |
 | `CENSUS_RECEIPT.json` | the census results for n ≤ 11 (3 queues) and n ≤ 12 (2 queues) | — |
 | `sedaps_independent_receipt.json` | the replay receipt | — |
