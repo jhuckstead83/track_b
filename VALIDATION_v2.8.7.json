@@ -1,0 +1,38 @@
+{
+ "version": "2.8.7",
+ "base_version": "2.8.6",
+ "date": "2026-09-28",
+ "status": "PASS",
+ "RH_STATUS": "OPEN",
+ "checks": [
+  {
+   "name": "51 Twins status ledger width (Chromium)",
+   "result": "the table fits its 900 px column at 1440, 1280, 1024 and 900 px, and the page's own width at 800, 700 and 640 px; v2.8.6 measured 1,127 px at every width, with page overflow at 1024, 800 and 700 px"
+  },
+  {
+   "name": "Page sweep, Chromium, widths 1440, 1280, 1024, 900, 800, 700, 390",
+   "result": "77 views of 11 pages (homepage, Finance, Area 51 hub, 51 SEDAPS, 51 Twins, calibration, atlas, Line Game, Postmaster, Project 51, site index): no horizontal overflow, no page errors"
+  },
+  {
+   "name": "node area-51/twins-51/verify-twins-v1.cjs; node area-51/twins-51/build-twins-page-v1.cjs",
+   "result": "pass; index.html matches the data"
+  },
+  {
+   "name": "UI Preservation Kit: audit_ui.py",
+   "result": "BASELINE_PRESERVED: 21 files, 9 hook pages, 0 review items"
+  },
+  {
+   "name": "UI Preservation Kit: check-homepage-finance.cjs and check-dock.cjs (linkedom 0.18.13)",
+   "result": "8 of 8 and 4 of 4 groups pass"
+  },
+  {
+   "name": "node area-51/sedaps-51/independent/live3_construct_check.cjs",
+   "result": "51-card witness returns after 180 turns, three queues live throughout"
+  },
+  {
+   "name": "Zenodo sets for 23004789 and 23004800",
+   "result": "all nine files now on the two records are byte-identical to the files of 22943070 and 22985771 and to the site copies; the set tables give bytes, MD5 and SHA-256 for every file"
+  }
+ ],
+ "scope": "A layout fix and upload sets. Research content is unchanged from v2.8.6. The homepage and Finance are unchanged."
+}

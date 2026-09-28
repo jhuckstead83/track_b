@@ -1,0 +1,49 @@
+{
+ "version": "2.8.7",
+ "base_version": "2.8.6",
+ "base_archive": "CerebralGraphix_v2_8_6_FULL_SITE_no-papers.zip",
+ "base_archive_sha256": "088074deb46f47a920ca40848a228029da2947b2539890fd9353de13f47a6c7a",
+ "input_files": 675,
+ "unchanged_files": 672,
+ "removed_files": [],
+ "changed": [
+  {
+   "path": "area-51/research.json",
+   "before": "265c855e7d88a1ade6adfce55d43ef0d589a93402dda82a3828bea029d8ba4f8",
+   "after": "006b40043c4f52ed4527adb059292cc16bc0be34c631da1ededf888e4a99cff7"
+  },
+  {
+   "path": "area-51/twins-51/build-twins-page-v1.cjs",
+   "before": "30e2b962e7e20ce280ed7ff1027687bd765dab409bfa4b00464d923ec4ee1af5",
+   "after": "54af980da688b0ee0f58edc8e6c41da3574eca806d5740551d2dc45fcefb750d"
+  },
+  {
+   "path": "area-51/twins-51/index.html",
+   "before": "0f04ea0eeb62df857f495b29027f2f18362518759201cf7466335988681c8c05",
+   "after": "b3af0d2ec0fbe97c43151ebec233aab144e7c233e182f20d02d4a0f5bc4ace11"
+  }
+ ],
+ "added": [
+  {
+   "path": "RELEASE_NOTES_v2_8_7.md",
+   "sha256": "9372be41d3efe2fc3d910719150412e48b739e56e9e06c25d3aad246df186244"
+  },
+  {
+   "path": "VALIDATION_v2_8_7.json",
+   "sha256": "c405eb9099fa47a4d817584822c3a786d5eda8208a26b1d479c6bb196ee7e561"
+  },
+  {
+   "path": "ZENODO_RELEASE_PLAN_v2_8_7.md",
+   "sha256": "fdc26d6528faea57e0ad0c6b289df596ac164dc834f5f9598792f2b467d00524"
+  }
+ ],
+ "not_in_archive": {
+  "papers/": "install the v2.8.6 papers payload (TN_Postmaster_v5_2_PAPERS_PAYLOAD_v2_8_6.zip, unchanged in v2.8.7) into papers/ before deploying"
+ },
+ "excluded_from_packaging": [
+  "__pycache__/",
+  "*.pyc",
+  "papers/"
+ ],
+ "note": "This manifest and the merge guide do not list themselves."
+}

@@ -5,7 +5,7 @@ exhibits and games, and the programs that check them. Author: Jeffery Lyn Huckst
 ([ORCID 0009-0007-0234-2177](https://orcid.org/0009-0007-0234-2177)). **RH STATUS: OPEN.**
 Nothing here is evidence for or against the Riemann hypothesis.
 
-This release is **v2.8.6** (28 September 2026). The three Zenodo records it cites are published. The TN Postmaster v5.2 title pages print their DOI, and the page-anchor check now opens the PDFs. Loops that keep three queues live are proved to exist at 51 cards, with an exact period formula. v2.8.5 added the DOIs as links. Before it, v2.8.3 placed the Track B research pass
+This release is **v2.8.7** (28 September 2026). It fixes a v2.8.6 layout regression on the 51 Twins status ledger, and gives the ordered Zenodo upload sets for *Project 51* and *The Line Game*. It builds on v2.8.6. The three Zenodo records it cites are published. The TN Postmaster v5.2 title pages print their DOI, and the page-anchor check now opens the PDFs. Loops that keep three queues live are proved to exist at 51 cards, with an exact period formula. v2.8.5 added the DOIs as links. Before it, v2.8.3 placed the Track B research pass
 (corrections, independent replays, and new results) on the Fork-A v2.8.2 site, which carries
 the Finance and homepage work. v2.8.4 built the TN Postmaster v5.2 PDFs and pointed the site's
 research pages at them. The live site is published from the full site package. This
@@ -27,6 +27,7 @@ replayed by the shipped rule), **COMPUTED** (exhaustive search resting on a prov
 | `papers/TN_Postmaster_Volume_I_v5_2_SOURCE/` | TN Postmaster Volume I v5.2, source edition: Markdown masters, build scripts, interface check (74/74), title-page DOI, twin evidence, v5.1 and v5.0 provenance |
 | `verification/` | independent replays and audits (see below); `verification/ui_v2_8_6/` holds the v3.0 UI-preservation receipts for the v2.8.6 archive |
 | `HANDOFF_TO_CODEX_v2.8.6.md` | the return note for v3.0 assembly: archives and hashes, the papers payload, and the homepage/Finance verification |
+| `dist/v2.8.7/` | the v2.8.7 site (without `papers/`), cumulative research delta, research zip, and the two Zenodo upload sets (`Project_51_23004789_upload_set.zip`, `Line_Game_23004800_upload_set.zip`); the papers payload is still v2.8.6's |
 | `dist/v2.8.6/` | full site (without `papers/`), cumulative research delta, the **v2.8.6 papers payload** (v5.2 PDFs with the DOI on the title page, source zip, page anchors: install it into `papers/` first), and `Project51_Area51_Research_v2_8_6.zip`, the upload for Zenodo record 23004789 |
 | `dist/v2.8.5/` | the v2.8.5 site archives |
 | `dist/v2.8.4/` | the v2.8.4 site archives and the earlier papers payload, superseded by v2.8.6's |
